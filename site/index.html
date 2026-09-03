@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reflexive Demand Simulator</title>
+<meta name="description" content="A self-updating scenario simulator for reflexive frontier-token demand: loop gains, shocks, capacity and capex on a rolling horizon.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔁%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Spline+Sans:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500;600&display=swap">
+<style>
+html{color-scheme:light}
+:root{
+  color-scheme:light;
+  --bg:#f2f4f7; --surface:#ffffff; --surface-2:#e9edf1; --surface-3:#dfe4e9;
+  --ink:#141a1f; --ink-2:#5b6570; --ink-3:#8a94a0; --line:#d9dee4; --grid:#e8ecf0;
+  --rd:#6a5ae0; --swe:#1b9c8a; --trd:#d9930b; --oth:#a3adb8;
+  --rd-soft:rgba(106,90,224,.62); --swe-soft:rgba(27,156,138,.62); --trd-soft:rgba(217,147,11,.62); --oth-soft:rgba(163,173,184,.55);
+  --good:#0a8a0a; --bad:#c62828;
+  --band:rgba(20,26,31,.08); --shadow:0 8px 24px rgba(20,26,31,.10);
+  --display:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sans:"Spline Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Spline Sans Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0e1317; --surface:#161c22; --surface-2:#1f262e; --surface-3:#2a323b;
+    --ink:#e6ebf0; --ink-2:#a3adb8; --ink-3:#6f7a86; --line:#2a323b; --grid:#222a32;
+    --rd:#8b7ff5; --swe:#2aa892; --trd:#c0840f; --oth:#5f6a76;
+    --rd-soft:rgba(139,127,245,.58); --swe-soft:rgba(42,168,146,.58); --trd-soft:rgba(192,132,15,.62); --oth-soft:rgba(95,106,118,.6);
+    --good:#3ddc84; --bad:#ff7a70;
+    --band:rgba(230,235,240,.10); --shadow:0 8px 24px rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0e1317; --surface:#161c22; --surface-2:#1f262e; --surface-3:#2a323b;
+  --ink:#e6ebf0; --ink-2:#a3adb8; --ink-3:#6f7a86; --line:#2a323b; --grid:#222a32;
+  --rd:#8b7ff5; --swe:#2aa892; --trd:#c0840f; --oth:#5f6a76;
+  --rd-soft:rgba(139,127,245,.58); --swe-soft:rgba(42,168,146,.58); --trd-soft:rgba(192,132,15,.62); --oth-soft:rgba(95,106,118,.6);
+  --good:#3ddc84; --bad:#ff7a70;
+  --band:rgba(230,235,240,.10); --shadow:0 8px 24px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-settings:"opsz" 96}
+.wrap{max-width:1320px;margin:0 auto;padding:28px 24px 64px}
+
+/* masthead */
+.mast{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:end;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.mast h1{font-size:clamp(34px,4.6vw,52px);font-weight:800;letter-spacing:-.025em;line-height:1.02}
+.mast h1 em{font-style:normal;color:var(--ink-2);font-weight:600}
+.dek{font-size:16px;color:var(--ink-2);max-width:60ch;margin:12px 0 0}
+.dek strong{color:var(--ink);font-weight:600}
+.src{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-top:10px;letter-spacing:.01em}
+.src a{color:var(--ink-2);text-decoration-color:var(--line)}
+.mast-side{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:12.5px;cursor:pointer;line-height:1.3;transition:background .12s,border-color .12s}
+.chip:hover{border-color:var(--ink-3)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.actions{display:flex;flex-wrap:wrap;gap:6px}
+.btn{border:1px solid var(--ink);background:transparent;border-radius:6px;padding:6px 12px;font-size:12.5px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:var(--surface-2)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn.primary:hover{opacity:.9}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.btn .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.5}
+.btn[aria-pressed="true"] .dot{opacity:1}
+
+/* scenarios */
+.scen{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+.scen-groups{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.scen-group{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.scen-group .eyebrow{margin-right:2px}
+.chip .cd{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:7px;vertical-align:1px;background:var(--ink-3)}
+.chip.bull .cd{background:var(--good)}.chip.bear .cd{background:var(--bad)}.chip.base .cd{background:var(--ink)}
+.chip[aria-pressed="true"].base .cd{background:var(--bg)}
+.view{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 14px;font-size:13px}
+.view .pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:2px 8px;color:var(--ink);white-space:nowrap}
+.view .pill.bull{border-color:var(--good);color:var(--good)}.view .pill.bear{border-color:var(--bad);color:var(--bad)}
+.view .who{font-weight:600}
+.view .who .name{font-weight:600}.view .who .att{font-weight:400;color:var(--ink-2)}
+.view p{margin:0;color:var(--ink-2);grid-column:2;max-width:110ch}
+.view .src{grid-column:2;font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.view .src a{color:var(--ink-2)}
+.views td.camp{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.views td.camp.bull{color:var(--good)}.views td.camp.bear{color:var(--bad)}
+.views td .nm{font-weight:600;display:block}.views td .wh{color:var(--ink-2);font-size:12px}
+.views td.model{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);min-width:180px}
+.gauges{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-top:8px}
+.gauge-tile{background:var(--surface-2);border-radius:6px;padding:10px 12px;min-width:0}
+.gauge-tile .l{font-size:12px;color:var(--ink-2);line-height:1.3}
+.gauge-tile .v{font-size:20px;font-weight:600;letter-spacing:-.01em;margin-top:2px}
+.gauge-tile .s{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:2px;line-height:1.35}
+.gauge-tile .s a{color:var(--ink-3)}
+
+/* room */
+.room{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;margin-top:24px;align-items:start}
+.rail{position:sticky;top:12px;display:flex;flex-direction:column;gap:10px;max-height:calc(100vh - 24px);overflow:auto;padding-right:2px}
+.rail::-webkit-scrollbar{width:8px}.rail::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:4px}
+.group{background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.group summary{list-style:none;cursor:pointer;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.group summary::-webkit-details-marker{display:none}
+.group summary::after{content:"+";font-size:14px;color:var(--ink-3)}
+.group[open] summary::after{content:"–"}
+.group .body{padding:2px 14px 12px;display:flex;flex-direction:column;gap:10px}
+.group .hint{font-size:12px;color:var(--ink-3);margin:0 0 4px;line-height:1.4}
+.ctl{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center}
+.ctl label{font-size:12.5px;color:var(--ink);line-height:1.3}
+.ctl .val{font-family:var(--mono);font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums;text-align:right;min-width:52px}
+.ctl input[type=range]{grid-column:1/-1;width:100%;margin:2px 0 0;height:20px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer}
+.ctl input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--surface-3);border-radius:1px}
+.ctl input[type=range]::-moz-range-track{height:2px;background:var(--surface-3);border-radius:1px}
+.ctl input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--ink);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--ink);margin-top:-6px}
+.ctl input[type=range]::-moz-range-thumb{width:10px;height:10px;border-radius:50%;background:var(--ink);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--ink)}
+.ctl.seg label::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:7px;vertical-align:1px;background:var(--seg)}
+.ctl .sub{grid-column:1/-1;font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:-2px}
+.railfoot{font-size:11.5px;color:var(--ink-3);padding:4px 6px 0;line-height:1.4}
+.railfoot button{background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;color:var(--ink-2);font-size:inherit}
+
+/* stage */
+.stage{display:flex;flex-direction:column;gap:18px;min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.card h2{font-size:19px;font-weight:600;letter-spacing:-.01em}
+.card h2 small{font-family:var(--sans);font-weight:400;font-size:13px;color:var(--ink-2);margin-left:8px}
+.card .tools{display:flex;gap:6px;align-items:center}
+.btn.sm{padding:4px 9px;font-size:12px;border-color:var(--line)}
+.btn.sm:hover{border-color:var(--ink-3)}
+.btn.sm[aria-pressed="true"]{border-color:var(--ink)}
+
+/* hero + kpis */
+.hero{display:grid;grid-template-columns:minmax(260px,1.1fr) minmax(0,2fr);gap:20px 28px;align-items:stretch}
+.hero-fig .eyebrow{margin-bottom:6px}
+.hero-fig .big{font-size:clamp(44px,5.4vw,64px);font-weight:600;letter-spacing:-.03em;line-height:1;font-family:var(--sans)}
+.hero-fig .range{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);margin-top:8px;font-variant-numeric:tabular-nums}
+.hero-fig .delta{font-size:13px;margin-top:6px;color:var(--ink-2)}
+.delta .up{color:var(--good);font-weight:600}.delta .down{color:var(--bad);font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.kpi{background:var(--surface-2);border-radius:6px;padding:12px 14px;min-width:0}
+.kpi .l{font-size:12px;color:var(--ink-2);line-height:1.3}
+.kpi .v{font-size:24px;font-weight:600;letter-spacing:-.02em;line-height:1.15;margin-top:4px}
+.kpi .s{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:3px;font-variant-numeric:tabular-nums}
+.kpi .v .tag{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:6px;letter-spacing:.02em}
+.tag.good{background:color-mix(in srgb,var(--good) 16%,transparent);color:var(--good)}
+.tag.bad{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.tag.warn{background:var(--surface-3);color:var(--ink-2)}
+
+/* charts */
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--ink-2);align-items:center}
+.legend .k{display:inline-flex;align-items:center;gap:7px}
+.legend .sw{width:11px;height:11px;border-radius:2px;background:var(--c)}
+.legend .ln{width:18px;height:0;border-top:2px dashed var(--ink);}
+.legend .ln.solid{border-top-style:solid;border-color:var(--ink-3)}
+.legend .band{width:18px;height:10px;background:var(--band);border-radius:2px}
+.legend .share{font-family:var(--mono);font-size:11px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.chart{position:relative;margin-top:10px}
+.chart svg{display:block;width:100%;height:auto;font-family:var(--mono);font-size:11px;fill:var(--ink-3)}
+.chart .axis text{fill:var(--ink-3);font-size:11px}
+.chart .grid line{stroke:var(--grid);stroke-width:1}
+.chart .base{stroke:var(--line);stroke-width:1}
+.chart .hover{cursor:crosshair}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);padding:8px 10px;min-width:180px;font-size:12px;z-index:5;display:none}
+.tip.show{display:block}
+.tip .h{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;display:flex;justify-content:space-between;gap:12px}
+.tip .row{display:flex;align-items:center;gap:8px;padding:1.5px 0}
+.tip .row .key{width:14px;height:0;border-top:3px solid var(--c);border-radius:2px;flex:none}
+.tip .row .key.dash{border-top-style:dashed;border-top-width:2px}
+.tip .row .v{font-family:var(--mono);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;min-width:56px}
+.tip .row .n{color:var(--ink-2)}
+.tip .ev{margin-top:6px;padding-top:6px;border-top:1px solid var(--line);color:var(--ink-2);font-size:11.5px}
+.tip .ev b{color:var(--ink)}
+.tbl{margin-top:12px;overflow-x:auto}
+.tbl table{border-collapse:collapse;width:100%;font-size:12px;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl th,.tbl td{text-align:right;padding:5px 8px;border-bottom:1px solid var(--grid)}
+.tbl th:first-child,.tbl td:first-child{text-align:left}
+.tbl th{color:var(--ink-3);font-weight:500;font-family:var(--sans)}
+.multiples{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mini{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px 8px;min-width:0}
+.mini .t{font-size:13px;font-weight:600;line-height:1.3}
+.mini .u{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.mini .chart{margin-top:6px}
+.mini .ref text{fill:var(--ink-3);font-size:10px}
+.mini .ref line{stroke:var(--line);stroke-width:1}
+
+/* loop */
+.loop-grid{display:grid;grid-template-columns:minmax(280px,1fr) minmax(300px,1.2fr);gap:20px 28px;align-items:center}
+.loop-svg{width:100%;max-width:440px;margin:0 auto;display:block}
+.loop-svg .node rect{fill:var(--surface);stroke:var(--line)}
+.loop-svg .node text{fill:var(--ink);font-size:12.5px;font-weight:500;font-family:var(--sans)}
+.loop-svg .node .sub{fill:var(--ink-3);font-size:10.5px;font-family:var(--mono);font-weight:400}
+.loop-svg .ring{fill:none;stroke:var(--surface-3);stroke-width:14;stroke-linecap:round}
+.loop-svg .arrow{fill:var(--ink-3)}
+.loop-svg .center text{font-family:var(--sans);fill:var(--ink)}
+.loop-svg .center .n{font-size:30px;font-weight:600;letter-spacing:-.02em}
+.loop-svg .center .l{font-size:10.5px;fill:var(--ink-3);font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.loop-svg .center .m{font-size:12px;fill:var(--ink-2)}
+.loop-svg .gauge .zone{fill:none;stroke-width:6}
+.loop-svg .gauge .needle{stroke:var(--ink);stroke-width:2.5;stroke-linecap:round}
+.loop-side{display:flex;flex-direction:column;gap:12px;min-width:0}
+.scrub{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:12.5px;color:var(--ink-2)}
+.scrub .q{font-family:var(--mono);color:var(--ink);min-width:54px;text-align:right}
+.scrub input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:20px;background:transparent;cursor:pointer}
+.scrub input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--surface-3)}
+.scrub input[type=range]::-moz-range-track{height:2px;background:var(--surface-3)}
+.scrub input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--ink);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--ink);margin-top:-6px}
+.scrub input[type=range]::-moz-range-thumb{width:10px;height:10px;border-radius:50%;background:var(--ink);border:2px solid var(--surface);box-shadow:0 0 0 1px var(--ink)}
+.gains{border-collapse:collapse;width:100%;font-size:12.5px}
+.gains th{font-weight:500;color:var(--ink-3);text-align:right;padding:4px 8px;border-bottom:1px solid var(--line);font-size:11.5px}
+.gains td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.gains th:first-child,.gains td:first-child{text-align:left;font-family:var(--sans)}
+.gains td:first-child .sw{display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--c);margin-right:7px;vertical-align:0}
+.gains td.neg{color:var(--bad)}.gains td.pos{color:var(--ink)}
+.regime{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--ink-2);flex-wrap:wrap}
+.regime .pill{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:3px 9px;color:var(--ink)}
+.regime .pill.hot{border-color:var(--bad);color:var(--bad)}
+.regime .pill.cool{border-color:var(--ink-3)}
+.note{font-size:12.5px;color:var(--ink-2);line-height:1.5;max-width:62ch;margin:0}
+
+/* shocks */
+.strip{display:grid;grid-template-columns:repeat(18,minmax(0,1fr));gap:2px;margin-top:6px}
+.strip .cell{background:var(--surface-2);border-radius:3px;min-height:54px;padding:4px 3px;position:relative;cursor:pointer;display:flex;flex-direction:column;gap:3px;border:1px solid transparent}
+.strip .cell:hover{border-color:var(--ink-3)}
+.strip .cell.sel{border-color:var(--ink)}
+.strip .cell .q{font-family:var(--mono);font-size:9.5px;color:var(--ink-3);text-align:center;letter-spacing:.02em}
+.strip .cell.y .q{color:var(--ink);font-weight:600}
+.strip .ev{font-size:10px;line-height:1.15;background:var(--ink);color:var(--bg);border-radius:3px;padding:2px 4px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.strip .ev.rate,.strip .ev.shock,.strip .ev.trd_cut,.strip .ev.rd_cut,.strip .ev.swe_cut,.strip .ev.reg,.strip .ev.price,.strip .ev.capex_cut{background:var(--bad);color:#fff}
+.strip .ev.release,.strip .ev.oth_boost,.strip .ev.reprice{background:var(--good);color:#fff}
+.strip .ev.oss{background:var(--ink-2);color:var(--bg)}
+.years{display:grid;grid-template-columns:2fr 4fr 4fr 4fr 4fr;font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:4px;letter-spacing:.04em}
+.years span{border-left:1px solid var(--line);padding-left:6px}
+.evform{display:grid;grid-template-columns:minmax(160px,1.4fr) minmax(90px,.8fr) minmax(90px,.8fr) minmax(90px,.8fr) auto;gap:8px;margin-top:14px;align-items:end}
+.evform label{display:flex;flex-direction:column;gap:4px;font-size:11.5px;color:var(--ink-3);font-family:var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.evform select,.evform input{font:inherit;font-family:var(--sans);font-size:13px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:7px 9px;width:100%}
+.evform input{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.evlist{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.evlist .e{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 11px;font-size:12.5px;background:var(--surface)}
+.evlist .e .m{font-family:var(--mono);color:var(--ink-2);font-size:11.5px}
+.evlist .e button{border:0;background:var(--surface-2);border-radius:50%;width:20px;height:20px;cursor:pointer;color:var(--ink-2);line-height:1;font-size:13px;display:grid;place-items:center}
+.evlist .e button:hover{background:var(--surface-3);color:var(--ink)}
+.evlist .none{font-size:12.5px;color:var(--ink-3)}
+
+/* assumptions & notes */
+.assume{overflow-x:auto}
+.assume table{border-collapse:collapse;width:100%;font-size:12.5px}
+.assume th{text-align:left;color:var(--ink-3);font-weight:500;padding:6px 10px;border-bottom:1px solid var(--line);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono)}
+.assume td{padding:7px 10px;border-bottom:1px solid var(--grid);vertical-align:top;line-height:1.4}
+.assume td.n{font-family:var(--mono);white-space:nowrap;font-variant-numeric:tabular-nums}
+.assume td.s{color:var(--ink-2);font-size:12px}
+.assume a{color:var(--ink-2)}
+.prose{max-width:66ch;color:var(--ink-2);font-size:14px}
+.prose p{margin:0 0 10px}
+.prose h3{font-size:15px;font-weight:600;color:var(--ink);margin:16px 0 6px;font-family:var(--sans)}
+.prose code{font-family:var(--mono);font-size:12.5px;background:var(--surface-2);padding:1px 5px;border-radius:3px;color:var(--ink)}
+.prose ul{padding-left:18px;margin:0 0 10px}
+.prose li{margin-bottom:4px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:6px;font-size:13px;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;z-index:20}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media (max-width:1080px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.multiples{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:980px){
+  .room{grid-template-columns:1fr}
+  .view{grid-template-columns:1fr}
+  .view p,.view .src{grid-column:1}
+  .rail{position:static;max-height:none;overflow:visible}
+  .mast{grid-template-columns:1fr}
+  .hero{grid-template-columns:1fr}
+  .loop-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:18px 14px 48px}
+  .card{padding:14px}
+  .multiples{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .evform{grid-template-columns:1fr 1fr}
+  .strip .cell{min-height:40px}
+  .strip .ev{font-size:0;padding:0;height:6px}
+}
+@media (prefers-reduced-motion:reduce){.chip,.btn,.toast{transition:none}}
+</style>
+
+<style>
+.meta{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-top:8px;letter-spacing:.01em}
+.meta b{color:var(--ink-2);font-weight:500}
+.up-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:8px 0;border-bottom:1px solid var(--grid);font-size:12.5px;align-items:baseline}
+.up-row:last-child{border-bottom:0}
+.up-row .k{font-weight:500}
+.up-row .v{font-family:var(--mono);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.up-row .v .ovr{font-family:var(--mono);font-size:11px;color:var(--ink-2);margin-left:6px;background:var(--surface-2);border-radius:3px;padding:1px 5px}
+.up-row .b{grid-column:1/-1;color:var(--ink-2);font-size:12px;line-height:1.45;cursor:help}
+.up-row .b a{color:var(--ink-3)}
+.up-row .b .as{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap}
+.dot-new{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--good);margin-left:6px;vertical-align:1px}
+.thesis{font-size:13.5px;color:var(--ink);margin:0 0 10px;max-width:90ch}
+.thesis .att{color:var(--ink-2)}
+.chg{display:flex;flex-direction:column}
+.chg .e{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:4px 12px;font-size:12.5px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--grid)}
+.chg .e:last-child{border-bottom:0}
+.chg .d{font-family:var(--mono);color:var(--ink-3);font-size:11px;white-space:nowrap}
+.chg .kd{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:1px 7px;color:var(--ink-2);white-space:nowrap}
+.chg .kd.accepted,.chg .kd.collected{border-color:var(--good);color:var(--good)}
+.chg .kd.rejected,.chg .kd.expired{border-color:var(--bad);color:var(--bad)}
+.chg .t .m{font-family:var(--mono);font-size:12px;color:var(--ink)}
+.chg .t .r{color:var(--ink-2);font-size:12px;margin-left:6px}
+.chg .t a{color:var(--ink-3)}
+.legend .hist{width:18px;height:0;border-top:2px solid var(--ink)}
+.gauge-tile .as{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:4px}
+.gauge-tile.stale .v{color:var(--ink-2)}
+.pill.auto{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line);border-radius:999px;padding:0 5px;margin-left:6px;vertical-align:1px}
+.two{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:980px){.two{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+
+<div class="wrap">
+<header class="mast">
+  <div>
+    <h1>Reflexive Demand <em>Simulator</em></h1>
+    <p class="dek">Frontier-token demand is driven by a few <strong>unbounded, long-horizon</strong> tasks whose spend feeds their own revenue. Set the loop gains, drop a shock on the timeline, and watch the boom or the bust play out.</p>
+    <p class="src">Built on Giovanni Cattani, <a href="https://x.com/giovannicatt3/article/2094815425972539565" target="_blank" rel="noopener">“Nobody is talking seriously about AI demand”</a> (X, 1 Sep 2026). Quarterly model on a rolling horizon; inputs are refreshed daily by an autonomous pipeline. All numbers are scenario estimates, not forecasts.</p>
+    <p class="meta" id="meta"></p>
+  </div>
+  <div class="mast-side">
+    <div>
+      <div class="eyebrow">Compare &amp; share</div>
+      <div class="actions">
+        <button class="btn" id="btnPin" title="Freeze the current run as a grey reference line and delta"><span class="dot"></span>Pin as baseline</button>
+        <button class="btn" id="btnMC" aria-pressed="false" title="Run 240 randomised paths and show the p10–p90 band"><span class="dot"></span>Uncertainty band</button>
+        <button class="btn primary" id="btnShare">Copy link to this scenario</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="scen" aria-label="Scenarios">
+  <div class="scen-groups" id="presets"></div>
+  <div class="view" id="viewBox"></div>
+</section>
+
+<div class="room">
+  <aside class="rail" id="rail" aria-label="Assumptions"></aside>
+  <main class="stage">
+    <section class="card hero" aria-label="Headline results">
+      <div class="hero-fig">
+        <div class="eyebrow" id="heroLabel">Frontier token revenue · run-rate two years out</div>
+        <div class="big" id="heroVal">—</div>
+        <div class="range" id="heroRange"></div>
+        <div class="delta" id="heroDelta"></div>
+      </div>
+      <div class="kpis" id="kpis"></div>
+    </section>
+
+    <section class="card" aria-label="Revenue by demand segment">
+      <div class="card-head">
+        <h2>Where the tokens go <small>run-rate, $B per year · actuals to the left of now, scenario to the right</small></h2>
+        <div class="tools"><button class="btn sm" id="btnTable" aria-pressed="false">Table view</button></div>
+      </div>
+      <div class="legend" id="mainLegend"></div>
+      <div class="chart" id="mainChart" tabindex="0" aria-label="Actual frontier revenue for the last two years and stacked scenario demand by segment with the capacity ceiling; use arrow keys to read values"></div>
+      <div class="tbl" id="mainTable" hidden></div>
+    </section>
+
+    <section class="multiples" aria-label="Drivers">
+      <div class="mini"><div class="t">Task horizon</div><div class="u">80%-success horizon, hours of human work (log)</div><div class="chart" id="mHorizon"></div></div>
+      <div class="mini"><div class="t">Capital-market conditions</div><div class="u">index, 1.0 = neutral</div><div class="chart" id="mMarket"></div></div>
+      <div class="mini"><div class="t">Compute committed</div><div class="u">$B of capex per quarter</div><div class="chart" id="mCapex"></div></div>
+      <div class="mini"><div class="t">Capacity utilisation</div><div class="u">demand ÷ monetisable capacity</div><div class="chart" id="mUtil"></div></div>
+    </section>
+
+    <section class="card" aria-label="The reflexive loop">
+      <div class="card-head">
+        <h2>The loop <small>spend → output → capital → bigger budgets</small></h2>
+        <div class="regime" id="regime"></div>
+      </div>
+      <div class="loop-grid">
+        <div id="loopSvg"></div>
+        <div class="loop-side">
+          <div class="scrub"><span>Quarter</span><input type="range" id="loopScrub" min="0" max="17" value="5" step="1" aria-label="Quarter shown in the loop"><span class="q" id="loopQ"></span></div>
+          <table class="gains" aria-label="Loop gain by segment">
+            <thead><tr><th>Segment</th><th>Share</th><th>Loop gain</th><th>Multiplier</th><th>Growth q/q</th></tr></thead>
+            <tbody id="gains"></tbody>
+          </table>
+          <p class="note" id="loopNote"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-label="Shocks">
+      <div class="card-head"><h2>Shocks <small>click a quarter, pick a trigger</small></h2></div>
+      <div class="strip" id="strip"></div>
+      <div class="years" id="years"></div>
+      <form class="evform" id="evform">
+        <label>Trigger<select id="evType"></select></label>
+        <label>Quarter<select id="evQ"></select></label>
+        <label id="evMagL">Size<input type="number" id="evMag" step="0.5"></label>
+        <label id="evDurL">Lasts (quarters)<input type="number" id="evDur" min="1" max="18" step="1" value="8"></label>
+        <button class="btn" type="submit" id="btnAddEv">Add shock</button>
+      </form>
+      <div class="evlist" id="evlist"></div>
+    </section>
+
+    <section class="two">
+      <div class="card" aria-label="What underpins this scenario">
+        <div class="card-head"><h2>What underpins this scenario</h2></div>
+        <p class="thesis" id="thesis"></p>
+        <div id="underpin"></div>
+      </div>
+      <div class="card" aria-label="What changed">
+        <div class="card-head"><h2>What changed <small>the pipeline’s last decisions</small></h2></div>
+        <div class="chg" id="changes"></div>
+      </div>
+    </section>
+
+    <section class="card" aria-label="Sentiment gauges">
+      <div class="card-head"><h2>Sentiment gauges <small>refreshed daily where a feed exists</small></h2></div>
+      <div class="gauges" id="gauges"></div>
+    </section>
+
+    <section class="card" aria-label="How the model works">
+      <div class="card-head"><h2>How it works</h2></div>
+      <div class="prose" id="notes"></div>
+    </section>
+  </main>
+</div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+<script type="module">
+import { SEGS, EVENTS, simulate, monteCarlo, drawdown, qAdd, qDiff, qLabel as qLab, resolveEvents, paramsOf } from './model.js';
+const $ = s => document.querySelector(s);
+let DATA, LOG = [];
+try { DATA = await (await fetch('./data/state.json', { cache: 'no-store' })).json(); } catch (e) { document.body.innerHTML = '<p style="padding:40px;font-family:system-ui">Could not load data/state.json.</p>'; throw e; }
+try { LOG = await (await fetch('./data/changelog.json', { cache: 'no-store' })).json(); } catch {}
+const T = DATA.horizon_quarters, HIST = DATA.history_quarters, Q0 = DATA.quarter0;
+const qKeyAt = t => qAdd(Q0, t); const qLabel = t => qLab(qKeyAt(t)); const yearOf = t => +qKeyAt(t).slice(0, 4); const qNum = t => +qKeyAt(t).slice(5);
+const A = Math.min(8, T - 1), B = T - 1;
+const DEFAULTS = paramsOf(DATA);
+const CAMPS = { base: 'Base', bull: 'Bull', bear: 'Bear', structural: 'Structural' };
+const PRESETS = DATA.scenarios.filter(s => s.status !== 'retired').map(s => ({ ...s, e: resolveEvents((s.e || []).filter(e => !e.expired), Q0).filter(e => e.t >= 0 && e.t < T) }));
+const SEG_META = { rd: { name: 'AI R&D', v: '--rd', soft: '--rd-soft' }, swe: { name: 'Software engineering', v: '--swe', soft: '--swe-soft' }, trd: { name: 'Trading', v: '--trd', soft: '--trd-soft' }, oth: { name: 'Everything else', v: '--oth', soft: '--oth-soft' } };
+const fm = { hours: v => `${v} h`, months: v => `${v} mo`, x: v => `×${Number(v).toFixed(2)}`, x1: v => `×${Number(v).toFixed(1)}`, pct: v => `${v}%`, pctf: v => `${Math.round(v * 100)}%`, pctyr: v => `${v}%/yr`, money: v => fmtMoney(v) + '/yr', gw: v => `${v} GW`, moneyGW: v => `$${v}B/GW`, q: v => `${v} qtr`, num2: v => Number(v).toFixed(2), num1: v => Number(v).toFixed(1) };
+const CONTROLS = [
+  { g: 'Capability', hint: 'Tokens as units of time: what frontier models can finish, and how fast that horizon doubles.', items: [
+    { k: 'H0', l: '80% task horizon today', min: 1, max: 12, step: 0.1, f: fm.hours }, { k: 'D0', l: 'Horizon doubling time', min: 2, max: 12, step: 0.1, f: fm.months },
+    { k: 'rdBoost', l: 'AI R&D spend speeds progress', min: 0, max: 0.6, step: 0.05, f: fm.x, sub: 'per doubling of lab spend vs trend' }, { k: 'epsX', l: 'Demand response to capability', min: 0, max: 2, step: 0.1, f: fm.x1 } ] },
+  { g: 'Demand today', hint: 'Frontier-lab revenue run-rate now and how it splits. “Everything else” is the remainder.', items: [
+    { k: 'R0', l: 'Frontier token revenue', min: 20, max: 600, step: 1, f: fm.money }, { k: 'sh_rd', l: 'AI R&D share', min: 0, max: 50, step: 1, f: fm.pct, seg: 'rd' },
+    { k: 'sh_swe', l: 'Software engineering share', min: 0, max: 60, step: 1, f: fm.pct, seg: 'swe' }, { k: 'sh_trd', l: 'Trading share', min: 0, max: 40, step: 1, f: fm.pct, seg: 'trd' } ] },
+  { g: 'Reflexivity', hint: 'Loop gain: how much of last quarter’s growth comes back as next quarter’s growth. Steady growth = drive ÷ (1 − gain).', items: [
+    { k: 'k_rd', l: 'AI R&D loop gain', min: 0, max: 0.95, step: 0.05, f: fm.num2, seg: 'rd' }, { k: 'k_swe', l: 'Software loop gain', min: 0, max: 0.95, step: 0.05, f: fm.num2, seg: 'swe' },
+    { k: 'k_trd', l: 'Trading loop gain', min: 0, max: 0.95, step: 0.05, f: fm.num2, seg: 'trd' }, { k: 'k_oth', l: 'Everything-else loop gain', min: 0, max: 0.5, step: 0.05, f: fm.num2, seg: 'oth' },
+    { k: 'rho', l: 'Contagion between loops', min: 0, max: 1, step: 0.05, f: fm.num2, sub: '0 = each loop feeds only itself · 1 = all ride the aggregate' } ] },
+  { g: 'Capital markets', hint: 'The shared factor: valuations and funding move on growth surprises and rates, then feed token budgets.', items: [
+    { k: 'betaX', l: 'Procyclicality of demand', min: 0, max: 2, step: 0.1, f: fm.x1, sub: 'scales trading 0.8 · software 0.6 · R&D 0.4' }, { k: 'm_rev', l: 'Markets react to growth surprises', min: 0, max: 1.5, step: 0.05, f: fm.num2 },
+    { k: 'm_rate', l: 'Valuation hit per +1pp rates', min: 0, max: 0.4, step: 0.01, f: fm.pctf }, { k: 'lambda', l: 'Mean reversion per quarter', min: 0.05, max: 0.5, step: 0.05, f: fm.num2 }, { k: 'rate0', l: 'Baseline rate', min: 0, max: 10, step: 0.25, f: v => `${Number(v).toFixed(2)}%` } ] },
+  { g: 'Bounded tasks', hint: 'Bounded work saturates and converges to the cheapest model, so it drains out of frontier tokens.', items: [
+    { k: 'subst', l: 'Migration to non-frontier models', min: 0, max: 60, step: 5, f: fm.pctyr }, { k: 'H_sat', l: 'Bounded demand saturates at', min: 8, max: 400, step: 8, f: fm.hours, sub: 'horizon beyond which bounded tasks stop pulling' } ] },
+  { g: 'Supply', hint: 'Compute is committed years ahead against expected revenue, and financed by markets that are themselves reflexive.', items: [
+    { k: 'K0', l: 'Frontier compute online today', min: 2, max: 60, step: 1, f: fm.gw }, { k: 'pipe', l: 'Committed pipeline, next 18 months', min: 0, max: 80, step: 1, f: fm.gw },
+    { k: 'mono', l: 'Revenue ceiling per inference GW', min: 5, max: 150, step: 1, f: v => `$${Number(v).toFixed(0)}B/yr` }, { k: 'train', l: 'Compute used for training', min: 20, max: 80, step: 5, f: fm.pct },
+    { k: 'capexGW', l: 'Capex per GW', min: 20, max: 80, step: 5, f: fm.moneyGW }, { k: 'lead', l: 'Build lead time', min: 2, max: 8, step: 1, f: fm.q },
+    { k: 'buildMax', l: 'Max build pace', min: 0.05, max: 0.5, step: 0.05, f: v => `${Math.round(v * 100)}% of fleet/qtr` }, { k: 'targetUtil', l: 'Utilisation labs build toward', min: 0.5, max: 1, step: 0.05, f: fm.pctf },
+    { k: 'fin', l: 'Financing sensitivity to markets', min: 0, max: 2, step: 0.1, f: fm.x1 } ] },
+];
+const CTL = Object.fromEntries(CONTROLS.flatMap(g => g.items).map(i => [i.k, i]));
+
+function fmtMoney(v) { if (!isFinite(v)) return '—'; if (Math.abs(v) < 0.05) return '$0'; const a = Math.abs(v); if (a >= 10000) return `$${(v / 1000).toFixed(0)}T`; if (a >= 1000) return `$${(v / 1000).toFixed(1)}T`; if (a >= 10) return `$${v.toFixed(0)}B`; return `$${v.toFixed(1)}B`; }
+function fmtWork(h) { if (h == null) return '—'; if (h < 8) return `${h.toFixed(1)} h`; if (h < 40) return `${(h / 8).toFixed(1)} days`; if (h < 167) return `${(h / 40).toFixed(1)} wks`; if (h < 2000) return `${(h / 167).toFixed(1)} mos`; if (h < 20000) return `${(h / 2000).toFixed(1)} yrs`; return `${(h / 2000).toFixed(0)} yrs`; }
+const fmtPct = v => `${Math.round(v * 100)}%`; const sgn = v => (v > 0 ? '+' : '') + v;
+const fmtDate = d => d ? new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+function niceMax(v) { if (v <= 0) return 1; const e = Math.pow(10, Math.floor(Math.log10(v))); const m = v / e; const n = m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10; return n * e; }
+function ticks(max, n = 4) { const step = niceMax(max / n); const out = []; for (let v = 0; v <= max + 1e-9; v += step) out.push(v); return out; }
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs = {}, children = []) { const e = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); for (const c of children) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); return e; }
+function h(tag, attrs = {}, children = []) { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k === 'text') e.textContent = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); } for (const c of [].concat(children)) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); return e; }
+const daysAgo = d => d ? Math.round((new Date(DATA.generated_at) - new Date(d)) / 86400000) : 9999;
+
+// ---------- state & url ----------
+const state = { p: { ...DEFAULTS }, e: [], mc: false, q: Math.min(5, T - 1), pinned: null, hoverT: null, from: 'base' };
+function encodeState() { const diff = {}; for (const k of Object.keys(DEFAULTS)) if (state.p[k] !== DEFAULTS[k]) diff[k] = state.p[k]; const s = JSON.stringify({ p: diff, e: state.e, mc: state.mc ? 1 : 0, q: state.q, f: state.from, q0: Q0 }); return btoa(unescape(encodeURIComponent(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+function decodeState(str) { try { const o = JSON.parse(decodeURIComponent(escape(atob(str.replace(/-/g, '+').replace(/_/g, '/'))))); const p = { ...DEFAULTS }; for (const [k, v] of Object.entries(o.p || {})) if (k in DEFAULTS && typeof v === 'number' && isFinite(v)) p[k] = v; const shift = o.q0 ? qDiff(o.q0, Q0) : 0; const e = (o.e || []).filter(x => EVENTS[x.type] && Number.isInteger(x.t) && typeof x.v === 'number').map(x => ({ type: x.type, t: x.t + shift, v: x.v, dur: x.dur })).filter(x => x.t >= 0 && x.t < T); return { p, e, mc: !!o.mc, q: Number.isInteger(o.q) ? Math.max(0, Math.min(T - 1, o.q)) : 5, from: PRESETS.some(pr => pr.id === o.f) ? o.f : 'base' }; } catch { return null; } }
+function loadFromHash() { const m = location.hash.match(/s=([A-Za-z0-9_-]+)/); if (!m) return false; const s = decodeState(m[1]); if (!s) return false; Object.assign(state, s); return true; }
+
+// ---------- rail ----------
+function buildRail() {
+  const rail = $('#rail'); rail.textContent = '';
+  CONTROLS.forEach((grp, gi) => {
+    const det = h('details', { class: 'group' }); if (gi < 3) det.open = true; det.appendChild(h('summary', { text: grp.g }));
+    const body = h('div', { class: 'body' }); if (grp.hint) body.appendChild(h('p', { class: 'hint', text: grp.hint }));
+    for (const it of grp.items) { const id = 'c_' + it.k; const wrap = h('div', { class: 'ctl' + (it.seg ? ' seg' : '') }); if (it.seg) wrap.style.setProperty('--seg', `var(${SEG_META[it.seg].v})`); const lab = h('label', { for: id, text: it.l }); const val = h('span', { class: 'val', id: 'v_' + it.k }); const inp = h('input', { type: 'range', id, min: it.min, max: it.max, step: it.step }); inp.value = state.p[it.k]; inp.addEventListener('input', () => { state.p[it.k] = parseFloat(inp.value); val.textContent = it.f(state.p[it.k]); schedule(); }); wrap.append(lab, val, inp); if (it.sub) wrap.appendChild(h('span', { class: 'sub', text: it.sub })); body.appendChild(wrap); }
+    det.appendChild(body); rail.appendChild(det);
+  });
+  const foot = h('div', { class: 'railfoot' }); foot.append('Defaults are refreshed daily by the pipeline; hidden constants are listed under “How it works”. '); foot.appendChild(h('button', { type: 'button', text: 'Reset to today’s defaults', onclick: () => applyPreset(PRESETS.find(p => p.id === 'base')) })); rail.appendChild(foot);
+  syncRail();
+}
+function syncRail() { for (const it of Object.values(CTL)) { const inp = document.getElementById('c_' + it.k); if (inp) { inp.value = state.p[it.k]; document.getElementById('v_' + it.k).textContent = it.f(state.p[it.k]); } } }
+
+// ---------- presets ----------
+function buildPresets() { const box = $('#presets'); box.textContent = ''; for (const camp of Object.keys(CAMPS)) { const list = PRESETS.filter(x => x.camp === camp); if (!list.length) continue; const grp = h('div', { class: 'scen-group', role: 'group', 'aria-label': CAMPS[camp] + ' scenarios' }); grp.appendChild(h('span', { class: 'eyebrow', text: CAMPS[camp] })); for (const pr of list) grp.appendChild(h('button', { class: 'chip ' + camp, type: 'button', 'data-id': pr.id, 'aria-pressed': 'false', onclick: () => applyPreset(pr) }, [h('span', { class: 'cd' }), pr.name])); box.appendChild(grp); } }
+function applyPreset(pr) { state.p = { ...DEFAULTS, ...pr.p }; state.e = pr.e.map(e => ({ type: e.type, t: e.t, v: e.v, dur: e.dur })); state.from = pr.id; syncRail(); render(); }
+function presetMatch() { return PRESETS.find(pr => { const p = { ...DEFAULTS, ...pr.p }; if (Object.keys(DEFAULTS).some(k => Math.abs(p[k] - state.p[k]) > 1e-9)) return false; if (pr.e.length !== state.e.length) return false; return pr.e.every((e, i) => { const s = state.e[i]; return s && s.type === e.type && s.t === e.t && s.v === e.v && (s.dur || 1) === (e.dur || 1); }); }); }
+function describeEvents(evs) { return evs.map(e => { const d = EVENTS[e.type]; return `${d.name}: ${d.short(e.v)} at ${qLabel(e.t)}${d.lasting ? ` for ${e.dur}q` : ''}`; }); }
+function renderView(match) {
+  const box = $('#viewBox'); box.textContent = ''; const pr = match || PRESETS.find(x => x.id === state.from) || PRESETS[0];
+  box.appendChild(h('span', { class: 'pill ' + pr.camp, text: match ? CAMPS[pr.camp] : 'Custom' }));
+  const who = h('div', { class: 'who' }); who.appendChild(h('span', { class: 'name', text: match ? pr.name : `Adapted from “${pr.name}”` })); if (pr.who) who.appendChild(h('span', { class: 'att', text: ` · ${pr.who}${pr.when ? ' · ' + pr.when : ''}` })); box.appendChild(who);
+  box.appendChild(h('p', { text: match ? pr.thesis : 'You have moved sliders or shocks away from the preset. Copy the link to keep this exact scenario, or pick a preset to return to a documented view.' }));
+  const overrides = Object.entries(pr.p || {}).map(([k, v]) => `${CTL[k] ? CTL[k].l : k} ${CTL[k] ? CTL[k].f(v) : v}`);
+  const src = h('div', { class: 'src' }); src.append('Differs from base: ' + (overrides.length || pr.e.length ? [...overrides, ...describeEvents(pr.e)].join(' · ') : 'nothing, this is the base')); if (pr.src && match) { src.append(' · '); src.appendChild(h('a', { href: pr.src, target: '_blank', rel: 'noopener', text: 'source' })); } box.appendChild(src);
+}
+
+// ---------- render ----------
+let raf = null; function schedule() { if (raf) return; raf = requestAnimationFrame(() => { raf = null; render(); }); }
+let last = null;
+function render() {
+  const rows = simulate(state.p, state.e, null, T);
+  const cf = simulate({ ...state.p, k_rd: 0, k_swe: 0, k_trd: 0, k_oth: 0 }, state.e, null, T);
+  const mc = state.mc ? monteCarlo(state.p, state.e, T) : null;
+  last = { rows, cf, mc };
+  const match = presetMatch(); if (match) state.from = match.id;
+  document.querySelectorAll('#presets .chip').forEach(c => c.setAttribute('aria-pressed', String(!!match && c.dataset.id === match.id)));
+  $('#btnMC').setAttribute('aria-pressed', String(state.mc));
+  $('#btnPin').textContent = ''; $('#btnPin').append(h('span', { class: 'dot' }), state.pinned ? 'Unpin baseline' : 'Pin as baseline'); $('#btnPin').setAttribute('aria-pressed', String(!!state.pinned));
+  renderView(match); renderHero(rows, cf, mc); renderMain(rows, mc); renderTable(rows); renderMultiples(rows); renderLoop(rows); renderStrip(); renderEvList(); renderUnderpin(match);
+  history.replaceState(null, '', '#s=' + encodeState());
+}
+function renderHero(rows, cf, mc) {
+  const rA = rows[A].revenue, rB = rows[B].revenue;
+  $('#heroLabel').textContent = `Frontier token revenue · run-rate at ${qLabel(A)}`;
+  $('#heroVal').textContent = fmtMoney(rA);
+  $('#heroRange').textContent = mc ? `p10–p90 across 240 paths: ${fmtMoney(mc.revP10[A])} – ${fmtMoney(mc.revP90[A])}` : `${fmtMoney(rows[0].revenue)} now → ${fmtMoney(rows[Math.min(4, T - 1)].revenue)} in a year → ${fmtMoney(rA)} in two`;
+  const hd = $('#heroDelta'); hd.textContent = '';
+  if (state.pinned) { const d = rA - state.pinned.rA; const pc = state.pinned.rA ? d / state.pinned.rA : 0; hd.append(h('span', { class: d >= 0 ? 'up' : 'down', text: `${d >= 0 ? '+' : '−'}${fmtMoney(Math.abs(d))} (${sgn(Math.round(pc * 100))}%)` }), ` vs pinned baseline (${fmtMoney(state.pinned.rA)})`); } else hd.textContent = 'Pin a baseline to compare scenarios side by side.';
+  const { dd, at } = drawdown(rows); const refl = rA > 0 ? Math.max(0, 1 - cf[A].revenue / rA) : 0; const util = rows[A].util; const capex = rows.reduce((a, r) => a + r.capex, 0);
+  const tiles = [
+    { l: `Run-rate at ${qLabel(B)}`, v: fmtMoney(rB), s: `${(rB / Math.max(1e-9, rows[0].revenue)).toFixed(1)}× today’s revenue` },
+    { l: 'Peak-to-trough drawdown', v: dd < 0.005 ? 'none' : `−${Math.round(dd * 100)}%`, tag: dd >= 0.25 ? ['bad', 'bust'] : dd > 0.05 ? ['warn', 'correction'] : null, s: mc ? `P(≥25% drawdown) ${Math.round(mc.pBust * 100)}% across paths` : dd > 0.005 ? `trough at ${qLabel(at)}` : 'realised revenue never falls' },
+    { l: `Reflexive share at ${qLabel(A)}`, v: fmtPct(refl), s: `${fmtMoney(cf[A].revenue)} with every loop gain at 0` },
+    { l: `Capacity utilisation at ${qLabel(A)}`, v: fmtPct(util), tag: util > 1.0 ? ['warn', 'rationed'] : util < 0.6 ? ['warn', 'overbuilt'] : null, s: `${rows[A].K.toFixed(0)} GW online · ceiling ${fmtMoney(rows[A].cap)}` },
+    { l: `Compute committed to ${qLabel(B)}`, v: fmtMoney(capex), s: `${rows[B].K.toFixed(0)} GW online by then` },
+    { l: `Task horizon at ${qLabel(A)}`, v: fmtWork(rows[A].H), s: `80% success · ${fmtWork(rows[B].H)} by ${qLabel(B)}` },
+  ];
+  const box = $('#kpis'); box.textContent = '';
+  for (const tl of tiles) { const v = h('div', { class: 'v', text: tl.v }); if (tl.tag) v.appendChild(h('span', { class: 'tag ' + tl.tag[0], text: tl.tag[1] })); box.appendChild(h('div', { class: 'kpi' }, [h('div', { class: 'l', text: tl.l }), v, h('div', { class: 's', text: tl.s })])); }
+}
+
+// ---------- main chart ----------
+const HISTORY = DATA.history.map(hh => ({ ...hh, t: qDiff(hh.q, Q0) })).filter(hh => hh.t < 0 && hh.t >= -HIST).sort((a, b) => a.t - b.t);
+function renderMain(rows, mc) {
+  const box = $('#mainChart'); const W = Math.max(320, box.clientWidth || 800); const HH = 340; const m = { l: 54, r: 20, t: 18, b: 30 }; const w = W - m.l - m.r, hh = HH - m.t - m.b;
+  const t0 = -HIST, t1 = T - 1; const x = t => m.l + (t - t0) / (t1 - t0) * w;
+  const maxDem = Math.max(...rows.map(r => r.demand), mc ? Math.max(...mc.p90) : 0, state.pinned ? Math.max(...state.pinned.demand) : 0, ...HISTORY.map(hh => hh.revenue));
+  const maxCap = Math.max(...rows.map(r => r.cap)); const yMax = niceMax(Math.max(maxDem * 1.12, Math.min(maxCap * 1.05, maxDem * 2.2))); const y = v => m.t + hh - Math.min(v, yMax) / yMax * hh;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${HH}`, width: W, height: HH, role: 'img', 'aria-label': 'Demand by segment' });
+  const grid = el('g', { class: 'grid' }); const axis = el('g', { class: 'axis' });
+  for (const v of ticks(yMax)) { grid.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v) })); axis.appendChild(el('text', { x: m.l - 8, y: y(v) + 4, 'text-anchor': 'end' }, [fmtMoney(v)])); }
+  svg.append(grid);
+  for (let t = t0; t <= t1; t++) if (qNum(t) === 1) { axis.appendChild(el('text', { x: x(t), y: HH - 8, 'text-anchor': 'middle' }, [String(yearOf(t))])); grid.appendChild(el('line', { x1: x(t), x2: x(t), y1: m.t, y2: m.t + hh, opacity: 0.6 })); }
+  svg.appendChild(el('rect', { x: m.l, y: m.t, width: x(0) - m.l, height: hh, fill: 'var(--ink)', opacity: 0.035 }));
+  if (mc) { const d = rows.map((r, i) => `${i ? 'L' : 'M'}${x(i)},${y(mc.p90[i])}`).join(' ') + ' ' + rows.map((r, i) => `L${x(T - 1 - i)},${y(mc.p10[T - 1 - i])}`).join(' ') + 'Z'; svg.appendChild(el('path', { d, fill: 'var(--band)' })); }
+  let base = rows.map(() => 0); const areas = el('g'); const seams = el('g');
+  for (const s of SEGS) { const top = rows.map((r, i) => base[i] + r.S[s]); const d = rows.map((r, i) => `${i ? 'L' : 'M'}${x(i)},${y(top[i])}`).join(' ') + ' ' + rows.map((r, i) => `L${x(T - 1 - i)},${y(base[T - 1 - i])}`).join(' ') + 'Z'; areas.appendChild(el('path', { d, fill: `var(${SEG_META[s].soft})` })); seams.appendChild(el('path', { d: rows.map((r, i) => `${i ? 'L' : 'M'}${x(i)},${y(top[i])}`).join(' '), fill: 'none', stroke: 'var(--surface)', 'stroke-width': 2 })); base = top; }
+  svg.append(areas, seams);
+  if (HISTORY.length) { const pts = [...HISTORY.map(hh => [x(hh.t), y(hh.revenue)]), [x(0), y(rows[0].revenue)]]; svg.appendChild(el('path', { d: pts.map((p, i) => `${i ? 'L' : 'M'}${p[0]},${p[1]}`).join(' '), fill: 'none', stroke: 'var(--ink)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' })); for (const hh of HISTORY) svg.appendChild(el('circle', { cx: x(hh.t), cy: y(hh.revenue), r: 3.5, fill: hh.provisional ? 'var(--surface)' : 'var(--ink)', stroke: 'var(--ink)', 'stroke-width': 2 })); }
+  if (state.pinned) svg.appendChild(el('path', { d: state.pinned.demand.map((v, i) => `${i ? 'L' : 'M'}${x(i)},${y(v)}`).join(' '), fill: 'none', stroke: 'var(--ink-3)', 'stroke-width': 2, 'stroke-linejoin': 'round' }));
+  svg.appendChild(el('path', { d: rows.map((r, i) => `${i ? 'L' : 'M'}${x(i)},${y(r.cap)}`).join(' '), fill: 'none', stroke: 'var(--ink)', 'stroke-width': 2, 'stroke-dasharray': '6 4', 'stroke-linejoin': 'round' }));
+  const capEnd = rows[T - 1].cap; svg.appendChild(el('text', { x: x(T - 1) - 4, y: y(capEnd) - 6, 'text-anchor': 'end', fill: 'var(--ink-2)', 'font-size': 11 }, [capEnd > yMax ? 'capacity ↑ off chart' : 'capacity ceiling']));
+  const endTot = rows[T - 1].demand; svg.appendChild(el('text', { x: x(T - 1) - 4, y: y(endTot) + (endTot < capEnd ? 14 : -6), 'text-anchor': 'end', fill: 'var(--ink)', 'font-size': 11, 'font-weight': 600 }, [fmtMoney(endTot)]));
+  svg.appendChild(el('line', { x1: x(0), x2: x(0), y1: m.t, y2: m.t + hh, stroke: 'var(--ink-2)', 'stroke-width': 1 })); svg.appendChild(el('text', { x: x(0) + 4, y: m.t + 10, fill: 'var(--ink-2)', 'font-size': 10.5 }, [`now · ${qLabel(0)}`]));
+  for (const ev of (DATA.events || [])) { const t = qDiff(ev.q, Q0); if (t < t0 || t > t1) continue; svg.appendChild(el('path', { d: `M${x(t) - 5},${m.t + hh + 1} l10,0 l-5,-7 z`, fill: 'var(--ink-3)' })); }
+  for (const e of state.e) { svg.appendChild(el('line', { x1: x(e.t), x2: x(e.t), y1: m.t, y2: m.t + hh, stroke: 'var(--ink-3)', 'stroke-width': 1, 'stroke-dasharray': '2 3' })); svg.appendChild(el('path', { d: `M${x(e.t) - 5},${m.t + hh + 1} l10,0 l-5,-7 z`, fill: 'var(--ink-2)' })); }
+  svg.appendChild(el('line', { class: 'base', x1: m.l, x2: W - m.r, y1: m.t + hh, y2: m.t + hh })); svg.appendChild(axis);
+  const cross = el('line', { x1: 0, x2: 0, y1: m.t, y2: m.t + hh, stroke: 'var(--ink-2)', 'stroke-width': 1, visibility: 'hidden' }); svg.appendChild(cross); const dots = el('g'); svg.appendChild(dots);
+  const hover = el('rect', { class: 'hover', x: m.l, y: m.t, width: w, height: hh, fill: 'transparent' }); svg.appendChild(hover);
+  box.textContent = ''; box.appendChild(svg); const tip = h('div', { class: 'tip' }); box.appendChild(tip);
+  const row = (v, n, c, dash) => { const k = h('span', { class: 'key' + (dash ? ' dash' : '') }); k.style.setProperty('--c', c); tip.appendChild(h('div', { class: 'row' }, [k, h('span', { class: 'v', text: v }), h('span', { class: 'n', text: n })])); };
+  const show = t => {
+    state.hoverT = t; cross.setAttribute('x1', x(t)); cross.setAttribute('x2', x(t)); cross.setAttribute('visibility', 'visible'); dots.textContent = ''; tip.textContent = '';
+    if (t < 0) { const hh2 = HISTORY.find(z => z.t === t); const head = h('div', { class: 'h' }); head.append(h('span', { text: qLabel(t) }), h('span', { text: 'actual' })); tip.appendChild(head); if (hh2) { row(fmtMoney(hh2.revenue), hh2.provisional ? 'frontier revenue (provisional)' : 'frontier revenue run-rate', 'var(--ink)'); if (hh2.K) row(`${hh2.K} GW`, 'frontier compute online (est.)', 'var(--ink-3)'); if (hh2.H) row(fmtWork(hh2.H), '80% task horizon', 'var(--ink-3)'); dots.appendChild(el('circle', { cx: x(t), cy: y(hh2.revenue), r: 4.5, fill: 'var(--ink)', stroke: 'var(--surface)', 'stroke-width': 2 })); } else row('—', 'no data', 'var(--ink-3)'); }
+    else { const r = rows[t]; let acc = 0; for (const s of SEGS) { acc += r.S[s]; dots.appendChild(el('circle', { cx: x(t), cy: y(acc), r: 4.5, fill: `var(${SEG_META[s].v})`, stroke: 'var(--surface)', 'stroke-width': 2 })); }
+      const head = h('div', { class: 'h' }); head.append(h('span', { text: qLabel(t) }), h('span', { text: `q/q ${sgn(Math.round(r.gR * 100))}%` })); tip.appendChild(head);
+      for (const s of [...SEGS].reverse()) row(fmtMoney(r.S[s]), SEG_META[s].name, `var(${SEG_META[s].v})`);
+      row(fmtMoney(r.demand), 'total demand', 'var(--ink)'); row(fmtMoney(r.cap), `capacity · ${fmtPct(r.util)} used`, 'var(--ink)', true); if (r.unmet > 0.5) row(fmtMoney(r.unmet), 'demand not served', 'var(--ink-3)');
+      if (mc) row(`${fmtMoney(mc.p10[t])}–${fmtMoney(mc.p90[t])}`, 'p10–p90 band', 'var(--band)'); if (state.pinned) row(fmtMoney(state.pinned.demand[t]), 'pinned baseline', 'var(--ink-3)');
+      const evs = state.e.filter(e => e.t === t); if (evs.length) { const d = h('div', { class: 'ev' }); d.append('Shock: '); d.appendChild(h('b', { text: evs.map(e => EVENTS[e.type].name).join(', ') })); tip.appendChild(d); } }
+    tip.classList.add('show'); const bw = box.clientWidth; const px = x(t) / W * bw; const tw = tip.offsetWidth || 200; tip.style.left = `${px + 14 + tw > bw ? px - tw - 14 : px + 14}px`; tip.style.top = `${m.t + 6}px`;
+  };
+  const hide = () => { cross.setAttribute('visibility', 'hidden'); dots.textContent = ''; tip.classList.remove('show'); state.hoverT = null; };
+  hover.addEventListener('pointermove', ev => { const rect = svg.getBoundingClientRect(); const px = (ev.clientX - rect.left) / rect.width * W; const t = Math.max(t0, Math.min(t1, Math.round(t0 + (px - m.l) / w * (t1 - t0)))); show(t); });
+  hover.addEventListener('pointerleave', hide);
+  box.onkeydown = ev => { if (ev.key === 'ArrowRight' || ev.key === 'ArrowLeft') { ev.preventDefault(); const t = state.hoverT == null ? (ev.key === 'ArrowRight' ? 0 : T - 1) : Math.max(t0, Math.min(t1, state.hoverT + (ev.key === 'ArrowRight' ? 1 : -1))); show(t); } else if (ev.key === 'Escape') hide(); };
+  box.onblur = hide;
+  const leg = $('#mainLegend'); leg.textContent = ''; const tot0 = rows[0].demand || 1;
+  if (HISTORY.length) leg.appendChild(h('span', { class: 'k' }, [h('span', { class: 'hist' }), 'actual revenue']));
+  for (const s of SEGS) { const sw = h('span', { class: 'sw' }); sw.style.setProperty('--c', `var(${SEG_META[s].v})`); leg.appendChild(h('span', { class: 'k' }, [sw, SEG_META[s].name, h('span', { class: 'share', text: `${Math.round(rows[0].S[s] / tot0 * 100)}% → ${Math.round(rows[A].S[s] / rows[A].demand * 100)}%` })])); }
+  leg.appendChild(h('span', { class: 'k' }, [h('span', { class: 'ln' }), 'monetisable capacity'])); if (state.pinned) leg.appendChild(h('span', { class: 'k' }, [h('span', { class: 'ln solid' }), 'pinned baseline'])); if (mc) leg.appendChild(h('span', { class: 'k' }, [h('span', { class: 'band' }), 'p10–p90 of 240 paths']));
+}
+function renderTable(rows) {
+  const box = $('#mainTable'); box.textContent = ''; const tbl = h('table'); const tr = h('tr'); for (const c of ['Quarter', ...SEGS.map(s => SEG_META[s].name), 'Demand', 'Capacity', 'Realised', 'Util.', 'Horizon', 'Markets', 'Capex/qtr', 'GW']) tr.appendChild(h('th', { text: c })); tbl.appendChild(h('thead', {}, [tr])); const tb = h('tbody');
+  for (const hh of HISTORY) { const r = h('tr'); for (const c of [qLabel(hh.t) + (hh.provisional ? ' ~' : ''), '', '', '', '', fmtMoney(hh.revenue), '', fmtMoney(hh.revenue), '', fmtWork(hh.H), '', '', hh.K ?? '']) r.appendChild(h('td', { text: String(c) })); tb.appendChild(r); }
+  for (const r of rows) { const row = h('tr'); for (const c of [qLabel(r.t), ...SEGS.map(s => fmtMoney(r.S[s])), fmtMoney(r.demand), fmtMoney(r.cap), fmtMoney(r.revenue), fmtPct(r.util), fmtWork(r.H), r.M.toFixed(2), fmtMoney(r.capex), r.K.toFixed(1)]) row.appendChild(h('td', { text: c })); tb.appendChild(row); }
+  tbl.appendChild(tb); box.appendChild(tbl);
+}
+
+// ---------- small multiples ----------
+function mini(box, vals, o) {
+  const W = Math.max(200, box.clientWidth || 260), HH = 128; const m = { l: 8, r: o.rightPad || 44, t: 12, b: 18 }; const w = W - m.l - m.r, hh = HH - m.t - m.b; const x = t => m.l + t / (T - 1) * w; const tr = o.log ? Math.log10 : (v => v);
+  let lo = o.lo != null ? o.lo : Math.min(...vals), hi = o.hi != null ? o.hi : Math.max(...vals); if (o.log) { lo = Math.log10(Math.max(1e-6, lo)); hi = Math.log10(hi); } if (hi - lo < 1e-9) hi = lo + 1; const y = v => m.t + hh - (tr(v) - lo) / (hi - lo) * hh;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${HH}`, width: W, height: HH }); const refs = el('g', { class: 'ref' });
+  for (const rf of (o.refs || [])) { if (tr(rf.v) < lo || tr(rf.v) > hi) continue; refs.appendChild(el('line', { x1: m.l, x2: m.l + w, y1: y(rf.v), y2: y(rf.v) })); refs.appendChild(el('text', { x: m.l + 3, y: y(rf.v) - 3 }, [rf.l])); }
+  svg.appendChild(refs);
+  if (o.bars) { const bw = Math.min(24, w / T - 2); for (let i = 0; i < T; i++) { const v = vals[i]; if (v <= 0) continue; const yy = y(v), y0 = y(Math.max(lo, 0)); svg.appendChild(el('rect', { x: x(i) - bw / 2, y: yy, width: bw, height: Math.max(0, y0 - yy), rx: 2, fill: 'var(--ink-2)' })); } }
+  else { const line = vals.map((v, i) => `${i ? 'L' : 'M'}${x(i)},${y(v)}`).join(' '); svg.appendChild(el('path', { d: line + ` L${x(T - 1)},${m.t + hh} L${x(0)},${m.t + hh} Z`, fill: 'var(--ink)', opacity: 0.07 })); svg.appendChild(el('path', { d: line, fill: 'none', stroke: 'var(--ink)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' })); svg.appendChild(el('circle', { cx: x(T - 1), cy: y(vals[T - 1]), r: 4, fill: 'var(--ink)', stroke: 'var(--surface)', 'stroke-width': 2 })); }
+  svg.appendChild(el('line', { x1: m.l, x2: m.l + w, y1: m.t + hh, y2: m.t + hh, stroke: 'var(--line)' }));
+  svg.appendChild(el('text', { x: m.l, y: HH - 5, 'text-anchor': 'start', fill: 'var(--ink-3)', 'font-size': 10 }, [`’${String(yearOf(0)).slice(2)}`])); svg.appendChild(el('text', { x: m.l + w, y: HH - 5, 'text-anchor': 'end', fill: 'var(--ink-3)', 'font-size': 10 }, [`’${String(yearOf(T - 1)).slice(2)}`]));
+  svg.appendChild(el('text', { x: x(T - 1) + (o.bars ? 0 : 8), y: y(vals[T - 1]) + (o.bars ? -6 : 4), 'text-anchor': o.bars ? 'middle' : 'start', fill: 'var(--ink)', 'font-size': 11, 'font-weight': 600 }, [o.f(vals[T - 1])]));
+  const cross = el('line', { y1: m.t, y2: m.t + hh, stroke: 'var(--ink-2)', visibility: 'hidden' }); svg.appendChild(cross); const hover = el('rect', { class: 'hover', x: m.l, y: m.t, width: w, height: hh, fill: 'transparent' }); svg.appendChild(hover);
+  box.textContent = ''; box.appendChild(svg); const tip = h('div', { class: 'tip' }); tip.style.minWidth = '120px'; box.appendChild(tip);
+  hover.addEventListener('pointermove', ev => { const rect = svg.getBoundingClientRect(); const px = (ev.clientX - rect.left) / rect.width * W; const t = Math.max(0, Math.min(T - 1, Math.round((px - m.l) / w * (T - 1)))); cross.setAttribute('x1', x(t)); cross.setAttribute('x2', x(t)); cross.setAttribute('visibility', 'visible'); tip.textContent = ''; const head = h('div', { class: 'h' }); head.append(h('span', { text: qLabel(t) })); tip.append(head, h('div', { class: 'row' }, [h('span', { class: 'v', text: o.f(vals[t]) }), h('span', { class: 'n', text: o.name })])); tip.classList.add('show'); const bw = box.clientWidth; const pxx = x(t) / W * bw; const tw = tip.offsetWidth || 140; tip.style.left = `${pxx + 10 + tw > bw ? pxx - tw - 10 : pxx + 10}px`; tip.style.top = '0px'; });
+  hover.addEventListener('pointerleave', () => { cross.setAttribute('visibility', 'hidden'); tip.classList.remove('show'); });
+}
+function renderMultiples(rows) {
+  mini($('#mHorizon'), rows.map(r => r.H), { log: true, f: fmtWork, name: 'task horizon (80%)', refs: [{ v: 8, l: 'day' }, { v: 40, l: 'week' }, { v: 167, l: 'month' }, { v: 2000, l: 'year' }, { v: 20000, l: 'decade' }], rightPad: 48, lo: Math.min(...rows.map(r => r.H)) * 0.7, hi: Math.max(...rows.map(r => r.H)) * 1.6 });
+  const Ms = rows.map(r => r.M); mini($('#mMarket'), Ms, { f: v => v.toFixed(2), name: 'market index', refs: [{ v: 1, l: 'neutral' }], lo: Math.min(0.6, Math.min(...Ms) * 0.95), hi: Math.max(1.4, Math.max(...Ms) * 1.05), rightPad: 40 });
+  const cx = rows.map(r => r.capex); mini($('#mCapex'), cx, { bars: true, f: fmtMoney, name: 'capex committed', lo: 0, hi: Math.max(1, Math.max(...cx)) * 1.25, rightPad: 12 });
+  const us = rows.map(r => r.util); mini($('#mUtil'), us, { f: fmtPct, name: 'utilisation', refs: [{ v: 1, l: '100%' }], lo: 0, hi: Math.max(1.3, Math.max(...us) * 1.15), rightPad: 44 });
+}
+
+// ---------- loop ----------
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+function renderLoop(rows) {
+  const t = Math.min(state.q, T - 1); const r = rows[t]; $('#loopQ').textContent = qLabel(t); const sc = $('#loopScrub'); sc.max = T - 1; sc.value = t;
+  const tot = r.demand || 1; const kw = SEGS.reduce((a, s) => a + state.p['k_' + s] * r.S[s] / tot, 0); const mult = 1 / (1 - Math.min(kw, 0.99)); const half = kw > 0 && kw < 1 ? Math.log(0.5) / Math.log(kw) : (kw >= 1 ? Infinity : 0);
+  const gAgg = r.gR; const regime = gAgg < 0 ? 'bust' : (r.M < 0.9 || gAgg < 0.05) ? 'cooling' : 'boom';
+  const box = $('#loopSvg'); box.textContent = ''; const C = 220, R = 148; const svg = el('svg', { class: 'loop-svg', viewBox: '0 0 440 440', role: 'img', 'aria-label': 'Reflexive loop with animated particles per segment' });
+  const circ = `M ${C} ${C - R} A ${R} ${R} 0 1 1 ${C} ${C + R} A ${R} ${R} 0 1 1 ${C} ${C - R}`; svg.appendChild(el('path', { class: 'ring', d: circ }));
+  const dirArrow = regime === 'bust' ? -1 : 1; for (const a of [45, 135, 225, 315]) { const rad = a * Math.PI / 180; svg.appendChild(el('path', { class: 'arrow', d: 'M-5,-6 L5,0 L-5,6 Z', transform: `translate(${C + R * Math.cos(rad)},${C + R * Math.sin(rad)}) rotate(${a + 90 * dirArrow})` })); }
+  const pg = el('g'); svg.appendChild(pg);
+  for (const n of [{ a: -90, t: 'Tokens spent', s: 'frontier API & compute' }, { a: 0, t: 'Output', s: 'models · code · P&L' }, { a: 90, t: 'Capital', s: 'valuations · funding' }, { a: 180, t: 'Budgets', s: 'next quarter’s tokens' }]) { const rad = n.a * Math.PI / 180; const px = C + R * Math.cos(rad), py = C + R * Math.sin(rad); const g = el('g', { class: 'node' }); g.appendChild(el('rect', { x: px - 60, y: py - 20, width: 120, height: 40, rx: 5 })); g.appendChild(el('text', { x: px, y: py - 3, 'text-anchor': 'middle' }, [n.t])); g.appendChild(el('text', { class: 'sub', x: px, y: py + 12, 'text-anchor': 'middle' }, [n.s])); svg.appendChild(g); }
+  const motion = !reduceMotion.matches; let seed = 0;
+  for (const s of SEGS) { const share = r.S[s] / tot; const n = Math.max(1, Math.round(1 + 9 * share)); const gs = r.g[s]; const dur = Math.max(1.6, Math.min(30, 12 / (0.4 + 5 * Math.abs(gs)))); const rev = gs < 0; for (let i = 0; i < n; i++) { const c = el('circle', { r: 5, fill: `var(${SEG_META[s].v})`, stroke: 'var(--surface)', 'stroke-width': 2 }); const off = ((seed * 0.37) % 1); seed++; if (motion) c.appendChild(el('animateMotion', { dur: `${dur.toFixed(2)}s`, repeatCount: 'indefinite', begin: `-${(off * dur).toFixed(2)}s`, path: circ, keyPoints: rev ? '1;0' : '0;1', keyTimes: '0;1', calcMode: 'linear' })); else { const ang = (off * 360 - 90) * Math.PI / 180; c.setAttribute('cx', C + R * Math.cos(ang)); c.setAttribute('cy', C + R * Math.sin(ang)); } pg.appendChild(c); } }
+  const gg = el('g', { class: 'gauge' }); const gr = 66, gc = { x: C, y: C + 18 }; const arc = (a0, a1) => { const p0 = [gc.x + gr * Math.cos(a0), gc.y + gr * Math.sin(a0)], p1 = [gc.x + gr * Math.cos(a1), gc.y + gr * Math.sin(a1)]; return `M${p0[0]},${p0[1]} A${gr},${gr} 0 0 1 ${p1[0]},${p1[1]}`; }; const Aa = k => Math.PI + k * Math.PI;
+  gg.appendChild(el('path', { class: 'zone', d: arc(Aa(0), Aa(0.5)), stroke: 'var(--surface-3)' })); gg.appendChild(el('path', { class: 'zone', d: arc(Aa(0.5), Aa(0.8)), stroke: 'var(--ink-3)' })); gg.appendChild(el('path', { class: 'zone', d: arc(Aa(0.8), Aa(1)), stroke: 'var(--bad)' }));
+  const na = Aa(Math.min(1, kw)); gg.appendChild(el('line', { class: 'needle', x1: gc.x, y1: gc.y, x2: gc.x + (gr - 10) * Math.cos(na), y2: gc.y + (gr - 10) * Math.sin(na) })); gg.appendChild(el('circle', { cx: gc.x, cy: gc.y, r: 3.5, fill: 'var(--ink)' }));
+  for (const [k, l] of [[0, '0'], [0.5, '0.5'], [0.8, '0.8'], [1, '1']]) { const a = Aa(k); gg.appendChild(el('text', { x: gc.x + (gr + 12) * Math.cos(a), y: gc.y + (gr + 12) * Math.sin(a) + 3, 'text-anchor': 'middle', fill: 'var(--ink-3)', 'font-size': 9.5, 'font-family': 'var(--mono)' }, [l])); }
+  svg.appendChild(gg); const ctr = el('g', { class: 'center' }); ctr.appendChild(el('text', { class: 'n', x: C, y: C + 8, 'text-anchor': 'middle' }, [kw.toFixed(2)])); ctr.appendChild(el('text', { class: 'l', x: C, y: C + 46, 'text-anchor': 'middle' }, ['weighted loop gain'])); ctr.appendChild(el('text', { class: 'm', x: C, y: C + 66, 'text-anchor': 'middle' }, [`×${mult.toFixed(1)} growth multiplier`])); ctr.appendChild(el('text', { class: 'm', x: C, y: C + 84, 'text-anchor': 'middle' }, [half === Infinity ? 'shocks never fade' : half > 0 ? `shock half-life ${half.toFixed(1)} qtrs` : 'shocks vanish next quarter'])); svg.appendChild(ctr); box.appendChild(svg);
+  const tb = $('#gains'); tb.textContent = ''; for (const s of SEGS) { const k = state.p['k_' + s]; const tr = h('tr'); const sw = h('span', { class: 'sw' }); sw.style.setProperty('--c', `var(${SEG_META[s].v})`); tr.appendChild(h('td', {}, [sw, SEG_META[s].name])); tr.appendChild(h('td', { text: fmtPct(r.S[s] / tot) })); tr.appendChild(h('td', { text: k.toFixed(2) })); tr.appendChild(h('td', { text: `×${(1 / (1 - Math.min(k, 0.99))).toFixed(1)}` })); tr.appendChild(h('td', { class: r.g[s] < 0 ? 'neg' : 'pos', text: `${sgn(Math.round(r.g[s] * 100))}%` })); tb.appendChild(tr); }
+  const reg = $('#regime'); reg.textContent = ''; reg.appendChild(h('span', { class: 'pill ' + (regime === 'bust' ? 'hot' : regime === 'cooling' ? 'cool' : ''), text: regime })); reg.append(`${qLabel(t)}: demand ${sgn(Math.round(gAgg * 100))}% q/q · markets ${r.M.toFixed(2)} · ${fmtPct(r.util)} of capacity`);
+  const refl = (r.S.rd + r.S.swe + r.S.trd) / tot; $('#loopNote').textContent = `At ${qLabel(t)}, ${fmtPct(refl)} of frontier demand sits in the three reflexive segments. With contagion at ${state.p.rho.toFixed(2)}, ${Math.round(state.p.rho * 100)}% of each loop’s momentum comes from the aggregate rather than its own last quarter, which is what turns one segment’s stumble into everyone’s. Particles move at each segment’s current growth rate and reverse when it turns negative.`;
+}
+
+// ---------- shocks ----------
+function renderStrip() {
+  const box = $('#strip'); box.textContent = ''; box.style.gridTemplateColumns = `repeat(${T},minmax(0,1fr))`;
+  for (let t = 0; t < T; t++) { const q = qNum(t); const cell = h('div', { class: 'cell' + (q === 1 ? ' y' : '') + (String($('#evQ').value) === String(t) ? ' sel' : ''), role: 'button', tabindex: '0', title: `Add a shock at ${qLabel(t)}` }); cell.appendChild(h('div', { class: 'q', text: `Q${q}` })); for (const e of state.e.filter(e => e.t === t)) cell.appendChild(h('div', { class: 'ev ' + e.type, text: EVENTS[e.type].short(e.v), title: EVENTS[e.type].name })); const pick = () => { $('#evQ').value = t; renderStrip(); $('#evType').focus(); }; cell.addEventListener('click', pick); cell.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pick(); } }); box.appendChild(cell); }
+  const yrs = $('#years'); yrs.textContent = ''; const counts = []; for (let t = 0; t < T; t++) { const y = yearOf(t); const c = counts[counts.length - 1]; if (c && c.y === y) c.n++; else counts.push({ y, n: 1 }); } yrs.style.gridTemplateColumns = counts.map(c => `${c.n}fr`).join(' '); for (const c of counts) yrs.appendChild(h('span', { text: String(c.y) }));
+}
+function renderEvList() { const box = $('#evlist'); box.textContent = ''; if (!state.e.length) { box.appendChild(h('span', { class: 'none', text: 'No shocks in this scenario. Pick a trigger above, or load a preset.' })); return; } state.e.forEach((e, i) => { const d = EVENTS[e.type]; const chip = h('span', { class: 'e' }); chip.append(d.name, h('span', { class: 'm', text: `${d.short(e.v)} · ${qLabel(e.t)}${d.lasting ? ` · ${e.dur || 1}q` : ''}` })); chip.appendChild(h('button', { type: 'button', 'aria-label': `Remove ${d.name}`, text: '×', onclick: () => { state.e.splice(i, 1); render(); } })); box.appendChild(chip); }); }
+function buildEvForm() {
+  const ty = $('#evType'); for (const [k, d] of Object.entries(EVENTS)) ty.appendChild(h('option', { value: k, text: d.name })); const q = $('#evQ'); for (let t = 0; t < T; t++) q.appendChild(h('option', { value: t, text: qLabel(t) })); q.value = Math.min(3, T - 1);
+  const sync = () => { const d = EVENTS[ty.value]; const mg = $('#evMag'); mg.min = d.min; mg.max = d.max; mg.step = d.step; mg.value = d.v; $('#evMagL').firstChild.textContent = d.unit; $('#evDurL').hidden = !d.lasting; if (d.lasting) $('#evDur').value = d.dur; }; ty.addEventListener('change', sync); sync(); q.addEventListener('change', renderStrip);
+  $('#evform').addEventListener('submit', ev => { ev.preventDefault(); const d = EVENTS[ty.value]; const v = Math.max(d.min, Math.min(d.max, parseFloat($('#evMag').value) || d.v)); const e = { type: ty.value, t: parseInt(q.value, 10), v }; if (d.lasting) e.dur = Math.max(1, Math.min(T, parseInt($('#evDur').value, 10) || d.dur)); state.e.push(e); render(); toast(`${d.name} added at ${qLabel(e.t)}`); });
+}
+
+// ---------- underpinnings, changes, gauges ----------
+const UNDERPIN = [['R0'], ['sh_rd', 'sh_swe', 'sh_trd'], ['H0'], ['D0'], ['k_rd', 'k_swe', 'k_trd', 'k_oth'], ['rho'], ['betaX'], ['subst'], ['K0'], ['pipe'], ['mono'], ['train'], ['capexGW'], ['lead'], ['rate0']];
+function renderUnderpin(match) {
+  const pr = match || PRESETS.find(x => x.id === state.from) || PRESETS[0];
+  const th = $('#thesis'); th.textContent = ''; th.append(pr.thesis + ' '); th.appendChild(h('span', { class: 'att', text: `— ${pr.who}${pr.when ? ', ' + pr.when : ''}` }));
+  const box = $('#underpin'); box.textContent = '';
+  for (const keys of UNDERPIN) {
+    const k0 = keys[0]; const meta = DATA.params[k0]; const lab = keys.length > 1 ? (k0 === 'sh_rd' ? 'Demand mix (R&D · software · trading)' : 'Loop gains (R&D · software · trading · rest)') : (CTL[k0] ? CTL[k0].l : meta.label);
+    const valNow = keys.map(k => CTL[k] ? CTL[k].f(state.p[k]) : state.p[k]).join(' · ');
+    const overridden = keys.some(k => Math.abs(state.p[k] - DEFAULTS[k]) > 1e-9); const baseVal = keys.map(k => CTL[k] ? CTL[k].f(DEFAULTS[k]) : DEFAULTS[k]).join(' · ');
+    const row = h('div', { class: 'up-row' }); const kEl = h('span', { class: 'k', text: lab }); if (keys.some(k => daysAgo(DATA.params[k].updated) <= 7 && LOG.some(c => c.target === k))) kEl.appendChild(h('span', { class: 'dot-new', title: 'changed by the pipeline in the last 7 days' })); row.appendChild(kEl);
+    const vEl = h('span', { class: 'v', text: valNow }); if (overridden) vEl.appendChild(h('span', { class: 'ovr', text: `base ${baseVal}` })); row.appendChild(vEl);
+    const b = h('span', { class: 'b', title: meta.basis }); b.append((meta.short || meta.basis) + ' '); const as = h('span', { class: 'as' }); as.append(`${meta.type} · as of ${fmtDate(meta.as_of)}`); if (meta.source) { as.append(' · '); as.appendChild(h('a', { href: meta.source, target: '_blank', rel: 'noopener', text: 'source' })); } b.appendChild(as); row.appendChild(b); box.appendChild(row);
+  }
+  if (state.e.length) { const row = h('div', { class: 'up-row' }); row.appendChild(h('span', { class: 'k', text: 'Shocks in this scenario' })); row.appendChild(h('span', { class: 'v', text: `${state.e.length}` })); row.appendChild(h('span', { class: 'b', text: describeEvents(state.e).join(' · ') })); box.appendChild(row); }
+}
+function renderChanges() { const box = $('#changes'); box.textContent = ''; const items = LOG.slice(0, 14); if (!items.length) { box.appendChild(h('span', { class: 'none', text: 'No changes recorded yet.' })); return; } for (const c of items) { const e = h('div', { class: 'e' }); e.appendChild(h('span', { class: 'd', text: c.date })); e.appendChild(h('span', { class: 'kd ' + c.kind, text: c.kind })); const t = h('span', { class: 't' }); const label = c.target && c.target.startsWith('gauge:') ? (DATA.gauges.find(g => g.id === c.target.slice(6)) || {}).label || c.target : (CTL[c.target] ? CTL[c.target].l : c.target); t.appendChild(h('span', { class: 'm', text: `${label}${c.old != null || c.new != null ? `: ${c.old ?? '—'} → ${c.new ?? '—'}` : ''}` })); t.appendChild(h('span', { class: 'r', text: c.reason || '' })); if (c.source) { t.append(' '); t.appendChild(h('a', { href: c.source, target: '_blank', rel: 'noopener', text: 'source' })); } e.appendChild(t); box.appendChild(e); } }
+function renderGauges() { const g = $('#gauges'); g.textContent = ''; for (const it of DATA.gauges) { const stale = daysAgo(it.as_of) > 60; const tile = h('div', { class: 'gauge-tile' + (stale ? ' stale' : '') }); const l = h('div', { class: 'l', text: it.label }); if (it.auto) l.appendChild(h('span', { class: 'pill auto', text: 'auto' })); tile.append(l, h('div', { class: 'v', text: it.value })); const sub = h('div', { class: 's' }); sub.append(it.sub || ''); if (it.src) { sub.append(' · '); sub.appendChild(h('a', { href: it.src, target: '_blank', rel: 'noopener', text: 'source' })); } tile.appendChild(sub); tile.appendChild(h('div', { class: 'as', text: `as of ${fmtDate(it.as_of)}${stale ? ' · stale' : ''}` })); g.appendChild(tile); } }
+function renderMeta() { const week = LOG.filter(c => daysAgo(c.date) <= 7 && ['collected', 'accepted', 'rejected', 'rolled', 'expired'].includes(c.kind)).length; const m = $('#meta'); m.textContent = ''; m.append('Updated '); m.appendChild(h('b', { text: fmtDate(DATA.generated_at) })); m.append(` · now = ${qLabel(0)} · horizon to ${qLabel(T - 1)} · ${PRESETS.length} scenarios · `); m.appendChild(h('b', { text: `${week} change${week === 1 ? '' : 's'} in the last 7 days` })); m.append(' · '); m.appendChild(h('a', { href: 'https://github.com/clauderitter/aidemandsimulator', target: '_blank', rel: 'noopener', text: 'source & pipeline' })); }
+function buildNotes() { $('#notes').innerHTML = `
+<p>The model steps quarter by quarter from the current quarter over an 18-quarter horizon, with the last eight quarters of actual frontier revenue shown behind it. Demand is split into AI R&D, software engineering and trading (the unbounded, long-horizon tasks of the article) plus everything else.</p>
+<h3>Demand growth</h3><p>Each segment’s quarterly log-growth is <code>drive + gain × momentum</code>: organic growth, plus a pull from capability (elasticity × horizon doublings), plus procyclicality × (market index − 1); momentum blends the segment’s own last-quarter growth with the aggregate’s, weighted by contagion. A loop gain <em>k</em> turns a drive into steady growth of drive ÷ (1 − k), and the same gain amplifies negative drives, which is the double edge.</p>
+<h3>Capability, markets, supply</h3><p>The 80% task horizon doubles every <em>D</em> months, faster when AI R&D spend runs ahead of trend. The market index moves with growth surprises and mean-reverts toward a fair level that falls with rates above the baseline. Monetisable capacity is GW online × (1 − training share) × revenue ceiling per GW; labs commit capacity against extrapolated revenue with a lead time, capped by build pace and scaled by financing conditions. Demand cannot exceed capacity by more than 25%, so rationing throttles the loop.</p>
+<h3>Autopilot</h3><p>A pipeline runs every morning. Deterministic collectors pull yields, the Fed funds rate, VIX, Polymarket, AAII, METR’s horizon file and Epoch’s revenue dataset and apply them through fixed rules with speed limits. A researcher agent sweeps a watchlist of podcasts, newsletters, filings and X accounts and proposes changes with quotes and sources; a judge agent re-fetches every source, enforces the rules, re-runs the model and accepts or rejects each proposal. Every decision is written to the “What changed” feed. When a quarter closes it rolls into history and the horizon moves forward; calendar-pinned shocks in scenarios are graded against what actually happened.</p>
+<h3>Readouts</h3><ul><li><strong>Reflexive share</strong> re-runs the scenario with every loop gain at zero.</li><li><strong>Uncertainty band</strong> draws 240 paths with loop gains ±0.2, capability pull ×0.7–1.3, procyclicality ×0.6–1.4, doubling time ±1.5 months, market sensitivity ×0.5–1.5, revenue ceiling ±20%, plus quarterly noise.</li><li><strong>Hidden constants</strong>: organic growth 10 · 15 · 10 · 20 %/yr; capability elasticity 0.15 · 0.15 · 0.10 · 0.08 per doubling; procyclicality 0.4 · 0.6 · 0.8 · 0.15; rate sensitivity of builds 0.1 per point.</li></ul>
+<p>It is a scenario machine, not a forecast: no explicit token prices, no margins, no distinction between labs. Every output is a consequence of the inputs above, and the link encodes them.</p>`; }
+
+// ---------- misc ----------
+let toastTimer = null; function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2200); }
+function init() {
+  loadFromHash(); buildRail(); buildPresets(); buildEvForm(); buildNotes(); renderChanges(); renderGauges(); renderMeta();
+  $('#loopScrub').addEventListener('input', ev => { state.q = parseInt(ev.target.value, 10); if (last) renderLoop(last.rows); history.replaceState(null, '', '#s=' + encodeState()); });
+  $('#btnMC').addEventListener('click', () => { state.mc = !state.mc; render(); });
+  $('#btnPin').addEventListener('click', () => { if (state.pinned) state.pinned = null; else if (last) state.pinned = { demand: last.rows.map(r => r.demand), rA: last.rows[A].revenue }; render(); toast(state.pinned ? 'Baseline pinned. Change anything to compare.' : 'Baseline cleared'); });
+  $('#btnTable').addEventListener('click', () => { const on = $('#mainTable').hidden; $('#mainTable').hidden = !on; $('#btnTable').setAttribute('aria-pressed', String(on)); });
+  $('#btnShare').addEventListener('click', async () => { const url = location.href.split('#')[0] + '#s=' + encodeState(); try { await navigator.clipboard.writeText(url); toast('Link copied'); } catch { window.prompt('Copy this link', url); } });
+  render();
+  let rt = null; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => { if (last) { renderMain(last.rows, last.mc); renderMultiples(last.rows); } }, 80); }).observe($('.stage'));
+  reduceMotion.addEventListener?.('change', () => { if (last) renderLoop(last.rows); });
+}
+init();
+</script>
+
+</body>
+</html>

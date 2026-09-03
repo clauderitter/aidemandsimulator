@@ -1,0 +1,104 @@
+{
+  "_comment": "Sources the researcher sweeps daily. Feeds are fetched directly; X handles are read through the X API when X_BEARER_TOKEN is set. The researcher may propose additions; the judge admits them on the same evidence rules as everything else.",
+  "feeds": [
+    {
+      "name": "Dwarkesh Podcast",
+      "url": "https://www.dwarkesh.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "SemiAnalysis",
+      "url": "https://newsletter.semianalysis.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "Epoch AI Gradient Updates",
+      "url": "https://epoch.ai/gradient-updates/rss.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "Epoch AI data insights",
+      "url": "https://epoch.ai/data-insights/rss.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "METR blog",
+      "url": "https://metr.org/blog/feed.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "Where's Your Ed At",
+      "url": "https://www.wheresyoured.at/rss/",
+      "kind": "rss"
+    },
+    {
+      "name": "Stratechery",
+      "url": "https://stratechery.com/feed/",
+      "kind": "rss"
+    },
+    {
+      "name": "Anthropic news",
+      "url": "https://www.anthropic.com/news",
+      "kind": "html"
+    },
+    {
+      "name": "OpenAI news",
+      "url": "https://openai.com/news/",
+      "kind": "html"
+    },
+    {
+      "name": "Federal Reserve press releases",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "AI Futures Project",
+      "url": "https://blog.aifutures.org/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "David Cahn",
+      "url": "https://dcahn.substack.com/feed",
+      "kind": "rss"
+    }
+  ],
+  "x_handles": [
+    "dwarkesh_sp",
+    "dylan522p",
+    "SemiAnalysis_",
+    "EpochAIResearch",
+    "METR_Evals",
+    "edzitron",
+    "giovannicatt3",
+    "GavinSBaker",
+    "benedictevans",
+    "ttunguz",
+    "pkedrosky",
+    "DrorPoleg",
+    "sama",
+    "DarioAmodei",
+    "kimmonismus"
+  ],
+  "earnings_watch": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "ORCL",
+    "CRWV"
+  ],
+  "topics": [
+    "frontier lab revenue run-rate",
+    "AI capex guidance",
+    "GPU rental prices",
+    "compute capacity gigawatts",
+    "METR time horizon",
+    "token prices open-weight models",
+    "AI debt issuance",
+    "Fed policy rate",
+    "AI bubble sentiment"
+  ],
+  "polymarket_event": "ai-bubble-burst-by",
+  "agents_enabled": false
+}

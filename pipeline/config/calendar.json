@@ -1,0 +1,5 @@
+{
+  "_comment": "Dates that trigger an extra pipeline run (UTC). Maintained by the researcher; the judge only checks the format.",
+  "fomc": ["2026-09-17", "2026-10-29", "2026-12-10"],
+  "earnings": { "NVDA": ["2026-11-18"], "MSFT": ["2026-10-28"], "GOOGL": ["2026-10-27"], "AMZN": ["2026-10-29"], "META": ["2026-10-28"], "ORCL": ["2026-12-09"] }
+}

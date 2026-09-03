@@ -1,0 +1,38 @@
+name: daily-update
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install
+        working-directory: pipeline
+        run: npm install --no-audit --no-fund
+      - name: Run pipeline
+        working-directory: pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: node src/run.js
+      - name: Commit as repository owner
+        run: |
+          git config user.name "Claude Ritter"
+          git config user.email "1419631+clauderitter@users.noreply.github.com"
+          git add site/data pipeline/state
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "data: daily update $(date -u +%Y-%m-%d)" -m "Automated run of the collection pipeline; see site/data/changelog.json for what changed and why."
+          git push
