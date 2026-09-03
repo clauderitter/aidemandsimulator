@@ -1,4 +1,4 @@
-# Reflexive Demand Simulator
+# Reflexive AI Demand Simulator
 
 Live at [aidemandsimulator.com](https://www.aidemandsimulator.com/).
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reflexive Demand Simulator</title>
+<title>Reflexive AI Demand Simulator</title>
 <meta name="description" content="A self-updating scenario simulator for reflexive frontier-token demand: loop gains, shocks, capacity and capex on a rolling horizon.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔁%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,13 +81,19 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
 .chip .cd{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:7px;vertical-align:1px;background:var(--ink-3)}
 .chip.bull .cd{background:var(--good)}.chip.bear .cd{background:var(--bad)}.chip.base .cd{background:var(--ink)}
 .chip[aria-pressed="true"].base .cd{background:var(--bg)}
-.view{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 14px;font-size:13px}
+.view{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 14px;font-size:13px}
+.view details summary{list-style:none;display:flex;gap:12px;align-items:baseline;cursor:pointer;min-width:0}
+.view details summary::-webkit-details-marker{display:none}
+.view details summary::after{content:"▾";margin-left:auto;color:var(--ink-3);font-size:11px;flex:none}
+.view details[open] summary::after{content:"▴"}
+.view details summary .who{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.view details[open] summary .who{white-space:normal}
 .view .pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:2px 8px;color:var(--ink);white-space:nowrap}
 .view .pill.bull{border-color:var(--good);color:var(--good)}.view .pill.bear{border-color:var(--bad);color:var(--bad)}
 .view .who{font-weight:600}
 .view .who .name{font-weight:600}.view .who .att{font-weight:400;color:var(--ink-2)}
-.view p{margin:0;color:var(--ink-2);grid-column:2;max-width:110ch}
-.view .src{grid-column:2;font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.view p{margin:8px 0 0;color:var(--ink-2);max-width:110ch}
+.view .src{margin-top:6px;font-family:var(--mono);font-size:11px;color:var(--ink-3)}
 .view .src a{color:var(--ink-2)}
 .views td.camp{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
 .views td.camp.bull{color:var(--good)}.views td.camp.bear{color:var(--bad)}
@@ -99,6 +105,9 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
 .gauge-tile .v{font-size:20px;font-weight:600;letter-spacing:-.01em;margin-top:2px}
 .gauge-tile .s{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:2px;line-height:1.35}
 .gauge-tile .s a{color:var(--ink-3)}
+
+.foot{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--ink-3);display:flex;gap:18px;flex-wrap:wrap}
+.foot a{color:var(--ink-2);text-decoration-color:var(--line)}
 
 /* room */
 .room{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;margin-top:24px;align-items:start}
@@ -267,8 +276,6 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
 @media (max-width:1080px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.multiples{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:980px){
   .room{grid-template-columns:1fr}
-  .view{grid-template-columns:1fr}
-  .view p,.view .src{grid-column:1}
   .rail{position:static;max-height:none;overflow:visible}
   .mast{grid-template-columns:1fr}
   .hero{grid-template-columns:1fr}
@@ -287,7 +294,13 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
 </style>
 
 <style>
-.meta{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-top:8px;letter-spacing:.01em}
+.src details.more{display:inline}
+.src details.more summary{display:inline;cursor:pointer;color:var(--ink-2);text-decoration:underline;text-decoration-color:var(--line);list-style:none}
+.src details.more summary::-webkit-details-marker{display:none}
+.src details.more summary::after{content:"more"}
+.src details.more[open] summary::after{content:"less"}
+.src details.more .more-text{display:block;margin-top:6px}
+.meta{display:block;font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-top:6px;letter-spacing:.01em}
 .meta b{color:var(--ink-2);font-weight:500}
 .up-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:8px 0;border-bottom:1px solid var(--grid);font-size:12.5px;align-items:baseline}
 .up-row:last-child{border-bottom:0}
@@ -315,7 +328,7 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
 .gauge-tile.stale .v{color:var(--ink-2)}
 .pill.auto{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line);border-radius:999px;padding:0 5px;margin-left:6px;vertical-align:1px}
 .two{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;align-items:start}
-@media (max-width:980px){.two{grid-template-columns:1fr}}
+
 </style>
 
 </head>
@@ -324,10 +337,9 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
 <div class="wrap">
 <header class="mast">
   <div>
-    <h1>Reflexive Demand <em>Simulator</em></h1>
+    <h1>Reflexive AI Demand <em>Simulator</em></h1>
     <p class="dek">Frontier-token demand is driven by a few <strong>unbounded, long-horizon</strong> tasks whose spend feeds their own revenue. Set the loop gains, drop a shock on the timeline, and watch the boom or the bust play out.</p>
-    <p class="src">Built on Giovanni Cattani, <a href="https://x.com/giovannicatt3/article/2094815425972539565" target="_blank" rel="noopener">“Nobody is talking seriously about AI demand”</a> (X, 1 Sep 2026). Quarterly model on a rolling horizon; inputs are refreshed daily by an autonomous pipeline. All numbers are scenario estimates, not forecasts.</p>
-    <p class="meta" id="meta"></p>
+    <div class="src">Built on Giovanni Cattani, <a href="https://x.com/giovannicatt3/article/2094815425972539565" target="_blank" rel="noopener">“Nobody is talking seriously about AI demand”</a> (X, 1 Sep 2026). <details class="more"><summary aria-label="More about this model"></summary><span class="more-text">Quarterly model on a rolling horizon; inputs are refreshed daily by an autonomous pipeline. All numbers are scenario estimates, not forecasts.</span><span class="meta" id="meta"></span></details></div>
   </div>
   <div class="mast-side">
     <div>
@@ -408,16 +420,10 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
       <div class="evlist" id="evlist"></div>
     </section>
 
-    <section class="two">
-      <div class="card" aria-label="What underpins this scenario">
-        <div class="card-head"><h2>What underpins this scenario</h2></div>
-        <p class="thesis" id="thesis"></p>
-        <div id="underpin"></div>
-      </div>
-      <div class="card" aria-label="What changed">
-        <div class="card-head"><h2>What changed <small>the pipeline’s last decisions</small></h2></div>
-        <div class="chg" id="changes"></div>
-      </div>
+    <section class="card" aria-label="What underpins this scenario">
+      <div class="card-head"><h2>What underpins this scenario</h2></div>
+      <p class="thesis" id="thesis"></p>
+      <div id="underpin"></div>
     </section>
 
     <section class="card" aria-label="Sentiment gauges">
@@ -431,6 +437,7 @@ h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance;font-variation-se
     </section>
   </main>
 </div>
+<footer class="foot"><span>Built by <a href="https://www.clauderitter.com/" target="_blank" rel="noopener">Claude Ritter</a></span><a href="https://x.com/clauderitter" target="_blank" rel="noopener">@clauderitter on X</a><a href="https://github.com/clauderitter/aidemandsimulator" target="_blank" rel="noopener">Source &amp; pipeline</a></footer>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -512,13 +519,14 @@ function presetMatch() { return PRESETS.find(pr => { const p = { ...DEFAULTS, ..
 function describeEvents(evs) { return evs.map(e => { const d = EVENTS[e.type]; return `${d.name}: ${d.short(e.v)} at ${qLabel(e.t)}${d.lasting ? ` for ${e.dur}q` : ''}`; }); }
 function renderView(match) {
   const box = $('#viewBox'); box.textContent = ''; const pr = match || PRESETS.find(x => x.id === state.from) || PRESETS[0];
-  box.appendChild(h('span', { class: 'pill ' + pr.camp, text: match ? CAMPS[pr.camp] : 'Custom' }));
-  const who = h('div', { class: 'who' }); who.appendChild(h('span', { class: 'name', text: match ? pr.name : `Adapted from “${pr.name}”` })); if (pr.who) who.appendChild(h('span', { class: 'att', text: ` · ${pr.who}${pr.when ? ' · ' + pr.when : ''}` })); box.appendChild(who);
-  box.appendChild(h('p', { text: match ? pr.thesis : 'You have moved sliders or shocks away from the preset. Copy the link to keep this exact scenario, or pick a preset to return to a documented view.' }));
+  const det = h('details', { class: 'vd' }); det.open = !!state.viewOpen; det.addEventListener('toggle', () => { state.viewOpen = det.open; });
+  const sum = h('summary'); sum.appendChild(h('span', { class: 'pill ' + pr.camp, text: match ? CAMPS[pr.camp] : 'Custom' }));
+  const who = h('span', { class: 'who' }); who.appendChild(h('span', { class: 'name', text: match ? pr.name : `Adapted from “${pr.name}”` })); if (pr.who) who.appendChild(h('span', { class: 'att', text: ` · ${pr.who}${pr.when ? ' · ' + pr.when : ''}` })); sum.appendChild(who); det.appendChild(sum);
+  det.appendChild(h('p', { text: match ? pr.thesis : 'You have moved sliders or shocks away from the preset. Copy the link to keep this exact scenario, or pick a preset to return to a documented view.' }));
   const overrides = Object.entries(pr.p || {}).map(([k, v]) => `${CTL[k] ? CTL[k].l : k} ${CTL[k] ? CTL[k].f(v) : v}`);
-  const src = h('div', { class: 'src' }); src.append('Differs from base: ' + (overrides.length || pr.e.length ? [...overrides, ...describeEvents(pr.e)].join(' · ') : 'nothing, this is the base')); if (pr.src && match) { src.append(' · '); src.appendChild(h('a', { href: pr.src, target: '_blank', rel: 'noopener', text: 'source' })); } box.appendChild(src);
+  const src = h('div', { class: 'src' }); src.append('Differs from base: ' + (overrides.length || pr.e.length ? [...overrides, ...describeEvents(pr.e)].join(' · ') : 'nothing, this is the base')); if (pr.src && match) { src.append(' · '); src.appendChild(h('a', { href: pr.src, target: '_blank', rel: 'noopener', text: 'source' })); } det.appendChild(src);
+  box.appendChild(det);
 }
-
 // ---------- render ----------
 let raf = null; function schedule() { if (raf) return; raf = requestAnimationFrame(() => { raf = null; render(); }); }
 let last = null;
@@ -688,7 +696,6 @@ function renderUnderpin(match) {
   }
   if (state.e.length) { const row = h('div', { class: 'up-row' }); row.appendChild(h('span', { class: 'k', text: 'Shocks in this scenario' })); row.appendChild(h('span', { class: 'v', text: `${state.e.length}` })); row.appendChild(h('span', { class: 'b', text: describeEvents(state.e).join(' · ') })); box.appendChild(row); }
 }
-function renderChanges() { const box = $('#changes'); box.textContent = ''; const items = LOG.slice(0, 14); if (!items.length) { box.appendChild(h('span', { class: 'none', text: 'No changes recorded yet.' })); return; } for (const c of items) { const e = h('div', { class: 'e' }); e.appendChild(h('span', { class: 'd', text: c.date })); e.appendChild(h('span', { class: 'kd ' + c.kind, text: c.kind })); const t = h('span', { class: 't' }); const label = c.target && c.target.startsWith('gauge:') ? (DATA.gauges.find(g => g.id === c.target.slice(6)) || {}).label || c.target : (CTL[c.target] ? CTL[c.target].l : c.target); t.appendChild(h('span', { class: 'm', text: `${label}${c.old != null || c.new != null ? `: ${c.old ?? '—'} → ${c.new ?? '—'}` : ''}` })); t.appendChild(h('span', { class: 'r', text: c.reason || '' })); if (c.source) { t.append(' '); t.appendChild(h('a', { href: c.source, target: '_blank', rel: 'noopener', text: 'source' })); } e.appendChild(t); box.appendChild(e); } }
 function renderGauges() { const g = $('#gauges'); g.textContent = ''; for (const it of DATA.gauges) { const stale = daysAgo(it.as_of) > 60; const tile = h('div', { class: 'gauge-tile' + (stale ? ' stale' : '') }); const l = h('div', { class: 'l', text: it.label }); if (it.auto) l.appendChild(h('span', { class: 'pill auto', text: 'auto' })); tile.append(l, h('div', { class: 'v', text: it.value })); const sub = h('div', { class: 's' }); sub.append(it.sub || ''); if (it.src) { sub.append(' · '); sub.appendChild(h('a', { href: it.src, target: '_blank', rel: 'noopener', text: 'source' })); } tile.appendChild(sub); tile.appendChild(h('div', { class: 'as', text: `as of ${fmtDate(it.as_of)}${stale ? ' · stale' : ''}` })); g.appendChild(tile); } }
 function renderMeta() { const week = LOG.filter(c => daysAgo(c.date) <= 7 && ['collected', 'accepted', 'rejected', 'rolled', 'expired'].includes(c.kind)).length; const m = $('#meta'); m.textContent = ''; m.append('Updated '); m.appendChild(h('b', { text: fmtDate(DATA.generated_at) })); m.append(` · now = ${qLabel(0)} · horizon to ${qLabel(T - 1)} · ${PRESETS.length} scenarios · `); m.appendChild(h('b', { text: `${week} change${week === 1 ? '' : 's'} in the last 7 days` })); m.append(' · '); m.appendChild(h('a', { href: 'https://github.com/clauderitter/aidemandsimulator', target: '_blank', rel: 'noopener', text: 'source & pipeline' })); }
 function buildNotes() { $('#notes').innerHTML = `
@@ -702,7 +709,7 @@ function buildNotes() { $('#notes').innerHTML = `
 // ---------- misc ----------
 let toastTimer = null; function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2200); }
 function init() {
-  loadFromHash(); buildRail(); buildPresets(); buildEvForm(); buildNotes(); renderChanges(); renderGauges(); renderMeta();
+  loadFromHash(); buildRail(); buildPresets(); buildEvForm(); buildNotes(); renderGauges(); renderMeta();
   $('#loopScrub').addEventListener('input', ev => { state.q = parseInt(ev.target.value, 10); if (last) renderLoop(last.rows); history.replaceState(null, '', '#s=' + encodeState()); });
   $('#btnMC').addEventListener('click', () => { state.mc = !state.mc; render(); });
   $('#btnPin').addEventListener('click', () => { if (state.pinned) state.pinned = null; else if (last) state.pinned = { demand: last.rows.map(r => r.demand), rA: last.rows[A].revenue }; render(); toast(state.pinned ? 'Baseline pinned. Change anything to compare.' : 'Baseline cleared'); });
