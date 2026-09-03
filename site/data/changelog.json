@@ -1,6 +1,69 @@
 [
  {
   "date": "2026-09-03",
+  "source": "https://x.com/drorpoleg/status/2095299717324304474",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://x.com/arakharazian",
+  "reason": "Non-numeric watchlist addition that puts an already-relied-upon upstream data source (Ramp) into the model directly instead of via second-hand commentary."
+ },
+ {
+  "date": "2026-09-03",
+  "source": "https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/",
+  "kind": "accepted",
+  "target": "scenario:nvfactory",
+  "old": null,
+  "new": "added",
+  "reason": "Attribution and headline numbers ($800B/$1.3T top-five capex, rising content per GW, supply-constrained through FY2028) check out against the earnings call, but the thesis was trimmed of the '~70% supply-constrained growth guidance' claim (the transcript's 70% refers to AI VC funds spent on compute) and now marks the $60B per-GW figure as an inference rather than Nvidia's statement. Jensen Huang and Colette Kress, Nvidia Q2 FY2027 earnings call, 26 Aug 2026."
+ },
+ {
+  "date": "2026-09-03",
+  "source": "",
+  "kind": "expired",
+  "target": "scenario:rate",
+  "old": "active",
+  "new": "retired",
+  "reason": "Retired to make room for “AI factory economics — dollars per gigawatt”: the least distinct active scenario (closest path to its neighbours)."
+ },
+ {
+  "date": "2026-09-03",
+  "source": "https://x.com/drorpoleg/status/2095299717324304474",
+  "kind": "rejected",
+  "target": "rho",
+  "old": null,
+  "new": 0.6,
+  "reason": "A second-hand tweet reporting customer concentration (80% of revenue from 1% of customers) measures concentration, not co-movement across the demand loops, and is too weak a grade to move a correlation parameter."
+ },
+ {
+  "date": "2026-09-03",
+  "source": "https://tomtunguz.com/intelligence-per-watt",
+  "kind": "accepted",
+  "target": "subst",
+  "old": 15,
+  "new": 20,
+  "reason": "Fresh, quantitative migration evidence distinct from the July OpenRouter reading — local models matching frontier quality on ~89% of everyday queries — supports a modest rise in the bounded-work substitution share to 20. Rule migration_share; “Local AI models can already answer 89% of everyday chat & reasoning queries as well as a frontier cloud model, a result that holds broadly a”"
+ },
+ {
+  "date": "2026-09-03",
+  "source": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.3,
+  "reason": "A non-binding MOU to mobilise capital 'over time' does not show that marginal builds have become more sensitive to market conditions — turning compute into an investable asset class could as easily stabilise funding — so the mapping to fin is too ambiguous."
+ },
+ {
+  "date": "2026-09-03",
+  "source": "https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/",
+  "kind": "accepted",
+  "target": "capexGW",
+  "old": 45,
+  "new": 54,
+  "reason": "Management-reported silicon-and-systems content of $40B per GW (Q2 FY2027 call, 26 Aug 2026) is newer and harder than the July estimate blend and supports moving all-in capex per GW up to the +20% cap of 54. Rule cost_per_gw; “Management reported that the revenue potential per gigawatt of data center capacity has increased from $18.0 billion in the Hopper generatio”"
+ },
+ {
+  "date": "2026-09-03",
   "kind": "collected",
   "target": "mono",
   "old": 30,

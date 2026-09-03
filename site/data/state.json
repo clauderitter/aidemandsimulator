@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-03T08:42:32.731Z",
+ "generated_at": "2026-09-03T08:54:16.427Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -391,16 +391,16 @@
    "short": "Assumption: bounded tasks stop pulling demand once the horizon passes a working week."
   },
   "subst": {
-   "value": 15,
+   "value": 20,
    "label": "Migration to non-frontier models",
    "hidden": false,
-   "basis": "Chinese open-weight models passed 60% of OpenRouter tokens in July 2026 and the US share fell from 70% to 30% in a year; DeepSeek V4-Flash lists at $0.14/$0.28 per million tokens and OpenAI cut Luna 80% in July; fixed-capability prices fall 10× to 200× a year (a16z, Epoch). DeepSeek raised prices in August as its capacity filled, so migration saturates. Applies to bounded work only.",
-   "as_of": "2026-07-09",
+   "basis": "Stanford/Together 'Intelligence per Watt' (>1M real queries, 20+ local models): routed local models now answer ~89% of everyday chat and reasoning queries as well as a frontier cloud model, on top of Chinese open-weights above 60% of OpenRouter tokens. (reported, 2026-08-21). New migration evidence beyond the July OpenRouter reading: routed local models match frontier quality on ~89% of everyday queries and cut cost 74% and compute 77% against an all-cloud baseline, with the best local model's win/tie rate rising from 23.2% (2023) to 71.3% (2025). Bounded work has a cheaper credible substitute than 15% implies; +5 keeps subst below the gap/wall scenarios' 25.",
+   "as_of": "2026-08-21",
    "type": "reported",
-   "source": "https://officechai.com/ai/share-of-us-models-being-used-on-openrouter-has-collapsed-from-70-to-30-over-the-past-year/",
+   "source": "https://tomtunguz.com/intelligence-per-watt",
    "updated": "2026-09-03",
    "rule": "",
-   "short": "Chinese open-weight models passed 60% of OpenRouter tokens in July 2026; frontier price cuts (Luna −80%) and 10–200× yearly price deflation at fixed capability."
+   "short": "Stanford/Together 'Intelligence per Watt' (>1M real queries, 20+ local models): routed local models now answer ~89% of everyday chat and reasoning queries as well as a frontier cloud model, on top of Chinese open-weights above 60% of OpenRouter tokens."
   },
   "K0": {
    "value": 10,
@@ -439,16 +439,16 @@
    "short": "First-GW deliveries run 12–18 months from signing; large Stargate sites take longer."
   },
   "capexGW": {
-   "value": 45,
+   "value": 54,
    "label": "Capex per GW",
    "hidden": false,
-   "basis": "Bernstein $35B, Nvidia $50–60B (FQ2 2026 call), SemiAnalysis $50B with ~$12B/GW/yr of operating cost (Aug 2026), Orennia $60B for gas-powered sites. Memory is ~30% of 2026 big-tech capex after prices tripled (Patel, Mar 2026).",
-   "as_of": "2026-08-07",
-   "type": "estimate",
-   "source": "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real",
+   "basis": "Nvidia management puts its own revenue opportunity per GW at $18B (Hopper), $25B (Blackwell) and $40B (Vera Rubin); adding shell, power and land, all-in capex per GW sits above the previous $45B estimate. (reported, 2026-08-26). Silicon-and-systems content alone is now $40B per GW under Vera Rubin (2.2x Hopper, 1.6x Blackwell). Adding building, power and land, all-in capex per GW must exceed the current $45B assumption; I move to the +20% per-run cap (54) rather than the $60B+ the arithmetic implies.",
+   "as_of": "2026-08-26",
+   "type": "reported",
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/",
    "updated": "2026-09-03",
    "rule": "",
-   "short": "Bernstein $35B, Nvidia $50–60B, SemiAnalysis $50B per GW all-in."
+   "short": "Nvidia management puts its own revenue opportunity per GW at $18B (Hopper), $25B (Blackwell) and $40B (Vera Rubin); adding shell, power and land, all-in capex per GW sits above the previous $45B estimate."
   },
   "mono": {
    "value": 27.1,
@@ -767,9 +767,10 @@
      "dur": 8
     }
    ],
-   "status": "active",
+   "status": "retired",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "retired_reason": "Retired to make room for “AI factory economics — dollars per gigawatt”: the least distinct active scenario (closest path to its neighbours)."
   },
   {
    "id": "shock",
@@ -1020,6 +1021,30 @@
    "added": "2026-09-02",
    "updated": "2026-09-03",
    "retired_reason": "Control case, not a market view; the reflexive-share tile reports the same number. Retired to respect the 16-scenario cap."
+  },
+  {
+   "id": "nvfactory",
+   "camp": "structural",
+   "name": "AI factory economics — dollars per gigawatt",
+   "who": "Jensen Huang and Colette Kress, Nvidia Q2 FY2027 earnings call",
+   "when": "26 Aug 2026",
+   "thesis": "Nvidia's revenue opportunity per gigawatt has climbed from ~$18B (Hopper) to $25B (Blackwell) to $40B (Vera Rubin); top-five hyperscaler capex is heading for ~$800B in 2026 and $1.3T in 2027; supply stays the bottleneck through fiscal 2028 with ~70% supply-constrained growth guidance. Capital spending therefore grows much faster than physical gigawatts: each GW costs ~$60B all-in, the fleet grows slower than the dollars suggest, and the price of compute rises.",
+   "src": "https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/",
+   "p": {
+    "capexGW": 60,
+    "buildMax": 0.15,
+    "pipe": 20
+   },
+   "e": [
+    {
+     "type": "reprice",
+     "t": 1,
+     "v": 30
+    }
+   ],
+   "status": "active",
+   "updated": "2026-09-03",
+   "added": "2026-09-03"
   }
  ],
  "gauges": [
