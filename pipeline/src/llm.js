@@ -5,7 +5,15 @@ import { log } from './util.js';
 
 export const MODEL = process.env.AGENT_MODEL || 'claude-opus-5';
 let client = null;
-function getClient() { if (!client) client = new Anthropic({ maxRetries: 3, timeout: 15 * 60 * 1000 }); return client; }
+function getClient() {
+  if (!client) {
+    const opts = { maxRetries: 3, timeout: 15 * 60 * 1000 };
+    // Identity-linked API keys must be scoped to a workspace: the API requires the anthropic-workspace-id header.
+    if (process.env.ANTHROPIC_WORKSPACE_ID) { opts.workspaceID = process.env.ANTHROPIC_WORKSPACE_ID; opts.defaultHeaders = { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID }; }
+    client = new Anthropic(opts);
+  }
+  return client;
+}
 
 const usageTotal = { input: 0, output: 0, cache_read: 0, calls: 0 };
 export const usage = () => ({ ...usageTotal });

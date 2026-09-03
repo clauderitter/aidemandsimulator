@@ -7,7 +7,7 @@ export const readJSON = (p, fallback = null) => { try { return JSON.parse(fs.rea
 export const writeJSON = (p, v) => { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, JSON.stringify(v, null, 1) + '\n'); };
 export const today = () => new Date().toISOString().slice(0, 10);
 export async function fetchText(url, opts = {}) {
-  const res = await fetch(url, { headers: { 'user-agent': 'aidemandsimulator-pipeline/0.1 (+https://github.com/clauderitter/aidemandsimulator)', ...(opts.headers || {}) }, signal: AbortSignal.timeout(opts.timeout || 30000) });
+  const res = await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36 aidemandsimulator-pipeline/0.1 (+https://github.com/clauderitter/aidemandsimulator)', accept: 'text/html,application/xhtml+xml,application/xml,application/rss+xml,text/csv,application/json;q=0.9,*/*;q=0.8', ...(opts.headers || {}) }, signal: AbortSignal.timeout(opts.timeout || 30000) });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }

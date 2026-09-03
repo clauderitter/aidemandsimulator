@@ -42,4 +42,4 @@ cd ../site && python3 -m http.server 8080   # then open http://localhost:8080
 ```
 
 Secrets (GitHub → Settings → Secrets and variables → Actions → Repository secrets): `ANTHROPIC_API_KEY`,
-`X_BEARER_TOKEN`, optionally `FRED_API_KEY`. The site itself needs none.
+`X_BEARER_TOKEN`, `ANTHROPIC_WORKSPACE_ID` (required for identity-linked API keys), optionally `FRED_API_KEY`. The site itself needs none.

@@ -25,6 +25,7 @@ jobs:
         working-directory: pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: node src/run.js
