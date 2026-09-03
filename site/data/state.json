@@ -1,13 +1,13 @@
 {
  "version": 1,
- "generated_at": "2026-09-03T08:54:16.427Z",
+ "generated_at": "2026-09-03T09:02:54.569Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
  "scenario_cap": 16,
  "params": {
   "R0": {
-   "value": 108.3,
+   "value": 118.3,
    "label": "Frontier token revenue",
    "hidden": false,
    "basis": "Anthropic run-rate $65B at end-July 2026 (Bloomberg, 17 Aug 2026; the path ran $14B Feb → $30B Apr → $47B May → $65B Jul) with investors expecting $100–120B by year-end; OpenAI $40B (Bloomberg, 13 Aug 2026); Epoch puts the two at $105B combined, up 3.5× since January. Google does not break out Gemini API revenue; Z.ai, MiniMax, DeepSeek, xAI and Mistral add a few billion. Rounded sum entering Q3 2026.",
@@ -259,13 +259,13 @@
    "short": "Assumption: bounded work has little feedback from spend to revenue."
   },
   "rho": {
-   "value": 0.5,
+   "value": 0.55,
    "label": "Contagion between loops",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
-   "as_of": "2026-08-27",
-   "type": "estimate",
-   "source": "https://pitchbook.com",
+   "as_of": "2026-09-02",
+   "type": "reported",
+   "source": "https://x.com/arakharazian/status/2095204452609171555",
    "updated": "2026-09-03",
    "rule": "",
    "short": "Assumption. The IMF attributes 7 of 12 points of “AI-circle” returns to correlation reinforcement; Cattani argues the three loops share one capital channel."
@@ -451,7 +451,7 @@
    "short": "Nvidia management puts its own revenue opportunity per GW at $18B (Hopper), $25B (Blackwell) and $40B (Vera Rubin); adding shell, power and land, all-in capex per GW sits above the previous $45B estimate."
   },
   "mono": {
-   "value": 27.1,
+   "value": 29.6,
    "label": "Revenue ceiling per inference GW",
    "hidden": false,
    "basis": "Set so the labs start compute-constrained: ~$120B of frontier revenue across ~10 GW with 60% on training is ~$30B per inference GW, i.e. 100% utilisation at Q3 2026. The constraint is visible in prices: one-year H100 rentals rose from $1.70 to $2.35/hr between Oct 2025 and Mar 2026 and on-demand capacity is sold out (SemiAnalysis, Apr 2026). Potential is far higher: SemiAnalysis models ~$100B/GW/yr of inference revenue potential (Aug 2026), and Patel puts Anthropic at ~$50M per MW of total compute today, $70–80M by end-2027. The “compute gets pricier” shock moves the ceiling.",
@@ -866,9 +866,10 @@
     "targetUtil": 0.65
    },
    "e": [],
-   "status": "active",
+   "status": "retired",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "retired_reason": "Retired to make room for “Concentrated customer base”: the least distinct bear scenario (closest path to its neighbours, 12%)."
   },
   {
    "id": "wall",
@@ -1052,6 +1053,40 @@
      "type": "reprice",
      "t": 1,
      "v": 30
+    }
+   ],
+   "status": "active",
+   "updated": "2026-09-03",
+   "added": "2026-09-03"
+  },
+  {
+   "id": "rampconc",
+   "camp": "bear",
+   "name": "Concentrated customer base",
+   "who": "Ara Kharazian, Ramp Economics Lab",
+   "when": "2 Sep 2026 (customer concentration); 24 Aug 2026 Ramp AI Index price ceiling",
+   "thesis": "Ramp payments data show 80% of OpenAI and Anthropic enterprise revenue comes from 1% of customers, a concentration unseen in any other software category, and that top 1% is itself tech and AI firms; the August index also finds businesses hitting a spending ceiling (Fable 5 at ~$10 per 1M tokens, twice GPT-5.6 Sol, taken up below expectation). A market correction therefore hits the labs' revenue and their customers' funding at the same time.",
+   "src": "https://x.com/arakharazian/status/2095204452609171555",
+   "p": {
+    "rho": 0.8,
+    "betaX": 1.4,
+    "k_oth": 0.1
+   },
+   "e": [
+    {
+     "type": "shock",
+     "t": 4,
+     "v": 25
+    },
+    {
+     "type": "rd_cut",
+     "t": 4,
+     "v": 30
+    },
+    {
+     "type": "swe_cut",
+     "t": 4,
+     "v": 25
     }
    ],
    "status": "active",
