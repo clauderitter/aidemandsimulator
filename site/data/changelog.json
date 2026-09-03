@@ -2,6 +2,26 @@
  {
   "date": "2026-09-03",
   "kind": "accepted",
+  "target": "pipe",
+  "old": 16,
+  "new": 22.4,
+  "reason": "Calibration on the maintainer’s instruction: observed frontier revenue grew ~5.8× in four quarters at 100% utilisation, so the capacity pipeline was too small. 24 GW over six quarters sits between Epoch-style estimates (~26 GW by end-2027) and Patel’s tripling (~40 GW). Capped at the per-run limit; continues to 24 next run.",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
+  "capped": true,
+  "target_value": 24
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "buildMax",
+  "old": 0.2,
+  "new": 0.25,
+  "reason": "Calibration: with quarter zero rationed, observed revenue growth (44% per quarter trailing) implies capacity growing faster than a 20% per-quarter build cap allows. Set between analyst pace and Patel’s tripling.",
+  "source": "https://www.dwarkesh.com/p/dylan-patel-3"
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
   "target": "R0",
   "old": 118.3,
   "new": 118.3,

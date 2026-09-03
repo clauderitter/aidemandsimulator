@@ -415,16 +415,19 @@
    "short": "Analyst estimates: Anthropic 3.7–5 GW and OpenAI above 2 GW in 2026 (Epoch); Patel has each above 5 GW. No official total."
   },
   "pipe": {
-   "value": 16,
+   "value": 22.4,
    "label": "Committed pipeline, next 18 months",
    "hidden": false,
-   "basis": "Anthropic: over 1 GW of Google TPUs in 2026, ~1 GW AWS Trainium by end-2026 rising to 5 GW, 3.5 GW Broadcom/Google from 2027, 2 GW AMD from H1 2027, up to 1 GW Azure. OpenAI: Stargate sites above 9 GW with the remainder due Q4 2028; first GW each from Nvidia and AMD in H2 2026.",
-   "as_of": "2026-07-22",
-   "type": "reported",
+   "basis": "Observed frontier revenue grew ~5.8× over the last four quarters (Epoch’s disclosed sum) while quarter zero sits at 100% utilisation, so capacity must be growing far faster than the earlier 16 GW pipeline implied. Analyst estimates put the labs near 26 GW by end-2027 (Epoch and others); Patel has the two big labs tripling to ~18 GW each. 24 GW over six quarters is the middle of that range. Calibrated 2026-09-03 on the maintainer’s instruction.",
+   "as_of": "2026-09-03",
+   "type": "estimate",
    "source": "https://www.anthropic.com/news/anthropic-amazon-compute",
    "updated": "2026-09-03",
    "rule": "GW contracted to come online within six quarters, from lab and cloud announcements",
-   "short": "Announced deals: Anthropic TPU, Trainium, Broadcom and AMD capacity; OpenAI Stargate, Nvidia and AMD first-GW deliveries."
+   "short": "Calibrated to observed revenue growth under the compute-constrained stance: between Epoch-style analyst estimates (~26 GW by end-2027) and Patel’s tripling (~40 GW). Capacity arriving within six quarters.",
+   "pending_target": 24,
+   "pending_since": "2026-09-03",
+   "pending_reason": "Calibration to observed revenue growth under the compute-constrained stance"
   },
   "lead": {
    "value": 5,
@@ -487,7 +490,7 @@
    "short": "Assumption: labs build toward 80% utilisation of monetisable capacity."
   },
   "buildMax": {
-   "value": 0.2,
+   "value": 0.25,
    "label": "Max build pace",
    "hidden": false,
    "basis": "Debt’s share of hyperscaler capex rose from 9% (FY2024) to 32% by mid-2026 (FactSet); Morgan Stanley expects 52% of 2025–28 data-centre capex to be externally financed. Builds scale with the market index and fall with rates.",
@@ -496,7 +499,7 @@
    "source": "https://insight.factset.com",
    "updated": "2026-09-03",
    "rule": "",
-   "short": "Assumption: labs can add at most a fifth of their fleet per quarter."
+   "short": "Labs can add up to a quarter of their fleet per quarter (~2.4× a year), between analyst pace and Patel’s tripling."
   },
   "fin": {
    "value": 1,

@@ -43,12 +43,14 @@ function digest(state, limits, changelog) {
   const rows = EXPOSED.map(k => { const p = state.params[k]; const lim = limits[k] || {}; return `${k} | ${p.label} | ${p.value} | as of ${p.as_of} (${p.type}) | rules: ${(RULES[k] || []).join(', ') || 'none (pipeline never moves this)'} | per-run limit: ${lim.abs != null ? '±' + lim.abs : lim.rel != null ? '±' + Math.round(lim.rel * 100) + '%' : 'n/a'} | ${p.short || ''}`; });
   const staleDays = g => Math.round((Date.now() - new Date(g.as_of)) / 86400000);
   const gauges = state.gauges.map(g => `${g.id} | ${g.label} | ${g.value} | as of ${g.as_of}${g.auto ? ' | auto-collected (do not propose)' : staleDays(g) > 45 ? ` | STALE ${staleDays(g)} days: look for a newer reading` : ''}`);
+  const u0 = state.params.R0.value / (state.params.K0.value * (1 - state.params.train.value / 100) * state.params.mono.value); const gc = state.gauges.find(g => g.id === 'growth_check');
+  const calib = `quarter-zero utilisation ${Math.round(u0 * 100)}% (${u0 >= 1 ? 'rationed: a growth gap is supply-side, handle = pipe then buildMax' : 'slack: a growth gap is demand-side, handle = orgX'}); growth_check ${gc ? gc.value + ' — ' + gc.sub : 'n/a'}`;
   const pending = EXPOSED.filter(k => state.params[k] && state.params[k].pending_target != null).map(k => `${k}: at ${state.params[k].value}, target ${state.params[k].pending_target} since ${state.params[k].pending_since}`);
   const scen = state.scenarios.filter(s => s.status !== 'retired').map(s => `${s.id} [${s.camp}] ${s.name} — ${s.who}${s.when ? ', ' + s.when : ''} | overrides ${JSON.stringify(s.p)} | shocks ${JSON.stringify(s.e)} | ${s.thesis.slice(0, 220)}`);
   const recent = changelog.slice(0, 25).map(c => `${c.date} ${c.kind} ${c.target}: ${c.old ?? ''} → ${c.new ?? ''}`);
   const expired = []; for (const s of state.scenarios) for (const e of s.e || []) if (e.q && e.expired && !e.graded) expired.push(`${s.id}: ${e.type} pinned to ${e.q}`);
   const hist = state.history.map(h => `${h.q}: revenue ${h.revenue} K ${h.K ?? '?'} GW H ${h.H ?? '?'} h${h.provisional ? ' (provisional)' : ''}`);
-  return { rows, gauges, scen, recent, expired, hist, pending };
+  return { rows, gauges, scen, recent, expired, hist, pending, calib };
 }
 
 export async function research(state, cfg, limits, changelog) {
@@ -82,6 +84,9 @@ ${d.rows.join('\n')}
 
 ## Gauges (id | label | value | as of). Stale gauges need a newer reading from their own source.
 ${d.gauges.join('\n')}
+
+## Calibration state
+${d.calib}
 
 ## Parameters still moving toward a capped target (no need to re-propose these)
 ${d.pending.join('\n') || 'none'}
