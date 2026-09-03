@@ -1,5 +1,7 @@
 # Reflexive Demand Simulator
 
+Live at [aidemandsimulator.com](https://www.aidemandsimulator.com/).
+
 A self-updating scenario simulator for frontier-AI token demand, built on Giovanni Cattani’s
 [“Nobody is talking seriously about AI demand”](https://x.com/giovannicatt3/article/2094815425972539565) (X, 1 Sep 2026).
 Demand for frontier tokens is modelled as four segments (AI R&D, software engineering, trading, everything else)

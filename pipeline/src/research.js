@@ -9,13 +9,13 @@ import { EVENTS, qDiff } from '../../site/model.js';
 const PROPOSAL_SCHEMA = {
   type: 'object', additionalProperties: false,
   properties: {
-    proposals: { type: 'array', maxItems: 14, items: {
+    proposals: { type: 'array', items: {
       type: 'object', additionalProperties: false,
       properties: {
         kind: { type: 'string', enum: ['param', 'gauge', 'history_K', 'event', 'scenario_new', 'scenario_update', 'scenario_retire', 'watchlist_add'] },
         target: { type: 'string', description: 'param key, gauge id, quarter key (2027Q1), scenario id, or feed URL' },
-        new_value: { type: ['number', 'null'] },
-        new_text: { type: ['string', 'null'], description: 'gauge display value, event type, new one-line basis, or feed name' },
+        new_value: { anyOf: [{ type: 'number' }, { type: 'null' }] },
+        new_text: { anyOf: [{ type: 'string' }, { type: 'null' }], description: 'gauge display value, event type, new one-line basis, or feed name' },
         rule: { type: 'string' },
         source: { type: 'string' },
         quote: { type: 'string', description: 'verbatim, at least 15 words, copied exactly from the source' },
@@ -23,11 +23,11 @@ const PROPOSAL_SCHEMA = {
         evidence_type: { type: 'string', enum: ['reported', 'estimate'] },
         confidence: { type: 'string', enum: ['high', 'medium', 'low'] },
         rationale: { type: 'string' },
-        scenario: { type: ['object', 'null'], additionalProperties: false,
+        scenario: { anyOf: [{ type: 'object' }, { type: 'null' }], additionalProperties: false,
           properties: { id: { type: 'string' }, camp: { type: 'string', enum: ['bull', 'bear', 'structural'] }, name: { type: 'string' }, who: { type: 'string' }, when: { type: 'string' }, thesis: { type: 'string' }, src: { type: 'string' },
             overrides: { type: 'array', items: { type: 'object', additionalProperties: false, properties: { key: { type: 'string' }, value: { type: 'number' } }, required: ['key', 'value'] } },
-            shocks: { type: 'array', items: { type: 'object', additionalProperties: false, properties: { type: { type: 'string' }, t: { type: 'integer' }, v: { type: 'number' }, dur: { type: ['integer', 'null'] } }, required: ['type', 't', 'v', 'dur'] } },
-            retire_reason: { type: ['string', 'null'] } },
+            shocks: { type: 'array', items: { type: 'object', additionalProperties: false, properties: { type: { type: 'string' }, t: { type: 'integer' }, v: { type: 'number' }, dur: { anyOf: [{ type: 'integer' }, { type: 'null' }] } }, required: ['type', 't', 'v', 'dur'] } },
+            retire_reason: { anyOf: [{ type: 'string' }, { type: 'null' }] } },
           required: ['id', 'camp', 'name', 'who', 'when', 'thesis', 'src', 'overrides', 'shocks', 'retire_reason'] },
       },
       required: ['kind', 'target', 'new_value', 'new_text', 'rule', 'source', 'quote', 'as_of', 'evidence_type', 'confidence', 'rationale', 'scenario'],

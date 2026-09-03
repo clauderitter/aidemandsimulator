@@ -74,7 +74,7 @@ function gate(state, p, limits, evidence) {
   return null;
 }
 
-const VERDICT_SCHEMA = { type: 'object', additionalProperties: false, properties: { verdicts: { type: 'array', items: { type: 'object', additionalProperties: false, properties: { index: { type: 'integer' }, verdict: { type: 'string', enum: ['accept', 'reject'] }, adjusted_value: { type: ['number', 'null'] }, adjusted_text: { type: ['string', 'null'] }, reason: { type: 'string', description: 'one sentence, public' } }, required: ['index', 'verdict', 'adjusted_value', 'adjusted_text', 'reason'] } } }, required: ['verdicts'] };
+const VERDICT_SCHEMA = { type: 'object', additionalProperties: false, properties: { verdicts: { type: 'array', items: { type: 'object', additionalProperties: false, properties: { index: { type: 'integer' }, verdict: { type: 'string', enum: ['accept', 'reject'] }, adjusted_value: { anyOf: [{ type: 'number' }, { type: 'null' }] }, adjusted_text: { anyOf: [{ type: 'string' }, { type: 'null' }] }, reason: { type: 'string', description: 'one sentence, public' } }, required: ['index', 'verdict', 'adjusted_value', 'adjusted_text', 'reason'] } } }, required: ['verdicts'] };
 
 export async function judge(state, proposals, limits, changelog, cfg) {
   const xrecent = readJSON(P('pipeline', 'state', 'x_recent.json'), []);
