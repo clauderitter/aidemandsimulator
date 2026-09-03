@@ -462,7 +462,7 @@ const CONTROLS = [
     { k: 'H0', l: '80% task horizon today', min: 1, max: 12, step: 0.1, f: fm.hours }, { k: 'D0', l: 'Horizon doubling time', min: 2, max: 12, step: 0.1, f: fm.months },
     { k: 'rdBoost', l: 'AI R&D spend speeds progress', min: 0, max: 0.6, step: 0.05, f: fm.x, sub: 'per doubling of lab spend vs trend' }, { k: 'H_cap', l: 'Horizon ceiling', min: 200, max: 50000, step: 100, f: v => fmtWork(v) + ' of work', sub: 'doubling slows as the horizon approaches it' }, { k: 'epsX', l: 'Demand response to capability', min: 0, max: 2, step: 0.1, f: fm.x1 } ] },
   { g: 'Demand today', hint: 'Frontier-lab revenue run-rate now and how it splits. “Everything else” is the remainder.', items: [
-    { k: 'R0', l: 'Frontier token revenue', min: 20, max: 600, step: 1, f: fm.money }, { k: 'R0x', l: 'of which undisclosed (est.)', min: 0, max: 100, step: 1, f: fm.money, sub: 'Gemini API and hyperscaler-native inference; already inside the total' }, { k: 'sh_rd', l: 'AI R&D share', min: 0, max: 50, step: 1, f: fm.pct, seg: 'rd' },
+    { k: 'R0', l: 'Frontier token revenue', min: 20, max: 600, step: 1, f: fm.money, sub: 'Epoch’s disclosed sum + undisclosed allowance; the pipeline derives it' }, { k: 'R0x', l: 'of which undisclosed (est.)', min: 0, max: 100, step: 1, f: fm.money, sub: 'Gemini API and hyperscaler-native inference; already inside the total' }, { k: 'orgX', l: 'Organic growth multiplier', min: 0.3, max: 3, step: 0.1, f: fm.x1, sub: 'scales non-reflexive growth 10 · 15 · 10 · 20 %/yr' }, { k: 'sh_rd', l: 'AI R&D share', min: 0, max: 50, step: 1, f: fm.pct, seg: 'rd' },
     { k: 'sh_swe', l: 'Software engineering share', min: 0, max: 60, step: 1, f: fm.pct, seg: 'swe' }, { k: 'sh_trd', l: 'Trading share', min: 0, max: 40, step: 1, f: fm.pct, seg: 'trd' } ] },
   { g: 'Reflexivity', hint: 'Loop gain: how much of last quarter’s growth comes back as next quarter’s growth. Steady growth = drive ÷ (1 − gain).', items: [
     { k: 'k_rd', l: 'AI R&D loop gain', min: 0, max: 0.95, step: 0.05, f: fm.num2, seg: 'rd' }, { k: 'k_swe', l: 'Software loop gain', min: 0, max: 0.95, step: 0.05, f: fm.num2, seg: 'swe' },
@@ -682,7 +682,7 @@ function buildEvForm() {
 }
 
 // ---------- underpinnings, changes, gauges ----------
-const UNDERPIN = [['R0'], ['R0x'], ['sh_rd', 'sh_swe', 'sh_trd'], ['H0'], ['D0'], ['H_cap'], ['k_rd', 'k_swe', 'k_trd', 'k_oth'], ['rho'], ['betaX'], ['subst'], ['K0'], ['pipe'], ['mono'], ['train'], ['capexGW'], ['lead'], ['rate0']];
+const UNDERPIN = [['R0'], ['R0_epoch'], ['R0x'], ['orgX'], ['sh_rd', 'sh_swe', 'sh_trd'], ['H0'], ['D0'], ['H_cap'], ['k_rd', 'k_swe', 'k_trd', 'k_oth'], ['rho'], ['betaX'], ['subst'], ['K0'], ['pipe'], ['mono'], ['train'], ['capexGW'], ['lead'], ['rate0']];
 function renderUnderpin(match) {
   const pr = match || PRESETS.find(x => x.id === state.from) || PRESETS[0];
   const th = $('#thesis'); th.textContent = ''; th.append(pr.thesis + ' '); th.appendChild(h('span', { class: 'att', text: `— ${pr.who}${pr.when ? ', ' + pr.when : ''}` }));

@@ -1,6 +1,6 @@
 // Deterministic collectors: no LLM involved. Each returns observations; apply() writes the ones the rules allow.
 import { P, readJSON, writeJSON, fetchText, parseCSV, round, today, log } from './util.js';
-import { qAdd, qDiff, qOfDate } from '../../site/model.js';
+import { qAdd, qDiff, qOfDate, simulate, paramsOf } from '../../site/model.js';
 
 const FRONTIER = ['OpenAI', 'Anthropic', 'xAI', 'Mistral', 'Z.ai (Zhipu)', 'MiniMax', 'DeepSeek', 'Moonshot'];
 
@@ -98,22 +98,39 @@ export async function collect(state, cfg, limits, changelog) {
   return { obs, errs };
 }
 
+export function deriveR0(state, changelog) {
+  const p = state.params; if (!p.R0_epoch || !p.R0x) return;
+  const v = +(p.R0_epoch.value + p.R0x.value).toFixed(1);
+  if (v !== p.R0.value) { changelog.unshift({ date: today(), kind: 'collected', target: 'R0', old: p.R0.value, new: v, reason: `Derived: Epoch disclosed sum ${p.R0_epoch.value} + undisclosed allowance ${p.R0x.value}.`, source: '' }); Object.assign(p.R0, { value: v, as_of: today(), updated: today(), type: 'derived' }); }
+}
+// A capped move stores its target; each run continues toward it under the same limit until reached or superseded.
+export function carryOver(state, changelog, limits) {
+  for (const [k, p] of Object.entries(state.params)) {
+    if (p.pending_target == null || (state.frozen || []).includes(k)) continue;
+    if (Math.abs(p.pending_target - p.value) < 1e-9) { delete p.pending_target; continue; }
+    const before = p.value; const ok = setParam(state, changelog, limits, k, p.pending_target, `Carry-over toward the target ${p.pending_target} set on ${p.pending_since || '?'} (${p.pending_reason || 'earlier evidence'}).`, p.source, p.as_of, { keepType: true });
+    if (ok && Math.abs(p.pending_target - p.value) < 1e-9) { delete p.pending_target; delete p.pending_since; delete p.pending_reason; }
+    if (!ok && before === p.value) { delete p.pending_target; }
+  }
+}
 function setGauge(state, changelog, id, value, sub, src, asOf) {
   const g = state.gauges.find(x => x.id === id); if (!g) return;
   if (g.value === value && g.as_of === asOf) return;
   changelog.unshift({ date: today(), kind: 'collected', target: `gauge:${id}`, old: g.value, new: value, reason: `Observed from source (${asOf}).`, source: src });
   Object.assign(g, { value, sub, src, as_of: asOf, updated: today() });
 }
-function setParam(state, changelog, limits, key, value, reason, src, asOf) {
-  const p = state.params[key]; if (!p || state.frozen.includes(key)) return false;
+export function setParam(state, changelog, limits, key, value, reason, src, asOf, opts = {}) {
+  const p = state.params[key]; if (!p || (state.frozen || []).includes(key)) return false;
   const lim = limits[key] || {}; let v = value;
   if (lim.min != null) v = Math.max(lim.min, v); if (lim.max != null) v = Math.min(lim.max, v);
-  const old = p.value; const maxMove = lim.abs != null ? lim.abs : lim.rel != null ? Math.abs(old) * lim.rel : Infinity;
-  if (Math.abs(v - old) > maxMove) { v = old + Math.sign(v - old) * maxMove; reason += ` Speed limit applied: target ${value}, moved ${old} → ${+v.toFixed(4)} this run.`; }
+  const old = p.value; const maxMove = lim.abs != null ? lim.abs : lim.rel != null ? Math.abs(old) * lim.rel : Infinity; let capped = false;
+  if (Math.abs(v - old) > maxMove) { v = old + Math.sign(v - old) * maxMove; capped = true; }
   v = +v.toFixed(4);
   if (v === old) return false;
-  changelog.unshift({ date: today(), kind: 'collected', target: key, old, new: v, reason, source: src });
-  Object.assign(p, { value: v, as_of: asOf, updated: today(), type: 'reported', source: src });
+  const target = +(+value).toFixed(4);
+  changelog.unshift({ date: today(), kind: opts.kind || 'collected', target: key, old, new: v, reason: reason + (capped ? ` Capped: target ${target}, continues next run.` : ''), source: src, ...(capped ? { capped: true, target_value: target } : {}) });
+  Object.assign(p, { value: v, as_of: asOf, updated: today(), source: src, ...(opts.keepType ? {} : { type: opts.type || 'reported' }) });
+  if (capped) { p.pending_target = target; p.pending_since = today(); p.pending_reason = reason.slice(0, 120); } else { delete p.pending_target; delete p.pending_since; delete p.pending_reason; }
   return true;
 }
 
@@ -129,15 +146,23 @@ export function apply(state, obs, limits, changelog) {
   if (obs.aaii) setGauge(state, changelog, 'aaii', `${Math.round(obs.aaii.bull)}% / ${Math.round(obs.aaii.bear)}%`, `latest weekly survey, read ${fmtD(obs.aaii.date)}`, obs.aaii.src, obs.aaii.date);
   if (obs.metr && obs.metr.latest) {
     setParam(state, changelog, limits, 'H0', +obs.metr.latest.p80.toFixed(2), `Rule: latest SOTA 80% horizon in METR’s file (${obs.metr.latest.id}, released ${obs.metr.latest.date}).`, obs.metr.src, obs.metr.latest.date);
-    if (obs.metr.doublingDays) setParam(state, changelog, limits, 'D0', +(obs.metr.doublingDays / 30.4).toFixed(1), `Rule: METR since-2023 doubling time ${obs.metr.doublingDays.toFixed(0)} days ÷ 30.4.`, obs.metr.src, today());
+    if (obs.metr.doublingDays) setParam(state, changelog, limits, 'D0', +(obs.metr.doublingDays / 30.4).toFixed(1), `Rule: METR since-2023 doubling time ${obs.metr.doublingDays.toFixed(0)} days ÷ 30.4 (latest frontier measurement ${obs.metr.latest.date}).`, obs.metr.src, obs.metr.latest.date);
     for (const h of state.history) { const pts = obs.metr.frontier.filter(x => x.date <= qEnd(h.q)); if (pts.length) h.H = +pts[pts.length - 1].p80.toFixed(2); }
   }
   if (obs.epoch && obs.epoch.total > 0) {
     const parts = Object.values(obs.epoch.now).sort((a, b) => b.value - a.value).map(p => `${p.company} $${p.value.toFixed(0)}B (${p.date})`).join(', ');
-    const undisclosed = state.params.R0x ? state.params.R0x.value : 0;
-    setParam(state, changelog, limits, 'R0', +(obs.epoch.total + undisclosed).toFixed(1), `Rule: sum of latest full-company run-rates in Epoch’s dataset (${parts}) plus the undisclosed-revenue allowance of $${undisclosed}B.`, obs.epoch.src, today());
+    setParam(state, changelog, limits, 'R0_epoch', +obs.epoch.total.toFixed(1), `Rule: sum of latest full-company run-rates in Epoch’s dataset: ${parts}.`, obs.epoch.src, today());
+    deriveR0(state, changelog);
     for (const h of state.history) { const by = obs.epoch.latestAt(qEnd(h.q)); const tot = Object.values(by).reduce((a, p) => a + p.value, 0); if (tot > 0) { h.revenue = +tot.toFixed(1); h.provisional = false; h.note = 'Sum of each frontier lab’s latest reported run-rate at quarter end (Epoch revenue reports).'; } }
   }
+  // Growth check: trailing four-quarter observed growth of the disclosed sum vs the model's quarter-zero aggregate growth.
+  try {
+    const hist = state.history; const back = hist[hist.length - 4]; if (back && back.revenue > 0 && state.params.R0_epoch) {
+      const gObs = Math.log(state.params.R0_epoch.value / back.revenue) / 4;
+      const rows = simulate(paramsOf(state), [], null, 2); const gMod = rows[0].gR;
+      setGauge(state, changelog, 'growth_check', `${(gObs * 100).toFixed(0)}% vs ${(gMod * 100).toFixed(0)}% per qtr`, `observed (Epoch sum, ${back.q} → now) vs modelled quarter-zero growth; gap ${((gObs - gMod) * 100).toFixed(0)} pts`, 'https://epoch.ai/data/ai_companies_revenue_reports.csv', today());
+    }
+  } catch (e) { log('growth check failed', String(e).slice(0, 80)); }
   // Stance rule: the revenue ceiling per inference GW is derived so that today’s revenue sits at ~100% of monetisable capacity.
   const p = state.params; const derivedMono = p.R0.value / (p.K0.value * (1 - p.train.value / 100));
   setParam(state, changelog, limits, 'mono', +derivedMono.toFixed(1), `Rule: revenue ceiling = R0 ${p.R0.value} ÷ (K0 ${p.K0.value} GW × inference share ${(100 - p.train.value)}%), keeping quarter-0 utilisation at 100%.`, 'https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md', today());

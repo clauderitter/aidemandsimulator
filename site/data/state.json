@@ -12,11 +12,11 @@
    "hidden": false,
    "basis": "Anthropic run-rate $65B at end-July 2026 (Bloomberg, 17 Aug 2026; the path ran $14B Feb → $30B Apr → $47B May → $65B Jul) with investors expecting $100–120B by year-end; OpenAI $40B (Bloomberg, 13 Aug 2026); Epoch puts the two at $105B combined, up 3.5× since January. Google does not break out Gemini API revenue; Z.ai, MiniMax, DeepSeek, xAI and Mistral add a few billion. Rounded sum entering Q3 2026.",
    "as_of": "2026-09-03",
-   "type": "reported",
+   "type": "derived",
    "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
    "updated": "2026-09-03",
-   "rule": "sum of the latest annualised run-rates of frontier labs in Epoch’s revenue dataset (full-company scope), in $B",
-   "short": "Sum of the latest reported run-rates of frontier labs in Epoch’s dataset (OpenAI, Anthropic, Z.ai, MiniMax, DeepSeek, xAI). Google’s Gemini API is not disclosed."
+   "rule": "R0 = R0_epoch + R0x, derived in one place",
+   "short": "Total frontier revenue run-rate = Epoch’s disclosed sum + the undisclosed allowance. Derived; edit the two parts."
   },
   "sh_rd": {
    "value": 20,
@@ -71,7 +71,7 @@
    "label": "Horizon doubling time",
    "hidden": false,
    "basis": "METR TH1.1: 129 days for the 50% horizon since 2023; o3 → Mythos Preview implies ~4.4 months on the 80% horizon; the original 2025 paper found 7 months over 2019–2025. AI Futures revised its median to 4–4.5 months in April 2026.",
-   "as_of": "2026-09-03",
+   "as_of": "2026-04-07",
    "type": "reported",
    "source": "https://metr.org/time-horizons/",
    "updated": "2026-09-03",
@@ -259,12 +259,12 @@
    "short": "Assumption: bounded work has little feedback from spend to revenue."
   },
   "rho": {
-   "value": 0.55,
+   "value": 0.5,
    "label": "Contagion between loops",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
    "as_of": "2026-09-02",
-   "type": "reported",
+   "type": "estimate",
    "source": "https://x.com/arakharazian/status/2095204452609171555",
    "updated": "2026-09-03",
    "rule": "",
@@ -384,7 +384,7 @@
    "hidden": false,
    "basis": "Chinese open-weight models passed 60% of OpenRouter tokens in July 2026 and the US share fell from 70% to 30% in a year; DeepSeek V4-Flash lists at $0.14/$0.28 per million tokens and OpenAI cut Luna 80% in July; fixed-capability prices fall 10× to 200× a year (a16z, Epoch). DeepSeek raised prices in August as its capacity filled, so migration saturates. Applies to bounded work only.",
    "as_of": "2026-07-09",
-   "type": "reported",
+   "type": "estimate",
    "source": "https://officechai.com/ai/share-of-us-models-being-used-on-openrouter-has-collapsed-from-70-to-30-over-the-past-year/",
    "updated": "2026-09-03",
    "rule": "",
@@ -396,7 +396,7 @@
    "hidden": false,
    "basis": "Stanford/Together 'Intelligence per Watt' (>1M real queries, 20+ local models): routed local models now answer ~89% of everyday chat and reasoning queries as well as a frontier cloud model, on top of Chinese open-weights above 60% of OpenRouter tokens. (reported, 2026-08-21). New migration evidence beyond the July OpenRouter reading: routed local models match frontier quality on ~89% of everyday queries and cut cost 74% and compute 77% against an all-cloud baseline, with the best local model's win/tie rate rising from 23.2% (2023) to 71.3% (2025). Bounded work has a cheaper credible substitute than 15% implies; +5 keeps subst below the gap/wall scenarios' 25.",
    "as_of": "2026-08-21",
-   "type": "reported",
+   "type": "estimate",
    "source": "https://tomtunguz.com/intelligence-per-watt",
    "updated": "2026-09-03",
    "rule": "",
@@ -456,7 +456,7 @@
    "hidden": false,
    "basis": "Set so the labs start compute-constrained: ~$120B of frontier revenue across ~10 GW with 60% on training is ~$30B per inference GW, i.e. 100% utilisation at Q3 2026. The constraint is visible in prices: one-year H100 rentals rose from $1.70 to $2.35/hr between Oct 2025 and Mar 2026 and on-demand capacity is sold out (SemiAnalysis, Apr 2026). Potential is far higher: SemiAnalysis models ~$100B/GW/yr of inference revenue potential (Aug 2026), and Patel puts Anthropic at ~$50M per MW of total compute today, $70–80M by end-2027. The “compute gets pricier” shock moves the ceiling.",
    "as_of": "2026-09-03",
-   "type": "reported",
+   "type": "derived",
    "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
    "updated": "2026-09-03",
    "rule": "revenue ceiling per inference GW; derived so that today’s revenue ÷ inference GW sits near 100% utilisation unless evidence of slack appears",
@@ -569,6 +569,30 @@
    "source": "https://metr.org/notes/2026-01-22-time-horizon-limitations/",
    "updated": "2026-09-03",
    "rule": ""
+  },
+  "R0_epoch": {
+   "value": 108.3,
+   "label": "Disclosed frontier revenue (Epoch)",
+   "hidden": false,
+   "basis": "Sum of the latest full-company annualised run-rates in Epoch’s revenue dataset for the frontier labs it tracks.",
+   "short": "Epoch’s disclosed sum; the collector rewrites it daily. Total revenue = this + the undisclosed allowance.",
+   "as_of": "2026-09-03",
+   "type": "reported",
+   "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
+   "updated": "2026-09-03",
+   "rule": "epoch_sum"
+  },
+  "orgX": {
+   "value": 1,
+   "label": "Organic growth multiplier",
+   "hidden": false,
+   "basis": "Scales the organic (non-reflexive, non-capability) growth of every segment. Calibration handle: the pipeline compares trailing observed revenue growth with the model’s quarter-zero growth and may move this under the growth_calibration rule when the gap persists.",
+   "short": "Scales organic growth in every segment; the calibration handle for observed vs modelled growth.",
+   "as_of": "2026-09-03",
+   "type": "assumption",
+   "source": "",
+   "updated": "2026-09-03",
+   "rule": "growth_calibration"
   }
  },
  "history": [
@@ -1283,6 +1307,16 @@
    "sub": "1 Sep 2026 (FRED DFF); target range 3.50–3.75%",
    "src": "https://fred.stlouisfed.org/series/DFF",
    "as_of": "2026-09-01",
+   "auto": true,
+   "updated": "2026-09-03"
+  },
+  {
+   "id": "growth_check",
+   "label": "Observed vs modelled revenue growth",
+   "value": "—",
+   "sub": "trailing four quarters of Epoch’s disclosed sum vs the model’s quarter-zero growth; updated by the collector",
+   "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
+   "as_of": "2026-09-03",
    "auto": true,
    "updated": "2026-09-03"
   }

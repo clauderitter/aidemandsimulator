@@ -41,16 +41,19 @@ const PROPOSAL_SCHEMA = {
 
 function digest(state, limits, changelog) {
   const rows = EXPOSED.map(k => { const p = state.params[k]; const lim = limits[k] || {}; return `${k} | ${p.label} | ${p.value} | as of ${p.as_of} (${p.type}) | rules: ${(RULES[k] || []).join(', ') || 'none (pipeline never moves this)'} | per-run limit: ${lim.abs != null ? '±' + lim.abs : lim.rel != null ? '±' + Math.round(lim.rel * 100) + '%' : 'n/a'} | ${p.short || ''}`; });
-  const gauges = state.gauges.map(g => `${g.id} | ${g.label} | ${g.value} | as of ${g.as_of}${g.auto ? ' | auto-collected (do not propose)' : ''}`);
+  const staleDays = g => Math.round((Date.now() - new Date(g.as_of)) / 86400000);
+  const gauges = state.gauges.map(g => `${g.id} | ${g.label} | ${g.value} | as of ${g.as_of}${g.auto ? ' | auto-collected (do not propose)' : staleDays(g) > 45 ? ` | STALE ${staleDays(g)} days: look for a newer reading` : ''}`);
+  const pending = EXPOSED.filter(k => state.params[k] && state.params[k].pending_target != null).map(k => `${k}: at ${state.params[k].value}, target ${state.params[k].pending_target} since ${state.params[k].pending_since}`);
   const scen = state.scenarios.filter(s => s.status !== 'retired').map(s => `${s.id} [${s.camp}] ${s.name} — ${s.who}${s.when ? ', ' + s.when : ''} | overrides ${JSON.stringify(s.p)} | shocks ${JSON.stringify(s.e)} | ${s.thesis.slice(0, 220)}`);
   const recent = changelog.slice(0, 25).map(c => `${c.date} ${c.kind} ${c.target}: ${c.old ?? ''} → ${c.new ?? ''}`);
   const expired = []; for (const s of state.scenarios) for (const e of s.e || []) if (e.q && e.expired && !e.graded) expired.push(`${s.id}: ${e.type} pinned to ${e.q}`);
   const hist = state.history.map(h => `${h.q}: revenue ${h.revenue} K ${h.K ?? '?'} GW H ${h.H ?? '?'} h${h.provisional ? ' (provisional)' : ''}`);
-  return { rows, gauges, scen, recent, expired, hist };
+  return { rows, gauges, scen, recent, expired, hist, pending };
 }
 
 export async function research(state, cfg, limits, changelog) {
-  const { items, posts, seen, failed } = await gatherItems(cfg);
+  const { items: rawItems, posts, seen, failed } = await gatherItems(cfg);
+  const rot = new Date().getUTCDate() % Math.max(1, rawItems.length); const items = rawItems.slice(rot).concat(rawItems.slice(0, rot));
   const d = digest(state, limits, changelog);
   const rebaseline = new Date().getUTCDay() === 1 || process.env.REBASELINE === '1';
   const system = `You are the research analyst for a self-updating model of frontier-AI token demand versus compute supply (the "Reflexive Demand Simulator", built on Giovanni Cattani's thesis that demand for frontier tokens is driven by a few reflexive, correlated, procyclical tasks).
@@ -77,8 +80,11 @@ Work method: skim the new items and posts, use web_search and web_fetch to read 
 ## Current parameters (key | label | value | as of | rules | per-run limit | basis)
 ${d.rows.join('\n')}
 
-## Gauges (id | label | value | as of)
+## Gauges (id | label | value | as of). Stale gauges need a newer reading from their own source.
 ${d.gauges.join('\n')}
+
+## Parameters still moving toward a capped target (no need to re-propose these)
+${d.pending.join('\n') || 'none'}
 
 ## Active scenarios
 ${d.scen.join('\n')}

@@ -7,7 +7,9 @@ changes only through pull requests by a person. These rules bind the collectors,
 
 | Parameter | Rule | Source of truth | Cadence |
 |---|---|---|---|
-| `R0` frontier token revenue | Sum of the latest full-company annualised run-rates of frontier labs (OpenAI, Anthropic, xAI, Mistral, Z.ai, MiniMax, DeepSeek, Moonshot) | Epoch `ai_companies_revenue_reports.csv`; a newer primary report (Bloomberg, The Information, company) may be proposed by the researcher | daily |
+| `R0_epoch` disclosed revenue | Sum of the latest full-company annualised run-rates of frontier labs in Epoch’s dataset | Epoch `ai_companies_revenue_reports.csv`; a newer primary report may be proposed under `primary_report` | daily |
+| `R0` frontier token revenue | Derived in one place: `R0_epoch + R0x`. Never proposed directly | — | daily |
+| `orgX` organic growth | Calibration handle. The `growth_check` gauge compares trailing observed growth of the disclosed sum with the model’s quarter-zero growth; a gap above 0.05 log/quarter for three consecutive weeks justifies a capped proposal toward closing half of it | derived gauge + judge | weekly |
 | `R0x` undisclosed allowance | Estimate of frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference); `R0` = Epoch sum + `R0x` | researcher proposals with sourced estimates | on evidence |
 | `H0` 80% task horizon | Latest state-of-the-art `p80_horizon_length` in METR’s benchmark file, minutes ÷ 60 | METR `benchmark_results_1_1.yaml` | daily |
 | `D0` doubling time | METR since-2023 doubling time in days ÷ 30.4 | same | daily |
@@ -24,6 +26,10 @@ Every change carries: `old`, `new`, the rule used, a source URL, a quote (for ag
 and the as-of date. The `short` one-liner and the longer `basis` are rewritten when the underlying evidence changes.
 
 ## Speed limits
+
+A capped move stores its target on the parameter (`pending_target`); each run continues toward it under the same limit until reached or superseded, and the changelog entry carries `capped: true` and the target.
+
+**Provenance grades:** `reported` only when the proposed number itself appears in the quoted source; otherwise `estimate`. Derived parameters (`R0`, `mono`) are graded `derived`. Customer-concentration data is a proxy for a shared demand base, not evidence of co-movement, and does not move `rho` on its own.
 
 `limits.json` caps each parameter’s move per run (absolute or relative) and its bounds. A target beyond the cap moves to the
 cap and continues on later runs, so nothing jumps. Moves larger than the cap need two independent sources; the judge records

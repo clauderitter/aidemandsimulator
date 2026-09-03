@@ -1,6 +1,24 @@
 [
  {
   "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "R0",
+  "old": 118.3,
+  "new": 118.3,
+  "reason": "Revenue is now stored as R0_epoch (Epoch’s disclosed sum) plus R0x (undisclosed allowance) and derived in one place; mono, rho, subst and H_sat re-graded as derived or estimate.",
+  "source": "https://github.com/clauderitter/aidemandsimulator/issues/1"
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "rho",
+  "old": 0.55,
+  "new": 0.5,
+  "reason": "Reverted after the weekly review: customer concentration is a proxy for shared demand, not evidence of co-movement, and the rulebook now says so. Two runs had ruled opposite ways on the same datum.",
+  "source": "https://github.com/clauderitter/aidemandsimulator/issues/1"
+ },
+ {
+  "date": "2026-09-03",
   "source": "https://www.exponentialview.co/p/the-state-of-the-ai-economy",
   "kind": "accepted",
   "target": "watchlist",

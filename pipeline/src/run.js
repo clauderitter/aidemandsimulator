@@ -1,5 +1,5 @@
 import { P, readJSON, writeJSON, log } from './util.js';
-import { collect, apply } from './collect.js';
+import { collect, apply, carryOver } from './collect.js';
 import { roll } from './roll.js';
 import { research } from './research.js';
 import { judge } from './judge.js';
@@ -15,7 +15,7 @@ const changelog = readJSON(P('site', 'data', 'changelog.json'), []);
 const prev = previousState();
 
 if (!only || only === 'roll') roll(state, changelog);
-if (!only || only === 'collect') { const { obs, errs } = await collect(state, cfg, limits, changelog); apply(state, obs, limits, changelog); if (errs.length) log('collector errors:', errs.join(' | ')); }
+if (!only || only === 'collect') { const { obs, errs } = await collect(state, cfg, limits, changelog); apply(state, obs, limits, changelog); carryOver(state, changelog, limits); if (errs.length) log('collector errors:', errs.join(' | ')); }
 if (!only || only === 'agents') {
   const canRun = cfg.agents_enabled && (process.env.ANTHROPIC_API_KEY || process.env.ANTHROPIC_AUTH_TOKEN || process.env.AGENTS_MOCK === '1');
   if (canRun) { try { const { proposals } = await research(state, cfg, limits, changelog); const r = await judge(state, proposals || [], limits, changelog, cfg); const u = usage(); log('judge', r, 'tokens in/out', u.input, u.output, 'cache', u.cache_read, 'calls', u.calls); } catch (e) { log('agents failed:', String(e && e.stack || e).slice(0, 600)); } }

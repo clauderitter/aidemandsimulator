@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import { P, readJSON, writeJSON, today, log } from './util.js';
 import { runAgent } from './llm.js';
 import { RULES } from './rulesets.js';
+import { simulate, resolveEvents, paramsOf } from '../../site/model.js';
 
 const MEMO_SCHEMA = { type: 'object', additionalProperties: false, properties: {
   title: { type: 'string' }, priority: { type: 'string', enum: ['low', 'medium', 'high'] },
@@ -17,14 +18,18 @@ function weekDigest(state, changelog) {
   const cutoff = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
   const week = changelog.filter(c => c.date >= cutoff);
   const lines = week.map(c => `${c.date} ${c.kind} ${c.target}: ${c.old ?? ''} → ${c.new ?? ''} — ${(c.reason || '').slice(0, 220)}`);
-  const capped = week.filter(c => /speed limit|per-run cap/i.test(c.reason || '')).map(c => c.target);
+  const capped = week.filter(c => c.capped).map(c => `${c.target}: moved ${c.old} → ${c.new}, target ${c.target_value}`);
+  const pending = Object.entries(state.params).filter(([k, p]) => p.pending_target != null).map(([k, p]) => `${k}: at ${p.value}, target ${p.pending_target} since ${p.pending_since}`);
+  const A = [4, 8, 12, 17]; const act = state.scenarios.filter(x => x.status !== 'retired'); const paths = Object.fromEntries(act.map(x => [x.id, simulate(paramsOf(state, x.p || {}), resolveEvents((x.e || []).filter(e => !e.expired), state.quarter0), null, state.horizon_quarters).map(r => r.revenue)]));
+  const gap = (a, b) => Math.max(...A.map(t => Math.abs(a[t] - b[t]) / Math.max(a[t], b[t], 1e-9)));
+  const close = []; for (let i = 0; i < act.length; i++) for (let j = i + 1; j < act.length; j++) { const g = gap(paths[act[i].id], paths[act[j].id]); if (g < 0.15) close.push(`${act[i].id} vs ${act[j].id}: ${Math.round(g * 100)}%`); }
   const stale = state.gauges.filter(g => (Date.now() - new Date(g.as_of)) / 86400000 > 45).map(g => `${g.id} (as of ${g.as_of})`);
   const params = Object.entries(state.params).filter(([k, p]) => !p.hidden).map(([k, p]) => `${k} = ${p.value} (${p.type}, as of ${p.as_of}; rules: ${(RULES[k] || []).join(', ') || 'none'})`);
   const scen = state.scenarios.filter(s => s.status !== 'retired').map(s => `${s.id} [${s.camp}${s.core ? ', core' : ', rotating'}] ${s.name} — ${s.who}${s.added ? ' (added ' + s.added + ')' : ''}`);
   const retired = state.scenarios.filter(s => s.status === 'retired').map(s => `${s.id}: ${s.retired_reason || ''}`);
   const notes = readJSON(P('pipeline', 'state', 'notes.json'), []).filter(n => n.date >= cutoff).flatMap(n => n.notes.map(x => `${n.date}: ${x}`));
   const health = readJSON(P('pipeline', 'state', 'feed_health.json'), []).filter(h => h.date >= cutoff).map(h => `${h.date}: failed ${h.failed.join(', ') || 'none'}`);
-  return { lines, capped, stale, params, scen, retired, notes, health };
+  return { lines, capped, stale, params, scen, retired, notes, health, pending, close };
 }
 
 async function github(path, method = 'GET', body = null) {
@@ -53,8 +58,14 @@ ${d.params.join('\n')}
 ## Changelog this week (${d.lines.length} entries)
 ${d.lines.join('\n') || 'none'}
 
-## Parameters that hit a speed limit this week
-${d.capped.join(', ') || 'none'}
+## Parameters that hit a speed limit this week (target carries over automatically)
+${d.capped.join('\n') || 'none'}
+
+## Still moving toward a capped target
+${d.pending.join('\n') || 'none'}
+
+## Scenario pairs within 15% of each other at every anchor (path similarity, not view similarity)
+${d.close.join('\n') || 'none'}
 
 ## Stale gauges (>45 days)
 ${d.stale.join('\n') || 'none'}

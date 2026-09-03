@@ -50,7 +50,7 @@ export function simulate(p, events = [], noise = null, T = 18) {
   const capOf = k => k * (1 - trainShare) * p.mono * monoMult;
   const drive = (s, d, Hh, Mm, subst) => {
     const sat = s === 'oth' ? 1 / (1 + Hh / p.H_sat) : 1;
-    let v = Math.log(1 + p['g_' + s] / 100) / 4 + p['eps_' + s] * p.epsX * d * sat + p['b_' + s] * p.betaX * (Mm - 1);
+    let v = Math.log(1 + p['g_' + s] / 100) / 4 * (p.orgX == null ? 1 : p.orgX) + p['eps_' + s] * p.epsX * d * sat + p['b_' + s] * p.betaX * (Mm - 1);
     if (s === 'oth') v -= subst / 100 / 4;
     return v;
   };
