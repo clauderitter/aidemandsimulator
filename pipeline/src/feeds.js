@@ -36,7 +36,7 @@ export async function gatherItems(cfg) {
   }
   const recent = readJSON(P('pipeline', 'state', 'x_recent.json'), []);
   const posts = recent.filter(p => !seen['x:' + p.id]).slice(-80);
-  return { items: items.slice(0, 40), posts, seen };
+  return { items: items.slice(0, 30), posts: posts.slice(-60), seen };
 }
 
 export function markSeen(seen, items, posts) {

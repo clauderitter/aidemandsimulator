@@ -100,8 +100,8 @@ ${posts.map(p => `- @${p.handle} ${String(p.at).slice(0, 10)} ${p.url}\n  ${p.te
 
 Read what matters, then submit.`;
   const tools = [
-    { type: 'web_search_20260209', name: 'web_search', max_uses: 10 },
-    { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 12, max_content_tokens: 6000 },
+    { type: 'web_search_20260209', name: 'web_search', max_uses: 6 },
+    { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 8, max_content_tokens: 4000 },
     { name: 'submit_proposals', description: 'Submit the final list of proposals (call exactly once, at the end).', strict: true, input_schema: PROPOSAL_SCHEMA },
   ];
   const mock = () => readJSON(P('pipeline', 'work', 'mock_proposals.json'), { proposals: [], notes: ['mock'] });

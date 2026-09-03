@@ -545,6 +545,18 @@
    "updated": "2026-09-03",
    "rule": "",
    "short": "Modelling constant; see “How it works”."
+  },
+  "R0x": {
+   "value": 10,
+   "label": "Undisclosed frontier revenue (est.)",
+   "hidden": false,
+   "basis": "Google does not break out Gemini API revenue, and Meta, Microsoft and Amazon run frontier-class inference internally; none appears in Epoch’s disclosed run-rates. Azeem Azhar puts generative-AI revenue above a $175B run-rate in June 2026 against ~$105B disclosed by the two big labs at the time, so an allowance of roughly $10B is a conservative reading. Estimate; the researcher may move it with sourced evidence.",
+   "short": "Allowance for frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference). Estimate, moved only with sourced evidence.",
+   "as_of": "2026-06-25",
+   "type": "estimate",
+   "source": "https://www.exponentialview.co/p/the-state-of-the-ai-economy",
+   "updated": "2026-09-03",
+   "rule": "analyst or company evidence on undisclosed frontier revenue"
   }
  },
  "history": [
@@ -619,7 +631,7 @@
    "id": "base",
    "camp": "base",
    "name": "Cattani base case",
-   "who": "Giovanni Cattani, Hummingbird Ventures",
+   "who": "Giovanni Cattani (@giovannicatt3)",
    "when": "1 Sep 2026",
    "thesis": "About half of frontier inference revenue comes from three unbounded, long-horizon tasks: AI R&D (~20%), software engineering (~15%) and trading (~15%). Their spend feeds their own revenue and funding, so growth is real but partly self-fuelled, and a single trigger could unwind up to half of it.",
    "src": "https://x.com/giovannicatt3/article/2094815425972539565",

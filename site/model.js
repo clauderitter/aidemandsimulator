@@ -121,10 +121,12 @@ export function monteCarlo(p, events, T = 18, n = 240, seed = 20260901) {
   const paths = [], revs = []; let busts = 0;
   for (let i = 0; i < n; i++) {
     const q = { ...p };
-    for (const s of ['rd', 'swe', 'trd']) q['k_' + s] = Math.max(0, Math.min(0.95, q['k_' + s] + (rnd() - 0.5) * 0.4));
+    for (const s of ['rd', 'swe', 'trd']) q['k_' + s] = Math.max(0, Math.min(0.95, q['k_' + s] + (rnd() - 0.5) * 0.6));
+    q.k_oth = Math.max(0, Math.min(0.6, q.k_oth + (rnd() - 0.5) * 0.3));
+    for (const s of ['rd', 'swe', 'trd']) q['sh_' + s] = Math.max(0, q['sh_' + s] + (rnd() - 0.5) * 10);
     q.epsX = p.epsX * (0.7 + 0.6 * rnd()); q.betaX = p.betaX * (0.6 + 0.8 * rnd());
     q.D0 = Math.max(1.5, p.D0 + (rnd() - 0.5) * 3); q.m_rev = p.m_rev * (0.5 + rnd());
-    q.rho = Math.min(1, Math.max(0, p.rho + (rnd() - 0.5) * 0.4)); q.mono = p.mono * (0.8 + 0.4 * rnd());
+    q.rho = Math.min(1, Math.max(0, p.rho + (rnd() - 0.5) * 0.5)); q.mono = p.mono * (0.7 + 0.6 * rnd());
     const noise = { seg: [], M: [] };
     for (let t = 0; t < T; t++) { noise.seg.push([0, 1, 2, 3].map(() => gauss(rnd) * 0.04)); noise.M.push(gauss(rnd) * 0.06); }
     const rows = simulate(q, events, noise, T);

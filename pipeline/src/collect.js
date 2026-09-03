@@ -134,7 +134,8 @@ export function apply(state, obs, limits, changelog) {
   }
   if (obs.epoch && obs.epoch.total > 0) {
     const parts = Object.values(obs.epoch.now).sort((a, b) => b.value - a.value).map(p => `${p.company} $${p.value.toFixed(0)}B (${p.date})`).join(', ');
-    setParam(state, changelog, limits, 'R0', +obs.epoch.total.toFixed(1), `Rule: sum of latest full-company run-rates in Epoch’s dataset: ${parts}.`, obs.epoch.src, today());
+    const undisclosed = state.params.R0x ? state.params.R0x.value : 0;
+    setParam(state, changelog, limits, 'R0', +(obs.epoch.total + undisclosed).toFixed(1), `Rule: sum of latest full-company run-rates in Epoch’s dataset (${parts}) plus the undisclosed-revenue allowance of $${undisclosed}B.`, obs.epoch.src, today());
     for (const h of state.history) { const by = obs.epoch.latestAt(qEnd(h.q)); const tot = Object.values(by).reduce((a, p) => a + p.value, 0); if (tot > 0) { h.revenue = +tot.toFixed(1); h.provisional = false; h.note = 'Sum of each frontier lab’s latest reported run-rate at quarter end (Epoch revenue reports).'; } }
   }
   // Stance rule: the revenue ceiling per inference GW is derived so that today’s revenue sits at ~100% of monetisable capacity.

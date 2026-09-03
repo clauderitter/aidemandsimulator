@@ -8,6 +8,7 @@ changes only through pull requests by a person. These rules bind the collectors,
 | Parameter | Rule | Source of truth | Cadence |
 |---|---|---|---|
 | `R0` frontier token revenue | Sum of the latest full-company annualised run-rates of frontier labs (OpenAI, Anthropic, xAI, Mistral, Z.ai, MiniMax, DeepSeek, Moonshot) | Epoch `ai_companies_revenue_reports.csv`; a newer primary report (Bloomberg, The Information, company) may be proposed by the researcher | daily |
+| `R0x` undisclosed allowance | Estimate of frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference); `R0` = Epoch sum + `R0x` | researcher proposals with sourced estimates | on evidence |
 | `H0` 80% task horizon | Latest state-of-the-art `p80_horizon_length` in METR’s benchmark file, minutes ÷ 60 | METR `benchmark_results_1_1.yaml` | daily |
 | `D0` doubling time | METR since-2023 doubling time in days ÷ 30.4 | same | daily |
 | `rate0` baseline rate | Fed funds effective + 0.4, rounded to 0.25 | FRED `DFF` | daily |

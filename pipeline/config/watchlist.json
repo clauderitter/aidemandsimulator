@@ -1,114 +1,160 @@
 {
- "_comment": "Sources the researcher sweeps daily. Feeds are fetched directly; X handles are read through the X API when X_BEARER_TOKEN is set. The researcher may propose additions; the judge admits them on the same evidence rules as everything else.",
- "feeds": [
-  {
-   "name": "Dwarkesh Podcast",
-   "url": "https://www.dwarkesh.com/feed",
-   "kind": "rss"
-  },
-  {
-   "name": "SemiAnalysis",
-   "url": "https://newsletter.semianalysis.com/feed",
-   "kind": "rss"
-  },
-  {
-   "name": "Epoch AI Gradient Updates",
-   "url": "https://epoch.ai/gradient-updates",
-   "kind": "html",
-   "match": "/gradient-updates/"
-  },
-  {
-   "name": "Epoch AI data insights",
-   "url": "https://epoch.ai/data-insights",
-   "kind": "html",
-   "match": "/data-insights/"
-  },
-  {
-   "name": "METR",
-   "url": "https://metr.org/feed.xml",
-   "kind": "rss"
-  },
-  {
-   "name": "Where's Your Ed At",
-   "url": "https://www.wheresyoured.at/rss/",
-   "kind": "rss"
-  },
-  {
-   "name": "Stratechery",
-   "url": "https://stratechery.com/feed/",
-   "kind": "rss"
-  },
-  {
-   "name": "Anthropic news",
-   "url": "https://www.anthropic.com/news",
-   "kind": "html",
-   "match": "/news/"
-  },
-  {
-   "name": "OpenAI news",
-   "url": "https://openai.com/news/rss.xml",
-   "kind": "rss"
-  },
-  {
-   "name": "Federal Reserve press releases",
-   "url": "https://www.federalreserve.gov/feeds/press_all.xml",
-   "kind": "rss"
-  },
-  {
-   "name": "AI Futures Project",
-   "url": "https://blog.aifutures.org/feed",
-   "kind": "rss"
-  },
-  {
-   "name": "David Cahn",
-   "url": "https://dcahn.substack.com/feed",
-   "kind": "rss"
-  },
-  {
-   "name": "Ara Kharazian (Ramp economist, Ramp AI Index) — corporate-card data on AI vendor adoption, spend mix and customer concentration; currently reaching the model only second-hand via commentators.",
-   "url": "https://x.com/arakharazian",
-   "kind": "rss",
-   "added": "2026-09-03"
-  }
- ],
- "x_handles": [
-  "dwarkesh_sp",
-  "dylan522p",
-  "SemiAnalysis_",
-  "EpochAIResearch",
-  "METR_Evals",
-  "edzitron",
-  "giovannicatt3",
-  "GavinSBaker",
-  "benedictevans",
-  "ttunguz",
-  "pkedrosky",
-  "DrorPoleg",
-  "sama",
-  "DarioAmodei",
-  "kimmonismus"
- ],
- "earnings_watch": [
-  "NVDA",
-  "MSFT",
-  "GOOGL",
-  "AMZN",
-  "META",
-  "ORCL",
-  "CRWV"
- ],
- "topics": [
-  "frontier lab revenue run-rate",
-  "AI capex guidance",
-  "GPU rental prices",
-  "compute capacity gigawatts",
-  "METR time horizon",
-  "token prices open-weight models",
-  "AI debt issuance",
-  "Fed policy rate",
-  "AI bubble sentiment"
- ],
- "polymarket_event": "ai-bubble-burst-by",
- "agents_enabled": true,
- "lookback_days": 3
+  "_comment": "Sources the researcher sweeps daily. Feeds are fetched directly; X handles are read through the X API when X_BEARER_TOKEN is set. The researcher may propose additions; the judge admits them on the same evidence rules as everything else.",
+  "feeds": [
+    {
+      "name": "Dwarkesh Podcast",
+      "url": "https://www.dwarkesh.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "SemiAnalysis",
+      "url": "https://newsletter.semianalysis.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "Epoch AI Gradient Updates",
+      "url": "https://epoch.ai/gradient-updates",
+      "kind": "html",
+      "match": "/gradient-updates/"
+    },
+    {
+      "name": "Epoch AI data insights",
+      "url": "https://epoch.ai/data-insights",
+      "kind": "html",
+      "match": "/data-insights/"
+    },
+    {
+      "name": "METR",
+      "url": "https://metr.org/feed.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "Where's Your Ed At",
+      "url": "https://www.wheresyoured.at/rss/",
+      "kind": "rss"
+    },
+    {
+      "name": "Stratechery",
+      "url": "https://stratechery.com/feed/",
+      "kind": "rss"
+    },
+    {
+      "name": "Anthropic news",
+      "url": "https://www.anthropic.com/news",
+      "kind": "html",
+      "match": "/news/"
+    },
+    {
+      "name": "OpenAI news",
+      "url": "https://openai.com/news/rss.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "Federal Reserve press releases",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "AI Futures Project",
+      "url": "https://blog.aifutures.org/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "David Cahn",
+      "url": "https://dcahn.substack.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "Coatue Takes",
+      "url": "https://www.coatue.com/c/takes",
+      "kind": "html",
+      "match": "/c/takes/"
+    },
+    {
+      "name": "Exponential View (Azeem Azhar)",
+      "url": "https://www.exponentialview.co/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "Tomasz Tunguz",
+      "url": "https://tomtunguz.com/index.xml",
+      "kind": "rss"
+    },
+    {
+      "name": "Benedict Evans",
+      "url": "https://www.ben-evans.com/benedictevans?format=rss",
+      "kind": "rss"
+    },
+    {
+      "name": "Sequoia",
+      "url": "https://www.sequoiacap.com/feed/",
+      "kind": "rss"
+    },
+    {
+      "name": "Paul Kedrosky",
+      "url": "https://paulkedrosky.com/feed/",
+      "kind": "rss"
+    },
+    {
+      "name": "Noahpinion",
+      "url": "https://www.noahpinion.blog/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "Don't Worry About the Vase (Zvi)",
+      "url": "https://thezvi.substack.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "Import AI (Jack Clark)",
+      "url": "https://importai.substack.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "BIS FSI publications",
+      "url": "https://www.bis.org/doclist/bis_fsi_publs.rss",
+      "kind": "rss"
+    }
+  ],
+  "x_handles": [
+    "dwarkesh_sp",
+    "dylan522p",
+    "SemiAnalysis_",
+    "EpochAIResearch",
+    "METR_Evals",
+    "edzitron",
+    "giovannicatt3",
+    "GavinSBaker",
+    "benedictevans",
+    "ttunguz",
+    "pkedrosky",
+    "DrorPoleg",
+    "sama",
+    "DarioAmodei",
+    "kimmonismus",
+    "arakharazian"
+  ],
+  "earnings_watch": [
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "ORCL",
+    "CRWV"
+  ],
+  "topics": [
+    "frontier lab revenue run-rate",
+    "AI capex guidance",
+    "GPU rental prices",
+    "compute capacity gigawatts",
+    "METR time horizon",
+    "token prices open-weight models",
+    "AI debt issuance",
+    "Fed policy rate",
+    "AI bubble sentiment"
+  ],
+  "polymarket_event": "ai-bubble-burst-by",
+  "agents_enabled": true,
+  "lookback_days": 3
 }

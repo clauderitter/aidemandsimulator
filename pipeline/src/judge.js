@@ -43,11 +43,14 @@ function distinctness(state, cand) {
   for (const s of state.scenarios.filter(s => s.status !== 'retired')) { const g = gap(cp, path(state, s)); const sameShocks = [...ct].every(t => (s.e || []).some(e => e.type === t)) && (s.e || []).every(e => ct.has(e.type)); const eff = sameShocks ? g : Math.max(g, 0.15); if (eff < minGap) { minGap = eff; closest = s.id; } }
   return { closest, minGap };
 }
-function leastDistinct(state) {
+function leastDistinct(state, camp) {
+  // Near-duplicates go first (two scenarios whose paths sit within 10% everywhere); otherwise the least distinct scenario in the newcomer's own camp.
   const act = state.scenarios.filter(s => s.status !== 'retired' && s.id !== 'base'); const paths = Object.fromEntries(act.map(s => [s.id, path(state, s)]));
-  let worst = null, worstGap = Infinity;
-  for (const s of act) { const g = Math.min(...act.filter(o => o.id !== s.id).map(o => gap(paths[s.id], paths[o.id]))); if (g < worstGap) { worstGap = g; worst = s; } }
-  return worst;
+  const nn = s => Math.min(...act.filter(o => o.id !== s.id).map(o => gap(paths[s.id], paths[o.id])));
+  const dup = act.map(s => ({ s, g: nn(s) })).filter(x => x.g < 0.10).sort((a, b) => a.g - b.g)[0];
+  if (dup) return { victim: dup.s, why: `near-duplicate of another scenario (paths within ${Math.round(dup.g * 100)}% at every anchor)` };
+  const pool = act.filter(s => s.camp === camp); const pick = (pool.length ? pool : act).map(s => ({ s, g: nn(s) })).sort((a, b) => a.g - b.g)[0];
+  return pick ? { victim: pick.s, why: `the least distinct ${pool.length ? camp : 'active'} scenario (closest path to its neighbours, ${Math.round(pick.g * 100)}%)` } : null;
 }
 
 function gate(state, p, limits, evidence) {
@@ -139,7 +142,7 @@ function applyOne(state, p, r, limits, changelog, cfg) {
     const s = p.scenario; const rec = { id: s.id, camp: s.camp, name: s.name, who: s.who, when: s.when, thesis: s.thesis, src: s.src || p.source, p: Object.fromEntries(s.overrides.map(o => [o.key, o.value])), e: s.shocks.map(x => ({ type: x.type, t: x.t, v: x.v, ...(x.dur != null ? { dur: x.dur } : {}) })), status: 'active', updated: today() };
     if (p.kind === 'scenario_new') {
       const cap = state.scenario_cap || 16; const active = state.scenarios.filter(x => x.status !== 'retired');
-      if (active.length >= cap) { const victim = leastDistinct(state); if (!victim) throw new Error('cap reached and nothing retirable'); victim.status = 'retired'; victim.retired_reason = `Retired to make room for “${rec.name}”: the least distinct active scenario (closest path to its neighbours).`; victim.updated = today(); changelog.unshift({ date: today(), source: '', kind: 'expired', target: `scenario:${victim.id}`, old: 'active', new: 'retired', reason: victim.retired_reason }); }
+      if (active.length >= cap) { const pick = leastDistinct(state, rec.camp); if (!pick) throw new Error('cap reached and nothing retirable'); const victim = pick.victim; victim.status = 'retired'; victim.retired_reason = `Retired to make room for “${rec.name}”: ${pick.why}.`; victim.updated = today(); changelog.unshift({ date: today(), source: '', kind: 'expired', target: `scenario:${victim.id}`, old: 'active', new: 'retired', reason: victim.retired_reason }); }
       state.scenarios.push({ ...rec, added: today() });
       changelog.unshift({ ...base, kind: 'accepted', target: `scenario:${rec.id}`, old: null, new: 'added', reason: `${r.reason} ${rec.who}, ${rec.when}.` });
     } else { const idx = state.scenarios.findIndex(x => x.id === s.id); state.scenarios[idx] = { ...state.scenarios[idx], ...rec }; changelog.unshift({ ...base, kind: 'accepted', target: `scenario:${rec.id}`, old: 'updated', new: 'updated', reason: r.reason }); }
@@ -147,7 +150,10 @@ function applyOne(state, p, r, limits, changelog, cfg) {
     const s = state.scenarios.find(x => x.id === p.target); s.status = 'retired'; s.retired_reason = (p.scenario && p.scenario.retire_reason) || p.rationale; s.updated = today();
     changelog.unshift({ ...base, kind: 'accepted', target: `scenario:${s.id}`, old: 'active', new: 'retired', reason: r.reason });
   } else if (p.kind === 'watchlist_add') {
-    const wl = readJSON(P('pipeline', 'config', 'watchlist.json')); if (!wl.feeds.some(f => f.url === p.target)) { wl.feeds.push({ name: adjT || p.target, url: p.target, kind: 'rss', added: today() }); writeJSON(P('pipeline', 'config', 'watchlist.json'), wl); }
+    const wl = readJSON(P('pipeline', 'config', 'watchlist.json')); const xm = /^https?:\/\/(?:www\.)?x\.com\/([A-Za-z0-9_]{1,15})\/?$/.exec(p.target);
+    if (xm) { if (!wl.x_handles.includes(xm[1])) wl.x_handles.push(xm[1]); }
+    else if (!wl.feeds.some(f => f.url === p.target)) { const name = (adjT || new URL(p.target).hostname).slice(0, 60); wl.feeds.push({ name, url: p.target, kind: /\.(xml|rss|atom)($|\?)|\/feed\/?$|\/rss\/?$/i.test(p.target) ? 'rss' : 'html', ...(!/\.(xml|rss|atom)($|\?)|\/feed\/?$|\/rss\/?$/i.test(p.target) ? { match: new URL(p.target).pathname } : {}), added: today() }); }
+    writeJSON(P('pipeline', 'config', 'watchlist.json'), wl);
     changelog.unshift({ ...base, kind: 'accepted', target: 'watchlist', old: null, new: p.target, reason: r.reason });
   }
 }

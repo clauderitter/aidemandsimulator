@@ -1,6 +1,6 @@
 // What the agents may touch, and under which rule. Everything else is rejected by the judge.
 export const RULES = {
-  R0: ['primary_report'], sh_rd: ['usage_share'], sh_swe: ['usage_share'], sh_trd: ['usage_share'],
+  R0: ['primary_report'], R0x: ['undisclosed_estimate'], sh_rd: ['usage_share'], sh_swe: ['usage_share'], sh_trd: ['usage_share'],
   H0: ['metr_latest'], D0: ['metr_doubling'], rdBoost: [], epsX: [],
   k_rd: ['feedback_evidence'], k_swe: ['feedback_evidence'], k_trd: ['feedback_evidence'], k_oth: ['feedback_evidence'], rho: ['correlation_evidence'],
   betaX: ['procyclicality_evidence'], m_rev: [], m_rate: [], lambda: [], rate0: [],
@@ -23,6 +23,7 @@ export const RULE_TEXT = {
   cost_per_gw: 'Reported all-in capex per GW of AI datacentre (chips, building, power).',
   compute_split: 'Reported split of lab compute between training/R&D and inference.',
   financing_evidence: 'Data on how much of the buildout is debt-financed or how builds respond to credit conditions.',
+  undisclosed_estimate: 'Analyst or company evidence on frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference, labs that stopped disclosing). R0x is an allowance added to the Epoch sum.',
   rebaseline: 'Weekly re-derivation of a parameter from scratch; allowed for R0, H0, D0, K0, pipe, train, capexGW, sh_*.',
 };
 export const REBASELINE_KEYS = ['R0', 'H0', 'D0', 'K0', 'pipe', 'train', 'capexGW', 'sh_rd', 'sh_swe', 'sh_trd'];

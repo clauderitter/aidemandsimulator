@@ -36,10 +36,10 @@ async function createMessage(params) {
  */
 export async function runAgent(o) {
   if (process.env.AGENTS_MOCK === '1') return o.mock ? o.mock() : null;
-  const messages = [{ role: 'user', content: o.user }];
+  const messages = [{ role: 'user', content: [{ type: 'text', text: o.user, cache_control: { type: 'ephemeral' } }] }];
   let submission = null;
   for (let i = 0; i < (o.maxIters || 10); i++) {
-    const params = { model: MODEL, max_tokens: 32000, system: o.system, messages, tools: o.tools, output_config: { effort: o.effort || 'high' }, tool_choice: { type: 'auto' } };
+    const params = { model: MODEL, max_tokens: 32000, system: [{ type: 'text', text: o.system, cache_control: { type: 'ephemeral' } }], messages, tools: o.tools, output_config: { effort: o.effort || 'high' }, tool_choice: { type: 'auto' } };
     const msg = await createMessage(params);
     addUsage(msg.usage);
     if (msg.stop_reason === 'refusal') { log('llm: refusal', msg.stop_details && msg.stop_details.category); return null; }
