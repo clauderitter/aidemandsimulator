@@ -557,6 +557,18 @@
    "source": "https://www.exponentialview.co/p/the-state-of-the-ai-economy",
    "updated": "2026-09-03",
    "rule": "analyst or company evidence on undisclosed frontier revenue"
+  },
+  "H_cap": {
+   "value": 5000,
+   "label": "Horizon ceiling",
+   "hidden": false,
+   "basis": "METR flags horizon measurements above 16 hours as unreliable, and past a few work-years the metric stops meaning anything. The ceiling slows the doubling as horizons approach it, so capability progress and the demand it pulls fade instead of compounding without limit. Assumption; the pipeline never moves it.",
+   "short": "Doubling slows as the horizon approaches this length; assumption, never moved by the pipeline.",
+   "as_of": "2026-09-03",
+   "type": "assumption",
+   "source": "https://metr.org/notes/2026-01-22-time-horizon-limitations/",
+   "updated": "2026-09-03",
+   "rule": ""
   }
  },
  "history": [
@@ -688,7 +700,8 @@
     "rdBoost": 0.5,
     "epsX": 1.3,
     "buildMax": 0.3,
-    "targetUtil": 0.7
+    "targetUtil": 0.7,
+    "H_cap": 50000
    },
    "e": [
     {
@@ -891,7 +904,8 @@
     "D0": 10,
     "rdBoost": 0.1,
     "epsX": 0.8,
-    "subst": 25
+    "subst": 25,
+    "H_cap": 500
    },
    "e": [],
    "status": "active",

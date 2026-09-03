@@ -4,7 +4,7 @@ export const RULES = {
   H0: ['metr_latest'], D0: ['metr_doubling'], rdBoost: [], epsX: [],
   k_rd: ['feedback_evidence'], k_swe: ['feedback_evidence'], k_trd: ['feedback_evidence'], k_oth: ['feedback_evidence'], rho: ['correlation_evidence'],
   betaX: ['procyclicality_evidence'], m_rev: [], m_rate: [], lambda: [], rate0: [],
-  H_sat: [], subst: ['migration_share'],
+  H_sat: [], H_cap: [], subst: ['migration_share'],
   K0: ['capacity_disclosure', 'capacity_estimate'], pipe: ['capacity_disclosure', 'capacity_estimate'], lead: ['delivery_timeline'], capexGW: ['cost_per_gw'], mono: [], train: ['compute_split'],
   targetUtil: [], buildMax: [], fin: ['financing_evidence'],
 };

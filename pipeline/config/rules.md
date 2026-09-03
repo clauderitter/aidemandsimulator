@@ -17,6 +17,7 @@ changes only through pull requests by a person. These rules bind the collectors,
 | `train`, `capexGW`, `lead` | Reported splits, $/GW and delivery times from labs, Nvidia, SemiAnalysis, Epoch | researcher proposals | on evidence |
 | `sh_*` demand mix | Cattani’s attribution until better evidence; usage-share data (Anthropic Economic Index, OpenRouter, SemiAnalysis) may move the software share | researcher proposals | on evidence |
 | Loop gains, contagion, procyclicality, financing sensitivity | Assumptions; move only with quantitative evidence about spend-to-revenue feedback, correlation of AI demand segments, or capex response to markets | researcher proposals | rarely |
+| `H_cap` horizon ceiling | Never moved by the pipeline (structural assumption) | — | — |
 | Hidden constants | Never moved by the pipeline | — | — |
 
 Every change carries: `old`, `new`, the rule used, a source URL, a quote (for agent proposals), `reported` or `estimate`,

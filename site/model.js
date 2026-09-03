@@ -74,7 +74,8 @@ export function simulate(p, events = [], noise = null, T = 18) {
     const revenue = Math.min(demand, cap);
     const util = demand / cap;
     const RDref = RD0 * Math.exp(Math.log(1 + p.gref / 100) * t);
-    const d = (3 / (p.D0 * regF)) * Math.min(1.5, Math.max(0.5, 1 + p.rdBoost * Math.log2(Math.max(0.05, S.rd / RDref))));
+    const ceilingSlow = p.H_cap ? 1 / (1 + Math.pow(H / p.H_cap, 3)) : 1;
+    const d = (3 / (p.D0 * regF)) * Math.min(1.5, Math.max(0.5, 1 + p.rdBoost * Math.log2(Math.max(0.05, S.rd / RDref)))) * ceilingSlow;
     const Rexp = revenue * Math.exp(gExp * p.lead);
     const Kneed = Rexp / ((1 - trainShare) * p.mono * monoMult) / p.targetUtil;
     let Kcommitted = K; for (let q = t + 1; q <= t + p.lead; q++) Kcommitted += pipeline[q] || 0;
