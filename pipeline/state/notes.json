@@ -1,0 +1,18 @@
+[
+ {
+  "date": "2026-09-03",
+  "notes": [
+   "Web-fetch/search budget was exhausted mid-session; proposals are limited to sources I fetched and quote-verified in full.",
+   "R0: Epoch confirms OpenAI >$40B and Anthropic $65B (Axios, 17 Aug) = ~$105B combined, but R0=118.3 is already auto-collected as of today - not re-proposed.",
+   "H0/D0: METR's time-horizons page still reads 'LAST UPDATED May 8, 2026' and Epoch's mirror states it does not collect the 80% series, so no newer metr_latest reading exists.",
+   "Epoch ECI trend break (14 pts/yr since reasoning models vs 6 pts/yr before, 1 Sep) is a real capability-acceleration signal but maps to no exposed key (metr_doubling is METR-only).",
+   "Dwarkesh/Dylan Patel: '$15b a GW turned into $50b+ of revenue' is a lease rate and a revenue ceiling, not all-in capex per GW (capexGW/cost_per_gw), and mono is never moved by the pipeline; that view is already carried by 'physics' and 'boom'.",
+   "SemiAnalysis Rubin Ultra despec (memory ~40% -> ~28% of capital cost, HBM cost -50%, scale-up 4% -> 12%) hints capexGW could ease, but it is rack TCO composition, not a per-GW dollar figure, and capexGW moved 45->54 today; noted only.",
+   "Coatue 'The New Scaling Law' and 'Agents Are the New Users of CPUs' read in full: single-paragraph takes, no attributable numbers beyond 'newest models learn on the job almost twice as fast as three months earlier' - too thin for a scenario or a param.",
+   "R0x: no Google/Gemini-API-specific figure found; EV's $175-200B total includes the app layer, so it cannot be cleanly split into frontier tokens. Left at 10.",
+   "Blocked feeds (David Cahn, Zvi, Import AI, Econ Lab) could not be checked once the fetch budget ran out - worth first look next run for a possible 'gap' scenario_update.",
+   "Gauges aaii, h100_rental, token_index, openrouter_cn, bonds and crwv_cds are all stale but I could not verify a newer reading from their own sources before the tool budget ran out; none proposed on guesswork.",
+   "No prompt-injection attempts spotted in the fetched pages or in the post texts supplied."
+  ]
+ }
+]

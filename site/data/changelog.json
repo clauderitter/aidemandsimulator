@@ -1,6 +1,33 @@
 [
  {
   "date": "2026-09-03",
+  "source": "https://www.exponentialview.co/p/the-state-of-the-ai-economy",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.exponentialview.co/feed",
+  "reason": "This feed is the standing source for the undisclosed-revenue allowance and its estimate has not been revised since June 2026, so watching it is the cheapest way to catch the next update; text adjusted to flag that it is an estimate, not reported revenue."
+ },
+ {
+  "date": "2026-09-03",
+  "source": "https://epochai.substack.com/p/an-update-on-ais-most-important-number",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epochai.substack.com/feed",
+  "reason": "Epoch's Gradient Updates is already the primary source behind the revenue and compute series (quoted $30B→$105B run-rate re-derivation) yet only its X account was watched, so adding the newsletter feed closes a gap in first-hand coverage."
+ },
+ {
+  "date": "2026-09-03",
+  "source": "https://epochai.substack.com/p/an-update-on-ais-most-important-number",
+  "kind": "rejected",
+  "target": "scenario:middle",
+  "old": null,
+  "new": "Epoch AI (Josh You & Lynette Bye, 27 Aug 2026): OpenAI+Anthropic combined run-rate $30B to $105B in 2026 (3.5x YTD, ~$100B/yr today), but the within-2026 doubling has stretched from ~3 months (to $55B at end-Q1) to ~4 months - hypergrowth intact and still outpacing compute, with the first sign of bending.",
+  "reason": "Gate: source unreachable: Error: 403 https://epochai.substack.com/p/an-update-on-ais-most-important-number."
+ },
+ {
+  "date": "2026-09-03",
   "kind": "accepted",
   "target": "scenario:rate",
   "old": "retired",
