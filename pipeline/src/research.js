@@ -110,6 +110,7 @@ Read what matters, then submit.`;
   const mock = () => readJSON(P('pipeline', 'work', 'mock_proposals.json'), { proposals: [], notes: ['mock'] });
   const out = (await runAgent({ system, user, tools, submitTool: 'submit_proposals', maxIters: 12, effort: 'high', mock })) || { proposals: [], notes: ['researcher returned nothing'] };
   markSeen(seen, items, posts);
+  const notesStore = readJSON(P('pipeline', 'state', 'notes.json'), []).filter(n => n.date >= new Date(Date.now() - 14 * 86400000).toISOString().slice(0, 10)); notesStore.push({ date: today(), notes: (out.notes || []).slice(0, 20) }); writeJSON(P('pipeline', 'state', 'notes.json'), notesStore);
   writeJSON(P('pipeline', 'work', 'proposals.json'), { at: new Date().toISOString(), rebaseline, items: items.length, posts: posts.length, ...out });
   log('researcher:', out.proposals.length, 'proposals;', (out.notes || []).length, 'notes');
   return out;

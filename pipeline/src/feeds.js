@@ -36,6 +36,7 @@ export async function gatherItems(cfg) {
   }
   const recent = readJSON(P('pipeline', 'state', 'x_recent.json'), []);
   const posts = recent.filter(p => !seen['x:' + p.id]).slice(-80);
+  const health = readJSON(P('pipeline', 'state', 'feed_health.json'), []).filter(h => h.date >= new Date(Date.now() - 14 * 86400000).toISOString().slice(0, 10)); health.push({ date: new Date().toISOString().slice(0, 10), failed: failed.map(f => f.name) }); writeJSON(P('pipeline', 'state', 'feed_health.json'), health);
   return { items: items.slice(0, 30), posts: posts.slice(-60), seen, failed };
 }
 

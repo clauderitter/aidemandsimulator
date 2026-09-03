@@ -3,8 +3,14 @@ on:
   schedule:
     - cron: '0 7 * * *'
   workflow_dispatch:
+    inputs:
+      memo:
+        description: 'File the weekly model memo now'
+        type: boolean
+        default: false
 permissions:
   contents: write
+  issues: write
 concurrency:
   group: daily-update
   cancel-in-progress: false
@@ -28,6 +34,8 @@ jobs:
           ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MEMO: ${{ github.event.inputs.memo == 'true' && '1' || '0' }}
         run: node src/run.js
       - name: Commit as repository owner
         run: |

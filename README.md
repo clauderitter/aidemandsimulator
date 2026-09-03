@@ -33,7 +33,10 @@ Sixteen scenarios encode the market’s bull, bear and structural views; a daily
    The judge re-fetches each source, verifies the quote, allows only documented rules, enforces the speed limits, re-runs
    the model and accepts or rejects. Ties mean no change. Both run on Claude Opus 5 through the Anthropic SDK with web search and fetch; `agents_enabled` in `config/watchlist.json`
    switches them off. `AGENTS_MOCK=1` runs the same path with canned proposals and verdicts for local tests.
-4. **Validate and commit.** If validation fails nothing is written and the run fails loudly; otherwise the data files are
+4. **Weekly memo.** On Mondays a reviewer agent reads the week's changelog, the researcher's notes and the rulebook and files a
+   GitHub issue (label `model-review`) on where the evidence outgrew the model's structure. Inputs move on their own; anything in
+   the memo needs a commit.
+5. **Validate and commit.** If validation fails nothing is written and the run fails loudly; otherwise the data files are
    committed and Vercel redeploys.
 
 ## Running locally
