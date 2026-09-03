@@ -15,6 +15,7 @@ export function validate(state, limits, prev) {
   const active = state.scenarios.filter(s => s.status !== 'retired');
   if (active.length > (state.scenario_cap || 16)) errs.push(`scenario cap exceeded: ${active.length}`);
   if (!active.some(s => s.id === 'base')) errs.push('base scenario missing');
+  for (const id of (state.core_scenarios || [])) if (!active.some(s => s.id === id)) errs.push(`core scenario ${id} is not active`);
   for (const s of active) {
     if (!['base', 'bull', 'bear', 'structural'].includes(s.camp)) errs.push(`scenario ${s.id} bad camp`);
     for (const e of s.e || []) { if (!EVENTS[e.type]) errs.push(`scenario ${s.id} unknown event ${e.type}`); if (!(Number.isInteger(e.t) || e.q)) errs.push(`scenario ${s.id} event without timing`); }

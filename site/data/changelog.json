@@ -1,6 +1,24 @@
 [
  {
   "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "scenario:rate",
+  "old": "retired",
+  "new": "active",
+  "reason": "Reinstated under the same rule change: core scenarios are no longer retired by path similarity.",
+  "source": ""
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "scenario:gap",
+  "old": "retired",
+  "new": "active",
+  "reason": "Reinstated. Rule change: the sixteen curated scenarios are now a protected core; the pipeline can add up to four rotating scenarios and only retires among those.",
+  "source": ""
+ },
+ {
+  "date": "2026-09-03",
   "source": "https://ramp.com/data/ai-index-august-2026",
   "kind": "accepted",
   "target": "watchlist",

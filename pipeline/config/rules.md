@@ -41,11 +41,11 @@ both.
 
 ## Scenario lifecycle
 
-- At most 16 active scenarios, grouped base / bull / bear / structural. Each has a thesis, who and when, a source, and the
+- Sixteen curated scenarios form a protected core (`core: true`); the pipeline may add up to four rotating scenarios (cap 20) and only ever retires among the rotating ones. Each has a thesis, who and when, a source, and the
   parameter overrides and shocks that encode it.
 - A new quantitative view (a podcast, essay, report or filing with numbers) may be proposed as a scenario. The judge admits it
   only if its mechanism and its outcome path are distinct from every active scenario (no active scenario within 15% of its
-  revenue path at every anchor and with the same shock types), and retires the least distinct scenario if the cap binds.
+  revenue path at every anchor and with the same shock types), and, if the rotating slots are full, retires a near-duplicate first, otherwise the least distinct rotating scenario in the newcomer’s camp. Core scenarios are never retired by the pipeline.
 - Shocks are timed relative to quarter zero (`t`) or pinned to a calendar quarter (`q`). When a pinned quarter passes, the
   judge grades it: it happened (an actual event is recorded in `events` with the real magnitude) or it did not (the shock is
   expired and the scenario text updated).

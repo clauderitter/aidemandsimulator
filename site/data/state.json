@@ -4,7 +4,7 @@
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
- "scenario_cap": 16,
+ "scenario_cap": 20,
  "params": {
   "R0": {
    "value": 118.3,
@@ -639,7 +639,8 @@
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "boom",
@@ -671,7 +672,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "takeoff",
@@ -697,7 +699,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "supercycle",
@@ -715,7 +718,8 @@
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "enterprise",
@@ -741,7 +745,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "coding",
@@ -760,7 +765,8 @@
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "rate",
@@ -779,10 +785,10 @@
      "dur": 8
     }
    ],
-   "status": "retired",
+   "status": "active",
    "added": "2026-09-02",
    "updated": "2026-09-03",
-   "retired_reason": "Retired to make room for “AI factory economics — dollars per gigawatt”: the least distinct active scenario (closest path to its neighbours)."
+   "core": true
   },
   {
    "id": "shock",
@@ -802,7 +808,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "contagion",
@@ -845,7 +852,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "gap",
@@ -866,10 +874,10 @@
     "targetUtil": 0.65
    },
    "e": [],
-   "status": "retired",
+   "status": "active",
    "added": "2026-09-02",
    "updated": "2026-09-03",
-   "retired_reason": "Retired to make room for “Concentrated customer base”: the least distinct bear scenario (closest path to its neighbours, 12%)."
+   "core": true
   },
   {
    "id": "wall",
@@ -888,7 +896,8 @@
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "price",
@@ -918,7 +927,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "credit",
@@ -952,7 +962,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "middle",
@@ -972,7 +983,8 @@
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "physics",
@@ -996,7 +1008,8 @@
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "grid",
@@ -1013,7 +1026,8 @@
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "core": true
   },
   {
    "id": "nok",
@@ -1033,7 +1047,8 @@
    "status": "retired",
    "added": "2026-09-02",
    "updated": "2026-09-03",
-   "retired_reason": "Control case, not a market view; the reflexive-share tile reports the same number. Retired to respect the 16-scenario cap."
+   "retired_reason": "Control case, not a market view; the reflexive-share tile reports the same number. Retired to respect the 16-scenario cap.",
+   "core": false
   },
   {
    "id": "nvfactory",
@@ -1057,7 +1072,8 @@
    ],
    "status": "active",
    "updated": "2026-09-03",
-   "added": "2026-09-03"
+   "added": "2026-09-03",
+   "core": false
   },
   {
    "id": "rampconc",
@@ -1091,7 +1107,8 @@
    ],
    "status": "active",
    "updated": "2026-09-03",
-   "added": "2026-09-03"
+   "added": "2026-09-03",
+   "core": false
   }
  ],
  "gauges": [
@@ -1256,5 +1273,23 @@
    "updated": "2026-09-03"
   }
  ],
- "frozen": []
+ "frozen": [],
+ "core_scenarios": [
+  "base",
+  "boom",
+  "takeoff",
+  "supercycle",
+  "enterprise",
+  "coding",
+  "rate",
+  "shock",
+  "contagion",
+  "gap",
+  "wall",
+  "price",
+  "credit",
+  "middle",
+  "physics",
+  "grid"
+ ]
 }
