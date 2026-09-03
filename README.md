@@ -29,8 +29,8 @@ Sixteen scenarios encode the market’s bull, bear and structural views; a daily
    can move per run.
 3. **Research and judge.** The researcher sweeps the watchlist and emits proposals (parameter, old, new, rule, source, quote).
    The judge re-fetches each source, verifies the quote, allows only documented rules, enforces the speed limits, re-runs
-   the model and accepts or rejects. Ties mean no change. Both are off until the next commit enables them
-   (`agents_enabled` in `config/watchlist.json`).
+   the model and accepts or rejects. Ties mean no change. Both run on Claude Opus 5 through the Anthropic SDK with web search and fetch; `agents_enabled` in `config/watchlist.json`
+   switches them off. `AGENTS_MOCK=1` runs the same path with canned proposals and verdicts for local tests.
 4. **Validate and commit.** If validation fails nothing is written and the run fails loudly; otherwise the data files are
    committed and Vercel redeploys.
 

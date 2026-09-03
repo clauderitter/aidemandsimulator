@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "run": "node src/run.js",
     "collect": "node src/run.js --only=collect",
     "validate": "node src/validate.js"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.60.0"
+    "@anthropic-ai/sdk": "^0.123.0"
   }
 }

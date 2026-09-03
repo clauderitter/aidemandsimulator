@@ -93,7 +93,7 @@ export async function collect(state, cfg, limits, changelog) {
   await tryGet('epoch', epoch);
   const since = readJSON(P('pipeline', 'state', 'x_since.json'), {});
   await tryGet('x', () => xPosts(cfg, since));
-  if (obs.x) { writeJSON(P('pipeline', 'state', 'x_since.json'), obs.x.since); writeJSON(P('pipeline', 'work', 'x_posts.json'), obs.x.posts); }
+  if (obs.x) { writeJSON(P('pipeline', 'state', 'x_since.json'), obs.x.since); writeJSON(P('pipeline', 'work', 'x_posts.json'), obs.x.posts); const recent = readJSON(P('pipeline', 'state', 'x_recent.json'), []); const cutoff = Date.now() - 14 * 86400000; const merged = [...recent.filter(x => new Date(x.at).getTime() > cutoff), ...obs.x.posts.filter(x => !recent.some(r => r.id === x.id))]; writeJSON(P('pipeline', 'state', 'x_recent.json'), merged.slice(-600)); }
   writeJSON(P('pipeline', 'work', 'observations.json'), { ...obs, errs, at: new Date().toISOString() });
   return { obs, errs };
 }

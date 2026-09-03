@@ -13,17 +13,19 @@
     },
     {
       "name": "Epoch AI Gradient Updates",
-      "url": "https://epoch.ai/gradient-updates/rss.xml",
-      "kind": "rss"
+      "url": "https://epoch.ai/gradient-updates",
+      "kind": "html",
+      "match": "/gradient-updates/"
     },
     {
       "name": "Epoch AI data insights",
-      "url": "https://epoch.ai/data-insights/rss.xml",
-      "kind": "rss"
+      "url": "https://epoch.ai/data-insights",
+      "kind": "html",
+      "match": "/data-insights/"
     },
     {
-      "name": "METR blog",
-      "url": "https://metr.org/blog/feed.xml",
+      "name": "METR",
+      "url": "https://metr.org/feed.xml",
       "kind": "rss"
     },
     {
@@ -39,12 +41,13 @@
     {
       "name": "Anthropic news",
       "url": "https://www.anthropic.com/news",
-      "kind": "html"
+      "kind": "html",
+      "match": "/news/"
     },
     {
       "name": "OpenAI news",
-      "url": "https://openai.com/news/",
-      "kind": "html"
+      "url": "https://openai.com/news/rss.xml",
+      "kind": "rss"
     },
     {
       "name": "Federal Reserve press releases",
@@ -100,5 +103,6 @@
     "AI bubble sentiment"
   ],
   "polymarket_event": "ai-bubble-burst-by",
-  "agents_enabled": false
+  "agents_enabled": true,
+  "lookback_days": 3
 }
