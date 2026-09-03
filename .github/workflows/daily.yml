@@ -44,4 +44,5 @@ jobs:
           git add site/data pipeline/state pipeline/config
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "data: daily update $(date -u +%Y-%m-%d)" -m "Automated run of the collection pipeline; see site/data/changelog.json for what changed and why."
+          git pull --rebase origin main
           git push
