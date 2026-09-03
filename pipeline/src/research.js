@@ -50,7 +50,7 @@ function digest(state, limits, changelog) {
 }
 
 export async function research(state, cfg, limits, changelog) {
-  const { items, posts, seen } = await gatherItems(cfg);
+  const { items, posts, seen, failed } = await gatherItems(cfg);
   const d = digest(state, limits, changelog);
   const rebaseline = new Date().getUTCDay() === 1 || process.env.REBASELINE === '1';
   const system = `You are the research analyst for a self-updating model of frontier-AI token demand versus compute supply (the "Reflexive Demand Simulator", built on Giovanni Cattani's thesis that demand for frontier tokens is driven by a few reflexive, correlated, procyclical tasks).
@@ -94,6 +94,9 @@ ${d.expired.join('\n') || 'none'}
 
 ## New items from watched feeds (${items.length})
 ${items.map(i => `- [${i.feed}] ${i.date || ''} ${i.title} — ${i.link}\n  ${i.summary}`).join('\n') || 'none'}
+
+## Feeds the runner could not fetch (blocked for datacenter addresses; check each with web_fetch or web_search for posts in the last ${cfg.lookback_days || 3} days)
+${(failed || []).map(f => `- ${f.name} — ${f.url.replace(/\/feed\/?$/, '')}`).join('\n') || 'none'}
 
 ## New posts from watched X accounts (${posts.length})
 ${posts.map(p => `- @${p.handle} ${String(p.at).slice(0, 10)} ${p.url}\n  ${p.text.replace(/\s+/g, ' ').slice(0, 500)}`).join('\n') || 'none'}

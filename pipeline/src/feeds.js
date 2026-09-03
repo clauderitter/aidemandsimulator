@@ -25,18 +25,18 @@ export function parseLinks(html, base, match) {
 export async function gatherItems(cfg) {
   const seen = readJSON(P('pipeline', 'state', 'seen.json'), {});
   const lookback = cfg.lookback_days || 3; const cutoff = new Date(Date.now() - lookback * 86400000).toISOString().slice(0, 10);
-  const items = [];
+  const items = []; const failed = [];
   for (const f of cfg.feeds) {
     try {
       let parsed;
       if (f.kind === 'html') { const html = await fetchText(f.url, { timeout: 20000 }); parsed = parseLinks(html, f.url, f.match).filter(i => !seen[i.link]).slice(0, 6); }
       else { const xml = await fetchText(f.url, { timeout: 20000 }); parsed = parseFeed(xml).filter(i => (!i.date || i.date >= cutoff) && !seen[i.link]).slice(0, 8); }
       for (const i of parsed) items.push({ ...i, feed: f.name }); log('feed', f.name, parsed.length);
-    } catch (e) { log('feed fail', f.name, String(e).slice(0, 80)); }
+    } catch (e) { log('feed fail', f.name, String(e).slice(0, 80)); failed.push({ name: f.name, url: f.url }); }
   }
   const recent = readJSON(P('pipeline', 'state', 'x_recent.json'), []);
   const posts = recent.filter(p => !seen['x:' + p.id]).slice(-80);
-  return { items: items.slice(0, 30), posts: posts.slice(-60), seen };
+  return { items: items.slice(0, 30), posts: posts.slice(-60), seen, failed };
 }
 
 export function markSeen(seen, items, posts) {
