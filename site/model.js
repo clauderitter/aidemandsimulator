@@ -20,8 +20,6 @@ export const EVENTS = {
   trd_cut:   { name: 'Trading pullback', unit: '% of trading spend cut', v: 50, min: 10, max: 90, step: 5, mag: v => -Math.log(1 - v / 100), short: v => `trading −${v}%` },
   swe_cut:   { name: 'Startup funding freeze', unit: '% of software spend cut', v: 30, min: 10, max: 90, step: 5, mag: v => -Math.log(1 - v / 100), short: v => `software −${v}%` },
   rd_cut:    { name: 'Labs cut R&D tokens', unit: '% of R&D spend cut', v: 30, min: 10, max: 90, step: 5, mag: v => -Math.log(1 - v / 100), short: v => `R&D −${v}%` },
-  oth_cut:   { name: 'Enterprise pilots cancelled', unit: '% of everything-else spend cut', v: 30, min: 10, max: 80, step: 5, mag: v => -Math.log(1 - v / 100), short: v => `enterprise −${v}%` },
-  oss:       { name: 'Open-source catch-up', unit: 'pp/yr faster migration', v: 25, min: 5, max: 60, step: 5, mag: v => v, short: v => `+${v}pp/yr migration` },
   oth_boost: { name: 'Enterprise adoption wave', unit: '%/yr extra growth', v: 40, min: 10, max: 150, step: 10, dur: 8, lasting: true, mag: v => Math.log(1 + v / 100), short: v => `+${v}%/yr adoption` },
   price:     { name: 'Token price collapse', unit: '% cut in revenue per GW', v: 40, min: 10, max: 80, step: 5, mag: v => v / 100, short: v => `prices −${v}%` },
   reprice:   { name: 'Compute gets pricier', unit: '% rise in revenue per GW', v: 50, min: 10, max: 200, step: 10, mag: v => v / 100, short: v => `prices +${v}%` },
@@ -38,7 +36,7 @@ export function simulate(p, events = [], noise = null, T = 18) {
   const out = [];
   const S = { rd: p.R0 * p.sh_rd / 100, swe: p.R0 * p.sh_swe / 100, trd: p.R0 * p.sh_trd / 100 };
   S.oth = Math.max(0, p.R0 - S.rd - S.swe - S.trd);
-  let H = p.H0, M = 1.0, K = p.K0;
+  let H = p.H0, M = 1.0, K = p.K0; let Msm = 1.0; // Msm: the smoothed index budgets and builds respond to
   const RD0 = Math.max(0.01, S.rd);
   const pipeline = new Array(T + p.lead + 3).fill(0);
   for (let q = 1; q <= p.lead + 1; q++) pipeline[q] += p.pipe / (p.lead + 1);
@@ -62,8 +60,7 @@ export function simulate(p, events = [], noise = null, T = 18) {
   let subst = p.subst;
   for (let t = 0; t < T; t++) {
     for (const e of evAt('shock', t)) M *= (1 - e.mag);
-    for (const e of evAt('release', t)) H *= Math.pow(2, e.mag);
-    for (const e of evAt('oss', t)) subst += e.mag;
+    let dExtra = 0; for (const e of evAt('release', t)) { H *= Math.pow(2, e.mag); dExtra += e.mag; }
     for (const e of evAt('price', t)) { monoMult *= (1 - e.mag); S.oth *= (1 - e.mag / 2); }
     for (const e of evAt('reprice', t)) monoMult *= (1 + e.mag);
     for (const e of evAt('capex_cut', t)) for (let q = t + 1; q < pipeline.length; q++) pipeline[q] *= (1 - e.mag);
@@ -71,22 +68,24 @@ export function simulate(p, events = [], noise = null, T = 18) {
     const regF = active('reg', t).reduce((a, e) => a * (1 + e.mag), 1);
     const cap = capOf(K);
     const demand = SEGS.reduce((a, s) => a + S[s], 0);
-    const revenue = Math.min(demand, cap);
     const util = demand / cap;
+    // Scarcity pricing: when demand outruns capacity, revenue per GW rises with the excess (compute gets pricier).
+    const scarce = p.scarce || 0;
+    const revenue = util > 1 ? cap * (1 + scarce * Math.log(util)) : demand;
     const RDref = RD0 * Math.exp(Math.log(1 + p.gref / 100) * t);
     const ceilingSlow = p.H_cap ? 1 / (1 + Math.pow(H / p.H_cap, 3)) : 1;
     const d = (3 / (p.D0 * regF)) * Math.min(1.5, Math.max(0.5, 1 + p.rdBoost * Math.log2(Math.max(0.05, S.rd / RDref)))) * ceilingSlow;
     const Rexp = revenue * Math.exp(gExp * p.lead);
     const Kneed = Rexp / ((1 - trainShare) * p.mono * monoMult) / p.targetUtil;
     let Kcommitted = K; for (let q = t + 1; q <= t + p.lead; q++) Kcommitted += pipeline[q] || 0;
-    const finF = Math.min(1.5, Math.max(0, 1 + p.fin * (M - 1) - p.r_sens * (rate - p.rate0)));
+    const finF = Math.min(1.5, Math.max(0, 1 + p.fin * (Msm - 1) - p.r_sens * (rate - p.rate0)));
     const build = Math.min(p.buildMax * K, Math.max(0, Kneed - Kcommitted)) * finF;
     pipeline[t + p.lead] = (pipeline[t + p.lead] || 0) + build;
     const capex = build * p.capexGW;
     out.push({ t, S: { ...S }, demand, revenue, cap, K, capex, H, M, D: 3 / d, util, unmet: demand - revenue, g: { ...g }, gR, rate, gExp });
     const gNew = {};
     for (const s of SEGS) {
-      let gs = drive(s, d, H, M, subst) + p['k_' + s] * ((1 - p.rho) * g[s] + p.rho * gR);
+      let gs = drive(s, d + dExtra, H, Msm, subst) + p['k_' + s] * ((1 - p.rho) * g[s] + p.rho * gR);
       for (const e of evAt(s + '_cut', t)) gs -= e.mag;
       for (const e of active(s + '_boost', t)) gs += e.mag / 4;
       if (noise) gs += noise.seg[t][SEGS.indexOf(s)];
@@ -98,13 +97,14 @@ export function simulate(p, events = [], noise = null, T = 18) {
     const ceiling = nextCap * (1 + p.overhang);
     if (nextDemand > ceiling) { const f = ceiling / nextDemand; for (const s of SEGS) nextS[s] *= f; nextDemand = ceiling; }
     for (const s of SEGS) gNew[s] = S[s] > 0 ? Math.log(nextS[s] / S[s]) : 0;
-    const nextRev = Math.min(nextDemand, nextCap);
+    const nextU = nextDemand / nextCap; const nextRev = nextU > 1 ? nextCap * (1 + scarce * Math.log(nextU)) : nextDemand;
     const gRreal = revenue > 0 ? Math.log(nextRev / revenue) : 0;
     const surprise = gRreal - gExp;
     const Mstar = Math.exp(-p.m_rate * (rate - p.rate0));
     let dlogM = p.lambda * (Math.log(Mstar) - Math.log(M)) + p.m_rev * surprise;
     if (noise) dlogM += noise.M[t];
     M = Math.max(0.2, Math.min(3, M * Math.exp(dlogM)));
+    Msm = Msm + (p.mSmooth == null ? 0.4 : p.mSmooth) * (M - Msm);
     gExp = gExp + p.alpha * (gRreal - gExp);
     for (const s of SEGS) { S[s] = nextS[s]; g[s] = gNew[s]; }
     gR = gRreal;

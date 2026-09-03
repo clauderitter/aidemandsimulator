@@ -27,7 +27,7 @@ if (!only || only === 'memo') {
   if (want && can) { try { const r = await memo(state, cfg, changelog); log('memo', r && (r.url || r.title)); } catch (e) { log('memo failed:', String(e && e.stack || e).slice(0, 400)); } }
 }
 state.generated_at = new Date().toISOString();
-const errs = validate(state, limits, prev);
+const errs = validate(state, limits, prev, changelog);
 if (errs.length) { console.error('VALIDATION FAILED\n' + errs.join('\n')); process.exit(1); }
 writeJSON(P('site', 'data', 'state.json'), state);
 writeJSON(P('site', 'data', 'changelog.json'), changelog.slice(0, 400));

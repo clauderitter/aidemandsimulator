@@ -331,7 +331,7 @@
    "short": "Assumption; Allianz Trade notes tech capex is among the sectors most sensitive to rate and risk-appetite shocks."
   },
   "m_rev": {
-   "value": 0.6,
+   "value": 0.35,
    "label": "Markets react to growth surprises",
    "hidden": false,
    "basis": "The shared factor behind the loops. Allianz Trade (Mar 2026) notes tech capex is among the sectors most sensitive to rate and risk-appetite shocks, and that capex/revenue divergence (46%) already exceeds the 2001 telecom peak (32%). No published elasticity exists, so the sliders are the honest interface.",
@@ -355,7 +355,7 @@
    "short": "Modelling constant: valuation hit per point of rates above baseline."
   },
   "lambda": {
-   "value": 0.2,
+   "value": 0.3,
    "label": "Mean reversion per quarter",
    "hidden": false,
    "basis": "The shared factor behind the loops. Allianz Trade (Mar 2026) notes tech capex is among the sectors most sensitive to rate and risk-appetite shocks, and that capex/revenue divergence (46%) already exceeds the 2001 telecom peak (32%). No published elasticity exists, so the sliders are the honest interface.",
@@ -538,7 +538,7 @@
    "short": "Fed funds effective rate plus a 0.4-point term premium, rounded to a quarter point; refreshed daily from FRED."
   },
   "overhang": {
-   "value": 0.25,
+   "value": 0.5,
    "label": "overhang",
    "hidden": true,
    "basis": "Modelling constant; see “How the model works”.",
@@ -547,7 +547,7 @@
    "source": "",
    "updated": "2026-09-03",
    "rule": "",
-   "short": "Modelling constant; see “How it works”."
+   "short": "Latent demand may exceed monetisable capacity by up to this fraction; the excess is served at scarcity prices."
   },
   "R0x": {
    "value": 10,
@@ -596,6 +596,30 @@
    "source": "",
    "updated": "2026-09-03",
    "rule": "growth_calibration"
+  },
+  "scarce": {
+   "value": 0.5,
+   "label": "Scarcity pricing",
+   "hidden": true,
+   "basis": "When demand outruns capacity, revenue per GW rises with the excess: revenue = capacity × (1 + 0.5 × ln(utilisation)). Encodes Dwarkesh’s point that compute gets pricier when supply binds, and lets demand shocks show in revenue while rationed. Assumption.",
+   "short": "Revenue per GW rises with excess demand when supply binds.",
+   "as_of": "2026-09-03",
+   "type": "assumption",
+   "source": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
+   "updated": "2026-09-03",
+   "rule": ""
+  },
+  "mSmooth": {
+   "value": 0.4,
+   "label": "Budget response speed",
+   "hidden": true,
+   "basis": "Token budgets and build decisions respond to a smoothed market index (40% adjustment per quarter), not to the index the same quarter. Matches 2026: a 29% semiconductor drawdown produced no budget or capex response, while sustained conditions do. Assumption.",
+   "short": "Budgets follow a smoothed market index; dips pass, sustained moves bite.",
+   "as_of": "2026-09-03",
+   "type": "assumption",
+   "source": "https://www.disruptionbanking.com/2026/08/31/what-is-the-philadelphia-semiconductor-index-and-who-still-moves-it/",
+   "updated": "2026-09-03",
+   "rule": ""
   }
  },
  "history": [
@@ -948,17 +972,14 @@
    "when": "Apr–Aug 2026",
    "thesis": "DeepSeek V4-Flash sells at $0.14/$0.28 per million tokens, OpenAI cut Luna by 80% in July, Chinese models passed 60% of OpenRouter tokens while the US share fell from 70% to 30% in a year, and Silicon Data’s token-expenditure index is down 20% from its May peak. Open weights take bounded work and force frontier price cuts, so a GW earns much less. Modelled as a 40% cut in revenue per GW from 2027, faster migration and a −15% market shock.",
    "src": "https://www.axios.com/2026/07/30/openai-cuts-prices-gpt-terra-luna5",
-   "p": {},
+   "p": {
+    "subst": 40
+   },
    "e": [
     {
      "type": "price",
      "t": 2,
      "v": 40
-    },
-    {
-     "type": "oss",
-     "t": 2,
-     "v": 30
     },
     {
      "type": "shock",

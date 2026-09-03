@@ -2,6 +2,65 @@
  {
   "date": "2026-09-03",
   "kind": "accepted",
+  "target": "m_rev",
+  "old": 0.6,
+  "new": 0.35,
+  "reason": "Shock audit: with the previous market sensitivity a single −30% valuation dip cut 2028 revenue by more than half. Lowered so one-off shocks dent and persistent ones cascade.",
+  "source": "",
+  "manual": true
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "lambda",
+  "old": 0.2,
+  "new": 0.3,
+  "reason": "Shock audit: faster mean reversion of the market index, consistent with 2026’s quickly-bought corrections.",
+  "source": "",
+  "manual": true
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "overhang",
+  "old": 0.25,
+  "new": 0.5,
+  "reason": "Shock audit: latent demand may exceed capacity by up to 50% and is served at scarcity prices, so demand shocks and breakthroughs register while supply binds.",
+  "source": "",
+  "manual": true
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "scarce",
+  "old": null,
+  "new": 0.5,
+  "reason": "New constant: scarcity pricing when demand outruns capacity (Dwarkesh: compute gets pricier).",
+  "source": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
+  "manual": true
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "mSmooth",
+  "old": null,
+  "new": 0.4,
+  "reason": "New constant: budgets and builds respond to a smoothed market index, matching the absence of budget cuts after the June–July 2026 semiconductor drawdown.",
+  "source": "",
+  "manual": true
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
+  "target": "shocks",
+  "old": "13 types",
+  "new": "11 types",
+  "reason": "Shock audit: removed open-source catch-up (duplicated the migration slider, −3% effect) and enterprise pilots cancelled (duplicated the segment cuts). Model breakthroughs now add demand pull in the quarter they land.",
+  "source": ""
+ },
+ {
+  "date": "2026-09-03",
+  "kind": "accepted",
   "target": "pipe",
   "old": 16,
   "new": 22.4,
