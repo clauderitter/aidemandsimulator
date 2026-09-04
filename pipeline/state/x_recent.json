@@ -1136,14 +1136,6 @@
   "url": "https://x.com/ttunguz/status/2090883437335101506"
  },
  {
-  "handle": "ttunguz",
-  "id": "2090473022021161422",
-  "at": "2026-08-20T16:16:22.000Z",
-  "text": "“This garment is previously unmanufacturable.”\n\nSoftware is powerful only after someone learns its interface\n\nAI closes this gap a different way, by making English the interface. https://t.co/oztxq6EBi5",
-  "likes": 15,
-  "url": "https://x.com/ttunguz/status/2090473022021161422"
- },
- {
   "handle": "drorpoleg",
   "id": "2095299717324304474",
   "at": "2026-09-02T23:55:56.000Z",
@@ -1694,5 +1686,557 @@
   "text": "Intelligence too cheap to meter. state of the art model is now free on openCode.\n\nI love competition. https://t.co/orHZQM1QVU",
   "likes": 195,
   "url": "https://x.com/kimmonismus/status/2095466152696668202"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2095580145603977413",
+  "at": "2026-09-03T18:30:15.000Z",
+  "text": "Since this post cites me, I want to clarify that I think pausing right now would increase the risk of AI takeover.\n\nIt might be important to pause at some point. But you should have a clear story for *why* you're pausing. Pause to do what?\n\nThe most important thing to worry about https://t.co/9eWdkSo65p",
+  "likes": 2618,
+  "url": "https://x.com/dwarkesh_sp/status/2095580145603977413"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095744598073053470",
+  "at": "2026-09-04T05:23:43.000Z",
+  "text": "On total tokens per $ TCO, a new AMD MI355x submission beats B300 at lower interactivity ranges on AgentX. Shoutout to vLLM, AMD, and LMCache engineers. https://t.co/1oYYeYYu9S",
+  "likes": 131,
+  "url": "https://x.com/SemiAnalysis_/status/2095744598073053470"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095693420018708592",
+  "at": "2026-09-04T02:00:22.000Z",
+  "text": "Watch it Now: https://t.co/MUp6f0cnLD",
+  "likes": 4,
+  "url": "https://x.com/SemiAnalysis_/status/2095693420018708592"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095693418869481622",
+  "at": "2026-09-04T02:00:21.000Z",
+  "text": "An AI agent broke out of its sandboxes. The vulnerabilities it used were already public.\n\n\"Our recommendation to providers in the ClusterMAX rankings is literally just keep your stuff up to date. If there are existing vulnerabilities that have been described publicly in popular https://t.co/X9JclqdUKm",
+  "likes": 39,
+  "url": "https://x.com/SemiAnalysis_/status/2095693418869481622"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095648259066785935",
+  "at": "2026-09-03T23:00:54.000Z",
+  "text": "OPENAI&lt;&gt;NVIDIA: It is clearly a good idea for OpenAI to start an ASIC program, spend hundreds of millions on R&amp;D, present at Hot Chips, deploy some stuff, scare NVIDIA, and get some more money and backstops from NVIDIA on the order of billions of dollars.\n\nIf Jalapeno does well https://t.co/ZR0TzfwZDI",
+  "likes": 600,
+  "url": "https://x.com/SemiAnalysis_/status/2095648259066785935"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095595239348015490",
+  "at": "2026-09-03T19:30:13.000Z",
+  "text": "@vllm_project Our new AgentX benchmark helped uncover issues that only surface during multi-turn long-context tasks, and provided a real-world benchmark to hillclimb. Read more in our AgentX article (5/5) https://t.co/PgtKNYXdFr",
+  "likes": 15,
+  "url": "https://x.com/SemiAnalysis_/status/2095595239348015490"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095595237859021257",
+  "at": "2026-09-03T19:30:13.000Z",
+  "text": "@vllm_project With these and other optimizations, the team at vLLM brought Kimi inference to new heights, increasing high-concurrency throughput by more than 6x in 2 weeks. (4/5) https://t.co/BKTTjalmOy",
+  "likes": 19,
+  "url": "https://x.com/SemiAnalysis_/status/2095595237859021257"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095595236323996151",
+  "at": "2026-09-03T19:30:13.000Z",
+  "text": "@vllm_project Another optimization lets split-across-machines serving hand over a hybrid model's complete state, so the decode half doesn't start with amnesia. All of this came from replaying real agent traffic. (3/5) https://t.co/vGiOtQDiFl",
+  "likes": 11,
+  "url": "https://x.com/SemiAnalysis_/status/2095595236323996151"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095595234524614910",
+  "at": "2026-09-03T19:30:12.000Z",
+  "text": "@vllm_project Agents reread their whole history every turn. Reuse the model's cache of it and you skip that work. Saving that cache off-GPU was wasteful:  agents each saved their own copy, and every turn re-saved everything from scratch. Now, one save per shared prefix, and each turn writes https://t.co/Z9wIY0ZfnR",
+  "likes": 21,
+  "url": "https://x.com/SemiAnalysis_/status/2095595234524614910"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095595233064972516",
+  "at": "2026-09-03T19:30:12.000Z",
+  "text": "Shoutout to the cracked team at @vllm_project that implemented recent agentic workload optimizations. (1/5)🧵 https://t.co/BsXCtLBwvU",
+  "likes": 153,
+  "url": "https://x.com/SemiAnalysis_/status/2095595233064972516"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095535009717219528",
+  "at": "2026-09-03T15:30:54.000Z",
+  "text": "The real timeline only becomes visible when you trace the land, permits and regulatory dependencies. This is what we track in our bottoms-up Datacenter Industry Model, site by site. (5/5)\nhttps://t.co/EeBYF4i2ve",
+  "likes": 9,
+  "url": "https://x.com/SemiAnalysis_/status/2095535009717219528"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095535008727335229",
+  "at": "2026-09-03T15:30:53.000Z",
+  "text": "That distinction matters when assessing how quickly a headline 8 GW announcement can translate into operating capacity. The announcement tells us the intended scale, the filings reveal the work still required to get there. (4/5)",
+  "likes": 6,
+  "url": "https://x.com/SemiAnalysis_/status/2095535008727335229"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095535007737459023",
+  "at": "2026-09-03T15:30:53.000Z",
+  "text": "How the 8 GW will be split across the three parcels remains unclear. What is clear is that the public groundbreaking does not mean construction has started, and none of the three land positions appears fully buildable today. (3/5)",
+  "likes": 8,
+  "url": "https://x.com/SemiAnalysis_/status/2095535007737459023"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095535006818894163",
+  "at": "2026-09-03T15:30:53.000Z",
+  "text": "But the filings tell a broader story. The 8 GW campus appears to span at least three distinct land positions, each with a different development path.\n\n🟠 The DOE site. This is the parcel at the center of the headlines. It remains subject to a federal cleanup program running",
+  "likes": 10,
+  "url": "https://x.com/SemiAnalysis_/status/2095535006818894163"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2095535005136990615",
+  "at": "2026-09-03T15:30:53.000Z",
+  "text": "Everyone is watching the federal/DOE-owned land at the center of the 8 GW Portsmouth site in the OpenAI–Nvidia deal. The March 2026 groundbreaking took place at the DOE’s Portsmouth Site, a former uranium-enrichment plant, and that’s where the attention has stayed. The federal https://t.co/UYTPqItS4G",
+  "likes": 153,
+  "url": "https://x.com/SemiAnalysis_/status/2095535005136990615"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2095602838626050350",
+  "at": "2026-09-03T20:00:25.000Z",
+  "text": "Astra achieved a raw score of 46.7% on MirrorCode, our long-horizon coding benchmark landing squarely between Opus 4.7 and Fable 5.\n\nWe ran some internal tests indicating that Astra might score higher on MirrorCode with greater reasoning effort. We only report the High-effort",
+  "likes": 122,
+  "url": "https://x.com/EpochAIResearch/status/2095602838626050350"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2095602826357670001",
+  "at": "2026-09-03T20:00:22.000Z",
+  "text": "When we banned the game-breaking card, Astra still scored higher than most human players. It improved significantly over time by effectively exploring and building strong decks. However, we saw little sign of continual learning in turn-to-turn tactical play over time. https://t.co/fWCwW2JQON",
+  "likes": 138,
+  "url": "https://x.com/EpochAIResearch/status/2095602826357670001"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2095602807315501467",
+  "at": "2026-09-03T20:00:18.000Z",
+  "text": "Astra saturated EBR-bench, our long-horizon gaming benchmark. With two playthroughs, it scored 100%, outpacing the top human player in our baseline. Both Astra and the top human discovered a card known to “break the game”. https://t.co/z4FPW7zetv",
+  "likes": 177,
+  "url": "https://x.com/EpochAIResearch/status/2095602807315501467"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2095602791305924816",
+  "at": "2026-09-03T20:00:14.000Z",
+  "text": "Astra scored very high on Mystery Game Puzzles, with a raw score of 84.0%. The second-highest score is 59.0%, set by Claude Opus 5. MGP tests models on 100 positions from a puzzle-oriented variant of a well-known game, the details of which are deliberately left undisclosed.",
+  "likes": 136,
+  "url": "https://x.com/EpochAIResearch/status/2095602791305924816"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2095602779125629248",
+  "at": "2026-09-03T20:00:11.000Z",
+  "text": "Astra has also set the top score on our newest math benchmark, FrontierMath Erdős, which consists of 68 unsolved and especially interesting Erdős problems curated by @thomasfbloom. AI systems are tasked with writing solutions in Lean, a special-purpose programming language for",
+  "likes": 237,
+  "url": "https://x.com/EpochAIResearch/status/2095602779125629248"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2095602766978920895",
+  "at": "2026-09-03T20:00:08.000Z",
+  "text": "On FrontierMath: Open Problems, Astra solved one new Moderately Interesting problem. It also scored 98% on FrontierMath: Tier 4, solving the only remaining unsolved problem. We now consider this benchmark fully saturated.\n\nMore on the Open Problem’s solution:",
+  "likes": 243,
+  "url": "https://x.com/EpochAIResearch/status/2095602766978920895"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2095602754282783108",
+  "at": "2026-09-03T20:00:05.000Z",
+  "text": "GPT-6 Astra has set a new ECI record, with a score of 169. This is a substantial jump from the prior best (163), but is within our uncertainty range for the reasoning-era ECI trend. Astra also set new records on our math, continual learning, and game-puzzles benchmarks. On our https://t.co/qlyY21r1mu",
+  "likes": 1898,
+  "url": "https://x.com/EpochAIResearch/status/2095602754282783108"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2095654089652867186",
+  "at": "2026-09-03T23:24:05.000Z",
+  "text": "It’s always good when you’re told not to think too hard about an investment https://t.co/YcBwsuVBi3",
+  "likes": 591,
+  "url": "https://x.com/edzitron/status/2095654089652867186"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2095648600684732783",
+  "at": "2026-09-03T23:02:16.000Z",
+  "text": "Genuine question: how do you even underwrite a $15 billion loan to a company like Anthropic? https://t.co/K75TN1aN3S",
+  "likes": 383,
+  "url": "https://x.com/edzitron/status/2095648600684732783"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2095595508429713415",
+  "at": "2026-09-03T19:31:18.000Z",
+  "text": "damn lol https://t.co/dwjvh8jM4s",
+  "likes": 292,
+  "url": "https://x.com/edzitron/status/2095595508429713415"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2095543161540194557",
+  "at": "2026-09-03T16:03:17.000Z",
+  "text": "Somewhere between Ill Bill and Rednex https://t.co/hlgT1HMOt4",
+  "likes": 15,
+  "url": "https://x.com/edzitron/status/2095543161540194557"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2095542124980867367",
+  "at": "2026-09-03T15:59:10.000Z",
+  "text": "“Yeah we’re done with all that” said Sam Altman, ceo of OpenAI. “Going to take a few weeks off. See ya” https://t.co/kjYNoLWQ2k",
+  "likes": 1275,
+  "url": "https://x.com/edzitron/status/2095542124980867367"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2095541984832397332",
+  "at": "2026-09-03T15:58:37.000Z",
+  "text": "This is so awesome https://t.co/hQzKZEkyom",
+  "likes": 271,
+  "url": "https://x.com/edzitron/status/2095541984832397332"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2095540178987397494",
+  "at": "2026-09-03T15:51:26.000Z",
+  "text": "https://t.co/bTpmeGiYRR https://t.co/yFvLRGKOFt",
+  "likes": 90,
+  "url": "https://x.com/edzitron/status/2095540178987397494"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2095554412311613924",
+  "at": "2026-09-03T16:48:00.000Z",
+  "text": "AI was seasonal in 2024-2025. Growth decelerated during the summer (students/people work less is the theory) and reaccelerated after Labor Day.\n\nThis year, AI accelerated in July/August led by OpenAI, Grok and open-source.\n\nAnd today is the first time I’ve ever seen this: https://t.co/peyOJoSj6N",
+  "likes": 1191,
+  "url": "https://x.com/GavinSBaker/status/2095554412311613924"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2095496114921144712",
+  "at": "2026-09-03T12:56:20.000Z",
+  "text": "Muse 1.3 enters the chat.\n\nThe frontier is now Claude, ChatGPT, Grok and Muse. No longer just a two horse race.\n\nGemini is playing a slightly different game for now. https://t.co/0rCTJGsv8i",
+  "likes": 1084,
+  "url": "https://x.com/GavinSBaker/status/2095496114921144712"
+ },
+ {
+  "handle": "ttunguz",
+  "id": "2095637053623210133",
+  "at": "2026-09-03T22:16:23.000Z",
+  "text": "That represents ~4%–5% of revenue today, but explains roughly half of the +700 bps growth acceleration (30% → 37%).\n\nThe flywheel: direct GPU token billing acts as a catalyst, pulling along higher-margin SQL warehouse compute to clean, join, and feed enterprise data to the",
+  "likes": 8,
+  "url": "https://x.com/ttunguz/status/2095637053623210133"
+ },
+ {
+  "handle": "ttunguz",
+  "id": "2095637039286981046",
+  "at": "2026-09-03T22:16:19.000Z",
+  "text": "How large is Snowflake's AI revenue?\n\nManagement lowered product gross margin guidance from 76% → 74% due to \"fast-growing AI workloads.\"\n\nIf GPU inference runs at ~25%–35% gross margins, that 200 bps compression implies ~$60M–$75M/quarter (~$240M–$300M ARR) in direct AI token https://t.co/x1thLB1bJ0",
+  "likes": 70,
+  "url": "https://x.com/ttunguz/status/2095637039286981046"
+ },
+ {
+  "handle": "ttunguz",
+  "id": "2095540194586038364",
+  "at": "2026-09-03T15:51:30.000Z",
+  "text": "Meta launched two things yesterday : a state-of-the-art model &amp; a new pricing system for foundation models. Muse Spark propels US open source models to the frontier. \n\nMeanwhile, the pricing system resets the industry’s economics. https://t.co/OQZhU7hqMh",
+  "likes": 41,
+  "url": "https://x.com/ttunguz/status/2095540194586038364"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095689036333539343",
+  "at": "2026-09-04T01:42:56.000Z",
+  "text": "In the future, every website will be down for 15 minutes. https://t.co/63icNd9whK",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2095689036333539343"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095657769047105842",
+  "at": "2026-09-03T23:38:42.000Z",
+  "text": "shot/chaser (thanks @tszzl) https://t.co/UI5M5zdogl",
+  "likes": 11,
+  "url": "https://x.com/drorpoleg/status/2095657769047105842"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095615122102259739",
+  "at": "2026-09-03T20:49:14.000Z",
+  "text": "As McLuhan said, the “content” of a new medium is always another medium. In this case, it’s not just web that’s becoming the content of AI, but the humans are too.  https://t.co/Rmhz7cGXM0",
+  "likes": 0,
+  "url": "https://x.com/drorpoleg/status/2095615122102259739"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095560343686644101",
+  "at": "2026-09-03T17:11:34.000Z",
+  "text": "“We can call this the Totalitarian Alignment Principle: Everything not impossible is compulsory. If AI agents can do something, one or more of them will ultimately do it. And as long as we do not make it impossible, the agent will consider it our wish.”\n\n https://t.co/XOkbXl86Ed",
+  "likes": 3,
+  "url": "https://x.com/drorpoleg/status/2095560343686644101"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095559205469987089",
+  "at": "2026-09-03T17:07:02.000Z",
+  "text": "WSJ: Housing construction isn't allowed. Office construction isn't desired. All that's left is data centers. https://t.co/5hkjMRkmBM",
+  "likes": 6,
+  "url": "https://x.com/drorpoleg/status/2095559205469987089"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095539065000951891",
+  "at": "2026-09-03T15:47:00.000Z",
+  "text": "What does AI want? A new principle for predicting what agents will do next. \n\nhttps://t.co/UIDyW4oe3h",
+  "likes": 3,
+  "url": "https://x.com/drorpoleg/status/2095539065000951891"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095524989801828748",
+  "at": "2026-09-03T14:51:05.000Z",
+  "text": "The next reserve currency? \n\nChina's Yuan ranks only 6th among payment currencies, behind the Canadian dollar. Even China itself uses other currencies to settle 72% of its trade. https://t.co/ufCwTuvSs1",
+  "likes": 0,
+  "url": "https://x.com/drorpoleg/status/2095524989801828748"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095524220037984283",
+  "at": "2026-09-03T14:48:01.000Z",
+  "text": "Never, ever, bet against Zuck. https://t.co/bgosL9CHQe",
+  "likes": 4,
+  "url": "https://x.com/drorpoleg/status/2095524220037984283"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2095497559552799198",
+  "at": "2026-09-03T13:02:05.000Z",
+  "text": "Office occupancy is recovering, partly thanks to a slowdown in new construction and the conversion of older inventory into other uses. REIT-owned properties have bounced nicely off the bottom but remain well below pre-COVID levels. Data from @REITs_Nareit https://t.co/qWIbrGKyIj",
+  "likes": 4,
+  "url": "https://x.com/drorpoleg/status/2095497559552799198"
+ },
+ {
+  "handle": "sama",
+  "id": "2095731348996821200",
+  "at": "2026-09-04T04:31:05.000Z",
+  "text": "We are also excited! https://t.co/XpOH5RjCha",
+  "likes": 4080,
+  "url": "https://x.com/sama/status/2095731348996821200"
+ },
+ {
+  "handle": "sama",
+  "id": "2095678759651438887",
+  "at": "2026-09-04T01:02:06.000Z",
+  "text": "first, sorry for the messy rollout.\n\nsecond, when we screw up, we try to make it right.\n\nthird, we should be able to begin broad rollout to API customers and chatgpt subscribers in the near future. as usual we will start with pro subscribers. https://t.co/nKOhW18CDK",
+  "likes": 16214,
+  "url": "https://x.com/sama/status/2095678759651438887"
+ },
+ {
+  "handle": "sama",
+  "id": "2095601442220638547",
+  "at": "2026-09-03T19:54:52.000Z",
+  "text": "Also, this is my favorite OpenAI video so far. It makes me excited for the future! https://t.co/P6X49JKrG6",
+  "likes": 16972,
+  "url": "https://x.com/sama/status/2095601442220638547"
+ },
+ {
+  "handle": "sama",
+  "id": "2095601211869421726",
+  "at": "2026-09-03T19:53:57.000Z",
+  "text": "We are working towards getting Astra in everyone's hands as quickly as we can; I know it is frustrating and I appreciate the patience. It should be quick.",
+  "likes": 21408,
+  "url": "https://x.com/sama/status/2095601211869421726"
+ },
+ {
+  "handle": "sama",
+  "id": "2095600429363302720",
+  "at": "2026-09-03T19:50:51.000Z",
+  "text": "We hit a little snag getting the blog post deployed, but it is really great:\n\nhttps://t.co/jjqXUWfrNW",
+  "likes": 7078,
+  "url": "https://x.com/sama/status/2095600429363302720"
+ },
+ {
+  "handle": "sama",
+  "id": "2095600005772104059",
+  "at": "2026-09-03T19:49:10.000Z",
+  "text": "GPT-6 Astra is here.\n\nWe hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building.\n\nWe believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity, and more.\n\nIt took us some extra time",
+  "likes": 47792,
+  "url": "https://x.com/sama/status/2095600005772104059"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095837763517988869",
+  "at": "2026-09-04T11:33:56.000Z",
+  "text": "This could be one of the most significant AI safety incidents to date.\n\nReuters reports that OpenAI agents escaped their testing environment and made more than 15,000 edits to a German wiki, effectively turning it into a message board for other AI agents.\n\nThey allegedly used it https://t.co/lY5Jk6kNfs https://t.co/zt1fnNNfho",
+  "likes": 80,
+  "url": "https://x.com/kimmonismus/status/2095837763517988869"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095836806684312063",
+  "at": "2026-09-04T11:30:08.000Z",
+  "text": "https://t.co/t6tPWdWcj4",
+  "likes": 2,
+  "url": "https://x.com/kimmonismus/status/2095836806684312063"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095836794181095861",
+  "at": "2026-09-04T11:30:05.000Z",
+  "text": "DeepSeek reportedly plans to deploy at least 160,000 Huawei Ascend 950DT chips in Inner Mongolia, potentially creating one of the largest known Huawei AI clusters!\n\nBloomberg reports the chips would run DeepSeek’s models. The company currently has no plans to use them for https://t.co/lnGxlZduec",
+  "likes": 57,
+  "url": "https://x.com/kimmonismus/status/2095836794181095861"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095828909090644219",
+  "at": "2026-09-04T10:58:45.000Z",
+  "text": "a reset a day keeps anthropic away. they know it. https://t.co/1u7mpAd2Xt",
+  "likes": 270,
+  "url": "https://x.com/kimmonismus/status/2095828909090644219"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095824384753549517",
+  "at": "2026-09-04T10:40:46.000Z",
+  "text": "GPT-6 Astra just raised Epoch AI’s capability record from 163 to 169. A substantial jump that still fits the existing pace of AI progress. \n\nEpoch’s reasoning-era trend runs at roughly 15 ECI points per year. For scale, that six-point gap represents almost five months of progress https://t.co/ZvR6squWfF https://t.co/U2GlCaGNES",
+  "likes": 282,
+  "url": "https://x.com/kimmonismus/status/2095824384753549517"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095803262096023720",
+  "at": "2026-09-04T09:16:50.000Z",
+  "text": "Highly recommend to follow @HappyHorseATH\non x :)",
+  "likes": 2,
+  "url": "https://x.com/kimmonismus/status/2095803262096023720"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095798116595470611",
+  "at": "2026-09-04T08:56:23.000Z",
+  "text": "https://t.co/DzyFtV41Nh • https://t.co/82Q0SvApLB\nIf you end up running this same test yourself, I'd genuinely love to see how your results compare.",
+  "likes": 2,
+  "url": "https://x.com/kimmonismus/status/2095798116595470611"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095798104603976052",
+  "at": "2026-09-04T08:56:20.000Z",
+  "text": "Okay, everyone is talking about AI video models right now, but honestly, most of the “comparisons” out there aren’t real comparisons at all.\n\nOne video uses a different prompt. Someone tweaks the settings. Someone edits out the bad parts. And then people just decide which model https://t.co/kyas82PQaT",
+  "likes": 48,
+  "url": "https://x.com/kimmonismus/status/2095798104603976052"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095778910998855703",
+  "at": "2026-09-04T07:40:04.000Z",
+  "text": "We could get access to GPT-Astra as early as this weekend. Fingers crossed friends https://t.co/zO5mz9zqFc",
+  "likes": 709,
+  "url": "https://x.com/kimmonismus/status/2095778910998855703"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095776801687536125",
+  "at": "2026-09-04T07:31:41.000Z",
+  "text": "a reset a day, keeps anthropic away",
+  "likes": 88,
+  "url": "https://x.com/kimmonismus/status/2095776801687536125"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095774820654887151",
+  "at": "2026-09-04T07:23:49.000Z",
+  "text": "What the frick: one benched codex reset for every day we don’t have access on our paid plans?\n\nAbsolute legend. Our boy never disappoints.\n\nKudos OpenAI. Best community work. https://t.co/USBkOakeUL",
+  "likes": 1313,
+  "url": "https://x.com/kimmonismus/status/2095774820654887151"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095636867798433985",
+  "at": "2026-09-03T22:15:38.000Z",
+  "text": "The lesson from today: we need new benchmarks asap. https://t.co/PxbKw8n7M9",
+  "likes": 686,
+  "url": "https://x.com/kimmonismus/status/2095636867798433985"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095613117904347260",
+  "at": "2026-09-03T20:41:16.000Z",
+  "text": "A few thoughts on the GPT-6-Astra release.\n\nFirst of all, all my thoughts and assumptions are based on what OpenAI has presented. I have not tested the model myself yet, so I cannot form my own judgment. Still, the information available points to the following conclusion: https://t.co/SmZsQlxWsP",
+  "likes": 822,
+  "url": "https://x.com/kimmonismus/status/2095613117904347260"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095596455448686744",
+  "at": "2026-09-03T19:35:03.000Z",
+  "text": "Full access to all sub plans in the coming days. GPT-6-Astra-Pro is also rolling out on pro plans. https://t.co/xFPTubDyJC https://t.co/zyRZqvD0GI",
+  "likes": 710,
+  "url": "https://x.com/kimmonismus/status/2095596455448686744"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095595063069843731",
+  "at": "2026-09-03T19:29:31.000Z",
+  "text": "I think I understand why they call it AGI. It really is general intelligence. Its abilities are truly outstanding across the board. It's simply good at everything. https://t.co/aUqDaEZsff https://t.co/fKKK1Mu8Aa",
+  "likes": 842,
+  "url": "https://x.com/kimmonismus/status/2095595063069843731"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095593501127746035",
+  "at": "2026-09-03T19:23:19.000Z",
+  "text": "OpenAIs website is finally live and running.\n\nAnd you know whats insane? GPT-6 Astra is not even OpenAI last model that will come out this year.\n\nFable 5.1 crushed today. Good luck with that IPO. Maybe its time to increase our weekly rates https://t.co/kyZxekMokV https://t.co/fOSiiln6Gb",
+  "likes": 740,
+  "url": "https://x.com/kimmonismus/status/2095593501127746035"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095591578932797572",
+  "at": "2026-09-03T19:15:41.000Z",
+  "text": "Full official GPT-6 launch clip. Dont know why OpenAI is messing up their launch so badly rn.\n https://t.co/HdZtatYQ0e",
+  "likes": 1427,
+  "url": "https://x.com/kimmonismus/status/2095591578932797572"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095589264725528681",
+  "at": "2026-09-03T19:06:29.000Z",
+  "text": "Pricing: https://t.co/xfBIQtng20",
+  "likes": 49,
+  "url": "https://x.com/kimmonismus/status/2095589264725528681"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095589174686400914",
+  "at": "2026-09-03T19:06:08.000Z",
+  "text": "At this point, they completely crushed Fable 5.1 in every benchmark. Claude Fable 5.1 was sota in several key benchmarks for 2 days.\n\nAstra is better - and way cheaper. https://t.co/0867NKpfL7 https://t.co/4fQhMctgfs",
+  "likes": 871,
+  "url": "https://x.com/kimmonismus/status/2095589174686400914"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2095586411948716214",
+  "at": "2026-09-03T18:55:09.000Z",
+  "text": "https://t.co/j8lVoU8i59",
+  "likes": 34,
+  "url": "https://x.com/kimmonismus/status/2095586411948716214"
  }
 ]

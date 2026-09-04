@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-09-04",
+  "source": "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai/",
+  "kind": "accepted",
+  "target": "scenario:price",
+  "old": "updated",
+  "new": "updated",
+  "reason": "Tunguz's reported pricing detail is accurately attributed and directly extends the existing commoditisation scenario with a US hyperscaler selling tokens at roughly a tenth of frontier pricing, justifying the modest 40 → 45 bump inside that what-if."
+ },
+ {
+  "date": "2026-09-04",
+  "source": "https://x.com/SemiAnalysis_/status/2095535007737459023",
+  "kind": "rejected",
+  "target": "lead",
+  "old": null,
+  "new": 6,
+  "reason": "A single social post about the buildability of one 8 GW campus's land parcels gives no lead-time figure and cannot carry a general shift in first-delivery lead from 5 to 6 quarters."
+ },
+ {
+  "date": "2026-09-04",
+  "source": "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai/",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 25,
+  "reason": "The quote establishes a two-tier price spread on Meta's own API, not evidence that bounded work is actually migrating off frontier endpoints, and the substitution parameter was already raised on this date using direct quality-parity data."
+ },
+ {
+  "date": "2026-09-04",
+  "source": "https://openai.com/index/gpt-6-astra/",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 1,
+  "reason": "Gate: source unreachable: Error: 403 https://openai.com/index/gpt-6-astra/."
+ },
+ {
+  "date": "2026-09-04",
+  "kind": "collected",
+  "target": "pipe",
+  "old": 22.4,
+  "new": 24,
+  "reason": "Carry-over toward the target 24 set on 2026-09-03 (Calibration to observed revenue growth under the compute-constrained stance).",
+  "source": "https://www.anthropic.com/news/anthropic-amazon-compute"
+ },
+ {
+  "date": "2026-09-04",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "—",
+  "new": "44% vs 18% per qtr",
+  "reason": "Observed from source (2026-09-04).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-04",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.3%",
+  "new": "12.3%",
+  "reason": "Observed from source (2026-09-04).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-04",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.2",
+  "new": "14.3",
+  "reason": "Observed from source (2026-09-03).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-04",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-02).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-04",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.79%",
+  "new": "4.79%",
+  "reason": "Observed from source (2026-09-02).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-03",
   "kind": "accepted",
   "target": "m_rev",

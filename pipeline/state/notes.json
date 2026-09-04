@@ -14,5 +14,19 @@
    "Gauges aaii, h100_rental, token_index, openrouter_cn, bonds and crwv_cds are all stale but I could not verify a newer reading from their own sources before the tool budget ran out; none proposed on guesswork.",
    "No prompt-injection attempts spotted in the fetched pages or in the post texts supplied."
   ]
+ },
+ {
+  "date": "2026-09-04",
+  "notes": [
+   "METR has published no evaluation of GPT-6 Astra and no newer 80% time-horizon measurement (metr.org/blog latest item is the 31 Aug 2026 security update); the June 2026 GPT-5.6 Sol note gives only a 50% horizon METR itself calls not robust, so H0 and D0 left alone.",
+   "Epoch's ECI record for Astra (163 -> 169, reasoning-era trend ~15 ECI points/year) is capability news but not a METR horizon; no exposed key moves on it.",
+   "Tunguz's Snowflake read-through (~$60-75M/quarter, ~$240-300M ARR of direct AI token revenue implied by a 200bp gross-margin guide-down) is genuine non-Epoch inference revenue but far too small to move the $10B R0x allowance.",
+   "Ed Zitron's post about underwriting a $15B loan to Anthropic points at financing evidence (fin), but I could not reach a primary report of the loan before the search/fetch budget ran out; left for the next run.",
+   "Did not propose orgX under growth_calibration: the growth_check gauge only appears in today's changelog, so the three-consecutive-week condition is unverified, and the collector already moved pipe 22.4 -> 24 today.",
+   "Stale gauges (fed_fsr, h100_rental, openrouter_cn, token_index, capex_ocf, vc_h1) could not be refreshed: web_search and web_fetch hit their server-side use limit mid-session, and I will not propose a gauge without a newer reading from its own source.",
+   "Considered a new rotating scenario slot for Tunguz's Meta data-barter thesis (3 Sep 2026, $1.24/m clearing price for prompt data) but folded it into the existing price scenario to avoid duplicating a live view.",
+   "DeepSeek's reported 160,000 Huawei Ascend 950DT deployment (Bloomberg via @kimmonismus) is non-frontier Chinese capacity; not a frontier GW disclosure, so no K0/pipe proposal.",
+   "No prompt-injection attempts noticed in the feeds, posts or pages read today."
+  ]
  }
 ]
