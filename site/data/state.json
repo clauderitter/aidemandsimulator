@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-04T11:58:22.524Z",
+ "generated_at": "2026-09-05T11:03:37.054Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -499,16 +499,16 @@
    "short": "Labs can add up to a quarter of their fleet per quarter (~2.4× a year), between analyst pace and Patel’s tripling."
   },
   "fin": {
-   "value": 1,
+   "value": 1.3,
    "label": "Financing sensitivity to markets",
    "hidden": false,
-   "basis": "Debt’s share of hyperscaler capex rose from 9% (FY2024) to 32% by mid-2026 (FactSet); Morgan Stanley expects 52% of 2025–28 data-centre capex to be externally financed. Builds scale with the market index and fall with rates.",
-   "as_of": "2026-07-23",
+   "basis": "Datacentres are financed like real estate at 70%+ debt, with ~$4T of AI infrastructure issuance estimated over five years (Tunguz, Sep 2026); builds scale with credit and market conditions. (estimate, 2026-09-04). New quantitative sizing of the debt dependence of the buildout: $4T of issuance over five years, equal to 143% of the entire global private credit market and 286% of US commercial paper, with data centres financed as real-estate projects at 70%+ debt. That is a materially larger debt share than the FactSet 9%->32% figure the current value rests on, so builds should scale more, not less, with credit and market conditions. Modest move within the per-run limit (1 -> 1.3) rather than to the credit-scenario level of 2.",
+   "as_of": "2026-09-04",
    "type": "estimate",
-   "source": "https://insight.factset.com",
-   "updated": "2026-09-03",
+   "source": "https://tomtunguz.com/the-4-trillion-dollar-ai-data-center-debt-wave/",
+   "updated": "2026-09-05",
    "rule": "",
-   "short": "Debt’s share of hyperscaler capex rose from 9% to 32% by mid-2026 (FactSet); builds scale with market conditions."
+   "short": "Datacentres are financed like real estate at 70%+ debt, with ~$4T of AI infrastructure issuance estimated over five years (Tunguz, Sep 2026); builds scale with credit and market conditions."
   },
   "r_sens": {
    "value": 0.1,
@@ -1194,12 +1194,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "12.3%",
-   "sub": "4 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "11.1%",
+   "sub": "5 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-04",
+   "as_of": "2026-09-05",
    "auto": true,
-   "updated": "2026-09-04"
+   "updated": "2026-09-05"
   },
   {
    "id": "aaii",
@@ -1214,12 +1214,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "14.3",
-   "sub": "3 Sept 2026 close (CBOE)",
+   "value": "14.5",
+   "sub": "4 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-03",
+   "as_of": "2026-09-04",
    "auto": true,
-   "updated": "2026-09-04"
+   "updated": "2026-09-05"
   },
   {
    "id": "fed_fsr",
@@ -1294,12 +1294,12 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "4.79%",
-   "sub": "2 Sept 2026 (FRED DGS10); Fed funds effective 3.63%",
+   "value": "4.77%",
+   "sub": "3 Sept 2026 (FRED DGS10); Fed funds effective 3.63%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-09-02",
+   "as_of": "2026-09-03",
    "auto": true,
-   "updated": "2026-09-04"
+   "updated": "2026-09-05"
   },
   {
    "id": "crwv_cds",
@@ -1325,11 +1325,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.63%",
-   "sub": "2 Sept 2026 (FRED DFF)",
+   "sub": "3 Sept 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-09-02",
+   "as_of": "2026-09-03",
    "auto": true,
-   "updated": "2026-09-04"
+   "updated": "2026-09-05"
   },
   {
    "id": "growth_check",
@@ -1337,9 +1337,9 @@
    "value": "44% vs 18% per qtr",
    "sub": "observed (Epoch sum, 2025Q3 → now) vs modelled quarter-zero growth; gap 27 pts",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-04",
+   "as_of": "2026-09-05",
    "auto": true,
-   "updated": "2026-09-04"
+   "updated": "2026-09-05"
   }
  ],
  "frozen": [],

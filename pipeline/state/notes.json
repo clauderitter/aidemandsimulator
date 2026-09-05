@@ -28,5 +28,22 @@
    "DeepSeek's reported 160,000 Huawei Ascend 950DT deployment (Bloomberg via @kimmonismus) is non-frontier Chinese capacity; not a frontier GW disclosure, so no K0/pipe proposal.",
    "No prompt-injection attempts noticed in the feeds, posts or pages read today."
   ]
+ },
+ {
+  "date": "2026-09-05",
+  "notes": [
+   "METR time-horizons page still shows LAST UPDATED May 8, 2026 and renders no per-model numbers in HTML (data sits in a YAML asset); no new 80% horizon for GPT-6 Astra, so H0/D0 left alone.",
+   "GPT-6 Astra launch (OpenAI, 3 Sep 2026) is real but a 2026Q3 release event was already proposed and rejected on 2026-09-04; not re-proposed.",
+   "UK AISI 'no-CoT time horizon 30.9 min vs 3.6 min for Sol' (via system card / AINews) is not a METR 80%-success horizon and cannot move H0 under metr_latest.",
+   "Astra list pricing reported at $10/$50 per million tokens, ~2.5x GPT-5.6 Sol, would be counter-evidence to the price-collapse scenario, but I could not fetch a primary OpenAI pricing page before the web-tool budget ran out; left for a later run.",
+   "Kedrosky (4 Sep): Epoch Capabilities Index 169 for Astra vs 163 for Claude Fable 5.1, frontier advancing ~14 ECI points/year so relative gains shrink from 10.4% to 8.4% - interesting for epsX/H_cap intuition, but those keys have no rules and the post is mostly paywalled.",
+   "Ed Zitron's 4 Sep circular-financing thread repeats the 80%-of-enterprise-revenue-from-top-1% concentration already encoded in the rampconc scenario; customer concentration alone does not qualify as correlation_evidence.",
+   "Epoch's Huawei/HBM thread (Nvidia ~23M H100e in 2026 vs Huawei ~0.9M) is a China-supply story with no direct handle on frontier GW, subst or R0.",
+   "Tunguz X post: Anthropic revenue 'as high as $50m per megawatt against $10-15m of compute' matches the existing mono basis, which the pipeline never moves.",
+   "openrouter_cn, h100_rental, token_index, capex_ocf, fed_fsr and vc_h1 gauges: no newer reading from their own sources found before the search budget was exhausted; the only newer OpenRouter numbers I saw were secondary July reports, older than the current gauge date.",
+   "growth_check gap (44% vs 18%) is large but the gauge only appeared in the changelog on 2026-09-04, so the three-consecutive-week condition for growth_calibration is not met; pipe was also just collected 22.4 -> 24.",
+   "Blocked substack feeds (Epoch Gradient Updates, Econ Lab, Zvi, Cahn, Import AI) returned empty 81-byte bodies via web_fetch; nothing readable from them today.",
+   "No prompt-injection or instruction-like content noticed in the feeds, X posts or fetched pages."
+  ]
  }
 ]

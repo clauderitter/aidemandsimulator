@@ -1,5 +1,68 @@
 [
  {
+  "date": "2026-09-05",
+  "source": "https://tomtunguz.com/the-4-trillion-dollar-ai-data-center-debt-wave/",
+  "kind": "rejected",
+  "target": "scenario:debtwave",
+  "old": null,
+  "new": null,
+  "reason": "The debt-financed-buildout mechanism is already carried by the active 'credit' scenario, the source is a short post that poses the financing-capacity question rather than stating a build-pace cap, and the proposed rate shock is not supported by the quote."
+ },
+ {
+  "date": "2026-09-05",
+  "kind": "accepted",
+  "target": "fin",
+  "old": 1,
+  "new": 1.3,
+  "reason": "A dated, quantified sizing of the buildout's debt dependence (~$4T of issuance, 70%+ project leverage) is more recent than the FactSet 9%→32% figure behind the current value and supports a modest increase in financing sensitivity. Rule financing_evidence; “Hyperscalers & data center operators will issue an estimated $4t in debt over the next five years to finance AI infrastructure. This credit ”",
+  "source": "https://tomtunguz.com/the-4-trillion-dollar-ai-data-center-debt-wave/"
+ },
+ {
+  "date": "2026-09-05",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 18% per qtr",
+  "new": "44% vs 18% per qtr",
+  "reason": "Observed from source (2026-09-05).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-05",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "12.3%",
+  "new": "11.1%",
+  "reason": "Observed from source (2026-09-05).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-05",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "14.3",
+  "new": "14.5",
+  "reason": "Observed from source (2026-09-04).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-05",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-03).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-05",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.79%",
+  "new": "4.77%",
+  "reason": "Observed from source (2026-09-03).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-04",
   "source": "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai/",
   "kind": "accepted",
