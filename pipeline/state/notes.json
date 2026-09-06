@@ -45,5 +45,18 @@
    "Blocked substack feeds (Epoch Gradient Updates, Econ Lab, Zvi, Cahn, Import AI) returned empty 81-byte bodies via web_fetch; nothing readable from them today.",
    "No prompt-injection or instruction-like content noticed in the feeds, X posts or fetched pages."
   ]
+ },
+ {
+  "date": "2026-09-06",
+  "notes": [
+   "METR: no published 50%/80% time horizon for GPT-6 Astra or Claude Fable 5.1 as of 3 Sep 2026 (METR's changelog last adds Claude Mythos Preview, 8 May 2026), so H0=3.1 and D0=4.2 left alone.",
+   "Considered cutting pipe (24 GW) on the same Epoch slowdown evidence, but pipe was re-collected by the calibrator on 2026-09-04 and largest-site plans are not the frontier fleet total; encoded as a scenario instead.",
+   "growth_calibration not invoked: growth_check has shown the 44% vs 18% gap only since 2026-09-04, short of the three-consecutive-week condition for moving orgX.",
+   "SemiAnalysis (4 Sep): OpenAI's 5.6-sol kernel rewrite gives 20% lower serving costs and 15% better token-generation efficiency 'passed into Luna/Terra price cuts' - no size of the price cut disclosed, so no price event or price-scenario update proposed (price scenario was updated 4 Sep anyway).",
+   "Gauges fed_fsr, h100_rental, openrouter_cn, token_index, capex_ocf and vc_h1 remain stale: the search/fetch budget ran out before I could verify a newer reading from each gauge's own source, and I will not propose unverified gauge values.",
+   "Zhipu interim report (>100k Chinese accelerators serving inference) and the AMD MI355x tokens-per-$-TCO result are cost/supply colour, not migration-share or parameter evidence.",
+   "Epoch's own caveat in the same thread ('too soon to tell whether this slowdown will materialize... our sample size is small') is why the new scenario is medium, not high, confidence.",
+   "No prompt-injection or instruction-like text encountered in the feeds or posts read today; the kimmonismus release-hype posts carry no verifiable numbers and were ignored."
+  ]
  }
 ]

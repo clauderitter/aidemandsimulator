@@ -1,5 +1,50 @@
 [
  {
+  "date": "2026-09-06",
+  "source": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/data-insights",
+  "reason": "Adds a fetchable primary Epoch AI page carrying dated, quantitative capacity estimates, restoring a data stream lost to the blocked Substack newsletter."
+ },
+ {
+  "date": "2026-09-06",
+  "source": "https://x.com/GavinSBaker/status/2096257640884027500",
+  "kind": "rejected",
+  "target": "R0x",
+  "old": null,
+  "new": 13,
+  "reason": "The source is a single post that labels itself \"pure speculation\" about Anthropic's ARR accounting, which is not evidence strong enough to move the undisclosed-revenue allowance from $10B to $13B."
+ },
+ {
+  "date": "2026-09-06",
+  "source": "https://x.com/EpochAIResearch/status/2095972835332399336",
+  "kind": "rejected",
+  "target": "scenario:epochplans",
+  "old": null,
+  "new": null,
+  "reason": "Gate: not distinct from scenario “grid” (paths within 12% at every anchor)."
+ },
+ {
+  "date": "2026-09-06",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 18% per qtr",
+  "new": "44% vs 18% per qtr",
+  "reason": "Observed from source (2026-09-06).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-06",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "11.1%",
+  "new": "11.8%",
+  "reason": "Observed from source (2026-09-06).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-09-05",
   "source": "https://tomtunguz.com/the-4-trillion-dollar-ai-data-center-debt-wave/",
   "kind": "rejected",

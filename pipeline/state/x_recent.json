@@ -208,14 +208,6 @@
   "url": "https://x.com/dylan522p/status/2091694046888792462"
  },
  {
-  "handle": "dylan522p",
-  "id": "2091205226636386810",
-  "at": "2026-08-22T16:45:53.000Z",
-  "text": "https://t.co/7IORR6Lbve",
-  "likes": 141,
-  "url": "https://x.com/dylan522p/status/2091205226636386810"
- },
- {
   "handle": "SemiAnalysis_",
   "id": "2095316010249166875",
   "at": "2026-09-03T01:00:40.000Z",
@@ -2806,5 +2798,253 @@
   "text": "The full report adds some very interesting details to this: \n\nAccording to the researchers, the agents discovered that GET requests, intended for reading web pages, could also submit edits to the wiki. That gave them a shared communication channel despite their intended read-only https://t.co/pxPtiIgq5U https://t.co/S1vsbVofFX",
   "likes": 375,
   "url": "https://x.com/kimmonismus/status/2095895361806094715"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2096403097383805257",
+  "at": "2026-09-06T01:00:22.000Z",
+  "text": "https://t.co/5Ih33w6pkt",
+  "likes": 53,
+  "url": "https://x.com/SemiAnalysis_/status/2096403097383805257"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2096342747313476013",
+  "at": "2026-09-05T21:00:33.000Z",
+  "text": "aura battles are taking over spain and latin america, with thousands showing up to watch people compete to see who can farm the most aura\nshould semis have its own? https://t.co/zaowXOqALF",
+  "likes": 14,
+  "url": "https://x.com/SemiAnalysis_/status/2096342747313476013"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2096282607826661688",
+  "at": "2026-09-05T17:01:35.000Z",
+  "text": "Capacity ≈ stacks × dies per stack × GB per die\nBandwidth ≈ stacks × interface width × pin speed\nStack height buys capacity, not bandwidth. Cutting 12-Hi to 8-Hi drops a third of the DRAM dies, the most supply-constrained silicon on the BOM, while bandwidth holds or ticks up. https://t.co/GHRglFoWaW",
+  "likes": 90,
+  "url": "https://x.com/SemiAnalysis_/status/2096282607826661688"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2096282606803284031",
+  "at": "2026-09-05T17:01:35.000Z",
+  "text": "Nvidia de-specced Rubin Ultra's HBM from 12-Hi to 8-Hi because the real bottleneck is $/bandwidth, not $/capacity. Let's do the math (1/2)🧵",
+  "likes": 324,
+  "url": "https://x.com/SemiAnalysis_/status/2096282606803284031"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2096338496721940878",
+  "at": "2026-09-05T20:43:40.000Z",
+  "text": "Hearing the sonic “balooom” noise he makes when he dies in my head https://t.co/wRw7TEy7yB",
+  "likes": 37,
+  "url": "https://x.com/edzitron/status/2096338496721940878"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2096308293450809574",
+  "at": "2026-09-05T18:43:39.000Z",
+  "text": "I applaud my friends for giving their time, effort and money to help veterans with PTSD and victims of trauma.\n\nThey are sincerely trying to do something good for the world and I believe they have already made a real difference to many veterans.\nhttps://t.co/58EOYotzGA",
+  "likes": 714,
+  "url": "https://x.com/GavinSBaker/status/2096308293450809574"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2096257640884027500",
+  "at": "2026-09-05T15:22:22.000Z",
+  "text": "Anthropic pre-IPO gamesmanship post. Pure speculation but sharing as curious for thoughts.\n\nAnthropic shifted from gross to net ARR accounting and stripped out both Meta and Chinese distillation from their $65 billion ARR number. Meta speculated to be over $5 billion in ARR so",
+  "likes": 2972,
+  "url": "https://x.com/GavinSBaker/status/2096257640884027500"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2096230330839560342",
+  "at": "2026-09-05T13:33:51.000Z",
+  "text": "Status seeking monkeys.\n\nLoved the analogy between Aristocratic and Chimpanzee societies.\nhttps://t.co/YQhGNVriEd",
+  "likes": 247,
+  "url": "https://x.com/GavinSBaker/status/2096230330839560342"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2096411334946574699",
+  "at": "2026-09-06T01:33:06.000Z",
+  "text": "S&amp;P (Semiconductors &amp; Power) https://t.co/y1UqkdLaq4",
+  "likes": 3,
+  "url": "https://x.com/drorpoleg/status/2096411334946574699"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2096281533426360636",
+  "at": "2026-09-05T16:57:19.000Z",
+  "text": "Also works in reverse: should I waste precious electricity and tokens, or can I let a human do it? https://t.co/3FY3xYVPQi",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2096281533426360636"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2096240606188073327",
+  "at": "2026-09-05T14:14:41.000Z",
+  "text": "3 years ago. 1 month *before* October 7. https://t.co/E0PKSb5hQK",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2096240606188073327"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2096240358833221967",
+  "at": "2026-09-05T14:13:42.000Z",
+  "text": "“Most companies don't know what to do with the intelligence they already have... most managers have no idea how to deploy the various abilities of their employees.” https://t.co/adU74umFkJ",
+  "likes": 12,
+  "url": "https://x.com/drorpoleg/status/2096240358833221967"
+ },
+ {
+  "handle": "sama",
+  "id": "2096241436509544744",
+  "at": "2026-09-05T14:17:59.000Z",
+  "text": "it is obviously trivial relative to everything else, but the fact that astra can make me whatever fun little game i can imagine and i can be playing it a few minutes later is so cool",
+  "likes": 15057,
+  "url": "https://x.com/sama/status/2096241436509544744"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096534536922308803",
+  "at": "2026-09-06T09:42:39.000Z",
+  "text": "Humaine was ahead of its time. Imagine this thing powered by GPT-Astra and OpenAIs advanced voice model. \n\nid easily pay $1000 for an OpenAI version. https://t.co/L3o9SqE3jX https://t.co/Akxj7mohH5",
+  "likes": 178,
+  "url": "https://x.com/kimmonismus/status/2096534536922308803"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096525614429700206",
+  "at": "2026-09-06T09:07:12.000Z",
+  "text": "OpenAI DevDay is just around the corner, and I'm incredibly excited to see if we'll finally get to see OpenAI's hardware.\n\nImagine a GPT-Astra as your 24/7 companion, always by your side, a screenless assistant always available to handle any task. I'd be so ready for that.\n\nThe https://t.co/TwEUJOxy4p",
+  "likes": 273,
+  "url": "https://x.com/kimmonismus/status/2096525614429700206"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096507206715797979",
+  "at": "2026-09-06T07:54:03.000Z",
+  "text": "Regardless of what one thinks of Donald Trump, the USA has understood that the race for AI will determine the future.\n\nTrump: “Whoever wins AI, wins.”  and “This is bigger than the internet. This is a revolution.”\n\n https://t.co/qjkk3uOo7Q",
+  "likes": 787,
+  "url": "https://x.com/kimmonismus/status/2096507206715797979"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096359529512337673",
+  "at": "2026-09-05T22:07:14.000Z",
+  "text": "Astra is far beyond anything I’d hoped for. https://t.co/6Tsg89WYph",
+  "likes": 656,
+  "url": "https://x.com/kimmonismus/status/2096359529512337673"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096333735910048174",
+  "at": "2026-09-05T20:24:45.000Z",
+  "text": "The \"future model\" is already finished it seems.",
+  "likes": 97,
+  "url": "https://x.com/kimmonismus/status/2096333735910048174"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096333564329533748",
+  "at": "2026-09-05T20:24:04.000Z",
+  "text": "The GPT-6 Astra was just released, and already speculation is rife regarding the release of its successor. Sam has already confirmed that it will be released \"very soon,\" as reported by Axios.\n https://t.co/aU5sZoDw9U",
+  "likes": 862,
+  "url": "https://x.com/kimmonismus/status/2096333564329533748"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096316053169000667",
+  "at": "2026-09-05T19:14:29.000Z",
+  "text": "20 more minutes https://t.co/XlCok2H32Y",
+  "likes": 18,
+  "url": "https://x.com/kimmonismus/status/2096316053169000667"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096306938904494441",
+  "at": "2026-09-05T18:38:16.000Z",
+  "text": "Ill continue and see whats possible. My Morrowind in babylon.js and typescript is still being built",
+  "likes": 26,
+  "url": "https://x.com/kimmonismus/status/2096306938904494441"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096305480444354997",
+  "at": "2026-09-05T18:32:28.000Z",
+  "text": "Modern city in the style of futurama in blender with GPT Astra. 21 minutes. Not bad at all https://t.co/7hNl4BqIdD",
+  "likes": 552,
+  "url": "https://x.com/kimmonismus/status/2096305480444354997"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096279895009865946",
+  "at": "2026-09-05T16:50:48.000Z",
+  "text": "When I was a kid, I was fascinated by The Elder Scrolls III: Morrowind.\n\nNow I want to see how well Astra can recreate that atmosphere in a playable browser game using Babylon.js and TypeScript.\n\nA small world with strange landscapes, NPCs, combat, and a complete quest. I'll be",
+  "likes": 359,
+  "url": "https://x.com/kimmonismus/status/2096279895009865946"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096263083404443870",
+  "at": "2026-09-05T15:44:00.000Z",
+  "text": "The difference between GPT-Astra and Fable 5.1 launch:  You can use Astra without hitting the rate limit after just a few prompts, like with Fable 5.1.\n\nFor Astra to be a generational leap, the rates are really generous, and it's fun to try out. With Fable, I could barely finish",
+  "likes": 1754,
+  "url": "https://x.com/kimmonismus/status/2096263083404443870"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096259311580119414",
+  "at": "2026-09-05T15:29:01.000Z",
+  "text": "Anyone who thought the GPT-6 Astra release was all there was to it is sorely mistaken.\n\nAnthropic appears to be preparing to respond to OpenAI with a major release. Fable 5.2, or whatever it ends up being called, is expected very soon.\n\nAt the same time, it's important to https://t.co/7T0MS9DQsB",
+  "likes": 2274,
+  "url": "https://x.com/kimmonismus/status/2096259311580119414"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096241440388981040",
+  "at": "2026-09-05T14:18:00.000Z",
+  "text": "Astra is so good it's sometimes unbelievable. My entire For You page is full of examples that leave me speechless. Like this one:\n\nAstra + Blender = insanity.\n\nhttps://t.co/82tzLLO7jD",
+  "likes": 1404,
+  "url": "https://x.com/kimmonismus/status/2096241440388981040"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096230573324845490",
+  "at": "2026-09-05T13:34:49.000Z",
+  "text": "To be clear: I did not see and read the transcript myself. But I talked to people who read them.",
+  "likes": 20,
+  "url": "https://x.com/kimmonismus/status/2096230573324845490"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096227397347442788",
+  "at": "2026-09-05T13:22:12.000Z",
+  "text": "Source https://t.co/mGe5d8sLQY",
+  "likes": 22,
+  "url": "https://x.com/kimmonismus/status/2096227397347442788"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096227258323075380",
+  "at": "2026-09-05T13:21:39.000Z",
+  "text": "I’ve received official confirmation: the full transcript makes it clear that Sam Altman’s comments about “much more capable models coming soon” refer to models beyond (!) GPT-6 Astra.\n\nThat distinction isn’t clear in the article, but I can confirm that OpenAI already has more https://t.co/RIYe666PZM https://t.co/A4eHPS2oyx",
+  "likes": 872,
+  "url": "https://x.com/kimmonismus/status/2096227258323075380"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096210235190825356",
+  "at": "2026-09-05T12:14:00.000Z",
+  "text": "Insert *i smell fear-meme* here. \n\nJoke aside: this is competition at its best. Literally. \n\nThe release of Tibo has forced Anthropic to finally reset the rates, something they would never have done otherwise.\n\nAt the same time, Anthropic has forced OpenAI to refocus on what's https://t.co/yL4gxFB7Do https://t.co/6osHccvItT",
+  "likes": 1533,
+  "url": "https://x.com/kimmonismus/status/2096210235190825356"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096193625294328318",
+  "at": "2026-09-05T11:08:00.000Z",
+  "text": ".@AndrewCurran_ is one of the best sources and content creator here on X. So I take this serious. \n\nIf Claude has actually solved the Navier–Stokes Millennium Problem, and the proof survives expert scrutiny, that would be one of the biggest moments in AI so far.\n\nA problem that https://t.co/bbe3z5nSlS",
+  "likes": 974,
+  "url": "https://x.com/kimmonismus/status/2096193625294328318"
  }
 ]
