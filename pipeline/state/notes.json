@@ -58,5 +58,20 @@
    "Epoch's own caveat in the same thread ('too soon to tell whether this slowdown will materialize... our sample size is small') is why the new scenario is medium, not high, confidence.",
    "No prompt-injection or instruction-like text encountered in the feeds or posts read today; the kimmonismus release-hype posts carry no verifiable numbers and were ignored."
   ]
+ },
+ {
+  "date": "2026-09-07",
+  "notes": [
+   "METR re-baseline: benchmark_results_1_1.yaml gives claude_mythos_preview_early (2026-04-07) p80 = 185.9 min = 3.10 h and from_2023_on doubling 128.744 days = 4.23 months; H0=3.1 and D0=4.2 already match and the METR page was last updated 8 May 2026, so no metr_latest/metr_doubling proposal.",
+   "R0 re-baseline: no primary report newer than the collector's Epoch sum (108.3); R0x left at 10 (a raise to 13 was rejected on 6 Sep, and Azeem Azhar's '$229bn AI revenue' headline covers all AI revenue, not the frontier disclosed set - the Substack page would not fetch).",
+   "Re-baseline of K0 (10 GW), pipe (24), train (60), capexGW (54), sh_rd/sh_swe/sh_trd (20/15/15): no new sourced figure today; my from-scratch figures are within the per-run limits of the current values, so no rebaseline proposals.",
+   "Epoch's finances topic page still cites ~$38B up-front capex for a typical 1 GW AI datacentre, below capexGW=54, but it predates the 26 Aug Nvidia per-GW evidence that set 54; not proposed.",
+   "247wallst (2 Sep) reports AMD holding 8 GW of combined Anthropic/OpenAI compute deals plus Anthropic's $35B Lambda commitment; secondary source, and pipe was collector-updated to 24 on 4 Sep, so not proposed.",
+   "openrouter_cn gauge: only June-July 2026 readings found (61% of top-10 model tokens; ~46% platform-wide per CNBC/OpenRouter data), nothing newer than the 9 Jul reading, so no gauge proposal.",
+   "fed_fsr, h100_rental, token_index, capex_ocf, vc_h1: no newer reading located before the fetch/search budget ran out; left stale rather than proposing a same-date value.",
+   "Nvidia's reported $2.5B investment in Thinking Machines and the Malaysia/Huawei chip story carry numbers but map to no exposed key; noted only.",
+   "web_fetch and web_search budgets were exhausted mid-run; some quotes come from the search engine's rendering of the source page (openai.com, unite.ai, epoch.ai) rather than a direct fetch.",
+   "No prompt-injection attempts spotted in the feeds or X posts read today."
+  ]
  }
 ]

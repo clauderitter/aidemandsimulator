@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-09-07",
+  "source": "https://epoch.ai/data-insights/openai-revenue",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.1,
+  "reason": "The cited Epoch insight is from October 2025 with revenue data ending August 2025 — older than the current as-of date and not independent of the collector's own gauge — so it cannot justify raising the calibration handle."
+ },
+ {
+  "date": "2026-09-07",
+  "source": "https://x.com/edzitron/status/2096643663954632781",
+  "kind": "rejected",
+  "target": "scenario:contagion",
+  "old": null,
+  "new": "Zitron now puts OpenAI and Anthropic spending commitments above $1.3 trillion (6 Sep 2026), up from the $1.1T cited in mid-August, against labs that still lose billions; the concentration case (73-75% of AWS AI revenue, ~70% of Microsoft/Azure) is unchanged.",
+  "reason": "Gate: scenario missing."
+ },
+ {
+  "date": "2026-09-07",
+  "source": "https://openai.com/index/research-acceleration-view-inside-openai/",
+  "kind": "rejected",
+  "target": "scenario:oaiaccel",
+  "old": null,
+  "new": null,
+  "reason": "Gate: source unreachable: Error: 403 https://openai.com/index/research-acceleration-view-inside-openai/."
+ },
+ {
+  "date": "2026-09-07",
+  "kind": "accepted",
+  "target": "k_rd",
+  "old": 0.6,
+  "new": 0.7,
+  "reason": "OpenAI's own dated research-acceleration figures (3.1 agent-workdays per human workday by mid-August, median researcher at $600/day of inference) are fresher than the 27 Aug estimate and directly evidence a tighter lab self-consumption loop, so k_rd moves one capped step to 0.7. Rule feedback_evidence; “As of mid-August, the organization uses 3.1 agent-workdays of effort for every workday of human labor, measured against a standard eight-hou”",
+  "source": "https://www.unite.ai/openai-hits-goal-of-building-an-automated-research-intern/"
+ },
+ {
+  "date": "2026-09-07",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 18% per qtr",
+  "new": "44% vs 18% per qtr",
+  "reason": "Observed from source (2026-09-07).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-07",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "11.8%",
+  "new": "10.8%",
+  "reason": "Observed from source (2026-09-07).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-09-06",
   "source": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
   "kind": "accepted",
