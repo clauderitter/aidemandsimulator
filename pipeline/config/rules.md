@@ -14,7 +14,7 @@ changes only through pull requests by a person. These rules bind the collectors,
 | `H0` 80% task horizon | Latest state-of-the-art `p80_horizon_length` in METR’s benchmark file, minutes ÷ 60 | METR `benchmark_results_1_1.yaml` | daily |
 | `D0` doubling time | METR since-2023 doubling time in days ÷ 30.4 | same | daily |
 | `rate0` baseline rate | Fed funds effective + 0.4, rounded to 0.25 | FRED `DFF` | daily |
-| `mono` revenue ceiling per inference GW | `R0 ÷ (K0 × (1 − train/100))`, i.e. quarter zero at 100% utilisation (standing stance: labs are compute-constrained today) | derived | daily |
+| `mono` revenue ceiling per inference GW | Evidence-driven since 2026-09-07: revenue per GW of inference capacity at current prices (lab/cloud disclosures, lease rates × utilisation, analyst estimates), ±10% per run. Quarter-zero utilisation is reported as the `util0` gauge and drives the calibration branch | researcher proposals under `revenue_per_gw` | on evidence |
 | `K0`, `pipe` | GW online and GW contracted for the next six quarters, from lab and cloud disclosures | researcher proposals with quotes | on evidence |
 | `train`, `capexGW`, `lead` | Reported splits, $/GW and delivery times from labs, Nvidia, SemiAnalysis, Epoch | researcher proposals | on evidence |
 | `sh_*` demand mix | Cattani’s attribution until better evidence; usage-share data (Anthropic Economic Index, OpenRouter, SemiAnalysis) may move the software share | researcher proposals | on evidence |

@@ -147,7 +147,6 @@ function applyOne(state, p, r, limits, changelog, cfg) {
     if (adjT) { meta.short = adjT; meta.basis = `${adjT} (${grade}, ${p.as_of}). ${p.rationale}`.slice(0, 900); }
     Object.assign(meta, { as_of: p.as_of || today(), source: p.source, updated: today() });
     if (['R0_epoch', 'R0x'].includes(p.target)) deriveR0(state, changelog);
-    if (['R0_epoch', 'R0x', 'K0', 'train'].includes(p.target)) { const pr = state.params; const derived = +(pr.R0.value / (pr.K0.value * (1 - pr.train.value / 100))).toFixed(1); setParam(state, changelog, limits, 'mono', derived, 'Derived rule: revenue ceiling follows R0 ÷ inference GW after the change above.', '', today(), { kind: 'accepted', type: 'derived' }); }
   } else if (p.kind === 'gauge') {
     const g = state.gauges.find(x => x.id === p.target); const old = g.value; Object.assign(g, { value: adjT, sub: p.rationale.slice(0, 160), src: p.source, as_of: p.as_of || today(), updated: today() });
     changelog.unshift({ ...base, kind: 'accepted', target: `gauge:${g.id}`, old, new: g.value, reason: r.reason });

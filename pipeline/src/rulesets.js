@@ -5,7 +5,7 @@ export const RULES = {
   k_rd: ['feedback_evidence'], k_swe: ['feedback_evidence'], k_trd: ['feedback_evidence'], k_oth: ['feedback_evidence'], rho: ['correlation_evidence'],
   betaX: ['procyclicality_evidence'], m_rev: [], m_rate: [], lambda: [], rate0: [],
   H_sat: [], H_cap: [], subst: ['migration_share'],
-  K0: ['capacity_disclosure', 'capacity_estimate'], pipe: ['capacity_disclosure', 'capacity_estimate', 'growth_calibration'], buildMax: ['growth_calibration'], lead: ['delivery_timeline'], capexGW: ['cost_per_gw'], mono: [], train: ['compute_split'],
+  K0: ['capacity_disclosure', 'capacity_estimate'], pipe: ['capacity_disclosure', 'capacity_estimate', 'growth_calibration'], buildMax: ['growth_calibration'], lead: ['delivery_timeline'], capexGW: ['cost_per_gw'], mono: ['revenue_per_gw'], train: ['compute_split'],
   targetUtil: [], fin: ['financing_evidence'],
 };
 export const RULE_TEXT = {
@@ -22,6 +22,7 @@ export const RULE_TEXT = {
   delivery_timeline: 'Reported time from signing to first delivery of GW-scale capacity.',
   cost_per_gw: 'Reported all-in capex per GW of AI datacentre (chips, building, power).',
   compute_split: 'Reported split of lab compute between training/R&D and inference.',
+  revenue_per_gw: 'Reported or estimated revenue per GW of inference capacity at current prices: lab or cloud disclosures of revenue per MW, lease rates times utilisation, or analyst estimates (Patel’s $/MW, SemiAnalysis per-GW potential). State the basis: a per-total-GW figure divides by the inference share before it is compared with mono.',
   financing_evidence: 'Data on how much of the buildout is debt-financed or how builds respond to credit conditions.',
   undisclosed_estimate: 'Analyst or company evidence on frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference, labs that stopped disclosing). R0x is an allowance added to the Epoch sum.',
   epoch_sum: 'Deterministic: the collector sums Epoch’s disclosed run-rates. Agents may not propose this key directly; a newer primary report goes through primary_report on R0_epoch.',

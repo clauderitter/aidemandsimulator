@@ -1,6 +1,16 @@
 [
  {
   "date": "2026-09-07",
+  "kind": "accepted",
+  "target": "mono",
+  "old": 29.6,
+  "new": 50,
+  "reason": "Stance inverted on the maintainer’s decision after three reviews: the revenue ceiling is now an evidence-driven input (Patel and Tunguz ~$50M/MW for Anthropic on a total-compute basis; SemiAnalysis ~$100B/GW potential) and quarter-zero utilisation is an output, now ~59%. Growth calibration therefore reads as demand-side (orgX) rather than supply-side.",
+  "source": "https://github.com/clauderitter/aidemandsimulator/issues/3",
+  "manual": true
+ },
+ {
+  "date": "2026-09-07",
   "source": "https://epoch.ai/data-insights/openai-revenue",
   "kind": "rejected",
   "target": "orgX",

@@ -171,8 +171,7 @@ export function apply(state, obs, limits, changelog) {
       cal.weeks_at_gap = run; cal.fast_lane = fast >= 2; cal.util0 = +(state.params.R0.value / (state.params.K0.value * (1 - state.params.train.value / 100) * state.params.mono.value)).toFixed(3); state.calibration = cal;
     }
   } catch (e) { log('growth check failed', String(e).slice(0, 80)); }
-  // Stance rule: the revenue ceiling per inference GW is derived so that today’s revenue sits at ~100% of monetisable capacity.
-  const p = state.params; const derivedMono = p.R0.value / (p.K0.value * (1 - p.train.value / 100));
-  setParam(state, changelog, limits, 'mono', +derivedMono.toFixed(1), `Rule: revenue ceiling = R0 ${p.R0.value} ÷ (K0 ${p.K0.value} GW × inference share ${(100 - p.train.value)}%), keeping quarter-0 utilisation at 100%.`, 'https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md', today());
+  // Quarter-zero utilisation is an output: revenue ÷ monetisable capacity at current prices.
+  { const pr = state.params; const u0 = pr.R0.value / (pr.K0.value * (1 - pr.train.value / 100) * pr.mono.value); setGauge(state, changelog, 'util0', `${Math.round(u0 * 100)}%`, `frontier revenue ${pr.R0.value} ÷ (${pr.K0.value} GW × ${100 - pr.train.value}% inference × $${pr.mono.value}B/GW); above 100% means rationed`, 'https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md', today()); }
   return state;
 }
