@@ -78,6 +78,7 @@ async function xPosts(cfg, since) {
   return { posts, since };
 }
 
+function isoWeek(d) { const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate())); const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day); const y0 = new Date(Date.UTC(t.getUTCFullYear(), 0, 1)); return `${t.getUTCFullYear()}-W${String(Math.ceil((((t - y0) / 86400000) + 1) / 7)).padStart(2, '0')}`; }
 // Quarter-end date for a quarter key
 const qEnd = q => { const y = +q.slice(0, 4), n = +q.slice(5); return `${y}-${String(n * 3).padStart(2, '0')}-${n === 1 ? '31' : n === 2 ? '30' : n === 3 ? '30' : '31'}`; };
 
@@ -106,7 +107,7 @@ export function deriveR0(state, changelog) {
 // A capped move stores its target; each run continues toward it under the same limit until reached or superseded.
 export function carryOver(state, changelog, limits) {
   for (const [k, p] of Object.entries(state.params)) {
-    if (p.pending_target == null || (state.frozen || []).includes(k)) continue;
+    if (p.pending_target == null || (state.frozen || []).includes(k) || p.pending_since === today()) continue; // one step per run
     if (Math.abs(p.pending_target - p.value) < 1e-9) { delete p.pending_target; continue; }
     const before = p.value; const ok = setParam(state, changelog, limits, k, p.pending_target, `Carry-over toward the target ${p.pending_target} set on ${p.pending_since || '?'} (${p.pending_reason || 'earlier evidence'}).`, p.source, p.as_of, { keepType: true });
     if (ok && Math.abs(p.pending_target - p.value) < 1e-9) { delete p.pending_target; delete p.pending_since; delete p.pending_reason; }
@@ -145,7 +146,9 @@ export function apply(state, obs, limits, changelog) {
   if (obs.polymarket) setGauge(state, changelog, 'polymarket', `${(obs.polymarket.value * 100).toFixed(1)}%`, `${fmtD(obs.polymarket.date)} · “${obs.polymarket.question}”`, obs.polymarket.src, obs.polymarket.date);
   if (obs.aaii) setGauge(state, changelog, 'aaii', `${Math.round(obs.aaii.bull)}% / ${Math.round(obs.aaii.bear)}%`, `latest weekly survey, read ${fmtD(obs.aaii.date)}`, obs.aaii.src, obs.aaii.date);
   if (obs.metr && obs.metr.latest) {
-    setParam(state, changelog, limits, 'H0', +obs.metr.latest.p80.toFixed(2), `Rule: latest SOTA 80% horizon in METR’s file (${obs.metr.latest.id}, released ${obs.metr.latest.date}).`, obs.metr.src, obs.metr.latest.date);
+    const measQ = qOfDate(new Date(obs.metr.latest.date)); const dq = Math.max(0, qDiff(state.quarter0, measQ)); const dRate = 3 / state.params.D0.value; const aged = +(obs.metr.latest.p80 * Math.pow(2, dRate * dq)).toFixed(2);
+    state.params.H0.meas_value = +obs.metr.latest.p80.toFixed(2); state.params.H0.meas_q = measQ;
+    setParam(state, changelog, limits, 'H0', aged, `Rule: latest SOTA 80% horizon in METR’s file (${obs.metr.latest.id}, released ${obs.metr.latest.date}, ${obs.metr.latest.p80.toFixed(2)} h)${dq ? `, rolled forward ${dq} quarter${dq > 1 ? 's' : ''} to ${state.quarter0} at the current doubling rate` : ''}.`, obs.metr.src, obs.metr.latest.date, { type: dq ? 'derived' : 'reported' });
     if (obs.metr.doublingDays) setParam(state, changelog, limits, 'D0', +(obs.metr.doublingDays / 30.4).toFixed(1), `Rule: METR since-2023 doubling time ${obs.metr.doublingDays.toFixed(0)} days ÷ 30.4 (latest frontier measurement ${obs.metr.latest.date}).`, obs.metr.src, obs.metr.latest.date);
     for (const h of state.history) { const pts = obs.metr.frontier.filter(x => x.date <= qEnd(h.q)); if (pts.length) h.H = +pts[pts.length - 1].p80.toFixed(2); }
   }
@@ -161,6 +164,11 @@ export function apply(state, obs, limits, changelog) {
       const gObs = Math.log(state.params.R0_epoch.value / back.revenue) / 4;
       const rows = simulate(paramsOf(state), [], null, 2); const gMod = rows[0].gR;
       setGauge(state, changelog, 'growth_check', `${(gObs * 100).toFixed(0)}% vs ${(gMod * 100).toFixed(0)}% per qtr`, `observed (Epoch sum, ${back.q} → now) vs modelled quarter-zero growth; gap ${((gObs - gMod) * 100).toFixed(0)} pts`, 'https://epoch.ai/data/ai_companies_revenue_reports.csv', today());
+      // Weekly ledger: one reading per ISO week; the calibration rule reads the counters, not the stance text.
+      const week = isoWeek(new Date()); const cal = state.calibration || { readings: [], weeks_at_gap: 0, fast_lane: false };
+      if (!cal.readings.some(r => r.week === week)) { cal.readings.push({ week, date: today(), gObs: +gObs.toFixed(4), gMod: +gMod.toFixed(4), gap: +(gObs - gMod).toFixed(4) }); cal.readings = cal.readings.slice(-26); }
+      let run = 0, fast = 0; for (const r of [...cal.readings].reverse()) { if (Math.abs(r.gap) > 0.05) run++; else break; } for (const r of [...cal.readings].reverse()) { if (Math.abs(r.gap) > 0.15) fast++; else break; }
+      cal.weeks_at_gap = run; cal.fast_lane = fast >= 2; cal.util0 = +(state.params.R0.value / (state.params.K0.value * (1 - state.params.train.value / 100) * state.params.mono.value)).toFixed(3); state.calibration = cal;
     }
   } catch (e) { log('growth check failed', String(e).slice(0, 80)); }
   // Stance rule: the revenue ceiling per inference GW is derived so that today’s revenue sits at ~100% of monetisable capacity.

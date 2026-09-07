@@ -25,7 +25,7 @@ export const RULE_TEXT = {
   financing_evidence: 'Data on how much of the buildout is debt-financed or how builds respond to credit conditions.',
   undisclosed_estimate: 'Analyst or company evidence on frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference, labs that stopped disclosing). R0x is an allowance added to the Epoch sum.',
   epoch_sum: 'Deterministic: the collector sums Epoch’s disclosed run-rates. Agents may not propose this key directly; a newer primary report goes through primary_report on R0_epoch.',
-  growth_calibration: 'The growth_check gauge shows trailing observed revenue growth against the model’s quarter-zero growth. When the gap exceeds 0.05 log per quarter for three consecutive weeks: if quarter zero is rationed (utilisation at or above 100%) the gap is supply-side, so propose pipe (and, if pipe is already at the evidence range, buildMax) toward closing half of it; otherwise propose orgX. Caps per run apply.',
+  growth_calibration: 'The weekly calibration ledger (state.calibration) records the gap between observed and modelled quarter-zero growth. When the ledger shows the gap above 0.05 log/quarter for three consecutive weeks, or the fast lane is open (above 0.15 for two weeks), propose one capped move toward closing half of it: pipe (then buildMax) when quarter zero is rationed, orgX when there is slack. Cite the ledger counters in the rationale. Caps per run apply.',
   rebaseline: 'Weekly re-derivation of a parameter from scratch; allowed for R0, H0, D0, K0, pipe, train, capexGW, sh_*.',
 };
 export const REBASELINE_KEYS = ['R0_epoch', 'H0', 'D0', 'K0', 'pipe', 'train', 'capexGW', 'sh_rd', 'sh_swe', 'sh_trd'];

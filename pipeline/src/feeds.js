@@ -26,14 +26,20 @@ export async function gatherItems(cfg) {
   const seen = readJSON(P('pipeline', 'state', 'seen.json'), {});
   const lookback = cfg.lookback_days || 3; const cutoff = new Date(Date.now() - lookback * 86400000).toISOString().slice(0, 10);
   const items = []; const failed = [];
+  const healthLog = readJSON(P('pipeline', 'state', 'feed_health.json'), []);
+  const consecutive = name => { let n = 0; for (const h of [...healthLog].reverse()) { if (h.failed.includes(name)) n++; else break; } return n; };
+  const monday = new Date().getUTCDay() === 1; let cfgChanged = false;
   for (const f of cfg.feeds) {
+    if (f.dead && !monday) { failed.push({ name: f.name, url: f.url, dead: true }); continue; }
     try {
       let parsed;
       if (f.kind === 'html') { const html = await fetchText(f.url, { timeout: 20000 }); parsed = parseLinks(html, f.url, f.match).filter(i => !seen[i.link]).slice(0, 6); }
       else { const xml = await fetchText(f.url, { timeout: 20000 }); parsed = parseFeed(xml).filter(i => (!i.date || i.date >= cutoff) && !seen[i.link]).slice(0, 8); }
       for (const i of parsed) items.push({ ...i, feed: f.name }); log('feed', f.name, parsed.length);
-    } catch (e) { log('feed fail', f.name, String(e).slice(0, 80)); failed.push({ name: f.name, url: f.url }); }
+      if (f.dead) { delete f.dead; delete f.dead_since; cfgChanged = true; }
+    } catch (e) { log('feed fail', f.name, String(e).slice(0, 80)); failed.push({ name: f.name, url: f.url }); if (!f.dead && consecutive(f.name) >= 4) { f.dead = true; f.dead_since = new Date().toISOString().slice(0, 10); cfgChanged = true; log('feed marked dead', f.name); } }
   }
+  if (cfgChanged) writeJSON(P('pipeline', 'config', 'watchlist.json'), cfg);
   const recent = readJSON(P('pipeline', 'state', 'x_recent.json'), []);
   const posts = recent.filter(p => !seen['x:' + p.id]).slice(-80);
   const health = readJSON(P('pipeline', 'state', 'feed_health.json'), []).filter(h => h.date >= new Date(Date.now() - 14 * 86400000).toISOString().slice(0, 10)); health.push({ date: new Date().toISOString().slice(0, 10), failed: failed.map(f => f.name) }); writeJSON(P('pipeline', 'state', 'feed_health.json'), health);

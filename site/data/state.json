@@ -1360,5 +1360,19 @@
   "middle",
   "physics",
   "grid"
- ]
+ ],
+ "calibration": {
+  "readings": [
+   {
+    "week": "2026-W36",
+    "date": "2026-09-03",
+    "gObs": 0.44,
+    "gMod": 0.18,
+    "gap": 0.26
+   }
+  ],
+  "weeks_at_gap": 1,
+  "fast_lane": false,
+  "util0": 1.0
+ }
 }

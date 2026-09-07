@@ -61,6 +61,9 @@ ${d.lines.join('\n') || 'none'}
 ## Parameters that hit a speed limit this week (target carries over automatically)
 ${d.capped.join('\n') || 'none'}
 
+## Calibration ledger
+${JSON.stringify(state.calibration || {})}
+
 ## Still moving toward a capped target
 ${d.pending.join('\n') || 'none'}
 
