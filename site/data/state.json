@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-07T13:26:37.925Z",
+ "generated_at": "2026-09-08T11:57:19.032Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -55,16 +55,21 @@
    "short": "Cattani’s attribution. No public figure supports a trading share; quant demand is real but unquantified."
   },
   "H0": {
-   "value": 3.1,
+   "value": 4.65,
    "label": "80% task horizon today",
    "hidden": false,
    "basis": "METR Time Horizon 1.1: Claude Mythos Preview 3h06m at 80% success (measured Mar 2026), o3 30 min. Fable 5 / Mythos 5 have no METR measurement yet. Horizons are human-expert task length; METR flags measurements above 16 h (50%) as unreliable.",
    "as_of": "2026-04-07",
-   "type": "reported",
+   "type": "derived",
    "source": "https://metr.org/time-horizons/",
-   "updated": "2026-09-03",
+   "updated": "2026-09-08",
    "rule": "latest state-of-the-art 80%-success time horizon in METR’s benchmark file, in hours",
-   "short": "Latest state-of-the-art 80%-success horizon in METR’s benchmark file (Claude Mythos Preview, measured March 2026)."
+   "short": "Latest state-of-the-art 80%-success horizon in METR’s benchmark file (Claude Mythos Preview, measured March 2026).",
+   "meas_value": 3.1,
+   "meas_q": "2026Q2",
+   "pending_target": 5.08,
+   "pending_since": "2026-09-08",
+   "pending_reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled "
   },
   "D0": {
    "value": 4.2,
@@ -583,16 +588,19 @@
    "rule": "epoch_sum"
   },
   "orgX": {
-   "value": 1,
+   "value": 1.1,
    "label": "Organic growth multiplier",
    "hidden": false,
    "basis": "Scales the organic (non-reflexive, non-capability) growth of every segment. Calibration handle: the pipeline compares trailing observed revenue growth with the model’s quarter-zero growth and may move this under the growth_calibration rule when the gap persists.",
    "short": "Scales organic growth in every segment; the calibration handle for observed vs modelled growth.",
-   "as_of": "2026-09-03",
-   "type": "assumption",
-   "source": "",
-   "updated": "2026-09-03",
-   "rule": "growth_calibration"
+   "as_of": "2026-09-08",
+   "type": "reported",
+   "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
+   "updated": "2026-09-08",
+   "rule": "growth_calibration",
+   "pending_target": 1.1,
+   "pending_since": "2026-09-08",
+   "pending_reason": "Epoch's 27 Aug 2026 run-rate update is newer than the current as-of and independently documents combined lab revenue gro"
   },
   "scarce": {
    "value": 0.5,
@@ -1175,11 +1183,11 @@
    "id": "util0",
    "label": "Quarter-zero utilisation",
    "value": "59%",
-   "sub": "frontier revenue ÷ (GW online × inference share × revenue ceiling per GW); computed daily. Above 100% means rationed.",
+   "sub": "frontier revenue 118.3 ÷ (10 GW × 40% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-07",
+   "as_of": "2026-09-08",
    "auto": true,
-   "updated": "2026-09-07"
+   "updated": "2026-09-08"
   },
   {
    "id": "fms_tailrisk",
@@ -1204,12 +1212,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "10.8%",
-   "sub": "7 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "11.1%",
+   "sub": "8 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-07",
+   "as_of": "2026-09-08",
    "auto": true,
-   "updated": "2026-09-07"
+   "updated": "2026-09-08"
   },
   {
    "id": "aaii",
@@ -1224,12 +1232,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "14.5",
-   "sub": "4 Sept 2026 close (CBOE)",
+   "value": "15.3",
+   "sub": "7 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-04",
+   "as_of": "2026-09-07",
    "auto": true,
-   "updated": "2026-09-05"
+   "updated": "2026-09-08"
   },
   {
    "id": "fed_fsr",
@@ -1344,12 +1352,12 @@
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "44% vs 18% per qtr",
-   "sub": "observed (Epoch sum, 2025Q3 → now) vs modelled quarter-zero growth; gap 27 pts",
+   "value": "44% vs 20% per qtr",
+   "sub": "observed (Epoch sum, 2025Q3 → now) vs modelled quarter-zero growth; gap 25 pts",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-07",
+   "as_of": "2026-09-08",
    "auto": true,
-   "updated": "2026-09-07"
+   "updated": "2026-09-08"
   }
  ],
  "frozen": [],
@@ -1379,10 +1387,17 @@
     "gObs": 0.44,
     "gMod": 0.18,
     "gap": 0.26
+   },
+   {
+    "week": "2026-W37",
+    "date": "2026-09-08",
+    "gObs": 0.4418,
+    "gMod": 0.1967,
+    "gap": 0.2451
    }
   ],
-  "weeks_at_gap": 1,
-  "fast_lane": false,
+  "weeks_at_gap": 2,
+  "fast_lane": true,
   "util0": 0.592
  }
 }

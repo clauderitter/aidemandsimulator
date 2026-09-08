@@ -73,5 +73,26 @@
    "web_fetch and web_search budgets were exhausted mid-run; some quotes come from the search engine's rendering of the source page (openai.com, unite.ai, epoch.ai) rather than a direct fetch.",
    "No prompt-injection attempts spotted in the feeds or X posts read today."
   ]
+ },
+ {
+  "date": "2026-09-08",
+  "notes": [
+   "fed_fsr — fetched the Fed's May 2026 Financial Stability Report accessible-tables page; still the most recent edition (FSR is semiannual, next due ~Oct/Nov 2026), so no newer reading than 50% as of 2026-05-01.",
+   "h100_rental — SemiAnalysis page unchanged: 1-year H100 contract pricing up ~40% from a $1.70/hr low in Oct 2025 to $2.35/hr by March 2026. No newer SemiAnalysis rental print; note the underlying reading is March 2026 data, earlier than the recorded as_of 2026-04-02.",
+   "openrouter_cn — OfficeChai article (published/modified 2026-06-26) still shows US model share falling ~70% to ~30% June 2025 to June 2026 with Chinese models the majority; its linked June 2026 OpenRouter company-ranking piece has no July/August successor. No newer reading; recorded as_of 2026-07-09 postdates the source itself.",
+   "token_index — aiweekly alert unchanged (published July 3, 2026, updated 15:30 UTC same day): Silicon Data LLM Token Expenditure Index down almost 20% from its May high. No newer Silicon Data print reachable from the cited source.",
+   "capex_ocf — Epoch AI data insight still dated Jun. 16, 2026 and still says aggregate hyperscaler cash capex is on track to overtake operating cash flow around Q3 2026; no post-Q2-earnings revision.",
+   "vc_h1 — Crunchbase global report unchanged at a record $510B for H1 2026; its report index lists Q2 2026 as the latest global quarterly (Q3 2026 not yet closed), so no newer reading.",
+   "Web search was unavailable this session (server tool-use limit hit); all six checks were done by direct fetch of each gauge's own source page, so a newer secondary write-up outside those pages could have been missed.",
+   "Server-side web_search/web_fetch budget was exhausted mid-session; only two sources (Epoch gradient update 27 Aug 2026, SemiAnalysis InferenceX 7 Sep 2026) could be fetched and quote-verified, so I deliberately kept the proposal list to two rather than cite unverified material.",
+   "R0x (undisclosed allowance): Epoch's 27 Aug piece notes the two labs at ~$100B/yr against Exponential View's ~$200B/yr for the whole generative-AI market. Tempting for R0x, but that market figure includes app-layer resellers that double-count frontier tokens, and an R0x move to 13 was rejected on 2026-09-06. Not proposed.",
+   "R0_epoch: collector already rewrites daily and stands at 108.3 as of 2026-09-03, newer than the 27 Aug Epoch article's $100B two-lab figure. No primary_report improvement available.",
+   "H0/D0: H0 is already moving toward its capped target 5.08 since 2026-09-08; no new METR measurement found. Not proposed.",
+   "SemiAnalysis restates Anthropic's commitment to over one million TPUs (~400k purchased, ~600k rented via GCP) 'used mainly for training but also for inference' — qualitative on the train/inference split and undated for 2026, so not usable for compute_split or a GW-denominated K0/pipe move.",
+   "Stale gauges (fed_fsr, h100_rental, openrouter_cn, token_index, capex_ocf, vc_h1): could not obtain newer readings from their own sources before the tool budget ran out; flagging for the next run rather than guessing.",
+   "Ed Zitron X posts (Stargate Abilene 'years behind schedule', at most 150k operational GPUs of a 400k total) would bear on K0/pipe/history_K, but the claim is sourced to anonymous 'sources' in a short post with no dated GW figure; not proposed as capacity evidence.",
+   "kimmonismus posts on an alleged OpenAI Navier-Stokes proof, GPT-6 Astra benchmark scores and DeepSeek Flash 4.1 carry no revenue, capacity or usage-share numbers; ignored.",
+   "No prompt-injection attempts detected in the fetched pages or feed items; the SemiAnalysis thread's 'reach out to @maxkan' line is ordinary marketing addressed to readers, not instructions to me, and was ignored."
+  ]
  }
 ]

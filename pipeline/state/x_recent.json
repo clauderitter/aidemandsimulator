@@ -192,14 +192,6 @@
   "url": "https://x.com/dylan522p/status/2092258594628706778"
  },
  {
-  "handle": "dylan522p",
-  "id": "2092011530292433221",
-  "at": "2026-08-24T22:09:51.000Z",
-  "text": "I propose there should be a cap on finance people at HotChips \nToo many damn investors at my favorite conference now",
-  "likes": 675,
-  "url": "https://x.com/dylan522p/status/2092011530292433221"
- },
- {
   "handle": "SemiAnalysis_",
   "id": "2095316010249166875",
   "at": "2026-09-03T01:00:40.000Z",
@@ -1072,30 +1064,6 @@
   "url": "https://x.com/ttunguz/status/2092289770324144160"
  },
  {
-  "handle": "ttunguz",
-  "id": "2091919058598031541",
-  "at": "2026-08-24T16:02:24.000Z",
-  "text": "OpenAI's new Luna pricing now even below DeepSeek on intelligence/dollar. https://t.co/ps8r8dYnBi",
-  "likes": 1335,
-  "url": "https://x.com/ttunguz/status/2091919058598031541"
- },
- {
-  "handle": "ttunguz",
-  "id": "2091911571698282753",
-  "at": "2026-08-24T15:32:39.000Z",
-  "text": "AI to me when asking to draft an email. This is new : \n\n&gt; I'm not going to help draft an email that puts these claims in your mouth. That's a favor to you as much as to him.\n\nHaving to prove certain things are true to an AI before sending an outbound email -  I wonder if that's https://t.co/8f1GdUjRt5",
-  "likes": 41,
-  "url": "https://x.com/ttunguz/status/2091911571698282753"
- },
- {
-  "handle": "ttunguz",
-  "id": "2091892180399116460",
-  "at": "2026-08-24T14:15:35.000Z",
-  "text": "The AI supply chain is undergoing the classic bullwhip effect : GPUs, flash storage, memory, CPUs &amp; now hard disks. https://t.co/mhuUKOv2W5",
-  "likes": 135,
-  "url": "https://x.com/ttunguz/status/2091892180399116460"
- },
- {
   "handle": "drorpoleg",
   "id": "2095299717324304474",
   "at": "2026-09-02T23:55:56.000Z",
@@ -1622,22 +1590,6 @@
   "text": "Fascinating piece from Ryan using Ramp + @RevelioLabs data to show how software (some vendors more than others) proliferates thorough new hires and evangelists https://t.co/h4soivzMbU",
   "likes": 22,
   "url": "https://x.com/arakharazian/status/2092287772862153126"
- },
- {
-  "handle": "arakharazian",
-  "id": "2091943617866747998",
-  "at": "2026-08-24T17:39:59.000Z",
-  "text": "From my latest post Cracks in the AI thesis: https://t.co/GXVceJqeXi",
-  "likes": 6,
-  "url": "https://x.com/arakharazian/status/2091943617866747998"
- },
- {
-  "handle": "arakharazian",
-  "id": "2091943616348373184",
-  "at": "2026-08-24T17:39:59.000Z",
-  "text": "So comes the biggest threat to the AI trade, which relies on ever-increasing revenues to the AI model companies to support ever-increasing valuations.\n\nThose revenues are a function of price and quantity. Quantities are all good, from my perspective. Despite increasing https://t.co/C2V93N9Rnq",
-  "likes": 72,
-  "url": "https://x.com/arakharazian/status/2091943616348373184"
  },
  {
   "handle": "kimmonismus",
@@ -3254,5 +3206,253 @@
   "text": "Germany’s Merz says germany is building data centers at an unprecedented scale. \n\nHe urges Germany to seize every opportunity to expand digital infrastructure despite heavy electricity demand and pressure on local energy supplies. \n\nCompletely out of touch with reality, and this",
   "likes": 1190,
   "url": "https://x.com/kimmonismus/status/2096573222892298492"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2096991893687046258",
+  "at": "2026-09-07T16:00:02.000Z",
+  "text": "Companies shouldn't deal with the HuggingFace incident and other warning shots by stopping evaluations or punishing the model for getting caught. https://t.co/zs2OXZNVPz",
+  "likes": 150,
+  "url": "https://x.com/dwarkesh_sp/status/2096991893687046258"
+ },
+ {
+  "handle": "dylan522p",
+  "id": "2097079157301600275",
+  "at": "2026-09-07T21:46:47.000Z",
+  "text": "We are excited to bring the first open benchmarking of Google's TPUs to the world\nRunning every day, on many models + scenarios\n$/token is better than B200 and B300\nHuge shout-out to Google @inferact and the InferenceX team at SemiAnalysis to this effort that's taken many months https://t.co/vmtJl2ApV0",
+  "likes": 810,
+  "url": "https://x.com/dylan522p/status/2097079157301600275"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097112797465215296",
+  "at": "2026-09-08T00:00:28.000Z",
+  "text": "The solution is more high quality private benchmarks. If you have a great private benchmark, reach out to @maxkan. We'd love to chat! (5/5)",
+  "likes": 179,
+  "url": "https://x.com/SemiAnalysis_/status/2097112797465215296"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097112795758178766",
+  "at": "2026-09-08T00:00:27.000Z",
+  "text": "Gemini 3.8 Flash on DeepSWE is another good example. Clearly, Datacurve made a ton of money selling Google DeepSWE-shaped tasks. (4/5) https://t.co/S6lf25GofC",
+  "likes": 192,
+  "url": "https://x.com/SemiAnalysis_/status/2097112795758178766"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097112794717958498",
+  "at": "2026-09-08T00:00:27.000Z",
+  "text": "Ultimately, this is the fate of all good public benchmarks. TB 4.0 is no exception. It’s only useful signal now because it was released 2 weeks ago. Since all the tasks are similarly public, it won't be long until it's hillclimbed by all the aspiring “frontier” labs. (3/5)",
+  "likes": 212,
+  "url": "https://x.com/SemiAnalysis_/status/2097112794717958498"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097112793598050674",
+  "at": "2026-09-08T00:00:27.000Z",
+  "text": "How is this possible? All of the tasks in Terminal Bench 2.1 are fully public. Though Meta and Google would never train on the tasks directly, they absolutely will buy data from RL env startups that’s designed to mimic TB 2.1 tasks as closely as possible. The net effect is the",
+  "likes": 226,
+  "url": "https://x.com/SemiAnalysis_/status/2097112793598050674"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097112791471522292",
+  "at": "2026-09-08T00:00:26.000Z",
+  "text": "Gemini 3.8 Flash and Muse Spark 1.3 are two of the most clearly benchmaxxed models we've seen yet. Despite being comparable to both GPT-6 and Fable 5.1 on Terminal Bench 2.1, their Terminal Bench 4.0 performance is markedly worse. (1/5)🧵 https://t.co/K2ccQjWm11",
+  "likes": 2053,
+  "url": "https://x.com/SemiAnalysis_/status/2097112791471522292"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097054644258103448",
+  "at": "2026-09-07T20:09:23.000Z",
+  "text": "TPU Inference Externalization\nFull Steam Ahead - InferenceX, \nUp to 50% Better Performance per Dollar,\nRapid Externalization of TPU stack,\nGrowing Customer Base,\nIronwood, TPUv8i, Reducing CUDA Moat\n\nhttps://t.co/9CFY8YDRsI",
+  "likes": 362,
+  "url": "https://x.com/SemiAnalysis_/status/2097054644258103448"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097007346421531008",
+  "at": "2026-09-07T17:01:26.000Z",
+  "text": "ALERT🚨: AMD INCREASED @vllm_project PERFORMANCE BY 11x IN LESS THAN 19 DAYS ON MI355X AGENTIC WORKLOADS on the modern MiniMax M3 model!\n\nThis was done entirely through software optimizations, mainly by optimizing the long-context attention op, along with other optimizations! https://t.co/4MDOHAjlBN",
+  "likes": 569,
+  "url": "https://x.com/SemiAnalysis_/status/2097007346421531008"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097163135878668486",
+  "at": "2026-09-08T03:20:29.000Z",
+  "text": "Yeah it’s called the accounting department https://t.co/cPcmTB82S3",
+  "likes": 1493,
+  "url": "https://x.com/edzitron/status/2097163135878668486"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097112543483384259",
+  "at": "2026-09-07T23:59:27.000Z",
+  "text": "The cutaway shots in this are absolutely killing me, much like I would die even with pads on if I took a tackle from literally any nfl player including punters https://t.co/JntNwuiupz",
+  "likes": 346,
+  "url": "https://x.com/edzitron/status/2097112543483384259"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097104377810985036",
+  "at": "2026-09-07T23:27:00.000Z",
+  "text": "Stargate Abilene is years behind schedule lol",
+  "likes": 35,
+  "url": "https://x.com/edzitron/status/2097104377810985036"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097104333472968890",
+  "at": "2026-09-07T23:26:50.000Z",
+  "text": "Love seeing people interpret this as 400k gpus being something to do with Vera Rubin. Total gpu count for Abilene is 400k which is probably what he meant. Per sources at most there were 150k operational gpus, building 4 yet to be finished and unclear it has any operational gpus https://t.co/JQi5aYxKpB",
+  "likes": 113,
+  "url": "https://x.com/edzitron/status/2097104333472968890"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2096963557082415610",
+  "at": "2026-09-07T14:07:26.000Z",
+  "text": "Gotta wonder how big the paid influencer campaign on this was https://t.co/Ysbey9xvKx",
+  "likes": 1599,
+  "url": "https://x.com/edzitron/status/2096963557082415610"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2096961600825462850",
+  "at": "2026-09-07T13:59:39.000Z",
+  "text": "Per a source Astra is a 4.8 trillion parameter (total) model, 5.6 sol was 3.2 trillion. Significantly bigger model too weight wise https://t.co/QxpRd7EUc8",
+  "likes": 246,
+  "url": "https://x.com/edzitron/status/2096961600825462850"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2096948252876722347",
+  "at": "2026-09-07T13:06:37.000Z",
+  "text": "? https://t.co/YOWrGhYxoC",
+  "likes": 202,
+  "url": "https://x.com/edzitron/status/2096948252876722347"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097286327909675477",
+  "at": "2026-09-08T11:30:00.000Z",
+  "text": "DeepSeek Flash 4.1 is already being tested via API and rolling out. Faster and new architecture.\n\nOfficial release post probably very soon. https://t.co/eUPjjmjUDK",
+  "likes": 76,
+  "url": "https://x.com/kimmonismus/status/2097286327909675477"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097285305778811315",
+  "at": "2026-09-08T11:25:57.000Z",
+  "text": "my bad, its about $124, so even more expensive lol",
+  "likes": 3,
+  "url": "https://x.com/kimmonismus/status/2097285305778811315"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097284617002799441",
+  "at": "2026-09-08T11:23:13.000Z",
+  "text": "Ursula von der Leyen celebrates “massive improvements” to Greenland’s internet.\n\nThe Community Note adds context: 15 Mbps for 799 DKK/month (about $100), with alternative providers barred under local rules.\n\nQuite an expensive version of \"progress\". \n\nEvery day the EU and von der https://t.co/ghOOFLtDvm https://t.co/MkrZ8YEszd",
+  "likes": 40,
+  "url": "https://x.com/kimmonismus/status/2097284617002799441"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097265689627369619",
+  "at": "2026-09-08T10:08:00.000Z",
+  "text": "An AI-assisted solution to the Navier–Stokes Millennium Problem would be a historic result. Nothing less.\n\nIt is worth understanding just how much is at stake, even while the reported OpenAI proof remains unverified.\n\nSo lets break it down. Especially whats being talked about so",
+  "likes": 179,
+  "url": "https://x.com/kimmonismus/status/2097265689627369619"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097241719574085790",
+  "at": "2026-09-08T08:32:45.000Z",
+  "text": "wtf another huge breakthrough: Prof Anima Anandkumar and colleagues used a physics-informed neural network to find a promising candidate for a singularity in the 3D Euler equations, without external forcing or boundaries.\n\nTheir neural network found a candidate in the 3D Euler https://t.co/izysBVT0fP https://t.co/YTxH71QVtE",
+  "likes": 340,
+  "url": "https://x.com/kimmonismus/status/2097241719574085790"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097234754458251747",
+  "at": "2026-09-08T08:05:04.000Z",
+  "text": "OpenAI may have solved the Navier–Stokes Millennium Prize Problem\n\nA correct proof would resolve a major mathematical problem. Establishing how much of it the AI developed would also make this a crucial test of AI’s ability to produce original research.\n\nFrom what I hear, OpenAI https://t.co/oIm7DvsAcW",
+  "likes": 556,
+  "url": "https://x.com/kimmonismus/status/2097234754458251747"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097231170429669703",
+  "at": "2026-09-08T07:50:50.000Z",
+  "text": "There is a heated debate right now. Tristan Buckmaster says OpenAI told him its AI had solved the Navier–Stokes Millennium Prize Problem. \n\nThat claim remains unverified, and the discussions around it have erupted into a dispute over scientific credit.\n\nHere is what happened and https://t.co/P9j7sQAYc7",
+  "likes": 474,
+  "url": "https://x.com/kimmonismus/status/2097231170429669703"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097087167717634132",
+  "at": "2026-09-07T22:18:37.000Z",
+  "text": "at this point im more excited for a useful opus than for anothre fable update.",
+  "likes": 72,
+  "url": "https://x.com/kimmonismus/status/2097087167717634132"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097074053685162241",
+  "at": "2026-09-07T21:26:30.000Z",
+  "text": "One of the most reliable posts. \n\nI wonder when Anthropic will finally address this problem.\n\nThey manage to solve the most difficult scientific problems with their models, but they can't seem to make their models more efficient or less verbose. Absurd. https://t.co/LJfYPh3BUb",
+  "likes": 2073,
+  "url": "https://x.com/kimmonismus/status/2097074053685162241"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097048242122899794",
+  "at": "2026-09-07T19:43:56.000Z",
+  "text": "Another Codex reset incoming. I wasn't even prepared for it because I wasn't expecting it.\n\nIf Anthropic is resetting now too, then OpenAI will probably have to reset twice as often. I like it. :) https://t.co/STB90VTXmz",
+  "likes": 979,
+  "url": "https://x.com/kimmonismus/status/2097048242122899794"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097036428308074832",
+  "at": "2026-09-07T18:57:00.000Z",
+  "text": "Interesting release: OpenAI says ChatGPT Work can now learn your writing style from connected emails, messages and files.\n\n\"Your phrases, sign-offs, even capitalization quirks, carried into future drafts.\"\n\nThis gives non-human work processes, now carried out by agents, a https://t.co/nScmaGadXw https://t.co/XccXT25dLP",
+  "likes": 574,
+  "url": "https://x.com/kimmonismus/status/2097036428308074832"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097018667230003651",
+  "at": "2026-09-07T17:46:25.000Z",
+  "text": "The Website traffic share provides a fairly accurate indication of when OpenAI's turnaround occurred. Around two months ago, roughly the same time as Codex/ChatGPT Work experienced its exponential growth, OpenAI's traffic share relative to its competitors increased for the first https://t.co/aAVMXH3zXX https://t.co/Iu2sKoNXPt",
+  "likes": 319,
+  "url": "https://x.com/kimmonismus/status/2097018667230003651"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096990559264993449",
+  "at": "2026-09-07T15:54:44.000Z",
+  "text": "Another exciting reasoning benchmark, MazeBench, where GPT-Astra outperforms any other model, especially Fable 5.1.\n\nAt this point it’s clear to me that Astra is by far the best model. And since we already know that OpenAI is close to release another model, I couldn’t be more https://t.co/3RFoT8GpEy https://t.co/I718oQajLh",
+  "likes": 694,
+  "url": "https://x.com/kimmonismus/status/2096990559264993449"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096970502111662376",
+  "at": "2026-09-07T14:35:02.000Z",
+  "text": "GPT-6 Astra is now on SimpleBench.\n\nAstra Pro scores 86.5%, almost tied with Claude Fable 5.1 at 86.6%. Both beat the benchmark’s human baseline of 83.7%.\n\nSimpleBench tests everyday reasoning, from spatial logic to social situations and trick questions. That’s what makes this https://t.co/dwfmRTesKW",
+  "likes": 865,
+  "url": "https://x.com/kimmonismus/status/2096970502111662376"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2096958414505341084",
+  "at": "2026-09-07T13:47:00.000Z",
+  "text": "OpenAI’s chief scientist calls for a global AI slowdown:\n\n“It’s time for extreme caution.”\n\n“The idea of racing forward at all costs seems absurd once one internalizes the seriousness of the stakes.”\n\nHe also urges governments to make international coordination on AI development https://t.co/ecSLKNWJHo",
+  "likes": 607,
+  "url": "https://x.com/kimmonismus/status/2096958414505341084"
  }
 ]
