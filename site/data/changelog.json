@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-09-09",
+  "source": "https://x.com/edzitron/status/2097344305102741918",
+  "kind": "rejected",
+  "target": "scenario:contagion",
+  "old": null,
+  "new": "Zitron's 8 Sep 2026 'Concentration Risk' dates the break to 2027, not 2028: OpenAI and Anthropic hold $1.3tn of take-or-pay compute commitments whose low-upfront 'teaser rate' period ends next year with an estimated $200bn+ of payments due, against 1% of customers supplying 80% of their revenue and UBS putting the two labs at 48% of Google Cloud's 2027 revenue.",
+  "reason": "The fetched evidence is a single X post whose quote supports only that take-or-pay payments step up 'next year', not the specific retiming of a −30% demand break to 2027Q1 nor the added UBS and $1.3tn figures."
+ },
+ {
+  "date": "2026-09-09",
+  "source": "https://tomtunguz.com/openai-research-acceleration-agentic-productivity/",
+  "kind": "rejected",
+  "target": "k_swe",
+  "old": null,
+  "new": 0.7,
+  "reason": "The Tunguz post describes inference spend per OpenAI researcher (the R&D loop) and says nothing about software-engineering revenue driving token spend, so it does not support raising the SWE feedback gain."
+ },
+ {
+  "date": "2026-09-09",
+  "source": "https://epochai.substack.com/p/an-update-on-ais-most-important-number",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.2,
+  "reason": "This is the same Epoch 27 Aug 2026 run-rate write-up already used to raise orgX to 1.1 on 8 Sep, so a second increment on identical evidence would double-count it. Verified against archive snapshot http://web.archive.org/web/20260906224941/https://epochai.substack.com/p/an-update-on-ais-most-important-number."
+ },
+ {
+  "date": "2026-09-09",
+  "source": "https://qz.com/ai-token-prices-record-low-frontier-labs-090126",
+  "kind": "accepted",
+  "target": "gauge:token_index",
+  "old": "−20%",
+  "new": "≈−50% vs summer peak ($0.97/M tokens)",
+  "reason": "Quartz/CNBC reporting of 1 Sep 2026 is newer than the 3 Jul reading and directly states the Silicon Data SDLLMTK index fell to 97 cents per million tokens, less than half its summer peak. Verified against archive snapshot http://web.archive.org/web/20260905210741/https://qz.com/ai-token-prices-record-low-frontier-labs-090126."
+ },
+ {
+  "date": "2026-09-09",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "59%",
+  "new": "59%",
+  "reason": "Observed from source (2026-09-09).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-09",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 20% per qtr",
+  "new": "44% vs 20% per qtr",
+  "reason": "Observed from source (2026-09-09).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-09",
+  "kind": "collected",
+  "target": "H0",
+  "old": 4.65,
+  "new": 5.08,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 1 quarter to 2026Q3 at the current doubling rate.",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-09-09",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "11.1%",
+  "new": "11.3%",
+  "reason": "Observed from source (2026-09-09).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-09",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.3",
+  "new": "15.7",
+  "reason": "Observed from source (2026-09-08).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-09",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-07).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-09",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.77%",
+  "new": "4.78%",
+  "reason": "Observed from source (2026-09-04).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-08",
   "source": "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
   "kind": "accepted",

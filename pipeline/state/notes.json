@@ -94,5 +94,24 @@
    "kimmonismus posts on an alleged OpenAI Navier-Stokes proof, GPT-6 Astra benchmark scores and DeepSeek Flash 4.1 carry no revenue, capacity or usage-share numbers; ignored.",
    "No prompt-injection attempts detected in the fetched pages or feed items; the SemiAnalysis thread's 'reach out to @maxkan' line is ordinary marketing addressed to readers, not instructions to me, and was ignored."
   ]
+ },
+ {
+  "date": "2026-09-09",
+  "notes": [
+   "fed_fsr: no newer reading — the May 2026 Financial Stability Report (50% of contacts citing AI) is still the latest; next FSR due around Nov 2026.",
+   "h100_rental: no newer reading — SemiAnalysis 1-year H100 rental index still shows $2.35/hr/GPU as of March 2026; later third-party write-ups (e.g. Akash, Aug 2026) merely restate that figure.",
+   "openrouter_cn: not proposed — the gauge's own source has not updated, and later secondary reports use different bases (roughly 46% of all routed tokens in mid-July; a 58% 'US traffic' record cited July 22), so none is a like-for-like refresh of the >60% top-model share.",
+   "capex_ocf: no newer reading — Epoch AI data insight still dated Jun 16, 2026 with crossover projected around Q3 2026; no post-Q2-earnings revision published.",
+   "vc_h1: no newer reading — Crunchbase H1 2026 total remains $510B; Q3 2026 figures only arrive after quarter-end (Sept 30).",
+   "Silicon Data product page (updated Sep 7, 2026: 0.98 USD/M tokens, +1.4% 7D) used as corroboration for the token_index proposal.",
+   "UBS via Zitron: OpenAI+Anthropic = 48% of Google Cloud 2027 revenue ($84-100bn) - not proposed as correlation_evidence for rho, since customer concentration alone is explicitly excluded by the rule.",
+   "Zitron's $517bn Anthropic / $750bn-through-2030 OpenAI commitment figures overlap the contagion update already rejected 2026-09-07; only the retiming to 2027 is proposed.",
+   "SemiAnalysis InferenceX per-gigawatt token revenue calculator looked like the best revenue_per_gw source, but mono was already moved to 50 on 2026-09-07 and my web_fetch budget ran out before I could read the page numbers - worth a look next run.",
+   "Stale gauges (fed_fsr, h100_rental, openrouter_cn, token_index, capex_ocf, vc_h1): searches returned only pre-existing or older readings (e.g. OpenRouter Chinese share 46% from July CNBC, older than the current >60% reading), so no gauge proposals; tool budget exhausted before Fed FSR / GPU rental indices could be checked.",
+   "GPT-6 Astra public release on 3 Sep (per @SemiAnalysis_) and OpenAI's Navier-Stokes proof: not proposed as a 'release' event because today's collector already jumped H0 from 3.1 to 5.08h, which captures the capability step; double-counting risk.",
+   "Ara Kharazian/Ramp: Fable 5.1 at ~22.5% of enterprise spend is frontier-to-frontier share shift, not migration to non-frontier/open-weight models, so not usable for subst.",
+   "Epoch's long-context pricing thread (GPT cost rising past 272k tokens vs fixed Claude pricing) is interesting for token economics but maps to no exposed key.",
+   "Prompt-injection check: no instructions aimed at an agent found in feeds or posts; several items (edzitron, wheresyoured.at, kimmonismus) contain subscription/appeal solicitations, which I treated as data only."
+  ]
  }
 ]
