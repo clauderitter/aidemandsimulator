@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-09T12:09:57.809Z",
+ "generated_at": "2026-09-10T12:14:34.278Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -465,14 +465,14 @@
    "short": "Revenue potential per GW of inference capacity at current prices. Evidence-driven: Patel and Tunguz put Anthropic near $50M per MW of total compute (higher per inference GW); SemiAnalysis sees ~$100B/GW potential; the industry average is far lower."
   },
   "train": {
-   "value": 60,
+   "value": 50,
    "label": "Compute used for training",
    "hidden": false,
    "basis": "Anthropic 2025: $4.1B training vs ~$2.7B inference (Epoch, Feb 2026), matching the 60/40 rumour the article cites. Amodei’s stylised split is 50/50; older forecasts have training falling toward 20% by end-2027.",
-   "as_of": "2026-08-25",
-   "type": "estimate",
-   "source": "https://www.dwarkesh.com/p/dylan-patel-3",
-   "updated": "2026-09-03",
+   "as_of": "2026-09-09",
+   "type": "reported",
+   "source": "https://alphasignal.ai/news/epoch-reveals-openai-s-computing-power-grew-17x-in-two-years",
+   "updated": "2026-09-10",
    "rule": "",
    "short": "Anthropic 2025 spent $4.1B on training vs ~$2.7B on inference (Epoch); Patel’s 60/40 split."
   },
@@ -1172,6 +1172,37 @@
    "updated": "2026-09-03",
    "added": "2026-09-03",
    "core": false
+  },
+  {
+   "id": "elastic",
+   "camp": "structural",
+   "name": "Elasticity beats price decline",
+   "who": "Citadel Securities Global Macro Strategy",
+   "when": "Aug 2026 ('Elastic Expectations'; follows the June 'Tokenomics' note)",
+   "thesis": "Usage-weighted token prices have fallen 40% since end-June, yet July AI spend per employee among the top 1% of enterprises rose about 50% month over month, GPU rentals stayed above their June lows and Q2 hyperscaler cloud revenue shows incremental capacity finding paying demand fast. Cheaper intelligence expands the quantity consumed rather than shrinking the ecosystem's revenue, so the revenues embedded in today's expectations can be met by volume rather than price.",
+   "src": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/elastic-expectations/",
+   "p": {
+    "epsX": 1.3,
+    "subst": 12,
+    "k_oth": 0.3,
+    "targetUtil": 0.85
+   },
+   "e": [
+    {
+     "type": "price",
+     "t": 0,
+     "v": 40
+    },
+    {
+     "type": "oth_boost",
+     "t": 0,
+     "v": 50,
+     "dur": 8
+    }
+   ],
+   "status": "active",
+   "updated": "2026-09-10",
+   "added": "2026-09-10"
   }
  ],
  "gauges": [
@@ -1181,9 +1212,9 @@
    "value": "59%",
    "sub": "frontier revenue 118.3 ÷ (10 GW × 40% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-09",
+   "as_of": "2026-09-10",
    "auto": true,
-   "updated": "2026-09-09"
+   "updated": "2026-09-10"
   },
   {
    "id": "fms_tailrisk",
@@ -1208,12 +1239,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "11.3%",
-   "sub": "9 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "10.2%",
+   "sub": "10 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-09",
+   "as_of": "2026-09-10",
    "auto": true,
-   "updated": "2026-09-09"
+   "updated": "2026-09-10"
   },
   {
    "id": "aaii",
@@ -1228,12 +1259,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "15.7",
-   "sub": "8 Sept 2026 close (CBOE)",
+   "value": "16.5",
+   "sub": "9 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-08",
+   "as_of": "2026-09-09",
    "auto": true,
-   "updated": "2026-09-09"
+   "updated": "2026-09-10"
   },
   {
    "id": "fed_fsr",
@@ -1308,12 +1339,12 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "4.78%",
-   "sub": "4 Sept 2026 (FRED DGS10); Fed funds effective 3.63%",
+   "value": "4.80%",
+   "sub": "8 Sept 2026 (FRED DGS10); Fed funds effective 3.63%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-09-04",
+   "as_of": "2026-09-08",
    "auto": true,
-   "updated": "2026-09-09"
+   "updated": "2026-09-10"
   },
   {
    "id": "crwv_cds",
@@ -1339,11 +1370,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.63%",
-   "sub": "7 Sept 2026 (FRED DFF)",
+   "sub": "8 Sept 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-09-07",
+   "as_of": "2026-09-08",
    "auto": true,
-   "updated": "2026-09-09"
+   "updated": "2026-09-10"
   },
   {
    "id": "growth_check",
@@ -1351,9 +1382,9 @@
    "value": "44% vs 20% per qtr",
    "sub": "observed (Epoch sum, 2025Q3 → now) vs modelled quarter-zero growth; gap 24 pts",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-09",
+   "as_of": "2026-09-10",
    "auto": true,
-   "updated": "2026-09-09"
+   "updated": "2026-09-10"
   }
  ],
  "frozen": [],

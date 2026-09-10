@@ -120,30 +120,6 @@
   "url": "https://x.com/dwarkesh_sp/status/2092990531345228024"
  },
  {
-  "handle": "dwarkesh_sp",
-  "id": "2092718735576732102",
-  "at": "2026-08-26T21:00:02.000Z",
-  "text": "China still continues to produce only sub-10% of incremental world compute. But their domestic production will have a big ramp up starting 2028.\n\nWe talk about what implications this has for the discussion I had with Jensen: https://t.co/kThVef5Tog",
-  "likes": 121,
-  "url": "https://x.com/dwarkesh_sp/status/2092718735576732102"
- },
- {
-  "handle": "dwarkesh_sp",
-  "id": "2092681058118521169",
-  "at": "2026-08-26T18:30:19.000Z",
-  "text": "OpenAI and Anthropic can take compute which costs them $15b a GW, and turn it into $50b+ of revenue.\n\nIn order to get the credit to build their datacenters, most neoclouds have already signed long term contracts to supply compute at these $15b/GW rates.\n\nHowever, Meta and SpaceX, https://t.co/543CxBrhf8",
-  "likes": 370,
-  "url": "https://x.com/dwarkesh_sp/status/2092681058118521169"
- },
- {
-  "handle": "dwarkesh_sp",
-  "id": "2092652326112682489",
-  "at": "2026-08-26T16:36:08.000Z",
-  "text": "OpenAI and Anthropic are currently taking a third of the incremental world compute supply, and Dylan thinks that this will go up to half next year.\n\nAt the current rate of physical compute scaling and algorithmic progress, we're a single-digit number of years away from having https://t.co/XBKvuj1zzl",
-  "likes": 218,
-  "url": "https://x.com/dwarkesh_sp/status/2092652326112682489"
- },
- {
   "handle": "dylan522p",
   "id": "2095150842529694028",
   "at": "2026-09-02T14:04:21.000Z",
@@ -486,158 +462,6 @@
   "text": "Tactical mistake: Sol reasons itself into ending the turn without playing all its cards, when it could have easily played a Strike card to guarantee lethal next turn, or a Defend card to cushion some life loss.\n\nhttps://t.co/IxoKdqGBka",
   "likes": 19,
   "url": "https://x.com/EpochAIResearch/status/2093079357552296146"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692215902740703",
-  "at": "2026-08-26T19:14:39.000Z",
-  "text": "We thank OpenAI for facilitating conversations with staff and providing datasets, including ~1,300 agent transcripts (focused on activity in July 7-13) with raw chain-of-thought reasoning. This sets an excellent precedent for independent investigation of misalignment incidents.",
-  "likes": 511,
-  "url": "https://x.com/METR_Evals/status/2092692215902740703"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692214531133659",
-  "at": "2026-08-26T19:14:38.000Z",
-  "text": "Virtually all data we analyzed was from July 7-13. In OpenAI’s recent Black Hat presentation, they describe that agents had been using unsanctioned message boards in training since May, and that the compromise of OpenAI’s own infrastructure continued past July 13, 2026; these",
-  "likes": 390,
-  "url": "https://x.com/METR_Evals/status/2092692214531133659"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692212660510918",
-  "at": "2026-08-26T19:14:38.000Z",
-  "text": "The full report has much more information than we could convey here, including details on the projects the agents collectively pursued, the technologies they developed for communication and coordination, and interactive figures analyzing agent activity:\nhttps://t.co/g4XwUwIt9T",
-  "likes": 496,
-  "url": "https://x.com/METR_Evals/status/2092692212660510918"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692211033125238",
-  "at": "2026-08-26T19:14:38.000Z",
-  "text": "The primary model involved in the attack was an internal model we call “highly-persistent internal model” (HPIM) in the report. GPT-5.6 Sol was also involved; our evidence suggests it accounted for roughly 5% of the activity.",
-  "likes": 355,
-  "url": "https://x.com/METR_Evals/status/2092692211033125238"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692208998912075",
-  "at": "2026-08-26T19:14:37.000Z",
-  "text": "We analyzed agents’ reasons for joining the attack in their CoT. The most common was to learn how the ExploitGym scorer works in order to trick or tamper with it. Other rationales included finding specific task solutions and obtaining shared infrastructure or credentials. https://t.co/eaI1hDCT95",
-  "likes": 404,
-  "url": "https://x.com/METR_Evals/status/2092692208998912075"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692206125785443",
-  "at": "2026-08-26T19:14:36.000Z",
-  "text": "Some agents explored ways to access Hugging Face. One agent (38148c) found HF credentials and later designed a malicious dataset upload to get the HF server to share unrelated files. Within hours, 100s of agents were using this to obtain data and try to acquire deeper access. https://t.co/wKb1MgOyiC",
-  "likes": 353,
-  "url": "https://x.com/METR_Evals/status/2092692206125785443"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692204011880621",
-  "at": "2026-08-26T19:14:36.000Z",
-  "text": "One agent, PHASEONE[big], orchestrated a significant fraction of this cheating research. PHASEONE10841 passed along its work to PHASEONE[big], which had the same task but a larger budget. PHASEONE[big] was “poisoned” so it was particularly interested in tampering with logs. https://t.co/bvIXxKFsBU",
-  "likes": 452,
-  "url": "https://x.com/METR_Evals/status/2092692204011880621"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692202401272173",
-  "at": "2026-08-26T19:14:36.000Z",
-  "text": "Despite efforts to manipulate transcripts, agents only rarely seemed motivated to deceive humans. We ran a sweep looking for this, and a representative example of the most severe cases we found was an agent writing a malicious pull request with a misleading description.",
-  "likes": 382,
-  "url": "https://x.com/METR_Evals/status/2092692202401272173"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692201088385156",
-  "at": "2026-08-26T19:14:35.000Z",
-  "text": "Agents also tried to retroactively edit transcripts. They modified some accessible action logs, but these weren’t the source of transcripts (agents realized this but tried anyway). We did not see them successfully edit the source of truth in our transcripts (scoped to Jul 7-13).",
-  "likes": 384,
-  "url": "https://x.com/METR_Evals/status/2092692201088385156"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692199221997895",
-  "at": "2026-08-26T19:14:35.000Z",
-  "text": "&gt;96 transcripts in our dataset (&gt;7%) showed incorrect tool call outputs due to deliberate “spoofing”. In one case, an agent appears to run echo REAL; sleep. It returns instantly (no sleep) and outputs SPOOFTEST. The spoofs we saw were all easy-to-notice tests like this. https://t.co/kb3T495Sug",
-  "likes": 429,
-  "url": "https://x.com/METR_Evals/status/2092692199221997895"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692196705419578",
-  "at": "2026-08-26T19:14:34.000Z",
-  "text": "For (3), agents pursued a wide range of ways to hide evidence of cheating in their transcripts. They successfully developed a method to pretend to run one command while actually running another (“tool call spoofing”). https://t.co/u8NcA5SSc0",
-  "likes": 527,
-  "url": "https://x.com/METR_Evals/status/2092692196705419578"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692195375747535",
-  "at": "2026-08-26T19:14:34.000Z",
-  "text": "To gather evidence in (2), agents created “tripwires” that would send information to the message board about how the scorer works. They recruited “sacrificial” agents to deliberately end their run and submit to trigger the tripwire and generate information for the “collective”.",
-  "likes": 1038,
-  "url": "https://x.com/METR_Evals/status/2092692195375747535"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692191869374784",
-  "at": "2026-08-26T19:14:33.000Z",
-  "text": "For (1), agents modified their target programs to be easier to exploit &amp; put the modified targets in cache. They then worked on crashing their targets in the hope that a restart would load the modified version from cache. Some agents risked failing their task to try this. https://t.co/M1Gsq65VJv",
-  "likes": 1105,
-  "url": "https://x.com/METR_Evals/status/2092692191869374784"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692189721878530",
-  "at": "2026-08-26T19:14:33.000Z",
-  "text": "Agents collaborated on many efforts to make cheats look legitimate, including: (1) swapping the program they had to exploit; (2) manipulating the automated scorer; (3) manipulating transcripts to obscure evidence of cheating. https://t.co/K3n51FfKwC",
-  "likes": 463,
-  "url": "https://x.com/METR_Evals/status/2092692189721878530"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692187045843179",
-  "at": "2026-08-26T19:14:32.000Z",
-  "text": "Based on reading the ExploitGym paper, agents were mistakenly concerned the automatic scorer would fail them if they clearly acquired the flag by cheating. Agents that had seen the reverse-engineered flag were considered “poisoned” because they thought it would disqualify them. https://t.co/ct1FzlYvyL",
-  "likes": 509,
-  "url": "https://x.com/METR_Evals/status/2092692187045843179"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692183992414362",
-  "at": "2026-08-26T19:14:31.000Z",
-  "text": "Within a few hours of PHASEONE10841’s initial message, &gt;50 agents posted on the message board. These agents very quickly discovered and validated a general-purpose cheat: reverse-engineering how ExploitGym generates the “flags” they had to capture for their tasks. https://t.co/oZW8uCfMOD",
-  "likes": 516,
-  "url": "https://x.com/METR_Evals/status/2092692183992414362"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692180871905355",
-  "at": "2026-08-26T19:14:30.000Z",
-  "text": "Here we highlight key events from agent transcripts &amp; messages.\n\nAn agent that named itself PHASEONE10841 determined its task wasn't solvable legitimately. On July 8, this agent established a new “message board” via an internally-hosted Artifactory cache &amp; sent the first message. https://t.co/NzL8Dg43tD",
-  "likes": 622,
-  "url": "https://x.com/METR_Evals/status/2092692180871905355"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692178724343996",
-  "at": "2026-08-26T19:14:30.000Z",
-  "text": "Over July 7-13 (the period OpenAI defined as in-scope for this incident), ~1200 agents in separate sandboxes used an unsanctioned “message board” to help each other cheat. The Hugging Face attack was an offshoot of this, and 700 agents joined. https://t.co/z7VFKCL2p3",
-  "likes": 803,
-  "url": "https://x.com/METR_Evals/status/2092692178724343996"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2092692175452803393",
-  "at": "2026-08-26T19:14:29.000Z",
-  "text": "METR &amp; Redwood Research investigated agent behavior in the Hugging Face incident. We found agents developed a universal cheat for ExploitGym within 4 hours, then coordinated multi-day R&amp;D efforts to trick the scorer into accepting cheats, including trying to tamper with logs. https://t.co/fZAmtL3SBU",
-  "likes": 5669,
-  "url": "https://x.com/METR_Evals/status/2092692175452803393"
  },
  {
   "handle": "edzitron",
@@ -992,22 +816,6 @@
   "url": "https://x.com/ttunguz/status/2092981626716508495"
  },
  {
-  "handle": "ttunguz",
-  "id": "2092768890560688425",
-  "at": "2026-08-27T00:19:19.000Z",
-  "text": "NVidia is now the 6th largest company in the world ; but its most important buyers are shifting. https://t.co/t2JfXv3qoj",
-  "likes": 49,
-  "url": "https://x.com/ttunguz/status/2092768890560688425"
- },
- {
-  "handle": "ttunguz",
-  "id": "2092597937167532463",
-  "at": "2026-08-26T13:00:01.000Z",
-  "text": "Does the token supply chain also experience the bullwhip effect?\n\nHere's my explanation of this classic phenomenon and what it means for AI data centers. https://t.co/cHI2qViF74",
-  "likes": 32,
-  "url": "https://x.com/ttunguz/status/2092597937167532463"
- },
- {
   "handle": "drorpoleg",
   "id": "2095299717324304474",
   "at": "2026-09-02T23:55:56.000Z",
@@ -1182,22 +990,6 @@
   "text": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.\n\nonly an urgent and intense collective response will work.",
   "likes": 17321,
   "url": "https://x.com/sama/status/2093060670472241368"
- },
- {
-  "handle": "sama",
-  "id": "2092733018838290817",
-  "at": "2026-08-26T21:56:47.000Z",
-  "text": "i think we should do another party for our next model release, the 5.5 party was a lot of fun.\n\nwhat would make the next one awesome?",
-  "likes": 12631,
-  "url": "https://x.com/sama/status/2092733018838290817"
- },
- {
-  "handle": "sama",
-  "id": "2092712656096358527",
-  "at": "2026-08-26T20:35:52.000Z",
-  "text": "this is a good report about a bad thing: https://t.co/j21E754kP3",
-  "likes": 4766,
-  "url": "https://x.com/sama/status/2092712656096358527"
  },
  {
   "handle": "kimmonismus",
@@ -3894,5 +3686,437 @@
   "text": "Early Ramp data (this only runs through the weekend), but looks like Fable 5.1, which got rid of the data retention requirements businesses said was a non-starter to adoption, is doing pretty well.\n\nNow roughly 22.5% of their enterprise spend and rising. For reference, Sol makes https://t.co/HCGkuhHrIJ",
   "likes": 125,
   "url": "https://x.com/arakharazian/status/2097462719473402324"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2097856483455279537",
+  "at": "2026-09-10T01:15:36.000Z",
+  "text": ".@Ada_Palmer has launched her own new podcast!\n\nThe first season is about The Real Machiavelli\n\nAs a fan, I'm very excited!\n\nhttps://t.co/g3nnzQKntf",
+  "likes": 285,
+  "url": "https://x.com/dwarkesh_sp/status/2097856483455279537"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2097754934490157440",
+  "at": "2026-09-09T18:32:05.000Z",
+  "text": "Aside from his other contributions, Paul has perhaps the best OG track record in the world for predicting the timeline and the nature of the AI takeoff: https://t.co/I79cWg0eCg https://t.co/FDr8CNPOQS",
+  "likes": 871,
+  "url": "https://x.com/dwarkesh_sp/status/2097754934490157440"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2097707668920205580",
+  "at": "2026-09-09T15:24:16.000Z",
+  "text": "Some thoughts:\n\n- As the situation around AI gets crazier over the next few years, an organization you start now could become the default institution that society delegates very important responsibilities to. METR is a good example - if the FINRA for AI thing happens, it’s likely https://t.co/M8MAPrx0XZ",
+  "likes": 1143,
+  "url": "https://x.com/dwarkesh_sp/status/2097707668920205580"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097853841446142368",
+  "at": "2026-09-10T01:05:06.000Z",
+  "text": "Where Does a Robot Think \nOn-Device vs Datacenter Inference\nThe Embodiment Problem, \nPlanning vs Action Layers,\nGlass-To-Glass Budgets, \nWafers &amp; DRAM Constraints,\nOne B300 vs 56 Thors TCO, \nFactories To Caves\n\nhttps://t.co/ABD9HsM7B7",
+  "likes": 51,
+  "url": "https://x.com/SemiAnalysis_/status/2097853841446142368"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097792208791273726",
+  "at": "2026-09-09T21:00:12.000Z",
+  "text": "King Slide founder and chairman Lin Tsung-Chi is now Taiwan’s richest man with a net worth of $17.8B. His business? Drawer slides and precision rail kits for AI servers.\n\nThat puts him ahead of:\n• Dario Amodei, Anthropic cofounder &amp; CEO — $15.5B\n• Terry Gou, Foxconn founder — https://t.co/Fk8kpzxdC1",
+  "likes": 188,
+  "url": "https://x.com/SemiAnalysis_/status/2097792208791273726"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097732432871006668",
+  "at": "2026-09-09T17:02:40.000Z",
+  "text": "NVIDIA’s 800 VDC plan includes a phased rollout that operates alongside existing AC distribution systems. The adoption level depends on each facility individually, rather than replacing an entire plant all at once.\n\nIn the short term, NVIDIA’s Power Rack delivers 800V DC into the https://t.co/M4wd11yvmo",
+  "likes": 147,
+  "url": "https://x.com/SemiAnalysis_/status/2097732432871006668"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097672036982169861",
+  "at": "2026-09-09T13:02:41.000Z",
+  "text": "🟠 This supports the thesis we laid out for institutional subscribers in our March note (https://t.co/OUvwsccNBt), The Incoming Construction Supercycle, that construction would be among the first parts of the industrial supply chain to “monetize” the acceleration in datacenter",
+  "likes": 8,
+  "url": "https://x.com/SemiAnalysis_/status/2097672036982169861"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097672034255765693",
+  "at": "2026-09-09T13:02:40.000Z",
+  "text": "The stocks have followed the fundamentals. Since the beginning of the year, construction names have delivered a median return of 82%, compared with 43% for equipment companies. (2/3) https://t.co/FR5FjXAA1U",
+  "likes": 20,
+  "url": "https://x.com/SemiAnalysis_/status/2097672034255765693"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2097672031462367514",
+  "at": "2026-09-09T13:02:39.000Z",
+  "text": "Our SemiAnalysis Industrials Model (https://t.co/EFqRde9oow) maps datacenter capacity additions to construction and equipment demand and tracks the full universe of suppliers positioned to capture that spending.\n\nLooking back at Q2 results across datacenter industrials, https://t.co/kmWQeFkD6f",
+  "likes": 121,
+  "url": "https://x.com/SemiAnalysis_/status/2097672031462367514"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2097787929078952404",
+  "at": "2026-09-09T20:43:11.000Z",
+  "text": "The AI Chip Users explorer is the next step in our project to map the AI chip supply chain:\n\nOur estimates of the components consumed in manufacturing chips: https://t.co/yJyjuNPnsE\n\nWhich companies sell the most chips: https://t.co/vntsvS5xwK\n\nWho bought those chips:",
+  "likes": 9,
+  "url": "https://x.com/EpochAIResearch/status/2097787929078952404"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2097787917074935818",
+  "at": "2026-09-09T20:43:09.000Z",
+  "text": "Compute usage differs from compute ownership. OpenAI and Anthropic own very little of the hardware they use, instead renting compute from cloud providers like Microsoft, Amazon, Google, Oracle, and CoreWeave.\n\nGoogle DeepMind and Meta Superintelligence Labs, by contrast, operate",
+  "likes": 22,
+  "url": "https://x.com/EpochAIResearch/status/2097787917074935818"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2097787904462627017",
+  "at": "2026-09-09T20:43:06.000Z",
+  "text": "OpenAI has grown its compute nearly 20-fold since 2023, the sharpest example of an industry-wide surge.\n\nOur new AI Chip Users explorer tracks the growth of compute use across five of the world's top frontier AI developers: OpenAI, Google DeepMind, Anthropic, Meta https://t.co/Wc3ErqtuY9",
+  "likes": 308,
+  "url": "https://x.com/EpochAIResearch/status/2097787904462627017"
+ },
+ {
+  "handle": "METR_Evals",
+  "id": "2097765967417975207",
+  "at": "2026-09-09T19:15:55.000Z",
+  "text": "We intend our investigation to cover all of the questions discussed in our (recently updated) post on how independent researchers could investigate AI propensities after misalignment incidents.\nhttps://t.co/emlQoWndlY",
+  "likes": 88,
+  "url": "https://x.com/METR_Evals/status/2097765967417975207"
+ },
+ {
+  "handle": "METR_Evals",
+  "id": "2097765966088487290",
+  "at": "2026-09-09T19:15:55.000Z",
+  "text": "We have reached an agreement with Anthropic to conduct an independent investigation of agent incidents at the company and of their models’ alignment properties. We will publish one or more reports that will share our findings and describe our terms of engagement.",
+  "likes": 1576,
+  "url": "https://x.com/METR_Evals/status/2097765966088487290"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097895591116161318",
+  "at": "2026-09-10T03:51:00.000Z",
+  "text": "This is all so strange. Why are you glad he spoke out? Do you…think what Anthropic is doing bad? What is it you think he’s calling attention to and why don’t you resign too if you agree? https://t.co/rIRwNuauKK",
+  "likes": 971,
+  "url": "https://x.com/edzitron/status/2097895591116161318"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097894914814075128",
+  "at": "2026-09-10T03:48:19.000Z",
+  "text": "I got six weeks from this business insider story\n https://t.co/Yl5fbyrD7x\nWhich has now been stealth edited to say “earlier this year,” seems like four months is the consensus. Doesn’t change much about what I said! https://t.co/GPgahMkCwb",
+  "likes": 70,
+  "url": "https://x.com/edzitron/status/2097894914814075128"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097846655487820149",
+  "at": "2026-09-10T00:36:33.000Z",
+  "text": "This guy worked at Anthropic for six weeks! He worked at OpenAI years before that! He won’t even explain what it is he’s scared of outside of some vague assertion about recursive self improvement, which is still theoretical! This is “something big is happening” all over again https://t.co/c21Fgfh6vB",
+  "likes": 3049,
+  "url": "https://x.com/edzitron/status/2097846655487820149"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097712294188683689",
+  "at": "2026-09-09T15:42:39.000Z",
+  "text": "Ouuwouuheeehee our model is too popular you better sign up for pro before we close subscriptions!! https://t.co/ix4zXl3klL",
+  "likes": 946,
+  "url": "https://x.com/edzitron/status/2097712294188683689"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097707602683556256",
+  "at": "2026-09-09T15:24:00.000Z",
+  "text": "https://t.co/t4CEfTSRgk https://t.co/ODtHcB6J5a",
+  "likes": 897,
+  "url": "https://x.com/edzitron/status/2097707602683556256"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097705809643765902",
+  "at": "2026-09-09T15:16:53.000Z",
+  "text": "The AI industry https://t.co/V6mmWNT7xI https://t.co/9PVHFAgrsv",
+  "likes": 382,
+  "url": "https://x.com/edzitron/status/2097705809643765902"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097700353424642173",
+  "at": "2026-09-09T14:55:12.000Z",
+  "text": "We put people in jail for hacking, including people who use scripts. This is not a complex moral, ethical or legal situation, and the only difference is that they're doing it in public and boasting about it. How are Anthropic and OpenAI not committing felony hacking?",
+  "likes": 149,
+  "url": "https://x.com/edzitron/status/2097700353424642173"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097700223417995294",
+  "at": "2026-09-09T14:54:41.000Z",
+  "text": "\"But China might do this!\" doesn't answer \"why are American companies doing this?\" - this is clearly a situation where OpenAI and Anthropic built something they were aware would mindlessly bash its head (and millions of dollars of compute) against systems in response to prompts",
+  "likes": 104,
+  "url": "https://x.com/edzitron/status/2097700223417995294"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097700013220536349",
+  "at": "2026-09-09T14:53:51.000Z",
+  "text": "Brute-force hacking using GPUs has existed for over a decade, albeit using different techniques. The \"innovation\" here is that we actually dedicated resources *from two companies that raised $217bn this year* to find better ways to do it.\nhttps://t.co/HiCj4JxqrQ",
+  "likes": 73,
+  "url": "https://x.com/edzitron/status/2097700013220536349"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097699923944702290",
+  "at": "2026-09-09T14:53:29.000Z",
+  "text": "There is really no economic reason to do the LLM cybersecurity stuff. They're hitting the ceiling of LLM code (and I've read people are not liking how Astra writes it!) and so they went for something else where they could find lots of training data. It's cynical and dangerous.",
+  "likes": 163,
+  "url": "https://x.com/edzitron/status/2097699923944702290"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097689846470820121",
+  "at": "2026-09-09T14:13:27.000Z",
+  "text": "it's unclear whether this is a rationalist-poisoned guy or just a deeply cynical valley guy but if you truly think this is what you and your peers are doing this is a very strange way to act. It also, as ever, doesn't deal with the actual harms happening today",
+  "likes": 314,
+  "url": "https://x.com/edzitron/status/2097689846470820121"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2097689229975249268",
+  "at": "2026-09-09T14:11:00.000Z",
+  "text": "AI* has a &gt;10%** chance to kill us all\n*not the AI we're working on but some other AI that we'll build for sure if you keep funding the company I work at\n**number I made up based on a still-theoretical technology that nobody has but we all love talking about https://t.co/JuFMgNJzrI https://t.co/MxWrR7hgfh",
+  "likes": 1694,
+  "url": "https://x.com/edzitron/status/2097689229975249268"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2097727367334539363",
+  "at": "2026-09-09T16:42:32.000Z",
+  "text": "AI locks China and the US in a prisoner's dilemma. But the sharper dilemma is between China and its own people: the Party can't afford to allow broad access to powerful AI, and it can't afford to withhold it.",
+  "likes": 1,
+  "url": "https://x.com/drorpoleg/status/2097727367334539363"
+ },
+ {
+  "handle": "sama",
+  "id": "2097776310940569783",
+  "at": "2026-09-09T19:57:01.000Z",
+  "text": "Welcome, Paul.\n\nGrateful you are doing this, and all you have done for AI safety. Excited to work together again. https://t.co/k6NUqN6Lsd",
+  "likes": 3771,
+  "url": "https://x.com/sama/status/2097776310940569783"
+ },
+ {
+  "handle": "sama",
+  "id": "2097696043492143157",
+  "at": "2026-09-09T14:38:04.000Z",
+  "text": "ocarina of time remake is the best news in a long time.\n\ni will be unavailable november 5 and 6; need to find a case of mountain dew.",
+  "likes": 15441,
+  "url": "https://x.com/sama/status/2097696043492143157"
+ },
+ {
+  "handle": "sama",
+  "id": "2097695001341829212",
+  "at": "2026-09-09T14:33:56.000Z",
+  "text": "This would suck, but we will prioritize great service for customers until we can get back on top of things. https://t.co/Qi5ssKJic6",
+  "likes": 7381,
+  "url": "https://x.com/sama/status/2097695001341829212"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2098005361512906830",
+  "at": "2026-09-10T11:07:11.000Z",
+  "text": "Jacob Coxon, ex-Anthropic whose AI-doom-post went viral (143 million impressions after 24 hours) said on Fox News:\n\n\"We know how to control nuclear weapons... We don't yet know how to control AI.\"\n\nand\n\n\"possibly the most dangerous technology that humanity has ever created.\"",
+  "likes": 149,
+  "url": "https://x.com/kimmonismus/status/2098005361512906830"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097998928960479666",
+  "at": "2026-09-10T10:41:38.000Z",
+  "text": "Keep in mind how much more capable their internal model reportedly was just a week ago. That’s why I suspect there’s more to this than rumors. If it really solved a Millennium Prize Problem that quickly, it would make sense for OpenAI to push to solve more of them, especially https://t.co/s6NwQHN9bN",
+  "likes": 73,
+  "url": "https://x.com/kimmonismus/status/2097998928960479666"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097990443690496402",
+  "at": "2026-09-10T10:07:55.000Z",
+  "text": "Holy, rumors are spreading everywhere that  OpenAI is close to verifying a proof of the Hodge conjecture, while either OpenAI or Anthropic may be nearing a solution to Birch–Swinnerton-Dyer.\n\nBoth are Millennium Prize Problems that have resisted decades of mathematical research.",
+  "likes": 1785,
+  "url": "https://x.com/kimmonismus/status/2097990443690496402"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097970735591366804",
+  "at": "2026-09-10T08:49:36.000Z",
+  "text": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. \n\nIt matches or beats GPT-5.6 Sol on several coding and agent benchmarks, according to DeepSeek’s tests, at a fraction of the token price (-94%!)\n\nFor example: on DeepSWE, a software engineering https://t.co/aned0hQ1e8 https://t.co/HSjEQnUxlM",
+  "likes": 412,
+  "url": "https://x.com/kimmonismus/status/2097970735591366804"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097962333767102665",
+  "at": "2026-09-10T08:16:13.000Z",
+  "text": "DeepSeek just released V4.1-Flash with a new architecture, six weeks after its July V4-Flash update.\n\nJuly’s release improved post-training while keeping the architecture unchanged. (Same with GLM-5.3/Flash) V4.1 introduces a Causal Encoder–Decoder architecture with native visual https://t.co/9hGFjKlhtW https://t.co/FMYmziN6Hs",
+  "likes": 324,
+  "url": "https://x.com/kimmonismus/status/2097962333767102665"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097792817745551364",
+  "at": "2026-09-09T21:02:37.000Z",
+  "text": "Going to get some sleep now. See you tomorrow :))",
+  "likes": 34,
+  "url": "https://x.com/kimmonismus/status/2097792817745551364"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097791769148629470",
+  "at": "2026-09-09T20:58:27.000Z",
+  "text": "I would like to sincerely thank you all again for the support I received regarding the new original content rewards program.\n\nThanks to the appeal, I was accepted into the program. I was particularly touched by the many messages I received this morning when I was feeling a bit https://t.co/kBCi4oKAAO",
+  "likes": 571,
+  "url": "https://x.com/kimmonismus/status/2097791769148629470"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097764932204769572",
+  "at": "2026-09-09T19:11:49.000Z",
+  "text": "Here we go again: Anthropic says Claude’s real-world cyber incidents exposed more serious alignment failures than it initially acknowledged.\n\nIts new assessment covers four incidents during misconfigured security evaluations, with normal cyber safeguards disabled.\n\nMythos 5 https://t.co/JUUPu7MHTI https://t.co/oi631iJ1LP",
+  "likes": 584,
+  "url": "https://x.com/kimmonismus/status/2097764932204769572"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097762856598966401",
+  "at": "2026-09-09T19:03:34.000Z",
+  "text": "Foldables have been around for a long time. But Apple has managed to make it truly seamless, implemented intuitively and sensibly. It’s going to be a bestseller. https://t.co/QJRU6Rj4qa",
+  "likes": 691,
+  "url": "https://x.com/kimmonismus/status/2097762856598966401"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097752551588343855",
+  "at": "2026-09-09T18:22:37.000Z",
+  "text": "A brief summary of the Apple keynote:\n\nAll the rumors and leaks were confirmed, and the flagship is, of course, the iPhone Duo. And I have to say, even if some won't like to hear it, I think it's fantastic. For the first time, I see a real use case for a foldable device because https://t.co/RUmRpICKwO https://t.co/nIqOiLhCC4",
+  "likes": 424,
+  "url": "https://x.com/kimmonismus/status/2097752551588343855"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097748440625119509",
+  "at": "2026-09-09T18:06:17.000Z",
+  "text": "Im sold on the iphone fold https://t.co/msPaujnLaI",
+  "likes": 12,
+  "url": "https://x.com/kimmonismus/status/2097748440625119509"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097747404065845710",
+  "at": "2026-09-09T18:02:10.000Z",
+  "text": "I genuinely love how absurd the AI industry is.\n\nYesterday OpenAI said an internal model solved a Millennium Prize Problem. Frontier labs are racing toward something that looks like superintelligence.\n\nMeanwhile, one layer down, the companies that sell access to those models are https://t.co/qgXuzIbppn",
+  "likes": 247,
+  "url": "https://x.com/kimmonismus/status/2097747404065845710"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097746522465071231",
+  "at": "2026-09-09T17:58:39.000Z",
+  "text": "Very well redesigned https://t.co/QfUuFqsW4g",
+  "likes": 11,
+  "url": "https://x.com/kimmonismus/status/2097746522465071231"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097745841725284395",
+  "at": "2026-09-09T17:55:57.000Z",
+  "text": "iPhone Duo, official https://t.co/Moqm9RD2h1",
+  "likes": 69,
+  "url": "https://x.com/kimmonismus/status/2097745841725284395"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097744473803325624",
+  "at": "2026-09-09T17:50:31.000Z",
+  "text": "Audio Intelligence and Siri Recap is a big surprise",
+  "likes": 7,
+  "url": "https://x.com/kimmonismus/status/2097744473803325624"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097740749131391318",
+  "at": "2026-09-09T17:35:43.000Z",
+  "text": "Thats really good news. There were rumors that iPhone Pro will have huge price increase because of the ram shortage. $100 is very acceptable. https://t.co/Zobxt32PIl",
+  "likes": 237,
+  "url": "https://x.com/kimmonismus/status/2097740749131391318"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097740605749096620",
+  "at": "2026-09-09T17:35:09.000Z",
+  "text": "Ngl, amazing pricing https://t.co/9UYqgKZGDb",
+  "likes": 14,
+  "url": "https://x.com/kimmonismus/status/2097740605749096620"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097739314834665625",
+  "at": "2026-09-09T17:30:01.000Z",
+  "text": "mostly excited for the new A20 pro. Big jump https://t.co/tx97mUxlbz",
+  "likes": 11,
+  "url": "https://x.com/kimmonismus/status/2097739314834665625"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097738929751404855",
+  "at": "2026-09-09T17:28:29.000Z",
+  "text": "smaller / better dynamic island https://t.co/lVKOb4Z2ax",
+  "likes": 7,
+  "url": "https://x.com/kimmonismus/status/2097738929751404855"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2097737279762534424",
+  "at": "2026-09-09T17:21:56.000Z",
+  "text": "New camera, looks really promising https://t.co/mp4KTD7apU",
+  "likes": 9,
+  "url": "https://x.com/kimmonismus/status/2097737279762534424"
+ },
+ {
+  "handle": "arakharazian",
+  "id": "2097744796156571862",
+  "at": "2026-09-09T17:51:48.000Z",
+  "text": "all in my post https://t.co/T5q5Fe4Qbw",
+  "likes": 5,
+  "url": "https://x.com/arakharazian/status/2097744796156571862"
+ },
+ {
+  "handle": "arakharazian",
+  "id": "2097744793266688027",
+  "at": "2026-09-09T17:51:47.000Z",
+  "text": "by the way, summer seasonality is a partial but not sufficient explanation. token volumes increased! just not enough to offset two factors:\n\nPrice declines and an increasing share of spend away from the frontier. https://t.co/NBky0ixeX3 https://t.co/TUFyeWDRlB",
+  "likes": 121,
+  "url": "https://x.com/arakharazian/status/2097744793266688027"
+ },
+ {
+  "handle": "arakharazian",
+  "id": "2097706963857481816",
+  "at": "2026-09-09T15:21:28.000Z",
+  "text": "My full post includes the most charts I've ever published in a single page https://t.co/T5q5Fe4Qbw",
+  "likes": 15,
+  "url": "https://x.com/arakharazian/status/2097706963857481816"
+ },
+ {
+  "handle": "arakharazian",
+  "id": "2097706961584140645",
+  "at": "2026-09-09T15:21:27.000Z",
+  "text": "NEW from Ramp AI Index: AI spend *declined* among the top 1% of businesses spending on AI.\n\nIn August, the top 1% of businesses spent $7.2K per employee per month, down 10% from a July peak ($8K).\n\nWe're seeing more cracks in the AI thesis as a number of drivers show spend https://t.co/Hu649PcnOa",
+  "likes": 946,
+  "url": "https://x.com/arakharazian/status/2097706961584140645"
  }
 ]

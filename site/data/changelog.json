@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-09-10",
+  "source": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/elastic-expectations/",
+  "kind": "accepted",
+  "target": "scenario:elastic",
+  "old": null,
+  "new": "added",
+  "reason": "Citadel Securities' own 'Elastic Expectations' note is a primary, attributable institutional position with the quoted 40% price decline and ~50% July spend rise, and no active scenario encodes the demand-elasticity counter-case to the price-collapse bear; readers should note it is dated 20 Aug 2026, before the weaker September Ramp print. Verified against archive snapshot http://web.archive.org/web/20260823065550/https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/elastic-expectations/. Citadel Securities Global Macro Strategy, Aug 2026 ('Elastic Expectations'; follows the June 'Tokenomics' note)."
+ },
+ {
+  "date": "2026-09-10",
+  "source": "https://openai.com/index/gpt-6-astra-next-generation-work",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 1,
+  "reason": "Gate: quote not found in source (match 0%)."
+ },
+ {
+  "date": "2026-09-10",
+  "source": "https://x.com/arakharazian/status/2097744793266688027",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 25,
+  "reason": "The evidence is a single X post whose claim of 'an increasing share of spend away from the frontier' is qualitative and unquantified, and it repeats the enterprise spend-mix argument already rejected twice on this parameter."
+ },
+ {
+  "date": "2026-09-10",
+  "kind": "accepted",
+  "target": "train",
+  "old": 60,
+  "new": 50,
+  "reason": "Epoch's new chip-users explorer (9 Sep 2026) reports a roughly 50/50 frontier R&D/inference split, a fresher and better-grounded reading than the 60% taken from Anthropic's 2025 accounts and Patel's 60/40, so training share moves 60 → 50. Rule compute_split; “Epoch estimates the workload split is now roughly 50/50 between R&D and inference, whereas in 2024 more of the capacity was still going to r”",
+  "source": "https://alphasignal.ai/news/epoch-reveals-openai-s-computing-power-grew-17x-in-two-years"
+ },
+ {
+  "date": "2026-09-10",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "59%",
+  "new": "59%",
+  "reason": "Observed from source (2026-09-10).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-10",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 20% per qtr",
+  "new": "44% vs 20% per qtr",
+  "reason": "Observed from source (2026-09-10).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-10",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "11.3%",
+  "new": "10.2%",
+  "reason": "Observed from source (2026-09-10).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-10",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.7",
+  "new": "16.5",
+  "reason": "Observed from source (2026-09-09).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-10",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-08).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-10",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.78%",
+  "new": "4.80%",
+  "reason": "Observed from source (2026-09-08).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-09",
   "source": "https://x.com/edzitron/status/2097344305102741918",
   "kind": "rejected",

@@ -113,5 +113,26 @@
    "Epoch's long-context pricing thread (GPT cost rising past 272k tokens vs fixed Claude pricing) is interesting for token economics but maps to no exposed key.",
    "Prompt-injection check: no instructions aimed at an agent found in feeds or posts; several items (edzitron, wheresyoured.at, kimmonismus) contain subscription/appeal solicitations, which I treated as data only."
   ]
+ },
+ {
+  "date": "2026-09-10",
+  "notes": [
+   "fed_fsr: no newer reading. The Fed FSR is semiannual (May / November); the May 2026 edition (AI risk cited by ~50% of contacts, AI rose from 5th to 3rd most-cited risk) is still the latest. Next edition expected ~Nov 2026, after today's date. Gauge stays 50% as of 2026-05-01.",
+   "h100_rental: no newer public reading. SemiAnalysis says the H100 1-year index is updated monthly, but the public dashboard (semianalysis.com/gpu-pricing-index/ -> atlas) is paywalled and the newest public restatement (SemiAnalysis social post, 2026-06-12) still cites the same series: $1.70/hr Oct 2025 rising to ~$2.35/hr in March 2026. Gauge stays $2.35/hr as of 2026-04-02.",
+   "h100_rental alternative considered and rejected: Thunder Compute 'AI GPU Rental Market Trends' (Sept 4, 2026) lists H100 on-demand at $2.89-$11.06/hr and Akash's August 2026 H100 price page. Both are on-demand/vendor list pricing, not the SemiAnalysis 1-year contract index, so not an equivalent reading for this gauge.",
+   "openrouter_cn: no newer reading. Post-July items I checked all recycle the same mid-2026 OpenRouter snapshot rather than adding a later observation: Tech Insider (published 2026-07-06, modified 2026-09-04) cites the same OfficeChai analysis and quotes Chinese-origin models at >45% of volume; Presenc AI (2026-07-25) puts Chinese-origin share at ~46% of identified token volume 'mid-2026'; KuCoin (2026-06-09) reported 61%. These differ mainly by denominator (identified vs all volume), so none supersedes the >60% reading as of 2026-07-09. Definition mismatch flagged for the model owner.",
+   "capex_ocf: no newer reading. Fetched the Epoch AI data insight directly (retrieved 2026-09-09); it is still the June 16, 2026 version stating aggregate cash capex across Microsoft, Amazon, Alphabet, Meta and Oracle is on track to overtake operating cash flow around Q3 2026. Gauge stays 'crossed Q3 2026'.",
+   "capex_ocf alternative considered and rejected: FactSet 'Hyperscalers Tap External Financing as AI Capex Outruns Cash Flow' (2026-07-23) and TNW (2026-07-22) discuss the same crossover but are not the Epoch series and give no revised crossover quarter.",
+   "vc_h1: no newer reading. Crunchbase's H1 2026 tally ($510B, published 2026-07-02) is the latest half-year figure; the Q3 2026 global report is not due until early October 2026. Sector cuts published since (cybersecurity 2026-07-14, fintech 2026-07-15) are subsets, not the global total.",
+   "No parameter, scenario, history_K, event or watchlist proposals made, per instructions; all five gauges are unchanged this cycle.",
+   "Epoch AI Chip Users explorer end-2025 medians (OpenAI 1.74M H100e = 1.9 GW, DeepMind 1.58M, Anthropic 1.19M, Meta 0.996M, xAI 0.615M): did not propose history_K for 2025Q4 because it is unclear whether the K series counts only the two big labs (Epoch implies ~3.2 GW) or all five (~6.7 GW) against the recorded 5 GW - direction of the correction is ambiguous.",
+   "Ramp/TechCrunch put average token prices at $0.68/M in early September vs a $1.15/M March peak; did not propose the token_index gauge because the current reading ($0.97/M, about -50% vs summer peak) looks to be built on a different (Silicon Data) basket, so it would not be a newer reading of the same series.",
+   "Stale gauges fed_fsr, h100_rental, openrouter_cn, vc_h1, capex_ocf: no newer reading from their own sources found before the web-tool budget ran out (Citadel says GPU rentals are 'firm relative to their June lows' but gives no price).",
+   "OpenAI's ~$50B 2026 compute budget, roughly triple 2025 (Epoch via AlphaSignal), is consistent with k_rd staying at 0.7; no long-enough primary quote available, so not proposed.",
+   "orgX: the calibration fast lane is open, but 1.1 -> 1.2 was rejected on 2026-09-09 right after the 09-08 acceptance and no new growth observation arrived today, so it is not re-proposed.",
+   "DeepSeek V4.1-Flash (reported ~94% cheaper than GPT-5.6 Sol on coding/agent benchmarks) and Paul Kedrosky's insurance/financing roundup could move subst and fin; no primary page could be fetched to quote.",
+   "METR-Anthropic incident investigation, Apple keynote coverage, Millennium-Prize rumours, SemiAnalysis on-device robotics note: no quantitative inputs for the exposed keys.",
+   "No instructions-in-data or prompt-injection attempts noticed; the SemiAnalysis InferenceX feed items in the queue were navigation/boilerplate pages with no numbers."
+  ]
  }
 ]
