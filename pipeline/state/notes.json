@@ -134,5 +134,25 @@
    "METR-Anthropic incident investigation, Apple keynote coverage, Millennium-Prize rumours, SemiAnalysis on-device robotics note: no quantitative inputs for the exposed keys.",
    "No instructions-in-data or prompt-injection attempts noticed; the SemiAnalysis InferenceX feed items in the queue were navigation/boilerplate pages with no numbers."
   ]
+ },
+ {
+  "date": "2026-09-11",
+  "notes": [
+   "fed_fsr: no newer reading. The May 2026 Financial Stability Report remains the latest; the Fed publishes the Survey of Salient Risks semiannually (spring/November), so the next edition is not due until ~Nov 2026. Gauge stays 50% as of 2026-05-01.",
+   "h100_rental: no newer reading. SemiAnalysis's H100 1-Year Rental Price Index still tops out at $2.35/hr/GPU for March 2026 ('H100 1-year GPU rental contract pricing has shot up almost 40% from a low of $1.70/hr/GPU in October 2025 to $2.35/hr/GPU by March 2026'); the 2026-06-12 SemiAnalysis social post restates the same March 2026 index level rather than a new print. Gauge stays $2.35/hr as of 2026-04-02.",
+   "h100_rental: deliberately NOT proposed - later third-party figures (e.g. on-demand H100 at $2.01-$2.53/hr in June 2026, or provider list prices of $2.89/hr+ in Sept 2026) are on-demand/spot pricing, a different metric from the one-year reserved contract index this gauge tracks.",
+   "openrouter_cn: no newer comparable share reading. The most recent datapoint found (2026-08-05, KuCoin/ChainThink) reports Chinese models holding eight of the top ten weekly token-usage spots on OpenRouter but publishes no share percentage, so it is not unit-comparable with the >60% gauge. Mid-2026 percentage estimates in circulation (46%, 48%, 61%) use different denominators (all traffic vs top-10 models), so none supersedes the current reading.",
+   "capex_ocf: no newer reading. Epoch AI's 'Hyperscaler Capex to Exceed Cash Flow by Q3 2026' data insight is still dated 2026-06-16; the broader Epoch data-centers topic page refreshed 2026-08-02 but shows no revised crossover date. Gauge stays 'crossed Q3 2026'.",
+   "vc_h1: no newer reading. Crunchbase's H1 2026 global figure ($510B, published 2026-07-02) is the latest half-year print; Q3 2026 totals are not published until early October 2026. Gauge stays $510B as of 2026-07-02.",
+   "Tool constraint: web_search quota was exhausted before I could run a dedicated search for a post-May-2026 Fed FSR release or a September 2026 OpenRouter share percentage; both conclusions rest on publication cadence plus the results already retrieved, so treat them as medium confidence.",
+   "Tunguz 'Three Waves of AI Consumption' (7 Sep 2026): considered scenario_new (14x agent token growth, 1m vs 100-200m tokens/user/day, Goldman 120 quadrillion tokens/month by 2030) but its override set would duplicate the 'elastic' (Citadel) and 'enterprise' scenarios added recently; used the data for the orgX calibration move instead.",
+   "Tunguz 8 Sep 2026 post (OpenAI researchers ~3.1 agent-workdays per 8-hour shift, up to $2.5m/researcher/year on inference) looks like k_rd feedback_evidence, but I could only verify the wording from the site's front-page teaser before the tool budget ran out; not proposed on an unverified quote.",
+   "SemiAnalysis X post 11 Sep 2026 (GB300 NVL72 '13x better perf per dollar than Hopper on agentic inference'): real number but no rule it maps to cleanly (not revenue_per_gw or cost_per_gw); noted only.",
+   "Epoch FrontierMath Tier 4 saturation (5% -> 98% top score in 14 months) and GPT-6 Astra launch: capability news, but H0/D0 move only on METR measurements and an event:2026Q3 release was already rejected on 2026-09-10.",
+   "Zitron's Broadcom 'rat king' newsletter ($200bn+ owed by OpenAI/Anthropic over three years) is behind a paywall and his 2027 break-date revision was already rejected as a contagion update on 2026-09-09.",
+   "Stale gauges (fed_fsr, h100_rental, openrouter_cn, capex_ocf, vc_h1) not proposed: web_search and web_fetch budgets were exhausted before I could verify a newer reading from each gauge's own source. Fed FSR next edition is not due until around November.",
+   "Ramp Econ Lab (econlab.substack.com) and Kharazian's 10 Sep 2026 'base case is bullish' thread could not be read: Substack homepage requires JavaScript and x.com returned empty content.",
+   "No prompt-injection attempts spotted in the feeds, posts or fetched pages read today."
+  ]
  }
 ]

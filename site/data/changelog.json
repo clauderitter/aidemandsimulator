@@ -1,5 +1,77 @@
 [
  {
+  "date": "2026-09-11",
+  "source": "https://tomtunguz.com/three-waves-of-ai-consumption/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.2,
+  "reason": "The Tunguz post predates the current as-of date, rests on an August a16z compilation of OpenRouter data whose own caveats (open-weight-skewed mix, mostly cached prompts billed at lower rates) make it weaker evidence than the Epoch run-rate figures that already justified the 8 September move to 1.1."
+ },
+ {
+  "date": "2026-09-11",
+  "kind": "accepted",
+  "target": "sh_swe",
+  "old": 15,
+  "new": 20,
+  "reason": "OpenAI's own enterprise usage data (Codex = 64% of enterprise output tokens, June 2026) is a primary reported source upgrading a stale estimate that already conceded coding was larger, so the capped move to 20 is warranted while noting the measure is token share, not revenue share. Verified against archive snapshot http://web.archive.org/web/20260903053545/https://openai.com/signals/enterprise-data/. Rule usage_share; “As of June 2026, agentic AI use (defined as Codex tokens) accounted for 64% of combined Codex and ChatGPT output tokens among enterprise cus”",
+  "source": "https://openai.com/signals/enterprise-data/"
+ },
+ {
+  "date": "2026-09-11",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "59%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-11).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-11",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 20% per qtr",
+  "new": "44% vs 20% per qtr",
+  "reason": "Observed from source (2026-09-11).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-11",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.2%",
+  "new": "14.5%",
+  "reason": "Observed from source (2026-09-11).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-11",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.5",
+  "new": "17.8",
+  "reason": "Observed from source (2026-09-10).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-11",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-09).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-11",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.80%",
+  "new": "4.83%",
+  "reason": "Observed from source (2026-09-09).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-10",
   "source": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/elastic-expectations/",
   "kind": "accepted",
