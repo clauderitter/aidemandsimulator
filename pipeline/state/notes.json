@@ -154,5 +154,24 @@
    "Ramp Econ Lab (econlab.substack.com) and Kharazian's 10 Sep 2026 'base case is bullish' thread could not be read: Substack homepage requires JavaScript and x.com returned empty content.",
    "No prompt-injection attempts spotted in the feeds, posts or fetched pages read today."
   ]
+ },
+ {
+  "date": "2026-09-12",
+  "notes": [
+   "fed_fsr: no newer reading — the May 8, 2026 Financial Stability Report (50% of contacts citing AI) is still the most recent; no October/November 2026 edition published as of today.",
+   "h100_rental: SemiAnalysis live index (gpu-index.semianalysis.com) shows 'latest available' 1y contract pricing only through Apr 2026 ($2.10-2.70 range, on-demand composite $2.80 in Mar); an Aug 19, 2026 third-party roundup still cites the same $2.35 March 2026 figure. No newer dated print with a quotable 15+ word statement, so no proposal.",
+   "capex_ocf: Epoch AI data insight page unchanged, still dated Jun. 16, 2026 with the crossing 'around Q3 2026'. No newer reading.",
+   "crwv_cds: could not verify a newer CoreWeave 5y CDS quote — investing.com pages were not retrievable within this session's tool budget; prior ~855bp (2026-07-29) left unchanged, worth re-checking.",
+   "vc_h1: Crunchbase H1 2026 ($510B) is a semiannual print; Q3/H2 2026 global funding report is not due until October 2026. No newer reading.",
+   "Search/fetch quota was exhausted mid-run, which limited verification on crwv_cds specifically.",
+   "Zitron (X, 11 Sep) claims Microsoft has only ~2GW of live capacity against $260bn of capex; would bear on K0, but it is a tweet reacting to a story I could not fetch (web_search quota exhausted), so not proposed.",
+   "Kedrosky: Meta's Claude Code spend heading toward ~$10bn/yr is single-customer, so not used for sh_swe (already moved 15->20 on 11 Sep); used only as corroboration for orgX.",
+   "SemiAnalysis AICP rental economics: GB300 backstopped at ~$2.35/hr vs $4.50-4.60 for 5-year contracts; different chip and different source from the h100_rental gauge, so not proposed as a gauge refresh.",
+   "Stale gauges (fed_fsr, h100_rental, openrouter_cn, capex_ocf, vc_h1): no newer readings verified this run; search quota was exhausted and archive/ranking URLs were not fetchable from this environment.",
+   "Epoch AI and Ramp Econ Lab Substack front pages render without post bodies for datacenter fetches; no newer Epoch run-rate obtained (R0_epoch is collector-run anyway).",
+   "Stratechery 2026.37, OpenAI customer case studies, Dwarkesh's Schulman/Millidge/O'Neill episode, kimmonismus RSI rumours: no usable quantitative model inputs found.",
+   "Zitron's Broadcom piece (potential $135bn off-balance-sheet debt for Anthropic TPUs) is premium/paywalled; not fetchable, so not used for fin.",
+   "The SemiAnalysis note contains recruiting copy ('apply here') and subscription prompts addressed to readers; treated as data, not as instructions."
+  ]
  }
 ]

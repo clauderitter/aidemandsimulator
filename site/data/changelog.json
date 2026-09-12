@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-09-12",
+  "source": "https://paulkedrosky.com/circular-ai-revenues-customer-concentration-and-mega-account-executives/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.2,
+  "reason": "The Kedrosky post is a commentary on customer concentration and circularity whose quoted line is a generic observation about revenue scaling, and a second-hand 'could soon reach $10B' figure for one account does not evidence a higher economy-wide organic growth multiplier."
+ },
+ {
+  "date": "2026-09-12",
+  "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
+  "kind": "rejected",
+  "target": "scenario:backstop",
+  "old": null,
+  "new": null,
+  "reason": "Gate: same mechanism as scenario “supercycle” (same shock types and overrides); propose a scenario_update instead."
+ },
+ {
+  "date": "2026-09-12",
+  "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.15,
+  "reason": "The quoted line is a qualitative remark that lenders have 'some shielding', and the same note stresses that Nvidia's ability to honour the guarantees is correlated with a downturn, so it does not establish that marginal builds have become less sensitive to credit and market conditions — and a ballooning guarantee stack reads as much as evidence of financing dependence as of insulation from it."
+ },
+ {
+  "date": "2026-09-12",
+  "kind": "accepted",
+  "target": "pipe",
+  "old": 24,
+  "new": 26,
+  "reason": "SemiAnalysis's 11 Sep datacentre model is newer than the current as-of and quantifies a larger near-term pipeline (~6.5 GW Nvidia-backstopped and mostly unbuilt, ~15 GW of gigascaler third-party leases in 2026 rising above 35 GW by 2028), which supports a small capped rise in the committed 18-month pipeline to 26 GW. Rule capacity_estimate; “By our count, Nvidia today backstops ~6.5 GW of capacity, most of which is not yet built. Our datacenter model has Microsoft, Meta, AWS and ”",
+  "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i"
+ },
+ {
+  "date": "2026-09-12",
+  "source": "https://aiweekly.co/alerts/chinese-ai-models-hit-record-58-of-us-openrouter-traffic (reporting Bloomberg, 2026-07-22)",
+  "kind": "rejected",
+  "target": "gauge:openrouter_cn",
+  "old": null,
+  "new": 58,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 404 https://aiweekly.co/alerts/chinese-ai-models-hit-record-58-of-us-open."
+ },
+ {
+  "date": "2026-09-12",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-12).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-12",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 20% per qtr",
+  "new": "44% vs 22% per qtr",
+  "reason": "Observed from source (2026-09-12).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-12",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "14.5%",
+  "new": "10.5%",
+  "reason": "Observed from source (2026-09-12).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-12",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "17.8",
+  "new": "15.8",
+  "reason": "Observed from source (2026-09-11).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-12",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-10).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-12",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.83%",
+  "new": "4.95%",
+  "reason": "Observed from source (2026-09-10).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-11",
   "source": "https://tomtunguz.com/three-waves-of-ai-consumption/",
   "kind": "rejected",
