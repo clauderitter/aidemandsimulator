@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-12T11:30:02.495Z",
+ "generated_at": "2026-09-13T12:24:11.702Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -1212,9 +1212,9 @@
    "value": "47%",
    "sub": "frontier revenue 118.3 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-12",
+   "as_of": "2026-09-13",
    "auto": true,
-   "updated": "2026-09-12"
+   "updated": "2026-09-13"
   },
   {
    "id": "fms_tailrisk",
@@ -1240,11 +1240,11 @@
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
    "value": "10.5%",
-   "sub": "12 Sept 2026 · “AI bubble burst in 2026?”",
+   "sub": "13 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-12",
+   "as_of": "2026-09-13",
    "auto": true,
-   "updated": "2026-09-12"
+   "updated": "2026-09-13"
   },
   {
    "id": "aaii",
@@ -1382,9 +1382,9 @@
    "value": "44% vs 22% per qtr",
    "sub": "observed (Epoch sum, 2025Q3 → now) vs modelled quarter-zero growth; gap 22 pts",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-12",
+   "as_of": "2026-09-13",
    "auto": true,
-   "updated": "2026-09-12"
+   "updated": "2026-09-13"
   }
  ],
  "frozen": [],

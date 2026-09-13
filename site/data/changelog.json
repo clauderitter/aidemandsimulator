@@ -1,5 +1,32 @@
 [
  {
+  "date": "2026-09-13",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-13).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-13",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 22% per qtr",
+  "new": "44% vs 22% per qtr",
+  "reason": "Observed from source (2026-09-13).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-13",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.5%",
+  "new": "10.5%",
+  "reason": "Observed from source (2026-09-13).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-09-12",
   "source": "https://paulkedrosky.com/circular-ai-revenues-customer-concentration-and-mega-account-executives/",
   "kind": "rejected",
