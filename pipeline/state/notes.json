@@ -173,5 +173,27 @@
    "Zitron's Broadcom piece (potential $135bn off-balance-sheet debt for Anthropic TPUs) is premium/paywalled; not fetchable, so not used for fin.",
    "The SemiAnalysis note contains recruiting copy ('apply here') and subscription prompts addressed to readers; treated as data, not as instructions."
   ]
+ },
+ {
+  "date": "2026-09-15",
+  "notes": [
+   "fed_fsr: latest Fed Financial Stability Report is still May 2026 (next edition due ~Nov 2026); coverage of it confirms 50% of surveyed contacts cited AI as a salient risk, up from 30% in fall 2025 — no newer reading, gauge unchanged at 50% as of 2026-05-01.",
+   "h100_rental: fetched the SemiAnalysis source directly; article still dated Apr 02, 2026 and still reports H100 1-year contract pricing up ~40% from a $1.70/hr low in Oct 2025 to $2.35/hr/GPU by March 2026 — no newer index print, gauge unchanged.",
+   "openrouter_cn: the officechai source is dated June 26, 2026 (US share ~70%->~30% June 2025 to June 2026, Chinese models a majority of tokens); no newer monthly leaderboard post reachable — gauge unchanged at >60%.",
+   "capex_ocf: Epoch AI data insight still dated Jun. 16, 2026 and still says aggregate hyperscaler cash capex is on track to overtake operating cash flow around Q3 2026 — no revision, gauge unchanged.",
+   "bonds: Fortune piece still dated 2026-07-31, citing S&P Global's $225B of hyperscaler/related bond issuance year to date and a $400B full-year pace — no newer S&P tally obtainable; gauge unchanged.",
+   "crwv_cds: could not retrieve a fresh CoreWeave 5-year CDS quote — investing.com does not expose a fetchable CDS series and my search/fetch budget was exhausted; leaving gauge at ~855bp as of 2026-07-29 and flagging it as the stalest, highest-priority item for the next refresh.",
+   "vc_h1: Crunchbase global report still the Q2/H1 2026 edition (record $510B in H1 2026, >$200B in Q2); Q3 2026 global report is not published until early October — no newer reading.",
+   "Process note: web_search and web_fetch quotas were exhausted mid-refresh (an early failed batch burned searches), so verification relied on direct fetches of the named sources; every verified source was found unchanged, hence zero proposals rather than restating current values.",
+   "Anthropic $517B / 14.8 GW of compute commitments (The Information via Investing.com, Forkast, 24/7 Wall St): considered for pipe and K0 but the deals run 'mostly across the next decade' (AMZN+GOOGL ~11 GW over ~10 years, MSFT ~1 GW, AMD 2 GW), so almost none of it lands inside pipe's six-quarter window; also would double-count with the orgX calibration move, since util0 shows slack rather than rationing.",
+   "Same deal set implies ~$35B per GW of total contract value; did not propose capexGW because lease/service payments over a decade are not all-in capex per GW and mix several chip vintages.",
+   "Amodei 'We must pace the frontier' essay (darioamodei.com): fetched in full; no compute, revenue or capex numbers, so it fails the two-number bar for scenario_new despite its reach. Gavin Baker's quantified reading (pacing = extra alignment compute, lower margins) exists only as X posts, which the rules exclude.",
+   "Tunguz 'What Does Pacing Mean?' and the Sep-14 SaaS-vs-infrastructure rotation thread: interesting but no demand or capacity numbers usable on an exposed key.",
+   "Epoch AI polling (share of US adults using AI 6+ days a week 8% -> 19%, March to August 2026): adoption breadth, no matching gauge or rule key; would only have supported the orgX rationale.",
+   "SemiAnalysis 'A Brain Too Big to Carry' and the 4-hi HBM piece: robotics/on-device and memory supply, no migration_share or capacity numbers for frontier LLM workloads.",
+   "Stale gauges fed_fsr, capex_ocf, bonds, crwv_cds, vc_h1 and openrouter_cn: search and fetch budgets ran out before I could verify newer readings from their own sources; openrouter_cn at 58 was also rejected on 2026-09-12, so I did not re-propose it.",
+   "H0/D0 (METR, as of 2026-04-07): no METR URL in prior context and search quota exhausted, so no metr_latest/metr_doubling proposal this week.",
+   "No prompt-injection attempts noticed in the feeds or posts read; the SemiAnalysis and Substack pages were paywalled after the free preview, and quotes were taken only from the visible free text."
+  ]
  }
 ]

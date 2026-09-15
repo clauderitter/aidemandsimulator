@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-09-15",
+  "source": "https://inferencex.semianalysis.com/chips/h100",
+  "kind": "accepted",
+  "target": "gauge:h100_rental",
+  "old": "$2.35/hr",
+  "new": "$2.00/hr retail; $1.17/hr at hyperscaler volume (SemiAnalysis AI Cloud TCO model, not a one-year-term print)",
+  "reason": "Refreshes a 167-day-stale gauge with live rate tiers from the same publisher, with the text adjusted to flag that these are TCO-model retail and hyperscaler tiers rather than a like-for-like one-year-term price."
+ },
+ {
+  "date": "2026-09-15",
+  "source": "https://247wallst.com/investing/2026/09/13/anthropic-locks-down-517-billion-in-compute-ahead-of-ipo-and-its-still-not-enough/",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.5,
+  "reason": "The quote is a bull-case bullet in a secondary aggregator repeating the same Nvidia-plus-private-credit capital-raising consortium already rejected on 3 Sep, and mobilising third-party capital does not by itself show marginal builds became more sensitive to credit conditions."
+ },
+ {
+  "date": "2026-09-15",
+  "source": "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 55,
+  "reason": "SemiAnalysis's Rubin figures measure throughput and profit per gigawatt for a new chip generation, not monetisable revenue per inference GW at current prices, and the proposed +10% is not derivable from the quoted 2x claim."
+ },
+ {
+  "date": "2026-09-15",
+  "source": "https://forkast.news/anthropics-517b-compute-ceiling-reached-in-11-months-even-as-its-ceo-called-to-slow-down/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.2,
+  "reason": "The Forkast piece is a secondary write-up whose quoted line is about funding commitments rather than growth, and its revenue path (end-2025 $9B to $30B in April 2026) is older and weaker than the Epoch run-rate evidence already used to lift orgX to 1.1, so a further increment would double-count the same observed growth."
+ },
+ {
+  "date": "2026-09-15",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-15).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-15",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 22% per qtr",
+  "new": "44% vs 22% per qtr",
+  "reason": "Observed from source (2026-09-15).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-15",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "12.9%",
+  "new": "11.6%",
+  "reason": "Observed from source (2026-09-15).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-15",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.8",
+  "new": "17.1",
+  "reason": "Observed from source (2026-09-14).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-15",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-11).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-15",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.95%",
+  "new": "4.96%",
+  "reason": "Observed from source (2026-09-11).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-14",
   "kind": "collected",
   "target": "gauge:util0",
