@@ -216,5 +216,25 @@
    "Stale gauges fed_fsr (139d), capex_ocf (93d), bonds (48d), crwv_cds (50d), vc_h1 (77d): web_search quota was exhausted before I could locate newer primary prints; no proposals rather than guesses.",
    "No prompt-injection attempts noticed in the feeds, articles or X posts read today."
   ]
+ },
+ {
+  "date": "2026-09-17",
+  "notes": [
+   "fed_fsr (50%, 2026-05-01): checked Fed FSR publications; May 2026 report (data through late April) is still the most recent edition — the next semiannual FSR is due ~Nov 2026. No newer reading; gauge unchanged.",
+   "openrouter_cn (>60%, 2026-07-09): OfficeChai source article is dated/modified 2026-06-26 and says combined Chinese providers (DeepSeek, Xiaomi, Tencent, MiniMax, Qwen) are 'roughly 44% of token volume across the top 10' — older than the current as_of, so not a newer reading. A newer OfficeChai OpenRouter piece exists (2026-09-15, 'OpenAI Surpasses Anthropic On OpenRouter Spend For First Time In 2.5 Years') but it covers spend share, not Chinese token share, and I exhausted the tool budget before I could read/verify it. Flag for next refresh.",
+   "capex_ocf (crossed Q3 2026, 2026-06-16): fetched the Epoch AI data insight today; it is still dated 'Jun. 16, 2026' and still states aggregate cash capex 'is on track to overtake operating cash flow around Q3 2026'. Verified unchanged — no newer reading, so no proposal.",
+   "bonds ($225B, 2026-07-31): Fortune 2026-07-31 piece is still the cited source; I could not locate or verify a newer YTD issuance tally (e.g. Aug/Sep totals) before the search/fetch budget ran out. No newer reading proposed.",
+   "crwv_cds (~855bp, 2026-07-29): investing.com CDS quote is not retrievable as a citable page and no newer dated quote was verifiable. No proposal; suggest replacing with a sourced feed (e.g. a dated market report) for this gauge.",
+   "vc_h1 ($510B, 2026-07-02): Crunchbase H1 2026 report ('Global Startup Investment Hit Record $510B In H1 2026') remains the latest half-year figure; Q3 2026 is not complete and no revised H1 figure was found. No newer reading.",
+   "Fed projections release (monetary20260916b) read but body text not extractable; dot path would only matter for a rate scenario, and the realised hike is already proposed as an event.",
+   "Ramp: top-1% per-employee AI spend fell 9.7% to $7,205 in August (from revised $7,976) — sits against the 'elastic' (Citadel) scenario's July +50% MoM claim, but Kharazian attributes it to summer seasonality and price cuts, not market conditions, so it does not meet procyclicality_evidence; flagged in the orgX rationale instead.",
+   "Ramp adoption shares (Anthropic 43.8%, OpenAI 39.8% of US businesses) are only marginally newer than the 'coding'/'rampconc' scenario bases; no scenario_update proposed.",
+   "Gavin Baker (16 Sep): OpenAI 20% -> 50% OpenRouter share vs Anthropic since June — a share-shift between frontier labs, not a usage-share or migration measure; no exposed key.",
+   "Epoch 'AI Chip Users Explorer' (9 Sep, compute usage across five labs) is the best candidate for a compute_split (train) or K0 update, but my web_fetch budget ran out before I could read it — worth reading next run.",
+   "METR: no new time-horizon measurement found before the search budget ran out; H0/D0 left at their April readings.",
+   "Stale gauges fed_fsr, capex_ocf, bonds, crwv_cds, vc_h1 not refreshed — no newer primary print located within budget; openrouter_cn deliberately not re-proposed after yesterday's rejection.",
+   "Epoch ECI thread (GPT-6 Astra 166 overall, Math-ECI 170, SWE-ECI 164 vs Fable 5.1's 167) is a capability benchmark, not a METR horizon, so it cannot move H0.",
+   "No prompt-injection attempts noticed in the feeds, posts or pages read today."
+  ]
  }
 ]

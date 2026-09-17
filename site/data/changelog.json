@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-09-17",
+  "source": "https://epoch.ai/latest",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/latest",
+  "reason": "Epoch's own site feed is a fetchable primary channel for the capacity, revenue and compute-split evidence the model relies on, and it replaces a watchlist entry marked dead."
+ },
+ {
+  "date": "2026-09-17",
+  "source": "https://epoch.ai/data/ai-companies",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.15,
+  "reason": "The quote is the dataset's generic documentation sentence containing no revenue or growth figures, and the underlying Epoch run-rate evidence already lifted orgX to 1.1 on 8 September."
+ },
+ {
+  "date": "2026-09-17",
+  "source": "https://epoch.ai/data/ai-data-centers",
+  "kind": "rejected",
+  "target": "K0",
+  "old": null,
+  "new": 11,
+  "reason": "Epoch's 13.3 GW figure covers all 86 tracked sites across Meta, Google, Huawei and others rather than frontier-lab serving capacity, and the proposer's own derivation of the frontier slice (8–9 GW) sits below the current value, so the source does not support 11 GW."
+ },
+ {
+  "date": "2026-09-17",
+  "source": "https://ramp.com/data/ai-index-sept-2026",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 25,
+  "reason": "The same quote says frontier token share of 45% is up from the start of July and only down from an August peak that Ramp itself attributes partly to summer seasonality, and Ramp explicitly finds no open-weight-driven shift, so the evidence is too mixed to raise the substitution parameter."
+ },
+ {
+  "date": "2026-09-17",
+  "source": "https://ramp.com/data/ai-index-sept-2026",
+  "kind": "accepted",
+  "target": "gauge:token_index",
+  "old": "≈−50% vs summer peak ($0.97/M tokens)",
+  "new": "$0.68/M tokens on Ramp's effective price-per-million index, −41% from its March 2026 peak of $1.15 (Silicon Data's SDLLMTK read $0.97 on 31 Aug)",
+  "reason": "Ramp's 9 Sep letter is first-party, newer than the 1 Sep SDLLMTK reading and states the $0.68 figure verbatim, but the text is adjusted to flag that the series differs from the Silicon Data index so the step down is not read as pure price movement."
+ },
+ {
+  "date": "2026-09-17",
+  "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+  "kind": "accepted",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": "rate 0.25",
+  "reason": "Primary FOMC statement of 16 Sep 2026 explicitly records a 12–0 vote to raise the target range by 1/4 point to 3-3/4–4 percent, so a realised +0.25pp rate event in 2026Q3 is directly evidenced."
+ },
+ {
+  "date": "2026-09-17",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-17).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-17",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 22% per qtr",
+  "new": "44% vs 22% per qtr",
+  "reason": "Observed from source (2026-09-17).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-17",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "15.3%",
+  "new": "13.3%",
+  "reason": "Observed from source (2026-09-17).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-17",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "17.2",
+  "new": "17.7",
+  "reason": "Observed from source (2026-09-16).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-17",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-15).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-17",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.97%",
+  "new": "5.00%",
+  "reason": "Observed from source (2026-09-15).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-16",
   "source": "https://thenewstack.io/openrouter-us-region-routing/",
   "kind": "rejected",
