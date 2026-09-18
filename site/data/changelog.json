@@ -1,5 +1,97 @@
 [
  {
+  "date": "2026-09-18",
+  "source": "https://www.dwarkesh.com/p/noam-brown",
+  "kind": "accepted",
+  "target": "scenario:swarm",
+  "old": null,
+  "new": "added",
+  "reason": "Noam Brown's on-record interview gives a named, quantified view — 10,000 agents and 130B tokens over 88 hours, four agents halving wall-clock time for 2x tokens — that encodes parallel test-time compute as a demand multiplier, a mechanism no active scenario currently represents. Noam Brown (OpenAI) with Dwarkesh Patel, Dwarkesh Podcast, 17 Sep 2026."
+ },
+ {
+  "date": "2026-09-18",
+  "source": "https://x.com/SemiAnalysis_/status/2100600804038099217",
+  "kind": "rejected",
+  "target": "sh_swe",
+  "old": null,
+  "new": 23,
+  "reason": "A single promotional X post about agentic traffic exceeding 70% of inference does not measure software-engineering share — agentic workloads span research, support and other tool-using tasks — so it cannot carry a 3-point move in sh_swe."
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "accepted",
+  "target": "orgX",
+  "old": 1.1,
+  "new": 1.2,
+  "reason": "The calibration gap has persisted for three weeks with slack utilisation, and Noam Brown's first-hand account of Ultra Mode customers paying 2x tokens for a 2x speedup is fresh primary evidence of per-task token spend rising between model releases, so the capped organic-growth move is justified. Rule growth_calibration; “It depends on the benchmark, but for some of the benchmarks, what you see is that if you have four agents working on the problem, it is done”",
+  "source": "https://www.dwarkesh.com/p/noam-brown"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "accepted",
+  "target": "k_rd",
+  "old": 0.7,
+  "new": 0.8,
+  "reason": "Anthropic's own August 2026 disclosure of ~30,000 concurrent agents doing internal research and engineering work is a fresh primary measurement of the AI-R&D feedback channel, distinct from the OpenAI figures that set 0.7, so the capped move to 0.8 stands. Rule feedback_evidence; “As of August 2026, there were approximately 30,000 agents doing research and engineering work at Anthropic at any one time in our most-used ” Capped: target 0.8, continues next run.",
+  "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+  "capped": true,
+  "target_value": 0.8
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 22% per qtr",
+  "new": "44% vs 22% per qtr",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "13.3%",
+  "new": "12.0%",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "17.7",
+  "new": "15.4",
+  "reason": "Observed from source (2026-09-17).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.63%",
+  "reason": "Observed from source (2026-09-16).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.00%",
+  "new": "5.01%",
+  "reason": "Observed from source (2026-09-16).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-17",
   "source": "https://epoch.ai/latest",
   "kind": "accepted",

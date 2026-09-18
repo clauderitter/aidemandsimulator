@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-09-03",
-  "notes": [
-   "Web-fetch/search budget was exhausted mid-session; proposals are limited to sources I fetched and quote-verified in full.",
-   "R0: Epoch confirms OpenAI >$40B and Anthropic $65B (Axios, 17 Aug) = ~$105B combined, but R0=118.3 is already auto-collected as of today - not re-proposed.",
-   "H0/D0: METR's time-horizons page still reads 'LAST UPDATED May 8, 2026' and Epoch's mirror states it does not collect the 80% series, so no newer metr_latest reading exists.",
-   "Epoch ECI trend break (14 pts/yr since reasoning models vs 6 pts/yr before, 1 Sep) is a real capability-acceleration signal but maps to no exposed key (metr_doubling is METR-only).",
-   "Dwarkesh/Dylan Patel: '$15b a GW turned into $50b+ of revenue' is a lease rate and a revenue ceiling, not all-in capex per GW (capexGW/cost_per_gw), and mono is never moved by the pipeline; that view is already carried by 'physics' and 'boom'.",
-   "SemiAnalysis Rubin Ultra despec (memory ~40% -> ~28% of capital cost, HBM cost -50%, scale-up 4% -> 12%) hints capexGW could ease, but it is rack TCO composition, not a per-GW dollar figure, and capexGW moved 45->54 today; noted only.",
-   "Coatue 'The New Scaling Law' and 'Agents Are the New Users of CPUs' read in full: single-paragraph takes, no attributable numbers beyond 'newest models learn on the job almost twice as fast as three months earlier' - too thin for a scenario or a param.",
-   "R0x: no Google/Gemini-API-specific figure found; EV's $175-200B total includes the app layer, so it cannot be cleanly split into frontier tokens. Left at 10.",
-   "Blocked feeds (David Cahn, Zvi, Import AI, Econ Lab) could not be checked once the fetch budget ran out - worth first look next run for a possible 'gap' scenario_update.",
-   "Gauges aaii, h100_rental, token_index, openrouter_cn, bonds and crwv_cds are all stale but I could not verify a newer reading from their own sources before the tool budget ran out; none proposed on guesswork.",
-   "No prompt-injection attempts spotted in the fetched pages or in the post texts supplied."
-  ]
- },
- {
   "date": "2026-09-04",
   "notes": [
    "METR has published no evaluation of GPT-6 Astra and no newer 80% time-horizon measurement (metr.org/blog latest item is the 31 Aug 2026 security update); the June 2026 GPT-5.6 Sol note gives only a 50% horizon METR itself calls not robust, so H0 and D0 left alone.",
@@ -234,6 +218,26 @@
    "METR: no new time-horizon measurement found before the search budget ran out; H0/D0 left at their April readings.",
    "Stale gauges fed_fsr, capex_ocf, bonds, crwv_cds, vc_h1 not refreshed — no newer primary print located within budget; openrouter_cn deliberately not re-proposed after yesterday's rejection.",
    "Epoch ECI thread (GPT-6 Astra 166 overall, Math-ECI 170, SWE-ECI 164 vs Fable 5.1's 167) is a capability benchmark, not a METR horizon, so it cannot move H0.",
+   "No prompt-injection attempts noticed in the feeds, posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-09-18",
+  "notes": [
+   "capex_ocf: fetched https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow directly — page still dated 'Jun. 16, 2026' and still says aggregate hyperscaler cash capex is 'on track to overtake operating cash flow around Q3 2026'. No newer reading; gauge stays 'crossed Q3 2026' as of 2026-06-16.",
+   "fed_fsr: the May 2026 Financial Stability Report (accessibility tables + near-term risks page) is still the latest edition; the FSR is semiannual (spring / late-autumn), so the next edition is not due until roughly Oct-Nov 2026. No newer reading than 2026-05-01.",
+   "openrouter_cn: fetched the officechai source article — meta modified_time is 2026-06-26 and its figure is 'roughly 44% of token volume across the top 10' for combined Chinese providers, which is both older than and metric-inconsistent with the current >60% (2026-07-09) reading. Could not reach openrouter.ai/rankings or a later officechai monthly roundup before the server-tool budget ran out, so no newer reading submitted. Worth re-checking openrouter.ai/rankings and officechai's monthly OpenRouter posts next run.",
+   "bonds: fetched the Fortune 2026-07-31 source article; it is the same piece behind the $225B figure (it also cites Nikkei's $1.65T 'hidden debt' and Moody's $1.2T off-balance-sheet estimates, but those are different metrics, not a refreshed 2026-to-date issuance tally). No newer year-to-date issuance total verified; re-check for an August/September tally.",
+   "crwv_cds: could not retrieve a current CoreWeave 5-year CDS quote — investing.com CDS pages were not reachable within the remaining tool budget and CDS levels are not reliably published free-of-charge. Gauge left at ~855bp as of 2026-07-29; flag for a manual/terminal check.",
+   "vc_h1: Crunchbase's H1/Q2 2026 global report (2026-07-02, $510B) is still the newest global aggregate — Q3 2026 does not close until 2026-09-30, so the Q3 recap cannot yet exist. No newer reading.",
+   "Anthropic's compute-allocation snapshot (6% of AI R&D compute to safety, 12% of AI-driven AI R&D) gives no training/inference split, so no compute_split move on 'train'.",
+   "Considered sh_rd on the Anthropic R&D Automation Index (26% AL4, up from <1% in Feb) but the index measures internal automation, not the revenue-token mix, so it went into k_rd instead.",
+   "Tomasz Tunguz / UC Berkeley harness study (GPT-5.6 Sol 71% cheaper on Pi than Claude Code, 38% vs 75% gross margins) is about harness efficiency, not migration to non-frontier or open-weight models, so no subst move; worth watching as effective-price evidence.",
+   "Ed Zitron (17 Sep): Microsoft 'only has 2GW of AI chips in service', $82B of GPUs in warehouses, $100-300B of industry pre-purchases — a cloud, not a frontier lab, and a commentator rather than an analyst estimate, so not proposed against K0.",
+   "Epoch AI's $3B Malaysia chip-smuggling trade-data insight and its new Benchmark Reviews launch carry numbers but touch no exposed key.",
+   "SemiAnalysis MI355X perf/TCO and Rubin NVL72 7x perf-per-watt claims are hardware efficiency, not cost_per_gw or revenue_per_gw as defined.",
+   "Stale gauges (fed_fsr, openrouter_cn, capex_ocf, bonds, crwv_cds, vc_h1) and a possible September BofA fund manager survey could not be refreshed: the web_search and web_fetch budgets were exhausted before I could reach their own sources, and I will not propose a gauge value I have not read.",
+   "No new METR measurement found, so H0 and D0 stay.",
    "No prompt-injection attempts noticed in the feeds, posts or pages read today."
   ]
  }

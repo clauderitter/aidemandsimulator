@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-17T12:29:19.178Z",
+ "generated_at": "2026-09-18T12:05:01.010Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -213,16 +213,19 @@
    "short": "Modelling constant; see “How it works”."
   },
   "k_rd": {
-   "value": 0.7,
+   "value": 0.8,
    "label": "AI R&D loop gain",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
-   "as_of": "2026-09-06",
-   "type": "reported",
-   "source": "https://www.unite.ai/openai-hits-goal-of-building-an-automated-research-intern/",
-   "updated": "2026-09-07",
+   "as_of": "2026-09-17",
+   "type": "estimate",
+   "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+   "updated": "2026-09-18",
    "rule": "",
-   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute."
+   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute.",
+   "pending_target": 0.8,
+   "pending_since": "2026-09-18",
+   "pending_reason": "Anthropic's own August 2026 disclosure of ~30,000 concurrent agents doing internal research and engineering work is a fr"
   },
   "k_swe": {
    "value": 0.6,
@@ -585,18 +588,16 @@
    "rule": "epoch_sum"
   },
   "orgX": {
-   "value": 1.1,
+   "value": 1.2,
    "label": "Organic growth multiplier",
    "hidden": false,
    "basis": "Scales the organic (non-reflexive, non-capability) growth of every segment. Calibration handle: the pipeline compares trailing observed revenue growth with the model’s quarter-zero growth and may move this under the growth_calibration rule when the gap persists.",
    "short": "Scales organic growth in every segment; the calibration handle for observed vs modelled growth.",
-   "as_of": "2026-09-08",
-   "type": "reported",
-   "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
-   "updated": "2026-09-08",
-   "rule": "growth_calibration",
-   "pending_since": "2026-09-08",
-   "pending_reason": "Epoch's 27 Aug 2026 run-rate update is newer than the current as-of and independently documents combined lab revenue gro"
+   "as_of": "2026-09-17",
+   "type": "estimate",
+   "source": "https://www.dwarkesh.com/p/noam-brown",
+   "updated": "2026-09-18",
+   "rule": "growth_calibration"
   },
   "scarce": {
    "value": 0.5,
@@ -1212,6 +1213,31 @@
    "status": "active",
    "updated": "2026-09-10",
    "added": "2026-09-10"
+  },
+  {
+   "id": "swarm",
+   "camp": "bull",
+   "name": "Agent swarms buy speed",
+   "who": "Noam Brown (OpenAI) with Dwarkesh Patel, Dwarkesh Podcast",
+   "when": "17 Sep 2026",
+   "thesis": "Parallel agent swarms turn latency into a purchasable good: OpenAI's Millennium-problem run used 10,000 agents and 130 billion tokens over 88 hours, and in GPT-5.6's Ultra Mode four agents halve wall-clock time for 2x the tokens, 16 agents continuing sublinearly. Token spend per task therefore rises with willingness to pay for speed even between model releases, so demand responds strongly to capability and lab R&D becomes the most token-hungry segment.",
+   "src": "https://www.dwarkesh.com/p/noam-brown",
+   "p": {
+    "epsX": 1.4,
+    "k_rd": 0.85,
+    "rdBoost": 0.45,
+    "targetUtil": 0.88
+   },
+   "e": [
+    {
+     "type": "release",
+     "t": 1,
+     "v": 1
+    }
+   ],
+   "status": "active",
+   "updated": "2026-09-18",
+   "added": "2026-09-18"
   }
  ],
  "gauges": [
@@ -1221,9 +1247,9 @@
    "value": "47%",
    "sub": "frontier revenue 118.3 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-17",
+   "as_of": "2026-09-18",
    "auto": true,
-   "updated": "2026-09-17"
+   "updated": "2026-09-18"
   },
   {
    "id": "fms_tailrisk",
@@ -1248,12 +1274,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "13.3%",
-   "sub": "17 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "12.0%",
+   "sub": "18 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-17",
+   "as_of": "2026-09-18",
    "auto": true,
-   "updated": "2026-09-17"
+   "updated": "2026-09-18"
   },
   {
    "id": "aaii",
@@ -1268,12 +1294,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "17.7",
-   "sub": "16 Sept 2026 close (CBOE)",
+   "value": "15.4",
+   "sub": "17 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-16",
+   "as_of": "2026-09-17",
    "auto": true,
-   "updated": "2026-09-17"
+   "updated": "2026-09-18"
   },
   {
    "id": "fed_fsr",
@@ -1348,12 +1374,12 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.00%",
-   "sub": "15 Sept 2026 (FRED DGS10); Fed funds effective 3.63%",
+   "value": "5.01%",
+   "sub": "16 Sept 2026 (FRED DGS10); Fed funds effective 3.63%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-09-15",
+   "as_of": "2026-09-16",
    "auto": true,
-   "updated": "2026-09-17"
+   "updated": "2026-09-18"
   },
   {
    "id": "crwv_cds",
@@ -1379,11 +1405,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.63%",
-   "sub": "15 Sept 2026 (FRED DFF)",
+   "sub": "16 Sept 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-09-15",
+   "as_of": "2026-09-16",
    "auto": true,
-   "updated": "2026-09-17"
+   "updated": "2026-09-18"
   },
   {
    "id": "growth_check",
@@ -1391,9 +1417,9 @@
    "value": "44% vs 22% per qtr",
    "sub": "observed (Epoch sum, 2025Q3 → now) vs modelled quarter-zero growth; gap 22 pts",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-17",
+   "as_of": "2026-09-18",
    "auto": true,
-   "updated": "2026-09-17"
+   "updated": "2026-09-18"
   }
  ],
  "frozen": [],
