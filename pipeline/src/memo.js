@@ -29,7 +29,7 @@ function weekDigest(state, changelog) {
   const scen = state.scenarios.filter(s => s.status !== 'retired').map(s => `${s.id} [${s.camp}${s.core ? ', core' : ', rotating'}] ${s.name} — ${s.who}${s.added ? ' (added ' + s.added + ')' : ''}`);
   const retired = state.scenarios.filter(s => s.status === 'retired').map(s => `${s.id}: ${s.retired_reason || ''}`);
   const notes = readJSON(P('pipeline', 'state', 'notes.json'), []).filter(n => n.date >= cutoff).flatMap(n => n.notes.map(x => `${n.date}: ${x}`));
-  const health = readJSON(P('pipeline', 'state', 'feed_health.json'), []).filter(h => h.date >= cutoff).map(h => `${h.date}: failed ${h.failed.join(', ') || 'none'}`);
+  const health = readJSON(P('pipeline', 'state', 'feed_health.json'), []).filter(h => h.date >= cutoff).map(h => `${h.date}: failed ${h.failed.join(', ') || 'none'}${h.dead && h.dead.length ? ` | marked dead, retried Mondays only: ${h.dead.join(', ')}` : ''}`);
   return { lines, capped, stale, params, scen, retired, notes, health, pending, close };
 }
 

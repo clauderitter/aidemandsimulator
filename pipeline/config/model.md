@@ -19,6 +19,8 @@ Demand is four segments: AI R&D (rd), software engineering (swe), trading (trd),
 
 **Shocks:** rate (pp, lasting), regulation (× slower doubling, lasting), market shock (−% on M), breakthrough (extra doublings), segment cuts (−% spend), adoption wave (%/yr, lasting), token price collapse (−% revenue per GW, bounded spend −half), compute repricing (+% revenue per GW), pipeline cancellation (−% of not-yet-online GW).
 
+**Actual events** (`state.events`) are chart markers only and are never simulated; what really happened reaches the model through collected inputs (a Fed move through `rateGap`, a revenue print through `R0_epoch`), so nothing is counted twice.
+
 **Not modelled:** token prices and volumes separately, margins, individual labs, equity feedback into lab valuations beyond `M`, power and chip supply chains explicitly (only through `buildMax`, `lead`, `capexGW`).
 
 **Derived rules:** `R0 = Epoch disclosed sum + R0x`. `rate0 = Fed funds + 0.4`. `util0 = R0 ÷ (K0 × (1 − train) × mono)` is an output (gauge), not an identity; `mono` is evidence-driven since 2026-09-07.

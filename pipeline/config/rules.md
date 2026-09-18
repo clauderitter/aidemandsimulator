@@ -9,7 +9,7 @@ changes only through pull requests by a person. These rules bind the collectors,
 |---|---|---|---|
 | `R0_epoch` disclosed revenue | Sum of the latest full-company annualised run-rates of frontier labs in Epoch’s dataset | Epoch `ai_companies_revenue_reports.csv`; a newer primary report may be proposed under `primary_report` | daily |
 | `R0` frontier token revenue | Derived in one place: `R0_epoch + R0x`. Never proposed directly | — | daily |
-| `orgX` organic growth, `pipe`, `buildMax` | Calibration handles. The `growth_check` gauge compares trailing observed growth of the disclosed sum with the model’s quarter-zero growth; the weekly ledger in `state.calibration` counts consecutive weeks with the gap above 0.05 log/quarter; three weeks, or two weeks above 0.15 (fast lane), justify one capped proposal toward closing half of it. If quarter zero is rationed the gap is supply-side and `pipe` (then `buildMax`) moves; otherwise `orgX` | derived gauge + judge | weekly |
+| `orgX` organic growth, `pipe`, `buildMax` | Calibration handles. The `growth_check` gauge compares trailing observed growth of the disclosed sum with the model’s quarter-zero growth; the weekly ledger in `state.calibration` counts consecutive weeks with the gap above 0.05 log/quarter; three weeks, or two weeks above 0.15 (fast lane), justify one capped proposal toward closing half of it, unless the handle at its bound could not close a quarter of the gap, in which case it is a structural finding for the weekly review. If quarter zero is rationed the gap is supply-side and `pipe` (then `buildMax`) moves; otherwise `orgX` | derived gauge + judge | weekly |
 | `R0x` undisclosed allowance | Estimate of frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference); `R0` = Epoch sum + `R0x` | researcher proposals with sourced estimates | on evidence |
 | `H0` 80% task horizon | Latest state-of-the-art `p80_horizon_length` in METR’s benchmark file, minutes ÷ 60 | METR `benchmark_results_1_1.yaml` | daily |
 | `D0` doubling time | METR since-2023 doubling time in days ÷ 30.4 | same | daily |
@@ -74,6 +74,7 @@ both.
 - Shocks are timed relative to quarter zero (`t`) or pinned to a calendar quarter (`q`). When a pinned quarter passes, the
   judge grades it: it happened (an actual event is recorded in `events` with the real magnitude) or it did not (the shock is
   expired and the scenario text updated).
+- A `scenario_update` may re-fit any active scenario, core ones included (thesis, overrides, shocks); only retirement of core scenarios is blocked.
 - Retired scenarios stay in the file with `status: retired` and a reason.
 
 ## Operations
