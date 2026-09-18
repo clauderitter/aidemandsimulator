@@ -13,7 +13,8 @@ changes only through pull requests by a person. These rules bind the collectors,
 | `R0x` undisclosed allowance | Estimate of frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference); `R0` = Epoch sum + `R0x` | researcher proposals with sourced estimates | on evidence |
 | `H0` 80% task horizon | Latest state-of-the-art `p80_horizon_length` in METR’s benchmark file, minutes ÷ 60 | METR `benchmark_results_1_1.yaml` | daily |
 | `D0` doubling time | METR since-2023 doubling time in days ÷ 30.4 | same | daily |
-| `rate0` baseline rate | Fed funds effective + 0.4, rounded to 0.25 | FRED `DFF` | daily |
+| `rate0` neutral rate | Trailing-365-day mean of Fed funds effective + 0.4, rounded to 0.05 | FRED `DFF` | daily |
+| `rateGap` rates vs neutral | Fed funds effective + 0.4 − `rate0`. A realised hike or cut shows up here and fades as the average catches up; markets and build financing respond to it | FRED `DFF` | daily |
 | `mono` revenue ceiling per inference GW | Evidence-driven since 2026-09-07: revenue per GW of inference capacity at current prices (lab/cloud disclosures, lease rates × utilisation, analyst estimates), ±10% per run. Quarter-zero utilisation is reported as the `util0` gauge and drives the calibration branch | researcher proposals under `revenue_per_gw` | on evidence |
 | `K0`, `pipe` | GW online and GW contracted for the next six quarters, from lab and cloud disclosures | researcher proposals with quotes | on evidence |
 | `train`, `capexGW`, `lead` | Reported splits, $/GW and delivery times from labs, Nvidia, SemiAnalysis, Epoch | researcher proposals | on evidence |
@@ -25,7 +26,13 @@ changes only through pull requests by a person. These rules bind the collectors,
 Every change carries: `old`, `new`, the rule used, a source URL, a quote (for agent proposals), `reported` or `estimate`,
 and the as-of date. The `short` one-liner and the longer `basis` are rewritten when the underlying evidence changes.
 
-## Speed limits
+## Speed limits and drift caps
+
+Assumption-class inputs (loop gains, contagion, procyclicality, financing sensitivity, organic growth, shares, migration, the revenue
+ceiling and a few others) also carry a **monthly drift cap** (`drift30` / `drift30_rel` in `limits.json`): the net move over any 30 days
+is bounded, whatever the number of runs that agree. A proposal with no room left is rejected at the gate with the evidence noted.
+Loop gains move only on evidence about the feedback itself, or on a stated comparison between a segment's observed spend growth and the
+implied steady growth printed in the researcher's digest; evidence that usage is large is about shares, not gains.
 
 A capped move stores its target on the parameter (`pending_target`); each run continues toward it under the same limit until reached or superseded, and the changelog entry carries `capped: true` and the target.
 
@@ -57,6 +64,11 @@ both.
   of an existing view belongs in a scenario_update, which may carry only new thesis text for a core scenario. If the rotating
   slots are full, a near-duplicate is retired first, otherwise the least distinct rotating scenario in the newcomer’s camp. Core
   scenarios are never retired by the pipeline.
+- Scenario overrides may be derived so a view stays true as the inputs move: `"=util0:0.95"` on `mono` holds quarter-zero utilisation
+  at 95% (the premise of the supply-bound camps), `"=x:1.6"` is a multiple of the base input. Shocks are pinned to calendar quarters
+  (`q`); a lasting shock that has started keeps running for what is left of it.
+- Where a proponent states numbers, the scenario carries `anchors`; the collector checks the path against them on every run and the
+  digest and weekly memo list violations, which justify a `scenario_update` with re-fitted overrides.
 - Watchlist sources that fail five consecutive runs are marked dead and retried on Mondays; the researcher still checks them
   through its own fetch.
 - Shocks are timed relative to quarter zero (`t`) or pinned to a calendar quarter (`q`). When a pinned quarter passes, the
@@ -64,10 +76,20 @@ both.
   expired and the scenario text updated).
 - Retired scenarios stay in the file with `status: retired` and a reason.
 
+## Operations
+
+- If the researcher or judge cannot run (no API credit, bad key, outage), collector data is still committed, the workflow run turns
+  red, and an issue labelled `pipeline-alert` is opened; it closes itself on recovery.
+- The weekly memo is due whenever none has been recorded for the current ISO week, so a failed Monday is retried on later days.
+- Every run appends its token usage and estimated cost to `pipeline/state/usage.json`.
+- Gauges carry a `cadence_days`; the housekeeping pass only looks for a newer reading once that cadence has passed, and backs off
+  for 3–14 days when it finds none.
+
 ## Rolling horizon
 
 Quarter zero is the current calendar quarter (UTC). At roll-over the closing quarter’s values move into `history`
-(eight quarters kept), provisional until the collectors refine revenue and horizon from Epoch and METR.
+(eight quarters kept), provisional until the collectors refine revenue and horizon from Epoch and METR. The capacity the model
+had arriving in the closed quarter (`pipe ÷ (lead + 1)`) is added to `K0`, graded derived, until a sourced estimate replaces it.
 
 ## Weekly re-baseline
 

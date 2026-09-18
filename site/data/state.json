@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-18T12:05:01.010Z",
+ "generated_at": "2026-09-18T12:19:10.324Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -213,7 +213,7 @@
    "short": "Modelling constant; see “How it works”."
   },
   "k_rd": {
-   "value": 0.8,
+   "value": 0.7,
    "label": "AI R&D loop gain",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
@@ -222,10 +222,7 @@
    "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
    "updated": "2026-09-18",
    "rule": "",
-   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute.",
-   "pending_target": 0.8,
-   "pending_since": "2026-09-18",
-   "pending_reason": "Anthropic's own August 2026 disclosure of ~30,000 concurrent agents doing internal research and engineering work is a fr"
+   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute."
   },
   "k_swe": {
    "value": 0.6,
@@ -528,16 +525,16 @@
    "short": "Modelling constant; see “How it works”."
   },
   "rate0": {
-   "value": 4,
-   "label": "rate0",
+   "value": 4.1,
+   "label": "Neutral rate",
    "hidden": true,
-   "basis": "Baseline financing rate: Fed funds effective 3.63% (FRED DFF, 1 Sep 2026) plus a 0.4-point term premium, rounded to the nearest quarter point. Updated daily from FRED.",
-   "as_of": "2026-09-01",
+   "basis": "Neutral rate = trailing-365-day mean of the effective Fed funds rate + 0.4 term premium. Budgets and builds respond to rates relative to this level, so a realised hike bites until the average catches up.",
+   "as_of": "2026-09-16",
    "type": "reported",
    "source": "https://fred.stlouisfed.org/series/DFF",
-   "updated": "2026-09-03",
-   "rule": "FRED DFF + 0.4, rounded to 0.25",
-   "short": "Fed funds effective rate plus a 0.4-point term premium, rounded to a quarter point; refreshed daily from FRED."
+   "updated": "2026-09-18",
+   "rule": "mean365(FRED DFF) + 0.4, rounded to 0.05",
+   "short": "The policy rate the last year’s plans were made at: trailing-year mean of Fed funds + 0.4 term premium. Refreshed daily from FRED."
   },
   "overhang": {
    "value": 0.5,
@@ -622,6 +619,18 @@
    "source": "https://www.disruptionbanking.com/2026/08/31/what-is-the-philadelphia-semiconductor-index-and-who-still-moves-it/",
    "updated": "2026-09-03",
    "rule": ""
+  },
+  "rateGap": {
+   "value": -0.05,
+   "label": "Rates vs neutral",
+   "hidden": false,
+   "basis": "Where policy stands relative to the neutral rate today: effective Fed funds + 0.4 − neutral. The FOMC raised the target range by a quarter point on 16 Sep 2026 (12–0), the first hike of the cycle; the gap turns positive as that prints in the effective rate and narrows again as the trailing average catches up.",
+   "short": "Today’s policy rate (+0.4) minus the neutral rate. A realised hike widens it; the model’s markets and build financing respond to it.",
+   "as_of": "2026-09-16",
+   "type": "reported",
+   "source": "https://fred.stlouisfed.org/series/DFF",
+   "updated": "2026-09-18",
+   "rule": "FRED DFF + 0.4 − rate0, rounded to 0.05"
   }
  },
  "history": [
@@ -722,7 +731,7 @@
    "name": "Compute gets 10× pricier",
    "who": "Dwarkesh Patel; Gavin Baker (Atreides)",
    "when": "essay 29 Jul 2026; podcast with Dylan Patel 25 Aug 2026",
-   "thesis": "Lab revenue is growing ~10× a year against compute growing ~3×, so unless margins reach the mid-90s the price of compute has to rise 10–15×. Anthropic exits 2026 at $100–150B and the trend points to $1T a year later; Patel sees revenue per MW going from ~$50M to $70–80M by end-2027, and Baker a shortage through 2028. Modelled as high loop gains, strong contagion, labs building as fast as physics allows, and revenue per GW stepping up 50% in 2027 and again in 2028.",
+   "thesis": "Lab revenue is growing ~10× a year against compute growing ~3×, so unless margins reach the mid-90s the price of compute has to rise 10–15×. Anthropic exits 2026 at $100–150B and the trend points to $1T a year later; Patel sees revenue per MW going from ~$50M to $70–80M by end-2027, and Baker a shortage through 2028. Modelled as high loop gains, strong contagion, labs building as fast as physics allows, and revenue per GW stepping up 50% in 2027 and again in 2028. His premise that labs are compute-constrained today (“double the compute, double the revenue”) is held as the inputs move.",
    "src": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
    "p": {
     "k_rd": 0.8,
@@ -730,24 +739,41 @@
     "k_trd": 0.75,
     "rho": 0.7,
     "buildMax": 0.3,
-    "targetUtil": 0.7
+    "targetUtil": 0.7,
+    "mono": "=util0:1.0"
    },
    "e": [
     {
      "type": "reprice",
-     "t": 2,
-     "v": 50
+     "v": 50,
+     "q": "2027Q1"
     },
     {
      "type": "reprice",
-     "t": 6,
-     "v": 50
+     "v": 50,
+     "q": "2028Q1"
     }
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03",
-   "core": true
+   "updated": "2026-09-18",
+   "core": true,
+   "anchors": [
+    {
+     "kind": "level",
+     "q": "2027Q4",
+     "lo": 600,
+     "hi": 1500,
+     "note": "Dwarkesh: the trend points to ~$1T a year after Anthropic exits 2026 at $100–150B"
+    }
+   ],
+   "fidelity": {
+    "ok": true,
+    "checks": [
+     "ok: 2027Q4 $676B vs $600–1500B"
+    ],
+    "date": "2026-09-18"
+   }
   },
   {
    "id": "takeoff",
@@ -768,14 +794,31 @@
    "e": [
     {
      "type": "release",
-     "t": 5,
-     "v": 1
+     "v": 1,
+     "q": "2027Q4"
     }
    ],
    "status": "active",
    "added": "2026-09-02",
    "updated": "2026-09-03",
-   "core": true
+   "core": true,
+   "anchors": [
+    {
+     "kind": "growth",
+     "from": "2026Q4",
+     "to": "2027Q4",
+     "lo": 4,
+     "hi": 8,
+     "note": "AI Futures: lab revenue growing 5–7× a year before the automated-coder point"
+    }
+   ],
+   "fidelity": {
+    "ok": true,
+    "checks": [
+     "ok: growth 2026Q4→2027Q4 ×4.9 vs ×4–8"
+    ],
+    "date": "2026-09-18"
+   }
   },
   {
    "id": "supercycle",
@@ -783,17 +826,18 @@
    "name": "Capex supercycle",
    "who": "Hyperscaler Q2 2026 calls; Morgan Stanley, UBS, JPMorgan, Goldman Sachs",
    "when": "Jun–Aug 2026",
-   "thesis": "Microsoft: “demand continues to exceed available supply”; Amazon: not enough capacity in 2026 or 2027; Nvidia has supply for ~70% of demand. Contracted backlog tops $2.4T across Microsoft, Oracle, Google, AWS and CoreWeave, and the banks see capex of $0.8–1.0T in 2026 rising to $1.2–1.6T a year by 2028 ($5.5T through 2030 at JPMorgan). Modelled as a bigger committed pipeline and labs building toward 65% utilisation rather than 80%.",
+   "thesis": "Microsoft: “demand continues to exceed available supply”; Amazon: not enough capacity in 2026 or 2027; Nvidia has supply for ~70% of demand. Contracted backlog tops $2.4T across Microsoft, Oracle, Google, AWS and CoreWeave, and the banks see capex of $0.8–1.0T in 2026 rising to $1.2–1.6T a year by 2028 ($5.5T through 2030 at JPMorgan). Modelled as a bigger committed pipeline and labs building toward 65% utilisation rather than 80%. The premise that demand already exceeds supply is held as the inputs move.",
    "src": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
    "p": {
-    "pipe": 26,
-    "targetUtil": 0.65,
-    "buildMax": 0.25
+    "mono": "=util0:1.0",
+    "pipe": "=x:1.6",
+    "buildMax": "=x:1.2",
+    "targetUtil": 0.65
    },
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03",
+   "updated": "2026-09-18",
    "core": true
   },
   {
@@ -813,9 +857,9 @@
    "e": [
     {
      "type": "oth_boost",
-     "t": 2,
      "v": 60,
-     "dur": 8
+     "dur": 8,
+     "q": "2027Q1"
     }
    ],
    "status": "active",
@@ -855,9 +899,9 @@
    "e": [
     {
      "type": "rate",
-     "t": 2,
      "v": 2,
-     "dur": 8
+     "dur": 8,
+     "q": "2027Q1"
     }
    ],
    "status": "active",
@@ -877,8 +921,8 @@
    "e": [
     {
      "type": "shock",
-     "t": 6,
-     "v": 30
+     "v": 30,
+     "q": "2028Q1"
     }
    ],
    "status": "active",
@@ -901,28 +945,28 @@
    "e": [
     {
      "type": "shock",
-     "t": 6,
-     "v": 30
+     "v": 30,
+     "q": "2028Q1"
     },
     {
      "type": "rd_cut",
-     "t": 6,
-     "v": 40
+     "v": 40,
+     "q": "2028Q1"
     },
     {
      "type": "swe_cut",
-     "t": 6,
-     "v": 30
+     "v": 30,
+     "q": "2028Q1"
     },
     {
      "type": "trd_cut",
-     "t": 6,
-     "v": 30
+     "v": 30,
+     "q": "2028Q1"
     },
     {
      "type": "capex_cut",
-     "t": 6,
-     "v": 30
+     "v": 30,
+     "q": "2028Q1"
     }
    ],
    "status": "active",
@@ -989,13 +1033,13 @@
    "e": [
     {
      "type": "price",
-     "t": 2,
-     "v": 45
+     "v": 45,
+     "q": "2027Q1"
     },
     {
      "type": "shock",
-     "t": 2,
-     "v": 15
+     "v": 15,
+     "q": "2027Q1"
     }
    ],
    "status": "active",
@@ -1018,19 +1062,19 @@
    "e": [
     {
      "type": "rate",
-     "t": 4,
      "v": 1,
-     "dur": 6
+     "dur": 6,
+     "q": "2027Q3"
     },
     {
      "type": "capex_cut",
-     "t": 4,
-     "v": 30
+     "v": 30,
+     "q": "2027Q3"
     },
     {
      "type": "shock",
-     "t": 4,
-     "v": 15
+     "v": 15,
+     "q": "2027Q3"
     }
    ],
    "status": "active",
@@ -1044,20 +1088,46 @@
    "name": "Consensus middle",
    "who": "Epoch AI; Azeem Azhar; Benedict Evans; Ben Thompson",
    "when": "May–Aug 2026",
-   "thesis": "Revenue is outgrowing compute (the two big labs went from $30B to $105B of run-rate between January and August against chip stock growing ~3.3× a year; tokens ~10× a year against inference capacity 3.4×), so utilisation stays above 90% and growth converges to the pace of capacity: roughly $200–300B by end-2027 and $350–600B in 2028. Real revenue that only just clears depreciation, with Oracle and CoreWeave spreads as the early-warning gauge. Modelled as slightly lower loop gains and labs building at up to 28% of the fleet a quarter toward 90% utilisation.",
+   "thesis": "Revenue is outgrowing compute (the two big labs went from $30B to $105B of run-rate between January and August against chip stock growing ~3.3× a year; tokens ~10× a year against inference capacity 3.4×), so utilisation stays above 90% and growth converges to the pace of capacity: roughly $200–300B by end-2027 and $350–600B in 2028. Real revenue that only just clears depreciation, with Oracle and CoreWeave spreads as the early-warning gauge. Modelled as slightly lower loop gains, capacity already 95% used today (the view’s own premise, held as the inputs move), and labs building at up to 22% of the fleet a quarter toward 90% utilisation.",
    "src": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
    "p": {
     "k_rd": 0.5,
     "k_swe": 0.5,
     "k_trd": 0.4,
-    "buildMax": 0.28,
+    "orgX": 1,
+    "mono": "=util0:0.95",
+    "buildMax": 0.22,
     "targetUtil": 0.9
    },
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03",
-   "core": true
+   "updated": "2026-09-18",
+   "core": true,
+   "anchors": [
+    {
+     "kind": "level",
+     "q": "2027Q4",
+     "lo": 225,
+     "hi": 340,
+     "note": "Epoch: the two big labs at $200–300B by end-2027, scaled to the frontier total"
+    },
+    {
+     "kind": "level",
+     "q": "2028Q4",
+     "lo": 395,
+     "hi": 675,
+     "note": "Epoch: $350–600B in 2028, scaled to the frontier total"
+    }
+   ],
+   "fidelity": {
+    "ok": true,
+    "checks": [
+     "ok: 2027Q4 $272B vs $225–340B",
+     "ok: 2028Q4 $598B vs $395–675B"
+    ],
+    "date": "2026-09-18"
+   }
   },
   {
    "id": "physics",
@@ -1065,23 +1135,24 @@
    "name": "Physics sets the pace",
    "who": "Dylan Patel / SemiAnalysis",
    "when": "13 Mar, 6 Jul and 25 Aug 2026",
-   "thesis": "Neither cash nor demand binds; N3 wafers, HBM, EUV tools, turbines and transformers do. The two big labs still roughly triple capacity a year (over 5 GW each in 2026, ~18 GW each by end-2027) and take 70–80% of incremental compute by 2028; ecosystem capex runs ~$11T over 2024–29, $6T cash and $5T debt; one-year H100 rentals are up 40% and on-demand capacity is sold out. Modelled as a bigger pipeline, builds capped near tripling, six-quarter lead times, and revenue per GW stepping up 40% in 2027 as labs outpay for compute.",
+   "thesis": "Neither cash nor demand binds; N3 wafers, HBM, EUV tools, turbines and transformers do. The two big labs still roughly triple capacity a year (over 5 GW each in 2026, ~18 GW each by end-2027) and take 70–80% of incremental compute by 2028; ecosystem capex runs ~$11T over 2024–29, $6T cash and $5T debt; one-year H100 rentals are up 40% and on-demand capacity is sold out. Modelled as a bigger pipeline, builds capped near tripling, six-quarter lead times, and revenue per GW stepping up 40% in 2027 as labs outpay for compute. The camp’s premise that capacity is fully used today is held as the inputs move.",
    "src": "https://www.dwarkesh.com/p/dylan-patel-3",
    "p": {
-    "pipe": 26,
+    "mono": "=util0:1.0",
+    "pipe": "=x:1.4",
     "buildMax": 0.32,
     "lead": 6
    },
    "e": [
     {
      "type": "reprice",
-     "t": 2,
-     "v": 40
+     "v": 40,
+     "q": "2027Q1"
     }
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03",
+   "updated": "2026-09-18",
    "core": true
   },
   {
@@ -1090,16 +1161,17 @@
    "name": "Grid bottleneck",
    "who": "SemiAnalysis (Maya Barkin, Reyk Knuhtsen, Jeremie Eliahou Ontiveros, Dylan Patel) grid, behind-the-meter and moratorium analyses; TIME and Platformer on local opposition",
    "when": "Jun–Jul 2026; revised 15 Sep 2026",
-   "thesis": "Firm power, turbines and transformers still set the pace — but permitting politics do not. SemiAnalysis's parcel-level audit of 300+ moratoriums finds only ~2.3 GW genuinely delayed (1,525 MW of ~20 GW exposed locally, ~0.8 GW in New York), capacity already under construction or permitted is out of reach of these instruments, and the model still shows +38 GW of US datacentre IT capacity delivered in 2027 (22 GW in vertical construction), more than double 2026, with more than half of new capacity going behind the meter from 2028 and 75 GW of firm BtM equipment orders booked. Build pace is constrained but faster than the earlier 0.12, and BtM shortens delivery.",
+   "thesis": "Firm power, turbines and transformers still set the pace — but permitting politics do not. SemiAnalysis's parcel-level audit of 300+ moratoriums finds only ~2.3 GW genuinely delayed (1,525 MW of ~20 GW exposed locally, ~0.8 GW in New York), capacity already under construction or permitted is out of reach of these instruments, and the model still shows +38 GW of US datacentre IT capacity delivered in 2027 (22 GW in vertical construction), more than double 2026, with more than half of new capacity going behind the meter from 2028 and 75 GW of firm BtM equipment orders booked. Build pace is constrained but faster than the earlier 0.12, and BtM shortens delivery. The camp’s premise that capacity is fully used today is held as the inputs move.",
    "src": "https://newsletter.semianalysis.com/p/everyone-says-datacenter-moratoriums",
    "p": {
     "buildMax": 0.18,
-    "lead": 6
+    "lead": 6,
+    "mono": "=util0:1.0"
    },
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-16",
+   "updated": "2026-09-18",
    "core": true
   },
   {
@@ -1129,22 +1201,23 @@
    "name": "AI factory economics — dollars per gigawatt",
    "who": "Jensen Huang and Colette Kress, Nvidia Q2 FY2027 earnings call",
    "when": "26 Aug 2026",
-   "thesis": "Nvidia's revenue opportunity per gigawatt has climbed from ~$18B (Hopper) to $25B (Blackwell) to $40B (Vera Rubin); top-five hyperscaler capex is heading for ~$800B in 2026 and $1.3T in 2027; supply stays the bottleneck through fiscal 2028 with ~70% supply-constrained growth guidance. Capital spending therefore grows much faster than physical gigawatts: each GW costs ~$60B all-in, the fleet grows slower than the dollars suggest, and the price of compute rises.",
+   "thesis": "Nvidia's revenue opportunity per gigawatt has climbed from ~$18B (Hopper) to $25B (Blackwell) to $40B (Vera Rubin); top-five hyperscaler capex is heading for ~$800B in 2026 and $1.3T in 2027; supply stays the bottleneck through fiscal 2028 with ~70% supply-constrained growth guidance. Capital spending therefore grows much faster than physical gigawatts: each GW costs ~$60B all-in, the fleet grows slower than the dollars suggest, and the price of compute rises. The call’s premise that supply is the bottleneck today is held as the inputs move.",
    "src": "https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/",
    "p": {
     "capexGW": 60,
     "buildMax": 0.15,
-    "pipe": 20
+    "pipe": 20,
+    "mono": "=util0:1.0"
    },
    "e": [
     {
      "type": "reprice",
-     "t": 1,
-     "v": 30
+     "v": 30,
+     "q": "2026Q4"
     }
    ],
    "status": "active",
-   "updated": "2026-09-03",
+   "updated": "2026-09-18",
    "added": "2026-09-03",
    "core": false
   },
@@ -1164,18 +1237,18 @@
    "e": [
     {
      "type": "shock",
-     "t": 4,
-     "v": 25
+     "v": 25,
+     "q": "2027Q3"
     },
     {
      "type": "rd_cut",
-     "t": 4,
-     "v": 30
+     "v": 30,
+     "q": "2027Q3"
     },
     {
      "type": "swe_cut",
-     "t": 4,
-     "v": 25
+     "v": 25,
+     "q": "2027Q3"
     }
    ],
    "status": "active",
@@ -1200,14 +1273,14 @@
    "e": [
     {
      "type": "price",
-     "t": 0,
-     "v": 40
+     "v": 40,
+     "q": "2026Q3"
     },
     {
      "type": "oth_boost",
-     "t": 0,
      "v": 50,
-     "dur": 8
+     "dur": 8,
+     "q": "2026Q3"
     }
    ],
    "status": "active",
@@ -1231,8 +1304,8 @@
    "e": [
     {
      "type": "release",
-     "t": 1,
-     "v": 1
+     "v": 1,
+     "q": "2026Q4"
     }
    ],
    "status": "active",
@@ -1259,7 +1332,8 @@
    "src": "https://www.trustnet.com/news/13482854/investors-shrug-off-ai-fears-and-turn-bullish-in-august-finds-bofa-survey",
    "as_of": "2026-08-13",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 30
   },
   {
    "id": "fms_crowded",
@@ -1269,7 +1343,8 @@
    "src": "https://www.trustnet.com/news/13482854/investors-shrug-off-ai-fears-and-turn-bullish-in-august-finds-bofa-survey",
    "as_of": "2026-08-13",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 30
   },
   {
    "id": "polymarket",
@@ -1289,7 +1364,8 @@
    "src": "https://www.aaii.com/sentimentsurvey",
    "as_of": "2026-08-26",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 7
   },
   {
    "id": "vix",
@@ -1309,7 +1385,8 @@
    "src": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-accessibility-tables.htm",
    "as_of": "2026-05-01",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 180
   },
   {
    "id": "nvda_short",
@@ -1319,17 +1396,19 @@
    "src": "https://finance.yahoo.com/markets/stocks/articles/nvidia-short-interest-draws-focus-181721404.html",
    "as_of": "2026-09-02",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 30
   },
   {
    "id": "h100_rental",
-   "label": "H100 rental, one-year term",
-   "value": "$2.00/hr retail; $1.17/hr at hyperscaler volume (SemiAnalysis AI Cloud TCO model, not a one-year-term print)",
-   "sub": "The gauge is 167 days stale ($2.35/hr, one-year term, 2 Apr 2026). SemiAnalysis's InferenceX chip page now publishes live H100 rate tiers from its AI Cloud TCO ",
+   "label": "H100 rental price",
+   "value": "$2.00/hr",
+   "sub": "retail; $1.17/hr at hyperscaler volume (SemiAnalysis AI Cloud TCO model, Sep 2026). The one-year contract index last printed $2.35 in March.",
    "src": "https://inferencex.semianalysis.com/chips/h100",
    "as_of": "2026-09-15",
    "auto": false,
-   "updated": "2026-09-15"
+   "updated": "2026-09-15",
+   "cadence_days": 30
   },
   {
    "id": "openrouter_cn",
@@ -1339,17 +1418,19 @@
    "src": "https://officechai.com/ai/share-of-us-models-being-used-on-openrouter-has-collapsed-from-70-to-30-over-the-past-year/",
    "as_of": "2026-07-09",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 30
   },
   {
    "id": "token_index",
-   "label": "Token-expenditure index vs May peak",
-   "value": "$0.68/M tokens on Ramp's effective price-per-million index, −41% from its March 2026 peak of $1.15 (Silicon Data's SDLLMTK read $0.97 on 31 Aug)",
-   "sub": "Newer reading of the same effective-price-per-million-tokens index from Ramp's monthly AI Index (letter dated 9 Sep 2026), replacing the 2026-09-01 reading of ≈",
+   "label": "Effective price per million tokens",
+   "value": "$0.68",
+   "sub": "Ramp’s effective price index, 9 Sep 2026: −41% from the March peak of $1.15. Silicon Data’s index read $0.97 on 31 Aug.",
    "src": "https://ramp.com/data/ai-index-sept-2026",
    "as_of": "2026-09-09",
    "auto": false,
-   "updated": "2026-09-17"
+   "updated": "2026-09-17",
+   "cadence_days": 21
   },
   {
    "id": "capex_ocf",
@@ -1359,7 +1440,8 @@
    "src": "https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow",
    "as_of": "2026-06-16",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 90
   },
   {
    "id": "bonds",
@@ -1369,7 +1451,8 @@
    "src": "https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/",
    "as_of": "2026-07-31",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 45
   },
   {
    "id": "dgs10",
@@ -1382,14 +1465,14 @@
    "updated": "2026-09-18"
   },
   {
-   "id": "crwv_cds",
-   "label": "CoreWeave 5-year CDS",
-   "value": "~855bp",
-   "sub": "29 Jul 2026, from 452bp in June; Oracle ~200bp record at BBB−",
-   "src": "https://www.investing.com",
-   "as_of": "2026-07-29",
-   "auto": false,
-   "updated": "2026-09-03"
+   "id": "hy_oas",
+   "label": "US high-yield credit spread",
+   "value": "270bp",
+   "sub": "16 Sep 2026 · ICE BofA US high-yield spread (FRED); investment grade 78bp",
+   "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+   "as_of": "2026-09-16",
+   "auto": true,
+   "updated": "2026-09-18"
   },
   {
    "id": "vc_h1",
@@ -1399,7 +1482,8 @@
    "src": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/",
    "as_of": "2026-07-02",
    "auto": false,
-   "updated": "2026-09-03"
+   "updated": "2026-09-03",
+   "cadence_days": 90
   },
   {
    "id": "fedfunds",
@@ -1414,8 +1498,8 @@
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "44% vs 22% per qtr",
-   "sub": "observed (Epoch sum, 2025Q3 → now) vs modelled quarter-zero growth; gap 22 pts",
+   "value": "+56% vs +25%",
+   "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.5 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
    "as_of": "2026-09-18",
    "auto": true,

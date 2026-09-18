@@ -1,6 +1,54 @@
 [
  {
   "date": "2026-09-18",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "44% vs 22% per qtr",
+  "new": "+56% vs +25%",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "collected",
+  "target": "rate0",
+  "old": 4,
+  "new": 4.1,
+  "reason": "Rule: neutral rate = trailing-year mean of Fed funds 3.72% + 0.4 term premium.",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "accepted",
+  "target": "gauge:hy_oas",
+  "old": "crwv_cds ~855bp (29 Jul)",
+  "new": "270bp",
+  "manual": true,
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+  "reason": "The CoreWeave CDS gauge had no citable source and could not be refreshed for seven weeks; replaced with the US high-yield spread, collected daily from FRED."
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "accepted",
+  "target": "scenarios",
+  "old": "relative",
+  "new": "faithful",
+  "manual": true,
+  "source": "",
+  "reason": "Scenario fidelity pass. Since the revenue ceiling became evidence-driven (7 Sep) every scenario inherited the base case’s slack, and “Consensus middle” ran at about $750B for end-2028 against the $350–600B its own thesis states. The supply-bound views (Epoch middle, Patel, the grid view, the capex supercycle, Nvidia’s call, Dwarkesh) now carry their stated premise that capacity is fully used today as a derived override that tracks the inputs. Scenario shocks are pinned to calendar quarters so named years stay true as the horizon rolls."
+ },
+ {
+  "date": "2026-09-18",
+  "kind": "accepted",
+  "target": "k_rd",
+  "old": 0.8,
+  "new": 0.7,
+  "manual": true,
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
+  "reason": "Reverted under the new monthly drift cap (±0.1 per 30 days for loop gains). The gain had been raised twice in eleven days (0.6 → 0.7 → 0.8) on evidence that labs use many agents, which measures the size of AI R&D spend, not its feedback. At 0.8 the segment’s implied steady growth was ×15 a year against reported lab R&D compute growing ×2–3, and the base case’s 2028 run-rate had tripled since 3 Sep. The rule now asks for feedback evidence or a growth comparison."
+ },
+ {
+  "date": "2026-09-18",
   "source": "https://www.dwarkesh.com/p/noam-brown",
   "kind": "accepted",
   "target": "scenario:swarm",

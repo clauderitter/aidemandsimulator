@@ -28,7 +28,14 @@ export const EVENTS = {
 
 // Resolve an event's timing to a relative quarter index given quarter0. Events may carry t (relative) or q (calendar).
 export function resolveEvents(events, quarter0) {
-  return events.map(e => ({ ...e, t: e.q ? qDiff(e.q, quarter0) : e.t })).filter(e => Number.isInteger(e.t));
+  const out = [];
+  for (const e of events) {
+    let t = e.q ? qDiff(e.q, quarter0) : e.t; if (!Number.isInteger(t)) continue; let dur = e.dur;
+    // A lasting shock pinned to a past quarter runs for what is left of it; a one-off in the past is history.
+    if (t < 0) { const d = EVENTS[e.type]; if (d && d.lasting && t + (dur || 1) > 0) { dur = (dur || 1) + t; t = 0; } else continue; }
+    out.push({ ...e, t, ...(dur != null ? { dur } : {}) });
+  }
+  return out;
 }
 
 // ---------- simulation ----------
@@ -64,7 +71,8 @@ export function simulate(p, events = [], noise = null, T = 18) {
     for (const e of evAt('price', t)) { monoMult *= (1 - e.mag); S.oth *= (1 - e.mag / 2); }
     for (const e of evAt('reprice', t)) monoMult *= (1 + e.mag);
     for (const e of evAt('capex_cut', t)) for (let q = t + 1; q < pipeline.length; q++) pipeline[q] *= (1 - e.mag);
-    const rate = p.rate0 + active('rate', t).reduce((a, e) => a + e.mag, 0);
+    // rate0 is the neutral rate; rateGap is where policy stands relative to it today (a realised hike shows up here).
+    const rate = p.rate0 + (p.rateGap || 0) + active('rate', t).reduce((a, e) => a + e.mag, 0);
     const regF = active('reg', t).reduce((a, e) => a * (1 + e.mag), 1);
     const cap = capOf(K);
     const demand = SEGS.reduce((a, s) => a + S[s], 0);
@@ -143,5 +151,18 @@ export function monteCarlo(p, events, T = 18, n = 240, seed = 20260901) {
 
 export function drawdown(rows) { let peak = 0, dd = 0, at = 0; for (const r of rows) { peak = Math.max(peak, r.revenue); const d = peak > 0 ? (peak - r.revenue) / peak : 0; if (d > dd) { dd = d; at = r.t; } } return { dd, at }; }
 
+// Scenario overrides are numbers, or derived rules that stay true as the base inputs move:
+//   "=util0:0.95"  on mono   -> the revenue ceiling that puts quarter-zero utilisation at 95% (a supply-constrained view)
+//   "=x:1.5"       on any    -> one and a half times the base input (a view that is relative to the base stays relative)
+export function resolveOverrides(base, overrides = {}) {
+  const out = {};
+  for (const [k, v] of Object.entries(overrides)) { if (typeof v !== 'string') out[k] = v; }
+  for (const [k, v] of Object.entries(overrides)) {
+    if (typeof v !== 'string') continue; const m = /^=util0:([\d.]+)$/.exec(v); const x = /^=x:([\d.]+)$/.exec(v);
+    if (m && k === 'mono') { const q = { ...base, ...out }; out[k] = +(q.R0 / (q.K0 * (1 - q.train / 100) * +m[1])).toFixed(1); }
+    else if (x && typeof base[k] === 'number') out[k] = +(base[k] * +x[1]).toFixed(3);   // a multiple of the base input
+  }
+  return out;
+}
 // Parameter values from a state file: { key: { value, ... } } -> { key: value }
-export function paramsOf(state, overrides = {}) { const p = {}; for (const [k, v] of Object.entries(state.params)) p[k] = v.value; return { ...p, ...overrides }; }
+export function paramsOf(state, overrides = {}) { const p = {}; for (const [k, v] of Object.entries(state.params)) p[k] = v.value; return { ...p, ...resolveOverrides(p, overrides) }; }

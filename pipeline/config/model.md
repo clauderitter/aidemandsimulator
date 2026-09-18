@@ -11,6 +11,8 @@ Demand is four segments: AI R&D (rd), software engineering (swe), trading (trd),
 
 **Capability:** `H` (80%-success task horizon, hours) grows by `2^d` per quarter.
 
+**Rates:** `rate = rate0 (neutral) + rateGap (today vs neutral) + rate shocks`; markets and build financing respond to `rate − rate0`.
+
 **Markets:** `M` (index, 1 = neutral) moves with growth surprises (`m_rev × (realised − expected)`), mean-reverts (`lambda`) toward `exp(−m_rate × (rate − rate0))`; expectations adapt at `alpha`. Budgets and builds respond to a smoothed index `Msm` (adjusts `mSmooth` = 40% per quarter toward `M`), so dips pass and sustained moves bite. A breakthrough adds its extra doublings to that quarter's demand pull.
 
 **Supply:** monetisable capacity `= K × (1 − train) × mono × priceMult`. Labs commit builds when revenue extrapolated over `lead` quarters ÷ `targetUtil` exceeds online plus pipeline; commits capped at `buildMax × K` per quarter and scaled by financing `clamp(1 + fin × (M − 1) − r_sens × (rate − rate0), 0, 1.5)`. Capex = builds × `capexGW`. Latent demand may exceed capacity by `overhang` (50%); when it does, realised revenue = `capacity × (1 + scarce × ln(demand/capacity))` (scarcity pricing, `scarce` = 0.5); otherwise revenue = demand.

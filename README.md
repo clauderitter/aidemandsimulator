@@ -19,7 +19,8 @@ Sixteen scenarios encode the market’s bull, bear and structural views; a daily
   `src/research.js` and `src/judge.js` are the researcher and judge agents; `src/roll.js` moves the horizon forward;
   `src/validate.js` enforces schema, bounds, speed limits, the scenario cap and a model smoke test; `src/run.js` orchestrates.
   `config/` holds the watchlist, speed limits, event calendar and the rulebook.
-- `.github/workflows/daily.yml` — runs the pipeline at 07:00 UTC and commits `site/data` as the repository owner.
+- `.github/workflows/daily.yml` — runs the pipeline daily (scheduled 06:23 UTC; GitHub often starts it later), commits `site/data`
+  as the repository owner, and turns red when the agents could not run.
 
 ## How updates work
 

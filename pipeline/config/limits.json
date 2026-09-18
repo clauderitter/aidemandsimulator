@@ -1,5 +1,5 @@
 {
-  "_comment": "Speed limits the judge and the deterministic collectors must respect. abs = max absolute move per run; rel = max relative move per run. Larger moves need two independent sources and are spread over consecutive runs.",
+  "_comment": "Speed limits the judge and the collectors must respect. abs/rel = max move per run (continues on later runs). drift30 / drift30_rel = max net move over any 30 days for assumption-class inputs, so one-directional evidence cannot ratchet them. min/max = hard bounds.",
   "R0": {
     "rel": 0.25,
     "min": 5,
@@ -8,17 +8,20 @@
   "sh_rd": {
     "abs": 5,
     "min": 0,
-    "max": 60
+    "max": 60,
+    "drift30": 10
   },
   "sh_swe": {
     "abs": 5,
     "min": 0,
-    "max": 70
+    "max": 70,
+    "drift30": 10
   },
   "sh_trd": {
     "abs": 5,
     "min": 0,
-    "max": 40
+    "max": 40,
+    "drift30": 10
   },
   "H0": {
     "rel": 0.5,
@@ -33,52 +36,62 @@
   "rdBoost": {
     "abs": 0.1,
     "min": 0,
-    "max": 0.8
+    "max": 0.8,
+    "drift30": 0.1
   },
   "epsX": {
     "abs": 0.2,
     "min": 0,
-    "max": 2.5
+    "max": 2.5,
+    "drift30": 0.2
   },
   "k_rd": {
     "abs": 0.1,
     "min": 0,
-    "max": 0.95
+    "max": 0.95,
+    "drift30": 0.1
   },
   "k_swe": {
     "abs": 0.1,
     "min": 0,
-    "max": 0.95
+    "max": 0.95,
+    "drift30": 0.1
   },
   "k_trd": {
     "abs": 0.1,
     "min": 0,
-    "max": 0.95
+    "max": 0.95,
+    "drift30": 0.1
   },
   "k_oth": {
     "abs": 0.1,
     "min": 0,
-    "max": 0.6
+    "max": 0.6,
+    "drift30": 0.1
   },
   "rho": {
     "abs": 0.15,
     "min": 0,
-    "max": 1
+    "max": 1,
+    "drift30": 0.15
   },
   "betaX": {
     "abs": 0.3,
     "min": 0,
-    "max": 2.5
+    "max": 2.5,
+    "drift30": 0.3
   },
   "m_rev": {
     "abs": 0.2,
     "min": 0,
-    "max": 2
+    "max": 2,
+    "drift30": 0.2
   },
   "m_rate": {
     "abs": 0.05,
     "min": 0,
-    "max": 0.5
+    "max": 0.5,
+    "drift30": 0.05
   },
   "lambda": {
     "abs": 0.1,
@@ -93,7 +106,8 @@
   "subst": {
     "abs": 10,
     "min": 0,
-    "max": 80
+    "max": 80,
+    "drift30": 10
   },
   "K0": {
     "rel": 0.3,
@@ -108,37 +122,44 @@
   "lead": {
     "abs": 1,
     "min": 2,
-    "max": 10
+    "max": 10,
+    "drift30": 2
   },
   "capexGW": {
     "rel": 0.2,
     "min": 5,
-    "max": 150
+    "max": 150,
+    "drift30_rel": 0.3
   },
   "mono": {
     "rel": 0.1,
     "min": 15,
-    "max": 150
+    "max": 150,
+    "drift30_rel": 0.3
   },
   "train": {
     "abs": 10,
     "min": 10,
-    "max": 90
+    "max": 90,
+    "drift30": 15
   },
   "targetUtil": {
     "abs": 0.1,
     "min": 0.4,
-    "max": 1
+    "max": 1,
+    "drift30": 0.1
   },
   "buildMax": {
     "abs": 0.08,
     "min": 0.03,
-    "max": 0.6
+    "max": 0.6,
+    "drift30": 0.1
   },
   "fin": {
     "abs": 0.4,
     "min": 0,
-    "max": 3
+    "max": 3,
+    "drift30": 0.4
   },
   "rate0": {
     "abs": 0.75,
@@ -148,7 +169,8 @@
   "R0x": {
     "rel": 0.5,
     "min": 0,
-    "max": 500
+    "max": 500,
+    "drift30_rel": 0.5
   },
   "H_cap": {
     "rel": 0.5,
@@ -163,7 +185,8 @@
   "orgX": {
     "abs": 0.1,
     "min": 0.3,
-    "max": 3
+    "max": 3,
+    "drift30": 0.3
   },
   "scarce": {
     "abs": 0.1,
@@ -179,5 +202,10 @@
     "abs": 0.1,
     "min": 0,
     "max": 1
+  },
+  "rateGap": {
+    "abs": 0.75,
+    "min": -3,
+    "max": 6
   }
 }

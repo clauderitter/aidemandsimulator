@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import { P, readJSON, writeJSON, today, log } from './util.js';
 import { runAgent } from './llm.js';
 import { RULES } from './rulesets.js';
+import { github } from './gh.js';
 import { simulate, resolveEvents, paramsOf } from '../../site/model.js';
 
 const MEMO_SCHEMA = { type: 'object', additionalProperties: false, properties: {
@@ -32,11 +33,11 @@ function weekDigest(state, changelog) {
   return { lines, capped, stale, params, scen, retired, notes, health, pending, close };
 }
 
-async function github(path, method = 'GET', body = null) {
-  const token = process.env.GITHUB_TOKEN; const repo = process.env.GITHUB_REPOSITORY || 'clauderitter/aidemandsimulator';
-  const res = await fetch(`https://api.github.com/repos/${repo}${path}`, { method, headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'content-type': 'application/json', 'user-agent': 'aidemandsimulator-pipeline' }, body: body ? JSON.stringify(body) : undefined });
-  if (!res.ok && res.status !== 422) throw new Error(`GitHub ${method} ${path}: ${res.status} ${(await res.text()).slice(0, 200)}`);
-  return res.status === 422 ? null : res.json();
+// A memo is due when none has been recorded for the current ISO week, so a failed Monday is retried on later days.
+export function memoDue(now = new Date()) {
+  const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())); const dow = t.getUTCDay() || 7; const monday = new Date(t); monday.setUTCDate(t.getUTCDate() - dow + 1);
+  let files = []; try { files = fs.readdirSync(P('pipeline', 'state', 'memos')); } catch {}
+  return !files.some(f => /^\d{4}-\d{2}-\d{2}\.md$/.test(f) && f.slice(0, 10) >= monday.toISOString().slice(0, 10));
 }
 
 export async function memo(state, cfg, changelog) {
@@ -60,6 +61,12 @@ ${d.lines.join('\n') || 'none'}
 
 ## Parameters that hit a speed limit this week (target carries over automatically)
 ${d.capped.join('\n') || 'none'}
+
+## Cost of the last runs (estimated USD; by agent)
+${readJSON(P('pipeline', 'state', 'usage.json'), []).slice(-8).map(u => `${u.date}: $${u.est_usd} ${JSON.stringify(u.by)} searches ${u.searches} fetches ${u.fetches}`).join('\n') || 'no ledger yet'}
+
+## Scenario fidelity against proponents' stated numbers
+${state.scenarios.filter(s => s.status !== 'retired' && s.fidelity).map(s => `${s.id}: ${s.fidelity.ok ? 'ok' : 'OUT'} — ${s.fidelity.checks.join('; ')}`).join('\n') || 'none anchored'}
 
 ## Calibration ledger
 ${JSON.stringify(state.calibration || {})}
@@ -86,16 +93,16 @@ ${d.notes.join('\n') || 'none recorded'}
 ${d.health.join('\n') || 'no record'}`;
   const tools = [{ name: 'submit_memo', description: 'Submit the weekly memo.', strict: true, input_schema: MEMO_SCHEMA }];
   const mock = () => ({ title: 'Weekly model review (mock)', priority: 'low', summary: 'Mock memo.', items: [{ area: 'data', finding: 'mock', evidence: 'mock', suggestion: 'mock', effect: 'none' }] });
-  const m = await runAgent({ system, user, tools, submitTool: 'submit_memo', maxIters: 3, effort: 'high', mock });
+  const m = await runAgent({ system, user, tools, label: 'memo', submitTool: 'submit_memo', maxIters: 3, effort: 'high', mock });
   if (!m) { log('memo: no output'); return null; }
   const title = `Weekly model review — ${today()}`;
   const body = `**Priority: ${m.priority}**\n\n${m.summary}\n\n` + m.items.map(it => `### ${it.area}: ${it.finding}\n- **Evidence:** ${it.evidence}\n- **Suggestion:** ${it.suggestion}\n- **Expected effect:** ${it.effect}`).join('\n\n') + `\n\n---\nFiled automatically by the pipeline. Context: [changelog](https://github.com/${process.env.GITHUB_REPOSITORY || 'clauderitter/aidemandsimulator'}/blob/main/site/data/changelog.json) · [live site](https://www.aidemandsimulator.com/). Inputs move on their own under the rulebook; anything here needs a commit.`;
-  fs.mkdirSync(P('pipeline', 'state', 'memos'), { recursive: true }); fs.writeFileSync(P('pipeline', 'state', 'memos', `${today()}.md`), `# ${title}\n\n${body}\n`);
-  if (process.env.MEMO_DRY === '1' || !process.env.GITHUB_TOKEN) { log('memo: dry run, not filed'); return { title, body, filed: false }; }
+  const record = () => { fs.mkdirSync(P('pipeline', 'state', 'memos'), { recursive: true }); fs.writeFileSync(P('pipeline', 'state', 'memos', `${today()}.md`), `# ${title}\n\n${body}\n`); };
+  if (process.env.MEMO_DRY === '1' || !process.env.GITHUB_TOKEN) { fs.mkdirSync(P('pipeline', 'work'), { recursive: true }); fs.writeFileSync(P('pipeline', 'work', 'memo-dry.md'), `# ${title}\n\n${body}\n`); log('memo: dry run, not filed'); return { title, body, filed: false }; }
   await github('/labels', 'POST', { name: 'model-review', color: '5b6570', description: 'Weekly review memo from the pipeline' });
   const open = await github('/issues?labels=model-review&state=open&per_page=50');
-  if ((open || []).some(i => i.title === title)) { log('memo: already filed today'); return { title, filed: false }; }
-  const issue = await github('/issues', 'POST', { title, body, labels: ['model-review'] });
+  if ((open || []).some(i => i.title === title)) { log('memo: already filed today'); record(); return { title, filed: false }; }
+  const issue = await github('/issues', 'POST', { title, body, labels: ['model-review'] }); record();
   log('memo filed:', issue && issue.html_url);
   return { title, filed: true, url: issue && issue.html_url };
 }

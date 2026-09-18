@@ -15,9 +15,17 @@ function getClient() {
   return client;
 }
 
-const usageTotal = { input: 0, output: 0, cache_read: 0, calls: 0 };
-export const usage = () => ({ ...usageTotal });
-function addUsage(u) { if (!u) return; usageTotal.input += u.input_tokens || 0; usageTotal.output += u.output_tokens || 0; usageTotal.cache_read += u.cache_read_input_tokens || 0; usageTotal.calls++; }
+// Usage accounting. Cache writes and server-tool requests are billed too, so they are counted; cost is an estimate
+// from list prices ($ per million tokens: input, output; cache write 1.25x input, cache read 0.1x input; web search $10 per 1,000).
+const PRICES = { 'claude-opus-5': [5, 25], 'claude-sonnet-5': [2, 10], 'claude-haiku-4-5': [1, 5], 'claude-fable-5-1': [10, 50] };
+const blank = () => ({ input: 0, output: 0, cache_read: 0, cache_write: 0, searches: 0, fetches: 0, calls: 0 });
+const usageTotal = blank(); const usageBy = {};
+export function costOf(u) { const [pi, po] = PRICES[MODEL] || PRICES['claude-opus-5']; return +(((u.input * pi) + (u.output * po) + (u.cache_write * pi * 1.25) + (u.cache_read * pi * 0.1)) / 1e6 + u.searches * 0.01).toFixed(3); }
+export const usage = () => ({ ...usageTotal, est_usd: costOf(usageTotal), by: Object.fromEntries(Object.entries(usageBy).map(([k, v]) => [k, { ...v, est_usd: costOf(v) }])) });
+function addUsage(u, label = 'other') {
+  if (!u) return; const st = u.server_tool_use || {};
+  for (const t of [usageTotal, (usageBy[label] = usageBy[label] || blank())]) { t.input += u.input_tokens || 0; t.output += u.output_tokens || 0; t.cache_read += u.cache_read_input_tokens || 0; t.cache_write += u.cache_creation_input_tokens || 0; t.searches += st.web_search_requests || 0; t.fetches += st.web_fetch_requests || 0; t.calls++; }
+}
 
 async function createMessage(params) {
   const c = getClient();
@@ -41,7 +49,7 @@ export async function runAgent(o) {
   for (let i = 0; i < (o.maxIters || 10); i++) {
     const params = { model: MODEL, max_tokens: 32000, system: [{ type: 'text', text: o.system, cache_control: { type: 'ephemeral' } }], messages, tools: o.tools, output_config: { effort: o.effort || 'high' }, tool_choice: { type: 'auto' } };
     const msg = await createMessage(params);
-    addUsage(msg.usage);
+    addUsage(msg.usage, o.label);
     if (msg.stop_reason === 'refusal') { log('llm: refusal', msg.stop_details && msg.stop_details.category); return null; }
     const toolUses = msg.content.filter(b => b.type === 'tool_use');
     const sub = toolUses.find(b => b.name === o.submitTool);
