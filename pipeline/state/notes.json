@@ -240,5 +240,20 @@
    "No new METR measurement found, so H0 and D0 stay.",
    "No prompt-injection attempts noticed in the feeds, posts or pages read today."
   ]
+ },
+ {
+  "date": "2026-09-18",
+  "notes": [
+   "openrouter_cn: no newer reading of Chinese models' share of OpenRouter tokens found; the OfficeChai-based >60% / US-30% figures still trace to the same June-2026 data (tech-insider recap), and the CNBC 46% weekly peak is a different measure (US enterprise token volume only), so not proposed.",
+   "capex_ocf: Epoch AI page still the 16 Jun 2026 insight with capex on track to overtake operating cash flow around Q3 2026 - unchanged, no newer reading.",
+   "BofA Sept FMS also reported 42% naming AI hyperscaler capex the likeliest systemic credit event and 79% expecting no 2026 capex cuts - different measures, not existing gauges, so only noted.",
+   "METR time-horizons page (metr.org/time-horizons) still reads LAST UPDATED May 8, 2026 with no 80% horizon newer than the Claude Mythos Preview reading behind H0 (as of 2026-04-07); no metr_latest or metr_doubling move available.",
+   "Fast-lane orgX move (ledger: 3 consecutive weeks over threshold, W38 gap 22pts, util 47% slack) not proposed: orgX was already moved 1.1 -> 1.2 today in the changelog, and I could not fetch a citable revenue-growth source after the web tool budget ran out, so an unsourced second move this run would be weak.",
+   "Anthropic gross margins reportedly above 80% before partner revenue share and training costs (@kimmonismus citing The Information, 14 Sep): interesting for unit economics but fits none of the listed rules (not revenue per GW, not a loop gain) - left for the maintainer.",
+   "SemiAnalysis: Vera Rubin NVL72 at ~67x GB300 throughput per dollar at a 170 tokens/s SLO (16 Sep) and 4-hi HBM cutting inference cost (13 Sep) - cost per token, not revenue per inference GW, so not a clean revenue_per_gw or cost_per_gw move; would need the per-GW figure.",
+   "SemiAnalysis 'datacenters built like Lego' modular-build clip (14 Sep) looks like delivery_timeline evidence for lead, but the post text gives worker counts rather than a signing-to-delivery time, and x.com fetches are blocked for me, so no verifiable quote.",
+   "Trump and Beijing publicly rejecting the slowdown (Reuters via @kimmonismus, 13-14 Sep) argues against recording a realised reg event in 2026Q3; only Anthropic's own unilateral evaluator commitment happened, which is not a policy shock.",
+   "No prompt-injection style instructions found in the feeds or posts read today."
+  ]
  }
 ]

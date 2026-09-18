@@ -1,6 +1,51 @@
 [
  {
   "date": "2026-09-18",
+  "source": "https://darioamodei.com/post/we-must-pace-the-frontier",
+  "kind": "rejected",
+  "target": "scenario:pacing",
+  "old": null,
+  "new": null,
+  "reason": "Gate: shock reg size out of range."
+ },
+ {
+  "date": "2026-09-18",
+  "source": "https://openai.com/index/gpt-6-astra/",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 1,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://openai.com/index/gpt-6-astra/."
+ },
+ {
+  "date": "2026-09-18",
+  "source": "https://www.aaii.com/sentimentsurvey",
+  "kind": "accepted",
+  "target": "gauge:aaii",
+  "old": "33% / 44%",
+  "new": "28.8% / 53.3%",
+  "reason": "AAII's own weekly survey page reports bulls 28.8% and bears 53.3% for the week ending 16 September, a primary and more recent reading of the same measure."
+ },
+ {
+  "date": "2026-09-18",
+  "source": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
+  "kind": "accepted",
+  "target": "gauge:fms_crowded",
+  "old": "53%",
+  "new": "53%",
+  "reason": "September BofA FMS confirms long global semiconductors remains the most crowded trade at 53%, refreshing the as-of date on an unchanged reading."
+ },
+ {
+  "date": "2026-09-18",
+  "source": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
+  "kind": "accepted",
+  "target": "gauge:fms_tailrisk",
+  "old": "32%",
+  "new": "28%",
+  "reason": "September BofA Global FMS directly reports 28% naming an AI bubble the top tail risk, down from 32% in August, a fresh reading of the same measure."
+ },
+ {
+  "date": "2026-09-18",
   "kind": "collected",
   "target": "gauge:growth_check",
   "old": "44% vs 22% per qtr",

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-18T12:19:10.324Z",
+ "generated_at": "2026-09-18T12:32:13.041Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -1327,23 +1327,23 @@
   {
    "id": "fms_tailrisk",
    "label": "“AI bubble” as top tail risk, BofA fund managers",
-   "value": "32%",
-   "sub": "Aug 2026 survey, down from 45% in July",
-   "src": "https://www.trustnet.com/news/13482854/investors-shrug-off-ai-fears-and-turn-bullish-in-august-finds-bofa-survey",
-   "as_of": "2026-08-13",
+   "value": "28%",
+   "sub": "September BofA Global FMS: 28% name an AI bubble the biggest tail risk, down from 32% in August; it is now second behind disorderly bond yields (33%).",
+   "src": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
+   "as_of": "2026-09-17",
    "auto": false,
-   "updated": "2026-09-03",
+   "updated": "2026-09-18",
    "cadence_days": 30
   },
   {
    "id": "fms_crowded",
    "label": "Most crowded trade: long semiconductors",
    "value": "53%",
-   "sub": "Aug 2026, off July’s record 82%; 71% expect no hyperscaler capex cut; cash 3.5%",
-   "src": "https://www.trustnet.com/news/13482854/investors-shrug-off-ai-fears-and-turn-bullish-in-august-finds-bofa-survey",
-   "as_of": "2026-08-13",
+   "sub": "September BofA FMS: long global semiconductors still the most crowded trade at 53%, unchanged from August; survey polled ~170 managers.",
+   "src": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
+   "as_of": "2026-09-17",
    "auto": false,
-   "updated": "2026-09-03",
+   "updated": "2026-09-18",
    "cadence_days": 30
   },
   {
@@ -1359,12 +1359,12 @@
   {
    "id": "aaii",
    "label": "AAII retail investors: bullish / bearish",
-   "value": "33% / 44%",
-   "sub": "week ending 26 Aug 2026",
+   "value": "28.8% / 53.3%",
+   "sub": "AAII weekly survey, week ending 16 Sep: bulls 28.8% vs 33% prior reading, bears 53.3% vs 44%; bull-bear spread -24.5pp, well below the 31.5% bearish average.",
    "src": "https://www.aaii.com/sentimentsurvey",
-   "as_of": "2026-08-26",
+   "as_of": "2026-09-16",
    "auto": false,
-   "updated": "2026-09-03",
+   "updated": "2026-09-18",
    "cadence_days": 7
   },
   {
@@ -1419,7 +1419,8 @@
    "as_of": "2026-07-09",
    "auto": false,
    "updated": "2026-09-03",
-   "cadence_days": 30
+   "cadence_days": 30,
+   "next_check": "2026-09-26"
   },
   {
    "id": "token_index",
@@ -1441,7 +1442,8 @@
    "as_of": "2026-06-16",
    "auto": false,
    "updated": "2026-09-03",
-   "cadence_days": 90
+   "cadence_days": 90,
+   "next_check": "2026-10-02"
   },
   {
    "id": "bonds",
