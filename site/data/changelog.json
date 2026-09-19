@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-09-19",
+  "source": "https://x.com/edzitron/status/2101115669995794554",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.5,
+  "reason": "Gate: monthly drift cap reached for fin (at most ±0.4 around 1 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-09-19",
+  "source": "https://www.axios.com/2026/09/18/anthropic-100-billion-revenue",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.3,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.axios.com/2026/09/18/anthropic-100-billion-revenue."
+ },
+ {
+  "date": "2026-09-19",
+  "source": "https://www.axios.com/2026/09/18/anthropic-100-billion-revenue",
+  "kind": "rejected",
+  "target": "R0_epoch",
+  "old": null,
+  "new": 143.3,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.axios.com/2026/09/18/anthropic-100-billion-revenue."
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-19).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +25%",
+  "new": "+56% vs +25%",
+  "reason": "Observed from source (2026-09-19).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "12.0%",
+  "new": "8.5%",
+  "reason": "Observed from source (2026-09-19).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.4",
+  "new": "14.8",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "270bp",
+  "new": "270bp",
+  "reason": "Observed from source (2026-09-17).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "rateGap",
+  "old": -0.05,
+  "new": 0.2,
+  "reason": "Rule: policy vs neutral = Fed funds effective 3.88% + 0.4 − neutral 4.1%.",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.63%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-17).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-19",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.01%",
+  "new": "4.94%",
+  "reason": "Observed from source (2026-09-17).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-18",
   "source": "https://darioamodei.com/post/we-must-pace-the-frontier",
   "kind": "rejected",

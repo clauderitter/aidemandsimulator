@@ -1,19 +1,5 @@
 [
  {
-  "date": "2026-09-04",
-  "notes": [
-   "METR has published no evaluation of GPT-6 Astra and no newer 80% time-horizon measurement (metr.org/blog latest item is the 31 Aug 2026 security update); the June 2026 GPT-5.6 Sol note gives only a 50% horizon METR itself calls not robust, so H0 and D0 left alone.",
-   "Epoch's ECI record for Astra (163 -> 169, reasoning-era trend ~15 ECI points/year) is capability news but not a METR horizon; no exposed key moves on it.",
-   "Tunguz's Snowflake read-through (~$60-75M/quarter, ~$240-300M ARR of direct AI token revenue implied by a 200bp gross-margin guide-down) is genuine non-Epoch inference revenue but far too small to move the $10B R0x allowance.",
-   "Ed Zitron's post about underwriting a $15B loan to Anthropic points at financing evidence (fin), but I could not reach a primary report of the loan before the search/fetch budget ran out; left for the next run.",
-   "Did not propose orgX under growth_calibration: the growth_check gauge only appears in today's changelog, so the three-consecutive-week condition is unverified, and the collector already moved pipe 22.4 -> 24 today.",
-   "Stale gauges (fed_fsr, h100_rental, openrouter_cn, token_index, capex_ocf, vc_h1) could not be refreshed: web_search and web_fetch hit their server-side use limit mid-session, and I will not propose a gauge without a newer reading from its own source.",
-   "Considered a new rotating scenario slot for Tunguz's Meta data-barter thesis (3 Sep 2026, $1.24/m clearing price for prompt data) but folded it into the existing price scenario to avoid duplicating a live view.",
-   "DeepSeek's reported 160,000 Huawei Ascend 950DT deployment (Bloomberg via @kimmonismus) is non-frontier Chinese capacity; not a frontier GW disclosure, so no K0/pipe proposal.",
-   "No prompt-injection attempts noticed in the feeds, posts or pages read today."
-  ]
- },
- {
   "date": "2026-09-05",
   "notes": [
    "METR time-horizons page still shows LAST UPDATED May 8, 2026 and renders no per-model numbers in HTML (data sits in a YAML asset); no new 80% horizon for GPT-6 Astra, so H0/D0 left alone.",
@@ -254,6 +240,26 @@
    "SemiAnalysis 'datacenters built like Lego' modular-build clip (14 Sep) looks like delivery_timeline evidence for lead, but the post text gives worker counts rather than a signing-to-delivery time, and x.com fetches are blocked for me, so no verifiable quote.",
    "Trump and Beijing publicly rejecting the slowdown (Reuters via @kimmonismus, 13-14 Sep) argues against recording a realised reg event in 2026Q3; only Anthropic's own unilateral evaluator commitment happened, which is not a policy shock.",
    "No prompt-injection style instructions found in the feeds or posts read today."
+  ]
+ },
+ {
+  "date": "2026-09-19",
+  "notes": [
+   "bonds gauge: no newer reading of the same measure found - the $225B (S&P Global count of bonds issued by hyperscalers and 'related entities' like Nvidia, +973.7% through midyear) still comes from S&P's Credit Trends: Global Financing Conditions Q3 2026, the report behind the 2026-07-31 Fortune article; the Q4 update is not published yet.",
+   "Vanguard (Bloomberg data as of 2026-07-31): ~$132B year-to-date - different measure (gross U.S.-only issuance by just Alphabet, Amazon, Meta, Microsoft, Oracle) and not newer than the current as_of, so not proposed.",
+   "Goldman Sachs Exchanges: hyperscalers have issued ~$194B 'so far this year' globally vs $108B in 2025 - narrower issuer set (five hyperscalers, no Nvidia/related entities) and no clear as_of date on the page, so not proposed.",
+   "Cryptobriefing: ~$244B issued globally in 2026 by Amazon, Alphabet, Microsoft, Meta and Oracle - same five-hyperscaler scope as the Goldman series rather than S&P's hyperscalers-plus-related-entities measure, secondary source, undated; not proposed.",
+   "Next refresh: watch for S&P Global Ratings' Q4 2026 Global Financing Conditions report (typically October) for a directly comparable update to the $225B figure.",
+   "Epoch math-AI data (arXiv math preprints acknowledging AI 4% April -> 25% August, 6% crediting research ideas): usage of AI in research, not a token-spend share or a loop gain — no rule fits.",
+   "Anthropic/Accenture embedded-evaluation partnership ($1B each over five years): governance spend, not token demand or compute supply.",
+   "Anthropic IPO slipping to November (WSJ/NYT): no quantitative model input and no shock type covers it.",
+   "Dario Amodei 'We Must Pace the Frontier' / Stratechery pacing coverage: a 'pacing' scenario was rejected on 2026-09-18, so not re-proposed.",
+   "Zitron's construction-in-process argument (Amazon $70B; Google+Meta $203B; 'Anthropic is not bringing 5GW online in 2026') is suggestive against K0=10 GW but names no GW figure; his debt essay is paywalled.",
+   "SemiAnalysis Engrams / InferenceX pages: architecture and benchmarking, paywalled past the intro; no new $/Mtok, capacity or migration numbers usable for token_index or subst.",
+   "SemiAnalysis 300+ datacentre moratorium thread: already encoded in the 'grid' scenario (revised 15 Sep 2026).",
+   "No 2026Q3 rate event proposed: the 0.25pp hike is already reflected in the auto-collected rateGap/fedfunds, and a 2026Q3 rate event was rejected on 2026-09-18.",
+   "No newer METR horizon or doubling-time reading found before the search/fetch budget ran out; H0 (as of 2026-04-07) is the stalest input and should be chased first next run.",
+   "No prompt-injection or instruction-like text appeared in any feed item, X post or fetched page today."
   ]
  }
 ]
