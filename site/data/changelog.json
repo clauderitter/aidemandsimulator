@@ -1,5 +1,68 @@
 [
  {
+  "date": "2026-09-20",
+  "source": "https://vercel.com/blog/ai-gateway-production-index-september-2026",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://vercel.com/blog",
+  "reason": "A fixed-cadence primary feed reporting open-weight versus frontier token share, dollar share and price per token from tens of trillions of monthly production tokens, covering quantities the model tracks and not yet in the watched list."
+ },
+ {
+  "date": "2026-09-20",
+  "source": "https://econlab.substack.com/p/ai-index-sept-2026",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 25,
+  "reason": "Ramp's effective price per million tokens is a blended measure that falls partly because customers shift to cheaper standard models — the same substitution already being recorded in the subst parameter — and splitting the 41% March-to-September decline into an arbitrary 25% Q3 shock is not supported by the quote. Verified against archive snapshot http://web.archive.org/web/20260915113509/https://econlab.substack.com/p/ai-index-sept-2026."
+ },
+ {
+  "date": "2026-09-20",
+  "source": "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 55,
+  "reason": "Gate: monthly drift cap reached for mono (at most ±9 around 30 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-09-20",
+  "kind": "accepted",
+  "target": "subst",
+  "old": 20,
+  "new": 25,
+  "reason": "Unlike the previously rejected spend-mix and adoption-count arguments, this is a primary, token-level production measurement showing open-weight models crossing a majority of routed volume, and the proposed move stays conservative because those tokens are still only 14% of gateway dollars. Rule migration_share; “In August, open-weight models ran 56% of all tokens on AI Gateway, marking the first month they took the majority of volume.”",
+  "source": "https://vercel.com/blog/ai-gateway-production-index-september-2026"
+ },
+ {
+  "date": "2026-09-20",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-20).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-20",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +25%",
+  "new": "+56% vs +25%",
+  "reason": "Observed from source (2026-09-20).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-20",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.5%",
+  "new": "11.6%",
+  "reason": "Observed from source (2026-09-20).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-09-19",
   "source": "https://x.com/edzitron/status/2101115669995794554",
   "kind": "rejected",

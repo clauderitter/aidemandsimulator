@@ -150,6 +150,13 @@
    "kind": "html",
    "match": "/latest",
    "added": "2026-09-17"
+  },
+  {
+   "name": "Vercel AI Gateway Production Index (monthly)",
+   "url": "https://vercel.com/blog",
+   "kind": "html",
+   "match": "/blog",
+   "added": "2026-09-20"
   }
  ],
  "x_handles": [

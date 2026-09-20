@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-19T11:17:26.160Z",
+ "generated_at": "2026-09-20T11:42:54.574Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -393,16 +393,16 @@
    "short": "Assumption: bounded tasks stop pulling demand once the horizon passes a working week."
   },
   "subst": {
-   "value": 20,
+   "value": 25,
    "label": "Migration to non-frontier models",
    "hidden": false,
-   "basis": "Stanford/Together 'Intelligence per Watt' (>1M real queries, 20+ local models): routed local models now answer ~89% of everyday chat and reasoning queries as well as a frontier cloud model, on top of Chinese open-weights above 60% of OpenRouter tokens. (reported, 2026-08-21). New migration evidence beyond the July OpenRouter reading: routed local models match frontier quality on ~89% of everyday queries and cut cost 74% and compute 77% against an all-cloud baseline, with the best local model's win/tie rate rising from 23.2% (2023) to 71.3% (2025). Bounded work has a cheaper credible substitute than 15% implies; +5 keeps subst below the gap/wall scenarios' 25.",
-   "as_of": "2026-08-21",
+   "basis": "Vercel AI Gateway (tens of trillions of production tokens/month): open-weight models ran 56% of all gateway tokens in August 2026, up from under 10% in December 2025, taking 14% of spend — the first direct production-traffic measure of bounded work migrating off frontier endpoints. (estimate, 2026-09-17). Vercel's AI Gateway Production Index (published 17 Sep 2026, data through August) is a primary production-traffic measurement: open-weight models went from 7% of gateway tokens in December 2025 to 56% in August 2026, i.e. the majority of volume, while taking 14% of gateway spend, a dollar share Vercel describes as accelerating as customers move production workloads over. Gavin Baker (@GavinSBaker, 19 Sep 2026) independently reports that on OpenRouter more dollars are now spent on open models than on OpenAI. Counter-evidence keeps the move small: Ramp's September index finds open-source/",
+   "as_of": "2026-09-17",
    "type": "estimate",
-   "source": "https://tomtunguz.com/intelligence-per-watt",
-   "updated": "2026-09-03",
+   "source": "https://vercel.com/blog/ai-gateway-production-index-september-2026",
+   "updated": "2026-09-20",
    "rule": "",
-   "short": "Stanford/Together 'Intelligence per Watt' (>1M real queries, 20+ local models): routed local models now answer ~89% of everyday chat and reasoning queries as well as a frontier cloud model, on top of Chinese open-weights above 60% of OpenRouter tokens."
+   "short": "Vercel AI Gateway (tens of trillions of production tokens/month): open-weight models ran 56% of all gateway tokens in August 2026, up from under 10% in December 2025, taking 14% of spend — the first direct production-traffic measure of bounded work migrating off frontier endpoints."
   },
   "K0": {
    "value": 10,
@@ -772,7 +772,7 @@
     "checks": [
      "ok: 2027Q4 $662B vs $600–1500B"
     ],
-    "date": "2026-09-19"
+    "date": "2026-09-20"
    }
   },
   {
@@ -817,7 +817,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.7 vs ×4–8"
     ],
-    "date": "2026-09-19"
+    "date": "2026-09-20"
    }
   },
   {
@@ -1126,7 +1126,7 @@
      "ok: 2027Q4 $263B vs $225–340B",
      "ok: 2028Q4 $549B vs $395–675B"
     ],
-    "date": "2026-09-19"
+    "date": "2026-09-20"
    }
   },
   {
@@ -1320,9 +1320,9 @@
    "value": "47%",
    "sub": "frontier revenue 118.3 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-19",
+   "as_of": "2026-09-20",
    "auto": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "fms_tailrisk",
@@ -1349,12 +1349,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "8.5%",
-   "sub": "19 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "11.6%",
+   "sub": "20 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-19",
+   "as_of": "2026-09-20",
    "auto": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   },
   {
    "id": "aaii",
@@ -1504,9 +1504,9 @@
    "value": "+56% vs +25%",
    "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.5 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-19",
+   "as_of": "2026-09-20",
    "auto": true,
-   "updated": "2026-09-19"
+   "updated": "2026-09-20"
   }
  ],
  "frozen": [],
