@@ -1,18 +1,5 @@
 [
  {
-  "date": "2026-09-06",
-  "notes": [
-   "METR: no published 50%/80% time horizon for GPT-6 Astra or Claude Fable 5.1 as of 3 Sep 2026 (METR's changelog last adds Claude Mythos Preview, 8 May 2026), so H0=3.1 and D0=4.2 left alone.",
-   "Considered cutting pipe (24 GW) on the same Epoch slowdown evidence, but pipe was re-collected by the calibrator on 2026-09-04 and largest-site plans are not the frontier fleet total; encoded as a scenario instead.",
-   "growth_calibration not invoked: growth_check has shown the 44% vs 18% gap only since 2026-09-04, short of the three-consecutive-week condition for moving orgX.",
-   "SemiAnalysis (4 Sep): OpenAI's 5.6-sol kernel rewrite gives 20% lower serving costs and 15% better token-generation efficiency 'passed into Luna/Terra price cuts' - no size of the price cut disclosed, so no price event or price-scenario update proposed (price scenario was updated 4 Sep anyway).",
-   "Gauges fed_fsr, h100_rental, openrouter_cn, token_index, capex_ocf and vc_h1 remain stale: the search/fetch budget ran out before I could verify a newer reading from each gauge's own source, and I will not propose unverified gauge values.",
-   "Zhipu interim report (>100k Chinese accelerators serving inference) and the AMD MI355x tokens-per-$-TCO result are cost/supply colour, not migration-share or parameter evidence.",
-   "Epoch's own caveat in the same thread ('too soon to tell whether this slowdown will materialize... our sample size is small') is why the new scenario is medium, not high, confidence.",
-   "No prompt-injection or instruction-like text encountered in the feeds or posts read today; the kimmonismus release-hype posts carry no verifiable numbers and were ignored."
-  ]
- },
- {
   "date": "2026-09-07",
   "notes": [
    "METR re-baseline: benchmark_results_1_1.yaml gives claude_mythos_preview_early (2026-04-07) p80 = 185.9 min = 3.10 h and from_2023_on doubling 128.744 days = 4.23 months; H0=3.1 and D0=4.2 already match and the METR page was last updated 8 May 2026, so no metr_latest/metr_doubling proposal.",
@@ -260,6 +247,20 @@
    "Ed Zitron's posts this week ($750bn compute spend) restate the existing 'contagion'/'gap' bear case with no new numbers.",
    "No prompt-injection or instruction-like content encountered in the feeds, X posts or fetched pages this run.",
    "Search budget was exhausted before capacity (K0/pipe/history_K), financing and correlation leads could be checked; no capacity, financing or rho proposal this run."
+  ]
+ },
+ {
+  "date": "2026-09-21",
+  "notes": [
+   "METR time-horizons page fetched: 'LAST UPDATED May 8, 2026', no measurement newer than Claude Mythos Preview — no metr_latest (H0 5.08) or metr_doubling (D0 4.2) proposal this week; both re-baseline to their current values.",
+   "Weekly re-baseline, no gaps beyond per-run limits, so no rebaseline proposals: R0_epoch ~108 (Epoch's disclosed sum, $105B combined in August, collector value 108.3); H0 5.08 and D0 4.2 (METR unchanged since May); K0 ~10 GW (Anthropic ~5 GW by end-2026 implies ~4-4.5 GW online now, OpenAI ~3-4 GW online against 10 GW contracted, plus Google/xAI frontier inference); pipe ~22-26 GW over six quarters (Anthropic ~10 GW by end-2027, OpenAI low-double-digit GW in 2027); train 50, capexGW 54, sh_rd 20, sh_swe 20, sh_trd 15 — no new evidence on any of them.",
+   "Calibration ledger: fast lane open (gap 22pts, 4 consecutive weeks) and quarter zero has slack, so the nominated handle is orgX. Deliberately not proposed: orgX is already at 1.2 and the ±0.1 cap lifts modelled quarter-zero growth by only ~2pts, well under a quarter of the 22pt gap, and orgX→1.3 was rejected on 19 Sep. Per the growth_calibration proviso this is a structural gap for the weekly review (R0 level and loop gains), which is why I moved k_swe on segment evidence instead.",
+   "Crypto Briefing (18 Sep): Anthropic targeting ~10 GW by end-2027, ~5 GW by end-2026 from ~1.4 GW at end-2025. Not proposed — AI-edited secondary aggregator of earlier deal announcements, and the numbers sit inside the current K0 = 10 and pipe = 26; would have argued pipe slightly lower, which the compute-constrained calibration stance does not support.",
+   "Vercel AI Gateway Production Index, September 2026 (open-weight 56% of tokens, 14% of spend; price per token -23.2% in August): already applied as subst 20 → 25 on 20 Sep, not re-proposed. Its gateway price-per-token series is not the token_index gauge's own source, so no gauge proposal.",
+   "Stratechery 'Frontier Overhangs' (21 Sep) and the Econ Lab / Cahn / Zvi / Import AI blocked feeds were not read: server tool budget exhausted. Flagging for next run — Ben Thompson is a 'middle' scenario proponent and the piece may carry overhang numbers.",
+   "No scenario_new proposed: the week's candidates either lack two attributable numbers (Stratechery overhangs, unread), duplicate active scenarios (Anthropic capacity → physics/nvfactory; Vercel migration → price), or were already rejected (scenario:pacing, 18 Sep). No proponent recanted, so no retire; boom/takeoff/middle all read within their stated ranges, so no scenario_update.",
+   "No event proposal for 2026Q3: the 25bp Fed move is already carried by rateGap 0.2 / fedfunds 3.88%, and equivalent 2026Q3 event proposals were rejected on 18 and 20 Sep.",
+   "Prompt-injection check: nothing in the feeds or X posts addressed instructions to an agent. The @kimmonismus posts are unsourced release rumours (GPT-6-Sol, Opus 5.5, Grok 4.7) and were ignored as unquantified; the SemiAnalysis threads this week were networking/teardown technical content with no demand or capacity numbers."
   ]
  }
 ]

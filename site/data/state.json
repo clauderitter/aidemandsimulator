@@ -1,20 +1,20 @@
 {
  "version": 1,
- "generated_at": "2026-09-20T11:42:54.574Z",
+ "generated_at": "2026-09-21T13:09:19.900Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
  "scenario_cap": 20,
  "params": {
   "R0": {
-   "value": 118.3,
+   "value": 123.3,
    "label": "Frontier token revenue",
    "hidden": false,
    "basis": "Anthropic run-rate $65B at end-July 2026 (Bloomberg, 17 Aug 2026; the path ran $14B Feb → $30B Apr → $47B May → $65B Jul) with investors expecting $100–120B by year-end; OpenAI $40B (Bloomberg, 13 Aug 2026); Epoch puts the two at $105B combined, up 3.5× since January. Google does not break out Gemini API revenue; Z.ai, MiniMax, DeepSeek, xAI and Mistral add a few billion. Rounded sum entering Q3 2026.",
-   "as_of": "2026-09-03",
+   "as_of": "2026-09-21",
    "type": "derived",
    "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "updated": "2026-09-03",
+   "updated": "2026-09-21",
    "rule": "R0 = R0_epoch + R0x, derived in one place",
    "short": "Total frontier revenue run-rate = Epoch’s disclosed sum + the undisclosed allowance. Derived; edit the two parts."
   },
@@ -549,15 +549,15 @@
    "short": "Latent demand may exceed monetisable capacity by up to this fraction; the excess is served at scarcity prices."
   },
   "R0x": {
-   "value": 10,
+   "value": 15,
    "label": "Undisclosed frontier revenue (est.)",
    "hidden": false,
    "basis": "Google does not break out Gemini API revenue, and Meta, Microsoft and Amazon run frontier-class inference internally; none appears in Epoch’s disclosed run-rates. Azeem Azhar puts generative-AI revenue above a $175B run-rate in June 2026 against ~$105B disclosed by the two big labs at the time, so an allowance of roughly $10B is a conservative reading. Estimate; the researcher may move it with sourced evidence.",
    "short": "Allowance for frontier revenue outside Epoch’s disclosed set (Gemini API, hyperscaler-native inference). Estimate, moved only with sourced evidence.",
-   "as_of": "2026-06-25",
+   "as_of": "2026-08-27",
    "type": "estimate",
-   "source": "https://www.exponentialview.co/p/the-state-of-the-ai-economy",
-   "updated": "2026-09-03",
+   "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
+   "updated": "2026-09-21",
    "rule": "analyst or company evidence on undisclosed frontier revenue"
   },
   "H_cap": {
@@ -770,9 +770,9 @@
    "fidelity": {
     "ok": true,
     "checks": [
-     "ok: 2027Q4 $662B vs $600–1500B"
+     "ok: 2027Q4 $657B vs $600–1500B"
     ],
-    "date": "2026-09-20"
+    "date": "2026-09-21"
    }
   },
   {
@@ -817,7 +817,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.7 vs ×4–8"
     ],
-    "date": "2026-09-20"
+    "date": "2026-09-21"
    }
   },
   {
@@ -1123,10 +1123,10 @@
    "fidelity": {
     "ok": true,
     "checks": [
-     "ok: 2027Q4 $263B vs $225–340B",
-     "ok: 2028Q4 $549B vs $395–675B"
+     "ok: 2027Q4 $256B vs $225–340B",
+     "ok: 2028Q4 $536B vs $395–675B"
     ],
-    "date": "2026-09-20"
+    "date": "2026-09-21"
    }
   },
   {
@@ -1320,9 +1320,9 @@
    "value": "47%",
    "sub": "frontier revenue 118.3 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-20",
+   "as_of": "2026-09-21",
    "auto": true,
-   "updated": "2026-09-20"
+   "updated": "2026-09-21"
   },
   {
    "id": "fms_tailrisk",
@@ -1349,12 +1349,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "11.6%",
-   "sub": "20 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "9.2%",
+   "sub": "21 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-20",
+   "as_of": "2026-09-21",
    "auto": true,
-   "updated": "2026-09-20"
+   "updated": "2026-09-21"
   },
   {
    "id": "aaii",
@@ -1501,12 +1501,12 @@
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "+56% vs +25%",
-   "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.5 a year)",
+   "value": "+56% vs +24%",
+   "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-20",
+   "as_of": "2026-09-21",
    "auto": true,
-   "updated": "2026-09-20"
+   "updated": "2026-09-21"
   }
  ],
  "frozen": [],
@@ -1550,9 +1550,16 @@
     "gObs": 0.4418,
     "gMod": 0.2179,
     "gap": 0.2239
+   },
+   {
+    "week": "2026-W39",
+    "date": "2026-09-21",
+    "gObs": 0.4418,
+    "gMod": 0.2177,
+    "gap": 0.224
    }
   ],
-  "weeks_at_gap": 3,
+  "weeks_at_gap": 4,
   "fast_lane": true,
   "util0": 0.473
  }

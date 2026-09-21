@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-09-21",
+  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
+  "kind": "rejected",
+  "target": "k_swe",
+  "old": null,
+  "new": 0.7,
+  "reason": "The quote reports combined OpenAI/Anthropic total revenue growth, not software-engineering token spend or any revenue returned to token purchases, so it speaks to the level and growth of the market rather than to the SWE loop gain."
+ },
+ {
+  "date": "2026-09-21",
+  "kind": "collected",
+  "target": "R0",
+  "old": 118.3,
+  "new": 123.3,
+  "reason": "Derived: Epoch disclosed sum 108.3 + undisclosed allowance 15.",
+  "source": ""
+ },
+ {
+  "date": "2026-09-21",
+  "kind": "accepted",
+  "target": "R0x",
+  "old": 10,
+  "new": 15,
+  "reason": "Epoch's 27 August figures put the whole generative-AI market near $200B/year against ~$100B for the two disclosed labs, a fresher and directly relevant bound on the undisclosed residual, and $15B remains a small, conservative fraction of it. Rule undisclosed_estimate; “Anthropic and OpenAI together are now earning revenue at a rate of $100 billion per year. Exponential View estimates that the whole generati”",
+  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number"
+ },
+ {
+  "date": "2026-09-21",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-09-21).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-21",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +25%",
+  "new": "+56% vs +24%",
+  "reason": "Observed from source (2026-09-21).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-21",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "11.6%",
+  "new": "9.2%",
+  "reason": "Observed from source (2026-09-21).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-09-20",
   "source": "https://vercel.com/blog/ai-gateway-production-index-september-2026",
   "kind": "accepted",
