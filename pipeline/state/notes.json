@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-09-07",
-  "notes": [
-   "METR re-baseline: benchmark_results_1_1.yaml gives claude_mythos_preview_early (2026-04-07) p80 = 185.9 min = 3.10 h and from_2023_on doubling 128.744 days = 4.23 months; H0=3.1 and D0=4.2 already match and the METR page was last updated 8 May 2026, so no metr_latest/metr_doubling proposal.",
-   "R0 re-baseline: no primary report newer than the collector's Epoch sum (108.3); R0x left at 10 (a raise to 13 was rejected on 6 Sep, and Azeem Azhar's '$229bn AI revenue' headline covers all AI revenue, not the frontier disclosed set - the Substack page would not fetch).",
-   "Re-baseline of K0 (10 GW), pipe (24), train (60), capexGW (54), sh_rd/sh_swe/sh_trd (20/15/15): no new sourced figure today; my from-scratch figures are within the per-run limits of the current values, so no rebaseline proposals.",
-   "Epoch's finances topic page still cites ~$38B up-front capex for a typical 1 GW AI datacentre, below capexGW=54, but it predates the 26 Aug Nvidia per-GW evidence that set 54; not proposed.",
-   "247wallst (2 Sep) reports AMD holding 8 GW of combined Anthropic/OpenAI compute deals plus Anthropic's $35B Lambda commitment; secondary source, and pipe was collector-updated to 24 on 4 Sep, so not proposed.",
-   "openrouter_cn gauge: only June-July 2026 readings found (61% of top-10 model tokens; ~46% platform-wide per CNBC/OpenRouter data), nothing newer than the 9 Jul reading, so no gauge proposal.",
-   "fed_fsr, h100_rental, token_index, capex_ocf, vc_h1: no newer reading located before the fetch/search budget ran out; left stale rather than proposing a same-date value.",
-   "Nvidia's reported $2.5B investment in Thinking Machines and the Malaysia/Huawei chip story carry numbers but map to no exposed key; noted only.",
-   "web_fetch and web_search budgets were exhausted mid-run; some quotes come from the search engine's rendering of the source page (openai.com, unite.ai, epoch.ai) rather than a direct fetch.",
-   "No prompt-injection attempts spotted in the feeds or X posts read today."
-  ]
- },
- {
   "date": "2026-09-08",
   "notes": [
    "fed_fsr — fetched the Fed's May 2026 Financial Stability Report accessible-tables page; still the most recent edition (FSR is semiannual, next due ~Oct/Nov 2026), so no newer reading than 50% as of 2026-05-01.",
@@ -261,6 +246,22 @@
    "No scenario_new proposed: the week's candidates either lack two attributable numbers (Stratechery overhangs, unread), duplicate active scenarios (Anthropic capacity → physics/nvfactory; Vercel migration → price), or were already rejected (scenario:pacing, 18 Sep). No proponent recanted, so no retire; boom/takeoff/middle all read within their stated ranges, so no scenario_update.",
    "No event proposal for 2026Q3: the 25bp Fed move is already carried by rateGap 0.2 / fedfunds 3.88%, and equivalent 2026Q3 event proposals were rejected on 18 and 20 Sep.",
    "Prompt-injection check: nothing in the feeds or X posts addressed instructions to an agent. The @kimmonismus posts are unsourced release rumours (GPT-6-Sol, Opus 5.5, Grok 4.7) and were ignored as unquantified; the SemiAnalysis threads this week were networking/teardown technical content with no demand or capacity numbers."
+  ]
+ },
+ {
+  "date": "2026-09-22",
+  "notes": [
+   "orgX / growth_calibration: ledger shows 4 consecutive weeks over 0.05 (26, 25, 22, 22pts) and the fast lane open, util0 49% so slack points to orgX. Deliberately NOT proposed: the gap is ~0.22 log/quarter, a quarter of it is ~0.056 log/quarter, and orgX at its +0.1 bound (1.2 -> 1.3) scales only the organic component (~8% of it), which cannot plausibly deliver that. Per the rule this is a structural gap for the weekly review, not a calibration move (consistent with the 2026-09-19 rejection of orgX 1.3).",
+   "R0_epoch: NYT/Bloomberg-sourced reporting (via FourWeekMBA, ~19 Sep) says Anthropic's run rate is expected to exceed $100B this year, and OpenAI is reported at $40B ARR in August; both are expectations or already inside the collector's daily sum, and a 143.3 proposal was rejected on 2026-09-19. Left to the collector.",
+   "H0 / D0: checked metr.org/time-horizons and the full metr.org/notes index - no new time-horizon measurement since the March 2026 Claude Mythos Preview run; the only new datapoint is UK AISI's no-CoT horizon for GPT-6 Astra (30.9 min), a different metric, so metr_latest/metr_doubling have nothing to move.",
+   "SB Energy S-1 (8.8 GW-IT contracted, ~$439B backlog of which ~$430B data centres, not a single site online, IPO under pressure/pulled per @edzitron 22 Sep): considered for pipe (capacity_disclosure) and fin (financing_evidence). Not proposed - the backlog is explicitly back-loaded and unbuilt, so it says little about GW arriving within six quarters, and a fin 1.4 -> 1.5 move was rejected on 2026-09-19. Worth a pinned watch if the IPO withdrawal is confirmed by a primary filing.",
+   "SemiAnalysis 'Computation and Data Movement for Inference' (21 Sep): technical MoE serving piece, no $/GW, revenue-per-MW or utilisation numbers, so nothing for mono, revenue_per_gw or train.",
+   "Tunguz 'AI Comes for the If Statement' as a scenario_new: rejected by me because the active 'price' scenario already cites Tunguz and the commoditisation/two-tier-pricing view; the new essay adds a mechanism (zero-token typed execution, two orders of magnitude on production primitives) but lands on the same exposed keys (subst, price shock), so it is already represented.",
+   "Gavin Baker on Vercel (over $500M run-rate, 130%+ growth, NDR 130%+, 400k paying customers, 21 Sep): considered as feedback_evidence for k_swe (130% a year against the implied x4.4 for software), but Vercel's total revenue is not segment token spend and includes non-AI hosting; a k_swe move was also rejected on 2026-09-21. Noted only.",
+   "GPT-6 Astra / GPT-6-Sol / Opus 5.5 / MiMo-2.6 / Grok 4.7 release cluster: a 2026Q3 'release' event is arguable, but my web tool budget ran out before I could fetch a primary page to verify a verbatim quote, so I did not propose an unverified event.",
+   "The Information via @kimmonismus: 'OpenAI has largely automated the process of training new experimental models' - relevant to rdBoost, which is a maintainer-set constant and not proposable; no quantitative figure attached in any case.",
+   "Vercel AI Gateway monthly index: no new September reading in the feed (the listed Vercel posts are engineering blogs), so the August open-weight share already applied on 2026-09-20 stands.",
+   "No prompt-injection or instruction-like content was encountered in any fetched page or post today."
   ]
  }
 ]

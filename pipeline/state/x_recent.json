@@ -1,253 +1,5 @@
 [
  {
-  "handle": "edzitron",
-  "id": "2097895591116161318",
-  "at": "2026-09-10T03:51:00.000Z",
-  "text": "This is all so strange. Why are you glad he spoke out? Do you…think what Anthropic is doing bad? What is it you think he’s calling attention to and why don’t you resign too if you agree? https://t.co/rIRwNuauKK",
-  "likes": 971,
-  "url": "https://x.com/edzitron/status/2097895591116161318"
- },
- {
-  "handle": "edzitron",
-  "id": "2097894914814075128",
-  "at": "2026-09-10T03:48:19.000Z",
-  "text": "I got six weeks from this business insider story\n https://t.co/Yl5fbyrD7x\nWhich has now been stealth edited to say “earlier this year,” seems like four months is the consensus. Doesn’t change much about what I said! https://t.co/GPgahMkCwb",
-  "likes": 70,
-  "url": "https://x.com/edzitron/status/2097894914814075128"
- },
- {
-  "handle": "edzitron",
-  "id": "2097846655487820149",
-  "at": "2026-09-10T00:36:33.000Z",
-  "text": "This guy worked at Anthropic for six weeks! He worked at OpenAI years before that! He won’t even explain what it is he’s scared of outside of some vague assertion about recursive self improvement, which is still theoretical! This is “something big is happening” all over again https://t.co/c21Fgfh6vB",
-  "likes": 3049,
-  "url": "https://x.com/edzitron/status/2097846655487820149"
- },
- {
-  "handle": "edzitron",
-  "id": "2097712294188683689",
-  "at": "2026-09-09T15:42:39.000Z",
-  "text": "Ouuwouuheeehee our model is too popular you better sign up for pro before we close subscriptions!! https://t.co/ix4zXl3klL",
-  "likes": 946,
-  "url": "https://x.com/edzitron/status/2097712294188683689"
- },
- {
-  "handle": "edzitron",
-  "id": "2097707602683556256",
-  "at": "2026-09-09T15:24:00.000Z",
-  "text": "https://t.co/t4CEfTSRgk https://t.co/ODtHcB6J5a",
-  "likes": 897,
-  "url": "https://x.com/edzitron/status/2097707602683556256"
- },
- {
-  "handle": "edzitron",
-  "id": "2097705809643765902",
-  "at": "2026-09-09T15:16:53.000Z",
-  "text": "The AI industry https://t.co/V6mmWNT7xI https://t.co/9PVHFAgrsv",
-  "likes": 382,
-  "url": "https://x.com/edzitron/status/2097705809643765902"
- },
- {
-  "handle": "edzitron",
-  "id": "2097700353424642173",
-  "at": "2026-09-09T14:55:12.000Z",
-  "text": "We put people in jail for hacking, including people who use scripts. This is not a complex moral, ethical or legal situation, and the only difference is that they're doing it in public and boasting about it. How are Anthropic and OpenAI not committing felony hacking?",
-  "likes": 149,
-  "url": "https://x.com/edzitron/status/2097700353424642173"
- },
- {
-  "handle": "edzitron",
-  "id": "2097700223417995294",
-  "at": "2026-09-09T14:54:41.000Z",
-  "text": "\"But China might do this!\" doesn't answer \"why are American companies doing this?\" - this is clearly a situation where OpenAI and Anthropic built something they were aware would mindlessly bash its head (and millions of dollars of compute) against systems in response to prompts",
-  "likes": 104,
-  "url": "https://x.com/edzitron/status/2097700223417995294"
- },
- {
-  "handle": "edzitron",
-  "id": "2097700013220536349",
-  "at": "2026-09-09T14:53:51.000Z",
-  "text": "Brute-force hacking using GPUs has existed for over a decade, albeit using different techniques. The \"innovation\" here is that we actually dedicated resources *from two companies that raised $217bn this year* to find better ways to do it.\nhttps://t.co/HiCj4JxqrQ",
-  "likes": 73,
-  "url": "https://x.com/edzitron/status/2097700013220536349"
- },
- {
-  "handle": "edzitron",
-  "id": "2097699923944702290",
-  "at": "2026-09-09T14:53:29.000Z",
-  "text": "There is really no economic reason to do the LLM cybersecurity stuff. They're hitting the ceiling of LLM code (and I've read people are not liking how Astra writes it!) and so they went for something else where they could find lots of training data. It's cynical and dangerous.",
-  "likes": 163,
-  "url": "https://x.com/edzitron/status/2097699923944702290"
- },
- {
-  "handle": "edzitron",
-  "id": "2097689846470820121",
-  "at": "2026-09-09T14:13:27.000Z",
-  "text": "it's unclear whether this is a rationalist-poisoned guy or just a deeply cynical valley guy but if you truly think this is what you and your peers are doing this is a very strange way to act. It also, as ever, doesn't deal with the actual harms happening today",
-  "likes": 314,
-  "url": "https://x.com/edzitron/status/2097689846470820121"
- },
- {
-  "handle": "edzitron",
-  "id": "2097689229975249268",
-  "at": "2026-09-09T14:11:00.000Z",
-  "text": "AI* has a &gt;10%** chance to kill us all\n*not the AI we're working on but some other AI that we'll build for sure if you keep funding the company I work at\n**number I made up based on a still-theoretical technology that nobody has but we all love talking about https://t.co/JuFMgNJzrI https://t.co/MxWrR7hgfh",
-  "likes": 1694,
-  "url": "https://x.com/edzitron/status/2097689229975249268"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2097727367334539363",
-  "at": "2026-09-09T16:42:32.000Z",
-  "text": "AI locks China and the US in a prisoner's dilemma. But the sharper dilemma is between China and its own people: the Party can't afford to allow broad access to powerful AI, and it can't afford to withhold it.",
-  "likes": 1,
-  "url": "https://x.com/drorpoleg/status/2097727367334539363"
- },
- {
-  "handle": "sama",
-  "id": "2097776310940569783",
-  "at": "2026-09-09T19:57:01.000Z",
-  "text": "Welcome, Paul.\n\nGrateful you are doing this, and all you have done for AI safety. Excited to work together again. https://t.co/k6NUqN6Lsd",
-  "likes": 3771,
-  "url": "https://x.com/sama/status/2097776310940569783"
- },
- {
-  "handle": "sama",
-  "id": "2097696043492143157",
-  "at": "2026-09-09T14:38:04.000Z",
-  "text": "ocarina of time remake is the best news in a long time.\n\ni will be unavailable november 5 and 6; need to find a case of mountain dew.",
-  "likes": 15441,
-  "url": "https://x.com/sama/status/2097696043492143157"
- },
- {
-  "handle": "sama",
-  "id": "2097695001341829212",
-  "at": "2026-09-09T14:33:56.000Z",
-  "text": "This would suck, but we will prioritize great service for customers until we can get back on top of things. https://t.co/Qi5ssKJic6",
-  "likes": 7381,
-  "url": "https://x.com/sama/status/2097695001341829212"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2098005361512906830",
-  "at": "2026-09-10T11:07:11.000Z",
-  "text": "Jacob Coxon, ex-Anthropic whose AI-doom-post went viral (143 million impressions after 24 hours) said on Fox News:\n\n\"We know how to control nuclear weapons... We don't yet know how to control AI.\"\n\nand\n\n\"possibly the most dangerous technology that humanity has ever created.\"",
-  "likes": 149,
-  "url": "https://x.com/kimmonismus/status/2098005361512906830"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097998928960479666",
-  "at": "2026-09-10T10:41:38.000Z",
-  "text": "Keep in mind how much more capable their internal model reportedly was just a week ago. That’s why I suspect there’s more to this than rumors. If it really solved a Millennium Prize Problem that quickly, it would make sense for OpenAI to push to solve more of them, especially https://t.co/s6NwQHN9bN",
-  "likes": 73,
-  "url": "https://x.com/kimmonismus/status/2097998928960479666"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097990443690496402",
-  "at": "2026-09-10T10:07:55.000Z",
-  "text": "Holy, rumors are spreading everywhere that  OpenAI is close to verifying a proof of the Hodge conjecture, while either OpenAI or Anthropic may be nearing a solution to Birch–Swinnerton-Dyer.\n\nBoth are Millennium Prize Problems that have resisted decades of mathematical research.",
-  "likes": 1785,
-  "url": "https://x.com/kimmonismus/status/2097990443690496402"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097970735591366804",
-  "at": "2026-09-10T08:49:36.000Z",
-  "text": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. \n\nIt matches or beats GPT-5.6 Sol on several coding and agent benchmarks, according to DeepSeek’s tests, at a fraction of the token price (-94%!)\n\nFor example: on DeepSWE, a software engineering https://t.co/aned0hQ1e8 https://t.co/HSjEQnUxlM",
-  "likes": 412,
-  "url": "https://x.com/kimmonismus/status/2097970735591366804"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097962333767102665",
-  "at": "2026-09-10T08:16:13.000Z",
-  "text": "DeepSeek just released V4.1-Flash with a new architecture, six weeks after its July V4-Flash update.\n\nJuly’s release improved post-training while keeping the architecture unchanged. (Same with GLM-5.3/Flash) V4.1 introduces a Causal Encoder–Decoder architecture with native visual https://t.co/9hGFjKlhtW https://t.co/FMYmziN6Hs",
-  "likes": 324,
-  "url": "https://x.com/kimmonismus/status/2097962333767102665"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097792817745551364",
-  "at": "2026-09-09T21:02:37.000Z",
-  "text": "Going to get some sleep now. See you tomorrow :))",
-  "likes": 34,
-  "url": "https://x.com/kimmonismus/status/2097792817745551364"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097791769148629470",
-  "at": "2026-09-09T20:58:27.000Z",
-  "text": "I would like to sincerely thank you all again for the support I received regarding the new original content rewards program.\n\nThanks to the appeal, I was accepted into the program. I was particularly touched by the many messages I received this morning when I was feeling a bit https://t.co/kBCi4oKAAO",
-  "likes": 571,
-  "url": "https://x.com/kimmonismus/status/2097791769148629470"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097764932204769572",
-  "at": "2026-09-09T19:11:49.000Z",
-  "text": "Here we go again: Anthropic says Claude’s real-world cyber incidents exposed more serious alignment failures than it initially acknowledged.\n\nIts new assessment covers four incidents during misconfigured security evaluations, with normal cyber safeguards disabled.\n\nMythos 5 https://t.co/JUUPu7MHTI https://t.co/oi631iJ1LP",
-  "likes": 584,
-  "url": "https://x.com/kimmonismus/status/2097764932204769572"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097762856598966401",
-  "at": "2026-09-09T19:03:34.000Z",
-  "text": "Foldables have been around for a long time. But Apple has managed to make it truly seamless, implemented intuitively and sensibly. It’s going to be a bestseller. https://t.co/QJRU6Rj4qa",
-  "likes": 691,
-  "url": "https://x.com/kimmonismus/status/2097762856598966401"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097752551588343855",
-  "at": "2026-09-09T18:22:37.000Z",
-  "text": "A brief summary of the Apple keynote:\n\nAll the rumors and leaks were confirmed, and the flagship is, of course, the iPhone Duo. And I have to say, even if some won't like to hear it, I think it's fantastic. For the first time, I see a real use case for a foldable device because https://t.co/RUmRpICKwO https://t.co/nIqOiLhCC4",
-  "likes": 424,
-  "url": "https://x.com/kimmonismus/status/2097752551588343855"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097748440625119509",
-  "at": "2026-09-09T18:06:17.000Z",
-  "text": "Im sold on the iphone fold https://t.co/msPaujnLaI",
-  "likes": 12,
-  "url": "https://x.com/kimmonismus/status/2097748440625119509"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097747404065845710",
-  "at": "2026-09-09T18:02:10.000Z",
-  "text": "I genuinely love how absurd the AI industry is.\n\nYesterday OpenAI said an internal model solved a Millennium Prize Problem. Frontier labs are racing toward something that looks like superintelligence.\n\nMeanwhile, one layer down, the companies that sell access to those models are https://t.co/qgXuzIbppn",
-  "likes": 247,
-  "url": "https://x.com/kimmonismus/status/2097747404065845710"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097746522465071231",
-  "at": "2026-09-09T17:58:39.000Z",
-  "text": "Very well redesigned https://t.co/QfUuFqsW4g",
-  "likes": 11,
-  "url": "https://x.com/kimmonismus/status/2097746522465071231"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097745841725284395",
-  "at": "2026-09-09T17:55:57.000Z",
-  "text": "iPhone Duo, official https://t.co/Moqm9RD2h1",
-  "likes": 69,
-  "url": "https://x.com/kimmonismus/status/2097745841725284395"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2097744473803325624",
-  "at": "2026-09-09T17:50:31.000Z",
-  "text": "Audio Intelligence and Siri Recap is a big surprise",
-  "likes": 7,
-  "url": "https://x.com/kimmonismus/status/2097744473803325624"
- },
- {
   "handle": "kimmonismus",
   "id": "2097740749131391318",
   "at": "2026-09-09T17:35:43.000Z",
@@ -4798,5 +4550,253 @@
   "text": "Had a really interesting discussion with @ElliotGlazer about the speculation fueled by reporting from The Information and others that another Millennium Prize Problem may be close to being solved.\n\nHe’s skeptical. His view is that OpenAI may have made significant progress on a https://t.co/LTf8e7Skz9",
   "likes": 136,
   "url": "https://x.com/kimmonismus/status/2101649579720536312"
+ },
+ {
+  "handle": "dylan522p",
+  "id": "2102208035225760191",
+  "at": "2026-09-22T01:27:07.000Z",
+  "text": "I wanted to use this photo because it's the actual package and looks way cooler.\nThe black area above is the DRAM but not milled yet. \nCross section from our Hitachi XTEM coming soon 🤫 https://t.co/iWyTyW4rRP https://t.co/RMwK2bljPP",
+  "likes": 122,
+  "url": "https://x.com/dylan522p/status/2102208035225760191"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2102248478109831673",
+  "at": "2026-09-22T04:07:49.000Z",
+  "text": "Huawei has extremely strong and passionate, yet kind and friendly, software and hardware engineers. Their open-source Ascend inference engines are making good progress! https://t.co/PoNql8xnFn",
+  "likes": 98,
+  "url": "https://x.com/SemiAnalysis_/status/2102248478109831673"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2102166044374716428",
+  "at": "2026-09-21T22:40:15.000Z",
+  "text": "These are the types of datasets we track in ChipBook to see where the goods actually show up before the announcements are out. Check it out here.👇️(3/3)\nhttps://t.co/geycIFHBmg",
+  "likes": 23,
+  "url": "https://x.com/SemiAnalysis_/status/2102166044374716428"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2102166043108004235",
+  "at": "2026-09-21T22:40:15.000Z",
+  "text": "ChipBook August data caught a +467% YoY jump in HBM exports from Korea to Malaysia, ~$3B in just two months.\n\nWe attribute this primarily to Intel's advanced packaging capacity in Penang, with LinkedIn showing ~50 back-end job openings in Malaysia. Not an insignificant number. https://t.co/JKpqyDk9ml",
+  "likes": 71,
+  "url": "https://x.com/SemiAnalysis_/status/2102166043108004235"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2102166041308561830",
+  "at": "2026-09-21T22:40:15.000Z",
+  "text": "Is EMIB really chipping away at CoWoS?\n\nCoWoS has owned advanced packaging for years. TSMC keeps adding capacity aggressively but it still isn't enough to satisfy customer demand.\n\nIntel stepped in with a compelling alternative with EMIB — and customers are responding. (1/3)🧵 https://t.co/SyqT8HkFD9",
+  "likes": 272,
+  "url": "https://x.com/SemiAnalysis_/status/2102166041308561830"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2102102451365020153",
+  "at": "2026-09-21T18:27:34.000Z",
+  "text": "Computation and Data Movement for Inference\nMapping MoE models onto inference hardware: structure, flow, and efficient serving \nhttps://t.co/3HCjoVu1r4",
+  "likes": 353,
+  "url": "https://x.com/SemiAnalysis_/status/2102102451365020153"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2102050260721807397",
+  "at": "2026-09-21T15:00:11.000Z",
+  "text": "Experiments have shown that offloading Engram to DRAM results in up to 50% better performance on H200, B200, B300, and even GB300 NVL72. Our technical team has collaborated with 10x engineers from @EmadBarsoumPi  &amp; @AnushElangovan to upstream support for @vllm_project  ROCm https://t.co/tOeGWPuBDq",
+  "likes": 148,
+  "url": "https://x.com/SemiAnalysis_/status/2102050260721807397"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2102236013674561727",
+  "at": "2026-09-22T03:18:17.000Z",
+  "text": "Per a couple weeks ago, SoftBank portfolio company SB Energy has signed $439 billion in business with SoftBank portfolio company OpenAI, which is also an investor in SB Energy, as well as its largest (and only real) client. It has now pulled its IPO. \n\nhttps://t.co/0vLRdDBvEF https://t.co/5rPQLWGcGw",
+  "likes": 35,
+  "url": "https://x.com/edzitron/status/2102236013674561727"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2102230052113121340",
+  "at": "2026-09-22T02:54:36.000Z",
+  "text": "It’s time for another episode of \nIs!\nThat! \nGOOD!!!! https://t.co/7WLGgUYA6f https://t.co/bqkS75yK4a",
+  "likes": 567,
+  "url": "https://x.com/edzitron/status/2102230052113121340"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2102176522756816975",
+  "at": "2026-09-21T23:21:54.000Z",
+  "text": "Yeah that’s because they’ve only got 2gw of ai capacity https://t.co/yK2Koy4oWc",
+  "likes": 239,
+  "url": "https://x.com/edzitron/status/2102176522756816975"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2102105371171025045",
+  "at": "2026-09-21T18:39:10.000Z",
+  "text": "Fuck!! https://t.co/BpDAv5K2N3",
+  "likes": 870,
+  "url": "https://x.com/edzitron/status/2102105371171025045"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2102045672815943839",
+  "at": "2026-09-21T14:41:57.000Z",
+  "text": "zero identity in this industry, everyone chases whatever the trend is based on whoever got the most Twitter chatter. Remember openclaw? https://t.co/53C1urABhJ",
+  "likes": 674,
+  "url": "https://x.com/edzitron/status/2102045672815943839"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2102068426084606308",
+  "at": "2026-09-21T16:12:21.000Z",
+  "text": "Sign up here! https://t.co/8ywXr3KnGZ",
+  "likes": 9,
+  "url": "https://x.com/GavinSBaker/status/2102068426084606308"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2102068269037260810",
+  "at": "2026-09-21T16:11:44.000Z",
+  "text": "Really happy that @rauchg will be interviewed by @glennsolomon at the @TomorrowXSummit in Austin, Texas November 17-18.\n\nVercel occupies a critical place in the AI ecosystem with \n\n•Over $500M+ run-rate revenue\n•130%+ annual growth\n•NDR at 130%+\n•400k+ paying customers https://t.co/7ghrMXTeCt",
+  "likes": 132,
+  "url": "https://x.com/GavinSBaker/status/2102068269037260810"
+ },
+ {
+  "handle": "ttunguz",
+  "id": "2102052960461316459",
+  "at": "2026-09-21T15:10:54.000Z",
+  "text": "AI Comes for the If Statement https://t.co/gNKjbWDbTV",
+  "likes": 60,
+  "url": "https://x.com/ttunguz/status/2102052960461316459"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102363298419413332",
+  "at": "2026-09-22T11:44:05.000Z",
+  "text": "https://t.co/e4cemq8OZ2",
+  "likes": 0,
+  "url": "https://x.com/kimmonismus/status/2102363298419413332"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102363285840654756",
+  "at": "2026-09-22T11:44:02.000Z",
+  "text": "DeepSeek is reportedly betting on Huawei chips to train its next AI models as U.S. export controls restrict access to Nvidia hardware.\n\nAccording to The Information, CEO Liang Wenfeng told investors he expects new Huawei training chips in Q4 2026 or Q1 2027. He said the push to https://t.co/AemjcfD4hQ",
+  "likes": 21,
+  "url": "https://x.com/kimmonismus/status/2102363285840654756"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102358340466888758",
+  "at": "2026-09-22T11:24:22.000Z",
+  "text": "OpenAI's GPT-6-Sol confirmed for today.\n\nI expect it to be much cheaper than Astra at roughly the same intelligence. But lets see. https://t.co/mS1q16p3TH",
+  "likes": 436,
+  "url": "https://x.com/kimmonismus/status/2102358340466888758"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102344620801659300",
+  "at": "2026-09-22T10:29:51.000Z",
+  "text": "This day starts amazing: Qwen 4 announced, coming soon. Even our beloved 27b. \n\nMy MacStudio is on its way, so I'll be running it locally.\n\nToday's the big day:\n\n- GPT-6-Sol is expected, and maybe even OpenAI's grok bot response.\n\n- Opus 5.5 is also expected, and with luck, https://t.co/JfygAmKcn3 https://t.co/SAtSAuKzHR",
+  "likes": 210,
+  "url": "https://x.com/kimmonismus/status/2102344620801659300"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102232919658099125",
+  "at": "2026-09-22T03:06:00.000Z",
+  "text": "OpenAI's \"Grok Bot\" (\"Aeon\") is nearing release. Rumours suggest it will be released before DevDay, perhaps even this week.\n\nGPT-6-Sol is still expected tomorrow, with Anthropic's response being Opus 5.5, along with Sonnet 5.5. Haiku is rumored to be ending, just like Terra.\n\nThe https://t.co/EdzAnT130U https://t.co/v7uuiWD1OF",
+  "likes": 822,
+  "url": "https://x.com/kimmonismus/status/2102232919658099125"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102182660714172742",
+  "at": "2026-09-21T23:46:17.000Z",
+  "text": "Early access: https://t.co/GGCMFKgHly",
+  "likes": 5,
+  "url": "https://x.com/kimmonismus/status/2102182660714172742"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102182629705715965",
+  "at": "2026-09-21T23:46:10.000Z",
+  "text": "Show an AI agent how you do a task by recording your screen and talking it through. Akai turns that walkthrough into an automated workflow your team can review and reuse.\n\nDeel built it for its own operations. One use case: month-end close, matching bank transactions and https://t.co/RIA4ZI9Vox",
+  "likes": 95,
+  "url": "https://x.com/kimmonismus/status/2102182629705715965"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102168812736975104",
+  "at": "2026-09-21T22:51:16.000Z",
+  "text": "https://t.co/1O1bIOnHaj",
+  "likes": 15,
+  "url": "https://x.com/kimmonismus/status/2102168812736975104"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102168154973614087",
+  "at": "2026-09-21T22:48:39.000Z",
+  "text": "„Internally, OpenAI has largely automated the process of training new experimental models, the OpenAI employee said.“\n\nVia the information \n\nWe did it friends. Recursive self improvement is here. https://t.co/Or65hzTLD6 https://t.co/62mMYRfWo4",
+  "likes": 1141,
+  "url": "https://x.com/kimmonismus/status/2102168154973614087"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102161473678016612",
+  "at": "2026-09-21T22:22:06.000Z",
+  "text": "WTF I was on a plane for 10 hours. Within 10 hours OpenAI released a blogpost that their newly trained model solved 100(!!) open long standing math problems that even surprised their own resecaher.\n\nMiMo released an amazing model and Grok 4.7 underperformed. \n\nI’ll never take a https://t.co/lrjWYbD1P8 https://t.co/2AhUVLBu8e",
+  "likes": 967,
+  "url": "https://x.com/kimmonismus/status/2102161473678016612"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102160465598030239",
+  "at": "2026-09-21T22:18:05.000Z",
+  "text": "Guys, OpenAI solved 100 math problems. Wtf. I take the plane to SF and literally the whole AI world changes",
+  "likes": 53,
+  "url": "https://x.com/kimmonismus/status/2102160465598030239"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102160102278988123",
+  "at": "2026-09-21T22:16:39.000Z",
+  "text": "Ok this is the real deal ngl",
+  "likes": 48,
+  "url": "https://x.com/kimmonismus/status/2102160102278988123"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102159589835764113",
+  "at": "2026-09-21T22:14:37.000Z",
+  "text": "Yeah, you guys are right: https://t.co/NFAgw6y2rv",
+  "likes": 20,
+  "url": "https://x.com/kimmonismus/status/2102159589835764113"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102159532226904508",
+  "at": "2026-09-21T22:14:23.000Z",
+  "text": "I was too quick and excited when landed in SF. As most of you pointed out the real deal is actually MiMo-2.6!\n\nBetter than Grok 4.7, much cheaper and holy moly is china back. That is the real surprise! \n\nI need to check that out. Message to chubby: next time checking x properly https://t.co/h1uineGQRu https://t.co/lwf02P4ntL",
+  "likes": 877,
+  "url": "https://x.com/kimmonismus/status/2102159532226904508"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102158586570817546",
+  "at": "2026-09-21T22:10:37.000Z",
+  "text": "Ok, you guys are right. Not going to delete my post, but writing a correction.",
+  "likes": 26,
+  "url": "https://x.com/kimmonismus/status/2102158586570817546"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2102151658591723683",
+  "at": "2026-09-21T21:43:06.000Z",
+  "text": "Damn. I’m late to the party. Plane just arrived in SF: Grok 4.7 looks super amazing! \n\nNot only is it competitive to sota and even surpasses fable 5.1 in some benchmarks, it’s also so much cheaper than GPT and Fable 5.1!\n\nWell done spaceX!! Will write about it a bit more later on https://t.co/MADklQFtIs https://t.co/gYtzugfONx",
+  "likes": 440,
+  "url": "https://x.com/kimmonismus/status/2102151658591723683"
  }
 ]

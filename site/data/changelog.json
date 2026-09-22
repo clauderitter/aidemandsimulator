@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-09-22",
+  "source": "https://www.exponentialview.co/p/monday-data-ai-investment-brief",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.investmentbrief.ai/",
+  "reason": "Adds a dated, recurring quantitative feed on enterprise AI claims from an already-watched author, with no parameter change implied by the earnings-call-mention evidence."
+ },
+ {
+  "date": "2026-09-22",
+  "source": "https://tomtunguz.com/ai-comes-for-the-if-statement/",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 27,
+  "reason": "Gate: monthly drift cap reached for subst (at most ±10 around 15 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-09-22",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "49%",
+  "reason": "Observed from source (2026-09-22).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-22",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +24%",
+  "new": "+56% vs +24%",
+  "reason": "Observed from source (2026-09-22).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-22",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.2%",
+  "new": "10.8%",
+  "reason": "Observed from source (2026-09-22).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-22",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "14.8",
+  "new": "14.9",
+  "reason": "Observed from source (2026-09-21).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-22",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "270bp",
+  "new": "268bp",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-09-22",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-22",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.94%",
+  "new": "5.01%",
+  "reason": "Observed from source (2026-09-18).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-21",
   "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
   "kind": "rejected",

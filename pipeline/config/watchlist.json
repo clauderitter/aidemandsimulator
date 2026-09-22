@@ -157,6 +157,13 @@
    "kind": "html",
    "match": "/blog",
    "added": "2026-09-20"
+  },
+  {
+   "name": "AI Investment Brief (Azeem Azhar)",
+   "url": "https://www.investmentbrief.ai/",
+   "kind": "html",
+   "match": "/",
+   "added": "2026-09-22"
   }
  ],
  "x_handles": [
