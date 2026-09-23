@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-22T11:57:46.439Z",
+ "generated_at": "2026-09-23T11:59:03.546Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -707,6 +707,14 @@
    "label": "The FOMC hiked on 16 Sep 2026 by 1/4 percentage point to a 3-3/4 to 4 percent target range (12-0 vote) — the first hike ",
    "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
    "added": "2026-09-17"
+  },
+  {
+   "q": "2026Q3",
+   "type": "price",
+   "v": 50,
+   "label": "A realised, first-party price shock inside quarter zero: OpenAI cut GPT-6 Sol to $2/$10 and Luna to $0.10/$0.50 per mill",
+   "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+   "added": "2026-09-23"
   }
  ],
  "scenarios": [
@@ -772,7 +780,7 @@
     "checks": [
      "ok: 2027Q4 $684B vs $600–1500B"
     ],
-    "date": "2026-09-22"
+    "date": "2026-09-23"
    }
   },
   {
@@ -817,7 +825,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.7 vs ×4–8"
     ],
-    "date": "2026-09-22"
+    "date": "2026-09-23"
    }
   },
   {
@@ -1126,7 +1134,7 @@
      "ok: 2027Q4 $267B vs $225–340B",
      "ok: 2028Q4 $558B vs $395–675B"
     ],
-    "date": "2026-09-22"
+    "date": "2026-09-23"
    }
   },
   {
@@ -1320,9 +1328,9 @@
    "value": "49%",
    "sub": "frontier revenue 123.3 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-23",
    "auto": true,
-   "updated": "2026-09-22"
+   "updated": "2026-09-23"
   },
   {
    "id": "fms_tailrisk",
@@ -1349,12 +1357,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "10.8%",
-   "sub": "22 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "10.3%",
+   "sub": "23 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-23",
    "auto": true,
-   "updated": "2026-09-22"
+   "updated": "2026-09-23"
   },
   {
    "id": "aaii",
@@ -1365,17 +1373,18 @@
    "as_of": "2026-09-16",
    "auto": false,
    "updated": "2026-09-18",
-   "cadence_days": 7
+   "cadence_days": 7,
+   "next_check": "2026-09-26"
   },
   {
    "id": "vix",
    "label": "VIX",
-   "value": "14.9",
-   "sub": "21 Sept 2026 close (CBOE)",
+   "value": "14.2",
+   "sub": "22 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-21",
+   "as_of": "2026-09-22",
    "auto": true,
-   "updated": "2026-09-22"
+   "updated": "2026-09-23"
   },
   {
    "id": "fed_fsr",
@@ -1460,22 +1469,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.01%",
-   "sub": "18 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "4.96%",
+   "sub": "21 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-09-18",
+   "as_of": "2026-09-21",
    "auto": true,
-   "updated": "2026-09-22"
+   "updated": "2026-09-23"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "268bp",
-   "sub": "18 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 77bp",
+   "value": "266bp",
+   "sub": "21 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 77bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-09-18",
+   "as_of": "2026-09-21",
    "auto": true,
-   "updated": "2026-09-22"
+   "updated": "2026-09-23"
   },
   {
    "id": "vc_h1",
@@ -1492,11 +1501,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "18 Sept 2026 (FRED DFF)",
+   "sub": "21 Sept 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-09-18",
+   "as_of": "2026-09-21",
    "auto": true,
-   "updated": "2026-09-22"
+   "updated": "2026-09-23"
   },
   {
    "id": "growth_check",
@@ -1504,9 +1513,9 @@
    "value": "+56% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-23",
    "auto": true,
-   "updated": "2026-09-22"
+   "updated": "2026-09-23"
   }
  ],
  "frozen": [],

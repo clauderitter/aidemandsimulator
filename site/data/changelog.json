@@ -1,5 +1,122 @@
 [
  {
+  "date": "2026-09-23",
+  "source": "https://openai.com/index/research-acceleration-view-inside-openai/",
+  "kind": "rejected",
+  "target": "scenario:openai_rsi",
+  "old": null,
+  "new": null,
+  "reason": "Gate: not distinct from rotating scenario “swarm” (paths within 5% at every anchor)."
+ },
+ {
+  "date": "2026-09-23",
+  "source": "https://www.wheresyoured.at/wherere-all-the-ai-chips/",
+  "kind": "rejected",
+  "target": "K0",
+  "old": null,
+  "new": 8.5,
+  "reason": "Microsoft's ~2 GW of AI-specific capacity is one host's fleet, not frontier-lab serving capacity overall, and the leap from it to a 15% cut in global online capacity is the author's inference rather than anything the cited reporting states."
+ },
+ {
+  "date": "2026-09-23",
+  "source": "https://officechai.com/ai/these-are-the-ai-models-with-the-most-customer-spend-as-per-ramp/",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 20,
+  "reason": "A secondary write-up of Ramp's spend leaderboard shows where enterprise dollars go, not what share of bounded token volume has migrated off frontier endpoints, and it is a weaker measure than the primary Vercel production-traffic reading the current value rests on."
+ },
+ {
+  "date": "2026-09-23",
+  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.3,
+  "reason": "This is the same 27 August Epoch run-rate write-up that already lifted orgX once and was rejected twice on double-counting grounds; the calibration gap may be real but it needs evidence newer than the current as-of date to move the handle again."
+ },
+ {
+  "date": "2026-09-23",
+  "source": "https://openai.com/index/research-acceleration-view-inside-openai/",
+  "kind": "rejected",
+  "target": "k_rd",
+  "old": null,
+  "new": 0.8,
+  "reason": "Gate: monthly drift cap reached for k_rd (at most ±0.1 around 0.6 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-09-23",
+  "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+  "kind": "accepted",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": "price 50",
+  "reason": "OpenAI's own launch page documents a realised 50% API price cut on the mid- and low-tier GPT-6 models ($4→$2 / $20→$10 and $0.20→$0.10 / $1.20→$0.50), a first-party reported shock inside quarter zero that belongs on the ledger as an event rather than a forecast. Verified against archive snapshot http://web.archive.org/web/20260923102845/https://openai.com/index/introducing-gpt-6-sol-and-luna/."
+ },
+ {
+  "date": "2026-09-23",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "49%",
+  "new": "49%",
+  "reason": "Observed from source (2026-09-23).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-23",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +24%",
+  "new": "+56% vs +24%",
+  "reason": "Observed from source (2026-09-23).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-23",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.8%",
+  "new": "10.3%",
+  "reason": "Observed from source (2026-09-23).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-23",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "14.9",
+  "new": "14.2",
+  "reason": "Observed from source (2026-09-22).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-23",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "268bp",
+  "new": "266bp",
+  "reason": "Observed from source (2026-09-21).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-09-23",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-21).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-23",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.01%",
+  "new": "4.96%",
+  "reason": "Observed from source (2026-09-21).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-22",
   "source": "https://www.exponentialview.co/p/monday-data-ai-investment-brief",
   "kind": "accepted",
