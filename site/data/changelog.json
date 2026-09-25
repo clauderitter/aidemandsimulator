@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-09-25",
+  "source": "https://ramp.com/data/ai-index-sept-2026",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://ramp.com/data",
+  "reason": "Ramp's own data hub serves the same monthly AI Index (token price, frontier/standard split, per-employee spend) as fetchable primary HTML, so it is a sound replacement for the dead Substack feed; no model value changes."
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "49%",
+  "new": "50%",
+  "reason": "Observed from source (2026-09-25).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +24%",
+  "new": "+56% vs +24%",
+  "reason": "Observed from source (2026-09-25).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "R0",
+  "old": 123.3,
+  "new": 123.8,
+  "reason": "Derived: Epoch disclosed sum 108.8 + undisclosed allowance 15.",
+  "source": ""
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "R0_epoch",
+  "old": 108.3,
+  "new": 108.8,
+  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: Anthropic $65B (2026-07-31), OpenAI $40B (2026-08-13), Z.ai (Zhipu) $2B (2026-08-31), DeepSeek $1B (2026-09-24), MiniMax $1B (2026-08-26), xAI $0B (2025-09-30).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.3%",
+  "new": "10.4%",
+  "reason": "Observed from source (2026-09-25).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "268bp",
+  "new": "273bp",
+  "reason": "Observed from source (2026-09-23).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-23).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-25",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.96%",
+  "new": "5.11%",
+  "reason": "Observed from source (2026-09-23).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-24",
   "source": "https://tomtunguz.com/the-most-important-market-in-ai-is-the-middle/",
   "kind": "accepted",

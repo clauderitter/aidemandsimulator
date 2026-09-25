@@ -164,6 +164,13 @@
    "kind": "html",
    "match": "/",
    "added": "2026-09-22"
+  },
+  {
+   "name": "Ramp Economics Lab (ramp.com/data) — primary AI Index feed r",
+   "url": "https://ramp.com/data",
+   "kind": "html",
+   "match": "/data",
+   "added": "2026-09-25"
   }
  ],
  "x_handles": [
