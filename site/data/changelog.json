@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-09-26",
+  "source": "https://x.com/edzitron/status/2103494585716473915",
+  "kind": "rejected",
+  "target": "capexGW",
+  "old": null,
+  "new": 56,
+  "reason": "A single commentary post about copper content is one component, not an all-in per-GW figure, and is weaker-grade evidence than the Nvidia management numbers that currently set capexGW."
+ },
+ {
+  "date": "2026-09-26",
+  "source": "https://x.com/arakharazian/status/2103522020377956670",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.3,
+  "reason": "The cited Ramp post shows one week's rebound with token spend still below its July peak, which does not evidence organic growth running persistently ahead of the model and cannot carry orgX to the top of its monthly drift window."
+ },
+ {
+  "date": "2026-09-26",
+  "source": "https://www.aaii.com/sentimentsurvey",
+  "kind": "accepted",
+  "target": "gauge:aaii",
+  "old": "28.8% / 53.3%",
+  "new": "32.7% / 48.1%",
+  "reason": "AAII's own survey page gives a fresher reading of the identical measure (week ending 23 Sep: bulls 32.7%, bears 48.1%, spread -15.4pp), so the gauge refreshes from its primary source."
+ },
+ {
+  "date": "2026-09-26",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "50%",
+  "new": "50%",
+  "reason": "Observed from source (2026-09-26).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-26",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +24%",
+  "new": "+56% vs +24%",
+  "reason": "Observed from source (2026-09-26).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-26",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.4%",
+  "new": "10.4%",
+  "reason": "Observed from source (2026-09-26).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-26",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "14.2",
+  "new": "14.9",
+  "reason": "Observed from source (2026-09-25).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-26",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "273bp",
+  "new": "280bp",
+  "reason": "Observed from source (2026-09-24).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-09-26",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-24).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-26",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.11%",
+  "new": "5.18%",
+  "reason": "Observed from source (2026-09-24).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-25",
   "source": "https://ramp.com/data/ai-index-sept-2026",
   "kind": "accepted",

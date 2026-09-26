@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-25T12:03:57.806Z",
+ "generated_at": "2026-09-26T11:41:02.322Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -780,7 +780,7 @@
     "checks": [
      "ok: 2027Q4 $687B vs $600–1500B"
     ],
-    "date": "2026-09-25"
+    "date": "2026-09-26"
    }
   },
   {
@@ -825,7 +825,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.7 vs ×4–8"
     ],
-    "date": "2026-09-25"
+    "date": "2026-09-26"
    }
   },
   {
@@ -1134,7 +1134,7 @@
      "ok: 2027Q4 $268B vs $225–340B",
      "ok: 2028Q4 $561B vs $395–675B"
     ],
-    "date": "2026-09-25"
+    "date": "2026-09-26"
    }
   },
   {
@@ -1328,9 +1328,9 @@
    "value": "50%",
    "sub": "frontier revenue 123.8 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-25",
+   "as_of": "2026-09-26",
    "auto": true,
-   "updated": "2026-09-25"
+   "updated": "2026-09-26"
   },
   {
    "id": "fms_tailrisk",
@@ -1358,33 +1358,32 @@
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
    "value": "10.4%",
-   "sub": "25 Sept 2026 · “AI bubble burst in 2026?”",
+   "sub": "26 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-25",
+   "as_of": "2026-09-26",
    "auto": true,
-   "updated": "2026-09-25"
+   "updated": "2026-09-26"
   },
   {
    "id": "aaii",
    "label": "AAII retail investors: bullish / bearish",
-   "value": "28.8% / 53.3%",
-   "sub": "AAII weekly survey, week ending 16 Sep: bulls 28.8% vs 33% prior reading, bears 53.3% vs 44%; bull-bear spread -24.5pp, well below the 31.5% bearish average.",
+   "value": "32.7% / 48.1%",
+   "sub": "AAII weekly survey, week ending 9/23/26: bulls up from 28.8% and bears down from 53.3% a week earlier, but still well off the 37.5%/31.5% historical averages (bull-bear spread -15.4pp).",
    "src": "https://www.aaii.com/sentimentsurvey",
-   "as_of": "2026-09-16",
+   "as_of": "2026-09-23",
    "auto": false,
-   "updated": "2026-09-18",
-   "cadence_days": 7,
-   "next_check": "2026-09-26"
+   "updated": "2026-09-26",
+   "cadence_days": 7
   },
   {
    "id": "vix",
    "label": "VIX",
-   "value": "14.2",
-   "sub": "22 Sept 2026 close (CBOE)",
+   "value": "14.9",
+   "sub": "25 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "auto": true,
-   "updated": "2026-09-23"
+   "updated": "2026-09-26"
   },
   {
    "id": "fed_fsr",
@@ -1429,7 +1428,7 @@
    "auto": false,
    "updated": "2026-09-03",
    "cadence_days": 30,
-   "next_check": "2026-09-26"
+   "next_check": "2026-10-04"
   },
   {
    "id": "token_index",
@@ -1469,22 +1468,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.11%",
-   "sub": "23 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.18%",
+   "sub": "24 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-09-23",
+   "as_of": "2026-09-24",
    "auto": true,
-   "updated": "2026-09-25"
+   "updated": "2026-09-26"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "273bp",
-   "sub": "23 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 77bp",
+   "value": "280bp",
+   "sub": "24 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 79bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-09-23",
+   "as_of": "2026-09-24",
    "auto": true,
-   "updated": "2026-09-25"
+   "updated": "2026-09-26"
   },
   {
    "id": "vc_h1",
@@ -1501,11 +1500,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "23 Sept 2026 (FRED DFF)",
+   "sub": "24 Sept 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-09-23",
+   "as_of": "2026-09-24",
    "auto": true,
-   "updated": "2026-09-25"
+   "updated": "2026-09-26"
   },
   {
    "id": "growth_check",
@@ -1513,9 +1512,9 @@
    "value": "+56% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-25",
+   "as_of": "2026-09-26",
    "auto": true,
-   "updated": "2026-09-25"
+   "updated": "2026-09-26"
   }
  ],
  "frozen": [],
