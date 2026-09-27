@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-26T11:41:02.322Z",
+ "generated_at": "2026-09-27T12:19:25.265Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -780,7 +780,7 @@
     "checks": [
      "ok: 2027Q4 $687B vs $600–1500B"
     ],
-    "date": "2026-09-26"
+    "date": "2026-09-27"
    }
   },
   {
@@ -825,7 +825,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.7 vs ×4–8"
     ],
-    "date": "2026-09-26"
+    "date": "2026-09-27"
    }
   },
   {
@@ -1134,7 +1134,7 @@
      "ok: 2027Q4 $268B vs $225–340B",
      "ok: 2028Q4 $561B vs $395–675B"
     ],
-    "date": "2026-09-26"
+    "date": "2026-09-27"
    }
   },
   {
@@ -1224,10 +1224,11 @@
      "q": "2026Q4"
     }
    ],
-   "status": "active",
-   "updated": "2026-09-18",
+   "status": "retired",
+   "updated": "2026-09-27",
    "added": "2026-09-03",
-   "core": false
+   "core": false,
+   "retired_reason": "Retired to make room for “Self-improvement loop too weak”: the least distinct structural scenario (closest path to its neighbours, 15%)."
   },
   {
    "id": "rampconc",
@@ -1319,6 +1320,25 @@
    "status": "active",
    "updated": "2026-09-18",
    "added": "2026-09-18"
+  },
+  {
+   "id": "rsiweak",
+   "camp": "structural",
+   "name": "Self-improvement loop too weak",
+   "who": "Ramez Naam (guest post on Noah Smith's Noahpinion)",
+   "when": "27 Sep 2026",
+   "thesis": "AI already helps improve AI, but on measured data the self-improvement loop is roughly 5–10x too weak to sustain itself, let alone run away: no signs of runaway acceleration, sharp diminishing returns to more tokens and experiments, and exponentially more resources needed just to hold the current pace. Progress stays fast by the standards of any other technology, so demand keeps growing, but R&D compute spend buys little extra speed and there is no intelligence-explosion kink.",
+   "src": "https://www.noahpinion.blog/p/wheres-the-intelligence-explosion",
+   "p": {
+    "rdBoost": 0.05,
+    "k_rd": 0.5,
+    "epsX": 0.9,
+    "H_cap": 1500
+   },
+   "e": [],
+   "status": "active",
+   "updated": "2026-09-27",
+   "added": "2026-09-27"
   }
  ],
  "gauges": [
@@ -1328,9 +1348,9 @@
    "value": "50%",
    "sub": "frontier revenue 123.8 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-26",
+   "as_of": "2026-09-27",
    "auto": true,
-   "updated": "2026-09-26"
+   "updated": "2026-09-27"
   },
   {
    "id": "fms_tailrisk",
@@ -1357,12 +1377,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "10.4%",
-   "sub": "26 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "10.3%",
+   "sub": "27 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-26",
+   "as_of": "2026-09-27",
    "auto": true,
-   "updated": "2026-09-26"
+   "updated": "2026-09-27"
   },
   {
    "id": "aaii",
@@ -1512,9 +1532,9 @@
    "value": "+56% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-26",
+   "as_of": "2026-09-27",
    "auto": true,
-   "updated": "2026-09-26"
+   "updated": "2026-09-27"
   }
  ],
  "frozen": [],

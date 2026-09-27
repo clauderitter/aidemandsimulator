@@ -1,5 +1,68 @@
 [
  {
+  "date": "2026-09-27",
+  "source": "https://epoch.ai/publications/the-plunging-price-of-thought",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/publications",
+  "reason": "Epoch AI is a primary source behind several inputs and is still publishing quantitative cost-and-capacity work on its own site, so the HTML publications index replaces the dead substack feed."
+ },
+ {
+  "date": "2026-09-27",
+  "source": "https://qz.com/oracle-force-majeure-new-mexico-ai-data-center-092426",
+  "kind": "rejected",
+  "target": "lead",
+  "old": null,
+  "new": 6,
+  "reason": "A force majeure notice on one New Mexico campus — which Oracle says remains on schedule — gives no signing-to-delivery figure and cannot carry the general first-delivery lead from 5 to 6 quarters. Verified against archive snapshot http://web.archive.org/web/20260925043650/https://qz.com/oracle-force-majeure-new-mexico-ai-data-center-092426."
+ },
+ {
+  "date": "2026-09-27",
+  "source": "https://www.noahpinion.blog/p/wheres-the-intelligence-explosion",
+  "kind": "accepted",
+  "target": "scenario:rsiweak",
+  "old": null,
+  "new": "added",
+  "reason": "Ramez Naam's dated Noahpinion piece states a quantified position on the self-improvement feedback itself (5–10× too weak to sustain), a mechanism distinct from the capability-wall and takeoff scenarios already active, so it is added as a new structural scenario. Ramez Naam (guest post on Noah Smith's Noahpinion), 27 Sep 2026."
+ },
+ {
+  "date": "2026-09-27",
+  "source": "",
+  "kind": "expired",
+  "target": "scenario:nvfactory",
+  "old": "active",
+  "new": "retired",
+  "reason": "Retired to make room for “Self-improvement loop too weak”: the least distinct structural scenario (closest path to its neighbours, 15%)."
+ },
+ {
+  "date": "2026-09-27",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "50%",
+  "new": "50%",
+  "reason": "Observed from source (2026-09-27).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-27",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +24%",
+  "new": "+56% vs +24%",
+  "reason": "Observed from source (2026-09-27).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-27",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.4%",
+  "new": "10.3%",
+  "reason": "Observed from source (2026-09-27).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-09-26",
   "source": "https://x.com/edzitron/status/2103494585716473915",
   "kind": "rejected",

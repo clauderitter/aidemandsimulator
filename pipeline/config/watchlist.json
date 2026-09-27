@@ -171,6 +171,13 @@
    "kind": "html",
    "match": "/data",
    "added": "2026-09-25"
+  },
+  {
+   "name": "Epoch AI — Publications (HTML index, replaces dead Gradient ",
+   "url": "https://epoch.ai/publications",
+   "kind": "html",
+   "match": "/publications",
+   "added": "2026-09-27"
   }
  ],
  "x_handles": [

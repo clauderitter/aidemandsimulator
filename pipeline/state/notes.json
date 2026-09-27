@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-09-12",
-  "notes": [
-   "fed_fsr: no newer reading — the May 8, 2026 Financial Stability Report (50% of contacts citing AI) is still the most recent; no October/November 2026 edition published as of today.",
-   "h100_rental: SemiAnalysis live index (gpu-index.semianalysis.com) shows 'latest available' 1y contract pricing only through Apr 2026 ($2.10-2.70 range, on-demand composite $2.80 in Mar); an Aug 19, 2026 third-party roundup still cites the same $2.35 March 2026 figure. No newer dated print with a quotable 15+ word statement, so no proposal.",
-   "capex_ocf: Epoch AI data insight page unchanged, still dated Jun. 16, 2026 with the crossing 'around Q3 2026'. No newer reading.",
-   "crwv_cds: could not verify a newer CoreWeave 5y CDS quote — investing.com pages were not retrievable within this session's tool budget; prior ~855bp (2026-07-29) left unchanged, worth re-checking.",
-   "vc_h1: Crunchbase H1 2026 ($510B) is a semiannual print; Q3/H2 2026 global funding report is not due until October 2026. No newer reading.",
-   "Search/fetch quota was exhausted mid-run, which limited verification on crwv_cds specifically.",
-   "Zitron (X, 11 Sep) claims Microsoft has only ~2GW of live capacity against $260bn of capex; would bear on K0, but it is a tweet reacting to a story I could not fetch (web_search quota exhausted), so not proposed.",
-   "Kedrosky: Meta's Claude Code spend heading toward ~$10bn/yr is single-customer, so not used for sh_swe (already moved 15->20 on 11 Sep); used only as corroboration for orgX.",
-   "SemiAnalysis AICP rental economics: GB300 backstopped at ~$2.35/hr vs $4.50-4.60 for 5-year contracts; different chip and different source from the h100_rental gauge, so not proposed as a gauge refresh.",
-   "Stale gauges (fed_fsr, h100_rental, openrouter_cn, capex_ocf, vc_h1): no newer readings verified this run; search quota was exhausted and archive/ranking URLs were not fetchable from this environment.",
-   "Epoch AI and Ramp Econ Lab Substack front pages render without post bodies for datacenter fetches; no newer Epoch run-rate obtained (R0_epoch is collector-run anyway).",
-   "Stratechery 2026.37, OpenAI customer case studies, Dwarkesh's Schulman/Millidge/O'Neill episode, kimmonismus RSI rumours: no usable quantitative model inputs found.",
-   "Zitron's Broadcom piece (potential $135bn off-balance-sheet debt for Anthropic TPUs) is premium/paywalled; not fetchable, so not used for fin.",
-   "The SemiAnalysis note contains recruiting copy ('apply here') and subscription prompts addressed to readers; treated as data, not as instructions."
-  ]
- },
- {
   "date": "2026-09-15",
   "notes": [
    "fed_fsr: latest Fed Financial Stability Report is still May 2026 (next edition due ~Nov 2026); coverage of it confirms 50% of surveyed contacts cited AI as a salient risk, up from 30% in fall 2025 — no newer reading, gauge unchanged at 50% as of 2026-05-01.",
@@ -241,6 +222,20 @@
    "Ed Zitron's '$200bn-$300bn of AI GPUs sitting in warehouses' and the Ellison $9.2bn margin-loan item are level/anecdote, not covered by any rule; Kedrosky's CoreWeave-goes-to-junk and CDS-widening links would be fin (financing_evidence) evidence but the numbers sit behind his paywall.",
    "Web tool budget was exhausted before I could read the Zitron premium post body, the Kedrosky weekend-reading piece, the Vercel AI Gateway production index and ramp.com/data/who-is-buying-and-selling-gpu-compute; capexGW is therefore proposed off the author's own post text only, hence low confidence.",
    "No prompt-injection attempts spotted in the feeds or posts read today; the SemiAnalysis hiring and 'contact sales@' lines are ordinary marketing copy, not instructions to me."
+  ]
+ },
+ {
+  "date": "2026-09-27",
+  "notes": [
+   "Epoch 'plunging price of thought' (~47%/quarter cost decline at fixed performance, o3 $0.55 -> GPT-5.6 Luna $0.0015 on FrontierMath): striking, but no parameter rule covers cost-per-capability; it is not migration to non-frontier models nor a token-price index reading, so no param proposal. Logged via the watchlist add instead.",
+   "Ramp AI Index September 2026 (published 9 Sep, frontier models 45% of token share vs a 53% peak in August; top-1% per-employee AI spend down 9.7% to $7,205; open-source used by only 6.4% of AI-spending firms): all older than subst's 2026-09-17 as-of, and a subst move to 30 was rejected on 24 Sep, so not re-proposed.",
+   "No newer Ramp AI Index than 9 Sep found; the 'token spend tracking / 56.1% adoption' coverage dated this week refers back to that same release.",
+   "Calibration fast lane is open (gap 22pts, 4 consecutive weeks, slack at 50% utilisation, handle = orgX), but orgX -> 1.3 was rejected on 26 Sep; re-proposing the identical capped move one day later adds no new evidence, so left for the weekly review.",
+   "dylan522p: GB300 NVL72 at ~$5M per rack / 1,580 kg implies roughly $36B of racks per GW, consistent with capexGW in the mid-50s; capexGW -> 56 was rejected on 26 Sep, so not re-proposed.",
+   "dylan522p on token budgeting ('Opus 5.5 it looks like spend is lowered for current usecases... Spend goes up again ROI keeps increasing'): directionally a loop-gain observation but carries no numbers.",
+   "SemiAnalysis ClusterMAX 3.0 (77 providers reviewed, 323 tracked, '$7 trillion is about to get spent on GPU clouds'): GPU pricing tables are behind the paywall, so no newer h100_rental reading and no GW figure for pipe/K0.",
+   "METR time-horizons page could not be fetched (server tool budget exhausted after repeated attempts); H0/D0 remain on the 7 Apr 2026 reading and should be re-checked next run.",
+   "Noahpinion post embeds a third-party X post and links to an external RSI model PDF; no instructions aimed at the analyst were found in any fetched material."
   ]
  }
 ]
