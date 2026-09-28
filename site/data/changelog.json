@@ -1,5 +1,68 @@
 [
  {
+  "date": "2026-09-28",
+  "source": "https://epoch.ai/latest/scaling-ai-data-centers-research",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/data/ai-data-centers",
+  "reason": "The quoted description confirms a regularly refreshed, per-site dataset of IT power, capital cost, chip type and construction status covering ~44% of global AI compute, which is directly relevant to the model's supply-side inputs and updates separately from the Epoch publications page already watched."
+ },
+ {
+  "date": "2026-09-28",
+  "source": "https://epoch.ai/data/ai-data-centers",
+  "kind": "rejected",
+  "target": "history:2026Q3",
+  "old": null,
+  "new": 10,
+  "reason": "Gate: quarter not in history."
+ },
+ {
+  "date": "2026-09-28",
+  "source": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+  "kind": "rejected",
+  "target": "capexGW",
+  "old": null,
+  "new": 44,
+  "reason": "A single Blackwell-era site that the proposer himself calls \"the cheap end\" (self-built gas turbines, no Rubin content) is an estimate for one facility, not a fleet-wide all-in cost per GW, and is not materially better evidence than the management-reported per-GW build-up accepted on 3 Sep, so capexGW stays at 54."
+ },
+ {
+  "date": "2026-09-28",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "50%",
+  "new": "50%",
+  "reason": "Observed from source (2026-09-28).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-28",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +24%",
+  "new": "+56% vs +24%",
+  "reason": "Observed from source (2026-09-28).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-28",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.3%",
+  "new": "8.9%",
+  "reason": "Observed from source (2026-09-28).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-28",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "280bp",
+  "new": "293bp",
+  "reason": "Observed from source (2026-09-25).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
   "date": "2026-09-27",
   "source": "https://epoch.ai/publications/the-plunging-price-of-thought",
   "kind": "accepted",

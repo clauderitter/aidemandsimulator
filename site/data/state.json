@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-27T12:19:25.265Z",
+ "generated_at": "2026-09-28T14:25:06.058Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -780,7 +780,7 @@
     "checks": [
      "ok: 2027Q4 $687B vs $600–1500B"
     ],
-    "date": "2026-09-27"
+    "date": "2026-09-28"
    }
   },
   {
@@ -825,7 +825,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.7 vs ×4–8"
     ],
-    "date": "2026-09-27"
+    "date": "2026-09-28"
    }
   },
   {
@@ -1134,7 +1134,7 @@
      "ok: 2027Q4 $268B vs $225–340B",
      "ok: 2028Q4 $561B vs $395–675B"
     ],
-    "date": "2026-09-27"
+    "date": "2026-09-28"
    }
   },
   {
@@ -1348,9 +1348,9 @@
    "value": "50%",
    "sub": "frontier revenue 123.8 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-27",
+   "as_of": "2026-09-28",
    "auto": true,
-   "updated": "2026-09-27"
+   "updated": "2026-09-28"
   },
   {
    "id": "fms_tailrisk",
@@ -1377,12 +1377,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "10.3%",
-   "sub": "27 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "8.9%",
+   "sub": "28 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-27",
+   "as_of": "2026-09-28",
    "auto": true,
-   "updated": "2026-09-27"
+   "updated": "2026-09-28"
   },
   {
    "id": "aaii",
@@ -1498,12 +1498,12 @@
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "280bp",
-   "sub": "24 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 79bp",
+   "value": "293bp",
+   "sub": "25 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 79bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-09-24",
+   "as_of": "2026-09-25",
    "auto": true,
-   "updated": "2026-09-26"
+   "updated": "2026-09-28"
   },
   {
    "id": "vc_h1",
@@ -1532,9 +1532,9 @@
    "value": "+56% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-27",
+   "as_of": "2026-09-28",
    "auto": true,
-   "updated": "2026-09-27"
+   "updated": "2026-09-28"
   }
  ],
  "frozen": [],
@@ -1585,9 +1585,16 @@
     "gObs": 0.4418,
     "gMod": 0.2177,
     "gap": 0.224
+   },
+   {
+    "week": "2026-W40",
+    "date": "2026-09-28",
+    "gObs": 0.4429,
+    "gMod": 0.2177,
+    "gap": 0.2252
    }
   ],
-  "weeks_at_gap": 4,
+  "weeks_at_gap": 5,
   "fast_lane": true,
   "util0": 0.495
  }

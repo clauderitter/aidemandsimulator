@@ -237,5 +237,23 @@
    "METR time-horizons page could not be fetched (server tool budget exhausted after repeated attempts); H0/D0 remain on the 7 Apr 2026 reading and should be re-checked next run.",
    "Noahpinion post embeds a third-party X post and links to an external RSI model PDF; no instructions aimed at the analyst were found in any fetched material."
   ]
+ },
+ {
+  "date": "2026-09-28",
+  "notes": [
+   "Search budget ran out mid-run (server tool-use cap), so this run is built on the Epoch AI properties reachable from prior context; no METR, Ramp, Cahn, Zvi, Import AI or Econ Lab checks were possible beyond the METR time-horizons page.",
+   "Weekly re-baseline — R0_epoch: kept 108.8. Epoch's own run-rate piece still reads $105B combined for OpenAI+Anthropic (Aug 2026) with no newer primary report found today; R0_epoch is collector-written anyway, so no proposal.",
+   "Weekly re-baseline — H0 5.08 / D0 4.2: metr.org/time-horizons says LAST UPDATED May 8, 2026 and lists no measurement newer than the Claude Mythos Preview figure already in the model; the only new METR item (27 Sep) is about a per-action blocking monitor, no horizon numbers. No change.",
+   "Weekly re-baseline — K0: re-derived at ~10 GW from Epoch's 13.5 GW IT-power fleet across 93 tracked sites (~44% of global compute), frontier-serving share ~3/4. Equals the current value, so no param proposal; submitted as the 2026Q3 history point instead.",
+   "Weekly re-baseline — pipe 26 GW / buildMax 0.25: Epoch's global delivered compute goes 20.3M H100-eq (end-2025) to 31.6M (Sep 2026), i.e. ~+16%/quarter globally, and Colossus 2 alone is projected 946 MW -> 1,531 MW by Q1 2027. Frontier labs take more than their share of increments, so 26 GW / 25% a quarter stays inside the evidence. No change.",
+   "Weekly re-baseline — train 50, sh_rd 20, sh_swe 20, sh_trd 15: no new compute-split or usage-share data surfaced today (no new Anthropic Economic Index, OpenAI Enterprise Signals or SemiAnalysis attribution). No change.",
+   "Growth calibration: fast lane is open (gap ~0.23 log/quarter, five weeks over threshold) and util0 50% points the handle at orgX, but orgX at its bound (1.2 -> 1.3, +8% on organic growth) moves quarter-zero growth by well under a quarter of the gap, so under the rule this is a structural gap for the weekly review, not a calibration move. An orgX 1.3 proposal was also rejected on 2026-09-26. Not proposed.",
+   "Epoch, 'The plunging price of thought' (22 Sep 2026): cost of a given performance level falls ~47%/quarter, 66%/quarter at SOTA, 32%/quarter two years later. Striking but it is a quality-adjusted cost-per-capability series, not a token-price series, so recording it as a realised 'price' event for 2026Q3 would double-count capability gains (and overlap the elastic scenario's 2026Q3 price shock). Not proposed; the 'price' and 'elastic' scenarios already carry the commoditisation view and the four rotating slots are full.",
+   "Kedrosky (27 Sep, citing FT): open-weight models more than half of AI token usage, 14% of spending — the same Vercel/gateway measurement already behind subst=25 (as of 2026-09-17), no new number, so no subst move.",
+   "@kimmonismus relaying an FT piece on US enterprises (AT&T) shifting to cheaper open-weight and Chinese models: secondary, truncated and unquantified in the post; would need the FT original to move subst.",
+   "SemiAnalysis moratorium thread (22 Sep): 20 GW inside live moratorium boundaries, ~1.5 GW actually delayed — already the basis of the grid scenario as revised 15 Sep 2026.",
+   "Boris Power quote relayed on X ('80-90% of research at OpenAI is focused at GPT 7, GPT 8') is about research attention, not compute allocation, so not usable for the train split.",
+   "No prompt-injection or instruction-like text was found in any feed item, X post or page read today."
+  ]
  }
 ]

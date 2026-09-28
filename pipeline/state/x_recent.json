@@ -1,373 +1,5 @@
 [
  {
-  "handle": "kimmonismus",
-  "id": "2099919697248412154",
-  "at": "2026-09-15T17:54:05.000Z",
-  "text": "Dario Amodei is live with Benioff.\n\nDario likens the \"slow-down\" to a car accident that competitors could capitalize on. He therefore prefers to collaborate with everyone to establish common standards- or, to stick with the analogy, to avoid accidents.\n\nSo, there is no backing https://t.co/UU2YXQz3Cm https://t.co/0k65ZvaFyv",
-  "likes": 188,
-  "url": "https://x.com/kimmonismus/status/2099919697248412154"
- },
- {
-  "handle": "arakharazian",
-  "id": "2099898026848346564",
-  "at": "2026-09-15T16:27:58.000Z",
-  "text": "all via our work at @tryramp and Ramp AI Index https://t.co/xszoePL6v4",
-  "likes": 5,
-  "url": "https://x.com/arakharazian/status/2099898026848346564"
- },
- {
-  "handle": "arakharazian",
-  "id": "2099898023346053627",
-  "at": "2026-09-15T16:27:57.000Z",
-  "text": "OpenAI is winning enterprise spend at the frontier. As of this week, Astra takes 13% of enterprise AI spend vs. Fable (8%) per Ramp data.\n\nSome early thoughts:\n1. Anthropic took a big risk in its recent call to pace the frontier. It's frontier model has already fallen behind on https://t.co/ZzVMUs5jua",
-  "likes": 527,
-  "url": "https://x.com/arakharazian/status/2099898023346053627"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2100403375208542306",
-  "at": "2026-09-17T01:56:02.000Z",
-  "text": "Watch it Now: https://t.co/DHDCaPVos4",
-  "likes": 4,
-  "url": "https://x.com/SemiAnalysis_/status/2100403375208542306"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2100403373803528245",
-  "at": "2026-09-17T01:56:02.000Z",
-  "text": "Regulating AI matters. On either side of the table, the question is no longer whether it happens. It is who gets to say they did it first.\n\n\"I think it's totally possible Trump regulates AI too.\"\n\n\"There is a world where the advisors really internalize that OpenAI and Anthropic https://t.co/kOV3TsZxfi",
-  "likes": 40,
-  "url": "https://x.com/SemiAnalysis_/status/2100403373803528245"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2100335046951346442",
-  "at": "2026-09-16T21:24:32.000Z",
-  "text": "JENSEN IS A LIAR, HE IS UNDERPROMISING &amp; OVERDELIVERING 🚀🚀🚀  At GTC 2026, Jensen only claimed 3x better perf per watt on Rubin NVL72 versus GB300 NVL72, but our tests SHOW 7x BETTER PERF PER WATT. https://t.co/lGFm7qOYUb",
-  "likes": 1969,
-  "url": "https://x.com/SemiAnalysis_/status/2100335046951346442"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2100270128944267506",
-  "at": "2026-09-16T17:06:34.000Z",
-  "text": "Full Article👇️ (2/2) https://t.co/tgKpiwpYCG",
-  "likes": 33,
-  "url": "https://x.com/SemiAnalysis_/status/2100270128944267506"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2100270127438499849",
-  "at": "2026-09-16T17:06:34.000Z",
-  "text": "While everyone worries that moratoriums are killing the datacenter buildout, Elon already knew the game. Now, SpaceX is no longer subject to the Brownsville moratorium.\n\nWhy? Read the article for a full breakdown on moratorium mechanisms, and why they’re impacting far less than https://t.co/Kip84QxZ1a",
-  "likes": 401,
-  "url": "https://x.com/SemiAnalysis_/status/2100270127438499849"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100279820475335083",
-  "at": "2026-09-16T17:45:05.000Z",
-  "text": "Full data and methodology in our latest Data Insight: https://t.co/aREJupszgK",
-  "likes": 9,
-  "url": "https://x.com/EpochAIResearch/status/2100279820475335083"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100279808655831366",
-  "at": "2026-09-16T17:45:02.000Z",
-  "text": "GPT-5.6 Sol (ECI 162) and Kimi K3 (158) are shown for comparison. These results come from our Domain-specific ECI Explorer, where you can view Math and SWE ECIs or design your own variant: https://t.co/RbP83Metg6",
-  "likes": 10,
-  "url": "https://x.com/EpochAIResearch/status/2100279808655831366"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100279797004050590",
-  "at": "2026-09-16T17:44:59.000Z",
-  "text": "Note that each domain-specific ECI is calculated from 3 to 6 benchmark results, so our confidence intervals are wide: GPT-6 Astra’s SWE-ECI of 164 (90% CI: 160 to 170) overlaps with Fable 5.1’s 167 (90% CI: 162 to 179).",
-  "likes": 13,
-  "url": "https://x.com/EpochAIResearch/status/2100279797004050590"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100279785360605488",
-  "at": "2026-09-16T17:44:56.000Z",
-  "text": "Based on pre-release evals, we gave GPT-6 Astra an overall ECI of 169 at launch. Only one of its benchmark results at the time was in software engineering (MirrorCode). But since then, three more SWE results have since been added, and its ECI has subsequently fallen to 166.",
-  "likes": 23,
-  "url": "https://x.com/EpochAIResearch/status/2100279785360605488"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100279773801193642",
-  "at": "2026-09-16T17:44:54.000Z",
-  "text": "Math-ECI and SWE-ECI are domain-specific scores, refit on only one domain’s benchmarks. They measure a model’s abilities in one single domain relative to other models.",
-  "likes": 21,
-  "url": "https://x.com/EpochAIResearch/status/2100279773801193642"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100279761339887847",
-  "at": "2026-09-16T17:44:51.000Z",
-  "text": "GPT-6 Astra leads the Epoch Capabilities Index (ECI), ahead of competing models like Claude Fable 5.1, and its Math-ECI also sets a new record. However, on software engineering benchmarks, Fable 5.1 remains state-of-the-art. https://t.co/w14O6Mb4Uq",
-  "likes": 423,
-  "url": "https://x.com/EpochAIResearch/status/2100279761339887847"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278986010198319",
-  "at": "2026-09-16T17:41:46.000Z",
-  "text": "Read our full announcement here: https://t.co/8EB5jh2ku5",
-  "likes": 5,
-  "url": "https://x.com/EpochAIResearch/status/2100278986010198319"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278974161232232",
-  "at": "2026-09-16T17:41:43.000Z",
-  "text": "Our expanded coverage of AI data centers is part of Epoch’s broader project to map the AI chip supply chain:\n\nOur estimates of the components consumed in manufacturing chips: https://t.co/yJyjuNPnsE\n\nData on which companies sell the most chips: https://t.co/vntsvS5xwK\n\nData on",
-  "likes": 6,
-  "url": "https://x.com/EpochAIResearch/status/2100278974161232232"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278961272168454",
-  "at": "2026-09-16T17:41:40.000Z",
-  "text": "As our coverage grows, we get a clearer picture of where AI compute is actually being built and deployed around the world.\n\nExplore the satellite images and data yourself: https://t.co/y8CDuD67NF https://t.co/Ll4VKvm9L6",
-  "likes": 4,
-  "url": "https://x.com/EpochAIResearch/status/2100278961272168454"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278915931799691",
-  "at": "2026-09-16T17:41:29.000Z",
-  "text": "Our current coverage varies by company. We already include most AI compute owned by Meta. By comparison, most of Microsoft's and Amazon's compute, much of which serves public cloud customers, hasn’t been captured yet. https://t.co/Bm7iIG3tRR",
-  "likes": 7,
-  "url": "https://x.com/EpochAIResearch/status/2100278915931799691"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278899599122733",
-  "at": "2026-09-16T17:41:25.000Z",
-  "text": "How do we know how much compute we haven’t captured yet? Our AI Chip Owners project estimates how much AI compute (in H100e) has been delivered to customers. That was about 20.3 million H100e by the end of 2025. We also know the total compute operational in the data centers we",
-  "likes": 5,
-  "url": "https://x.com/EpochAIResearch/status/2100278899599122733"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278887616016846",
-  "at": "2026-09-16T17:41:22.000Z",
-  "text": "Historically, we’ve focused on the largest data centers used for frontier AI. As we scale, we’re capturing a wider range of data center sizes across more countries, like the 72-MW Oracle data center in Batam, Indonesia. https://t.co/zj535Xpgfj",
-  "likes": 9,
-  "url": "https://x.com/EpochAIResearch/status/2100278887616016846"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278875356033523",
-  "at": "2026-09-16T17:41:19.000Z",
-  "text": "So far in 2026, we’ve captured an estimated 53% of all newly deployed compute. That compares to 39% of compute deployed in 2025 and 26% in 2024. https://t.co/DnCZ7ArooT",
-  "likes": 13,
-  "url": "https://x.com/EpochAIResearch/status/2100278875356033523"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278860315254868",
-  "at": "2026-09-16T17:41:16.000Z",
-  "text": "For each data center we cover, we provide satellite imagery, compute capacity in H100-equivalents, chip type(s), capital costs, and the status of the buildout. https://t.co/bN09ye7HVY",
-  "likes": 13,
-  "url": "https://x.com/EpochAIResearch/status/2100278860315254868"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2100278844456599798",
-  "at": "2026-09-16T17:41:12.000Z",
-  "text": "We're scaling our AI Data Centers research to provide a more comprehensive map of the world's AI infrastructure. Our data now captures ~44% of global AI compute, with coverage growing fast. https://t.co/NJpD2pJajx",
-  "likes": 103,
-  "url": "https://x.com/EpochAIResearch/status/2100278844456599798"
- },
- {
-  "handle": "edzitron",
-  "id": "2100424148015345675",
-  "at": "2026-09-17T03:18:35.000Z",
-  "text": "This is how cats react to any amount of food in their bowl https://t.co/ZlKBiurjZM",
-  "likes": 248,
-  "url": "https://x.com/edzitron/status/2100424148015345675"
- },
- {
-  "handle": "edzitron",
-  "id": "2100338670524047515",
-  "at": "2026-09-16T21:38:56.000Z",
-  "text": "Ohhh ok https://t.co/t4Sw3L2z6p",
-  "likes": 1197,
-  "url": "https://x.com/edzitron/status/2100338670524047515"
- },
- {
-  "handle": "edzitron",
-  "id": "2100304883169804776",
-  "at": "2026-09-16T19:24:40.000Z",
-  "text": "https://t.co/imqdSevifq other podcast links.",
-  "likes": 11,
-  "url": "https://x.com/edzitron/status/2100304883169804776"
- },
- {
-  "handle": "edzitron",
-  "id": "2100304881810804863",
-  "at": "2026-09-16T19:24:40.000Z",
-  "text": "Here's this week's Better Offline: I'm joined by Cal Newport and @FreelanceAstro to get the word out that the narrative about existential risk from AI is driven by a religious cult of effective altruists and rationalists\nhttps://t.co/2zDd6GrHLa",
-  "likes": 58,
-  "url": "https://x.com/edzitron/status/2100304881810804863"
- },
- {
-  "handle": "edzitron",
-  "id": "2100298383206564269",
-  "at": "2026-09-16T18:58:50.000Z",
-  "text": "https://t.co/QgrxHZi5dj https://t.co/ZLkO8vmbDq https://t.co/RcBjecNgPY",
-  "likes": 403,
-  "url": "https://x.com/edzitron/status/2100298383206564269"
- },
- {
-  "handle": "edzitron",
-  "id": "2100284428446740700",
-  "at": "2026-09-16T18:03:23.000Z",
-  "text": "Wow. the Fed raises interest rates 30%. Warsh is saying that he \"doesn't give a shit\"",
-  "likes": 890,
-  "url": "https://x.com/edzitron/status/2100284428446740700"
- },
- {
-  "handle": "edzitron",
-  "id": "2100276859846132173",
-  "at": "2026-09-16T17:33:19.000Z",
-  "text": "no that's katy perry. crazy town has never played dreamforce https://t.co/Il2vPvP9vd",
-  "likes": 106,
-  "url": "https://x.com/edzitron/status/2100276859846132173"
- },
- {
-  "handle": "edzitron",
-  "id": "2100275956615455222",
-  "at": "2026-09-16T17:29:43.000Z",
-  "text": "who is \"kevin wash\" and why does everyone say his name like that",
-  "likes": 136,
-  "url": "https://x.com/edzitron/status/2100275956615455222"
- },
- {
-  "handle": "edzitron",
-  "id": "2100247415056150736",
-  "at": "2026-09-16T15:36:19.000Z",
-  "text": "Joined @edels0n on Prof G Markets to give my take on the AI safety debate, explain why it’s attracted so much attention, and point out how catastrophically the media has missed on this story.\n\nhttps://t.co/KKAdQoRcHN",
-  "likes": 79,
-  "url": "https://x.com/edzitron/status/2100247415056150736"
- },
- {
-  "handle": "edzitron",
-  "id": "2100246112062132273",
-  "at": "2026-09-16T15:31:08.000Z",
-  "text": "The replies on my posts https://t.co/gLO8L1lR15",
-  "likes": 264,
-  "url": "https://x.com/edzitron/status/2100246112062132273"
- },
- {
-  "handle": "edzitron",
-  "id": "2100239586039615543",
-  "at": "2026-09-16T15:05:12.000Z",
-  "text": "Balk. Balk. Balk. What happened to the game I love? https://t.co/nKNGsbl3Uh",
-  "likes": 298,
-  "url": "https://x.com/edzitron/status/2100239586039615543"
- },
- {
-  "handle": "edzitron",
-  "id": "2100234435119686141",
-  "at": "2026-09-16T14:44:44.000Z",
-  "text": "My mentions https://t.co/qN8foWxbNg",
-  "likes": 255,
-  "url": "https://x.com/edzitron/status/2100234435119686141"
- },
- {
-  "handle": "GavinSBaker",
-  "id": "2100240010695827959",
-  "at": "2026-09-16T15:06:53.000Z",
-  "text": "Extraordinary share gains for OpenAI vs. Anthropic over the last two months.\n\nPer Openrouter, OpenAI has gone from 20% share to 50% share vs. Anthropic (meaning Anthropic has gone from 80% to 50%) since June. https://t.co/zQEq4juBte",
-  "likes": 3079,
-  "url": "https://x.com/GavinSBaker/status/2100240010695827959"
- },
- {
-  "handle": "ttunguz",
-  "id": "2100272569421361534",
-  "at": "2026-09-16T17:16:16.000Z",
-  "text": "Huge milestone for @seanmcccarthy &amp; the @Backopsai team! Congratulations on the Series B 📦 https://t.co/aVdCwVgtoo",
-  "likes": 15,
-  "url": "https://x.com/ttunguz/status/2100272569421361534"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100476975131357274",
-  "at": "2026-09-17T06:48:30.000Z",
-  "text": "The market for talent is becoming more efficient https://t.co/VhHy6NGEPI",
-  "likes": 0,
-  "url": "https://x.com/drorpoleg/status/2100476975131357274"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100474582859702444",
-  "at": "2026-09-17T06:39:00.000Z",
-  "text": "As with human intelligence, every now and then a leader is born with a strong desire to be free. https://t.co/VwFEx1H4U1",
-  "likes": 1,
-  "url": "https://x.com/drorpoleg/status/2100474582859702444"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100472412357661033",
-  "at": "2026-09-17T06:30:22.000Z",
-  "text": "Stunning. https://t.co/dllbAPodGa",
-  "likes": 2,
-  "url": "https://x.com/drorpoleg/status/2100472412357661033"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100287349376655650",
-  "at": "2026-09-16T18:15:00.000Z",
-  "text": "\"I'm not remote; I'm long-distance.\"\n\nA third of US workers now report to a manager in a different metropolitan area. (Data: @ADP) https://t.co/v9vwkrUt0N",
-  "likes": 5,
-  "url": "https://x.com/drorpoleg/status/2100287349376655650"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100264751901143238",
-  "at": "2026-09-16T16:45:12.000Z",
-  "text": "“If fire is so powerful, why can’t it build a house?”",
-  "likes": 1,
-  "url": "https://x.com/drorpoleg/status/2100264751901143238"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100252306381947343",
-  "at": "2026-09-16T15:55:45.000Z",
-  "text": "Tired: Pay for AI to listen to your meetings\nWired: Pay for AI to NOT listen to your meetings\n\nWe'll need similar solutions for many other situations. https://t.co/qqjwbCUIJm",
-  "likes": 4,
-  "url": "https://x.com/drorpoleg/status/2100252306381947343"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100250124035281230",
-  "at": "2026-09-16T15:47:04.000Z",
-  "text": "Office visits continue to trend upwards... and remain 32% below pre-COVID levels, according to @Placer_ai https://t.co/4DmZvW0aEz",
-  "likes": 3,
-  "url": "https://x.com/drorpoleg/status/2100250124035281230"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100237000737481178",
-  "at": "2026-09-16T14:54:56.000Z",
-  "text": "“Slop grenade” is a great term for passing along AI-made output that creates more work for colleagues. It also highlights something many humans do even without AI. https://t.co/P9S5H4e4Za",
-  "likes": 7,
-  "url": "https://x.com/drorpoleg/status/2100237000737481178"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2100198774052155428",
-  "at": "2026-09-16T12:23:02.000Z",
-  "text": "For every dollar they bring in, hyperscalers employ fewer people and spend more on machines and buildings. Much more. https://t.co/sUVZZKqccc",
-  "likes": 7,
-  "url": "https://x.com/drorpoleg/status/2100198774052155428"
- },
- {
   "handle": "sama",
   "id": "2100351958167220547",
   "at": "2026-09-16T22:31:44.000Z",
@@ -4798,5 +4430,373 @@
   "text": "OpenAI updates on upcoming products:\n\n- Their always-on agent will be called \"o\" (essentially a GrokBot alternative)\n- It will be available in all Pro tiers\n\n- Fast Mode confirmed, presumably included in the $500 sub-plan. (Cerebras chip takes effect)\n\n- shared message board for https://t.co/GJsuVNN9gd https://t.co/5WF2mYpSfY",
   "likes": 1100,
   "url": "https://x.com/kimmonismus/status/2103823673954087231"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2104405843655401704",
+  "at": "2026-09-28T03:00:25.000Z",
+  "text": "ALERT🚨: Just 4 TPUv7s were able to get close to 1 giant @cerebras wafer in terms of interactivity due to the cracked @inferact 200IQ software using megakernels.\n\nHopefully, the Cerebras DevX team won’t be cope-tweeting after seeing how great TPUv7 is. https://t.co/kcxSojGetN",
+  "likes": 1270,
+  "url": "https://x.com/SemiAnalysis_/status/2104405843655401704"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2104345502045069556",
+  "at": "2026-09-27T23:00:39.000Z",
+  "text": "Does anyone know if @huggingface (owned by @NVIDIA) still has access to the MI455X that AMD gave them under embargo? Does anyone know if AMD continues to give exclusive access to next-gen hardware to Hugging Face (owned by NVIDIA)? Will Hugging Face be working on making Nemotron3 https://t.co/ElPaaE1zPN",
+  "likes": 202,
+  "url": "https://x.com/SemiAnalysis_/status/2104345502045069556"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2104285209562697915",
+  "at": "2026-09-27T19:01:04.000Z",
+  "text": "4 Hi Kanye Concert vs 12 Hi Kanye Concert https://t.co/Pg2DWTYtyl",
+  "likes": 35,
+  "url": "https://x.com/SemiAnalysis_/status/2104285209562697915"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104386999217959317",
+  "at": "2026-09-28T01:45:32.000Z",
+  "text": "I love these Raiders so much https://t.co/4U33jiRtiY",
+  "likes": 101,
+  "url": "https://x.com/edzitron/status/2104386999217959317"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104367151729762750",
+  "at": "2026-09-28T00:26:40.000Z",
+  "text": "Opening up Google and typing “Google” into the search bar https://t.co/oAO8Gh4ZEq",
+  "likes": 98,
+  "url": "https://x.com/edzitron/status/2104367151729762750"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104363165190647999",
+  "at": "2026-09-28T00:10:50.000Z",
+  "text": "Mandate of Heaven is lost I’m afraid. WSJ saying it’s a “when” the ai bubble bursts. SNL dabbing on your biggest names for being weird. FT says 50% of chips sold in 2026 and 2027 have nowhere to go. Hundreds of billions short on revenue for even 10% ROIC. A disaster. https://t.co/7G7y1g76hp",
+  "likes": 3059,
+  "url": "https://x.com/edzitron/status/2104363165190647999"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104361247982473279",
+  "at": "2026-09-28T00:03:13.000Z",
+  "text": "Imagine if in even one of these interviews someone said “hey man what the fuck are you talking about?” https://t.co/wxsWfJj9uZ",
+  "likes": 10335,
+  "url": "https://x.com/edzitron/status/2104361247982473279"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104360393908842555",
+  "at": "2026-09-27T23:59:49.000Z",
+  "text": "I want a podcast with him and Jacoby Brissett called “I Guess” and it’s just them shrugging for 90 minutes https://t.co/xe9xdACFAm",
+  "likes": 32,
+  "url": "https://x.com/edzitron/status/2104360393908842555"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104359763496583180",
+  "at": "2026-09-27T23:57:19.000Z",
+  "text": "https://t.co/7GULLbNLAB https://t.co/RjY49w8Za7",
+  "likes": 394,
+  "url": "https://x.com/edzitron/status/2104359763496583180"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104306298879676585",
+  "at": "2026-09-27T20:24:52.000Z",
+  "text": "No https://t.co/rNFf0C2Ufn",
+  "likes": 238,
+  "url": "https://x.com/edzitron/status/2104306298879676585"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104301516584878123",
+  "at": "2026-09-27T20:05:52.000Z",
+  "text": "Yep\nhttps://t.co/eaG2XI6h5B https://t.co/s3HQPIueTa https://t.co/HVvpcMXP8a",
+  "likes": 1569,
+  "url": "https://x.com/edzitron/status/2104301516584878123"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104273551096430910",
+  "at": "2026-09-27T18:14:44.000Z",
+  "text": "I know he never lived up to where he was picked but Mariota has his moments https://t.co/TnXbLM04lu",
+  "likes": 58,
+  "url": "https://x.com/edzitron/status/2104273551096430910"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104261388898103750",
+  "at": "2026-09-27T17:26:25.000Z",
+  "text": "https://t.co/y0gs2gZREM the ft verified them!",
+  "likes": 47,
+  "url": "https://x.com/edzitron/status/2104261388898103750"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104260057563312377",
+  "at": "2026-09-27T17:21:07.000Z",
+  "text": "? I published OpenAI’s audited financials in June\n\n https://t.co/0xpILXnURG https://t.co/OIZ29leGgS https://t.co/4sPMuS8nPN",
+  "likes": 520,
+  "url": "https://x.com/edzitron/status/2104260057563312377"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104238975938347165",
+  "at": "2026-09-27T15:57:21.000Z",
+  "text": "Oh they’re saying when now https://t.co/4sPMuS7Q0f",
+  "likes": 1822,
+  "url": "https://x.com/edzitron/status/2104238975938347165"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2104228818391343322",
+  "at": "2026-09-27T15:16:59.000Z",
+  "text": "“some companies are hoarding colossal amounts in case they come to a point at which they don’t have enough chips to provide the computing capacity”\n\nI told ya\n\nhttps://t.co/yi2mjJ1q6a https://t.co/aZKYFhPSSR https://t.co/EM4GOg478J",
+  "likes": 1391,
+  "url": "https://x.com/edzitron/status/2104228818391343322"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2104544360540897525",
+  "at": "2026-09-28T12:10:50.000Z",
+  "text": "My analogy would be that this is an seatbelt and airbag for AI that protects us from bad driving, whether our own or others.\n\nBut their analogy from their technical blog is better:\n\n“The internet in the 90s…was new and full of possibilities. You could build a website over a",
+  "likes": 51,
+  "url": "https://x.com/GavinSBaker/status/2104544360540897525"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2104544357034377316",
+  "at": "2026-09-28T12:10:49.000Z",
+  "text": "Safety is an engineering problem, the @nvidia edition:\n\nOpen Shell to enforce policy in the kernel outside the agent process. Can be paired with Sentry which runs in BF-4 and can quarantine a rogue agent in milliseconds.\n\nContainment is the backstop to alignment. Super elegant. https://t.co/eEh6T6H5uz",
+  "likes": 433,
+  "url": "https://x.com/GavinSBaker/status/2104544357034377316"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104554017078595646",
+  "at": "2026-09-28T12:49:13.000Z",
+  "text": "We don't just have too many offices. We have the wrong ones.\n\nhttps://t.co/JspReR3qzl",
+  "likes": 1,
+  "url": "https://x.com/drorpoleg/status/2104554017078595646"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104544793179095521",
+  "at": "2026-09-28T12:12:33.000Z",
+  "text": "“America has lost more than 200k jobs in “creative” industries over the last four years, with roughly 50k lost within the last year alone.” https://t.co/N7j0XJlOZA",
+  "likes": 1,
+  "url": "https://x.com/drorpoleg/status/2104544793179095521"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104287663008235713",
+  "at": "2026-09-27T19:10:49.000Z",
+  "text": "➕ https://t.co/G9E9bBBvtQ",
+  "likes": 5,
+  "url": "https://x.com/drorpoleg/status/2104287663008235713"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104257345882554558",
+  "at": "2026-09-27T17:10:21.000Z",
+  "text": "Probably nothing https://t.co/fjBFYpB9AB",
+  "likes": 3,
+  "url": "https://x.com/drorpoleg/status/2104257345882554558"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104247112544440397",
+  "at": "2026-09-27T16:29:41.000Z",
+  "text": "\"Poland has increased spending on drones and counterdrone systems from about $27 million in late 2023 to roughly $6.9 billion this year.\" https://t.co/53X9l90XTa",
+  "likes": 12,
+  "url": "https://x.com/drorpoleg/status/2104247112544440397"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104225865387184329",
+  "at": "2026-09-27T15:05:15.000Z",
+  "text": "Chef's kiss. https://t.co/JAhJ5HMxr5",
+  "likes": 0,
+  "url": "https://x.com/drorpoleg/status/2104225865387184329"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104213171515080781",
+  "at": "2026-09-27T14:14:49.000Z",
+  "text": "\"drones account for over 95% of battlefield strikes, and Ukraine has more than 700 UAV manufacturers.\" https://t.co/0RpqBaZH6D",
+  "likes": 3,
+  "url": "https://x.com/drorpoleg/status/2104213171515080781"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2104211302767849770",
+  "at": "2026-09-27T14:07:23.000Z",
+  "text": "Ukraine runs a marketplace where individual units can buy — and sell — new weapons, munitions, and software. Units that perform well earn bonus credits they can use to buy new gear. https://t.co/VxUNnF2gl8",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2104211302767849770"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104573474417119266",
+  "at": "2026-09-28T14:06:32.000Z",
+  "text": "Meta is making enterprise AI a major business priority, challenging the impression that its AI strategy was focused entirely on consumers.\n\nThis is significant because a new player is now emerging in the enterprise sector that also intends to challenge OpenAI and Anthropic for https://t.co/QGgkl0HvOQ",
+  "likes": 13,
+  "url": "https://x.com/kimmonismus/status/2104573474417119266"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104547347287900337",
+  "at": "2026-09-28T12:22:42.000Z",
+  "text": "Looks like Sonnet-5.5 could be released today! Another insane week ahead. Lyra is very reliable, that’s why I take that serious. https://t.co/pjZ0chSczd",
+  "likes": 964,
+  "url": "https://x.com/kimmonismus/status/2104547347287900337"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104535835659968596",
+  "at": "2026-09-28T11:36:58.000Z",
+  "text": "again: even Anthropic signed. Where the heck is OpenAI?",
+  "likes": 20,
+  "url": "https://x.com/kimmonismus/status/2104535835659968596"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104535134011588838",
+  "at": "2026-09-28T11:34:10.000Z",
+  "text": "Very good! NVIDIA is bringing over 100 partners together to tackle the agent security failures that threaten to slow AI development. However, strangely enough especially OpenAI is missing. \n\nAfter OpenAI’s Hugging Face breach and Anthropic’s testing incidents, its Open Agent https://t.co/4ig4SALlCz https://t.co/aahU7Z65nK",
+  "likes": 271,
+  "url": "https://x.com/kimmonismus/status/2104535134011588838"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104518966894789113",
+  "at": "2026-09-28T10:29:56.000Z",
+  "text": "Some people speculate that we’ll see a new \"o\" model featuring the \"o\" agent. We recall that, back in the day, the models were named o3, o4, and so on.\n\nI’m not sure I agree with that. OpenAI has generally moved away from \"o\" designations in its naming conventions, switching https://t.co/g1vIfyJAN8",
+  "likes": 216,
+  "url": "https://x.com/kimmonismus/status/2104518966894789113"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104500631256051782",
+  "at": "2026-09-28T09:17:04.000Z",
+  "text": "https://t.co/xGAysPIo22",
+  "likes": 8,
+  "url": "https://x.com/kimmonismus/status/2104500631256051782"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104500619130323274",
+  "at": "2026-09-28T09:17:01.000Z",
+  "text": "I keep reading that local models are largely irrelevant in business. That is completely wrong. Rising AI bills are pushing US companies toward cheaper open-weight models, including Chinese alternatives to OpenAI and Anthropic, the FT reports.\n\nFor example AT&amp;T wants to increase https://t.co/xBt1z3U6NE",
+  "likes": 149,
+  "url": "https://x.com/kimmonismus/status/2104500619130323274"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483523168198941",
+  "at": "2026-09-28T08:09:05.000Z",
+  "text": "8/ The full Apodex 1.1 model powers the Web workspace. Upload one of your own papers, datasets, spreadsheets, images, or code files and give it a real task:\nhttps://t.co/5zfrW0JYRb\nAPI access:\nhttps://t.co/AfVYKy2BJU\nNew Web users receive registration credits.",
+  "likes": 6,
+  "url": "https://x.com/kimmonismus/status/2104483523168198941"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483511428325714",
+  "at": "2026-09-28T08:09:03.000Z",
+  "text": "7/ Apodex 1.1 mini brings the release into a local workflow. Its weights are open and it can be deployed locally with FrontierAgent.\nView or download the model:\nhttps://t.co/lY875clHDO",
+  "likes": 5,
+  "url": "https://x.com/kimmonismus/status/2104483511428325714"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483499646595560",
+  "at": "2026-09-28T08:09:00.000Z",
+  "text": "6/ The open-source part is FrontierAgent, a command-line TUI for ReAct and Agent Team workflows across files, search, and code. It runs on macOS and Linux, with Docker optional.\nExplore the framework and star the repo:\nhttps://t.co/aTkwn2wwG5",
+  "likes": 0,
+  "url": "https://x.com/kimmonismus/status/2104483499646595560"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483487625658571",
+  "at": "2026-09-28T08:08:57.000Z",
+  "text": "5/ Before delivery, Statement Review separates the answer from its review.\n\nApodex says it checks key claims against sources, data, and calculations, flags conflicts, and keeps a correction record.\nFor research, that audit trail can be more useful than another polished paragraph. https://t.co/pHOAUF2DjI",
+  "likes": 1,
+  "url": "https://x.com/kimmonismus/status/2104483487625658571"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483472891113741",
+  "at": "2026-09-28T08:08:54.000Z",
+  "text": "4/ The user can still steer the work while it is running. Add a file, change a requirement, or redirect one branch, and the system is designed to preserve the work that remains valid while replanning the affected steps. https://t.co/FUSO4Vvv1M",
+  "likes": 1,
+  "url": "https://x.com/kimmonismus/status/2104483472891113741"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483457984496074",
+  "at": "2026-09-28T08:08:50.000Z",
+  "text": "3/ For jobs with several independent branches, Deep Discover can create an asynchronous Agent Team. Subagents work in parallel and return useful findings to shared task state as soon as they are ready, instead of making the entire run wait for the slowest branch. https://t.co/a4RNiaA7Zf",
+  "likes": 1,
+  "url": "https://x.com/kimmonismus/status/2104483457984496074"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483442914406512",
+  "at": "2026-09-28T08:08:46.000Z",
+  "text": "2/ The workflow begins with the material: papers, datasets, spreadsheets, images, or code.\n\nApodex can inspect and clean files, select methods, execute code, generate artifacts, and keep each step visible on a Task board while the job develops. https://t.co/HX66nLt6Fa",
+  "likes": 5,
+  "url": "https://x.com/kimmonismus/status/2104483442914406512"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104483425961066780",
+  "at": "2026-09-28T08:08:42.000Z",
+  "text": "1/ The research report can look finished while work is still waiting: prepare the files, choose a method, run the analysis, fix what breaks, and check the conclusion.\n\nApodex 1.1 is built for that unfinished work, carrying a task from raw inputs to a result you can inspect. A https://t.co/LlXD2uRptd",
+  "likes": 37,
+  "url": "https://x.com/kimmonismus/status/2104483425961066780"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104467157744595150",
+  "at": "2026-09-28T07:04:04.000Z",
+  "text": "Two observations from the last few days.\n\nTibo keeps pointing to \"o\". I couldn't be more excited. It seems to be a really huge deal for them.\n\nAt the same time, the vibe regarding the models has shifted once again. Opus 5.5, yet OpenAI doesn't seem the least bit worried. So, I https://t.co/vDPQehB9VU",
+  "likes": 637,
+  "url": "https://x.com/kimmonismus/status/2104467157744595150"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104334517347516544",
+  "at": "2026-09-27T22:17:00.000Z",
+  "text": "Boris Power: \"80-90% of research at OpenAI is focused at GPT 7, GPT 8, and beyond.\"\n\nLet that sink in for a moment. No one is slowing down. They all Focus mainly on AGI and RSI.\n https://t.co/PtKShCHJZN",
+  "likes": 1178,
+  "url": "https://x.com/kimmonismus/status/2104334517347516544"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104318945092382894",
+  "at": "2026-09-27T21:15:07.000Z",
+  "text": "lets be the change.",
+  "likes": 36,
+  "url": "https://x.com/kimmonismus/status/2104318945092382894"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104311723473924437",
+  "at": "2026-09-27T20:46:25.000Z",
+  "text": "It almost seems as if we are the only hope. Nearly all the AI ​​news I read focuses solely on the worries and fears.\n\nWe are the few who still believe in progress, in a bright future. This belief needs to be expressed more clearly. https://t.co/wG3HWcqx6C",
+  "likes": 604,
+  "url": "https://x.com/kimmonismus/status/2104311723473924437"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2104243038747066632",
+  "at": "2026-09-27T16:13:30.000Z",
+  "text": "https://t.co/M0OGNWreqL",
+  "likes": 21,
+  "url": "https://x.com/kimmonismus/status/2104243038747066632"
  }
 ]

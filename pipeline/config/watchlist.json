@@ -178,6 +178,13 @@
    "kind": "html",
    "match": "/publications",
    "added": "2026-09-27"
+  },
+  {
+   "name": "Epoch AI — AI Data Centers explorer (site-level GW, cost, bu",
+   "url": "https://epoch.ai/data/ai-data-centers",
+   "kind": "html",
+   "match": "/data/ai-data-centers",
+   "added": "2026-09-28"
   }
  ],
  "x_handles": [
