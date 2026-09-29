@@ -255,5 +255,20 @@
    "Boris Power quote relayed on X ('80-90% of research at OpenAI is focused at GPT 7, GPT 8') is about research attention, not compute allocation, so not usable for the train split.",
    "No prompt-injection or instruction-like text was found in any feed item, X post or page read today."
   ]
+ },
+ {
+  "date": "2026-09-29",
+  "notes": [
+   "Reuters/Anthropic: nearly a quarter of 2025 revenue from two customers - customer concentration alone is excluded from correlation_evidence, so no rho move; folded into the new scenario instead.",
+   "Anthropic 2025 compute and infrastructure cost $7.33bn is reported, but no training/inference split is disclosed, so no compute_split proposal (train stays 50).",
+   "Tunguz's B200 rental index ($8.08/GPU-hr) implies roughly $33-42bn per GW-year of raw rental at 80-100% utilisation, i.e. consistent with mono=50 for lab revenue per inference GW - no mono move proposed.",
+   "h100_rental gauge not proposed: Tunguz tracks a B200 index, not the same measure as the $2.00/hr H100 gauge.",
+   "OpenAI paused training, evaluation and tool-using inference of its most capable models (incident report 25 Sep 2026; AP/CBC 27 Sep). Potentially large but no public duration or demand magnitude yet - no event proposed; flagged for grading next week.",
+   "Anthropic Sonnet 5.5 '30% less per task' and Opus 5.5 '40% less to run' are efficiency claims, not migration or usage-share data - no subst or sh_* move.",
+   "Epoch AI Data Centers explorer used for K0 only; no history_K for 2026Q3, since a 10 GW entry there was rejected on 2026-09-28.",
+   "No new METR measurement for the September frontier models was found, so H0 (5.08h, Apr 2026) and D0 are left alone.",
+   "capexGW left alone: two capex proposals (44 and 56) were rejected this week and nothing new was reported.",
+   "No prompt-injection or instruction-like content was encountered in the feeds, X posts or fetched pages today."
+  ]
  }
 ]

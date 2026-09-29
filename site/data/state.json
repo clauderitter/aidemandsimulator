@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-28T14:25:06.058Z",
+ "generated_at": "2026-09-29T13:20:07.184Z",
  "quarter0": "2026Q3",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -501,14 +501,14 @@
    "short": "Labs can add up to a quarter of their fleet per quarter (~2.4× a year), between analyst pace and Patel’s tripling."
   },
   "fin": {
-   "value": 1.4,
+   "value": 1.2,
    "label": "Financing sensitivity to markets",
    "hidden": false,
    "basis": "Datacentres are financed like real estate at 70%+ debt, with ~$4T of AI infrastructure issuance estimated over five years (Tunguz, Sep 2026); builds scale with credit and market conditions. (estimate, 2026-09-04). New quantitative sizing of the debt dependence of the buildout: $4T of issuance over five years, equal to 143% of the entire global private credit market and 286% of US commercial paper, with data centres financed as real-estate projects at 70%+ debt. That is a materially larger debt share than the FactSet 9%->32% figure the current value rests on, so builds should scale more, not less, with credit and market conditions. Modest move within the per-run limit (1 -> 1.3) rather than to the credit-scenario level of 2.",
-   "as_of": "2026-09-15",
+   "as_of": "2026-09-29",
    "type": "estimate",
-   "source": "https://paulkedrosky.com/treasuries-debt-and-the-data-center-refi-cliff-life-at-5/",
-   "updated": "2026-09-16",
+   "source": "https://thenextweb.com/news/anthropic-ipo-prospectus-42bn-loss-518bn-compute",
+   "updated": "2026-09-29",
    "rule": "",
    "short": "Datacentres are financed like real estate at 70%+ debt, with ~$4T of AI infrastructure issuance estimated over five years (Tunguz, Sep 2026); builds scale with credit and market conditions."
   },
@@ -715,6 +715,14 @@
    "label": "A realised, first-party price shock inside quarter zero: OpenAI cut GPT-6 Sol to $2/$10 and Luna to $0.10/$0.50 per mill",
    "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
    "added": "2026-09-23"
+  },
+  {
+   "q": "2026Q3",
+   "type": "reprice",
+   "v": 35,
+   "label": "The compute reprice that the boom and physics scenarios pin to 2027Q1 has already started: Tunguz's B200 rental index we",
+   "source": "https://tomtunguz.com/how-gpu-prices-double-while-ai-gets-cheaper/",
+   "added": "2026-09-29"
   }
  ],
  "scenarios": [
@@ -780,7 +788,7 @@
     "checks": [
      "ok: 2027Q4 $687B vs $600–1500B"
     ],
-    "date": "2026-09-28"
+    "date": "2026-09-29"
    }
   },
   {
@@ -825,7 +833,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.7 vs ×4–8"
     ],
-    "date": "2026-09-28"
+    "date": "2026-09-29"
    }
   },
   {
@@ -1134,7 +1142,7 @@
      "ok: 2027Q4 $268B vs $225–340B",
      "ok: 2028Q4 $561B vs $395–675B"
     ],
-    "date": "2026-09-28"
+    "date": "2026-09-29"
    }
   },
   {
@@ -1348,9 +1356,9 @@
    "value": "50%",
    "sub": "frontier revenue 123.8 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-28",
+   "as_of": "2026-09-29",
    "auto": true,
-   "updated": "2026-09-28"
+   "updated": "2026-09-29"
   },
   {
    "id": "fms_tailrisk",
@@ -1377,12 +1385,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "8.9%",
-   "sub": "28 Sept 2026 · “AI bubble burst in 2026?”",
+   "value": "8.6%",
+   "sub": "29 Sept 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-28",
+   "as_of": "2026-09-29",
    "auto": true,
-   "updated": "2026-09-28"
+   "updated": "2026-09-29"
   },
   {
    "id": "aaii",
@@ -1398,12 +1406,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "14.9",
-   "sub": "25 Sept 2026 close (CBOE)",
+   "value": "16.1",
+   "sub": "28 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-25",
+   "as_of": "2026-09-28",
    "auto": true,
-   "updated": "2026-09-26"
+   "updated": "2026-09-29"
   },
   {
    "id": "fed_fsr",
@@ -1488,12 +1496,12 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.18%",
-   "sub": "24 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.17%",
+   "sub": "25 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-09-24",
+   "as_of": "2026-09-25",
    "auto": true,
-   "updated": "2026-09-26"
+   "updated": "2026-09-29"
   },
   {
    "id": "hy_oas",
@@ -1520,11 +1528,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "24 Sept 2026 (FRED DFF)",
+   "sub": "25 Sept 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-09-24",
+   "as_of": "2026-09-25",
    "auto": true,
-   "updated": "2026-09-26"
+   "updated": "2026-09-29"
   },
   {
    "id": "growth_check",
@@ -1532,9 +1540,9 @@
    "value": "+56% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×5.9 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-28",
+   "as_of": "2026-09-29",
    "auto": true,
-   "updated": "2026-09-28"
+   "updated": "2026-09-29"
   }
  ],
  "frozen": [],
