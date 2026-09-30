@@ -1,5 +1,124 @@
 [
  {
+  "date": "2026-09-30",
+  "source": "https://www.wheresyoured.at/dead-money/",
+  "kind": "rejected",
+  "target": "scenario:contagion",
+  "old": null,
+  "new": "Zitron's 29 Sep 'Dead Money' revises the numbers: ~$22bn of global non-Anthropic/OpenAI compute demand (was 'under $30bn'), the two labs at 70-80% of all AI revenue and compute demand, $183bn of hyperscaler AI revenue of which at least 64% ($118.2bn) is the two labs, and Morgan Stanley finding more than half of GPU servers sold 2026-2028 may have nowhere to be plugged in.",
+  "reason": "Zitron's refreshed figure (64% of $183bn of hyperscaler AI revenue from the two labs) is if anything slightly less concentrated than the 70–75% already in the basis, and the quoted evidence says nothing about capex cancellation, so it does not support deepening capex_cut from 30% to 40%."
+ },
+ {
+  "date": "2026-09-30",
+  "source": "https://www.exponentialview.co/p/the-first-existential-ipo",
+  "kind": "rejected",
+  "target": "scenario:middle",
+  "old": null,
+  "new": "Re-fit on Azeem Azhar's 29 Sep read of the leaked Anthropic S-1: $518bn of compute commitments over 7-10 years, ~$410bn non-cancelable, implying ~$1T of sales over the period against >$100bn annualised revenue already at end-2026 - roughly $100-140bn a year on average, i.e. a high level with much slower compounding than the current middle path.",
+  "reason": "The quoted S-1 arithmetic is about Anthropic's contracted commitments and revenue level, not about revenue returned per dollar of token spend or a stated comparison of observed versus implied growth, so it cannot carry cuts to k_rd/k_swe/k_trd — the change reads as fitting the scenario to its anchor band."
+ },
+ {
+  "date": "2026-09-30",
+  "source": "https://www.exponentialview.co/p/the-first-existential-ipo",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.1,
+  "reason": "The same Anthropic S-1 take-or-pay evidence ($518bn of commitments, ~80% non-cancellable) was already accepted for fin on 29 Sep and is reflected in the current value, so moving again on it would double-count."
+ },
+ {
+  "date": "2026-09-30",
+  "source": "https://openai.com/index/introducing-gpt-6-1-sol",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 40,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://openai.com/index/introducing-gpt-6-1-sol."
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "50%",
+  "new": "60%",
+  "reason": "Observed from source (2026-09-30).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+56% vs +24%",
+  "new": "+65% vs +24%",
+  "reason": "Observed from source (2026-09-30).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "R0",
+  "old": 123.8,
+  "new": 151,
+  "reason": "Derived: Epoch disclosed sum 136 + undisclosed allowance 15.",
+  "source": ""
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "R0_epoch",
+  "old": 108.8,
+  "new": 136,
+  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: OpenAI $70B (2026-09-29), Anthropic $65B (2026-07-31), Z.ai (Zhipu) $2B (2026-08-31), DeepSeek $1B (2026-09-24), MiniMax $1B (2026-08-26), xAI $0B (2025-09-30). Capped: target 138.8, continues next run.",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
+  "capped": true,
+  "target_value": 138.8
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.6%",
+  "new": "8.6%",
+  "reason": "Observed from source (2026-09-30).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.1",
+  "new": "16.0",
+  "reason": "Observed from source (2026-09-29).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "293bp",
+  "new": "302bp",
+  "reason": "Observed from source (2026-09-28).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-28).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-09-30",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.17%",
+  "new": "5.24%",
+  "reason": "Observed from source (2026-09-28).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-09-29",
   "source": "https://thenextweb.com/news/anthropic-ipo-prospectus-42bn-loss-518bn-compute",
   "kind": "rejected",

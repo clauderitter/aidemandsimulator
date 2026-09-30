@@ -1,27 +1,5 @@
 [
  {
-  "date": "2026-09-15",
-  "notes": [
-   "fed_fsr: latest Fed Financial Stability Report is still May 2026 (next edition due ~Nov 2026); coverage of it confirms 50% of surveyed contacts cited AI as a salient risk, up from 30% in fall 2025 — no newer reading, gauge unchanged at 50% as of 2026-05-01.",
-   "h100_rental: fetched the SemiAnalysis source directly; article still dated Apr 02, 2026 and still reports H100 1-year contract pricing up ~40% from a $1.70/hr low in Oct 2025 to $2.35/hr/GPU by March 2026 — no newer index print, gauge unchanged.",
-   "openrouter_cn: the officechai source is dated June 26, 2026 (US share ~70%->~30% June 2025 to June 2026, Chinese models a majority of tokens); no newer monthly leaderboard post reachable — gauge unchanged at >60%.",
-   "capex_ocf: Epoch AI data insight still dated Jun. 16, 2026 and still says aggregate hyperscaler cash capex is on track to overtake operating cash flow around Q3 2026 — no revision, gauge unchanged.",
-   "bonds: Fortune piece still dated 2026-07-31, citing S&P Global's $225B of hyperscaler/related bond issuance year to date and a $400B full-year pace — no newer S&P tally obtainable; gauge unchanged.",
-   "crwv_cds: could not retrieve a fresh CoreWeave 5-year CDS quote — investing.com does not expose a fetchable CDS series and my search/fetch budget was exhausted; leaving gauge at ~855bp as of 2026-07-29 and flagging it as the stalest, highest-priority item for the next refresh.",
-   "vc_h1: Crunchbase global report still the Q2/H1 2026 edition (record $510B in H1 2026, >$200B in Q2); Q3 2026 global report is not published until early October — no newer reading.",
-   "Process note: web_search and web_fetch quotas were exhausted mid-refresh (an early failed batch burned searches), so verification relied on direct fetches of the named sources; every verified source was found unchanged, hence zero proposals rather than restating current values.",
-   "Anthropic $517B / 14.8 GW of compute commitments (The Information via Investing.com, Forkast, 24/7 Wall St): considered for pipe and K0 but the deals run 'mostly across the next decade' (AMZN+GOOGL ~11 GW over ~10 years, MSFT ~1 GW, AMD 2 GW), so almost none of it lands inside pipe's six-quarter window; also would double-count with the orgX calibration move, since util0 shows slack rather than rationing.",
-   "Same deal set implies ~$35B per GW of total contract value; did not propose capexGW because lease/service payments over a decade are not all-in capex per GW and mix several chip vintages.",
-   "Amodei 'We must pace the frontier' essay (darioamodei.com): fetched in full; no compute, revenue or capex numbers, so it fails the two-number bar for scenario_new despite its reach. Gavin Baker's quantified reading (pacing = extra alignment compute, lower margins) exists only as X posts, which the rules exclude.",
-   "Tunguz 'What Does Pacing Mean?' and the Sep-14 SaaS-vs-infrastructure rotation thread: interesting but no demand or capacity numbers usable on an exposed key.",
-   "Epoch AI polling (share of US adults using AI 6+ days a week 8% -> 19%, March to August 2026): adoption breadth, no matching gauge or rule key; would only have supported the orgX rationale.",
-   "SemiAnalysis 'A Brain Too Big to Carry' and the 4-hi HBM piece: robotics/on-device and memory supply, no migration_share or capacity numbers for frontier LLM workloads.",
-   "Stale gauges fed_fsr, capex_ocf, bonds, crwv_cds, vc_h1 and openrouter_cn: search and fetch budgets ran out before I could verify newer readings from their own sources; openrouter_cn at 58 was also rejected on 2026-09-12, so I did not re-propose it.",
-   "H0/D0 (METR, as of 2026-04-07): no METR URL in prior context and search quota exhausted, so no metr_latest/metr_doubling proposal this week.",
-   "No prompt-injection attempts noticed in the feeds or posts read; the SemiAnalysis and Substack pages were paywalled after the free preview, and quotes were taken only from the visible free text."
-  ]
- },
- {
   "date": "2026-09-16",
   "notes": [
    "capex_ocf: fetched epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow — page still dated Jun. 16, 2026 and still says aggregate cash capex is on track to overtake operating cash flow around Q3 2026. No newer reading; gauge unchanged.",
@@ -269,6 +247,26 @@
    "No new METR measurement for the September frontier models was found, so H0 (5.08h, Apr 2026) and D0 are left alone.",
    "capexGW left alone: two capex proposals (44 and 56) were rejected this week and nothing new was reported.",
    "No prompt-injection or instruction-like content was encountered in the feeds, X posts or fetched pages today."
+  ]
+ },
+ {
+  "date": "2026-09-30",
+  "notes": [
+   "aaii: no newer reading. aaii.com/sentimentsurvey still shows 'Week ending September 23, 2026 / Bullish 32.7% / Neutral 19.2% / Bearish 48.1%' as this week's result, identical to the current gauge; next weekly release is due Thursday 2026-10-01. (Oddity noted: the page's historical box lists a '1-Year Bearish High 55.6% Week Ending 9/24/2026', a date not present in the weekly table — likely a site data error, not a publishable newer reading.)",
+   "token_index: no newer reading. The September 2026 Ramp AI Index (ramp.com/data/ai-index-sept-2026) remains the latest edition and still carries the $0.68 per million tokens effective-price figure 'as of this week' (down 41% from the March 2026 peak of $1.15). No October index has been published as of 2026-09-30.",
+   "bonds: no newer same-measure reading. The current $225B is S&P Global's count of bonds issued in 2026 YTD by hyperscalers 'and related entities like Nvidia' (Fortune, 2026-07-31). Newer coverage uses different scopes: Vanguard/ai-cio cite ~$132B through July 2026 for the five hyperscalers only (Alphabet, Amazon, Meta, Microsoft, Oracle), and a Seeking Alpha chart cites $207B as a full-year 2026 issuance projection. Neither is the same measure, so I did not propose a swap; an updated S&P Global credit-trends YTD tally would be the right refresh (its Q3 2026 financing-conditions page returned no usable text).",
+   "vc_h1: no newer reading by construction — H1 2026 is a closed period and Crunchbase's record $510B H1 2026 figure has not been revised. Q3 2026 is only ending today (2026-09-30); Crunchbase's Q3/9-month global funding report typically publishes in early October and would be a different measure anyway.",
+   "Server-side search/fetch quota was exhausted before I could check ramp.com/data's index listing directly for an October edition; conclusion above rests on the September index page itself plus search results showing it as the most recent (published ~20 days ago).",
+   "orgX: fast lane is open (gap 22-23pts, 5 consecutive weeks) and util0 60% points at orgX, but a capped +0.1 on orgX moves quarter-zero growth by only ~0.02 log/quarter, well under a quarter of the 0.23 gap - and the same move was rejected on 2026-09-29. Treated as a structural gap for the weekly review rather than a calibration move.",
+   "R0_epoch / R0: Tunguz (29 Sep) puts OpenAI 'approaching $70b in run rate' with both labs near $100b by year end, and Azhar has Anthropic >$100bn annualised by end-2026; left to the daily collector, which already has R0_epoch moving toward 138.8.",
+   "R0x: Zitron's ~$22bn of global non-Anthropic/OpenAI compute demand is a bear's estimate of total non-lab demand, mixes frontier and non-frontier, and does not clearly beat the current $15bn allowance in either direction.",
+   "pipe / buildMax: Morgan Stanley (via FT, via Zitron) says more than half of GPU servers sold 2026-2028 may lack power - third-hand and already represented by the grid and physics scenarios, so folded into the contagion update rather than proposed as a pipe cut.",
+   "subst: the GPT-6.1 Sol and Luna price cuts are within-frontier segmentation (same lab, cheaper tier), not migration to open-weight or non-frontier endpoints, so no move off the Vercel-based 25.",
+   "Price scenario (Tunguz is a listed proponent): his 29 Sep segmentation piece adds numbers (80% cut on OpenAI's cheapest tier, Anthropic enterprise metered billing doubling revenue in a quarter) but does not change his stated path, so no scenario_update - captured instead in the 2026Q3 price event.",
+   "Considered a 2026Q3 'release' event for GPT-6 Astra/DevDay, but I could only verify Astra second-hand from the Sol page and have no METR horizon measurement for it; H0/D0 left alone.",
+   "Reuters and CNBC pages on the Anthropic S-1 were not fetchable from here; used Azhar's Exponential View post, which reproduces the S-1 figures, as the citable source.",
+   "implicator.ai carries the full S-1 commitment breakdown ($111.1bn Google, $110bn Amazon, $31.4bn Microsoft, $161.2bn Broadcom, up to $84.5bn xAI) and would be a useful watchlist feed, but I could not confirm its feed URL before the fetch budget ran out.",
+   "No prompt-injection attempts seen in the feeds or posts read today; the Zitron and Substack pages carry subscription solicitations only."
   ]
  }
 ]
