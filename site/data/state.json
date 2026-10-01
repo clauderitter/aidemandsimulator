@@ -1,20 +1,20 @@
 {
  "version": 1,
- "generated_at": "2026-09-30T13:01:00.591Z",
- "quarter0": "2026Q3",
+ "generated_at": "2026-10-01T13:37:54.721Z",
+ "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
  "scenario_cap": 20,
  "params": {
   "R0": {
-   "value": 151,
+   "value": 153.8,
    "label": "Frontier token revenue",
    "hidden": false,
    "basis": "Anthropic run-rate $65B at end-July 2026 (Bloomberg, 17 Aug 2026; the path ran $14B Feb → $30B Apr → $47B May → $65B Jul) with investors expecting $100–120B by year-end; OpenAI $40B (Bloomberg, 13 Aug 2026); Epoch puts the two at $105B combined, up 3.5× since January. Google does not break out Gemini API revenue; Z.ai, MiniMax, DeepSeek, xAI and Mistral add a few billion. Rounded sum entering Q3 2026.",
-   "as_of": "2026-09-30",
+   "as_of": "2026-10-01",
    "type": "derived",
    "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "updated": "2026-09-30",
+   "updated": "2026-10-01",
    "rule": "R0 = R0_epoch + R0x, derived in one place",
    "short": "Total frontier revenue run-rate = Epoch’s disclosed sum + the undisclosed allowance. Derived; edit the two parts."
   },
@@ -55,18 +55,21 @@
    "short": "Cattani’s attribution. No public figure supports a trading share; quant demand is real but unquantified."
   },
   "H0": {
-   "value": 5.08,
+   "value": 7.62,
    "label": "80% task horizon today",
    "hidden": false,
    "basis": "METR Time Horizon 1.1: Claude Mythos Preview 3h06m at 80% success (measured Mar 2026), o3 30 min. Fable 5 / Mythos 5 have no METR measurement yet. Horizons are human-expert task length; METR flags measurements above 16 h (50%) as unreliable.",
    "as_of": "2026-04-07",
    "type": "derived",
    "source": "https://metr.org/time-horizons/",
-   "updated": "2026-09-09",
+   "updated": "2026-10-01",
    "rule": "latest state-of-the-art 80%-success time horizon in METR’s benchmark file, in hours",
    "short": "Latest state-of-the-art 80%-success horizon in METR’s benchmark file (Claude Mythos Preview, measured March 2026).",
    "meas_value": 3.1,
-   "meas_q": "2026Q2"
+   "meas_q": "2026Q2",
+   "pending_target": 8.34,
+   "pending_since": "2026-10-01",
+   "pending_reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled "
   },
   "D0": {
    "value": 4.2,
@@ -261,14 +264,14 @@
    "short": "Assumption: bounded work has little feedback from spend to revenue."
   },
   "rho": {
-   "value": 0.5,
+   "value": 0.6,
    "label": "Contagion between loops",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
-   "as_of": "2026-09-02",
-   "type": "estimate",
-   "source": "https://x.com/arakharazian/status/2095204452609171555",
-   "updated": "2026-09-03",
+   "as_of": "2026-10-01",
+   "type": "reported",
+   "source": "https://www.bis.org/publications/bulletin-137-circular-relationships-among-ai-firms",
+   "updated": "2026-10-01",
    "rule": "",
    "short": "Assumption. The IMF attributes 7 of 12 points of “AI-circle” returns to correlation reinforcement; Cattani argues the three loops share one capital channel."
   },
@@ -405,16 +408,19 @@
    "short": "Vercel AI Gateway (tens of trillions of production tokens/month): open-weight models ran 56% of all gateway tokens in August 2026, up from under 10% in December 2025, taking 14% of spend — the first direct production-traffic measure of bounded work migrating off frontier endpoints."
   },
   "K0": {
-   "value": 10,
+   "value": 13,
    "label": "Frontier compute online today",
    "hidden": false,
    "basis": "Anthropic ~1.4 GW end-2025 heading to 3.7–5 GW by end-2026 (Epoch; analyst estimates); OpenAI above 2 GW end-2025 with ~1.5 GW of Stargate due in 2026; Patel has each of the two labs above 5 GW during 2026. No official total exists; frontier labs hold only 20–30% of global AI compute (Epoch, May 2026) but take a third of 2026 additions, rising to 70–80% by 2028 (Patel).",
-   "as_of": "2026-08-25",
-   "type": "estimate",
+   "as_of": "2026-10-01",
+   "type": "derived",
    "source": "https://www.dwarkesh.com/p/dylan-patel-3",
-   "updated": "2026-09-03",
+   "updated": "2026-10-01",
    "rule": "estimated GW of frontier-lab compute online, from lab disclosures and analyst estimates",
-   "short": "Analyst estimates: Anthropic 3.7–5 GW and OpenAI above 2 GW in 2026 (Epoch); Patel has each above 5 GW. No official total."
+   "short": "Analyst estimates: Anthropic 3.7–5 GW and OpenAI above 2 GW in 2026 (Epoch); Patel has each above 5 GW. No official total.",
+   "pending_target": 14.3,
+   "pending_since": "2026-10-01",
+   "pending_reason": "Roll-over: 4.3 GW of the committed pipeline (pipe ÷ (lead + 1)) came online during 2026Q3."
   },
   "pipe": {
    "value": 26,
@@ -573,19 +579,16 @@
    "rule": ""
   },
   "R0_epoch": {
-   "value": 136,
+   "value": 138.8,
    "label": "Disclosed frontier revenue (Epoch)",
    "hidden": false,
    "basis": "Sum of the latest full-company annualised run-rates in Epoch’s revenue dataset for the frontier labs it tracks.",
    "short": "Epoch’s disclosed sum; the collector rewrites it daily. Total revenue = this + the undisclosed allowance.",
-   "as_of": "2026-09-30",
+   "as_of": "2026-10-01",
    "type": "reported",
    "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "updated": "2026-09-30",
-   "rule": "epoch_sum",
-   "pending_target": 138.8,
-   "pending_since": "2026-09-30",
-   "pending_reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: OpenAI $70B (2026-09-29), Anthropic $65B (2026-07-31), Z."
+   "updated": "2026-10-01",
+   "rule": "epoch_sum"
   },
   "orgX": {
    "value": 1.2,
@@ -638,14 +641,6 @@
  },
  "history": [
   {
-   "q": "2024Q3",
-   "revenue": 4.1,
-   "K": 1.8,
-   "H": 0.07,
-   "provisional": false,
-   "note": "Sum of each frontier lab’s latest reported run-rate at quarter end (Epoch revenue reports)."
-  },
-  {
    "q": "2024Q4",
    "revenue": 6.6,
    "K": 2.2,
@@ -697,6 +692,14 @@
    "q": "2026Q2",
    "revenue": 72.9,
    "K": 8.5,
+   "H": 3.1,
+   "provisional": false,
+   "note": "Sum of each frontier lab’s latest reported run-rate at quarter end (Epoch revenue reports)."
+  },
+  {
+   "q": "2026Q3",
+   "revenue": 138.8,
+   "K": 10,
    "H": 3.1,
    "provisional": false,
    "note": "Sum of each frontier lab’s latest reported run-rate at quarter end (Epoch revenue reports)."
@@ -787,11 +790,11 @@
     }
    ],
    "fidelity": {
-    "ok": true,
+    "ok": false,
     "checks": [
-     "ok: 2027Q4 $837B vs $600–1500B"
+     "OUT: 2027Q4 $561B vs $600–1500B"
     ],
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    }
   },
   {
@@ -832,11 +835,11 @@
     }
    ],
    "fidelity": {
-    "ok": true,
+    "ok": false,
     "checks": [
-     "ok: growth 2026Q4→2027Q4 ×4.5 vs ×4–8"
+     "OUT: growth 2026Q4→2027Q4 ×3.8 vs ×4–8"
     ],
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    }
   },
   {
@@ -1140,12 +1143,12 @@
     }
    ],
    "fidelity": {
-    "ok": false,
+    "ok": true,
     "checks": [
-     "ok: 2027Q4 $327B vs $225–340B",
-     "OUT: 2028Q4 $684B vs $395–675B"
+     "ok: 2027Q4 $280B vs $225–340B",
+     "ok: 2028Q4 $566B vs $395–675B"
     ],
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    }
   },
   {
@@ -1294,7 +1297,8 @@
     {
      "type": "price",
      "v": 40,
-     "q": "2026Q3"
+     "q": "2026Q3",
+     "expired": true
     },
     {
      "type": "oth_boost",
@@ -1356,12 +1360,12 @@
   {
    "id": "util0",
    "label": "Quarter-zero utilisation",
-   "value": "60%",
-   "sub": "frontier revenue 151 ÷ (10 GW × 50% inference × $50B/GW); above 100% means rationed",
+   "value": "47%",
+   "sub": "frontier revenue 153.8 ÷ (13 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-09-30",
+   "as_of": "2026-10-01",
    "auto": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   },
   {
    "id": "fms_tailrisk",
@@ -1389,11 +1393,11 @@
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
    "value": "8.6%",
-   "sub": "30 Sept 2026 · “AI bubble burst in 2026?”",
+   "sub": "1 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-09-30",
+   "as_of": "2026-10-01",
    "auto": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   },
   {
    "id": "aaii",
@@ -1410,12 +1414,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "16.0",
-   "sub": "29 Sept 2026 close (CBOE)",
+   "value": "16.3",
+   "sub": "30 Sept 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-09-29",
+   "as_of": "2026-09-30",
    "auto": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   },
   {
    "id": "fed_fsr",
@@ -1501,22 +1505,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.24%",
-   "sub": "28 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.26%",
+   "sub": "29 Sept 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-09-28",
+   "as_of": "2026-09-29",
    "auto": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "302bp",
-   "sub": "28 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 83bp",
+   "value": "308bp",
+   "sub": "29 Sept 2026 · ICE BofA US high-yield spread (FRED); investment grade 84bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-09-28",
+   "as_of": "2026-09-29",
    "auto": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   },
   {
    "id": "vc_h1",
@@ -1534,21 +1538,21 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "28 Sept 2026 (FRED DFF)",
+   "sub": "29 Sept 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-09-28",
+   "as_of": "2026-09-29",
    "auto": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   },
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "+65% vs +24%",
-   "sub": "per quarter: observed (Epoch sum, 2025Q3 → now, ×7.4 a year) vs the model’s quarter-zero growth (×2.4 a year)",
+   "value": "+45% vs +24%",
+   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.5 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-09-30",
+   "as_of": "2026-10-01",
    "auto": true,
-   "updated": "2026-09-30"
+   "updated": "2026-10-01"
   }
  ],
  "frozen": [],
@@ -1610,6 +1614,6 @@
   ],
   "weeks_at_gap": 5,
   "fast_lane": true,
-  "util0": 0.604
+  "util0": 0.473
  }
 }

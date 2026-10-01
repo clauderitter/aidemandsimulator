@@ -1,5 +1,162 @@
 [
  {
+  "date": "2026-10-01",
+  "source": "https://x.com/edzitron/status/2105454953888387486",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.4,
+  "reason": "A single tweet counting which banks appeared in 2025 datacentre deals shows lender concentration, not how strongly build pace responds to credit conditions, and is too weak a grade to move fin to the edge of its monthly window."
+ },
+ {
+  "date": "2026-10-01",
+  "source": "https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
+  "kind": "rejected",
+  "target": "sh_rd",
+  "old": null,
+  "new": 23,
+  "reason": "Claude 'leading' 26% of Anthropic's internal AI R&D work and OpenAI's 3.1 agent-workdays per human workday measure how much of a lab's own research is automated, not the share of frontier inference demand coming from the AI R&D segment, so they are a different quantity from sh_rd."
+ },
+ {
+  "date": "2026-10-01",
+  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.3,
+  "reason": "This is the same 27 August Epoch run-rate write-up that already lifted orgX once and has been rejected twice since on double-counting grounds; a calibration gap needs corroboration newer than the move it is meant to justify."
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "accepted",
+  "target": "rho",
+  "old": 0.5,
+  "new": 0.6,
+  "reason": "BIS Bulletin 137 (1 Oct 2026) puts institution-grade reported numbers on exactly the shared-capital channel rho stands for — 55.2% of investment into AI firms comes from other AI firms — upgrading the input from the older IMF-based estimate, and the step stays inside the per-run and monthly limits. Rule correlation_evidence; “Between 2021 and 2025, 28.7% of artificial intelligence (AI) firms’ investment deals (by deal value) involved a target company that was also”",
+  "source": "https://www.bis.org/publications/bulletin-137-circular-relationships-among-ai-firms"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "47%",
+  "reason": "Observed from source (2026-10-01).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+65% vs +24%",
+  "new": "+45% vs +24%",
+  "reason": "Observed from source (2026-10-01).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "R0",
+  "old": 151,
+  "new": 153.8,
+  "reason": "Derived: Epoch disclosed sum 138.8 + undisclosed allowance 15.",
+  "source": ""
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "R0_epoch",
+  "old": 136,
+  "new": 138.8,
+  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: OpenAI $70B (2026-09-29), Anthropic $65B (2026-07-31), Z.ai (Zhipu) $2B (2026-08-31), DeepSeek $1B (2026-09-24), MiniMax $1B (2026-08-26), xAI $0B (2025-09-30).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "H0",
+  "old": 5.08,
+  "new": 7.62,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate. Capped: target 8.34, continues next run.",
+  "source": "https://metr.org/time-horizons/",
+  "capped": true,
+  "target_value": 8.34
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.6%",
+  "new": "8.6%",
+  "reason": "Observed from source (2026-10-01).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.0",
+  "new": "16.3",
+  "reason": "Observed from source (2026-09-30).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "302bp",
+  "new": "308bp",
+  "reason": "Observed from source (2026-09-29).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-29).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.24%",
+  "new": "5.26%",
+  "reason": "Observed from source (2026-09-29).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "rolled",
+  "target": "quarter0",
+  "old": "2026Q3",
+  "new": "2026Q4",
+  "reason": "New quarter: the closed quarter moved into history.",
+  "source": ""
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "expired",
+  "target": "scenario:elastic",
+  "old": "2026Q3",
+  "new": null,
+  "reason": "Calendar-pinned shock price at 2026Q3 is now in the past; the judge grades whether it happened.",
+  "source": ""
+ },
+ {
+  "date": "2026-10-01",
+  "kind": "collected",
+  "target": "K0",
+  "old": 10,
+  "new": 13,
+  "reason": "Roll-over: 4.3 GW of the committed pipeline (pipe ÷ (lead + 1)) came online during 2026Q3. Capped: target 14.3, continues next run.",
+  "source": "https://www.dwarkesh.com/p/dylan-patel-3",
+  "capped": true,
+  "target_value": 14.3
+ },
+ {
   "date": "2026-09-30",
   "source": "https://www.wheresyoured.at/dead-money/",
   "kind": "rejected",

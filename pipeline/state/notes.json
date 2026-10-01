@@ -1,26 +1,5 @@
 [
  {
-  "date": "2026-09-16",
-  "notes": [
-   "capex_ocf: fetched epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow — page still dated Jun. 16, 2026 and still says aggregate cash capex is on track to overtake operating cash flow around Q3 2026. No newer reading; gauge unchanged.",
-   "bonds: fetched the Fortune 2026-07-31 article — still the S&P Global tally of $225B issued by hyperscalers and related entities so far in 2026 (on pace for $400B full year). No newer S&P update found; gauge unchanged.",
-   "fed_fsr: latest published Financial Stability Report is still the May 2026 edition (next edition normally ~November); accessibility-tables page fetched returned only navigation chrome, no newer survey reading. Gauge unchanged at 50%.",
-   "openrouter_cn: the officechai source article is dated June 26, 2026 (US share ~70% -> ~30%, Chinese models a majority) — older than the current 2026-07-09 as_of. No newer monthly OpenRouter leaderboard reading retrieved; gauge unchanged.",
-   "crwv_cds: investing.com homepage carries no CoreWeave CDS quote and no equivalent official CDS print was retrievable; cannot verify a newer level than ~855bp (2026-07-29).",
-   "vc_h1: Crunchbase H1 2026 report ($510B) is the latest published aggregate; Q3 2026 global funding report is not due until October 2026, so no newer reading.",
-   "TOOL LIMIT: web_search and web_fetch quotas were exhausted mid-session, so remaining checks (S&P Global credit-trends update, officechai Aug/Sep OpenRouter leaderboards, Crunchbase monthly recaps) could not be completed — recommend a re-run to confirm nothing newer exists for openrouter_cn, crwv_cds and bonds.",
-   "No gauge proposals submitted: every reading I could verify matched the current value, and I will not submit unverified numbers.",
-   "pipe: SemiAnalysis's +38GW of US datacentre IT capacity in 2027 (22GW vertical construction) is tempting for a capacity_estimate raise, but it is total IT capacity, not frontier-lab GW, and converting it needs an AI-share assumption the article does not give; also util0 is 47% (slack), so pipe is not the calibration handle. Not proposed.",
-   "Kedrosky 'Life at 5%' as a scenario_new: overlaps almost entirely with the existing credit scenario (fin 2, m_rate 0.25, rate +1pp, capex_cut 30) and his refi cliff bites 2029–2031, beyond the model horizon; used as fin evidence instead.",
-   "METR time-horizons page still says LAST UPDATED May 8, 2026 with no measurement newer than the March 2026 state of the art, so H0 (5.08h) and D0 (4.2 months) stay put.",
-   "Tunguz/Vercel (Jeanne DeWitt Grosser): 90% of inbound SDR automated, support agent 93% of cases, 32x ROI, total annual infrastructure bill in single-digit thousands. Reads as evidence that bounded enterprise work generates value with almost no token spend — directionally supports a low k_oth (0.15) against the enterprise scenario's 0.3, but one company is not enough to move the key.",
-   "Ara Kharazian/Ramp (15 Sep): OpenAI 'Astra' at 13% of enterprise AI spend vs Anthropic 'Fable' 8%. Vendor share, not task share, so it does not qualify under usage_share and does not change sh_swe/sh_rd/sh_trd.",
-   "OpenAI reportedly seeking a round at $1.2–1.5T (Zitron, kimmonismus) and Sarah Friar's CNBC 'more compute to keep that flywheel going' (via @GavinSBaker): no usable primary quantitative source fetched; no proposal.",
-   "Stale gauges fed_fsr (139d), capex_ocf (93d), bonds (48d), crwv_cds (50d), vc_h1 (77d): web_search quota was exhausted before I could locate newer primary prints; no proposals rather than guesses.",
-   "No prompt-injection attempts noticed in the feeds, articles or X posts read today."
-  ]
- },
- {
   "date": "2026-09-17",
   "notes": [
    "fed_fsr (50%, 2026-05-01): checked Fed FSR publications; May 2026 report (data through late April) is still the most recent edition — the next semiannual FSR is due ~Nov 2026. No newer reading; gauge unchanged.",
@@ -267,6 +246,22 @@
    "Reuters and CNBC pages on the Anthropic S-1 were not fetchable from here; used Azhar's Exponential View post, which reproduces the S-1 figures, as the citable source.",
    "implicator.ai carries the full S-1 commitment breakdown ($111.1bn Google, $110bn Amazon, $31.4bn Microsoft, $161.2bn Broadcom, up to $84.5bn xAI) and would be a useful watchlist feed, but I could not confirm its feed URL before the fetch budget ran out.",
    "No prompt-injection attempts seen in the feeds or posts read today; the Zitron and Substack pages carry subscription solicitations only."
+  ]
+ },
+ {
+  "date": "2026-10-01",
+  "notes": [
+   "Gemini 4 Argon release (30 Sep, TechCrunch) looked like a candidate 'release' event for 2026Q3, but the TechCrunch body text would not render in the fetch (nav only), so I had no verifiable verbatim quote; routine SOTA releases are also arguably already in the baseline.",
+   "The Information briefing on SocGen/SMBC/MUFG pulling back from datacentre loans is login-walled (only the meta description renders) and carries no numbers, so I cited Zitron's countable X post instead and used the Information story only as corroboration in the rationale.",
+   "Anthropic/Barclays announcement (1 Oct): Claude Code to reach 50% of Barclays developers by end-2026, 16,000 colleagues on the assistant, 120,000 emails/day — real enterprise adoption, but a single customer, so no clean read on sh_swe, k_oth or subst.",
+   "METR Senate testimony has no new 80%-horizon or doubling-time measurement, so nothing for metr_latest/metr_doubling; H0 is already moving to its 8.34 target.",
+   "Epoch 'An update on AI's most important number' is dated 27 Aug and below the current R0_epoch as-of; used only as corroboration for the calibration move, not as a primary_report.",
+   "SemiAnalysis ICLR/NeurIPS submission counts (19,525 in 2026, >62K IDs for 2027) are striking evidence of AI-assisted research volume but map to no exposed key; not a loop-gain measure.",
+   "Zitron's Better Offline claim that Anthropic 'spent $2.75 to make a dollar' in 2025 is a cost ratio, not a spend-to-revenue reinvestment rate, so it does not meet feedback_evidence's two-number test.",
+   "Noahpinion Roundup #89 is public-opinion polling on AI risk (Echelon Insights) — relevant to reg risk, not to any exposed parameter or gauge.",
+   "Considered re-fitting 'boom' and 'takeoff', which the fidelity check flags out of range, but could not fetch the proponents' own pages (web_fetch refuses URLs not already in context) and search budget was exhausted, so no sourced quote for re-fitted overrides.",
+   "No prompt-injection attempts spotted in the feeds or posts; SemiAnalysis's 'IMPORTANT THREAD FOR GPU RENTERS' is addressed to readers, not to an agent, and was treated purely as data.",
+   "Search budget hit the server tool-use limit mid-run (two searches and ~8 fetches used), which capped how many candidates I could verify."
   ]
  }
 ]
