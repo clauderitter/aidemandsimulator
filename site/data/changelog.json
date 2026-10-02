@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-10-02",
+  "source": "https://x.com/arakharazian/status/2105740752886309163",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 18,
+  "reason": "A single social post summarising Ramp's dollar-weighted spend panel measures where enterprise dollars go, not what share of bounded token volume has migrated off frontier endpoints, and is weaker evidence than the primary Vercel gateway token-level reading now in place — consistent with the 23 Sep rejection of the same argument."
+ },
+ {
+  "date": "2026-10-02",
+  "source": "https://ramp.com/data/ai-index-sept-2026",
+  "kind": "accepted",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": "price 40",
+  "reason": "Ramp's effective price-per-million-token index falling 41% to $0.68 from the March peak is a reported, primary measure of the price shock, and recording 2026Q3 at 40% matches the independently cited 40% decline since end-June."
+ },
+ {
+  "date": "2026-10-02",
+  "source": "https://finance.yahoo.com/quote/NVDA/key-statistics/",
+  "kind": "rejected",
+  "target": "gauge:nvda_short",
+  "old": null,
+  "new": 1.27,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 404 https://finance.yahoo.com/quote/NVDA/key-statistics/."
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "K0",
+  "old": 13,
+  "new": 14.3,
+  "reason": "Carry-over toward the target 14.3 set on 2026-10-01 (Roll-over: 4.3 GW of the committed pipeline (pipe ÷ (lead + 1)) came online during 2026Q3.).",
+  "source": "https://www.dwarkesh.com/p/dylan-patel-3"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "47%",
+  "new": "47%",
+  "reason": "Observed from source (2026-10-02).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+45% vs +24%",
+  "new": "+45% vs +24%",
+  "reason": "Observed from source (2026-10-02).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "H0",
+  "old": 7.62,
+  "new": 8.34,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate.",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.6%",
+  "new": "7.8%",
+  "reason": "Observed from source (2026-10-02).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.3",
+  "new": "16.4",
+  "reason": "Observed from source (2026-10-01).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "308bp",
+  "new": "312bp",
+  "reason": "Observed from source (2026-09-30).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-09-30).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-02",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.26%",
+  "new": "5.29%",
+  "reason": "Observed from source (2026-09-30).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-01",
   "source": "https://x.com/edzitron/status/2105454953888387486",
   "kind": "rejected",

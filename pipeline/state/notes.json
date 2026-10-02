@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-09-17",
-  "notes": [
-   "fed_fsr (50%, 2026-05-01): checked Fed FSR publications; May 2026 report (data through late April) is still the most recent edition — the next semiannual FSR is due ~Nov 2026. No newer reading; gauge unchanged.",
-   "openrouter_cn (>60%, 2026-07-09): OfficeChai source article is dated/modified 2026-06-26 and says combined Chinese providers (DeepSeek, Xiaomi, Tencent, MiniMax, Qwen) are 'roughly 44% of token volume across the top 10' — older than the current as_of, so not a newer reading. A newer OfficeChai OpenRouter piece exists (2026-09-15, 'OpenAI Surpasses Anthropic On OpenRouter Spend For First Time In 2.5 Years') but it covers spend share, not Chinese token share, and I exhausted the tool budget before I could read/verify it. Flag for next refresh.",
-   "capex_ocf (crossed Q3 2026, 2026-06-16): fetched the Epoch AI data insight today; it is still dated 'Jun. 16, 2026' and still states aggregate cash capex 'is on track to overtake operating cash flow around Q3 2026'. Verified unchanged — no newer reading, so no proposal.",
-   "bonds ($225B, 2026-07-31): Fortune 2026-07-31 piece is still the cited source; I could not locate or verify a newer YTD issuance tally (e.g. Aug/Sep totals) before the search/fetch budget ran out. No newer reading proposed.",
-   "crwv_cds (~855bp, 2026-07-29): investing.com CDS quote is not retrievable as a citable page and no newer dated quote was verifiable. No proposal; suggest replacing with a sourced feed (e.g. a dated market report) for this gauge.",
-   "vc_h1 ($510B, 2026-07-02): Crunchbase H1 2026 report ('Global Startup Investment Hit Record $510B In H1 2026') remains the latest half-year figure; Q3 2026 is not complete and no revised H1 figure was found. No newer reading.",
-   "Fed projections release (monetary20260916b) read but body text not extractable; dot path would only matter for a rate scenario, and the realised hike is already proposed as an event.",
-   "Ramp: top-1% per-employee AI spend fell 9.7% to $7,205 in August (from revised $7,976) — sits against the 'elastic' (Citadel) scenario's July +50% MoM claim, but Kharazian attributes it to summer seasonality and price cuts, not market conditions, so it does not meet procyclicality_evidence; flagged in the orgX rationale instead.",
-   "Ramp adoption shares (Anthropic 43.8%, OpenAI 39.8% of US businesses) are only marginally newer than the 'coding'/'rampconc' scenario bases; no scenario_update proposed.",
-   "Gavin Baker (16 Sep): OpenAI 20% -> 50% OpenRouter share vs Anthropic since June — a share-shift between frontier labs, not a usage-share or migration measure; no exposed key.",
-   "Epoch 'AI Chip Users Explorer' (9 Sep, compute usage across five labs) is the best candidate for a compute_split (train) or K0 update, but my web_fetch budget ran out before I could read it — worth reading next run.",
-   "METR: no new time-horizon measurement found before the search budget ran out; H0/D0 left at their April readings.",
-   "Stale gauges fed_fsr, capex_ocf, bonds, crwv_cds, vc_h1 not refreshed — no newer primary print located within budget; openrouter_cn deliberately not re-proposed after yesterday's rejection.",
-   "Epoch ECI thread (GPT-6 Astra 166 overall, Math-ECI 170, SWE-ECI 164 vs Fable 5.1's 167) is a capability benchmark, not a METR horizon, so it cannot move H0.",
-   "No prompt-injection attempts noticed in the feeds, posts or pages read today."
-  ]
- },
- {
   "date": "2026-09-18",
   "notes": [
    "capex_ocf: fetched https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow directly — page still dated 'Jun. 16, 2026' and still says aggregate hyperscaler cash capex is 'on track to overtake operating cash flow around Q3 2026'. No newer reading; gauge stays 'crossed Q3 2026' as of 2026-06-16.",
@@ -262,6 +242,21 @@
    "Considered re-fitting 'boom' and 'takeoff', which the fidelity check flags out of range, but could not fetch the proponents' own pages (web_fetch refuses URLs not already in context) and search budget was exhausted, so no sourced quote for re-fitted overrides.",
    "No prompt-injection attempts spotted in the feeds or posts; SemiAnalysis's 'IMPORTANT THREAD FOR GPU RENTERS' is addressed to readers, not to an agent, and was treated purely as data.",
    "Search budget hit the server tool-use limit mid-run (two searches and ~8 fetches used), which capped how many candidates I could verify."
+  ]
+ },
+ {
+  "date": "2026-10-02",
+  "notes": [
+   "capex_ocf: Epoch AI hyperscaler capex vs cash flow page still shows 'Updated Jun. 16, 2026' and the same 'around Q3 2026' crossover claim — no newer reading, not proposed.",
+   "stockanalysis.com corroborates NVDA short % of float at 1.27% (data through Sep 30, 2026 page update), but its headline figure is % of shares outstanding (1.22%), a different measure; used Yahoo (same source family as current gauge) instead.",
+   "Tool budget (web_search/web_fetch) ran out mid-session after ~12 calls; could not fetch the 1 Oct Ramp AI Index page itself, Epoch's ChatGPT usage explorer, the Anthropic/METR 26% R&D writeup, or the Amazon sale-leaseback report. Those are the first things to read next run.",
+   "drorpoleg quoting METR/Anthropic: Claude 'leads' 26% of Anthropic's AI R&D work, up from 0-1% in Feb-Mar, ~30k agents at a time. Not proposed: this is automation of work tasks, not token share or a spend-to-revenue loop gain, and the rules explicitly exclude 'a lab runs many agents' from feedback_evidence; sh_rd 23 was rejected yesterday on similar evidence.",
+   "edzitron: Amazon selling chips to investors and leasing them back (off balance sheet), BNP/SocGen and Japanese banks turning 'more selective'. Directionally fin-positive but no quantities in the posts; fin 1.2->1.4 was rejected yesterday, so not re-proposed without numbers.",
+   "edzitron: OpenAI raising another $30B after $20bn on ~1 Oct and $35bn from Amazon on ~31 Jul. Equity, not debt-financing or credit-condition response, so it does not fit financing_evidence; would fit feedback_evidence only with a token-spend denominator, which the post does not give.",
+   "orgX calibration move not proposed despite the open fast lane (5 weeks over threshold, gap ~23pts): orgX 1.2->1.3 was rejected on 1 Oct, and today's primary evidence (Ramp: business AI spend falling, effective token price -41% since March) argues against raising organic demand growth this week; the gap looks increasingly price/mix-driven rather than organic.",
+   "Epoch ECI: Claude Opus 5.5 at 167 takes the top spot, Sonnet 5.5 matches Fable 5.1. Capability ranking, not a METR 80% horizon measurement, and H0 was auto-collected today; no proposal.",
+   "Ramp Sept index also shows Anthropic at 43.8% and OpenAI at 39.8% of US businesses and top-1% spend/employee -9.7% to $7,205; already reflected in the rampconc scenario and the token_index gauge ($0.68, 2026-09-09), so no gauge proposal.",
+   "No prompt-injection attempts aimed at me in the feeds; the kimmonismus post advertising an 'AI employee in Slack' that keeps release lists current is marketing copy inside the data, not an instruction, and was ignored."
   ]
  }
 ]
