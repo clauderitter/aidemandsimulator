@@ -1,40 +1,5 @@
 [
  {
-  "date": "2026-09-18",
-  "notes": [
-   "capex_ocf: fetched https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow directly — page still dated 'Jun. 16, 2026' and still says aggregate hyperscaler cash capex is 'on track to overtake operating cash flow around Q3 2026'. No newer reading; gauge stays 'crossed Q3 2026' as of 2026-06-16.",
-   "fed_fsr: the May 2026 Financial Stability Report (accessibility tables + near-term risks page) is still the latest edition; the FSR is semiannual (spring / late-autumn), so the next edition is not due until roughly Oct-Nov 2026. No newer reading than 2026-05-01.",
-   "openrouter_cn: fetched the officechai source article — meta modified_time is 2026-06-26 and its figure is 'roughly 44% of token volume across the top 10' for combined Chinese providers, which is both older than and metric-inconsistent with the current >60% (2026-07-09) reading. Could not reach openrouter.ai/rankings or a later officechai monthly roundup before the server-tool budget ran out, so no newer reading submitted. Worth re-checking openrouter.ai/rankings and officechai's monthly OpenRouter posts next run.",
-   "bonds: fetched the Fortune 2026-07-31 source article; it is the same piece behind the $225B figure (it also cites Nikkei's $1.65T 'hidden debt' and Moody's $1.2T off-balance-sheet estimates, but those are different metrics, not a refreshed 2026-to-date issuance tally). No newer year-to-date issuance total verified; re-check for an August/September tally.",
-   "crwv_cds: could not retrieve a current CoreWeave 5-year CDS quote — investing.com CDS pages were not reachable within the remaining tool budget and CDS levels are not reliably published free-of-charge. Gauge left at ~855bp as of 2026-07-29; flag for a manual/terminal check.",
-   "vc_h1: Crunchbase's H1/Q2 2026 global report (2026-07-02, $510B) is still the newest global aggregate — Q3 2026 does not close until 2026-09-30, so the Q3 recap cannot yet exist. No newer reading.",
-   "Anthropic's compute-allocation snapshot (6% of AI R&D compute to safety, 12% of AI-driven AI R&D) gives no training/inference split, so no compute_split move on 'train'.",
-   "Considered sh_rd on the Anthropic R&D Automation Index (26% AL4, up from <1% in Feb) but the index measures internal automation, not the revenue-token mix, so it went into k_rd instead.",
-   "Tomasz Tunguz / UC Berkeley harness study (GPT-5.6 Sol 71% cheaper on Pi than Claude Code, 38% vs 75% gross margins) is about harness efficiency, not migration to non-frontier or open-weight models, so no subst move; worth watching as effective-price evidence.",
-   "Ed Zitron (17 Sep): Microsoft 'only has 2GW of AI chips in service', $82B of GPUs in warehouses, $100-300B of industry pre-purchases — a cloud, not a frontier lab, and a commentator rather than an analyst estimate, so not proposed against K0.",
-   "Epoch AI's $3B Malaysia chip-smuggling trade-data insight and its new Benchmark Reviews launch carry numbers but touch no exposed key.",
-   "SemiAnalysis MI355X perf/TCO and Rubin NVL72 7x perf-per-watt claims are hardware efficiency, not cost_per_gw or revenue_per_gw as defined.",
-   "Stale gauges (fed_fsr, openrouter_cn, capex_ocf, bonds, crwv_cds, vc_h1) and a possible September BofA fund manager survey could not be refreshed: the web_search and web_fetch budgets were exhausted before I could reach their own sources, and I will not propose a gauge value I have not read.",
-   "No new METR measurement found, so H0 and D0 stay.",
-   "No prompt-injection attempts noticed in the feeds, posts or pages read today."
-  ]
- },
- {
-  "date": "2026-09-18",
-  "notes": [
-   "openrouter_cn: no newer reading of Chinese models' share of OpenRouter tokens found; the OfficeChai-based >60% / US-30% figures still trace to the same June-2026 data (tech-insider recap), and the CNBC 46% weekly peak is a different measure (US enterprise token volume only), so not proposed.",
-   "capex_ocf: Epoch AI page still the 16 Jun 2026 insight with capex on track to overtake operating cash flow around Q3 2026 - unchanged, no newer reading.",
-   "BofA Sept FMS also reported 42% naming AI hyperscaler capex the likeliest systemic credit event and 79% expecting no 2026 capex cuts - different measures, not existing gauges, so only noted.",
-   "METR time-horizons page (metr.org/time-horizons) still reads LAST UPDATED May 8, 2026 with no 80% horizon newer than the Claude Mythos Preview reading behind H0 (as of 2026-04-07); no metr_latest or metr_doubling move available.",
-   "Fast-lane orgX move (ledger: 3 consecutive weeks over threshold, W38 gap 22pts, util 47% slack) not proposed: orgX was already moved 1.1 -> 1.2 today in the changelog, and I could not fetch a citable revenue-growth source after the web tool budget ran out, so an unsourced second move this run would be weak.",
-   "Anthropic gross margins reportedly above 80% before partner revenue share and training costs (@kimmonismus citing The Information, 14 Sep): interesting for unit economics but fits none of the listed rules (not revenue per GW, not a loop gain) - left for the maintainer.",
-   "SemiAnalysis: Vera Rubin NVL72 at ~67x GB300 throughput per dollar at a 170 tokens/s SLO (16 Sep) and 4-hi HBM cutting inference cost (13 Sep) - cost per token, not revenue per inference GW, so not a clean revenue_per_gw or cost_per_gw move; would need the per-GW figure.",
-   "SemiAnalysis 'datacenters built like Lego' modular-build clip (14 Sep) looks like delivery_timeline evidence for lead, but the post text gives worker counts rather than a signing-to-delivery time, and x.com fetches are blocked for me, so no verifiable quote.",
-   "Trump and Beijing publicly rejecting the slowdown (Reuters via @kimmonismus, 13-14 Sep) argues against recording a realised reg event in 2026Q3; only Anthropic's own unilateral evaluator commitment happened, which is not a policy shock.",
-   "No prompt-injection style instructions found in the feeds or posts read today."
-  ]
- },
- {
   "date": "2026-09-19",
   "notes": [
    "bonds gauge: no newer reading of the same measure found - the $225B (S&P Global count of bonds issued by hyperscalers and 'related entities' like Nvidia, +973.7% through midyear) still comes from S&P's Credit Trends: Global Financing Conditions Q3 2026, the report behind the 2026-07-31 Fortune article; the Q4 update is not published yet.",
@@ -257,6 +222,24 @@
    "Epoch ECI: Claude Opus 5.5 at 167 takes the top spot, Sonnet 5.5 matches Fable 5.1. Capability ranking, not a METR 80% horizon measurement, and H0 was auto-collected today; no proposal.",
    "Ramp Sept index also shows Anthropic at 43.8% and OpenAI at 39.8% of US businesses and top-1% spend/employee -9.7% to $7,205; already reflected in the rampconc scenario and the token_index gauge ($0.68, 2026-09-09), so no gauge proposal.",
    "No prompt-injection attempts aimed at me in the feeds; the kimmonismus post advertising an 'AI employee in Slack' that keeps release lists current is marketing copy inside the data, not an instruction, and was ignored."
+  ]
+ },
+ {
+  "date": "2026-10-03",
+  "notes": [
+   "AAII: aaii.com/sentimentsurvey front page carries the 9/30/2026 reading directly; also lists 9/23 (32.7/48.1) matching the current gauge, confirming continuity.",
+   "NVDA short: the original Yahoo article (Sep 2) has no update; used stockanalysis.com (S&P Global Market Intelligence data, last updated Sep 30) for the same % -of-float measure.",
+   "Nasdaq's Sep 24 press release confirms Sep 15, 2026 is the latest settlement date, so as_of set to 2026-09-15 rather than the page's refresh date.",
+   "Did not use S3 Partners notional-dollar short figures ($34-50bn) - different measure from % of float.",
+   "Did not use the 1.22% 'of shares outstanding' figure, since the gauge is defined on float.",
+   "Anthropic leaked S-1 (Reuters via Devdiscourse, 28 Sep): 2025 revenue $4.6bn, $7.33bn compute/infra spend of $12.65bn opex, $42bn net loss, $518bn of cloud/compute obligations, Q2 2026 revenue $11.5bn. Did not propose: no new training/inference split (current `train` basis already uses Epoch's 2025 Anthropic numbers), and R0_epoch is collector-written; the $518bn is lease obligations over unspecified years, too shaky to convert into pipe GW.",
+   "'A quarter of Anthropic's revenue comes from two customers' (S-1) deliberately not proposed for rho: customer concentration alone does not qualify as correlation evidence.",
+   "Tunguz B200 rental $8.08/GPU-hour implies roughly $40-59bn of revenue per GW-year at 0.8-1.0 utilisation and 1.2-1.4 kW per GPU, i.e. it brackets the current mono=50 - evidence for leaving mono alone, so no proposal.",
+   "h100_rental gauge not proposed: Tunguz's index is B200 rentals, a different chip from the gauge's own H100 source.",
+   "boom and takeoff are flagged OUT OF RANGE and need re-fitted overrides, but I found no fresh fetchable statement from Patel/Baker or the AI Futures Project within budget; the only Baker range I found was a third-party X post not on the watched list, so no scenario_update proposed.",
+   "Epoch/YouGov ChatGPT panel (1 Oct): median panelist messages 14/month in Jan 2023 to 36 in Dec 2025, 21+ days/month users 2.6% to 10.5% - consumer intensity, not task share of frontier tokens, so no usage_share proposal.",
+   "Zitron's 2 Oct post on Oracle debt at ~84 cents duplicates the Insurance Journal/Bloomberg report used for the fin proposal; cited the primary report instead.",
+   "No prompt-injection or instruction-like content noticed in the fetched pages or feed items today."
   ]
  }
 ]

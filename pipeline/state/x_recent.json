@@ -1,461 +1,5 @@
 [
  {
-  "handle": "kimmonismus",
-  "id": "2102151658591723683",
-  "at": "2026-09-21T21:43:06.000Z",
-  "text": "Damn. I’m late to the party. Plane just arrived in SF: Grok 4.7 looks super amazing! \n\nNot only is it competitive to sota and even surpasses fable 5.1 in some benchmarks, it’s also so much cheaper than GPT and Fable 5.1!\n\nWell done spaceX!! Will write about it a bit more later on https://t.co/MADklQFtIs https://t.co/gYtzugfONx",
-  "likes": 440,
-  "url": "https://x.com/kimmonismus/status/2102151658591723683"
- },
- {
-  "handle": "dylan522p",
-  "id": "2102503347681210570",
-  "at": "2026-09-22T21:00:35.000Z",
-  "text": "Spoke with AMD, they did not ship / sell this dual use chip to this firm and they're investigating the sourcing.\nThis violates their policies + they work with authorities to take action on violations\nI am very concerned about the fact that pricing discrepancy is so large.\nI have https://t.co/ZWmYx7KAvL",
-  "likes": 189,
-  "url": "https://x.com/dylan522p/status/2102503347681210570"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102564302544638461",
-  "at": "2026-09-23T01:02:48.000Z",
-  "text": "We tracked China's STAR Market semiconductor IPOs since Jan 2025, 13 in total with 60 days of trading, from IPO price → first-day close → day 60. All four chip designers are red from the first close, though none below issue. Packaging &amp; test fared better: 3 of 4 green. https://t.co/aWlkj09lTv",
-  "likes": 77,
-  "url": "https://x.com/SemiAnalysis_/status/2102564302544638461"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102505423022514315",
-  "at": "2026-09-22T21:08:50.000Z",
-  "text": "ALERT🚨: @alexandr_wang has spent more time on the app owned by the guy who wants to cage-fight Zuck than he has on his own Threads app. Maybe he should get Muse to screenshot his tweets &amp; replies over to Threads. https://t.co/VRLI3ycdew",
-  "likes": 1155,
-  "url": "https://x.com/SemiAnalysis_/status/2102505423022514315"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102481474754843011",
-  "at": "2026-09-22T19:33:40.000Z",
-  "text": "https://t.co/6vS3OGJbEo https://t.co/6EXxwAetuj",
-  "likes": 129,
-  "url": "https://x.com/SemiAnalysis_/status/2102481474754843011"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102473297883537768",
-  "at": "2026-09-22T19:01:10.000Z",
-  "text": "Massive shoutout to TJ &amp; Team at @EmbeddedLLM; they are the lead maintainers &amp; CODEOWNERS of vLLM ROCm! Up until May 2026, they did not even have persistent access to an MI355X cluster, but after SemiAnalysis worked with &amp; convinced AMD leadership of something that is quite https://t.co/2sI9k1BCIY",
-  "likes": 104,
-  "url": "https://x.com/SemiAnalysis_/status/2102473297883537768"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102426088496603286",
-  "at": "2026-09-22T15:53:35.000Z",
-  "text": "https://t.co/l7QCrnz7I1 https://t.co/pJNL5LnST1",
-  "likes": 431,
-  "url": "https://x.com/SemiAnalysis_/status/2102426088496603286"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102413240231694638",
-  "at": "2026-09-22T15:02:32.000Z",
-  "text": "Developers with permits and a credible power timeline may gain an advantage over nearby projects still requiring discretionary approvals. Existing entitlements and zoning that already allows datacenters become more valuable as the path for new applications grows less certain.",
-  "likes": 18,
-  "url": "https://x.com/SemiAnalysis_/status/2102413240231694638"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102413239048957977",
-  "at": "2026-09-22T15:02:31.000Z",
-  "text": "Those three categories alone account for roughly 88% of the starting capacity. Moratoriums typically freeze new applications rather than revoke existing approvals. And even when a restriction applies, equipment lead times, litigation or other constraints may already determine the",
-  "likes": 18,
-  "url": "https://x.com/SemiAnalysis_/status/2102413239048957977"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102413237933199398",
-  "at": "2026-09-22T15:02:31.000Z",
-  "text": "The reasons are more informative than the headline count:\n\n🟠 6.7 GW already has permits.\n🟠 5.9 GW needs the affected approval only after the pause expires.\n🟠 5.2 GW is outside the restriction’s effective reach or has vested rights. (3/5)",
-  "likes": 17,
-  "url": "https://x.com/SemiAnalysis_/status/2102413237933199398"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102413236813320300",
-  "at": "2026-09-22T15:02:31.000Z",
-  "text": "Our September 15 report: https://t.co/tgKpiwpYCG offers a useful breakdown:\n\n🟠 400+ local actions and proposals tracked across all statuses.\n🟠 300+ local moratoriums enacted.\n🟠 20 GW inside live local moratorium boundaries.\n🟠 1.5 GW estimated to face actual delays from those",
-  "likes": 21,
-  "url": "https://x.com/SemiAnalysis_/status/2102413236813320300"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102413234661736930",
-  "at": "2026-09-22T15:02:30.000Z",
-  "text": "The datacenter moratorium curve is rising. But where does the risk actually sit? (1/5)🧵 https://t.co/zpesptVVwQ",
-  "likes": 151,
-  "url": "https://x.com/SemiAnalysis_/status/2102413234661736930"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102510340013699523",
-  "at": "2026-09-22T21:28:22.000Z",
-  "text": "The trillion-dollar question: If AI companies collectively slow the development of AI, will prices also fall more slowly?\n\nRead the full report: https://t.co/0DndJ9fAhX",
-  "likes": 72,
-  "url": "https://x.com/EpochAIResearch/status/2102510340013699523"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102510328399728726",
-  "at": "2026-09-22T21:28:19.000Z",
-  "text": "Costs for a given level of performance often fall the fastest when that level is state-of-the-art. Averaging across five benchmarks, cost falls 66% per quarter for SOTA performance. Two years later, the price drop slows to 32% per quarter.",
-  "likes": 77,
-  "url": "https://x.com/EpochAIResearch/status/2102510328399728726"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102510316768903534",
-  "at": "2026-09-22T21:28:16.000Z",
-  "text": "The speed of price drop varies by domain: slower on game-based puzzles, at 39–43% per quarter, faster on math problems, at 50–52% per quarter.",
-  "likes": 70,
-  "url": "https://x.com/EpochAIResearch/status/2102510316768903534"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102510305016463658",
-  "at": "2026-09-22T21:28:14.000Z",
-  "text": "Our estimates come from an expanded Epoch dataset on the performance of 222 AI models across up to 11 benchmarks. The dataset is built using a method borrowed from CAISI, which lets us estimate how the same model would perform under various budget constraints.",
-  "likes": 74,
-  "url": "https://x.com/EpochAIResearch/status/2102510305016463658"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102510293306007889",
-  "at": "2026-09-22T21:28:11.000Z",
-  "text": "For one example of the plunging “cost of thought,” take OpenAI’s o3 model. Released in January 2025, it was the first LLM to score &gt;25% on FrontierMath Tiers 1-3. The bill for achieving this mark: $0.55.\n\nThis summer, GPT-5.6 Luna did the same for $0.0015. A 377-fold drop in 18",
-  "likes": 149,
-  "url": "https://x.com/EpochAIResearch/status/2102510293306007889"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102510281176023529",
-  "at": "2026-09-22T21:28:08.000Z",
-  "text": "AI is getting cheaper more quickly than any other transformative tech in history. At a given level of performance, cost has fallen ~47%/quarter since 2023.\n\nThat’s 4× faster than DNA sequencing, 6× faster than compute, 18× faster than lithium batteries, and (up to 1973) 54× https://t.co/DG5Fe4XmQI",
-  "likes": 3523,
-  "url": "https://x.com/EpochAIResearch/status/2102510281176023529"
- },
- {
-  "handle": "edzitron",
-  "id": "2102598086774202454",
-  "at": "2026-09-23T03:17:02.000Z",
-  "text": "Yeah this feels like a fairly definitive condemnation of the AI trade at its core from Fidelity’s Head of Global Macro https://t.co/rfYo2G7Y3Q",
-  "likes": 867,
-  "url": "https://x.com/edzitron/status/2102598086774202454"
- },
- {
-  "handle": "edzitron",
-  "id": "2102591068625616952",
-  "at": "2026-09-23T02:49:09.000Z",
-  "text": "https://t.co/OdvfaaQbMd https://t.co/rfYo2G7Y3Q",
-  "likes": 462,
-  "url": "https://x.com/edzitron/status/2102591068625616952"
- },
- {
-  "handle": "edzitron",
-  "id": "2102546796950302775",
-  "at": "2026-09-22T23:53:14.000Z",
-  "text": "The Cornholio of the NFL https://t.co/3Hb0TBphzK",
-  "likes": 153,
-  "url": "https://x.com/edzitron/status/2102546796950302775"
- },
- {
-  "handle": "edzitron",
-  "id": "2102514778698920328",
-  "at": "2026-09-22T21:46:00.000Z",
-  "text": "SKATTEBO: Skattebo Football Jaxson, Victory Football\nCOACH: No, Cam, you can't play with Jaxon\nSKATTEBO: Good Skattebo Play Football Skattebo Depth Chart Quarterback\nCOACH: Cam, he has a concussion, he's not playing football\nSKATTEBO: Jealousy Harbaugh https://t.co/ALGtlotZKP",
-  "likes": 6459,
-  "url": "https://x.com/edzitron/status/2102514778698920328"
- },
- {
-  "handle": "edzitron",
-  "id": "2102439052641259905",
-  "at": "2026-09-22T16:45:06.000Z",
-  "text": "https://t.co/UgaOMyc1sk https://t.co/KdrM2uz0o6",
-  "likes": 132,
-  "url": "https://x.com/edzitron/status/2102439052641259905"
- },
- {
-  "handle": "edzitron",
-  "id": "2102426300388630904",
-  "at": "2026-09-22T15:54:25.000Z",
-  "text": "I really hope he pushes this on jensen https://t.co/OBc4oLV47o",
-  "likes": 707,
-  "url": "https://x.com/edzitron/status/2102426300388630904"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425039433781294",
-  "at": "2026-09-22T15:49:25.000Z",
-  "text": "On Friday, I'll publish the second part to my Hater's Guide to AI Debt. To read it, as well as the hundred or so premium posts I've published to date, sign up for a premium subscription here. Prices start at $7-a-month. \n\nhttps://t.co/1mo711sTgg",
-  "likes": 58,
-  "url": "https://x.com/edzitron/status/2102425039433781294"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425037533843769",
-  "at": "2026-09-22T15:49:24.000Z",
-  "text": "I don't see how this ends well. At the very least, hyperscalers are going to be hit with massive depreciation and writedowns. Most of NVIDIA's revenues will never make the customer any money. The longer this continues, the greater the pain will be.\nhttps://t.co/q52aNNmPg8 https://t.co/VnsOiR818G",
-  "likes": 61,
-  "url": "https://x.com/edzitron/status/2102425037533843769"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425035965088100",
-  "at": "2026-09-22T15:49:24.000Z",
-  "text": "NVIDIA's (and Broadcom's) revenues are built on a speculative scramble for assets years before they're put in service, and not any actual demand for AI compute.  Eventually, that compute will come online. It will be disastrous for NVIDIA and Broadcom.  \n\nhttps://t.co/q52aNNmPg8 https://t.co/5PTrUsS28a",
-  "likes": 51,
-  "url": "https://x.com/edzitron/status/2102425035965088100"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425034241307030",
-  "at": "2026-09-22T15:49:23.000Z",
-  "text": "As I've said, more than half of NVIDIA's GPUs - and I'd argue most of the Blackwell GPUs sold since 2025 - are unproductive and being warehoused. NVIDIA and hyperscalers should be forced by regulators to disclose how many chips are actually in service.\nhttps://t.co/q52aNNmPg8 https://t.co/EwwG6RyOkY",
-  "likes": 67,
-  "url": "https://x.com/edzitron/status/2102425034241307030"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425032794280050",
-  "at": "2026-09-22T15:49:23.000Z",
-  "text": "We are without question in an AI data center overbuild situation, and any and all new data center builds are a gamble that we'll have double or triple the demand we have today in 2028, 2029 or 2030. And right now, demand is much smaller than people think.\nhttps://t.co/q52aNNmPg8 https://t.co/yS2FT0GZpw",
-  "likes": 66,
-  "url": "https://x.com/edzitron/status/2102425032794280050"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425031410069880",
-  "at": "2026-09-22T15:49:23.000Z",
-  "text": "The reason that we have such 'compute scarcity' is that it's taking a great deal of time to come online, and the vast majority is sold to Anthropic and OpenAI, pumping backlogs across the industry and creating an illusion of demand fueled by VC and debt.\nhttps://t.co/q52aNNmPg8 https://t.co/00jnNgge2a",
-  "likes": 64,
-  "url": "https://x.com/edzitron/status/2102425031410069880"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425029535285416",
-  "at": "2026-09-22T15:49:22.000Z",
-  "text": "The myth that hyperscalers sell is that \"demand outstrips capacity\" because of diverse customers - when in reality the majority of capex ($791bn) is unproductive, the \"scarcity\" comes from a majority of capacity being sold to Anthropic and OpenAI.\n\nhttps://t.co/q52aNNmPg8 https://t.co/fwC0IIvj7W",
-  "likes": 63,
-  "url": "https://x.com/edzitron/status/2102425029535285416"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425027500995049",
-  "at": "2026-09-22T15:49:22.000Z",
-  "text": "Google, Microsoft, Meta and Amazon's depreciation charges are also a sign of little capacity coming online, with depreciation as a percentage of capex dropping seemingly every quarter, meaning that less and less capacity is actually entering service.\nhttps://t.co/q52aNNmPg8 https://t.co/DVI8KkfKgn",
-  "likes": 63,
-  "url": "https://x.com/edzitron/status/2102425027500995049"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425025882026283",
-  "at": "2026-09-22T15:49:21.000Z",
-  "text": "Every single hyperscaler and neocloud is misleading investors and the general public about their AI data center capacity, using vague terms like \"active power\" or \"added capacity\" to obfuscate its actual revenue-generating capacity. It's industry-wide.\nhttps://t.co/q52aNNmPg8 https://t.co/W0o2X3naXU",
-  "likes": 72,
-  "url": "https://x.com/edzitron/status/2102425025882026283"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425023579357491",
-  "at": "2026-09-22T15:49:21.000Z",
-  "text": "Since 2023, NVIDIA has sold almost $500bn in GPUs. Broadcom (though this is a bit iffy) has sold around $65bn in AI chips. Roughly half of that AI spend (most of them being expensive Blackwell GPUs) is being warehoused. \n\n https://t.co/q52aNNmPg8 https://t.co/Z1rtPNEGyN",
-  "likes": 68,
-  "url": "https://x.com/edzitron/status/2102425023579357491"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425021318652185",
-  "at": "2026-09-22T15:49:20.000Z",
-  "text": "Basically every hyperscaler and neocloud has billions or tens of billions of dollars' worth of \"construction in progress\" - yet-to-be-installed GPUs and data centers.\n\nI estimate that there's at least $200bn of uninstalled GPUs in warehouses.\n\nhttps://t.co/q52aNNmPg8 https://t.co/BPuiu0tGrD",
-  "likes": 77,
-  "url": "https://x.com/edzitron/status/2102425021318652185"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425019775062143",
-  "at": "2026-09-22T15:49:20.000Z",
-  "text": "Microsoft should, as one of the single best-capitalized and most-experienced data center developers, be thriving. Yet based on information from sources and my analysis, it likely has between $50bn and $100bn in warehoused GPUs and AI-related IT equipment\nhttps://t.co/q52aNNmPg8 https://t.co/fJ8zXonrIC",
-  "likes": 76,
-  "url": "https://x.com/edzitron/status/2102425019775062143"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425018072203502",
-  "at": "2026-09-22T15:49:20.000Z",
-  "text": "Since the beginning of 2022, Microsoft has spent $265bn+ on capital expenditures, yet has only brought around $50bn to $60bn of GPUs online. It's unclear why it keeps saying it has gigawatts coming online, but it isn't reflective of its AI buildout.\nhttps://t.co/q52aNNmPg8 https://t.co/Ps3jrm5Xh0",
-  "likes": 77,
-  "url": "https://x.com/edzitron/status/2102425018072203502"
- },
- {
-  "handle": "edzitron",
-  "id": "2102425016411328961",
-  "at": "2026-09-22T15:49:19.000Z",
-  "text": "Microsoft has around 2GW of AI compute, yet it's announced on each of the last three quarters that it's brought a gigawatt of capacity online. It's very clear that it's misleading the public about its capacity - and data centers are massively delayed.\nhttps://t.co/q52aNNmPg8 https://t.co/wQgnTZg40w",
-  "likes": 110,
-  "url": "https://x.com/edzitron/status/2102425016411328961"
- },
- {
-  "handle": "ttunguz",
-  "id": "2102462520279916690",
-  "at": "2026-09-22T18:18:21.000Z",
-  "text": "How we work at Theory https://t.co/TxPnfkL9qS",
-  "likes": 239,
-  "url": "https://x.com/ttunguz/status/2102462520279916690"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102618897455382696",
-  "at": "2026-09-23T04:39:44.000Z",
-  "text": "“Pacing” https://t.co/v4w2SIZbiY",
-  "likes": 2,
-  "url": "https://x.com/drorpoleg/status/2102618897455382696"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102601370398527491",
-  "at": "2026-09-23T03:30:05.000Z",
-  "text": "Ghost towns for servers? https://t.co/EhcSGNIWM2",
-  "likes": 0,
-  "url": "https://x.com/drorpoleg/status/2102601370398527491"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102593343473475842",
-  "at": "2026-09-23T02:58:12.000Z",
-  "text": "The childless are buying toys for their nephews, grandkids, and relatives. And they’re spending more than the parents because the parents already have enough stuff at home. https://t.co/xBobaj1UAX",
-  "likes": 2,
-  "url": "https://x.com/drorpoleg/status/2102593343473475842"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102587917709324314",
-  "at": "2026-09-23T02:36:38.000Z",
-  "text": "As Steve Jobs envisioned in his 1990 interview… https://t.co/Z7q7WP57Aw https://t.co/7fUcmhT9Q5",
-  "likes": 1,
-  "url": "https://x.com/drorpoleg/status/2102587917709324314"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102509804719608117",
-  "at": "2026-09-22T21:26:14.000Z",
-  "text": "Monetary supply creates its own demand. https://t.co/f1ZFD3On9p",
-  "likes": 3,
-  "url": "https://x.com/drorpoleg/status/2102509804719608117"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102501026146160976",
-  "at": "2026-09-22T20:51:21.000Z",
-  "text": "Zuck not taking any prisoners. Muse shaping up to be the most interesting challenge to Google and Amazon’s grip on online spending. https://t.co/Zldt1iNZYd",
-  "likes": 4,
-  "url": "https://x.com/drorpoleg/status/2102501026146160976"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102465411103039765",
-  "at": "2026-09-22T18:29:50.000Z",
-  "text": "This was very controversial when written in August, 2019:\n\"Technological innovation might lead to dramatic growth in economic activity and corporate profits while simultaneously reducing overall demand for office space.\" https://t.co/sEmyu5Jndo",
-  "likes": 4,
-  "url": "https://x.com/drorpoleg/status/2102465411103039765"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102454583218106583",
-  "at": "2026-09-22T17:46:49.000Z",
-  "text": "Can AI do this? https://t.co/PAFxNv22HX",
-  "likes": 7,
-  "url": "https://x.com/drorpoleg/status/2102454583218106583"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102438593847513492",
-  "at": "2026-09-22T16:43:16.000Z",
-  "text": "Another day, another miracle https://t.co/jzCjCtDSpM",
-  "likes": 2,
-  "url": "https://x.com/drorpoleg/status/2102438593847513492"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102435150101627355",
-  "at": "2026-09-22T16:29:35.000Z",
-  "text": "A16Z founders launch \"a highly selective school in San Francisco for the most ambitious young builders after high school (or the first or second years of college)\" https://t.co/TYBcOvDvO0",
-  "likes": 1,
-  "url": "https://x.com/drorpoleg/status/2102435150101627355"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102431121334043064",
-  "at": "2026-09-22T16:13:35.000Z",
-  "text": "Europeans saved as much $$$ as Americans, invested 70% less in VC, and generated 10X less in enterprise value. https://t.co/k2HDPt4anV",
-  "likes": 3,
-  "url": "https://x.com/drorpoleg/status/2102431121334043064"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2102404757033775352",
-  "at": "2026-09-22T14:28:49.000Z",
-  "text": "Note 👇🏻 https://t.co/pv8bmhol2E",
-  "likes": 2,
-  "url": "https://x.com/drorpoleg/status/2102404757033775352"
- },
- {
-  "handle": "sama",
-  "id": "2102512794235207758",
-  "at": "2026-09-22T21:38:07.000Z",
-  "text": "argh i meant VOICE not video :(\n\nsorry to dissapoint",
-  "likes": 1029,
-  "url": "https://x.com/sama/status/2102512794235207758"
- },
- {
-  "handle": "sama",
-  "id": "2102469008079679640",
-  "at": "2026-09-22T18:44:08.000Z",
-  "text": "Startups are naturally good at this; it is hard to keep a bigger company good at this and i think an underexplored space. https://t.co/Sr48wgC0lL",
-  "likes": 4128,
-  "url": "https://x.com/sama/status/2102469008079679640"
- },
- {
-  "handle": "sama",
-  "id": "2102468713866055872",
-  "at": "2026-09-22T18:42:58.000Z",
-  "text": "michelle embodies this as much as anyone\n\nopenai is so, so lucky to have benefited from everything she has done so far and i think people will be quite pleased to see what she + team have cooking next! https://t.co/AVZAtyk6Uc",
-  "likes": 2290,
-  "url": "https://x.com/sama/status/2102468713866055872"
- },
- {
-  "handle": "sama",
-  "id": "2102466607373004888",
-  "at": "2026-09-22T18:34:35.000Z",
-  "text": "(As a side note, getting ready for this DevDay is the first time I remember ever, in OpenAI history, saying \"this is too much stuff to launch\".)",
-  "likes": 3277,
-  "url": "https://x.com/sama/status/2102466607373004888"
- },
- {
-  "handle": "sama",
-  "id": "2102466605758452017",
-  "at": "2026-09-22T18:34:35.000Z",
-  "text": "We ❤️ developers.\n\nSee you next week.",
-  "likes": 2657,
-  "url": "https://x.com/sama/status/2102466605758452017"
- },
- {
-  "handle": "sama",
-  "id": "2102466603111551187",
-  "at": "2026-09-22T18:34:34.000Z",
-  "text": "We want the OpenAI API to feature the best model at every price point and to be the best at every modality (text, code, image, video, etc).\n\nAnd then we want you all to come up with great ideas and build them and to get to be happy users. The best ideas will come from you all.",
-  "likes": 9012,
-  "url": "https://x.com/sama/status/2102466603111551187"
- },
- {
   "handle": "sama",
   "id": "2102465143997440308",
   "at": "2026-09-22T18:28:46.000Z",
@@ -4798,5 +4342,461 @@
   "text": "Fed governor Christopher Waller says FRED usage is growing 150% year-over-year and now half of visits to FRED are AI agents https://t.co/hkgC7Ou1MA",
   "likes": 53,
   "url": "https://x.com/arakharazian/status/2105663264524763617"
+ },
+ {
+  "handle": "dylan522p",
+  "id": "2106054698335924241",
+  "at": "2026-10-02T16:12:23.000Z",
+  "text": "Long live the short king \nhttps://t.co/aalRjAXZKQ https://t.co/hthLnGGM9A",
+  "likes": 294,
+  "url": "https://x.com/dylan522p/status/2106054698335924241"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106217839124226103",
+  "at": "2026-10-03T03:00:39.000Z",
+  "text": "Who else goes custom, who stays standard and why, and what it means for memory vendors and foundries: all in our latest Memory Model note, All About That Base:  sales@semianalysis.com (2/2)\nhttps://t.co/aKKMh3y6OH",
+  "likes": 10,
+  "url": "https://x.com/SemiAnalysis_/status/2106217839124226103"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106217837643575607",
+  "at": "2026-10-03T03:00:38.000Z",
+  "text": "🚨Custom HBM frees up die space for compute🚨\n\nOn Rubin, HBM controllers and PHYs take up roughly 16% of the GPU die. On Feynman with NVHBM, we estimate that falls to ~4%.\nHow: the memory controller moves off the XPU and onto the HBM base die, and the wide standard PHY is https://t.co/TrT86Vv9kj",
+  "likes": 251,
+  "url": "https://x.com/SemiAnalysis_/status/2106217837643575607"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106164912573559094",
+  "at": "2026-10-02T23:30:20.000Z",
+  "text": "Watch the full conversation:\nhttps://t.co/K8QJTkxlhQ",
+  "likes": 3,
+  "url": "https://x.com/SemiAnalysis_/status/2106164912573559094"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106164911298555984",
+  "at": "2026-10-02T23:30:20.000Z",
+  "text": "Are GPUs money printers?\nThe InferenceX team breaks down Engram memory offloading, AgentX’s profit calculator, TPU v7, Vera Rubin vs. Blackwell, and whether faster tokens are worth the premium.\n\nPlus: TileRT is pushing NVIDIA GPUs further. What does that mean for specialized https://t.co/P63v4LXxY5",
+  "likes": 57,
+  "url": "https://x.com/SemiAnalysis_/status/2106164911298555984"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106038583723204689",
+  "at": "2026-10-02T15:08:21.000Z",
+  "text": "One thing that is really amazing now about the Google GPU cluster is that NVIDIA and Google have set up auto-activation for Google’s ConnectX-7/8 NCCL plugin. Previously, users would need to mess around with the correct library load paths and env vars to get it set up correctly https://t.co/VY5XYLok0p",
+  "likes": 32,
+  "url": "https://x.com/SemiAnalysis_/status/2106038583723204689"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106038582234185737",
+  "at": "2026-10-02T15:08:20.000Z",
+  "text": "Overall, the Google GPU Cluster experience is Gold tier! Great work from the Google team, going from Bronze to Gold in less than 2 years! That being said, the GCP GPU experience is less refined than that of our Platinum providers, CoreWeave and Nebius. The console feels like the https://t.co/rSqafznemX",
+  "likes": 345,
+  "url": "https://x.com/SemiAnalysis_/status/2106038582234185737"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2106090421017571546",
+  "at": "2026-10-02T18:34:20.000Z",
+  "text": "The AI hardware buildout is a bet that people will pay for AI to perform valuable tasks throughout the economy, at hourly costs roughly comparable to human wages.\n\nAnalysis by @genericname2134.\n\nFull report and code: https://t.co/gdGRBLtWXt",
+  "likes": 39,
+  "url": "https://x.com/EpochAIResearch/status/2106090421017571546"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2106090409181278444",
+  "at": "2026-10-02T18:34:17.000Z",
+  "text": "Using all this capacity would require a massive increase in global demand for AI.\n\nConsider the relatively conservative scenario of 20% utilization of total capacity. Under our reference assumptions, that would correspond to $2.6–$5.3T in annual spending.\n\nEven if leading labs'",
+  "likes": 35,
+  "url": "https://x.com/EpochAIResearch/status/2106090409181278444"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2106090396736754154",
+  "at": "2026-10-02T18:34:14.000Z",
+  "text": "Next, we use 2025–27 HBM shipments to estimate available hardware for running agents. HBM gives a common basis for comparing capacity across different vendors and chips.\n\nHow many agents that hardware can support depends on the model and workload. Future agents could use more https://t.co/LJHbikytYZ",
+  "likes": 45,
+  "url": "https://x.com/EpochAIResearch/status/2106090396736754154"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2106090381255561491",
+  "at": "2026-10-02T18:34:10.000Z",
+  "text": "To estimate the size of the agent population, we first determine what an hour of continuous agent work costs, comparable to human wages.\n\nIn the agent sessions we analyzed, Codex workloads averaged ~$16–$18 per agent-hour at API prices, compared with ~$24–$50 for Claude Code. https://t.co/KDLJNeNRr5",
+  "likes": 49,
+  "url": "https://x.com/EpochAIResearch/status/2106090381255561491"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2106090365627555931",
+  "at": "2026-10-02T18:34:07.000Z",
+  "text": "We estimate AI infrastructure could soon support hundreds of millions or even billions of AI agents. At the high end, that’s enough to rival the working hours of the global human workforce.\n\nThe exact number of agents depends on the efficiency of the models they run on and https://t.co/Y5tfs3hZaY",
+  "likes": 609,
+  "url": "https://x.com/EpochAIResearch/status/2106090365627555931"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106282674256269652",
+  "at": "2026-10-03T07:18:17.000Z",
+  "text": "Putrid tagline. Ghosted means somebody disappeared! The presence of the ghosts in this movie is very important! I know that’s the joke but it’s a shitty joke https://t.co/OrAKqfSu2H",
+  "likes": 72,
+  "url": "https://x.com/edzitron/status/2106282674256269652"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106251452415119870",
+  "at": "2026-10-03T05:14:13.000Z",
+  "text": "What the hell are you on about man lmao https://t.co/YgwrMAEYRX",
+  "likes": 1119,
+  "url": "https://x.com/edzitron/status/2106251452415119870"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106212765954441366",
+  "at": "2026-10-03T02:40:29.000Z",
+  "text": "Surprised more people aren’t alarmed about the financial condition of Oracle. \n\nRevenue flat for 15 years adjusted for inflation, only real growth engine is unprofitable AI data centers, future entirely tied to OpenAI and the most ambitious infra projects in history. It’s dying!",
+  "likes": 1570,
+  "url": "https://x.com/edzitron/status/2106212765954441366"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106169218928697830",
+  "at": "2026-10-02T23:47:27.000Z",
+  "text": "Oh really https://t.co/LJscs2spnG",
+  "likes": 166,
+  "url": "https://x.com/edzitron/status/2106169218928697830"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106163373205549123",
+  "at": "2026-10-02T23:24:13.000Z",
+  "text": "My “Cerebras is a close partner, and we have a deep engagement pushing on the frontiers of speed” shirt is getting a lot of questions answered by the shirt https://t.co/LnM514QOa6",
+  "likes": 182,
+  "url": "https://x.com/edzitron/status/2106163373205549123"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106162147378208892",
+  "at": "2026-10-02T23:19:21.000Z",
+  "text": "The $18bn in debt funding Oracle’s New Mexico data center for OpenAI is firmly in distressed territory, trading at around 84 cents on the dollar. https://t.co/bsvHfGYXaN",
+  "likes": 724,
+  "url": "https://x.com/edzitron/status/2106162147378208892"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106130688118509922",
+  "at": "2026-10-02T21:14:20.000Z",
+  "text": "Joined The Tech Report to talk about Anthropic's leaked S-1, the deterioration of the tech industry, and the growing debt pile underneath every major hyperscaler.\n\nhttps://t.co/8VgzchlpEM",
+  "likes": 204,
+  "url": "https://x.com/edzitron/status/2106130688118509922"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097617528611101",
+  "at": "2026-10-02T19:02:56.000Z",
+  "text": "While I admit that the way we measure tech's economic impact leaves room for improvement, I must admit, the fact that AI sales have been an economic nothingburger makes sense when you recognize that it came from a tech industry that's run out of ideas.\n\nhttps://t.co/cbw09Kc1Hy https://t.co/LbiFIOIEn7",
+  "likes": 13,
+  "url": "https://x.com/edzitron/status/2106097617528611101"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097616337383643",
+  "at": "2026-10-02T19:02:55.000Z",
+  "text": "More than a trillion dollars and four years into the AI bubble, it's not unreasonable to expect that we'd have solid data showing that AI was this major economic agent of change. \n\nhttps://t.co/cbw09Kc1Hy https://t.co/zvt8tpP5NU",
+  "likes": 15,
+  "url": "https://x.com/edzitron/status/2106097616337383643"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097614575833487",
+  "at": "2026-10-02T19:02:55.000Z",
+  "text": "Similarly, the impact of AI on employment remains a threat rather than a reality -- as does the wide-scale creation of AI-related jobs, which to date tend to be precarious, low-paid data curation gigs. \n\nhttps://t.co/cbw09Kc1Hy https://t.co/ZSwrfWT3Nx",
+  "likes": 8,
+  "url": "https://x.com/edzitron/status/2106097614575833487"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097613032341509",
+  "at": "2026-10-02T19:02:55.000Z",
+  "text": "On an individual business level, there's still no signs that AI's driving any real productivity gains, with most CEOs still talking about AI's productivity benefits in the same hopeful terms as they did in 2023. \n\nhttps://t.co/cbw09Kc1Hy https://t.co/Pv829Ca5zB",
+  "likes": 7,
+  "url": "https://x.com/edzitron/status/2106097613032341509"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097610918433035",
+  "at": "2026-10-02T19:02:54.000Z",
+  "text": "Even with that caveat, which should benefit AI, there's still virtually no data indicating any major economic-wide productivity gains from AI. \n\nhttps://t.co/cbw09Kc1Hy https://t.co/5V08fhPGRn",
+  "likes": 7,
+  "url": "https://x.com/edzitron/status/2106097610918433035"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097609618129321",
+  "at": "2026-10-02T19:02:54.000Z",
+  "text": "Another problem with calculating AI's impact on economic productivity is that, until very recently, AI services were almost uniformly subsidized via all-you-can-eat subscriptions which aren't reflective of any sustainable long-term use. \n\nhttps://t.co/cbw09Kc1Hy https://t.co/nNQmUTkMpx",
+  "likes": 8,
+  "url": "https://x.com/edzitron/status/2106097609618129321"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097608213045591",
+  "at": "2026-10-02T19:02:53.000Z",
+  "text": "The problem is that we've started with the assumption that AI will be an economic driver (especially when it comes to productivity), instead of starting with a hypothesis to test.\n\nSomething I blame on the economic context of when ChatGPT launched.  \n\nhttps://t.co/cbw09Kc1Hy https://t.co/IT0avRCowt",
+  "likes": 8,
+  "url": "https://x.com/edzitron/status/2106097608213045591"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097606652825600",
+  "at": "2026-10-02T19:02:53.000Z",
+  "text": "Attempts to measure the economic effects of AI using \"cost of intelligence\" are inherently flawed, because benchmarks do not equal actual units of work or replicable completions of tasks outside of their rubrics. Everyone's measuring the wrong things.\n\nhttps://t.co/cbw09Kc1Hy https://t.co/fWh7T2IVFP",
+  "likes": 8,
+  "url": "https://x.com/edzitron/status/2106097606652825600"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097605260325022",
+  "at": "2026-10-02T19:02:53.000Z",
+  "text": "It doesn't help that the waters have been muddied by all sorts of exotic metrics that sound impressive, but don't tell you much, and are themselves based on faulty assumptions. \n\nhttps://t.co/cbw09Kc1Hy https://t.co/zkF6X8hzR0",
+  "likes": 9,
+  "url": "https://x.com/edzitron/status/2106097605260325022"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097603884576808",
+  "at": "2026-10-02T19:02:52.000Z",
+  "text": "All of this is to say that the actual impact of AI on the economy may be far smaller than boosters would have hoped. \n\nBut that too is an estimate, because we really don't have great data to base any conclusions upon. \n\nhttps://t.co/cbw09Kc1Hy https://t.co/aJ5WKCoMOA",
+  "likes": 9,
+  "url": "https://x.com/edzitron/status/2106097603884576808"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097602680799671",
+  "at": "2026-10-02T19:02:52.000Z",
+  "text": "Part of the problem is that software's contribution to real GDP is overstated, due BLS' mistaken belief about the extra \"value\" added, that software prices are near-identical to 1997, even as every software company raised prices starting in 2022.\nhttps://t.co/cbw09Kc1Hy https://t.co/ljXgHTlCIu",
+  "likes": 7,
+  "url": "https://x.com/edzitron/status/2106097602680799671"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097601325965360",
+  "at": "2026-10-02T19:02:52.000Z",
+  "text": "The effect of AI GPU sales and data center construction on GDP is also obfuscating a growing problem with the tech industry - that its contribution to the economy is stagnating on a nominal basis, and AI doesn't appear to have increased real GDP growth. \nhttps://t.co/cbw09Kc1Hy https://t.co/Zaz1cD0UiY",
+  "likes": 9,
+  "url": "https://x.com/edzitron/status/2106097601325965360"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106097600008954298",
+  "at": "2026-10-02T19:02:51.000Z",
+  "text": "These figures are nothing to celebrate, as they show the economy is dependent on a largely debt-driven capital expenditure explosion, meaning that it will inevitably slow. Underneath, AI software and GPU rental sales aren't doing much to grow GDP.\nhttps://t.co/cbw09Kc1Hy https://t.co/LGiomZkYH0",
+  "likes": 27,
+  "url": "https://x.com/edzitron/status/2106097600008954298"
+ },
+ {
+  "handle": "ttunguz",
+  "id": "2106057087289868637",
+  "at": "2026-10-02T16:21:52.000Z",
+  "text": "GPU prices doubled from $4 to $8 per hour. OpenAI cut Luna's prices by 80%, then another 50%.\n\nWe're getting more work out of each GPU hour, enough to keep prices falling.\n\nHow long will this last? https://t.co/rIfZmIbewi",
+  "likes": 63,
+  "url": "https://x.com/ttunguz/status/2106057087289868637"
+ },
+ {
+  "handle": "ttunguz",
+  "id": "2106048311191032248",
+  "at": "2026-10-02T15:47:00.000Z",
+  "text": "Software engineering has many philosophies : test-driven development, pair programming, move fast &amp; break things. \n\nIn this new era, we add two more. https://t.co/m8B1K90uJx",
+  "likes": 28,
+  "url": "https://x.com/ttunguz/status/2106048311191032248"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2106160818584739967",
+  "at": "2026-10-02T23:14:04.000Z",
+  "text": "Uh oh. “Health authorities in Siberia’s Irkutsk region have placed nearly 200 people under medical observation after a laboratory worker died from… an unspecified form of plague.” https://t.co/6WZ3YCLaF7",
+  "likes": 4,
+  "url": "https://x.com/drorpoleg/status/2106160818584739967"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2106129166362132483",
+  "at": "2026-10-02T21:08:17.000Z",
+  "text": "This has been clear for three years but people refuse to see it because they hate Zuck and “Google is behind”. https://t.co/XcC6h3xYPy",
+  "likes": 41,
+  "url": "https://x.com/drorpoleg/status/2106129166362132483"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2106128480005960120",
+  "at": "2026-10-02T21:05:34.000Z",
+  "text": "…and the distribution of income within these new tech jobs was very, very different and is getting more extreme by the minute. https://t.co/7oRVnDDkMC",
+  "likes": 1,
+  "url": "https://x.com/drorpoleg/status/2106128480005960120"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2106125144364052650",
+  "at": "2026-10-02T20:52:18.000Z",
+  "text": "Too radical to fly in Oman; allowed to fly into Israel. Catastrophic failure. https://t.co/VRGz5yPuA1",
+  "likes": 4,
+  "url": "https://x.com/drorpoleg/status/2106125144364052650"
+ },
+ {
+  "handle": "sama",
+  "id": "2106189841813934140",
+  "at": "2026-10-03T01:09:24.000Z",
+  "text": "The contrast between hanging up the last phone call of the day of high-stakes decisions and then a minute later walking in the door to the pure love of small children who want to laugh and play and show you every discovery they made that day is the strangest and best thing I have",
+  "likes": 15846,
+  "url": "https://x.com/sama/status/2106189841813934140"
+ },
+ {
+  "handle": "sama",
+  "id": "2106147184693620924",
+  "at": "2026-10-02T22:19:53.000Z",
+  "text": "There is some speculation about our partnership with Cerebras.\n\nCerebras is a close partner, and we have a deep engagement pushing on the frontiers of speed.",
+  "likes": 6634,
+  "url": "https://x.com/sama/status/2106147184693620924"
+ },
+ {
+  "handle": "sama",
+  "id": "2106085986606403684",
+  "at": "2026-10-02T18:16:43.000Z",
+  "text": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably better as it learns more of my workflow and style.\n\nhaving it do the stuff i don't like doing--and usually just builds up as a gravity well of dread--has me very happy.",
+  "likes": 7315,
+  "url": "https://x.com/sama/status/2106085986606403684"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106326590619590843",
+  "at": "2026-10-03T10:12:47.000Z",
+  "text": "imagine they release OpenAI dot 2.0 next week instead of a new model.",
+  "likes": 42,
+  "url": "https://x.com/kimmonismus/status/2106326590619590843"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106324463054626846",
+  "at": "2026-10-03T10:04:20.000Z",
+  "text": "It really looks like OpenAI is launching a major, significant release next week, one that was originally intended for DevDay.\n\nMy money is still on GPT-6.1 Astra, or perhaps an even newer checkpoint released in response to Opus 5.5 / Fable 5.5.\n\nCaveat: There was a lot of hype https://t.co/8orv7SNF9t https://t.co/eqkemu32Yu",
+  "likes": 400,
+  "url": "https://x.com/kimmonismus/status/2106324463054626846"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106302736388198508",
+  "at": "2026-10-03T08:38:00.000Z",
+  "text": "To me, this reads as if OpenAI is planning to release a model next week that was actually intended for DevDay (Astra 6.1?).\n\nGiven the upcoming Fable 5.5 release, next week could turn out to be an incredibly great week! https://t.co/r8Nfdbn6d3 https://t.co/1GspIYiCQ3",
+  "likes": 469,
+  "url": "https://x.com/kimmonismus/status/2106302736388198508"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106281030533746814",
+  "at": "2026-10-03T07:11:45.000Z",
+  "text": "I think OpenAI’s \"Dot\" has gotten off to a poor start, and the pre-launch hype generated by OpenAI itself was very damaging. It still needs quite a bit of work before it is well-received and generates the kind of excitement seen with Meta’s Muse or Grokbot. https://t.co/XbFgwljxDO",
+  "likes": 173,
+  "url": "https://x.com/kimmonismus/status/2106281030533746814"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106146714566762987",
+  "at": "2026-10-02T22:18:01.000Z",
+  "text": "Utopai X just debuted at #2 on Artificial Analysis’ text-to-video leaderboard with audio. A strong result for a video model developed inside a film and TV studio.\n\nBuilt on MiniMax H3, it runs inside PAI, where filmmakers can keep scripts, visual references and earlier takes https://t.co/fLfkRqBLY9 https://t.co/2rM2h4WtEP",
+  "likes": 78,
+  "url": "https://x.com/kimmonismus/status/2106146714566762987"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106144924898935046",
+  "at": "2026-10-02T22:10:55.000Z",
+  "text": "It's not really a surprise, but Fable 5.5 is expected to outperform Astra 6.1.\n\nReminder: Astra 6.1 is already finished and was supposed to be released, but was postponed due to security concerns.\n\nFable 5.5 is very close and rumored to even outperform Astra 6.1. Considering how https://t.co/OernM2wabL",
+  "likes": 1154,
+  "url": "https://x.com/kimmonismus/status/2106144924898935046"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106125333724381302",
+  "at": "2026-10-02T20:53:04.000Z",
+  "text": "We are back to daily Claude updates!\n\nClaude Code now has a “You should know” plugin that brings in a second agent to flag important details you might miss. Nice https://t.co/fwJEOZoxUu",
+  "likes": 665,
+  "url": "https://x.com/kimmonismus/status/2106125333724381302"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106116402134294568",
+  "at": "2026-10-02T20:17:34.000Z",
+  "text": "Holy, rumor has it that Fable 5.5 is coming next week. If OpenAI doesn't have an answer to that, things will get very difficult! Caveat: I can't verify any of this. https://t.co/y96UZea2WH",
+  "likes": 1026,
+  "url": "https://x.com/kimmonismus/status/2106116402134294568"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106061535458083193",
+  "at": "2026-10-02T16:39:33.000Z",
+  "text": "because someone asked, this is my take on this: I think we haven't even resolved the question of consciousness yet, so it is wrong to philosophize about it. We have neither empirically proven the existence of free will nor grasped what consciousness actually is in any",
+  "likes": 19,
+  "url": "https://x.com/kimmonismus/status/2106061535458083193"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106055300021141810",
+  "at": "2026-10-02T16:14:46.000Z",
+  "text": "https://t.co/BQQM8qQ35D",
+  "likes": 9,
+  "url": "https://x.com/kimmonismus/status/2106055300021141810"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106055260787625992",
+  "at": "2026-10-02T16:14:37.000Z",
+  "text": "Anthropic co-founder Chris Olah reportedly proposed pulling the company out of Pope Leo XIV’s AI encyclical launch because its text rejected machine consciousness.\n\nA Vatican organizer told the NYT that Olah raised the idea after reading an advance copy of Magnifica Humanitas, https://t.co/iYG4PsYBmZ",
+  "likes": 376,
+  "url": "https://x.com/kimmonismus/status/2106055260787625992"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106032086222078295",
+  "at": "2026-10-02T14:42:32.000Z",
+  "text": "https://t.co/rT7kTyVVdU",
+  "likes": 11,
+  "url": "https://x.com/kimmonismus/status/2106032086222078295"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106032058325721288",
+  "at": "2026-10-02T14:42:25.000Z",
+  "text": "Crazy Nvidia has hit its first record high since May, taking its market value to roughly $5.7 trillion, Bloomberg reports.\n\nShares gained 2.9% on Friday, extending a nearly 25% rebound from their late-July low. \n\nBloomberg links the recovery to optimism that AI agents could drive https://t.co/s5lwcr3C02",
+  "likes": 197,
+  "url": "https://x.com/kimmonismus/status/2106032058325721288"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106006045680075169",
+  "at": "2026-10-02T12:59:03.000Z",
+  "text": "quick comparison between OpenAI’s \"Dot\" and Grokbot: I prefer Grokbot.\n\nWith Grokbot, I have a Chief of Staff, a daily team meeting where all my Grok bots exchange information, and various sessions dedicated to different tasks. This not only provides a better overview but also",
+  "likes": 648,
+  "url": "https://x.com/kimmonismus/status/2106006045680075169"
+ },
+ {
+  "handle": "arakharazian",
+  "id": "2106078242406817886",
+  "at": "2026-10-02T17:45:56.000Z",
+  "text": "I'm in two stories in FT today:\n\n@SoumayaKeynes'  podcast: https://t.co/jBCvmyKE1f\n\nThis great visual story on the economics of AI: https://t.co/mww3OFh6Az",
+  "likes": 3,
+  "url": "https://x.com/arakharazian/status/2106078242406817886"
+ },
+ {
+  "handle": "arakharazian",
+  "id": "2106078240989196731",
+  "at": "2026-10-02T17:45:56.000Z",
+  "text": "\"Why is demand for economists so hot right now?\"\n\n1. Everyone wants to know how AI is going to impact the economy, and it's not showing up in public data. So you need to get as close as possible to the tech to observe marginal but meaningful effects.\n\n2. AI companies are trying https://t.co/d4vfkonoHx",
+  "likes": 30,
+  "url": "https://x.com/arakharazian/status/2106078240989196731"
  }
 ]
