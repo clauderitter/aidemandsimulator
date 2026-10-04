@@ -1,5 +1,50 @@
 [
  {
+  "date": "2026-10-04",
+  "source": "https://www.exponentialview.co/p/the-first-existential-ipo",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.05,
+  "reason": "The same Anthropic S-1 take-or-pay figures ($518bn of commitments, ~80% non-cancellable) were already accepted for fin on 29 Sep and rejected again on 30 Sep as double-counting, and nothing in this excerpt is newer or better-graded."
+ },
+ {
+  "date": "2026-10-04",
+  "source": "https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html",
+  "kind": "rejected",
+  "target": "gauge:openrouter_cn",
+  "old": null,
+  "new": "57-67%",
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html."
+ },
+ {
+  "date": "2026-10-04",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "43%",
+  "new": "43%",
+  "reason": "Observed from source (2026-10-04).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-04",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+45% vs +24%",
+  "new": "+45% vs +24%",
+  "reason": "Observed from source (2026-10-04).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-04",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.8%",
+  "new": "7.0%",
+  "reason": "Observed from source (2026-10-04).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-10-03",
   "source": "https://www.insurancejournal.com/news/west/2026/09/25/886812.htm",
   "kind": "rejected",

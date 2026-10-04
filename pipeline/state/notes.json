@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-09-19",
-  "notes": [
-   "bonds gauge: no newer reading of the same measure found - the $225B (S&P Global count of bonds issued by hyperscalers and 'related entities' like Nvidia, +973.7% through midyear) still comes from S&P's Credit Trends: Global Financing Conditions Q3 2026, the report behind the 2026-07-31 Fortune article; the Q4 update is not published yet.",
-   "Vanguard (Bloomberg data as of 2026-07-31): ~$132B year-to-date - different measure (gross U.S.-only issuance by just Alphabet, Amazon, Meta, Microsoft, Oracle) and not newer than the current as_of, so not proposed.",
-   "Goldman Sachs Exchanges: hyperscalers have issued ~$194B 'so far this year' globally vs $108B in 2025 - narrower issuer set (five hyperscalers, no Nvidia/related entities) and no clear as_of date on the page, so not proposed.",
-   "Cryptobriefing: ~$244B issued globally in 2026 by Amazon, Alphabet, Microsoft, Meta and Oracle - same five-hyperscaler scope as the Goldman series rather than S&P's hyperscalers-plus-related-entities measure, secondary source, undated; not proposed.",
-   "Next refresh: watch for S&P Global Ratings' Q4 2026 Global Financing Conditions report (typically October) for a directly comparable update to the $225B figure.",
-   "Epoch math-AI data (arXiv math preprints acknowledging AI 4% April -> 25% August, 6% crediting research ideas): usage of AI in research, not a token-spend share or a loop gain — no rule fits.",
-   "Anthropic/Accenture embedded-evaluation partnership ($1B each over five years): governance spend, not token demand or compute supply.",
-   "Anthropic IPO slipping to November (WSJ/NYT): no quantitative model input and no shock type covers it.",
-   "Dario Amodei 'We Must Pace the Frontier' / Stratechery pacing coverage: a 'pacing' scenario was rejected on 2026-09-18, so not re-proposed.",
-   "Zitron's construction-in-process argument (Amazon $70B; Google+Meta $203B; 'Anthropic is not bringing 5GW online in 2026') is suggestive against K0=10 GW but names no GW figure; his debt essay is paywalled.",
-   "SemiAnalysis Engrams / InferenceX pages: architecture and benchmarking, paywalled past the intro; no new $/Mtok, capacity or migration numbers usable for token_index or subst.",
-   "SemiAnalysis 300+ datacentre moratorium thread: already encoded in the 'grid' scenario (revised 15 Sep 2026).",
-   "No 2026Q3 rate event proposed: the 0.25pp hike is already reflected in the auto-collected rateGap/fedfunds, and a 2026Q3 rate event was rejected on 2026-09-18.",
-   "No newer METR horizon or doubling-time reading found before the search/fetch budget ran out; H0 (as of 2026-04-07) is the stalest input and should be chased first next run.",
-   "No prompt-injection or instruction-like text appeared in any feed item, X post or fetched page today."
-  ]
- },
- {
   "date": "2026-09-20",
   "notes": [
    "orgX +0.1 (calibration fast lane, ledger 26/25/22pts, 3 weeks over threshold): NOT proposed. Slack at 47% util makes orgX the handle, but a +8% move in the organic multiplier adds well under a quarter of the 0.22 log/quarter gap, which the rule says makes this a structural gap for weekly review rather than a calibration move; the same value was also rejected on 2026-09-19.",
@@ -240,6 +220,26 @@
    "Epoch/YouGov ChatGPT panel (1 Oct): median panelist messages 14/month in Jan 2023 to 36 in Dec 2025, 21+ days/month users 2.6% to 10.5% - consumer intensity, not task share of frontier tokens, so no usage_share proposal.",
    "Zitron's 2 Oct post on Oracle debt at ~84 cents duplicates the Insurance Journal/Bloomberg report used for the fin proposal; cited the primary report instead.",
    "No prompt-injection or instruction-like content noticed in the fetched pages or feed items today."
+  ]
+ },
+ {
+  "date": "2026-10-04",
+  "notes": [
+   "BigGo/OpenRouter weekly ranking (Sept 21-27, 2026): Chinese models 62.22T of 146T total tokens (~43%) - different basis (global totals, not OpenRouter's regional enterprise cuts), so not used; flagged as a conflicting methodology.",
+   "Baidu Baike entry citing Sept 7-13 weekly volume (~61.2T Chinese tokens, ~3x US) gives a volume ratio, not a clean share of total tokens - not comparable.",
+   "tech-insider.org and officechai restate the same June-2026 Bloomberg chart (US ~70% -> ~30%); not newer than the current gauge value.",
+   "Vercel share (55% in August vs 11% in January) is a different platform, not the same measure.",
+   "CNBC article URL itself was not directly fetchable; quote taken verbatim from the indexed CNBC page text.",
+   "Search budget was exhausted early (web_search returned 'server tool use limit exceeded' from the second call onward, and web_fetch stopped working after five fetches), so coverage today is limited to the Exponential View items and the Anthropic S-1 material they link to; Reuters itself is url_not_allowed for fetching.",
+   "orgX NOT proposed despite the fast lane being open (ledger 2026-W36..W40: 26/25/22/22/23pts, 5 consecutive weeks >0.05, util0 43% = slack so the handle would be orgX). At its +0.1 per-run cap, 1.2 -> 1.3 scales organic growth by ~8%, lifting modelled quarter-zero growth from ~x2.4/yr to ~x2.58/yr, i.e. ~2pts of a 23pt gap — far less than the quarter-of-the-gap floor the growth_calibration rule sets. That is a structural gap for the weekly review, and is probably why the 2026-10-03 orgX -> 1.3 was rejected; re-proposing it would repeat the error.",
+   "Anthropic leaked S-1 (investmentbrief.ai, 29 Sep): FY2025 revenue $4.59bn (+1,089%), compute and infrastructure $7.33bn (+193%), operating loss $8.06bn, net loss $41.97bn (~$34bn of it a non-cash convertible fair-value charge). Not proposed on R0/R0_epoch: these are FY2025 figures with no 2026 numbers in the leak, and the Epoch sum (138.8 as of 2026-10-01) is collector-managed and already far ahead of them.",
+   "k_rd considered under feedback_evidence on the same S-1: compute re-spend of $1.60 per revenue dollar in 2025 (down from $6.50 in 2024) is a genuine reinvestment-rate datum, but the matching spend-growth observation (lab compute spend x2.93 in 2025 vs the implied steady x6.1 for AI R&D) would push the gain DOWN on year-old accounting data while the live growth check (+45% vs +24%) says the model under-predicts growth. Contradictory and stale — left alone pending a 2026 compute-spend figure in the real S-1.",
+   "train (compute_split) not moved: the S-1 leak gives total compute and infrastructure cost ($7.33bn in 2025, consistent with Epoch's $4.1bn training / $2.7bn inference) but no new training/inference split.",
+   "Azhar's forecast that 'Anthropic's annualised revenues will exceed $100bn by the end of 2026' and his paywalled 2026 model were not used for a scenario: Azhar is already represented inside the 'middle' scenario and the quantitative detail sits behind the paywall.",
+   "EV #604 (4 Oct): Torsten Slok's 'agentic bank run' (deposit flight as household agents chase yield) and IEA electrification numbers — interesting macro colour, no exposed key, not proposed.",
+   "Boom and takeoff are both flagged OUT OF RANGE on fidelity, but I found no revised numbers from Patel/Baker or the AI Futures Project this week, so no scenario_update is evidenced.",
+   "X feed this week was mostly non-model content (SemiAnalysis on ruthenium, custom HBM, ClusterMAX ratings; Epoch's self-selected ChatGPT usage panel; device launches). The Epoch usage write-up could bear on usage_share but its link is a t.co shortener and the fetch budget was gone before I could resolve it — flagged for the next run.",
+   "No prompt-injection attempts spotted in the fetched pages or post text; the fetched Substack pages contained only ordinary subscribe/paywall boilerplate."
   ]
  }
 ]
