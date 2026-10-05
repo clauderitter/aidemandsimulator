@@ -1,5 +1,68 @@
 [
  {
+  "date": "2026-10-05",
+  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.3,
+  "reason": "The $30B→$105B Epoch run-rate figure is the same August evidence that already lifted orgX once and predates the current as-of date, and with the observed-vs-modelled gap narrowing from 23 to 16 points it does not show organic growth persistently outrunning the model."
+ },
+ {
+  "date": "2026-10-05",
+  "source": "https://x.com/GavinSBaker/status/2107114362833981692",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 55,
+  "reason": "Gate: monthly drift cap reached for mono (at most ±8.88 around 29.6 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-10-05",
+  "source": "https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html",
+  "kind": "rejected",
+  "target": "gauge:openrouter_cn",
+  "old": null,
+  "new": "57%-67%",
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html."
+ },
+ {
+  "date": "2026-10-05",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "43%",
+  "new": "43%",
+  "reason": "Observed from source (2026-10-05).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-05",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+45% vs +24%",
+  "new": "+45% vs +24%",
+  "reason": "Observed from source (2026-10-05).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-05",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.0%",
+  "new": "7.4%",
+  "reason": "Observed from source (2026-10-05).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-05",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "324bp",
+  "new": "310bp",
+  "reason": "Observed from source (2026-10-02).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
   "date": "2026-10-04",
   "source": "https://www.exponentialview.co/p/the-first-existential-ipo",
   "kind": "rejected",

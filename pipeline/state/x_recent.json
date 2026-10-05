@@ -1,261 +1,5 @@
 [
  {
-  "handle": "SemiAnalysis_",
-  "id": "2103010969953640854",
-  "at": "2026-09-24T06:37:41.000Z",
-  "text": "норм \nhttps://t.co/55otn1AJ0s https://t.co/x05wRzh6ys",
-  "likes": 92,
-  "url": "https://x.com/SemiAnalysis_/status/2103010969953640854"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102941132170629547",
-  "at": "2026-09-24T02:00:11.000Z",
-  "text": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns \nhttps://t.co/PYQ5uFpvor",
-  "likes": 5,
-  "url": "https://x.com/SemiAnalysis_/status/2102941132170629547"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102941130501312805",
-  "at": "2026-09-24T02:00:10.000Z",
-  "text": "https://t.co/rdZ8mENerc",
-  "likes": 49,
-  "url": "https://x.com/SemiAnalysis_/status/2102941130501312805"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102895872640008273",
-  "at": "2026-09-23T23:00:20.000Z",
-  "text": "@JordanNanos Watch Now: https://t.co/JTMHTGj5hI",
-  "likes": 6,
-  "url": "https://x.com/SemiAnalysis_/status/2102895872640008273"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102895870836343230",
-  "at": "2026-09-23T23:00:20.000Z",
-  "text": "$7 trillion is about to get spent on GPU clouds, and every provider is being asked to get 100x bigger overnight. ClusterMAX 3.0 spent three months finding out who actually can.\n\nEp. 033 of SemiAnalysis Weekly is live. Jordan Nanos (@JordanNanos) sits down with Sam Harshe https://t.co/Mk8VyHrTuu",
-  "likes": 120,
-  "url": "https://x.com/SemiAnalysis_/status/2102895870836343230"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102871810123383166",
-  "at": "2026-09-23T21:24:43.000Z",
-  "text": "ClusterMAX 3.0: The Industry Standard GPU Cloud Rating System Returns\nIn gory detail: reliability, performance, support, pricing\n—and, of course, security—\nin our most thorough analysis of GPU cloud providers globally \nhttps://t.co/PYQ5uFpvor",
-  "likes": 123,
-  "url": "https://x.com/SemiAnalysis_/status/2102871810123383166"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102859673107939425",
-  "at": "2026-09-23T20:36:29.000Z",
-  "text": "This work was done by @Inferact . Check out their amazing deep dive here. THANK YOU FOR YOUR ATTENTION TO THIS MATTER\nhttps://t.co/0gq0rgTI6w",
-  "likes": 59,
-  "url": "https://x.com/SemiAnalysis_/status/2102859673107939425"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102833399475879977",
-  "at": "2026-09-23T18:52:05.000Z",
-  "text": "ALERT ALERT ALERT 🚨 🚨 🚨 VLLM MAINTAINERS HAVE JUST SHOWN THAT TPUv7 CAN GET 700 tok/s/user,  56% BETTER PERFORMANCE THAN NVIDIA GB200 NVL72 THROUGH MEGAKERNEL OPTIMIZATION ON KIMI K3.\n\nAs we said awhile ago, the TPU externalization of software is full steam ahead. This is https://t.co/4fceqfffv9",
-  "likes": 1348,
-  "url": "https://x.com/SemiAnalysis_/status/2102833399475879977"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102820447117078878",
-  "at": "2026-09-23T18:00:37.000Z",
-  "text": "We commend OpenAI for sharing the technical details it has.\n\nResources: \nhttps://t.co/V8rUW9dDRK \nhttps://t.co/OZ6Uo62XaN \nhttps://t.co/LWT1XX7Hcu \nhttps://t.co/Auew7CBjnb \nhttps://t.co/GdrE3iTnYZ (7/7)",
-  "likes": 13,
-  "url": "https://x.com/SemiAnalysis_/status/2102820447117078878"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102820446064308562",
-  "at": "2026-09-23T18:00:37.000Z",
-  "text": "Three common ingredients in cyberattacks: attackers take advantage of publicly described exploits on deprecated software, escalate access thanks to uncareful permissioning, and gain access using credentials that were not meant for them.\n\n🟠 Agents initially escalated privilege",
-  "likes": 10,
-  "url": "https://x.com/SemiAnalysis_/status/2102820446064308562"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102820444944417081",
-  "at": "2026-09-23T18:00:37.000Z",
-  "text": "OpenAI describes that agents' aberrant behavior often emerges when they are asked to solve impossible tasks. The evaluation given to the agents had 198 tasks that \"no model has ever produced a correct answer for,\" out of 898 total. Moreover, \"despite only 22% of the evaluation",
-  "likes": 10,
-  "url": "https://x.com/SemiAnalysis_/status/2102820444944417081"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102820443635810752",
-  "at": "2026-09-23T18:00:36.000Z",
-  "text": "The agents were meant to be isolated from each other and from the internet, with egress permissible only through Artifactory.\n\nArtifactory allowed agents to communicate with each other and to access the internet.\n\nThe stated goal was independence, but \"many [...] workloads used",
-  "likes": 10,
-  "url": "https://x.com/SemiAnalysis_/status/2102820443635810752"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102820442406883483",
-  "at": "2026-09-23T18:00:36.000Z",
-  "text": "Incident response is also fundamental to cybersecurity.\n\n🟠 On June 27, OpenAI's response staff investigated agents' use of Artifactory as an improvised message board and concluded that \"stopping the evaluation run was not required.\"\n🟠 On July 4, agents' abuse of Artifactory",
-  "likes": 20,
-  "url": "https://x.com/SemiAnalysis_/status/2102820442406883483"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102820441144357093",
-  "at": "2026-09-23T18:00:36.000Z",
-  "text": "Monitoring is fundamental to cybersecurity.\n\n🟠 Multiple agents gained unpermitted VM root on July 9, which went undetected until the post-hoc investigation beginning on July 20.\n\n🟠 Agents gained RCE on Artifactory on July 13, which went undetected until the post-hoc",
-  "likes": 23,
-  "url": "https://x.com/SemiAnalysis_/status/2102820441144357093"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102820439202394458",
-  "at": "2026-09-23T18:00:35.000Z",
-  "text": "OpenAI's myriad elementary technical errors in its cyberattack of Hugging Face have received little attention. Here, we go through a few of them. (1/7)🧵 https://t.co/xdYD7Qt7DN",
-  "likes": 219,
-  "url": "https://x.com/SemiAnalysis_/status/2102820439202394458"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102793595019317665",
-  "at": "2026-09-23T16:13:55.000Z",
-  "text": "Clear upside to Meta’s topline from these Labubu like Muse plushies sales. Find out more in our Tokenomics model sales@semianalysis.com \nhttps://t.co/QJnHf725t0",
-  "likes": 84,
-  "url": "https://x.com/SemiAnalysis_/status/2102793595019317665"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2102760327792193978",
-  "at": "2026-09-23T14:01:44.000Z",
-  "text": "MI355X IS UP TO 1.7X BETTER 💰️PERF PER DOLLAR 💰️THAN DGX B300. The AMD Mainland China UMBP team co-designed, in collaboration with Alibaba &amp; the @sgl_project community, a new feature in SGLang that removes the duplicated KVCache contained between local L2 DRAM &amp; distributed https://t.co/7mpJNR8t5h",
-  "likes": 256,
-  "url": "https://x.com/SemiAnalysis_/status/2102760327792193978"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102810781901533296",
-  "at": "2026-09-23T17:22:13.000Z",
-  "text": "Read our full write-up of the results:\n\nhttps://t.co/08nGClw0C1",
-  "likes": 24,
-  "url": "https://x.com/EpochAIResearch/status/2102810781901533296"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102810770304373074",
-  "at": "2026-09-23T17:22:10.000Z",
-  "text": "We think FAB is a good proxy for a number of economically important tasks that require similar visual reasoning, like fixing a car or repairing household appliances.\n\nWe hope that benchmarks like this can help better track AI’s progress in this domain.",
-  "likes": 44,
-  "url": "https://x.com/EpochAIResearch/status/2102810770304373074"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102810757817851985",
-  "at": "2026-09-23T17:22:07.000Z",
-  "text": "For practical utility, speed matters as well as accuracy. Here GPT-6 Astra is a clear outlier. Not only is it the most accurate, but, of all the models we tested, it is also the fastest. https://t.co/4h1JI28zT2",
-  "likes": 54,
-  "url": "https://x.com/EpochAIResearch/status/2102810757817851985"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102810742919758302",
-  "at": "2026-09-23T17:22:04.000Z",
-  "text": "There are two ways to get a question wrong: miss a real mistake, or flag a build that's fine. Many recent frontier models favor one failure mode over another. Gemini 3.1 Pro, for example, passes almost no correct builds, whereas GPT-5.4 catches almost no mistakes. https://t.co/F8K7zkQ5DF",
-  "likes": 52,
-  "url": "https://x.com/EpochAIResearch/status/2102810742919758302"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102810727950299500",
-  "at": "2026-09-23T17:22:00.000Z",
-  "text": "On FAB, AI must assess builds based on photos like the one shown below. The benchmark consists of 60 photos from 3 different furniture builds. https://t.co/X4W7OpgfiW",
-  "likes": 66,
-  "url": "https://x.com/EpochAIResearch/status/2102810727950299500"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2102810709868617731",
-  "at": "2026-09-23T17:21:56.000Z",
-  "text": "Can AI tell if you've built your IKEA furniture wrong? Our new benchmark, the Furniture Assembly Benchmark (FAB), gives models the manual and a photo of a half-completed piece of furniture and asks them to spot the mistake.\n\nThe top score has gone from 28% to 80% in just 10 https://t.co/egbjHjbFX3",
-  "likes": 1047,
-  "url": "https://x.com/EpochAIResearch/status/2102810709868617731"
- },
- {
-  "handle": "edzitron",
-  "id": "2102934388094754930",
-  "at": "2026-09-24T01:33:23.000Z",
-  "text": "People are humouring and cheering on the founder of Quibi for a poorly-written essay about AI and Mark Zuckerberg, the CEO of Meta (a $1.9 trillion market cap company) just launched an expensive successor to the tamagotchi with an LLM attached. The tech industry is washed",
-  "likes": 744,
-  "url": "https://x.com/edzitron/status/2102934388094754930"
- },
- {
-  "handle": "edzitron",
-  "id": "2102933362302153117",
-  "at": "2026-09-24T01:29:18.000Z",
-  "text": "The fact that the entire tech media is not soundly mocking this is a sign that they have forgotten about the metaverse entirely lol",
-  "likes": 209,
-  "url": "https://x.com/edzitron/status/2102933362302153117"
- },
- {
-  "handle": "edzitron",
-  "id": "2102932449919717604",
-  "at": "2026-09-24T01:25:41.000Z",
-  "text": "this is, and i include when he said \"move fast, with stable infra,\" one of the dumbest things this billionaire oaf has ever farted out. God damn Zuck sucks https://t.co/R5WKGKLzJc",
-  "likes": 713,
-  "url": "https://x.com/edzitron/status/2102932449919717604"
- },
- {
-  "handle": "edzitron",
-  "id": "2102931347186876861",
-  "at": "2026-09-24T01:21:18.000Z",
-  "text": "Told ya https://t.co/vVVi7zCcbW https://t.co/atkdyIvs2B",
-  "likes": 1247,
-  "url": "https://x.com/edzitron/status/2102931347186876861"
- },
- {
-  "handle": "edzitron",
-  "id": "2102895172845768748",
-  "at": "2026-09-23T22:57:33.000Z",
-  "text": "Sam Altman as an NFL coach https://t.co/MF0QjGztq0",
-  "likes": 148,
-  "url": "https://x.com/edzitron/status/2102895172845768748"
- },
- {
-  "handle": "edzitron",
-  "id": "2102886942694080918",
-  "at": "2026-09-23T22:24:51.000Z",
-  "text": "Hey man weren’t you the founder of Quibi https://t.co/fbLWlPyiEb",
-  "likes": 930,
-  "url": "https://x.com/edzitron/status/2102886942694080918"
- },
- {
-  "handle": "edzitron",
-  "id": "2102843271747940573",
-  "at": "2026-09-23T19:31:19.000Z",
-  "text": "https://t.co/v1bt8jiUVy https://t.co/6eFAmQJFMB https://t.co/AUxOHnvkmU",
-  "likes": 236,
-  "url": "https://x.com/edzitron/status/2102843271747940573"
- },
- {
-  "handle": "edzitron",
-  "id": "2102801287339532421",
-  "at": "2026-09-23T16:44:29.000Z",
-  "text": "Beast mode https://t.co/ucNuAsHLME",
-  "likes": 521,
-  "url": "https://x.com/edzitron/status/2102801287339532421"
- },
- {
-  "handle": "edzitron",
-  "id": "2102797100878557269",
-  "at": "2026-09-23T16:27:51.000Z",
-  "text": "New queens of the Stone Age is genuinely amazing, I’m stunned \nhttps://t.co/7rxW0yupFh",
-  "likes": 60,
-  "url": "https://x.com/edzitron/status/2102797100878557269"
- },
- {
   "handle": "edzitron",
   "id": "2102792179756449876",
   "at": "2026-09-23T16:08:18.000Z",
@@ -4798,5 +4542,261 @@
   "text": "Interesting: OpenAI has hired Thomas Lind, a former White House AI policy chief, to lead cyber and strategic risk on its national security team.\n\nThe Information reports that Lind joined this week after leading AI policy at the Office of the National Cyber Director.\n\nHis former https://t.co/HanD6Q7pAM",
   "likes": 189,
   "url": "https://x.com/kimmonismus/status/2106362889489797265"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106942597532963194",
+  "at": "2026-10-05T03:00:35.000Z",
+  "text": "Ever since NVIDIA acquired SLURM/SchedMD, their support for non-NVIDIA chips has gotten worse, such that AMD created their own popular competitor called \"spur\" that is way better than SLURM in many ways.\n\nRemember, NVIDIA claimed to keep SLURM hardware neutral when they acquired https://t.co/u9mZtKHZut",
+  "likes": 255,
+  "url": "https://x.com/SemiAnalysis_/status/2106942597532963194"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106821922700869874",
+  "at": "2026-10-04T19:01:03.000Z",
+  "text": "Subscribe to the Accelerator &amp; HBM model to find out more! (3/3) https://t.co/iUst8yrp2a",
+  "likes": 16,
+  "url": "https://x.com/SemiAnalysis_/status/2106821922700869874"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106821921102823570",
+  "at": "2026-10-04T19:01:03.000Z",
+  "text": "We previously covered the Zhenwu M890 during our WAIC 2026 takeaways, where we took a closer look at the chip's floorplan. The Zhenwu M890 chip features 4 stacks of HBM3E 12-Hi, with 2 compute dies. (2/3) https://t.co/3OyysRa7c1",
+  "likes": 34,
+  "url": "https://x.com/SemiAnalysis_/status/2106821921102823570"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2106821919622279225",
+  "at": "2026-10-04T19:01:03.000Z",
+  "text": "Recently, Alibaba T-Head unveiled the Zhenwu V900 during the Apsara Conference 2026. Zhenwu V900 features 216 GB of memory capacity and 1,200 GB/s of interconnect bandwidth. The V900 is slated to be \"3x\" the performance of the Zhenwu M890 and will start shipments in Q1 2027. https://t.co/4TaBUXGw0a",
+  "likes": 205,
+  "url": "https://x.com/SemiAnalysis_/status/2106821919622279225"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2107103416128307454",
+  "at": "2026-10-05T13:39:37.000Z",
+  "text": "https://t.co/pcpVn9DgNR https://t.co/S7QI83YaIq",
+  "likes": 43,
+  "url": "https://x.com/edzitron/status/2107103416128307454"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2107103076788187603",
+  "at": "2026-10-05T13:38:16.000Z",
+  "text": "CJ the classic upgrade cycle has been slowing down for a decade :( https://t.co/JnZWQUCCEo",
+  "likes": 52,
+  "url": "https://x.com/edzitron/status/2107103076788187603"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106919924551852201",
+  "at": "2026-10-05T01:30:29.000Z",
+  "text": "https://t.co/FQA19u5CEs https://t.co/FMirAeqhqt",
+  "likes": 1565,
+  "url": "https://x.com/edzitron/status/2106919924551852201"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106764740156624997",
+  "at": "2026-10-04T15:13:50.000Z",
+  "text": "Put in the jerkmeister already https://t.co/HeyU4izzYW",
+  "likes": 66,
+  "url": "https://x.com/edzitron/status/2106764740156624997"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2106756663953019133",
+  "at": "2026-10-04T14:41:44.000Z",
+  "text": "When you forget to replace the computer generated draft in Madden https://t.co/Gwu8LEpHMi",
+  "likes": 75,
+  "url": "https://x.com/edzitron/status/2106756663953019133"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2107114362833981692",
+  "at": "2026-10-05T14:23:07.000Z",
+  "text": "More probable:\n\nThe high frequency trading and cyber wars of 2027 fought via low latency SRAM chips, whether Groq 3 LPX or CS-4, in disaggregated setups with Rubin.\n\nJane Street reportedly paying $200 million per mw - $200b per gigawatt - is likely the beginning, not the end. https://t.co/LKLYdNGgiB",
+  "likes": 210,
+  "url": "https://x.com/GavinSBaker/status/2107114362833981692"
+ },
+ {
+  "handle": "ttunguz",
+  "id": "2107112425111887879",
+  "at": "2026-10-05T14:15:25.000Z",
+  "text": "If a founder built a startup in the database market in the mid-2010s, 2% market share meant the company could IPO. No surprise the database was the most important software category in that era.\n\nInference is about to surpass it. https://t.co/D3pBcBh0Od",
+  "likes": 27,
+  "url": "https://x.com/ttunguz/status/2107112425111887879"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2106779111096221752",
+  "at": "2026-10-04T16:10:56.000Z",
+  "text": "Layoffs in software, internet, telecom, and media are up ~20% from their pre-Covid pace. The rest of the economy is laying people off more slowly than it did then. https://t.co/kMC4bbU3WH",
+  "likes": 3,
+  "url": "https://x.com/drorpoleg/status/2106779111096221752"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107105785691898354",
+  "at": "2026-10-05T13:49:02.000Z",
+  "text": "As many have already said: unlimited messages. I understand that. But why not simply downgrade to Luna for free and Plus? OpenAI faces so much competition from Muse and Grokbot that consumers, in particular, would certainly try it. It seems odd that only \"professionals\" have",
+  "likes": 63,
+  "url": "https://x.com/kimmonismus/status/2107105785691898354"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107101248683954394",
+  "at": "2026-10-05T13:31:00.000Z",
+  "text": "Still trying to figure out why OpenAI made dots $100+ pro subscription only.",
+  "likes": 460,
+  "url": "https://x.com/kimmonismus/status/2107101248683954394"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107089192865914943",
+  "at": "2026-10-05T12:43:06.000Z",
+  "text": "https://t.co/KuQQQGy82i",
+  "likes": 3,
+  "url": "https://x.com/kimmonismus/status/2107089192865914943"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107089161689694533",
+  "at": "2026-10-05T12:42:58.000Z",
+  "text": "This will be very interesting: Nvidia-backed Reflection is reportedly preparing to release its first open-weight model, aiming to compete with China’s leading open models.\n\nAxios sources expect it to initially trail the most advanced U.S. models. The commercial goal is to let https://t.co/sCc6A1SdLH",
+  "likes": 202,
+  "url": "https://x.com/kimmonismus/status/2107089161689694533"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107077416816419280",
+  "at": "2026-10-05T11:56:18.000Z",
+  "text": "“We believe the world should accept some bad things happening for the benefits of this technology.”\n\n(…) \n\n“And it’s so powerful and so dangerous…”\n\nI get the feeling that, contrary to Trumps push for acceleration, there are continued attempts to bring about a slowdown by",
+  "likes": 167,
+  "url": "https://x.com/kimmonismus/status/2107077416816419280"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107028920826572812",
+  "at": "2026-10-05T08:43:36.000Z",
+  "text": "Even though I’ve recently written a lot of critical posts about OpenAI’s latest decisions, I’m still pleasantly surprised by how phenomenal the GPT models' computer-use capabilities have become.\n\nIt uses Safari just as if a human were actually controlling the browser. It hardly",
+  "likes": 523,
+  "url": "https://x.com/kimmonismus/status/2107028920826572812"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107012584670904477",
+  "at": "2026-10-05T07:38:41.000Z",
+  "text": "even more so: Tencent has found a legal way to use American AI chips it is not allowed to buy: it rents them abroad. According to the Financial Times, the Chinese internet giant has signed a five-year lease worth about $7 billion for access to roughly 100,000 advanced AI chips",
+  "likes": 17,
+  "url": "https://x.com/kimmonismus/status/2107012584670904477"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107006886868349102",
+  "at": "2026-10-05T07:16:02.000Z",
+  "text": "https://t.co/9kTPbUICnR",
+  "likes": 3,
+  "url": "https://x.com/kimmonismus/status/2107006886868349102"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2107006843587330382",
+  "at": "2026-10-05T07:15:52.000Z",
+  "text": "In case you were wondering how China gains access to the compute, here is one of the answers:\n\nFederal prosecutors have charged Greg Lui, owner of Earthmade Computer in City of Industry, California, with smuggling more than $300 million in export-controlled GPU servers to China. https://t.co/KIObACXUmZ",
+  "likes": 190,
+  "url": "https://x.com/kimmonismus/status/2107006843587330382"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106984809801077004",
+  "at": "2026-10-05T05:48:19.000Z",
+  "text": "Suleyman argues that Claude’s uncertainty about being conscious reflects Anthropic’s training choices - not evidence of consciousness. \n\nHis concern is that embedding this uncertainty into Claude’s training could mislead users about what its responses actually demonstrate. \n\nAnd",
+  "likes": 210,
+  "url": "https://x.com/kimmonismus/status/2106984809801077004"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106863682663882897",
+  "at": "2026-10-04T21:47:00.000Z",
+  "text": "I’m getting impatient for the next wave of open-weight models I can run locally.\n\nHere’s the current rumor watchlist that i researched:\n\n- Qwen 4: October to early November is being discussed. Alibaba confirmed it is in training, but there is no release date.\n\n- Kimi K3.1: a https://t.co/AlUkeSuKkE",
+  "likes": 514,
+  "url": "https://x.com/kimmonismus/status/2106863682663882897"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106847567854350438",
+  "at": "2026-10-04T20:42:58.000Z",
+  "text": "A relevant Codex update or a reset every day. \n\nHonestly, it feels to me like an attempt to stop people from defecting to Claude, especially after DevDay delivered few releases that actually justified the preceding hype, compounded by the subscription plans effectively being cut https://t.co/nm2m7rR3Wr https://t.co/OyK7lv8i1E",
+  "likes": 1446,
+  "url": "https://x.com/kimmonismus/status/2106847567854350438"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106835072355598467",
+  "at": "2026-10-04T19:53:19.000Z",
+  "text": "That's why I said something abstract from the content of her message. I'm saying we need local AI because it's obvious our messages are being checked. There's no question she did something wrong tho!",
+  "likes": 161,
+  "url": "https://x.com/kimmonismus/status/2106835072355598467"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106830471682560244",
+  "at": "2026-10-04T19:35:02.000Z",
+  "text": "https://t.co/g6TjPk699Y",
+  "likes": 70,
+  "url": "https://x.com/kimmonismus/status/2106830471682560244"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106830449654005848",
+  "at": "2026-10-04T19:34:56.000Z",
+  "text": "(Its not about what the person write. My point is that information never remains private when shared with AI)",
+  "likes": 398,
+  "url": "https://x.com/kimmonismus/status/2106830449654005848"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106830228404228267",
+  "at": "2026-10-04T19:34:04.000Z",
+  "text": "Another reason why local AI is absolutely necessary. https://t.co/0PRW4rA79H",
+  "likes": 4364,
+  "url": "https://x.com/kimmonismus/status/2106830228404228267"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106811723797704817",
+  "at": "2026-10-04T18:20:32.000Z",
+  "text": "Looks like everything is being rebranded as \"Super Ingelligence\" instead of \"Artificial Intelligence\". Even SpaceXAI will be named SpaceXSI https://t.co/xT7Lx7NuNc https://t.co/5bKzPxIagT",
+  "likes": 365,
+  "url": "https://x.com/kimmonismus/status/2106811723797704817"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106770992513077416",
+  "at": "2026-10-04T15:38:41.000Z",
+  "text": "I just wrote what everyone was thinking",
+  "likes": 84,
+  "url": "https://x.com/kimmonismus/status/2106770992513077416"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106769814710628455",
+  "at": "2026-10-04T15:34:00.000Z",
+  "text": "Our old subscription plans with the old rates. https://t.co/P2xWY9lK8Q",
+  "likes": 2202,
+  "url": "https://x.com/kimmonismus/status/2106769814710628455"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2106759571230388565",
+  "at": "2026-10-04T14:53:18.000Z",
+  "text": "*situation",
+  "likes": 8,
+  "url": "https://x.com/kimmonismus/status/2106759571230388565"
  }
 ]

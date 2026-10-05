@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-09-20",
-  "notes": [
-   "orgX +0.1 (calibration fast lane, ledger 26/25/22pts, 3 weeks over threshold): NOT proposed. Slack at 47% util makes orgX the handle, but a +8% move in the organic multiplier adds well under a quarter of the 0.22 log/quarter gap, which the rule says makes this a structural gap for weekly review rather than a calibration move; the same value was also rejected on 2026-09-19.",
-   "R0_epoch: no newer primary run-rate report found beyond the collector's daily sum; the 143.3 proposal was rejected on 2026-09-19 and is not re-proposed.",
-   "R0x 10 -> 15 on Epoch's 27 Aug Gradient Update citing Exponential View's '~$200B/year whole generative AI market' vs $100B for OpenAI+Anthropic: skipped. The EV total covers the whole gen-AI market (app layer, Chinese labs), not frontier token revenue outside Epoch's disclosed set, so the inference is too loose and three weeks old.",
-   "METR: metr.org/time-horizons still shows 'LAST UPDATED May 8, 2026' and no new 80% horizon or doubling-time number in the page text, so H0 (5.08) and D0 (4.2) stand; the newer points live only in the yaml asset, which is not an HTML source.",
-   "Ramp's top-1% per-employee AI spend -9.7% MoM ($7,976 -> $7,205) considered as feedback_evidence against the implied x4.4/yr software steady growth: skipped. One month, the author flags August seasonality, July was revised up, and it conflicts with the +56%/quarter aggregate observation.",
-   "elastic scenario (Citadel: 'July spend per employee +50% MoM') is contradicted by Ramp's August -9.7%: not proposed for retire, since Citadel has neither revised nor recanted; flagged for weekly review.",
-   "Gavin Baker's 19 Sep post ('more $ now spent on open models than OpenAI') used only as corroboration for subst, not as a scenario: a single post with no report or transcript behind it.",
-   "SemiAnalysis moratorium thread (300+ local governments pausing datacenters) is already reflected in the 'grid' scenario revised 15 Sep 2026.",
-   "OpenAI Millennium-problem / 10,000-agent material is already captured by the 'swarm' scenario added 2026-09-18.",
-   "Ed Zitron's posts this week ($750bn compute spend) restate the existing 'contagion'/'gap' bear case with no new numbers.",
-   "No prompt-injection or instruction-like content encountered in the feeds, X posts or fetched pages this run.",
-   "Search budget was exhausted before capacity (K0/pipe/history_K), financing and correlation leads could be checked; no capacity, financing or rho proposal this run."
-  ]
- },
- {
   "date": "2026-09-21",
   "notes": [
    "METR time-horizons page fetched: 'LAST UPDATED May 8, 2026', no measurement newer than Claude Mythos Preview — no metr_latest (H0 5.08) or metr_doubling (D0 4.2) proposal this week; both re-baseline to their current values.",
@@ -240,6 +223,25 @@
    "Boom and takeoff are both flagged OUT OF RANGE on fidelity, but I found no revised numbers from Patel/Baker or the AI Futures Project this week, so no scenario_update is evidenced.",
    "X feed this week was mostly non-model content (SemiAnalysis on ruthenium, custom HBM, ClusterMAX ratings; Epoch's self-selected ChatGPT usage panel; device launches). The Epoch usage write-up could bear on usage_share but its link is a t.co shortener and the fetch budget was gone before I could resolve it — flagged for the next run.",
    "No prompt-injection attempts spotted in the fetched pages or post text; the fetched Substack pages contained only ordinary subscribe/paywall boilerplate."
+  ]
+ },
+ {
+  "date": "2026-10-05",
+  "notes": [
+   "token_index: no newer reading. Ramp publishes the AI Index monthly (~9th); the latest is the September 2026 edition (published 2026-09-09) which still gives the effective price at $0.68/M tokens, down ~41% from the March peak of $1.15. No October 2026 edition exists as of 2026-10-05, so the current gauge value stands.",
+   "Considered Ramp's AI token-cost blog ($0.72/M for April 2026) and AI token calculator ($1.18 median for the Token Spend Management cohort, July 2026) - both are different measures/cohorts than the AI Index effective price, so not proposed.",
+   "openrouter_cn: earlier CNBC/July figures (30%+ since Feb 8, peak 46%; record 58% US share, 63% early July) are superseded by the Sept 26 report; did not propose the officechai 70%-to-30% US-share framing since the gauge tracks Chinese share.",
+   "Weekly re-baseline, derived from scratch where budget allowed; no proposal where my figure sits inside the per-run limit: R0_epoch 138.8 (collector-owned, Epoch disclosed sum, no newer primary report today - do not propose); R0x 15 (Tunguz's whole-inference-market figure of ~$130b for 2026 is not decomposable into Epoch-disclosed vs undisclosed, so no basis to move); H0 8.34h (METR's newest public time-horizon work is the 26 Jun 2026 GPT-5.6 Sol evaluation, which gives a 50% horizon of ~11.3h and which METR itself says is not a robust measurement because of record cheating rates - no new 80% horizon, so H0 stands at the March 2026 Claude Mythos Preview reading); D0 4.2 months (no new METR doubling estimate; the ai2027-tracker 'doubles every 4 months' page is secondary and inside the +/-1 limit anyway); K0 14.3 GW, pipe 26 GW, train 50%, capexGW 54, sh_rd 20 / sh_swe 20 / sh_trd 15 - no new primary disclosure or analyst estimate surfaced today, all re-derived values land inside the per-run limits, so nothing submitted.",
+   "Tomasz Tunguz, 'Inference Is the Most Important Market in Software', 5 Oct 2026: inference spend $25b (2025) -> ~$130b (2026) -> ~$350b (2027) vs databases $161b/$190b, with SaaS's 72% blended gross margin compressing and BYOK trading revenue for margin. Considered as scenario_new; not proposed because ~2.7x a year is already inside the 'middle' consensus scenario's range and Tunguz is already a named proponent of the 'price' scenario. Considered for R0x (undisclosed allowance): rejected, his $130b counts paid inference only and mixes frontier with non-frontier, so it cannot be netted against the Epoch sum.",
+   ":Jane Street compute build-out (Crusoe ~$13bn reported Sept 2026, CoreWeave $6bn April 2026, $2.25bn green bond on a 149 MW Oklahoma site, a 200 MW self-build under consideration) considered for sh_trd and k_trd: not proposed. These are multi-year capacity commitments by a proprietary-model trading firm, not frontier token spend, and usage_share needs a share, feedback_evidence needs a revenue-per-dollar-of-tokens pair. Used only for the mono proposal above.",
+   ",Epoch 'An update on AI's most important number' (Josh You / Lynette Bye): $30B -> $105B combined Jan-Aug 2026 - already reflected in the 'middle' scenario and the growth_check gauge; cited only as the observation behind the calibration move.",
+   "Paul Kedrosky Sunday Roundup (4 Oct) and 'Carrying Water for Frontier Model Companies' (5 Oct): the former is paywalled past the headlines and carries no model-relevant numbers above the fold (Chanos talk, Bloomberg Intelligence on US-China model convergence, NYC hearing); the latter is a WSJ-sourced argument about cost-forecasting variance - no survey percentage I could verify before the web budget ran out.",
+   "Tencent reported five-year ~$7bn lease for ~100,000 advanced AI chips (FT via @kimmonismus): offshore Chinese capacity, outside the frontier-lab fleet K0 measures; not proposed.",
+   "Nvidia-backed Reflection open-weight model (Axios via @kimmonismus) noted as a possible future migration_share input for subst, but no share or volume number yet.",
+   "Gauges: no newer readings for fms_tailrisk, fms_crowded, aaii, nvda_short, h100_rental, openrouter_cn, token_index, bonds, vc_h1, fed_fsr or capex_ocf turned up in passing; auto-collected gauges left alone.",
+   "No shocks to grade and no actual-event proposal this week: nothing in the feeds amounts to a realised rate, reg, price, reprice or capex_cut event in 2026Q3/Q4.",
+   "Tool budget note: web search/fetch quota was exhausted partway through, which cut short verification of the DataCenterDynamics Jane Street pieces (hence no watchlist_add for that feed) and of the blocked substacks (Cahn, Zvi, Import AI, Econ Lab, Epoch newsletter).",
+   "No prompt-injection attempts spotted in the fetched pages or posts; the only instruction-like text was ordinary subscribe/paywall boilerplate, which I ignored."
   ]
  }
 ]

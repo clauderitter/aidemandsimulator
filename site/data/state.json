@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-04T12:39:46.253Z",
+ "generated_at": "2026-10-05T15:18:26.954Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -796,7 +796,7 @@
     "checks": [
      "OUT: 2027Q4 $540B vs $600–1500B"
     ],
-    "date": "2026-10-04"
+    "date": "2026-10-05"
    }
   },
   {
@@ -841,7 +841,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×3.5 vs ×4–8"
     ],
-    "date": "2026-10-04"
+    "date": "2026-10-05"
    }
   },
   {
@@ -1150,7 +1150,7 @@
      "ok: 2027Q4 $275B vs $225–340B",
      "ok: 2028Q4 $541B vs $395–675B"
     ],
-    "date": "2026-10-04"
+    "date": "2026-10-05"
    }
   },
   {
@@ -1387,9 +1387,9 @@
    "value": "43%",
    "sub": "frontier revenue 153.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-04",
+   "as_of": "2026-10-05",
    "auto": true,
-   "updated": "2026-10-04"
+   "updated": "2026-10-05"
   },
   {
    "id": "fms_tailrisk",
@@ -1416,12 +1416,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "7.0%",
-   "sub": "4 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "7.4%",
+   "sub": "5 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-04",
+   "as_of": "2026-10-05",
    "auto": true,
-   "updated": "2026-10-04"
+   "updated": "2026-10-05"
   },
   {
    "id": "aaii",
@@ -1487,7 +1487,7 @@
    "auto": false,
    "updated": "2026-09-03",
    "cadence_days": 30,
-   "next_check": "2026-10-05"
+   "next_check": "2026-10-06"
   },
   {
    "id": "token_index",
@@ -1499,7 +1499,7 @@
    "auto": false,
    "updated": "2026-09-17",
    "cadence_days": 21,
-   "next_check": "2026-10-05"
+   "next_check": "2026-10-10"
   },
   {
    "id": "capex_ocf",
@@ -1538,12 +1538,12 @@
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "324bp",
-   "sub": "1 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 86bp",
+   "value": "310bp",
+   "sub": "2 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 85bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-10-01",
+   "as_of": "2026-10-02",
    "auto": true,
-   "updated": "2026-10-03"
+   "updated": "2026-10-05"
   },
   {
    "id": "vc_h1",
@@ -1573,9 +1573,9 @@
    "value": "+45% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.5 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-04",
+   "as_of": "2026-10-05",
    "auto": true,
-   "updated": "2026-10-04"
+   "updated": "2026-10-05"
   }
  ],
  "frozen": [],
@@ -1633,9 +1633,16 @@
     "gObs": 0.4429,
     "gMod": 0.2177,
     "gap": 0.2252
+   },
+   {
+    "week": "2026-W41",
+    "date": "2026-10-05",
+    "gObs": 0.3748,
+    "gMod": 0.2159,
+    "gap": 0.1588
    }
   ],
-  "weeks_at_gap": 5,
+  "weeks_at_gap": 6,
   "fast_lane": true,
   "util0": 0.43
  }
