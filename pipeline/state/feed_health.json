@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-09-21",
-  "failed": [
-   "David Cahn",
-   "Don't Worry About the Vase (Zvi)",
-   "Import AI (Jack Clark)",
-   "Econ Lab (Ara Kharazian, Ramp Economics Lab)",
-   "Epoch AI — Gradient Updates (newsletter feed): weekly run-ra"
-  ],
-  "dead": []
- },
- {
   "date": "2026-09-22",
   "failed": [],
   "dead": [
@@ -163,5 +152,16 @@
    "Epoch AI — Gradient Updates (newsletter feed): weekly run-ra"
   ],
   "dead": []
+ },
+ {
+  "date": "2026-10-06",
+  "failed": [],
+  "dead": [
+   "David Cahn",
+   "Don't Worry About the Vase (Zvi)",
+   "Import AI (Jack Clark)",
+   "Econ Lab (Ara Kharazian, Ramp Economics Lab)",
+   "Epoch AI — Gradient Updates (newsletter feed): weekly run-ra"
+  ]
  }
 ]

@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-10-06",
+  "source": "https://x.com/EpochAIResearch/status/2107174397698289762",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/data-insights",
+  "reason": "Epoch AI is already a primary source behind several inputs and its Substack feed no longer renders, so watching the data-insights index restores a working primary feed at no cost to the model's state."
+ },
+ {
+  "date": "2026-10-06",
+  "source": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 45,
+  "reason": "SemiAnalysis gives a ~$36M/MW blended drag from subsidised subscriptions, not a level for monetisable revenue per inference GW at API prices, and the proposed 45 is simply the speed-limit cap rather than anything derivable from the quote."
+ },
+ {
+  "date": "2026-10-06",
+  "source": "https://x.com/EpochAIResearch/status/2107174410054783123",
+  "kind": "rejected",
+  "target": "k_rd",
+  "old": null,
+  "new": 0.8,
+  "reason": "Gate: monthly drift cap reached for k_rd (at most ±0.1 around 0.6 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-10-06",
+  "source": "https://www.digitalapplied.com/blog/chinese-ai-models-majority-openrouter-tokens-2026 (reporting CNBC, 2026-09-26)",
+  "kind": "accepted",
+  "target": "gauge:openrouter_cn",
+  "old": ">60%",
+  "new": "57-67%",
+  "reason": "Same measure as the current tile — Chinese models' share of OpenRouter tokens — but two months fresher, and the CNBC-sourced figure is kept as the published range rather than an invented midpoint."
+ },
+ {
+  "date": "2026-10-06",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "43%",
+  "new": "43%",
+  "reason": "Observed from source (2026-10-06).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-06",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+45% vs +24%",
+  "new": "+45% vs +24%",
+  "reason": "Observed from source (2026-10-06).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-06",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.4%",
+  "new": "6.2%",
+  "reason": "Observed from source (2026-10-06).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-06",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.3",
+  "new": "15.5",
+  "reason": "Observed from source (2026-10-05).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-06",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-02).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-06",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.24%",
+  "new": "5.28%",
+  "reason": "Observed from source (2026-10-02).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-05",
   "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
   "kind": "rejected",
