@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-09-22",
-  "notes": [
-   "orgX / growth_calibration: ledger shows 4 consecutive weeks over 0.05 (26, 25, 22, 22pts) and the fast lane open, util0 49% so slack points to orgX. Deliberately NOT proposed: the gap is ~0.22 log/quarter, a quarter of it is ~0.056 log/quarter, and orgX at its +0.1 bound (1.2 -> 1.3) scales only the organic component (~8% of it), which cannot plausibly deliver that. Per the rule this is a structural gap for the weekly review, not a calibration move (consistent with the 2026-09-19 rejection of orgX 1.3).",
-   "R0_epoch: NYT/Bloomberg-sourced reporting (via FourWeekMBA, ~19 Sep) says Anthropic's run rate is expected to exceed $100B this year, and OpenAI is reported at $40B ARR in August; both are expectations or already inside the collector's daily sum, and a 143.3 proposal was rejected on 2026-09-19. Left to the collector.",
-   "H0 / D0: checked metr.org/time-horizons and the full metr.org/notes index - no new time-horizon measurement since the March 2026 Claude Mythos Preview run; the only new datapoint is UK AISI's no-CoT horizon for GPT-6 Astra (30.9 min), a different metric, so metr_latest/metr_doubling have nothing to move.",
-   "SB Energy S-1 (8.8 GW-IT contracted, ~$439B backlog of which ~$430B data centres, not a single site online, IPO under pressure/pulled per @edzitron 22 Sep): considered for pipe (capacity_disclosure) and fin (financing_evidence). Not proposed - the backlog is explicitly back-loaded and unbuilt, so it says little about GW arriving within six quarters, and a fin 1.4 -> 1.5 move was rejected on 2026-09-19. Worth a pinned watch if the IPO withdrawal is confirmed by a primary filing.",
-   "SemiAnalysis 'Computation and Data Movement for Inference' (21 Sep): technical MoE serving piece, no $/GW, revenue-per-MW or utilisation numbers, so nothing for mono, revenue_per_gw or train.",
-   "Tunguz 'AI Comes for the If Statement' as a scenario_new: rejected by me because the active 'price' scenario already cites Tunguz and the commoditisation/two-tier-pricing view; the new essay adds a mechanism (zero-token typed execution, two orders of magnitude on production primitives) but lands on the same exposed keys (subst, price shock), so it is already represented.",
-   "Gavin Baker on Vercel (over $500M run-rate, 130%+ growth, NDR 130%+, 400k paying customers, 21 Sep): considered as feedback_evidence for k_swe (130% a year against the implied x4.4 for software), but Vercel's total revenue is not segment token spend and includes non-AI hosting; a k_swe move was also rejected on 2026-09-21. Noted only.",
-   "GPT-6 Astra / GPT-6-Sol / Opus 5.5 / MiMo-2.6 / Grok 4.7 release cluster: a 2026Q3 'release' event is arguable, but my web tool budget ran out before I could fetch a primary page to verify a verbatim quote, so I did not propose an unverified event.",
-   "The Information via @kimmonismus: 'OpenAI has largely automated the process of training new experimental models' - relevant to rdBoost, which is a maintainer-set constant and not proposable; no quantitative figure attached in any case.",
-   "Vercel AI Gateway monthly index: no new September reading in the feed (the listed Vercel posts are engineering blogs), so the August open-weight share already applied on 2026-09-20 stands.",
-   "No prompt-injection or instruction-like content was encountered in any fetched page or post today."
-  ]
- },
- {
   "date": "2026-09-23",
   "notes": [
    "aaii: no newer reading. AAII sentimentsurvey page (fetched 2026-09-22) still headlines 'This week's results Week ending September 16, 2026' with Bullish 28.8% / Neutral 17.9% / Bearish 53.3%, identical to the current gauge value and as_of date. Next release due Thu 2026-09-24 (survey window Thu 12:01am-Wed 11:59pm).",
@@ -246,6 +230,26 @@
    "Checked the blocked feeds directly: epochai.substack.com, econlab.substack.com and dcahn.substack.com all return JavaScript-only shells with no post content; hence the epoch.ai/data-insights watchlist proposal.",
    "Coatue 'Chart of the Day' (5 Oct) and the BIS gold working paper were skipped: no AI token-demand or compute numbers usable under any rule.",
    "No prompt-injection attempts were detected in the feed items, X post text or fetched pages read today."
+  ]
+ },
+ {
+  "date": "2026-10-07",
+  "notes": [
+   "aaii: no newer reading. AAII sentimentsurvey page fetched 2026-10-07 still headlines \"This week's results Week ending September 30, 2026\" with Bullish 34.6% / Neutral 18.9% / Bearish 46.5% — identical to the current gauge (34.6% / 46.5%, as of 2026-09-30).",
+   "aaii: survey week runs Thursday 12:01 a.m. to Wednesday 11:59 p.m. and results publish Thursday morning, so the next reading (week ending 2026-10-07) is not out until 2026-10-08.",
+   "aaii: secondary write-ups (Seeking Alpha 2026-10-01, AAII Insights 2026-10-03, a substack market brief 2026-10-05) all restate the same 34.6%/46.5% week — no new data, not proposed.",
+   "aaii: recent weekly table on the source (9/23: 32.7/48.1, 9/16: 28.8/53.3, 9/9: 38.0/39.3) confirms 9/30 is the latest published week.",
+   "Ramp Economics Lab (6 Oct 2026): three-month-average share of firms switching AI model providers hit a record 8% in September — frontier-to-frontier switching (Anthropic vs OpenAI launches and price cuts), not migration to open-weight/non-frontier endpoints, so it does not qualify under migration_share for subst; it is corroborating colour for the existing 'price' (commoditisation) scenario, which already carries Tunguz's numbers.",
+   "OpenAI case study 'How Jump Trading is scaling quant research with ChatGPT' (6 Oct 2026): the only named trading-desk disclosure in today's feed, but it contains no quantities at all (no spend, no token or agent counts), so it cannot move sh_trd or k_trd despite being exactly the segment the model is blindest on.",
+   "OpenAI 'Research acceleration: the view inside OpenAI' (Sept 2026, re-read as the Epoch source): discloses 3.1 agent-workdays of agent effort per human workday in the research org. This is a level/intensity measure of internal, unpriced usage, not a share of frontier token revenue, so it is usage_share-adjacent but cannot be converted into an sh_rd move (rough scaling of $600-7,000/researcher/day over a few thousand researchers is ~$1B/yr at list prices, far below the 20% of $153.8B the parameter encodes).",
+   "Epoch data insight 'The record for power capacity in a single data center has doubled every 10 months' (xAI Colossus 2 at ~950 MW): dated 4 Sep 2026, single-site record rather than fleet GW, and already older than the K0/pipe as-of dates — no capacity_estimate proposal.",
+   "Epoch 'LLM inference prices have fallen rapidly but unequally across tasks' is from Mar 2025; no newer reading for the token_index gauge turned up.",
+   "Epoch report on how Chinese AI firms make money (6 Oct 2026, via @EpochAIResearch): Chinese labs' revenue is reported as a small fraction of OpenAI/Anthropic and is largely open-weight/consumer app monetisation (~6% of MiniMax app users pay), so it does not support raising R0x, which is an allowance for undisclosed Western frontier revenue.",
+   "METR's 6 Oct 2026 post is about agents subverting observability; it contains no new time-horizon measurement, so H0 (8.34h, March 2026) and D0 stay put. METR's time-horizons page has not been refreshed since ~May 2026.",
+   "Kedrosky roundup (6 Oct 2026): S&P-ex-AI divergence and call-centre employment -4% y/y are macro/labour context, not co-movement of the three demand segments, so they do not qualify under correlation_evidence; the rest of the post is paywalled.",
+   "Ed Zitron 'Credit Crunch' (6 Oct 2026) would not fetch (timeout) and his debt numbers are already encoded in the 'credit' and 'contagion' scenarios; no fin move proposed (fin 1.05 was rejected on 2026-10-04).",
+   "OpenAI's 722 AI-generated mathematics manuscripts (6 Oct 2026) came from an unreleased internal model; I could not verify the page within budget and an internal-model demonstration is not a deployed capability release, so no 2026Q4 'release' event proposed.",
+   "No prompt-injection or instruction-like text was found in any feed item, X post or fetched page today."
   ]
  }
 ]
