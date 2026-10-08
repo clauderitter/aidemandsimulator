@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-10-08",
+  "source": "https://tomtunguz.com/what-if-the-models-are-commoditized/",
+  "kind": "rejected",
+  "target": "scenario:price",
+  "old": null,
+  "new": "Tunguz 7 Oct revision: effective prices -41% to $0.68/M while usage +50% since July, frontier token share 53%→mid-40s, OpenAI back near a ~$70B run-rate on price cuts and reselling",
+  "reason": "The refresh of the Tunguz scenario repeats the frontier-share figure already in the current text and adds claims the source does not contain (a ~$70B OpenAI run-rate, Haiku 5.5 list prices), while the quoted evidence — usage up 50% against prices down 41% — does not support hardening the substitution override from 52 to 55."
+ },
+ {
+  "date": "2026-10-08",
+  "source": "https://x.com/kimmonismus/status/2107895800252579841",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 20,
+  "reason": "A third-party X post about halving cache-read pricing on one Anthropic model is too narrow and too secondary to stand as a 20% realised price shock across the frontier basket for the quarter."
+ },
+ {
+  "date": "2026-10-08",
+  "source": "https://openai.com/index/gpt-6-for-everyone",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 1,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://openai.com/index/gpt-6-for-everyone."
+ },
+ {
+  "date": "2026-10-08",
+  "source": "https://tomtunguz.com/what-if-the-models-are-commoditized/",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 30,
+  "reason": "Tunguz's 7 Oct restatement of the same 53%-to-mid-40s frontier token-share figure is already reflected in the price scenario's 23 September text, so it is a repeat rather than new evidence and would push subst to its drift ceiling on a datapoint already counted."
+ },
+ {
+  "date": "2026-10-08",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "43%",
+  "new": "43%",
+  "reason": "Observed from source (2026-10-08).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-08",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+45% vs +24%",
+  "new": "+45% vs +24%",
+  "reason": "Observed from source (2026-10-08).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-08",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.2%",
+  "new": "6.2%",
+  "reason": "Observed from source (2026-10-08).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-08",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.0",
+  "new": "15.1",
+  "reason": "Observed from source (2026-10-07).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-08",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "312bp",
+  "new": "303bp",
+  "reason": "Observed from source (2026-10-06).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-08",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-06).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-08",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.31%",
+  "new": "5.27%",
+  "reason": "Observed from source (2026-10-06).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-07",
   "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
   "kind": "rejected",

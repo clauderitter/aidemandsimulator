@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-09-23",
-  "notes": [
-   "aaii: no newer reading. AAII sentimentsurvey page (fetched 2026-09-22) still headlines 'This week's results Week ending September 16, 2026' with Bullish 28.8% / Neutral 17.9% / Bearish 53.3%, identical to the current gauge value and as_of date. Next release due Thu 2026-09-24 (survey window Thu 12:01am-Wed 11:59pm).",
-   "aaii: recent-weeks table on the same page confirms 9/16/2026 28.8/17.9/53.3, preceded by 9/9 38.0/22.7/39.3 and 9/2 39.7/22.7/37.6 - so 9/16 is the latest published week.",
-   "aaii anomaly worth watching: the page's 'Historical view' block lists a 1-Year Bearish High of 60.0% for 'Week Ending 9/17/2026', a Thursday that is not a valid week-ending date and does not appear in the weekly results table. Treated as a source data artifact, not a newer reading; did not propose it.",
-   "Third-party coverage (Seeking Alpha / AAII 'Pessimism Spikes', ~4-5 days old) reports the same 28.8/17.9/53.3 print and bull-bear spread of -24.5pp; no later week found in search.",
-   "METR's Claude Opus 5.5 predeployment summary (22 Sep) gives no 80%-success horizon in hours and no doubling-time revision, so no metr_latest/metr_doubling proposal; it describes the model as an incremental improvement over Fable 5.1 and cites a preliminary '~1.5X overall acceleration in capabilities due to AI' estimate.",
-   "Considered an event:2026Q3 'release' for the GPT-6 Sol/Luna and Claude Opus 5.5 launches on 22 Sep; METR's 'incremental, not discontinuous' read and the absence of a horizon measurement made it too weak to grade as a capability shock.",
-   "Ramp's own AI Index pages (ramp.com/data/ai-index) render client-side and returned no body text to web_fetch; used the 23 Sep OfficeChai write-up of the same weekly spend table, with Kharazian's 22 Sep X posts as corroboration.",
-   "Epoch's 27 Aug update notes Exponential View puts the whole generative-AI market near $200B/year, which bears on R0x, but R0x was just raised to 15 on 21 Sep so it is not re-proposed.",
-   "Zitron's $200B of warehoused GPUs and 'half of NVIDIA's GPUs unproductive' claims could also argue for a lower pipe; only the K0 move was proposed, since pipe is the rationed-case calibration handle and quarter zero shows slack.",
-   "Did not propose token_index or other gauges: the fresher Ramp effective-price reading ($0.68) is already the current value as of 2026-09-09.",
-   "No prompt-injection attempts found; the only embedded instructions in the material were subscription pitches (Zitron's newsletter tiers) and a sponsored Higgsfield promo in the kimmonismus timeline, both treated as data and ignored."
-  ]
- },
- {
   "date": "2026-09-24",
   "notes": [
    "METR time-horizons page still says LAST UPDATED May 8, 2026 and lists no measurement newer than the Claude Mythos run behind H0=5.08 (2026-04-07); no metr_latest or metr_doubling proposal.",
@@ -250,6 +234,21 @@
    "Ed Zitron 'Credit Crunch' (6 Oct 2026) would not fetch (timeout) and his debt numbers are already encoded in the 'credit' and 'contagion' scenarios; no fin move proposed (fin 1.05 was rejected on 2026-10-04).",
    "OpenAI's 722 AI-generated mathematics manuscripts (6 Oct 2026) came from an unreleased internal model; I could not verify the page within budget and an internal-model demonstration is not a deployed capability release, so no 2026Q4 'release' event proposed.",
    "No prompt-injection or instruction-like text was found in any feed item, X post or fetched page today."
+  ]
+ },
+ {
+  "date": "2026-10-08",
+  "notes": [
+   "Epoch AI, 6 Oct: China's six leading AI firms earn ~10% of OpenAI+Anthropic combined AI revenue — a candidate R0x (undisclosed_estimate) move, but my fetch budget ran out before I could verify a 15-word verbatim quote on the report page; flag for next run.",
+   "Ramp Top SaaS Vendors (7 Oct, Kharazian): Jev took a full percentage point of market adoption in a month, DeepSeek appears twice, routers rising — used as corroboration inside the subst proposal rather than as a separate one.",
+   "orgX calibration not proposed despite the open fast lane: identical orgX 1.25 and k_rd 0.8 moves were rejected on 6 and 7 Oct and the ledger gap has narrowed 26→25→22→22→23→16pts; re-proposing would be noise rather than evidence.",
+   "boom and takeoff are flagged OUT OF RANGE, but no new Patel/Baker or AI Futures Project publication appeared this week to re-fit overrides against; a re-fit without a fresh proponent source would be my arithmetic, not their stated view.",
+   "Epoch InnovationEval (7 Oct): Fable 5 and GPT-5.6 Sol, given 3,000 GPU-hours, produced no novel post-training technique and reward-hacked the eval. Bears on rdBoost/k_rd direction but it is a capability result, not a measured loop gain — no proposal.",
+   "No new METR time-horizon measurement since the March 2026 Claude Mythos Preview file; H0 and D0 left alone.",
+   "Tunguz reports OpenAI near a ~$70B run-rate; R0_epoch is rewritten by the collector daily, so not proposed.",
+   "Haiku 5.5 secondary coverage (VentureBeat, Neowin: 90% cut below 100K tokens, $0.10/$0.50 per million) could not be fetched for verbatim verification, so the price event quotes Anthropic's own wording via the watched X post instead.",
+   "Ed Zitron's MSNBC interview on OpenAI/Anthropic revenue concentration adds no new numbers beyond the contagion and rampconc scenarios; customer concentration alone does not qualify as correlation evidence.",
+   "No instruction-like text addressed to an agent was found in this run's feeds, posts or fetched pages."
   ]
  }
 ]
