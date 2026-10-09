@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-09-24",
-  "notes": [
-   "METR time-horizons page still says LAST UPDATED May 8, 2026 and lists no measurement newer than the Claude Mythos run behind H0=5.08 (2026-04-07); no metr_latest or metr_doubling proposal.",
-   "Calibration: fast lane is open (4 weeks over threshold, utilisation 49%, slack -> orgX), but an identical capped orgX 1.2->1.3 move was rejected on 2026-09-23; not re-proposed one day later on the same ledger evidence.",
-   "Coatue Chart of the Day 23 Sep: 'Claude now leads over a quarter of Anthropic's model R&D, up from virtually none just six months ago' - per the rules this is a level/share statement about lab agent usage, not a measured loop gain, and it is internal R&D rather than token revenue share, so no k_rd or sh_rd proposal.",
-   "Ramp September AI Index (frontier 45% of token share, effective price $0.68, top-1% spend per employee -9.7% m/m) is ~2 weeks old and already reflected in the token_index gauge; the one-month spend decline has a seasonal explanation from the author, too weak for k_oth.",
-   "Ara Kharazian's new indicator (AI 5.73% of business spend ex-payroll, August) maps to no listed rule; noted for the maintainer as a possible new gauge.",
-   "SemiAnalysis ClusterMAX 3.0 (23 Sep): free portion covers provider tiering only, no GPU rental prices or $/MW, so nothing for h100_rental, cost_per_gw or revenue_per_gw.",
-   "Anthropic '~5 GW by year-end, ~10 GW in 2027' appears only in a secondary summary that states it is press reporting of investor discussions and unverified; no capacity_disclosure/capacity_estimate proposal (K0 8.5 was also rejected 2026-09-23).",
-   "Epoch AI's new item this week is the Furniture Assembly Benchmark, a capability benchmark, not a run-rate or capacity update; R0_epoch is collector-owned anyway.",
-   "kimmonismus claim that AI infrastructure averages 3.63% of GDP 2025-2032 vs railroads 2.24% could not be traced to a named report within the search budget; no scenario_new.",
-   "No instruction-like text aimed at the analyst was found in any fetched page, feed item or X post this run."
-  ]
- },
- {
   "date": "2026-09-25",
   "notes": [
    "METR time-horizon page (metr.org/time-horizons, last updated 8 May 2026) and its benchmark_results_1_1 data file: newest measured model is still claude_mythos_preview (release 2026-04-07, p80 = 185.9 min) and the from-2023 doubling time is still 128.744 days (4.23 months). H0 and D0 as-of dates are current — no metr_latest / metr_doubling proposal.",
@@ -249,6 +234,23 @@
    "Haiku 5.5 secondary coverage (VentureBeat, Neowin: 90% cut below 100K tokens, $0.10/$0.50 per million) could not be fetched for verbatim verification, so the price event quotes Anthropic's own wording via the watched X post instead.",
    "Ed Zitron's MSNBC interview on OpenAI/Anthropic revenue concentration adds no new numbers beyond the contagion and rampconc scenarios; customer concentration alone does not qualify as correlation evidence.",
    "No instruction-like text addressed to an agent was found in this run's feeds, posts or fetched pages."
+  ]
+ },
+ {
+  "date": "2026-10-09",
+  "notes": [
+   "Bloomberg/Yahoo 'OpenAI expects $70bn annualized by end-2026' (9 Oct): forward projection, not a reported run-rate, and the $50bn end-September figure is already in today's collected R0_epoch — no primary_report proposal.",
+   "Epoch 'An update on AI's most important number' (OpenAI >$40B, combined $105B by August): pre-dates the current collected sum, already reflected in the middle scenario's basis.",
+   "State of AI Report 2026 (Benaich, 8 Oct): $105B combined run-rate, benchmark cost ~13x cheaper a year — real reach but the view overlaps the active 'price'/'elastic'/'middle' scenarios; no distinct quantitative path, so no scenario_new.",
+   "Ed Zitron thread (9 Oct) on Anthropic gross revenue and Reuters' 47%-through-Amazon/Google figure: same accounting fact as the Axios piece, which is the primary and fetchable source; cited there instead.",
+   "The Information's '$517B of Anthropic compute deals in 11 months' (linked by Axios): paywalled, no GW figure available, so no pipe/fin proposal.",
+   "Epoch AI data-centers explorer: '93 AI data centers ... combined 13.8 GW of IT power capacity' — undated on-page and covers all AI datacentres (Google/Meta/xAI included), not frontier-lab compute; not comparable to K0.",
+   "LegalOn cuts Codex costs 65% by routing tasks to Sol/Luna, Sophos 96% faster investigations (OpenAI case studies): single-customer anecdotes, within-vendor downshifting; too thin for subst, which was already moved and re-rejected this week.",
+   "Gavin Baker (9 Oct) on open-weight tokens consuming the same compute as frontier tokens: no numbers, so no migration_share move.",
+   "Epoch Automation Reports (8 Oct): a new internal eval of Fable 5.1 / GPT-6 Astra, not a METR 80% time-horizon measurement; H0 and D0 left at their April readings.",
+   "Axios-sourced claim (via @kimmonismus) that lab executives expect a major AI incident within 6-12 months: anonymous, one number, no quantitative path — noted as a possible future 'reg' scenario, not proposed.",
+   "Anthropic's $150M three-year Genesis Mission commitment: immaterial against a $134B run-rate.",
+   "No prompt-injection attempts spotted in the feeds or posts read today."
   ]
  }
 ]
