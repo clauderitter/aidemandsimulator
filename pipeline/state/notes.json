@@ -1,18 +1,5 @@
 [
  {
-  "date": "2026-09-25",
-  "notes": [
-   "METR time-horizon page (metr.org/time-horizons, last updated 8 May 2026) and its benchmark_results_1_1 data file: newest measured model is still claude_mythos_preview (release 2026-04-07, p80 = 185.9 min) and the from-2023 doubling time is still 128.744 days (4.23 months). H0 and D0 as-of dates are current — no metr_latest / metr_doubling proposal.",
-   "Ramp AI Index, 9 Sep 2026: frontier models (Opus, Fable, Sol) at 45% of token share, down from a 53% August peak; open-source/routing adoption only 6.4% of AI-spending businesses. Supports subst above 25, but it pre-dates subst's 2026-09-17 as-of (Vercel August data) and subst→30 and subst→20 were both rejected in the last three days, so not re-proposed.",
-   "Ramp also shows top-1% per-employee AI spend down 9.7% m/m ($7,976 → $7,205, July revised up to ~$8K). One seasonal month (Ramp flags August engineer holidays); too noisy for a k_oth feedback_evidence move, but it cuts against the 'elastic' scenario's +50% m/m July figure — candidate for a scenario_update if September repeats.",
-   "token_index gauge ($0.68, as of 2026-09-09) is exactly the Ramp reading fetched today — no newer reading, not proposed.",
-   "Calibration: fast lane is open (gap 22pts, 4 consecutive weeks, util 50% so handle = orgX), but orgX is capped at +0.1 (1.2 → 1.3, ~+8% on organic growth ≈ +0.02 log/quarter) against a gap of ~0.22 log/quarter — under a quarter of the gap, which the rule routes to the weekly structural review, and orgX→1.3 was already rejected on 2026-09-23. Not proposed.",
-   "SemiAnalysis ClusterMAX 3.0 (23 Sep 2026) is paywalled past the intro (only qualitative 'GPU supply has gone to zero'); the Oracle-delay thread points at the paid Energy Model with no public GW figure — no capacity_estimate or delivery_timeline proposal.",
-   "Server-side search/fetch budget ran out before I could verify the Ara Kharazian 24 Sep GPU-spend thread, the Kedrosky/Zitron bond-market episode, the OpenAI–Airbnb GPT-6 Astra note, the $500 ChatGPT Pro tier or any fresh Epoch run-rate post; left unproposed rather than cited second-hand.",
-   "No prompt-injection attempts noticed in the feeds or pages read today; the SemiAnalysis 'PSA to neoclouds' post is addressed to vendors, not to this pipeline."
-  ]
- },
- {
   "date": "2026-09-26",
   "notes": [
    "openrouter_cn: no newer same-measure reading found. Closest items are older or a different scope: KuCoin/officechai-style '61% of token consumption among the top 10 models' dates to ~June 2026 (pre-dates the current 2026-07-09 reading), and a CNBC-derived figure of 46.4% of routed tokens / 46% weekly peak refers to US enterprise token volume, not platform-wide share. Left unchanged.",
@@ -251,6 +238,23 @@
    "Axios-sourced claim (via @kimmonismus) that lab executives expect a major AI incident within 6-12 months: anonymous, one number, no quantitative path — noted as a possible future 'reg' scenario, not proposed.",
    "Anthropic's $150M three-year Genesis Mission commitment: immaterial against a $134B run-rate.",
    "No prompt-injection attempts spotted in the feeds or posts read today."
+  ]
+ },
+ {
+  "date": "2026-10-10",
+  "notes": [
+   "token_index: no newer reading — Ramp's latest monthly AI Index post is still the Sept 9, 2026 'Cracks in the AI Thesis Part 2' with effective price $0.68/M tokens; ramp.com/data research list shows nothing newer on the price index (Oct 6 switching post and Oct 7 SaaS vendors post contain no token-price figure).",
+   "Ramp blog 'How much do AI tokens cost businesses' quotes $0.72/M for April 2026 — older and a different (per-tier benchmark) framing, not used.",
+   "FRED added 16 Ramp AI Index series (Oct 5, 2026) but those are adoption-rate percentages, not the effective price-per-million-tokens measure.",
+   "orgX calibration move deliberately NOT proposed: the fast lane is open (W41 gap 16pts, 6 consecutive weeks over threshold), but yesterday's accepted capped move orgX 1.2->1.3 shifted modelled growth only +24% -> +25%, about 1pt of a 22pt gap. At its +/-0.1 bound the handle cannot close a quarter of the current gap, which the growth_calibration rule says makes this a structural gap for the weekly review, not a calibration move. Utilisation 37% (slack) also rules out pipe/buildMax as handles.",
+   "METR: no new time-horizon measurement since Time Horizon 1.1 (29 Jan 2026); metr.org/research's newest items are the Aug 2026 OpenAI/Hugging Face incident investigation and the Jul 2026 expenditure-horizon note. H0 (8.34h, Apr benchmark file) and D0 left alone.",
+   "Epoch AI (9 Oct): share of arXiv papers by established authors acknowledging AI use went from ~8% (July) to ~57% (September) in differential geometry. Adoption evidence, not a token-share or revenue measure, so no sh_rd move.",
+   "Tunguz's $160B -> $350B inference market is a market-size forecast, not frontier revenue outside Epoch's disclosed set, so it was not used for R0x (yesterday's R0x -> 22.5 was rejected); used only as the growth leg of the k_swe feedback proposal.",
+   "SemiAnalysis Rubin newsletter (newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference) is paywalled below the headline figures; the per-GW profit numbers were taken from the 9 Oct X thread instead.",
+   "Ed Zitron's 'Hater's Guide To Junk' is premium/paywalled; his public posts on run-rates contain no new numbers. Kedrosky's IPO-slowdown and S&P-concentration roundups are qualitative.",
+   "OpenAI's Asana post (browser agent 76x cheaper with GPT-6.1 Sol) is a single-customer cost claim with no token-share or price-index number; watch item only.",
+   "h100_rental gauge: SemiAnalysis says H100 rental prices rose (9 Oct) but publishes no $/hr figure in the post, so no gauge update proposed.",
+   "No prompt-injection or instruction-like content was found in the feeds, X posts or pages read today."
   ]
  }
 ]

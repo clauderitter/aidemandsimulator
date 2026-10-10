@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-10-10",
+  "source": "https://x.com/SemiAnalysis_/status/2108724444138983719",
+  "kind": "accepted",
+  "target": "scenario:credit",
+  "old": "updated",
+  "new": "updated",
+  "reason": "SemiAnalysis, already a named proponent of this scenario, adds a primary 10-Q datapoint ($530B of gross off-balance-sheet guarantees, up from $184B a quarter earlier) that sharpens the existing borrowed-marginal-dollar mechanism while leaving overrides and shock timing unchanged."
+ },
+ {
+  "date": "2026-10-10",
+  "source": "https://x.com/ttunguz/status/2108588512698044672",
+  "kind": "rejected",
+  "target": "k_swe",
+  "old": null,
+  "new": 0.55,
+  "reason": "The quote forecasts the size of the inference market and software gross margins economy-wide; it neither measures software-engineering revenue re-spent on tokens nor states a comparison with that segment's implied growth, so it cannot calibrate the SWE loop gain."
+ },
+ {
+  "date": "2026-10-10",
+  "source": "https://x.com/SemiAnalysis_/status/2108653845291106641",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.4,
+  "reason": "The ~$7T of AI debt by 2029 is already recorded in the credit scenario and predates the current fin reading, so this tweet restates known evidence rather than showing a changed sensitivity of build pace to credit conditions."
+ },
+ {
+  "date": "2026-10-10",
+  "source": "https://x.com/SemiAnalysis_/status/2108604229988319724",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 55,
+  "reason": "SemiAnalysis's Rubin profit calculator is a forward profit-per-GW model for a new chip generation, not monetisable revenue per inference GW at current prices, and the proposed +10% is the speed-limit cap rather than a figure derived from the quote — the same reasoning that rejected this evidence on 15 Sep."
+ },
+ {
+  "date": "2026-10-10",
+  "source": "https://x.com/arakharazian/status/2108560737215869226",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 20,
+  "reason": "A single Ramp post about where enterprise AI dollars go measures spend share, not the share of bounded token volume that has migrated off frontier endpoints, and the same class of evidence was rejected for this input on 23 Sep and 2 Oct."
+ },
+ {
+  "date": "2026-10-10",
+  "source": "https://www.aaii.com/sentimentsurvey",
+  "kind": "accepted",
+  "target": "gauge:aaii",
+  "old": "34.6% / 46.5%",
+  "new": "40.3% / 39.0%",
+  "reason": "AAII's own survey page reports the identical measure one week fresher (week ending 7 Oct: bulls 40.3%, bears 39.0%, spread +1.3pp), so the gauge refreshes from its primary source."
+ },
+ {
+  "date": "2026-10-10",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-10).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-10",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +25%",
+  "reason": "Observed from source (2026-10-10).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-10",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.2%",
+  "new": "6.0%",
+  "reason": "Observed from source (2026-10-10).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-10",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.4",
+  "new": "14.8",
+  "reason": "Observed from source (2026-10-09).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-10",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-08).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-10",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.28%",
+  "new": "5.22%",
+  "reason": "Observed from source (2026-10-08).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-09",
   "kind": "accepted",
   "target": "orgX",
