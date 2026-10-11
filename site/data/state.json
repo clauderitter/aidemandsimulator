@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-10T12:53:36.875Z",
+ "generated_at": "2026-10-11T13:15:51.126Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -213,16 +213,19 @@
    "short": "Modelling constant; see “How it works”."
   },
   "k_rd": {
-   "value": 0.7,
+   "value": 0.8,
    "label": "AI R&D loop gain",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
-   "as_of": "2026-09-17",
-   "type": "estimate",
-   "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
-   "updated": "2026-09-18",
+   "as_of": "2026-10-05",
+   "type": "reported",
+   "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
+   "updated": "2026-10-11",
    "rule": "",
-   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute."
+   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute.",
+   "pending_target": 0.8,
+   "pending_since": "2026-10-11",
+   "pending_reason": "Epoch's fit of OpenAI's own published series is a direct observation of AI R&D token spend growing 1.8–2.2× a month agai"
   },
   "k_swe": {
    "value": 0.6,
@@ -798,7 +801,7 @@
     "checks": [
      "OUT: 2027Q4 $478B vs $600–1500B"
     ],
-    "date": "2026-10-10"
+    "date": "2026-10-11"
    }
   },
   {
@@ -843,7 +846,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×3.6 vs ×4–8"
     ],
-    "date": "2026-10-10"
+    "date": "2026-10-11"
    }
   },
   {
@@ -1152,7 +1155,7 @@
      "ok: 2027Q4 $239B vs $225–340B",
      "ok: 2028Q4 $471B vs $395–675B"
     ],
-    "date": "2026-10-10"
+    "date": "2026-10-11"
    }
   },
   {
@@ -1389,9 +1392,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-10",
+   "as_of": "2026-10-11",
    "auto": true,
-   "updated": "2026-10-10"
+   "updated": "2026-10-11"
   },
   {
    "id": "fms_tailrisk",
@@ -1419,11 +1422,11 @@
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
    "value": "6.0%",
-   "sub": "10 Oct 2026 · “AI bubble burst in 2026?”",
+   "sub": "11 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-10",
+   "as_of": "2026-10-11",
    "auto": true,
-   "updated": "2026-10-10"
+   "updated": "2026-10-11"
   },
   {
    "id": "aaii",
@@ -1524,7 +1527,7 @@
    "auto": false,
    "updated": "2026-09-03",
    "cadence_days": 45,
-   "next_check": "2026-10-11"
+   "next_check": "2026-10-22"
   },
   {
    "id": "dgs10",
@@ -1574,9 +1577,9 @@
    "value": "+40% vs +25%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-10",
+   "as_of": "2026-10-11",
    "auto": true,
-   "updated": "2026-10-10"
+   "updated": "2026-10-11"
   }
  ],
  "frozen": [],

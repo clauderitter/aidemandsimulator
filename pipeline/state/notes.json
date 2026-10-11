@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-09-26",
-  "notes": [
-   "openrouter_cn: no newer same-measure reading found. Closest items are older or a different scope: KuCoin/officechai-style '61% of token consumption among the top 10 models' dates to ~June 2026 (pre-dates the current 2026-07-09 reading), and a CNBC-derived figure of 46.4% of routed tokens / 46% weekly peak refers to US enterprise token volume, not platform-wide share. Left unchanged.",
-   "AAII: the sentimentsurvey page also lists a '1-Year Bearish High 55.6% Week Ending 9/24/2026' box that is inconsistent with the published weekly table (latest week ending 9/23/2026); used the weekly results table figure, not that box.",
-   "METR: metr.org/time-horizons still shows LAST UPDATED May 8 2026; benchmark_results_1_1.yaml SOTA 80% horizon is still claude_mythos_preview_early (release 2026-04-07, 185.9 min) and the from-2023 doubling point estimate is 128.744 days = 4.2 months - H0 and D0 unchanged, nothing to propose.",
-   "Ramp AI Index Sept 2026 (9 Sep, ramp.com/data/ai-index-sept-2026): frontier models (Opus, Fable, Sol) 45% of token share vs a 53% August peak; effective price $0.68/M, -41% from the March $1.15 peak; top-1% per-employee AI spend -9.7% MoM to $7,205. Price already in token_index (as of 2026-09-09) and the migration read is older than subst's as-of (2026-09-17), with a subst=30 rejected on 2026-09-24 - not re-proposed.",
-   "Same Ramp piece: open-source/Chinese model adoption is limited to 6.4% of AI-spending businesses - cuts against a further subst increase from enterprise data, another reason to leave subst alone.",
-   "Paul Kedrosky, 'This AI Moment: The House View, Q4 2026' (25 Sep): performance-adjusted compute/token price falling 70-80% year over year, AI infrastructure now the largest borrower in IG and HY markets. Considered for scenario_new but the view duplicates the active price and credit scenarios, the free portion carries only one numeric range, and the four rotating slots are full.",
-   "@SemiAnalysis_ 25 Sep: 'up to $15 billion of annual profits per gigawatt' for B200 serving DeepSeek V4.1 Flash at official prices. That is profit, not revenue, on an open-weight model at open-weight prices, and the post text is truncated - not a clean revenue_per_gw reading for mono; worth revisiting when the full article is readable.",
-   "SemiAnalysis China Datacenter Model (25 Sep) is paywalled past the intro; no fetchable frontier-GW figure for K0 or pipe.",
-   "Ed Zitron's '$200bn-$300bn of AI GPUs sitting in warehouses' and the Ellison $9.2bn margin-loan item are level/anecdote, not covered by any rule; Kedrosky's CoreWeave-goes-to-junk and CDS-widening links would be fin (financing_evidence) evidence but the numbers sit behind his paywall.",
-   "Web tool budget was exhausted before I could read the Zitron premium post body, the Kedrosky weekend-reading piece, the Vercel AI Gateway production index and ramp.com/data/who-is-buying-and-selling-gpu-compute; capexGW is therefore proposed off the author's own post text only, hence low confidence.",
-   "No prompt-injection attempts spotted in the feeds or posts read today; the SemiAnalysis hiring and 'contact sales@' lines are ordinary marketing copy, not instructions to me."
-  ]
- },
- {
   "date": "2026-09-27",
   "notes": [
    "Epoch 'plunging price of thought' (~47%/quarter cost decline at fixed performance, o3 $0.55 -> GPT-5.6 Luna $0.0015 on FrontierMath): striking, but no parameter rule covers cost-per-capability; it is not migration to non-frontier models nor a token-price index reading, so no param proposal. Logged via the watchlist add instead.",
@@ -255,6 +239,27 @@
    "OpenAI's Asana post (browser agent 76x cheaper with GPT-6.1 Sol) is a single-customer cost claim with no token-share or price-index number; watch item only.",
    "h100_rental gauge: SemiAnalysis says H100 rental prices rose (9 Oct) but publishes no $/hr figure in the post, so no gauge update proposed.",
    "No prompt-injection or instruction-like content was found in the feeds, X posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-10-11",
+  "notes": [
+   "bonds gauge: no newer reading of the same measure found — the $225B is S&P Global's count of bonds issued YTD 2026 by hyperscalers AND 'related entities' like Nvidia (Fortune, 2026-07-31, 973.7% jump through midyear, on pace for $400B full-year); no updated S&P tally published since.",
+   "CPR AM (c. 2026-09-23) puts the five hyperscalers at 'around $223bn in bonds' since the start of 2026 ($27.3bn of it in euros) — narrower universe (no Nvidia/related entities), and a cumulative YTD figure cannot fall from $225B, so proposing it would be a measure switch, not a refresh.",
+   "TwentyFour AM (c. 2026-09-12): Alphabet, Amazon, Meta, Microsoft, Oracle and SpaceX 'have issued over $180bn of USD-denominated bonds so far this year', street estimate $250bn USD by year-end — USD-only subset, different measure.",
+   "Reuters/BNP Paribas via MLQ (2026-08-22): about $220 billion by the big five through Aug. 10 — again the five-name universe, and older than a hypothetical S&P update.",
+   "CryptoBriefing (2026-10-10): AI-related debt issuance for full-year 2026 estimated at $450-570B and Goldman hyperscaler capex $600-820B — forecasts and a broader AI-wide aggregate, not a YTD issued tally.",
+   "Searched for an updated S&P Global Ratings credit-trends/CreditWeek issuance tally dated Sept-Oct 2026; latest S&P items found (Axios 2026-09-11, MonitorDaily c. 2026-09-04) discuss hyperscaler credit quality and capex, not a refreshed YTD bond-issuance total.",
+   "Server tool-use limit was reached before Apollo Daily Spark (2026-10-08) and nai500 (2026-09-28) could be checked; both may carry a current YTD figure and are worth a re-check next cycle.",
+   "Epoch 'Can AI automate AI R&D yet?' (InnovationEval, 7 Oct): qualitative 'no' on end-to-end automation; no number mappable to D0 (rdBoost is not proposable).",
+   "Epoch AI data centers explorer (updated 9 Oct): 93 sites, 13.8 GW IT power at 43% coverage — all AI datacentres, not frontier-lab only, so not a clean K0 estimate; broadly consistent with K0 14.3 GW, no move proposed.",
+   "SemiAnalysis Nvidia-Lambda-Hut 8-Anthropic thread (10 Oct): two 15-yr $9.8B leases, $4.25B Baa2 notes at 6.129%, 704 MW campus, ~115K Rubins — implies roughly $50B/GW all-in, consistent with capexGW 54; fin 1.2->1.4 was rejected on 10 Oct and Nvidia credit substitution cuts both ways, so no financing move.",
+   "SemiAnalysis '$200 Claude plan can return $12,000 of Opus 5.5 tokens at API pricing' (7 Oct): argues realised revenue per inference GW is far below API-priced potential, but no GW or $/MW basis, so no mono proposal (mono 55 was rejected 10 Oct).",
+   "Epoch GLM 5.3 Flash case study: Z.ai's share of its own model's tokens fell 88% -> 22% in three weeks while volume grew 17% — open-weight host competition, not frontier-to-non-frontier migration, so not a subst reading (subst 20 was rejected 10 Oct).",
+   "Searched for a newer METR 80% time-horizon measurement for GPT-6.x / Fable 5.1 / Sol; nothing past Claude Mythos Preview (March 2026), so H0 and D0 left alone.",
+   "takeoff is also OUT OF RANGE (x3.6 vs x4-8) but my fetch budget ran out before I could verify a current AI Futures Project quote, so no re-fit proposed this week.",
+   "Epoch ChatGPT usage explorer (1 Oct) and OpenAI enterprise items reviewed for usage_share: consumer message counts, not token-spend shares, so no sh_* move.",
+   "No prompt-injection style instructions found in the feeds, X posts or pages read today."
   ]
  }
 ]

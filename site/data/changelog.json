@@ -1,5 +1,79 @@
 [
  {
+  "date": "2026-10-11",
+  "source": "https://x.com/GavinSBaker/status/2109240032196174309",
+  "kind": "rejected",
+  "target": "scenario:boom",
+  "old": null,
+  "new": "Re-fitted after the path fell below the proponents' $600-1500B 2027Q4 range; proponent still live and compute prices are rising (B300 +38% since 31 May).",
+  "reason": "Baker's GPU-price tweet confirms the proponent is still live but supports none of the proposed demand-side re-parameterisation — orgX 1.7 and across-the-board rises in the loop gains and rho rest on the fidelity miss alone — and the rewrite would also drop the scenario's existing util0 override."
+ },
+ {
+  "date": "2026-10-11",
+  "source": "https://x.com/GavinSBaker/status/2109240032196174309",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 38,
+  "reason": "A single tweet citing third-party GPU price indices over a 31 May–11 Oct window does not establish a +38% revenue-per-GW reprice inside 2026Q3: the measure (B300 unit prices) differs from the scenarios' reprice units and the whole move is attributed to one quarter it only partly covers."
+ },
+ {
+  "date": "2026-10-11",
+  "source": "https://epoch.ai/publications/how-do-chinese-ai-companies-make-money",
+  "kind": "rejected",
+  "target": "R0x",
+  "old": null,
+  "new": 19,
+  "reason": "Gate: monthly drift cap reached for R0x (at most ±5 around 10 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-10-11",
+  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.4,
+  "reason": "This is the same Epoch insight on one lab's internal researcher spend that was rejected for orgX on 7 October — it is not evidence of organic growth across every segment — and orgX was already lifted to 1.3 two days ago on the Ramp data, so moving it again here would double-count the same acceleration already credited to k_rd this run."
+ },
+ {
+  "date": "2026-10-11",
+  "kind": "accepted",
+  "target": "k_rd",
+  "old": 0.7,
+  "new": 0.8,
+  "reason": "Epoch's fit of OpenAI's own published series is a direct observation of AI R&D token spend growing 1.8–2.2× a month against the ~6.3×/year implied by k_rd=0.7, which is the kind of segment-growth comparison that may move a loop gain; the earlier rejections were drift-cap gates only, and the window now permits the single capped step to 0.8, with the internal-usage-at-list-prices caveat limiting it to one step. Rule feedback_evidence; “In recent months, median and 90th percentile researchers have seen similar growth rates of 1.8× and 2.2× per month, or doubling times of 34 ” Capped: target 0.8, continues next run.",
+  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
+  "capped": true,
+  "target_value": 0.8
+ },
+ {
+  "date": "2026-10-11",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-11).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-11",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +25%",
+  "new": "+40% vs +25%",
+  "reason": "Observed from source (2026-10-11).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-11",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.0%",
+  "new": "6.0%",
+  "reason": "Observed from source (2026-10-11).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-10-10",
   "source": "https://x.com/SemiAnalysis_/status/2108724444138983719",
   "kind": "accepted",
