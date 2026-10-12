@@ -1,5 +1,50 @@
 [
  {
+  "date": "2026-10-12",
+  "source": "https://convergedigest.com/microsoft-maia-300-multi-gigawatt-ai-infrastructure/",
+  "kind": "rejected",
+  "target": "pipe",
+  "old": null,
+  "new": 28,
+  "reason": "A new in-house accelerator announced for \"multi-gigawatt\" deployment from 2027 says which silicon fills Microsoft's planned megawatts, not that additional frontier-serving power capacity is arriving within six quarters, and the proposed 2 GW increment is not quantified by the source."
+ },
+ {
+  "date": "2026-10-12",
+  "source": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-prospectus-shows-what-2-trillion-dollar-ai-company-costs-run/",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1,
+  "reason": "The Anthropic S-1 take-or-pay figures ($518bn of commitments, ~80% non-cancellable) were already applied to fin on 29 Sep and rejected twice since as double-counting, and this secondary summary of the same filing carries no later or better-grade evidence."
+ },
+ {
+  "date": "2026-10-12",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-12).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-12",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +25%",
+  "new": "+40% vs +31%",
+  "reason": "Observed from source (2026-10-12).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-12",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.0%",
+  "new": "6.2%",
+  "reason": "Observed from source (2026-10-12).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-10-11",
   "source": "https://x.com/GavinSBaker/status/2109240032196174309",
   "kind": "rejected",
@@ -3580,32 +3625,5 @@
   "new": 3.1,
   "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07).",
   "source": "https://metr.org/time-horizons/"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "9.5%",
-  "new": "9.3%",
-  "reason": "Observed from source (2026-09-03).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "16.3",
-  "new": "15.2",
-  "reason": "Observed from source (2026-09-02).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-03",
-  "kind": "seed",
-  "target": "state",
-  "old": null,
-  "new": "v1",
-  "reason": "Initial data seeded from the research pass of 2–3 Sep 2026 (METR, Epoch, Bloomberg-reported run-rates, SemiAnalysis, Dwarkesh, sell-side and bear-side sources). History rows are provisional until the collector refines them from Epoch’s dataset.",
-  "source": ""
  }
 ]

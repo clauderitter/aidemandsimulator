@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-11T13:15:51.126Z",
+ "generated_at": "2026-10-12T15:54:00.668Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -223,7 +223,6 @@
    "updated": "2026-10-11",
    "rule": "",
    "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute.",
-   "pending_target": 0.8,
    "pending_since": "2026-10-11",
    "pending_reason": "Epoch's fit of OpenAI's own published series is a direct observation of AI R&D token spend growing 1.8–2.2× a month agai"
   },
@@ -801,7 +800,7 @@
     "checks": [
      "OUT: 2027Q4 $478B vs $600–1500B"
     ],
-    "date": "2026-10-11"
+    "date": "2026-10-12"
    }
   },
   {
@@ -842,11 +841,11 @@
     }
    ],
    "fidelity": {
-    "ok": false,
+    "ok": true,
     "checks": [
-     "OUT: growth 2026Q4→2027Q4 ×3.6 vs ×4–8"
+     "ok: growth 2026Q4→2027Q4 ×4.9 vs ×4–8"
     ],
-    "date": "2026-10-11"
+    "date": "2026-10-12"
    }
   },
   {
@@ -1155,7 +1154,7 @@
      "ok: 2027Q4 $239B vs $225–340B",
      "ok: 2028Q4 $471B vs $395–675B"
     ],
-    "date": "2026-10-11"
+    "date": "2026-10-12"
    }
   },
   {
@@ -1392,9 +1391,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-11",
+   "as_of": "2026-10-12",
    "auto": true,
-   "updated": "2026-10-11"
+   "updated": "2026-10-12"
   },
   {
    "id": "fms_tailrisk",
@@ -1421,12 +1420,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "6.0%",
-   "sub": "11 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "6.2%",
+   "sub": "12 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-11",
+   "as_of": "2026-10-12",
    "auto": true,
-   "updated": "2026-10-11"
+   "updated": "2026-10-12"
   },
   {
    "id": "aaii",
@@ -1574,12 +1573,12 @@
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "+40% vs +25%",
-   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.4 a year)",
+   "value": "+40% vs +31%",
+   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.9 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-11",
+   "as_of": "2026-10-12",
    "auto": true,
-   "updated": "2026-10-11"
+   "updated": "2026-10-12"
   }
  ],
  "frozen": [],
@@ -1644,10 +1643,17 @@
     "gObs": 0.3748,
     "gMod": 0.2159,
     "gap": 0.1588
+   },
+   {
+    "week": "2026-W42",
+    "date": "2026-10-12",
+    "gObs": 0.3359,
+    "gMod": 0.2684,
+    "gap": 0.0674
    }
   ],
-  "weeks_at_gap": 6,
-  "fast_lane": true,
+  "weeks_at_gap": 7,
+  "fast_lane": false,
   "util0": 0.374
  }
 }
