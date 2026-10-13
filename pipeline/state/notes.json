@@ -1,23 +1,5 @@
 [
  {
-  "date": "2026-09-28",
-  "notes": [
-   "Search budget ran out mid-run (server tool-use cap), so this run is built on the Epoch AI properties reachable from prior context; no METR, Ramp, Cahn, Zvi, Import AI or Econ Lab checks were possible beyond the METR time-horizons page.",
-   "Weekly re-baseline — R0_epoch: kept 108.8. Epoch's own run-rate piece still reads $105B combined for OpenAI+Anthropic (Aug 2026) with no newer primary report found today; R0_epoch is collector-written anyway, so no proposal.",
-   "Weekly re-baseline — H0 5.08 / D0 4.2: metr.org/time-horizons says LAST UPDATED May 8, 2026 and lists no measurement newer than the Claude Mythos Preview figure already in the model; the only new METR item (27 Sep) is about a per-action blocking monitor, no horizon numbers. No change.",
-   "Weekly re-baseline — K0: re-derived at ~10 GW from Epoch's 13.5 GW IT-power fleet across 93 tracked sites (~44% of global compute), frontier-serving share ~3/4. Equals the current value, so no param proposal; submitted as the 2026Q3 history point instead.",
-   "Weekly re-baseline — pipe 26 GW / buildMax 0.25: Epoch's global delivered compute goes 20.3M H100-eq (end-2025) to 31.6M (Sep 2026), i.e. ~+16%/quarter globally, and Colossus 2 alone is projected 946 MW -> 1,531 MW by Q1 2027. Frontier labs take more than their share of increments, so 26 GW / 25% a quarter stays inside the evidence. No change.",
-   "Weekly re-baseline — train 50, sh_rd 20, sh_swe 20, sh_trd 15: no new compute-split or usage-share data surfaced today (no new Anthropic Economic Index, OpenAI Enterprise Signals or SemiAnalysis attribution). No change.",
-   "Growth calibration: fast lane is open (gap ~0.23 log/quarter, five weeks over threshold) and util0 50% points the handle at orgX, but orgX at its bound (1.2 -> 1.3, +8% on organic growth) moves quarter-zero growth by well under a quarter of the gap, so under the rule this is a structural gap for the weekly review, not a calibration move. An orgX 1.3 proposal was also rejected on 2026-09-26. Not proposed.",
-   "Epoch, 'The plunging price of thought' (22 Sep 2026): cost of a given performance level falls ~47%/quarter, 66%/quarter at SOTA, 32%/quarter two years later. Striking but it is a quality-adjusted cost-per-capability series, not a token-price series, so recording it as a realised 'price' event for 2026Q3 would double-count capability gains (and overlap the elastic scenario's 2026Q3 price shock). Not proposed; the 'price' and 'elastic' scenarios already carry the commoditisation view and the four rotating slots are full.",
-   "Kedrosky (27 Sep, citing FT): open-weight models more than half of AI token usage, 14% of spending — the same Vercel/gateway measurement already behind subst=25 (as of 2026-09-17), no new number, so no subst move.",
-   "@kimmonismus relaying an FT piece on US enterprises (AT&T) shifting to cheaper open-weight and Chinese models: secondary, truncated and unquantified in the post; would need the FT original to move subst.",
-   "SemiAnalysis moratorium thread (22 Sep): 20 GW inside live moratorium boundaries, ~1.5 GW actually delayed — already the basis of the grid scenario as revised 15 Sep 2026.",
-   "Boris Power quote relayed on X ('80-90% of research at OpenAI is focused at GPT 7, GPT 8') is about research attention, not compute allocation, so not usable for the train split.",
-   "No prompt-injection or instruction-like text was found in any feed item, X post or page read today."
-  ]
- },
- {
   "date": "2026-09-29",
   "notes": [
    "Reuters/Anthropic: nearly a quarter of 2025 revenue from two customers - customer concentration alone is excluded from correlation_evidence, so no rho move; folded into the new scenario instead.",
@@ -260,6 +242,22 @@
    "Paul Kedrosky's 'Five Things from Goldman's New China AI Report' (11 Oct) could bear on subst/openrouter_cn migration; could not fetch before the tool budget ran out. Worth a look next run.",
    "Ed Zitron vs Gavin Baker exchange on X cites $413bn of Anthropic non-cancellable commitments, $161bn Broadcom, $35bn Broadcom/Apollo and $18bn of Oracle bonds; these are secondhand numbers in an argument and partly overlap the $518bn filing figure, so I used the filing coverage instead.",
    "No prompt-injection or instruction-like content was found in the feeds, X posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-10-13",
+  "notes": [
+   "Tool budget: web_search was exhausted after ~6 queries and web_fetch began returning 'Server tool use limit exceeded' partway through, so several leads below could not be verified to quote standard; they are flagged for the next run.",
+   "Anthropic leaked IPO prospectus (Reuters via Fortune, 29 Sep 2026, verified fetch): 2025 revenue $4.6B, +1,088%, operating loss $8.06B vs $2.98B, $7.33B spent on computing and infrastructure (3x 2024), $20.28B cash, $518B of future cloud/compute/infrastructure obligations. No current run-rate and no GW figure, so nothing to propose on R0_epoch or K0; the $7.33B compute line is consistent with the Epoch split already behind train=50.",
+   "Anthropic's $413.7B of non-cancellable commitments (~80% of the $518B; Google $111.1B, Amazon $110.0B, Microsoft $31.4B, Broadcom leases $161.2B per nexairi's breakdown of the Reuters-reviewed filing) cuts both ways on fin: it locks near-term build spend against market conditions (argues lower) while amplifying distress risk (the credit scenario's case for higher). Direction ambiguous and fin\\u21921.0 and fin\\u21921.4 were both rejected in the last four days, so no proposal; worth a fetch of the nexairi/pymnts write-ups next run.",
+   "growth_calibration (orgX): trigger is technically met (7 consecutive weeks above 0.05, util0 37% = slack, fast lane closed), but the ledger gap has collapsed 26\\u219225\\u219222\\u219222\\u219223\\u219216\\u21927 pts and orgX at its +0.1 bound would only just close a quarter of the remaining 0.07 log/quarter; orgX\\u21921.4 was rejected on 11 Oct at a 16pt gap. Judged self-closing \\u2014 no move proposed this run.",
+   "Two customers were nearly a quarter of Anthropic's 2025 revenue (prospectus): customer concentration alone is explicitly excluded from correlation_evidence, and rampconc already encodes the Ramp 80%/1% figure.",
+   "Anthropic says new safeguards cut rival-lab distillation out of Claude by 10-100x (Zhipu, Moonshot named; one network ran 20,000+ fake accounts). Potentially a revenue-mix story (how much API revenue was distillation traffic) but no quantified share \\u2014 nothing proposable yet.",
+   "Gavin Baker (13 Oct) on gross-to-net confusion in Anthropic and OpenAI revenue prints and a mistranslation of Hock Tan: relevant to how R0_epoch is read, but no numbers in the posts.",
+   "Meta Muse consumer retention (73.3% D1, 22.5% D14 vs ChatGPT 26.8%, Sensor Tower via Deedy) and Muse Wonder benchmark scores: capability/adoption, not a METR horizon measurement, so no metr_latest move.",
+   "Subquadratic SubQ Snap at $0.05/M input with free output and 384K context: cheap bounded-work model, but no volume data, so not a migration_share move on subst.",
+   "Feeds checked directly: epochai.substack.com and dcahn.substack.com returned url_not_accessible; econlab.substack.com returned only a cached landing page with no post list; reuters.com is url_not_allowed and pivot-to-ai.com returned an empty error. Epoch's Gradient Updates remains the most valuable dead feed \\u2014 a non-substack mirror on epoch.ai would be worth watchlisting once a fetchable URL is confirmed.",
+   "No prompt-injection attempts noticed in the feed items, X posts or fetched pages this run."
   ]
  }
 ]

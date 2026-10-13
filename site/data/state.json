@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-12T15:54:00.668Z",
+ "generated_at": "2026-10-13T14:33:07.328Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -800,7 +800,7 @@
     "checks": [
      "OUT: 2027Q4 $478B vs $600–1500B"
     ],
-    "date": "2026-10-12"
+    "date": "2026-10-13"
    }
   },
   {
@@ -845,7 +845,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.9 vs ×4–8"
     ],
-    "date": "2026-10-12"
+    "date": "2026-10-13"
    }
   },
   {
@@ -1154,7 +1154,7 @@
      "ok: 2027Q4 $239B vs $225–340B",
      "ok: 2028Q4 $471B vs $395–675B"
     ],
-    "date": "2026-10-12"
+    "date": "2026-10-13"
    }
   },
   {
@@ -1391,9 +1391,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-12",
+   "as_of": "2026-10-13",
    "auto": true,
-   "updated": "2026-10-12"
+   "updated": "2026-10-13"
   },
   {
    "id": "fms_tailrisk",
@@ -1421,11 +1421,11 @@
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
    "value": "6.2%",
-   "sub": "12 Oct 2026 · “AI bubble burst in 2026?”",
+   "sub": "13 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-12",
+   "as_of": "2026-10-13",
    "auto": true,
-   "updated": "2026-10-12"
+   "updated": "2026-10-13"
   },
   {
    "id": "aaii",
@@ -1441,12 +1441,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "14.8",
-   "sub": "9 Oct 2026 close (CBOE)",
+   "value": "15.2",
+   "sub": "12 Oct 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-10-09",
+   "as_of": "2026-10-12",
    "auto": true,
-   "updated": "2026-10-10"
+   "updated": "2026-10-13"
   },
   {
    "id": "fed_fsr",
@@ -1576,9 +1576,9 @@
    "value": "+40% vs +31%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.9 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-12",
+   "as_of": "2026-10-13",
    "auto": true,
-   "updated": "2026-10-12"
+   "updated": "2026-10-13"
   }
  ],
  "frozen": [],

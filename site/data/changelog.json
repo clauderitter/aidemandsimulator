@@ -1,5 +1,50 @@
 [
  {
+  "date": "2026-10-13",
+  "source": "https://x.com/kimmonismus/status/2109700228873908403",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 60,
+  "reason": "The quote supports only one vendor's list price for a single frontier tier, not a usage-weighted market price move, and it comes from a single social post rather than a pricing index or primary announcement — too thin to record a 60-point price event in quarter zero where the price and elasticity scenarios already carry falling token prices."
+ },
+ {
+  "date": "2026-10-13",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-13).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-13",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +31%",
+  "new": "+40% vs +31%",
+  "reason": "Observed from source (2026-10-13).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-13",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.2%",
+  "new": "6.2%",
+  "reason": "Observed from source (2026-10-13).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-13",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "14.8",
+  "new": "15.2",
+  "reason": "Observed from source (2026-10-12).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
   "date": "2026-10-12",
   "source": "https://convergedigest.com/microsoft-maia-300-multi-gigawatt-ai-infrastructure/",
   "kind": "rejected",
@@ -3580,50 +3625,5 @@
   "old": null,
   "new": 1.3,
   "reason": "A non-binding MOU to mobilise capital 'over time' does not show that marginal builds have become more sensitive to market conditions — turning compute into an investable asset class could as easily stabilise funding — so the mapping to fin is too ambiguous."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/",
-  "kind": "accepted",
-  "target": "capexGW",
-  "old": 45,
-  "new": 54,
-  "reason": "Management-reported silicon-and-systems content of $40B per GW (Q2 FY2027 call, 26 Aug 2026) is newer and harder than the July estimate blend and supports moving all-in capex per GW up to the +20% cap of 54. Rule cost_per_gw; “Management reported that the revenue potential per gigawatt of data center capacity has increased from $18.0 billion in the Hopper generatio”"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "mono",
-  "old": 30,
-  "new": 27.1,
-  "reason": "Rule: revenue ceiling = R0 108.3 ÷ (K0 10 GW × inference share 40%), keeping quarter-0 utilisation at 100%.",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "R0",
-  "old": 120,
-  "new": 108.3,
-  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: Anthropic $65B (2026-07-31), OpenAI $40B (2026-08-13), Z.ai (Zhipu) $2B (2026-08-31), MiniMax $1B (2026-08-26), DeepSeek $0B (2026-07-14), xAI $0B (2025-09-30).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "D0",
-  "old": 4.5,
-  "new": 4.2,
-  "reason": "Rule: METR since-2023 doubling time 129 days ÷ 30.4.",
-  "source": "https://metr.org/time-horizons/"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "H0",
-  "old": 3,
-  "new": 3.1,
-  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07).",
-  "source": "https://metr.org/time-horizons/"
  }
 ]
