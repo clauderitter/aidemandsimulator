@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-10-14",
+  "source": "https://www.anthropic.com/engineering/redesigning-source-control",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.anthropic.com/engineering",
+  "reason": "Adds a first-party, dated and quantitative feed on Anthropic's internal agentic coding volume (2,500 to 30,000 merges per day, May to September 2026) that is distinct from the already-watched Anthropic news feed."
+ },
+ {
+  "date": "2026-10-14",
+  "source": "https://www.wheresyoured.at/annualized-enron-rate/",
+  "kind": "rejected",
+  "target": "train",
+  "old": null,
+  "new": 55,
+  "reason": "The OpenAI Q1 2026 figures are older than the current 9 Sep 2026 Epoch reading and come second-hand via a commentary post, with \"cost of revenue\" not a clean inference line, so they do not outrank the primary 50/50 split already applied."
+ },
+ {
+  "date": "2026-10-14",
+  "source": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+  "kind": "rejected",
+  "target": "k_swe",
+  "old": null,
+  "new": 0.65,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic."
+ },
+ {
+  "date": "2026-10-14",
+  "source": "https://www.anthropic.com/engineering/redesigning-source-control",
+  "kind": "rejected",
+  "target": "k_rd",
+  "old": null,
+  "new": 0.85,
+  "reason": "Gate: monthly drift cap reached for k_rd (at most ±0.1 around 0.7 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-10-14",
+  "source": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/",
+  "kind": "accepted",
+  "target": "gauge:vc_h1",
+  "old": "$510B",
+  "new": "$679B YTD",
+  "reason": "Same Crunchbase global venture funding series, now carried forward from H1 ($510B) to the Q1–Q3 2026 total of $679B, so the tile is refreshed as a year-to-date figure and the H1-specific sub-line should be retired."
+ },
+ {
+  "date": "2026-10-14",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-14).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-14",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +31%",
+  "new": "+40% vs +31%",
+  "reason": "Observed from source (2026-10-14).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-14",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.2%",
+  "new": "6.3%",
+  "reason": "Observed from source (2026-10-14).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-14",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.2",
+  "new": "15.3",
+  "reason": "Observed from source (2026-10-13).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-14",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "315bp",
+  "new": "311bp",
+  "reason": "Observed from source (2026-10-12).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-14",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-12).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-14",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.22%",
+  "new": "5.24%",
+  "reason": "Observed from source (2026-10-09).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-13",
   "source": "https://x.com/kimmonismus/status/2109700228873908403",
   "kind": "rejected",
@@ -3517,113 +3625,5 @@
   "old": null,
   "new": "https://econlab.substack.com/feed",
   "reason": "Adds a dated monthly primary feed carrying the underlying Ramp AI Index adoption and model-spend numbers that the existing X account only summarises."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://ramp.com/data/ai-index-august-2026",
-  "kind": "rejected",
-  "target": "subst",
-  "old": null,
-  "new": 16,
-  "reason": "The quoted figure measures the share of AI-using businesses touching model-serving platforms (and shows it rising 0.2pp), which is a different object from token-level substitutability and if anything points the other way, so it does not support cutting subst from 20 to 16."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://x.com/arakharazian/status/2095204452609171555",
-  "kind": "accepted",
-  "target": "scenario:rampconc",
-  "old": null,
-  "new": "added",
-  "reason": "Kharazian and the Ramp Economics Lab genuinely hold this concentration thesis and it is distinct from the supply-side contagion scenario, but the thesis text is trimmed of the unverified claims (concentration 'unseen in any other software category', the top 1% being tech/AI firms, and the ~$10 per 1M token price comparison) that the fetched quotes do not support. Ara Kharazian, Ramp Economics Lab, 2 Sep 2026 (customer concentration); 24 Aug 2026 Ramp AI Index price ceiling."
- },
- {
-  "date": "2026-09-03",
-  "source": "",
-  "kind": "expired",
-  "target": "scenario:gap",
-  "old": "active",
-  "new": "retired",
-  "reason": "Retired to make room for “Concentrated customer base”: the least distinct bear scenario (closest path to its neighbours, 12%)."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://x.com/arakharazian/status/2095204452609171555",
-  "kind": "accepted",
-  "target": "rho",
-  "old": 0.5,
-  "new": 0.55,
-  "reason": "Ramp's finding that 80% of OpenAI and Anthropic enterprise revenue comes from 1% of customers is fresh reported evidence of a shared demand base, but revenue concentration is only a proxy for the loop-correlation rho measures and the quote does not itself establish that the top cohort is AI/tech firms, so rho moves to 0.55 rather than the proposed top of band. Rule correlation_evidence; “80% of OpenAI and Anthropic's enterprise revenues come from 1% of their customers, and it's not getting better. This is a level of concentra”"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "mono",
-  "old": 27.1,
-  "new": 29.6,
-  "reason": "Rule: revenue ceiling = R0 118.3 ÷ (K0 10 GW × inference share 40%), keeping quarter-0 utilisation at 100%.",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-03",
-  "kind": "collected",
-  "target": "R0",
-  "old": 108.3,
-  "new": 118.3,
-  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset (Anthropic $65B (2026-07-31), OpenAI $40B (2026-08-13), Z.ai (Zhipu) $2B (2026-08-31), MiniMax $1B (2026-08-26), DeepSeek $0B (2026-07-14), xAI $0B (2025-09-30)) plus the undisclosed-revenue allowance of $10B.",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-03",
-  "source": "https://x.com/drorpoleg/status/2095299717324304474",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://x.com/arakharazian",
-  "reason": "Non-numeric watchlist addition that puts an already-relied-upon upstream data source (Ramp) into the model directly instead of via second-hand commentary."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/",
-  "kind": "accepted",
-  "target": "scenario:nvfactory",
-  "old": null,
-  "new": "added",
-  "reason": "Attribution and headline numbers ($800B/$1.3T top-five capex, rising content per GW, supply-constrained through FY2028) check out against the earnings call, but the thesis was trimmed of the '~70% supply-constrained growth guidance' claim (the transcript's 70% refers to AI VC funds spent on compute) and now marks the $60B per-GW figure as an inference rather than Nvidia's statement. Jensen Huang and Colette Kress, Nvidia Q2 FY2027 earnings call, 26 Aug 2026."
- },
- {
-  "date": "2026-09-03",
-  "source": "",
-  "kind": "expired",
-  "target": "scenario:rate",
-  "old": "active",
-  "new": "retired",
-  "reason": "Retired to make room for “AI factory economics — dollars per gigawatt”: the least distinct active scenario (closest path to its neighbours)."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://x.com/drorpoleg/status/2095299717324304474",
-  "kind": "rejected",
-  "target": "rho",
-  "old": null,
-  "new": 0.6,
-  "reason": "A second-hand tweet reporting customer concentration (80% of revenue from 1% of customers) measures concentration, not co-movement across the demand loops, and is too weak a grade to move a correlation parameter."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://tomtunguz.com/intelligence-per-watt",
-  "kind": "accepted",
-  "target": "subst",
-  "old": 15,
-  "new": 20,
-  "reason": "Fresh, quantitative migration evidence distinct from the July OpenRouter reading — local models matching frontier quality on ~89% of everyday queries — supports a modest rise in the bounded-work substitution share to 20. Rule migration_share; “Local AI models can already answer 89% of everyday chat & reasoning queries as well as a frontier cloud model, a result that holds broadly a”"
- },
- {
-  "date": "2026-09-03",
-  "source": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.3,
-  "reason": "A non-binding MOU to mobilise capital 'over time' does not show that marginal builds have become more sensitive to market conditions — turning compute into an investable asset class could as easily stabilise funding — so the mapping to fin is too ambiguous."
  }
 ]

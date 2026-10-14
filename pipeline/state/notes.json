@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-09-29",
-  "notes": [
-   "Reuters/Anthropic: nearly a quarter of 2025 revenue from two customers - customer concentration alone is excluded from correlation_evidence, so no rho move; folded into the new scenario instead.",
-   "Anthropic 2025 compute and infrastructure cost $7.33bn is reported, but no training/inference split is disclosed, so no compute_split proposal (train stays 50).",
-   "Tunguz's B200 rental index ($8.08/GPU-hr) implies roughly $33-42bn per GW-year of raw rental at 80-100% utilisation, i.e. consistent with mono=50 for lab revenue per inference GW - no mono move proposed.",
-   "h100_rental gauge not proposed: Tunguz tracks a B200 index, not the same measure as the $2.00/hr H100 gauge.",
-   "OpenAI paused training, evaluation and tool-using inference of its most capable models (incident report 25 Sep 2026; AP/CBC 27 Sep). Potentially large but no public duration or demand magnitude yet - no event proposed; flagged for grading next week.",
-   "Anthropic Sonnet 5.5 '30% less per task' and Opus 5.5 '40% less to run' are efficiency claims, not migration or usage-share data - no subst or sh_* move.",
-   "Epoch AI Data Centers explorer used for K0 only; no history_K for 2026Q3, since a 10 GW entry there was rejected on 2026-09-28.",
-   "No new METR measurement for the September frontier models was found, so H0 (5.08h, Apr 2026) and D0 are left alone.",
-   "capexGW left alone: two capex proposals (44 and 56) were rejected this week and nothing new was reported.",
-   "No prompt-injection or instruction-like content was encountered in the feeds, X posts or fetched pages today."
-  ]
- },
- {
   "date": "2026-09-30",
   "notes": [
    "aaii: no newer reading. aaii.com/sentimentsurvey still shows 'Week ending September 23, 2026 / Bullish 32.7% / Neutral 19.2% / Bearish 48.1%' as this week's result, identical to the current gauge; next weekly release is due Thursday 2026-10-01. (Oddity noted: the page's historical box lists a '1-Year Bearish High 55.6% Week Ending 9/24/2026', a date not present in the weekly table — likely a site data error, not a publishable newer reading.)",
@@ -258,6 +243,25 @@
    "Subquadratic SubQ Snap at $0.05/M input with free output and 384K context: cheap bounded-work model, but no volume data, so not a migration_share move on subst.",
    "Feeds checked directly: epochai.substack.com and dcahn.substack.com returned url_not_accessible; econlab.substack.com returned only a cached landing page with no post list; reuters.com is url_not_allowed and pivot-to-ai.com returned an empty error. Epoch's Gradient Updates remains the most valuable dead feed \\u2014 a non-substack mirror on epoch.ai would be worth watchlisting once a fetchable URL is confirmed.",
    "No prompt-injection attempts noticed in the feed items, X posts or fetched pages this run."
+  ]
+ },
+ {
+  "date": "2026-10-14",
+  "notes": [
+   "aaii: no newer reading. The latest AAII Sentiment Survey (published 2026-10-08, week ending 2026-10-07) is bullish 40.3% / bearish 39.0% - identical to the current gauge value. Next weekly release due 2026-10-15.",
+   "openrouter_cn: no newer same-measure reading. The most recent reported figure for Chinese models' share of OpenRouter tokens is still the mid-September 2026 reporting (The New Stack, 2026-09-14: open-weight models ~60% of OpenRouter US token consumption, most from China), i.e. no update since the current 2026-09-14 as_of.",
+   "openrouter_cn alternative rejected: OpenRouter's live rankings page (data through 2026-10-13) publishes share of text *requests* by model author (DeepSeek 24.5% in the week beginning Oct 5) and absolute token counts for only the top 10 models - a different measure from 'Chinese models' share of all OpenRouter tokens', so any 57-67%-comparable number would be my own derivation, not a reported reading.",
+   "vc_h1 note: the gauge label says 'H1 2026'; the proposed refresh extends the same Crunchbase cumulative global venture funding series to Q1-Q3 2026. If the gauge must stay strictly half-yearly, the alternative single-quarter reading is $159B for Q3 2026.",
+   "OpenAI ARR restated to ~$50B (FT, 8 Oct) vs the $70B Axios figure, per Zitron 13 Oct: not proposed because R0_epoch is collector-owned and its as-of (2026-10-09) already post-dates the FT story; Anthropic $65B + OpenAI $50B is close to the current 118.8 sum.",
+   "Epoch AI data-centres hub (updated 12 Oct): 94 tracked sites, 14.1 GW of IT power, 44% coverage, Colossus 2 946 MW / Anthropic-Amazon New Carlisle 910 MW. Consistent with K0=14.3 GW but the tracked set spans Meta, xAI and Malaysian sites, so it is not a clean frontier-lab total; no K0 change proposed.",
+   "Theory Ventures 2026 AI survey (455 builders, fielded 22 Sep): 45% of teams route queries across models, 54.7% still send every query to one model. Adjacent to migration_share but gives no token or spend share going to non-frontier models; full survey page could not be fetched (tool budget).",
+   "OpenAI EU report also shows Codex + ChatGPT Work above half of EU enterprise output tokens (22% Slovenia to 85% Lithuania); not proposed as sh_swe because it bundles non-coding Work-agent tokens and is not clearly above the 64% Codex figure already behind sh_swe=20.",
+   "growth_calibration: ledger shows 7 consecutive weeks over the 0.05 threshold but the gap has collapsed (26 -> 7 pts) and an orgX move to 1.4 was rejected on 2026-10-11; no sourced quote exists for a ledger-only move, so I left it to the weekly review.",
+   "Jack Clark bringing full RSI forward to 2027 (via @kimmonismus, 13-14 Oct) is attributable but single-number and already represented by the takeoff scenario; no scenario_new.",
+   "@SemiAnalysis_ 14 Oct: Rubin 4.23x perf-per-dollar vs GB300 NVL72 on SGLang — relevant to token prices but maps to no exposed key under the listed rules.",
+   "@edzitron's 'Microsoft had 2GW of capacity in 2026' is a second-hand blended (AI + non-AI) figure, not a frontier-lab capacity disclosure.",
+   "No new METR measurement found: metr.org/time-horizons still carries the Time Horizon 1.1 suite, so H0/D0 unchanged.",
+   "No prompt-injection or instruction-like text encountered in the fetched pages or posts."
   ]
  }
 ]

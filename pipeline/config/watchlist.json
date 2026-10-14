@@ -185,6 +185,13 @@
    "kind": "html",
    "match": "/data/ai-data-centers",
    "added": "2026-09-28"
+  },
+  {
+   "name": "Anthropic Engineering blog",
+   "url": "https://www.anthropic.com/engineering",
+   "kind": "html",
+   "match": "/engineering",
+   "added": "2026-10-14"
   }
  ],
  "x_handles": [

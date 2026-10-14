@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-13T14:33:07.328Z",
+ "generated_at": "2026-10-14T12:27:26.168Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -800,7 +800,7 @@
     "checks": [
      "OUT: 2027Q4 $478B vs $600–1500B"
     ],
-    "date": "2026-10-13"
+    "date": "2026-10-14"
    }
   },
   {
@@ -845,7 +845,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×4.9 vs ×4–8"
     ],
-    "date": "2026-10-13"
+    "date": "2026-10-14"
    }
   },
   {
@@ -1154,7 +1154,7 @@
      "ok: 2027Q4 $239B vs $225–340B",
      "ok: 2028Q4 $471B vs $395–675B"
     ],
-    "date": "2026-10-13"
+    "date": "2026-10-14"
    }
   },
   {
@@ -1391,9 +1391,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "auto": true,
-   "updated": "2026-10-13"
+   "updated": "2026-10-14"
   },
   {
    "id": "fms_tailrisk",
@@ -1420,12 +1420,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "6.2%",
-   "sub": "13 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "6.3%",
+   "sub": "14 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "auto": true,
-   "updated": "2026-10-13"
+   "updated": "2026-10-14"
   },
   {
    "id": "aaii",
@@ -1436,17 +1436,18 @@
    "as_of": "2026-10-07",
    "auto": false,
    "updated": "2026-10-10",
-   "cadence_days": 7
+   "cadence_days": 7,
+   "next_check": "2026-10-17"
   },
   {
    "id": "vix",
    "label": "VIX",
-   "value": "15.2",
-   "sub": "12 Oct 2026 close (CBOE)",
+   "value": "15.3",
+   "sub": "13 Oct 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-10-12",
+   "as_of": "2026-10-13",
    "auto": true,
-   "updated": "2026-10-13"
+   "updated": "2026-10-14"
   },
   {
    "id": "fed_fsr",
@@ -1490,7 +1491,8 @@
    "as_of": "2026-09-14",
    "auto": false,
    "updated": "2026-10-06",
-   "cadence_days": 30
+   "cadence_days": 30,
+   "next_check": "2026-10-22"
   },
   {
    "id": "token_index",
@@ -1531,44 +1533,43 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.22%",
-   "sub": "8 Oct 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.24%",
+   "sub": "9 Oct 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-10-08",
+   "as_of": "2026-10-09",
    "auto": true,
-   "updated": "2026-10-10"
+   "updated": "2026-10-14"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "315bp",
-   "sub": "8 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 82bp",
+   "value": "311bp",
+   "sub": "12 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 83bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-10-08",
+   "as_of": "2026-10-12",
    "auto": true,
-   "updated": "2026-10-09"
+   "updated": "2026-10-14"
   },
   {
    "id": "vc_h1",
    "label": "Venture funding, H1 2026",
-   "value": "$510B",
-   "sub": "more than all of 2025; OpenAI and Anthropic took 43% of it",
-   "src": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/",
-   "as_of": "2026-07-02",
+   "value": "$679B YTD",
+   "sub": "Crunchbase global venture funding, now YTD Q1-Q3 2026 ($679B) vs the prior H1 $510B print; Q3 alone was $159B, the year's lowest quarter but above every quarter since Q2 2022, with AI taking 64% of gl",
+   "src": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/",
+   "as_of": "2026-09-30",
    "auto": false,
-   "updated": "2026-09-03",
-   "cadence_days": 90,
-   "next_check": "2026-10-14"
+   "updated": "2026-10-14",
+   "cadence_days": 90
   },
   {
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "8 Oct 2026 (FRED DFF)",
+   "sub": "12 Oct 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-10-08",
+   "as_of": "2026-10-12",
    "auto": true,
-   "updated": "2026-10-10"
+   "updated": "2026-10-14"
   },
   {
    "id": "growth_check",
@@ -1576,9 +1577,9 @@
    "value": "+40% vs +31%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.9 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "auto": true,
-   "updated": "2026-10-13"
+   "updated": "2026-10-14"
   }
  ],
  "frozen": [],
