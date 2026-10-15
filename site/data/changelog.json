@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-10-15",
+  "source": "https://tomtunguz.com/intelligence-per-dollar-2026/",
+  "kind": "accepted",
+  "target": "scenario:price",
+  "old": "updated",
+  "new": "updated",
+  "reason": "The scenario's named proponent restates and extends the price-collapse case with new custom-silicon evidence (Maia 300, Jalapeño) and an explicit expectation of continued deflation at 40-70% margins, which justifies a second leg of cuts within the existing scenario rather than a new one."
+ },
+ {
+  "date": "2026-10-15",
+  "source": "https://ramp.com/data/ai-index-oct-2026",
+  "kind": "accepted",
+  "target": "scenario:rampconc",
+  "old": "updated",
+  "new": "updated",
+  "reason": "Same proponent (Ara Kharazian) publishing fresher numbers for the same thesis: the concentrated top 1% is still 3.1% below its July high and token spend has been flat for two months, which the update encodes as a demand stall while keeping the existing concentration and shock settings."
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "accepted",
+  "target": "k_oth",
+  "old": 0.15,
+  "new": 0.1,
+  "reason": "Ramp's October panel reports two straight months of virtually no growth in token spend with volumes still rising, below the ~1.2x a year implied by k_oth=0.15, so the bounded-demand loop gain steps down to 0.10 at the speed limit. Rule feedback_evidence; “It’s token spend that led to these declines. And this slowdown has been unusually stubborn. Because of August and September, we’ve recorded ”",
+  "source": "https://ramp.com/data/ai-index-oct-2026"
+ },
+ {
+  "date": "2026-10-15",
+  "source": "https://inferencex.semianalysis.com/chips/h100",
+  "kind": "accepted",
+  "target": "gauge:h100_rental",
+  "old": "$2.00/hr",
+  "new": "$2.00/hr",
+  "reason": "Same publisher, same measure (SemiAnalysis TCO retail $/chip/hr) confirms the $2.00 reading a month on, so the gauge is refreshed rather than changed."
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-15).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +31%",
+  "new": "+40% vs +31%",
+  "reason": "Observed from source (2026-10-15).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.3%",
+  "new": "6.3%",
+  "reason": "Observed from source (2026-10-15).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "15.3",
+  "new": "16.9",
+  "reason": "Observed from source (2026-10-14).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "311bp",
+  "new": "316bp",
+  "reason": "Observed from source (2026-10-13).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-13).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-15",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.24%",
+  "new": "5.21%",
+  "reason": "Observed from source (2026-10-13).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-14",
   "source": "https://www.anthropic.com/engineering/redesigning-source-control",
   "kind": "accepted",
@@ -3524,106 +3623,5 @@
   "reason": "New constant: budgets and builds respond to a smoothed market index, matching the absence of budget cuts after the June–July 2026 semiconductor drawdown.",
   "source": "",
   "manual": true
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "shocks",
-  "old": "13 types",
-  "new": "11 types",
-  "reason": "Shock audit: removed open-source catch-up (duplicated the migration slider, −3% effect) and enterprise pilots cancelled (duplicated the segment cuts). Model breakthroughs now add demand pull in the quarter they land.",
-  "source": ""
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "pipe",
-  "old": 16,
-  "new": 22.4,
-  "reason": "Calibration on the maintainer’s instruction: observed frontier revenue grew ~5.8× in four quarters at 100% utilisation, so the capacity pipeline was too small. 24 GW over six quarters sits between Epoch-style estimates (~26 GW by end-2027) and Patel’s tripling (~40 GW). Capped at the per-run limit; continues to 24 next run.",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-  "capped": true,
-  "target_value": 24
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "buildMax",
-  "old": 0.2,
-  "new": 0.25,
-  "reason": "Calibration: with quarter zero rationed, observed revenue growth (44% per quarter trailing) implies capacity growing faster than a 20% per-quarter build cap allows. Set between analyst pace and Patel’s tripling.",
-  "source": "https://www.dwarkesh.com/p/dylan-patel-3"
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "R0",
-  "old": 118.3,
-  "new": 118.3,
-  "reason": "Revenue is now stored as R0_epoch (Epoch’s disclosed sum) plus R0x (undisclosed allowance) and derived in one place; mono, rho, subst and H_sat re-graded as derived or estimate.",
-  "source": "https://github.com/clauderitter/aidemandsimulator/issues/1"
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "rho",
-  "old": 0.55,
-  "new": 0.5,
-  "reason": "Reverted after the weekly review: customer concentration is a proxy for shared demand, not evidence of co-movement, and the rulebook now says so. Two runs had ruled opposite ways on the same datum.",
-  "source": "https://github.com/clauderitter/aidemandsimulator/issues/1"
- },
- {
-  "date": "2026-09-03",
-  "source": "https://www.exponentialview.co/p/the-state-of-the-ai-economy",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://www.exponentialview.co/feed",
-  "reason": "This feed is the standing source for the undisclosed-revenue allowance and its estimate has not been revised since June 2026, so watching it is the cheapest way to catch the next update; text adjusted to flag that it is an estimate, not reported revenue."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://epochai.substack.com/p/an-update-on-ais-most-important-number",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://epochai.substack.com/feed",
-  "reason": "Epoch's Gradient Updates is already the primary source behind the revenue and compute series (quoted $30B→$105B run-rate re-derivation) yet only its X account was watched, so adding the newsletter feed closes a gap in first-hand coverage."
- },
- {
-  "date": "2026-09-03",
-  "source": "https://epochai.substack.com/p/an-update-on-ais-most-important-number",
-  "kind": "rejected",
-  "target": "scenario:middle",
-  "old": null,
-  "new": "Epoch AI (Josh You & Lynette Bye, 27 Aug 2026): OpenAI+Anthropic combined run-rate $30B to $105B in 2026 (3.5x YTD, ~$100B/yr today), but the within-2026 doubling has stretched from ~3 months (to $55B at end-Q1) to ~4 months - hypergrowth intact and still outpacing compute, with the first sign of bending.",
-  "reason": "Gate: source unreachable: Error: 403 https://epochai.substack.com/p/an-update-on-ais-most-important-number."
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "scenario:rate",
-  "old": "retired",
-  "new": "active",
-  "reason": "Reinstated under the same rule change: core scenarios are no longer retired by path similarity.",
-  "source": ""
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "scenario:gap",
-  "old": "retired",
-  "new": "active",
-  "reason": "Reinstated. Rule change: the sixteen curated scenarios are now a protected core; the pipeline can add up to four rotating scenarios and only retires among those.",
-  "source": ""
- },
- {
-  "date": "2026-09-03",
-  "source": "https://ramp.com/data/ai-index-august-2026",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://econlab.substack.com/feed",
-  "reason": "Adds a dated monthly primary feed carrying the underlying Ramp AI Index adoption and model-spend numbers that the existing X account only summarises."
  }
 ]

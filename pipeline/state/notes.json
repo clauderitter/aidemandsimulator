@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-09-30",
-  "notes": [
-   "aaii: no newer reading. aaii.com/sentimentsurvey still shows 'Week ending September 23, 2026 / Bullish 32.7% / Neutral 19.2% / Bearish 48.1%' as this week's result, identical to the current gauge; next weekly release is due Thursday 2026-10-01. (Oddity noted: the page's historical box lists a '1-Year Bearish High 55.6% Week Ending 9/24/2026', a date not present in the weekly table — likely a site data error, not a publishable newer reading.)",
-   "token_index: no newer reading. The September 2026 Ramp AI Index (ramp.com/data/ai-index-sept-2026) remains the latest edition and still carries the $0.68 per million tokens effective-price figure 'as of this week' (down 41% from the March 2026 peak of $1.15). No October index has been published as of 2026-09-30.",
-   "bonds: no newer same-measure reading. The current $225B is S&P Global's count of bonds issued in 2026 YTD by hyperscalers 'and related entities like Nvidia' (Fortune, 2026-07-31). Newer coverage uses different scopes: Vanguard/ai-cio cite ~$132B through July 2026 for the five hyperscalers only (Alphabet, Amazon, Meta, Microsoft, Oracle), and a Seeking Alpha chart cites $207B as a full-year 2026 issuance projection. Neither is the same measure, so I did not propose a swap; an updated S&P Global credit-trends YTD tally would be the right refresh (its Q3 2026 financing-conditions page returned no usable text).",
-   "vc_h1: no newer reading by construction — H1 2026 is a closed period and Crunchbase's record $510B H1 2026 figure has not been revised. Q3 2026 is only ending today (2026-09-30); Crunchbase's Q3/9-month global funding report typically publishes in early October and would be a different measure anyway.",
-   "Server-side search/fetch quota was exhausted before I could check ramp.com/data's index listing directly for an October edition; conclusion above rests on the September index page itself plus search results showing it as the most recent (published ~20 days ago).",
-   "orgX: fast lane is open (gap 22-23pts, 5 consecutive weeks) and util0 60% points at orgX, but a capped +0.1 on orgX moves quarter-zero growth by only ~0.02 log/quarter, well under a quarter of the 0.23 gap - and the same move was rejected on 2026-09-29. Treated as a structural gap for the weekly review rather than a calibration move.",
-   "R0_epoch / R0: Tunguz (29 Sep) puts OpenAI 'approaching $70b in run rate' with both labs near $100b by year end, and Azhar has Anthropic >$100bn annualised by end-2026; left to the daily collector, which already has R0_epoch moving toward 138.8.",
-   "R0x: Zitron's ~$22bn of global non-Anthropic/OpenAI compute demand is a bear's estimate of total non-lab demand, mixes frontier and non-frontier, and does not clearly beat the current $15bn allowance in either direction.",
-   "pipe / buildMax: Morgan Stanley (via FT, via Zitron) says more than half of GPU servers sold 2026-2028 may lack power - third-hand and already represented by the grid and physics scenarios, so folded into the contagion update rather than proposed as a pipe cut.",
-   "subst: the GPT-6.1 Sol and Luna price cuts are within-frontier segmentation (same lab, cheaper tier), not migration to open-weight or non-frontier endpoints, so no move off the Vercel-based 25.",
-   "Price scenario (Tunguz is a listed proponent): his 29 Sep segmentation piece adds numbers (80% cut on OpenAI's cheapest tier, Anthropic enterprise metered billing doubling revenue in a quarter) but does not change his stated path, so no scenario_update - captured instead in the 2026Q3 price event.",
-   "Considered a 2026Q3 'release' event for GPT-6 Astra/DevDay, but I could only verify Astra second-hand from the Sol page and have no METR horizon measurement for it; H0/D0 left alone.",
-   "Reuters and CNBC pages on the Anthropic S-1 were not fetchable from here; used Azhar's Exponential View post, which reproduces the S-1 figures, as the citable source.",
-   "implicator.ai carries the full S-1 commitment breakdown ($111.1bn Google, $110bn Amazon, $31.4bn Microsoft, $161.2bn Broadcom, up to $84.5bn xAI) and would be a useful watchlist feed, but I could not confirm its feed URL before the fetch budget ran out.",
-   "No prompt-injection attempts seen in the feeds or posts read today; the Zitron and Substack pages carry subscription solicitations only."
-  ]
- },
- {
   "date": "2026-10-01",
   "notes": [
    "Gemini 4 Argon release (30 Sep, TechCrunch) looked like a candidate 'release' event for 2026Q3, but the TechCrunch body text would not render in the fetch (nav only), so I had no verifiable verbatim quote; routine SOTA releases are also arguably already in the baseline.",
@@ -262,6 +242,26 @@
    "@edzitron's 'Microsoft had 2GW of capacity in 2026' is a second-hand blended (AI + non-AI) figure, not a frontier-lab capacity disclosure.",
    "No new METR measurement found: metr.org/time-horizons still carries the Time Horizon 1.1 suite, so H0/D0 unchanged.",
    "No prompt-injection or instruction-like text encountered in the fetched pages or posts."
+  ]
+ },
+ {
+  "date": "2026-10-15",
+  "notes": [
+   "nvda_short: could not retrieve stockanalysis.com/stocks/nvda/statistics/ this session (fetch detection timeout, then server tool-use limit exceeded); no verified reading newer than 1.27% as of 2026-09-15 — retry next refresh.",
+   "token_index: Ramp published the October 2026 AI Index (ramp.com/data/ai-index-oct-2026, 2026-10-14), but the text gives no numeric effective price per million tokens — it only says frontier price declines are 'driving the blended price per million tokens down', with the figure shown only inside an embedded Datawrapper chart (DUO9V) I could not read. Last stated number remains $0.68 (Sept 2026). No newer same-measure reading proposed.",
+   "token_index alternatives seen and rejected: BenchLM Token Price Index ($5.81/1M median blended flagship, Oct 2026) and benchlm 'frontier token price index' — different measure (vendor list prices, not Ramp's spend-observed effective rate).",
+   "h100_rental: page carries no explicit as-of date; used the fetch date 2026-10-14. Value unchanged at $2.00/hr, so this is a date refresh only.",
+   "Bloomberg (via @kimmonismus, 15 Oct) reports Anthropic Q3 revenue $16.8B, adjusted profitability and a ~$110B exit-2026 run-rate vs ~$9B end-2025; I could not verify the primary article (search/fetch budget exhausted, x.com not fetchable) nor decompose Epoch's current $118.8B sum, so no R0_epoch proposal - the collector should be checked against this report.",
+   "Gartner (via @edzitron, 14 Oct): 80% of neoclouds gone by 2030, $8.5T of revenue needed for 12% ROIC, $4T+ of writedown risk by 2032. Quantitative and institutional, but only a tweet summary was available, it overlaps the live 'gap' and 'credit' scenarios, and all four rotating slots are occupied - noted, not proposed.",
+   "growth_calibration (orgX): ledger shows 7 consecutive weeks over 0.05 with slack (util 37%), but the gap has collapsed 23 -> 16 -> 7 pts and orgX was moved to 1.3 on 2026-10-08; a further move risks overshoot, so none proposed this run.",
+   "Ramp: a record 8% of firms switched AI provider in September - frontier-to-frontier switching, not migration off frontier endpoints, so it does not move subst (set 2026-09-17 on Vercel production data).",
+   "boom remains out of range (2027Q4 $478B vs $600-1500B) but the only fresh Patel/Baker material was a Gavin Baker X thread that could not be fetched; no re-fit proposed without readable proponent numbers.",
+   "METR's three 14 Oct posts are assessment-methodology proposals with no new time-horizon or doubling-time measurement, so H0 (2026-04-07) and D0 stay stale.",
+   "Epoch's SpireClimb benchmark, Anthropic's source-control post (merges per day up >10x) and OpenAI's customer stories (Third Moment Research, 10,000 agents for 36+ hours) are capability/usage colour without a loop-gain, share or capacity number.",
+   "Coatue 'Chart of the Day' 14 Oct is a single chart with no numbers in text - excluded.",
+   "An event:2026Q4 price shock was rejected on 2026-10-13; the Ramp/Tunguz deflation evidence is encoded in the price scenario instead of re-proposing an event.",
+   "No prompt-injection or instruction-like text was encountered in any fetched page or feed item this run.",
+   "Tool budget note: web_search returned no results and both search and fetch budgets were exhausted mid-run; Noahpinion 'AI vs. the railroads' and the October Vercel production index went unread."
   ]
  }
 ]
