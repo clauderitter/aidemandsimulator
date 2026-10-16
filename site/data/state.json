@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-15T11:56:39.542Z",
+ "generated_at": "2026-10-16T11:45:07.121Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -213,18 +213,16 @@
    "short": "Modelling constant; see “How it works”."
   },
   "k_rd": {
-   "value": 0.8,
+   "value": 0.75,
    "label": "AI R&D loop gain",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
-   "as_of": "2026-10-05",
+   "as_of": "2026-10-15",
    "type": "reported",
-   "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
-   "updated": "2026-10-11",
+   "source": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy",
+   "updated": "2026-10-16",
    "rule": "",
-   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute.",
-   "pending_since": "2026-10-11",
-   "pending_reason": "Epoch's fit of OpenAI's own published series is a direct observation of AI R&D token spend growing 1.8–2.2× a month agai"
+   "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute."
   },
   "k_swe": {
    "value": 0.6,
@@ -395,16 +393,16 @@
    "short": "Assumption: bounded tasks stop pulling demand once the horizon passes a working week."
   },
   "subst": {
-   "value": 25,
+   "value": 30,
    "label": "Migration to non-frontier models",
    "hidden": false,
-   "basis": "Vercel AI Gateway (tens of trillions of production tokens/month): open-weight models ran 56% of all gateway tokens in August 2026, up from under 10% in December 2025, taking 14% of spend — the first direct production-traffic measure of bounded work migrating off frontier endpoints. (estimate, 2026-09-17). Vercel's AI Gateway Production Index (published 17 Sep 2026, data through August) is a primary production-traffic measurement: open-weight models went from 7% of gateway tokens in December 2025 to 56% in August 2026, i.e. the majority of volume, while taking 14% of gateway spend, a dollar share Vercel describes as accelerating as customers move production workloads over. Gavin Baker (@GavinSBaker, 19 Sep 2026) independently reports that on OpenRouter more dollars are now spent on open models than on OpenAI. Counter-evidence keeps the move small: Ramp's September index finds open-source/",
-   "as_of": "2026-09-17",
+   "basis": "Vercel AI Gateway (tens of trillions of production tokens/month): open-weight models ran 71.5% of gateway tokens and took 23% of spend in September 2026, up from 56% and 14% in August — direct production-traffic evidence of bounded work migrating off frontier endpoints, with frontier spend still growing in absolute terms. (estimate, 2026-10-15). Same series that set the current value: Vercel AI Gateway production index (tens of trillions of production tokens/month). September data: open weight 71.5% of tokens (vs 56% in August) and 23% of spend (vs 14%), a share of spend that 'has more than quadrupled since June'. The article also reports 'Since December, spend on frontier models has grown tenfold; spend on open-weight models has grown more than seventyfold' and that almost one in three teams switched their most-used lab in September, an index record - bounded work keeps leaving frontier",
+   "as_of": "2026-10-15",
    "type": "estimate",
-   "source": "https://vercel.com/blog/ai-gateway-production-index-september-2026",
-   "updated": "2026-09-20",
+   "source": "https://vercel.com/blog/ai-gateway-production-index-october-2026",
+   "updated": "2026-10-16",
    "rule": "",
-   "short": "Vercel AI Gateway (tens of trillions of production tokens/month): open-weight models ran 56% of all gateway tokens in August 2026, up from under 10% in December 2025, taking 14% of spend — the first direct production-traffic measure of bounded work migrating off frontier endpoints."
+   "short": "Vercel AI Gateway (tens of trillions of production tokens/month): open-weight models ran 71.5% of gateway tokens and took 23% of spend in September 2026, up from 56% and 14% in August — direct production-traffic evidence of bounded work migrating off frontier endpoints, with frontier spend still growing in absolute terms."
   },
   "K0": {
    "value": 14.3,
@@ -798,9 +796,9 @@
    "fidelity": {
     "ok": false,
     "checks": [
-     "OUT: 2027Q4 $478B vs $600–1500B"
+     "OUT: 2027Q4 $474B vs $600–1500B"
     ],
-    "date": "2026-10-15"
+    "date": "2026-10-16"
    }
   },
   {
@@ -843,9 +841,9 @@
    "fidelity": {
     "ok": true,
     "checks": [
-     "ok: growth 2026Q4→2027Q4 ×4.9 vs ×4–8"
+     "ok: growth 2026Q4→2027Q4 ×4.8 vs ×4–8"
     ],
-    "date": "2026-10-15"
+    "date": "2026-10-16"
    }
   },
   {
@@ -1156,10 +1154,10 @@
    "fidelity": {
     "ok": true,
     "checks": [
-     "ok: 2027Q4 $239B vs $225–340B",
-     "ok: 2028Q4 $471B vs $395–675B"
+     "ok: 2027Q4 $237B vs $225–340B",
+     "ok: 2028Q4 $465B vs $395–675B"
     ],
-    "date": "2026-10-15"
+    "date": "2026-10-16"
    }
   },
   {
@@ -1397,9 +1395,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-15",
+   "as_of": "2026-10-16",
    "auto": true,
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "id": "fms_tailrisk",
@@ -1426,12 +1424,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "6.3%",
-   "sub": "15 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "6.8%",
+   "sub": "16 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-15",
+   "as_of": "2026-10-16",
    "auto": true,
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "id": "aaii",
@@ -1448,12 +1446,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "16.9",
-   "sub": "14 Oct 2026 close (CBOE)",
+   "value": "16.5",
+   "sub": "15 Oct 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-10-14",
+   "as_of": "2026-10-15",
    "auto": true,
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "id": "fed_fsr",
@@ -1523,7 +1521,7 @@
    "auto": false,
    "updated": "2026-09-03",
    "cadence_days": 90,
-   "next_check": "2026-10-16"
+   "next_check": "2026-10-30"
   },
   {
    "id": "bonds",
@@ -1540,22 +1538,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.21%",
-   "sub": "13 Oct 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.19%",
+   "sub": "14 Oct 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "auto": true,
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "316bp",
-   "sub": "13 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 83bp",
+   "value": "325bp",
+   "sub": "14 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 84bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "auto": true,
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "id": "vc_h1",
@@ -1572,11 +1570,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "13 Oct 2026 (FRED DFF)",
+   "sub": "14 Oct 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "auto": true,
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   },
   {
    "id": "growth_check",
@@ -1584,9 +1582,9 @@
    "value": "+40% vs +31%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.9 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-15",
+   "as_of": "2026-10-16",
    "auto": true,
-   "updated": "2026-10-15"
+   "updated": "2026-10-16"
   }
  ],
  "frozen": [],

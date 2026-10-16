@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-10-16",
+  "source": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy",
+  "kind": "rejected",
+  "target": "train",
+  "old": null,
+  "new": 60,
+  "reason": "The 75:25 split is inferred from one lab's 'adjusted' gross margin rather than reported as a training/inference split, and does not outrank Epoch's cross-lab chip-users measurement behind the current 50."
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "accepted",
+  "target": "k_rd",
+  "old": 0.8,
+  "new": 0.75,
+  "reason": "Anthropic's own investor-day figures give both halves of the R&D loop — $1.70 of revenue per $1 of compute and 44% of revenue poured back into R&D compute — which is direct evidence about the feedback itself and nudges k_rd down from an assumption to a measured 0.75. Rule feedback_evidence; “The economics are improving with scale. Anthropic makes $1.70 for every $1 it spends on compute.”",
+  "source": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "accepted",
+  "target": "subst",
+  "old": 25,
+  "new": 30,
+  "reason": "The October Vercel index is the same production-traffic series that set the current value and is fresher, so the migration share rises, but it is capped at 30 to respect the 30-day drift window around the 20 of a month ago. Rule migration_share; “Open-weight models now process more than seven in ten gateway tokens and account for nearly one in four dollars.”",
+  "source": "https://vercel.com/blog/ai-gateway-production-index-october-2026"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-16).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +31%",
+  "new": "+40% vs +31%",
+  "reason": "Observed from source (2026-10-16).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.3%",
+  "new": "6.8%",
+  "reason": "Observed from source (2026-10-16).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.9",
+  "new": "16.5",
+  "reason": "Observed from source (2026-10-15).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "316bp",
+  "new": "325bp",
+  "reason": "Observed from source (2026-10-14).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-14).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-16",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.21%",
+  "new": "5.19%",
+  "reason": "Observed from source (2026-10-14).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-15",
   "source": "https://tomtunguz.com/intelligence-per-dollar-2026/",
   "kind": "accepted",
@@ -3528,100 +3618,5 @@
   "new": 24,
   "reason": "Carry-over toward the target 24 set on 2026-09-03 (Calibration to observed revenue growth under the compute-constrained stance).",
   "source": "https://www.anthropic.com/news/anthropic-amazon-compute"
- },
- {
-  "date": "2026-09-04",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "—",
-  "new": "44% vs 18% per qtr",
-  "reason": "Observed from source (2026-09-04).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-04",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "9.3%",
-  "new": "12.3%",
-  "reason": "Observed from source (2026-09-04).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-04",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.2",
-  "new": "14.3",
-  "reason": "Observed from source (2026-09-03).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-04",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.63%",
-  "reason": "Observed from source (2026-09-02).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-04",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.79%",
-  "new": "4.79%",
-  "reason": "Observed from source (2026-09-02).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "m_rev",
-  "old": 0.6,
-  "new": 0.35,
-  "reason": "Shock audit: with the previous market sensitivity a single −30% valuation dip cut 2028 revenue by more than half. Lowered so one-off shocks dent and persistent ones cascade.",
-  "source": "",
-  "manual": true
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "lambda",
-  "old": 0.2,
-  "new": 0.3,
-  "reason": "Shock audit: faster mean reversion of the market index, consistent with 2026’s quickly-bought corrections.",
-  "source": "",
-  "manual": true
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "overhang",
-  "old": 0.25,
-  "new": 0.5,
-  "reason": "Shock audit: latent demand may exceed capacity by up to 50% and is served at scarcity prices, so demand shocks and breakthroughs register while supply binds.",
-  "source": "",
-  "manual": true
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "scarce",
-  "old": null,
-  "new": 0.5,
-  "reason": "New constant: scarcity pricing when demand outruns capacity (Dwarkesh: compute gets pricier).",
-  "source": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
-  "manual": true
- },
- {
-  "date": "2026-09-03",
-  "kind": "accepted",
-  "target": "mSmooth",
-  "old": null,
-  "new": 0.4,
-  "reason": "New constant: budgets and builds respond to a smoothed market index, matching the absence of budget cuts after the June–July 2026 semiconductor drawdown.",
-  "source": "",
-  "manual": true
  }
 ]
