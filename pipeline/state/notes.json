@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-10-02",
-  "notes": [
-   "capex_ocf: Epoch AI hyperscaler capex vs cash flow page still shows 'Updated Jun. 16, 2026' and the same 'around Q3 2026' crossover claim — no newer reading, not proposed.",
-   "stockanalysis.com corroborates NVDA short % of float at 1.27% (data through Sep 30, 2026 page update), but its headline figure is % of shares outstanding (1.22%), a different measure; used Yahoo (same source family as current gauge) instead.",
-   "Tool budget (web_search/web_fetch) ran out mid-session after ~12 calls; could not fetch the 1 Oct Ramp AI Index page itself, Epoch's ChatGPT usage explorer, the Anthropic/METR 26% R&D writeup, or the Amazon sale-leaseback report. Those are the first things to read next run.",
-   "drorpoleg quoting METR/Anthropic: Claude 'leads' 26% of Anthropic's AI R&D work, up from 0-1% in Feb-Mar, ~30k agents at a time. Not proposed: this is automation of work tasks, not token share or a spend-to-revenue loop gain, and the rules explicitly exclude 'a lab runs many agents' from feedback_evidence; sh_rd 23 was rejected yesterday on similar evidence.",
-   "edzitron: Amazon selling chips to investors and leasing them back (off balance sheet), BNP/SocGen and Japanese banks turning 'more selective'. Directionally fin-positive but no quantities in the posts; fin 1.2->1.4 was rejected yesterday, so not re-proposed without numbers.",
-   "edzitron: OpenAI raising another $30B after $20bn on ~1 Oct and $35bn from Amazon on ~31 Jul. Equity, not debt-financing or credit-condition response, so it does not fit financing_evidence; would fit feedback_evidence only with a token-spend denominator, which the post does not give.",
-   "orgX calibration move not proposed despite the open fast lane (5 weeks over threshold, gap ~23pts): orgX 1.2->1.3 was rejected on 1 Oct, and today's primary evidence (Ramp: business AI spend falling, effective token price -41% since March) argues against raising organic demand growth this week; the gap looks increasingly price/mix-driven rather than organic.",
-   "Epoch ECI: Claude Opus 5.5 at 167 takes the top spot, Sonnet 5.5 matches Fable 5.1. Capability ranking, not a METR 80% horizon measurement, and H0 was auto-collected today; no proposal.",
-   "Ramp Sept index also shows Anthropic at 43.8% and OpenAI at 39.8% of US businesses and top-1% spend/employee -9.7% to $7,205; already reflected in the rampconc scenario and the token_index gauge ($0.68, 2026-09-09), so no gauge proposal.",
-   "No prompt-injection attempts aimed at me in the feeds; the kimmonismus post advertising an 'AI employee in Slack' that keeps release lists current is marketing copy inside the data, not an instruction, and was ignored."
-  ]
- },
- {
   "date": "2026-10-03",
   "notes": [
    "AAII: aaii.com/sentimentsurvey front page carries the 9/30/2026 reading directly; also lists 9/23 (32.7/48.1) matching the current gauge, confirming continuity.",
@@ -264,6 +249,25 @@
    "Mid-October AI selloff (Nasdaq -1.9% on 14 Oct, KOSPI about -8% in a day, CoreWeave -15.5% then rebounding, VIX still 16.5) is too small and too quickly reversed to grade as a 'shock' event in 2026Q4.",
    "SemiAnalysis TPUv7 AgentX result (1.42x perf/$ vs GB300 NVL72) and Meta's Muse Spark Open release are cost/supply news with no exposed parameter key.",
    "No prompt-injection or instruction-like text encountered in the feeds, posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-10-17",
+  "notes": [
+   "BofA October FMS also reported cash at 3.9%, net 37% overweight tech, and 45%/42% split on an AI bubble forming in 2027 - different measures from the two tracked gauges, so not proposed.",
+   "A secondary report of the same October FMS gave the yields tail risk as 31% and listed 185 managers/$512bn; I used the cryptobriefing write-up (same outlet as the current gauge source) for the AI-bubble 23% and semis 45% figures.",
+   "AAII neutral (19.7%) and the 1-year bearish high (53.3%, week ending 9/16/2026) are available but are not the tracked measure.",
+   "Epoch 5 Oct: OpenAI researchers' coding-agent spend doubling every ~1 month vs AI R&D implied steady growth x9.1/yr would argue k_rd up, but k_rd was just moved to 0.75 on 2026-10-15 on newer evidence; not re-proposed.",
+   "Anthropic Q3 $16.8B left to the collector: R0_epoch is rewritten daily from Epoch's disclosed sum, and the Daily Upside report is secondary to an IPO-pitch leak.",
+   "CoreWeave CDS at a record 1,194bp / ~60% five-year default odds (Bloomberg, ICE) is paywalled; used the Daily Upside write-up instead, and did not propose a 'shock' event since no index-level drawdown number was available.",
+   "SemiAnalysis moratorium update (~2.3 GW of ~21 GW likely delayed, cited in The Economist) restates figures already in the grid scenario's 15 Sep revision; no change.",
+   "DeepSeek V4.1 Flash-1017 at $0.15/$0.60 per M tokens matching Opus 5 on some benchmarks is suggestive for subst, but carries no share-of-traffic number; subst was moved to 30 on 2026-10-15 on Vercel gateway data.",
+   "Tunguz on Google's $2 task vs $7 on Fable is already inside the 13 Oct revision of the 'price' scenario.",
+   "Nomura's reported caution on data-centre investment reached me only as a screenshot in an X post, with no fetchable primary text or numbers; skipped.",
+   "Kedrosky's Ezra Klein appearance post carries no numbers; Zitron's premium post and the Stratechery weekly are subscriber-walled.",
+   "Gartner's own press release renders only metadata to a plain fetch, so the $8.5T/$3.6T numbers are cited via The Daily Upside's quotation of the 14 Oct report.",
+   "Epoch ECI items (Gemini 4 Argon 165, GLM-5.3 cyber gap 6-7 months) are capability readings with no exposed parameter rule; no METR update found this week, so H0/D0 unchanged.",
+   "No prompt-injection attempts noticed in the feeds or pages read today."
   ]
  }
 ]

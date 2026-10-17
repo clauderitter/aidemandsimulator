@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-16T11:45:07.121Z",
+ "generated_at": "2026-10-17T11:08:59.291Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -796,9 +796,9 @@
    "fidelity": {
     "ok": false,
     "checks": [
-     "OUT: 2027Q4 $474B vs $600–1500B"
+     "OUT: 2027Q4 $470B vs $600–1500B"
     ],
-    "date": "2026-10-16"
+    "date": "2026-10-17"
    }
   },
   {
@@ -839,11 +839,11 @@
     }
    ],
    "fidelity": {
-    "ok": true,
+    "ok": false,
     "checks": [
-     "ok: growth 2026Q4→2027Q4 ×4.8 vs ×4–8"
+     "OUT: growth 2026Q4→2027Q4 ×4.0 vs ×4–8"
     ],
-    "date": "2026-10-16"
+    "date": "2026-10-17"
    }
   },
   {
@@ -1004,24 +1004,30 @@
    "id": "gap",
    "camp": "bear",
    "name": "Revenue gap",
-   "who": "David Cahn (Sequoia), Bain, Jim Covello (Goldman Sachs); Gary Marcus, Gartner and MIT NANDA on enterprise ROI",
-   "when": "Jul 2026; Sep 2025; Jun 2026; May 2026",
-   "thesis": "Cahn’s $600B question is now a $1.5T question: ~$750B of 2026 datacentre capex needs $1.5T a year of revenue, with ~$3T spent since ChatGPT. Bain needs $2T by 2030 and sees an $800B shortfall; Covello says the industry is “further away” from making money than two years ago. The enterprise evidence points the same way: 42% of companies missed 2025 revenue targets, Gartner puts agentic AI at the peak of inflated expectations with 40%-plus of projects cancelled by end-2027, and 95% of pilots showed no P&L impact. No crash, just an overbuild with utilisation drifting down and returns below the cost of capital. Modelled as weaker loop gains and capability pull, faster migration to cheap models, and a bigger pipeline.",
-   "src": "https://dcahn.substack.com/p/ais-15t-question",
+   "who": "David Cahn (Sequoia), Bain, Jim Covello (Goldman Sachs); Gartner; MIT NANDA",
+   "when": "Jul 2026; Sep 2025; Jun 2026; revised 14 Oct 2026 (Gartner impairment forecast)",
+   "thesis": "Cahn's $600B question is now a multi-trillion question. Gartner (14 Oct 2026) puts the arithmetic plainly: AI data centre owners need $8.5T of cumulative revenue through 2030 to cover announced capex, financing costs and a 12% ROIC, while total enterprise and consumer AI revenue reaches only $3.6T, leaving over $3.5T of spending exposed to impairment and forcing more than 80% of neocloud providers to stop operating independently. Bain still needs $2T by 2030 and sees an $800B shortfall; Covello doubts the use cases ever justify the spend. Demand grows, but nothing like fast enough to service the capital stack.",
+   "src": "https://www.thedailyupside.com/technology/artificial-intelligence/is-coreweaves-tapestry-of-debt-unraveling/",
    "p": {
     "k_rd": 0.4,
     "k_swe": 0.4,
     "k_trd": 0.35,
     "k_oth": 0.1,
     "epsX": 0.7,
-    "subst": 25,
-    "pipe": 22,
+    "subst": 30,
+    "pipe": 20,
     "targetUtil": 0.65
    },
-   "e": [],
+   "e": [
+    {
+     "type": "capex_cut",
+     "q": "2028Q4",
+     "v": 20
+    }
+   ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03",
+   "updated": "2026-10-17",
    "core": true
   },
   {
@@ -1154,10 +1160,10 @@
    "fidelity": {
     "ok": true,
     "checks": [
-     "ok: 2027Q4 $237B vs $225–340B",
-     "ok: 2028Q4 $465B vs $395–675B"
+     "ok: 2027Q4 $232B vs $225–340B",
+     "ok: 2028Q4 $451B vs $395–675B"
     ],
-    "date": "2026-10-16"
+    "date": "2026-10-17"
    }
   },
   {
@@ -1395,63 +1401,62 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-16",
+   "as_of": "2026-10-17",
    "auto": true,
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "id": "fms_tailrisk",
    "label": "“AI bubble” as top tail risk, BofA fund managers",
-   "value": "28%",
-   "sub": "September BofA Global FMS: 28% name an AI bubble the biggest tail risk, down from 32% in August; it is now second behind disorderly bond yields (33%).",
-   "src": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
-   "as_of": "2026-09-17",
+   "value": "23%",
+   "sub": "Share naming \"AI bubble\" the top tail risk in BofA's October FMS (161 managers, $453bn, polled Oct 2-8), down from 28% in September; uncontrolled bond yields now rank first at ~31%.",
+   "src": "https://cryptobriefing.com/bofa-survey-fund-managers-overweight-tech/",
+   "as_of": "2026-10-13",
    "auto": false,
-   "updated": "2026-09-18",
+   "updated": "2026-10-17",
    "cadence_days": 30
   },
   {
    "id": "fms_crowded",
    "label": "Most crowded trade: long semiconductors",
-   "value": "53%",
-   "sub": "September BofA FMS: long global semiconductors still the most crowded trade at 53%, unchanged from August; survey polled ~170 managers.",
-   "src": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
-   "as_of": "2026-09-17",
+   "value": "45%",
+   "sub": "Long global semiconductors remains the most crowded trade in BofA's October FMS but at 45%, down from 53% in September; short US Treasuries second at ~27%.",
+   "src": "https://cryptobriefing.com/bofa-survey-fund-managers-overweight-tech/",
+   "as_of": "2026-10-13",
    "auto": false,
-   "updated": "2026-09-18",
+   "updated": "2026-10-17",
    "cadence_days": 30
   },
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "6.8%",
-   "sub": "16 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "7.0%",
+   "sub": "17 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-16",
+   "as_of": "2026-10-17",
    "auto": true,
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "id": "aaii",
    "label": "AAII retail investors: bullish / bearish",
-   "value": "40.3% / 39.0%",
-   "sub": "AAII weekly survey, week ending Oct 7: bulls +5.7pp to 40.3%, bears -7.5pp to 39.0% (from 34.6%/46.5%); bull-bear spread back positive at +1.3pp, first time since the Sept 16 bearish high of 53.3%.",
+   "value": "38.7% / 41.6%",
+   "sub": "AAII retail bullish/bearish for week ending Oct 14: bulls down 1.6pp and bears up 2.6pp from Oct 7 (40.3%/39.0%), flipping the bull-bear spread to -2.9pp.",
    "src": "https://www.aaii.com/sentimentsurvey",
-   "as_of": "2026-10-07",
+   "as_of": "2026-10-14",
    "auto": false,
-   "updated": "2026-10-10",
-   "cadence_days": 7,
-   "next_check": "2026-10-17"
+   "updated": "2026-10-17",
+   "cadence_days": 7
   },
   {
    "id": "vix",
    "label": "VIX",
-   "value": "16.5",
-   "sub": "15 Oct 2026 close (CBOE)",
+   "value": "20.0",
+   "sub": "16 Oct 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-10-15",
+   "as_of": "2026-10-16",
    "auto": true,
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "id": "fed_fsr",
@@ -1538,22 +1543,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.19%",
-   "sub": "14 Oct 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.10%",
+   "sub": "15 Oct 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-10-14",
+   "as_of": "2026-10-15",
    "auto": true,
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "325bp",
-   "sub": "14 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 84bp",
+   "value": "323bp",
+   "sub": "15 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 84bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-10-14",
+   "as_of": "2026-10-15",
    "auto": true,
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "id": "vc_h1",
@@ -1570,21 +1575,21 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "14 Oct 2026 (FRED DFF)",
+   "sub": "15 Oct 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-10-14",
+   "as_of": "2026-10-15",
    "auto": true,
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "+40% vs +31%",
-   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.9 a year)",
+   "value": "+40% vs +26%",
+   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.5 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-16",
+   "as_of": "2026-10-17",
    "auto": true,
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   }
  ],
  "frozen": [],

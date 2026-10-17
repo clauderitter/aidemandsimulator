@@ -1,5 +1,140 @@
 [
  {
+  "date": "2026-10-17",
+  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/data-insights",
+  "reason": "Epoch's Data Insights index is a fetchable primary feed carrying the quantitative one-pagers (e.g. the 5 Oct OpenAI coding-agent spend figures) that the dead substack feed used to supply, so it is added as a watched source."
+ },
+ {
+  "date": "2026-10-17",
+  "source": "https://epoch.ai/publications/how-do-chinese-ai-companies-make-money",
+  "kind": "rejected",
+  "target": "R0x",
+  "old": null,
+  "new": 17,
+  "reason": "Gate: monthly drift cap reached for R0x (at most ±5 around 10 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-10-17",
+  "source": "https://www.thedailyupside.com/technology/artificial-intelligence/is-coreweaves-tapestry-of-debt-unraveling/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.35,
+  "reason": "The quoted evidence describes Anthropic's growth decelerating from +140% to +45% quarter on quarter and the proposal's own ledger shows the observed-versus-modelled gap collapsing to ~7 points, which does not support raising the organic-growth multiplier again."
+ },
+ {
+  "date": "2026-10-17",
+  "source": "https://www.thedailyupside.com/technology/artificial-intelligence/is-coreweaves-tapestry-of-debt-unraveling/",
+  "kind": "accepted",
+  "target": "scenario:gap",
+  "old": "updated",
+  "new": "updated",
+  "reason": "Gartner's 14 Oct report gives the revenue-gap scenario a freshly dated, quantified version of its own core claim ($8.5T of cost against $3.6T of AI revenue through 2030, >80% of neoclouds ceasing independent operation) from a proponent already named in the scenario."
+ },
+ {
+  "date": "2026-10-17",
+  "source": "https://www.thedailyupside.com/technology/artificial-intelligence/is-coreweaves-tapestry-of-debt-unraveling/",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.5,
+  "reason": "CoreWeave's bond yields and CDS are one issuer's credit stress, and the same article says analysts still expect ~$50B a year of capex from 2027, so the evidence does not show build pace responding more sharply to financing conditions."
+ },
+ {
+  "date": "2026-10-17",
+  "source": "https://www.aaii.com/sentimentsurvey",
+  "kind": "accepted",
+  "target": "gauge:aaii",
+  "old": "40.3% / 39.0%",
+  "new": "38.7% / 41.6%",
+  "reason": "AAII's own survey page reports the identical weekly measure for the week ending 14 Oct (bulls 38.7%, bears 41.6%, spread -2.9pp), a primary and fresher reading."
+ },
+ {
+  "date": "2026-10-17",
+  "source": "https://cryptobriefing.com/bofa-survey-fund-managers-overweight-tech/",
+  "kind": "accepted",
+  "target": "gauge:fms_crowded",
+  "old": "53%",
+  "new": "45%",
+  "reason": "Same BofA FMS most-crowded-trade question one month fresher: long global semiconductors still first but at 45%, down from 53%."
+ },
+ {
+  "date": "2026-10-17",
+  "source": "https://cryptobriefing.com/bofa-survey-fund-managers-overweight-tech/",
+  "kind": "accepted",
+  "target": "gauge:fms_tailrisk",
+  "old": "28%",
+  "new": "23%",
+  "reason": "October BofA Global FMS (161 managers, polled 2-8 Oct) gives a fresher reading of the same tail-risk question, with the AI-bubble share falling from 28% to 23%."
+ },
+ {
+  "date": "2026-10-17",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-17).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-17",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +31%",
+  "new": "+40% vs +26%",
+  "reason": "Observed from source (2026-10-17).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-17",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.8%",
+  "new": "7.0%",
+  "reason": "Observed from source (2026-10-17).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-17",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.5",
+  "new": "20.0",
+  "reason": "Observed from source (2026-10-16).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-17",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "325bp",
+  "new": "323bp",
+  "reason": "Observed from source (2026-10-15).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-17",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-15).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-17",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.19%",
+  "new": "5.10%",
+  "reason": "Observed from source (2026-10-15).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-16",
   "source": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy",
   "kind": "rejected",
@@ -3483,140 +3618,5 @@
   "old": null,
   "new": 13,
   "reason": "The source is a single post that labels itself \"pure speculation\" about Anthropic's ARR accounting, which is not evidence strong enough to move the undisclosed-revenue allowance from $10B to $13B."
- },
- {
-  "date": "2026-09-06",
-  "source": "https://x.com/EpochAIResearch/status/2095972835332399336",
-  "kind": "rejected",
-  "target": "scenario:epochplans",
-  "old": null,
-  "new": null,
-  "reason": "Gate: not distinct from scenario “grid” (paths within 12% at every anchor)."
- },
- {
-  "date": "2026-09-06",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 18% per qtr",
-  "new": "44% vs 18% per qtr",
-  "reason": "Observed from source (2026-09-06).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-06",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "11.1%",
-  "new": "11.8%",
-  "reason": "Observed from source (2026-09-06).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-05",
-  "source": "https://tomtunguz.com/the-4-trillion-dollar-ai-data-center-debt-wave/",
-  "kind": "rejected",
-  "target": "scenario:debtwave",
-  "old": null,
-  "new": null,
-  "reason": "The debt-financed-buildout mechanism is already carried by the active 'credit' scenario, the source is a short post that poses the financing-capacity question rather than stating a build-pace cap, and the proposed rate shock is not supported by the quote."
- },
- {
-  "date": "2026-09-05",
-  "kind": "accepted",
-  "target": "fin",
-  "old": 1,
-  "new": 1.3,
-  "reason": "A dated, quantified sizing of the buildout's debt dependence (~$4T of issuance, 70%+ project leverage) is more recent than the FactSet 9%→32% figure behind the current value and supports a modest increase in financing sensitivity. Rule financing_evidence; “Hyperscalers & data center operators will issue an estimated $4t in debt over the next five years to finance AI infrastructure. This credit ”",
-  "source": "https://tomtunguz.com/the-4-trillion-dollar-ai-data-center-debt-wave/"
- },
- {
-  "date": "2026-09-05",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 18% per qtr",
-  "new": "44% vs 18% per qtr",
-  "reason": "Observed from source (2026-09-05).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-05",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "12.3%",
-  "new": "11.1%",
-  "reason": "Observed from source (2026-09-05).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-05",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "14.3",
-  "new": "14.5",
-  "reason": "Observed from source (2026-09-04).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-05",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.63%",
-  "reason": "Observed from source (2026-09-03).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-05",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.79%",
-  "new": "4.77%",
-  "reason": "Observed from source (2026-09-03).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-04",
-  "source": "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai/",
-  "kind": "accepted",
-  "target": "scenario:price",
-  "old": "updated",
-  "new": "updated",
-  "reason": "Tunguz's reported pricing detail is accurately attributed and directly extends the existing commoditisation scenario with a US hyperscaler selling tokens at roughly a tenth of frontier pricing, justifying the modest 40 → 45 bump inside that what-if."
- },
- {
-  "date": "2026-09-04",
-  "source": "https://x.com/SemiAnalysis_/status/2095535007737459023",
-  "kind": "rejected",
-  "target": "lead",
-  "old": null,
-  "new": 6,
-  "reason": "A single social post about the buildability of one 8 GW campus's land parcels gives no lead-time figure and cannot carry a general shift in first-delivery lead from 5 to 6 quarters."
- },
- {
-  "date": "2026-09-04",
-  "source": "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai/",
-  "kind": "rejected",
-  "target": "subst",
-  "old": null,
-  "new": 25,
-  "reason": "The quote establishes a two-tier price spread on Meta's own API, not evidence that bounded work is actually migrating off frontier endpoints, and the substitution parameter was already raised on this date using direct quality-parity data."
- },
- {
-  "date": "2026-09-04",
-  "source": "https://openai.com/index/gpt-6-astra/",
-  "kind": "rejected",
-  "target": "event:2026Q3",
-  "old": null,
-  "new": 1,
-  "reason": "Gate: source unreachable: Error: 403 https://openai.com/index/gpt-6-astra/."
- },
- {
-  "date": "2026-09-04",
-  "kind": "collected",
-  "target": "pipe",
-  "old": 22.4,
-  "new": 24,
-  "reason": "Carry-over toward the target 24 set on 2026-09-03 (Calibration to observed revenue growth under the compute-constrained stance).",
-  "source": "https://www.anthropic.com/news/anthropic-amazon-compute"
  }
 ]
