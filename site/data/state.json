@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-17T11:08:59.291Z",
+ "generated_at": "2026-10-18T11:31:59.210Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -798,7 +798,7 @@
     "checks": [
      "OUT: 2027Q4 $470B vs $600–1500B"
     ],
-    "date": "2026-10-17"
+    "date": "2026-10-18"
    }
   },
   {
@@ -843,7 +843,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×4.0 vs ×4–8"
     ],
-    "date": "2026-10-17"
+    "date": "2026-10-18"
    }
   },
   {
@@ -1163,7 +1163,7 @@
      "ok: 2027Q4 $232B vs $225–340B",
      "ok: 2028Q4 $451B vs $395–675B"
     ],
-    "date": "2026-10-17"
+    "date": "2026-10-18"
    }
   },
   {
@@ -1401,9 +1401,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-17",
+   "as_of": "2026-10-18",
    "auto": true,
-   "updated": "2026-10-17"
+   "updated": "2026-10-18"
   },
   {
    "id": "fms_tailrisk",
@@ -1430,12 +1430,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "7.0%",
-   "sub": "17 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "7.4%",
+   "sub": "18 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-17",
+   "as_of": "2026-10-18",
    "auto": true,
-   "updated": "2026-10-17"
+   "updated": "2026-10-18"
   },
   {
    "id": "aaii",
@@ -1587,9 +1587,9 @@
    "value": "+40% vs +26%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.5 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-17",
+   "as_of": "2026-10-18",
    "auto": true,
-   "updated": "2026-10-17"
+   "updated": "2026-10-18"
   }
  ],
  "frozen": [],

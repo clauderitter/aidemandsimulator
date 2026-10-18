@@ -192,6 +192,13 @@
    "kind": "html",
    "match": "/engineering",
    "added": "2026-10-14"
+  },
+  {
+   "name": "Epoch AI — largest AI data centers by power capacity",
+   "url": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
+   "kind": "html",
+   "match": "/graphs/largest-ai-data-centers-by-power-capacity",
+   "added": "2026-10-18"
   }
  ],
  "x_handles": [

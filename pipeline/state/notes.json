@@ -1,23 +1,5 @@
 [
  {
-  "date": "2026-10-03",
-  "notes": [
-   "AAII: aaii.com/sentimentsurvey front page carries the 9/30/2026 reading directly; also lists 9/23 (32.7/48.1) matching the current gauge, confirming continuity.",
-   "NVDA short: the original Yahoo article (Sep 2) has no update; used stockanalysis.com (S&P Global Market Intelligence data, last updated Sep 30) for the same % -of-float measure.",
-   "Nasdaq's Sep 24 press release confirms Sep 15, 2026 is the latest settlement date, so as_of set to 2026-09-15 rather than the page's refresh date.",
-   "Did not use S3 Partners notional-dollar short figures ($34-50bn) - different measure from % of float.",
-   "Did not use the 1.22% 'of shares outstanding' figure, since the gauge is defined on float.",
-   "Anthropic leaked S-1 (Reuters via Devdiscourse, 28 Sep): 2025 revenue $4.6bn, $7.33bn compute/infra spend of $12.65bn opex, $42bn net loss, $518bn of cloud/compute obligations, Q2 2026 revenue $11.5bn. Did not propose: no new training/inference split (current `train` basis already uses Epoch's 2025 Anthropic numbers), and R0_epoch is collector-written; the $518bn is lease obligations over unspecified years, too shaky to convert into pipe GW.",
-   "'A quarter of Anthropic's revenue comes from two customers' (S-1) deliberately not proposed for rho: customer concentration alone does not qualify as correlation evidence.",
-   "Tunguz B200 rental $8.08/GPU-hour implies roughly $40-59bn of revenue per GW-year at 0.8-1.0 utilisation and 1.2-1.4 kW per GPU, i.e. it brackets the current mono=50 - evidence for leaving mono alone, so no proposal.",
-   "h100_rental gauge not proposed: Tunguz's index is B200 rentals, a different chip from the gauge's own H100 source.",
-   "boom and takeoff are flagged OUT OF RANGE and need re-fitted overrides, but I found no fresh fetchable statement from Patel/Baker or the AI Futures Project within budget; the only Baker range I found was a third-party X post not on the watched list, so no scenario_update proposed.",
-   "Epoch/YouGov ChatGPT panel (1 Oct): median panelist messages 14/month in Jan 2023 to 36 in Dec 2025, 21+ days/month users 2.6% to 10.5% - consumer intensity, not task share of frontier tokens, so no usage_share proposal.",
-   "Zitron's 2 Oct post on Oracle debt at ~84 cents duplicates the Insurance Journal/Bloomberg report used for the fin proposal; cited the primary report instead.",
-   "No prompt-injection or instruction-like content noticed in the fetched pages or feed items today."
-  ]
- },
- {
   "date": "2026-10-04",
   "notes": [
    "BigGo/OpenRouter weekly ranking (Sept 21-27, 2026): Chinese models 62.22T of 146T total tokens (~43%) - different basis (global totals, not OpenRouter's regional enterprise cuts), so not used; flagged as a conflicting methodology.",
@@ -268,6 +250,21 @@
    "Gartner's own press release renders only metadata to a plain fetch, so the $8.5T/$3.6T numbers are cited via The Daily Upside's quotation of the 14 Oct report.",
    "Epoch ECI items (Gemini 4 Argon 165, GLM-5.3 cyber gap 6-7 months) are capability readings with no exposed parameter rule; no METR update found this week, so H0/D0 unchanged.",
    "No prompt-injection attempts noticed in the feeds or pages read today."
+  ]
+ },
+ {
+  "date": "2026-10-18",
+  "notes": [
+   "METR time-horizons page fetched: states it is no longer actively updated (last updated 8 Sep 2026); benchmark_results_1_1.yaml still tops out at claude_mythos_preview (release 7 Apr 2026, p80 185.9 min) and gives from_2023_on doubling of 128.744 days = 4.2 months — identical to current H0/D0 as-of dates, so no metr_latest or metr_doubling proposal.",
+   "METR predeployment evaluation of Claude Opus 5.5 (22 Sep 2026) contains no time-horizon figure; its '~1.5X overall acceleration in capabilities due to AI, with perhaps 30% chance of 2X' maps to rdBoost, a modelling constant that is off limits.",
+   "orgX / growth_calibration: ledger shows 7 consecutive weeks over 0.05 but the gap has narrowed 16pts -> 7pts and an orgX move to 1.35 was rejected on 17 Oct; did not re-propose a just-rejected handle on a shrinking gap.",
+   "Epoch data-centre ranking gives site-level operational MW but no frontier-fleet total, so no K0 or pipe move was derivable; proposed as a watchlist source instead.",
+   "DCD/CNBC (23 Sep 2026) on OpenAI and Anthropic seeking 20-30 MW inference sites while gigawatt projects lag: suggestive for lead/delivery_timeline but predates the current lead evidence and the page body truncated before any signing-to-delivery figure.",
+   "SemiAnalysis AgentX posts (1.3B tokens per $ of TCO on DeepSeek-V4.1-Flash; TPUv7 FP8 1.67x perf/$ vs GB300 NVL72) are hardware-efficiency results, not revenue per GW, cost per GW or migration share — no clean mapping to mono, capexGW or subst.",
+   "drorpoleg's 'no dark GPUs' post recycles Gavin Baker's Oct 2025 dark-fibre analogy; stale and already inside the boom camp's thesis.",
+   "boom (2027Q4 $470B vs stated $600-1500B) and takeoff (x4.0 vs stated x4-8) are out of their proponents' ranges and need re-fitted overrides, but the server tool budget ran out before I could fetch a proponent page for a verbatim quote; flagged for the next run.",
+   "Epoch's Oct 2026 insights on cyber ECI gaps, math-preprint AI acknowledgements and Ipsos AI-use polling carry numbers but touch no exposed parameter key.",
+   "No instruction-like text addressed to the analyst appeared in any fetched page or in the supplied post list this run."
   ]
  }
 ]
