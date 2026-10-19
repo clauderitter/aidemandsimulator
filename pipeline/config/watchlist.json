@@ -199,6 +199,13 @@
    "kind": "html",
    "match": "/graphs/largest-ai-data-centers-by-power-capacity",
    "added": "2026-10-18"
+  },
+  {
+   "name": "Ramez Naam (RSI and agent-scaling calibration)",
+   "url": "https://www.rameznaam.com/",
+   "kind": "html",
+   "match": "/",
+   "added": "2026-10-19"
   }
  ],
  "x_handles": [

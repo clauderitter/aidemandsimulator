@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-18T11:31:59.210Z",
+ "generated_at": "2026-10-19T13:50:09.845Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -417,14 +417,14 @@
    "short": "Analyst estimates: Anthropic 3.7–5 GW and OpenAI above 2 GW in 2026 (Epoch); Patel has each above 5 GW. No official total."
   },
   "pipe": {
-   "value": 26,
+   "value": 32,
    "label": "Committed pipeline, next 18 months",
    "hidden": false,
    "basis": "Observed frontier revenue grew ~5.8× over the last four quarters (Epoch’s disclosed sum) while quarter zero sits at 100% utilisation, so capacity must be growing far faster than the earlier 16 GW pipeline implied. Analyst estimates put the labs near 26 GW by end-2027 (Epoch and others); Patel has the two big labs tripling to ~18 GW each. 24 GW over six quarters is the middle of that range. Calibrated 2026-09-03 on the maintainer’s instruction.",
-   "as_of": "2026-09-11",
+   "as_of": "2026-10-19",
    "type": "estimate",
-   "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
-   "updated": "2026-09-12",
+   "source": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
+   "updated": "2026-10-19",
    "rule": "GW contracted to come online within six quarters, from lab and cloud announcements",
    "short": "Calibrated to observed revenue growth under the compute-constrained stance: between Epoch-style analyst estimates (~26 GW by end-2027) and Patel’s tripling (~40 GW). Capacity arriving within six quarters."
   },
@@ -798,7 +798,7 @@
     "checks": [
      "OUT: 2027Q4 $470B vs $600–1500B"
     ],
-    "date": "2026-10-18"
+    "date": "2026-10-19"
    }
   },
   {
@@ -843,7 +843,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×4.0 vs ×4–8"
     ],
-    "date": "2026-10-18"
+    "date": "2026-10-19"
    }
   },
   {
@@ -1163,7 +1163,7 @@
      "ok: 2027Q4 $232B vs $225–340B",
      "ok: 2028Q4 $451B vs $395–675B"
     ],
-    "date": "2026-10-18"
+    "date": "2026-10-19"
    }
   },
   {
@@ -1324,9 +1324,10 @@
      "q": "2026Q3"
     }
    ],
-   "status": "active",
-   "updated": "2026-09-10",
-   "added": "2026-09-10"
+   "status": "retired",
+   "updated": "2026-10-19",
+   "added": "2026-09-10",
+   "retired_reason": "Retired to make room for “Swarms buy speed, not intelligence”: the least distinct structural scenario (closest path to its neighbours, 19%)."
   },
   {
    "id": "swarm",
@@ -1392,6 +1393,24 @@
    "status": "active",
    "updated": "2026-10-03",
    "added": "2026-10-03"
+  },
+  {
+   "id": "swarmfade",
+   "camp": "structural",
+   "name": "Swarms buy speed, not intelligence",
+   "who": "Ramez Naam (futurist), cross-posted on Noahpinion by Noah Smith",
+   "when": "19 Oct 2026",
+   "thesis": "Parallel agents are an input with steep diminishing returns: more agents buy speed, not intelligence. Observed multi-agent scaling curves fall orders of magnitude short of RSI-model assumptions (Chan/Hinton/Bengio assume doubling effective research labour raises the software improvement rate ~2.6x), and OpenAI spent 124x the tokens per researcher for only 1.6x the experiments per researcher. Naam's calibration puts the measured software feedback loop five to ten times below self-sustaining. Token burn in AI R&D stays enormous while the feedback from that spend into capability and revenue is weak, and extra R&D spend buys little extra speed.",
+   "src": "https://www.noahpinion.blog/p/can-a-million-ai-agents-create-superintelligence",
+   "p": {
+    "k_rd": 0.4,
+    "rdBoost": 0.08,
+    "epsX": 0.9
+   },
+   "e": [],
+   "status": "active",
+   "updated": "2026-10-19",
+   "added": "2026-10-19"
   }
  ],
  "gauges": [
@@ -1401,9 +1420,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "auto": true,
-   "updated": "2026-10-18"
+   "updated": "2026-10-19"
   },
   {
    "id": "fms_tailrisk",
@@ -1430,12 +1449,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "7.4%",
-   "sub": "18 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "9.0%",
+   "sub": "19 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "auto": true,
-   "updated": "2026-10-18"
+   "updated": "2026-10-19"
   },
   {
    "id": "aaii",
@@ -1587,9 +1606,9 @@
    "value": "+40% vs +26%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.5 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "auto": true,
-   "updated": "2026-10-18"
+   "updated": "2026-10-19"
   }
  ],
  "frozen": [],
@@ -1661,9 +1680,16 @@
     "gObs": 0.3359,
     "gMod": 0.2684,
     "gap": 0.0674
+   },
+   {
+    "week": "2026-W43",
+    "date": "2026-10-19",
+    "gObs": 0.3359,
+    "gMod": 0.2333,
+    "gap": 0.1026
    }
   ],
-  "weeks_at_gap": 7,
+  "weeks_at_gap": 8,
   "fast_lane": false,
   "util0": 0.374
  }

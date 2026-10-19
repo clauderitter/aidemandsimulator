@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-10-19",
+  "source": "https://www.noahpinion.blog/p/can-a-million-ai-agents-create-superintelligence",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.rameznaam.com/",
+  "reason": "Adds a low-cost source that publishes explicit, repeatedly updated numeric calibration of the R&D feedback loop, which is the scarce evidence type the loop-gain keys require."
+ },
+ {
+  "date": "2026-10-19",
+  "source": "https://en.wikipedia.org/wiki/METR",
+  "kind": "rejected",
+  "target": "H0",
+  "old": null,
+  "new": 4.17,
+  "reason": "A Wikipedia summary dated before the current reading's own basis is a weaker source than METR's benchmark file that H0 is derived from, the proposer concedes the underlying yaml may carry a later measurement, and the proposed 4.17 h is neither the current nor the quoted figure but a speed-limited compromise."
+ },
+ {
+  "date": "2026-10-19",
+  "source": "https://www.noahpinion.blog/p/can-a-million-ai-agents-create-superintelligence",
+  "kind": "accepted",
+  "target": "scenario:swarmfade",
+  "old": null,
+  "new": "added",
+  "reason": "A dated, numeric calibration of the AI R&D feedback loop itself (124x tokens per researcher for 1.6x experiments; loop five to ten times below self-sustaining) is the right grade of evidence for k_rd and rdBoost, and the mechanism — agents buy speed, not intelligence, while capability keeps improving — is distinct from the capability-stall premise of the existing scaling-wall scenario. Ramez Naam (futurist), cross-posted on Noahpinion by Noah Smith, 19 Oct 2026."
+ },
+ {
+  "date": "2026-10-19",
+  "source": "",
+  "kind": "expired",
+  "target": "scenario:elastic",
+  "old": "active",
+  "new": "retired",
+  "reason": "Retired to make room for “Swarms buy speed, not intelligence”: the least distinct structural scenario (closest path to its neighbours, 19%)."
+ },
+ {
+  "date": "2026-10-19",
+  "source": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
+  "kind": "rejected",
+  "target": "scenario:physics",
+  "old": null,
+  "new": "SemiAnalysis 19 Oct 2026 update: +50GW global delivery in 2027, 60GW under construction, ~$1T of binding leases signed YTD, shortage migrating to memory/logic, rates forced up by capital demand.",
+  "reason": "Gate: override mono=1 out of bounds."
+ },
+ {
+  "date": "2026-10-19",
+  "kind": "accepted",
+  "target": "pipe",
+  "old": 26,
+  "new": 32,
+  "reason": "SemiAnalysis's 19 Oct 2026 buildout model is newer than the current as-of and verifies >24GW already in advanced construction for 2027 delivery at just 40 campuses against a +50GW forecast, so lifting the six-quarter pipeline from 26 to 32 GW stays conservatively inside the Epoch-to-Patel bracket while reflecting tracked construction rather than announcements. Rule capacity_estimate; “one picture, >24GW of datacenters in advanced stage of construction, all to be delivered in 2027. Most of them are more than halfway done, w”",
+  "source": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration"
+ },
+ {
+  "date": "2026-10-19",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-19).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-19",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +26%",
+  "new": "+40% vs +26%",
+  "reason": "Observed from source (2026-10-19).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-19",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.4%",
+  "new": "9.0%",
+  "reason": "Observed from source (2026-10-19).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-10-18",
   "source": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
   "kind": "accepted",
@@ -3534,89 +3615,5 @@
   "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
   "capped": true,
   "target_value": 1.1
- },
- {
-  "date": "2026-09-08",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "59%",
-  "new": "59%",
-  "reason": "Observed from source (2026-09-08).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-08",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 18% per qtr",
-  "new": "44% vs 20% per qtr",
-  "reason": "Observed from source (2026-09-08).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-08",
-  "kind": "collected",
-  "target": "H0",
-  "old": 3.1,
-  "new": 4.65,
-  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 1 quarter to 2026Q3 at the current doubling rate. Capped: target 5.08, continues next run.",
-  "source": "https://metr.org/time-horizons/",
-  "capped": true,
-  "target_value": 5.08
- },
- {
-  "date": "2026-09-08",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.8%",
-  "new": "11.1%",
-  "reason": "Observed from source (2026-09-08).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-08",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "14.5",
-  "new": "15.3",
-  "reason": "Observed from source (2026-09-07).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-07",
-  "kind": "accepted",
-  "target": "mono",
-  "old": 29.6,
-  "new": 50,
-  "reason": "Stance inverted on the maintainer’s decision after three reviews: the revenue ceiling is now an evidence-driven input (Patel and Tunguz ~$50M/MW for Anthropic on a total-compute basis; SemiAnalysis ~$100B/GW potential) and quarter-zero utilisation is an output, now ~59%. Growth calibration therefore reads as demand-side (orgX) rather than supply-side.",
-  "source": "https://github.com/clauderitter/aidemandsimulator/issues/3",
-  "manual": true
- },
- {
-  "date": "2026-09-07",
-  "source": "https://epoch.ai/data-insights/openai-revenue",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.1,
-  "reason": "The cited Epoch insight is from October 2025 with revenue data ending August 2025 — older than the current as-of date and not independent of the collector's own gauge — so it cannot justify raising the calibration handle."
- },
- {
-  "date": "2026-09-07",
-  "source": "https://x.com/edzitron/status/2096643663954632781",
-  "kind": "rejected",
-  "target": "scenario:contagion",
-  "old": null,
-  "new": "Zitron now puts OpenAI and Anthropic spending commitments above $1.3 trillion (6 Sep 2026), up from the $1.1T cited in mid-August, against labs that still lose billions; the concentration case (73-75% of AWS AI revenue, ~70% of Microsoft/Azure) is unchanged.",
-  "reason": "Gate: scenario missing."
- },
- {
-  "date": "2026-09-07",
-  "source": "https://openai.com/index/research-acceleration-view-inside-openai/",
-  "kind": "rejected",
-  "target": "scenario:oaiaccel",
-  "old": null,
-  "new": null,
-  "reason": "Gate: source unreachable: Error: 403 https://openai.com/index/research-acceleration-view-inside-openai/."
  }
 ]
