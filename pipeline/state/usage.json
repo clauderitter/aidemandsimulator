@@ -500,5 +500,21 @@
    "judge": 0.13,
    "memo": 0.393
   }
+ },
+ {
+  "date": "2026-10-20",
+  "est_usd": 1.789,
+  "input": 68,
+  "output": 26207,
+  "cache_read": 928068,
+  "cache_write": 89448,
+  "searches": 11,
+  "fetches": 15,
+  "calls": 3,
+  "by": {
+   "housekeeping": 0.337,
+   "researcher": 1.344,
+   "judge": 0.108
+  }
  }
 ]

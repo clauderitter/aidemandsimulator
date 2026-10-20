@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-10-20",
+  "source": "https://tomtunguz.com/what-if-they-are-all-clouds/",
+  "kind": "rejected",
+  "target": "scenario:clouds",
+  "old": null,
+  "new": null,
+  "reason": "Tunguz's post argues how to value Anthropic rather than stating a view on the token-demand path, so the proposed thesis of decaying growth meeting contracted capacity (and the k_swe/k_rd cuts it encodes) is the proposer's inference, and its slack-with-commitment mechanism largely duplicates the existing capacity-overhang scenario."
+ },
+ {
+  "date": "2026-10-20",
+  "source": "https://tomtunguz.com/what-if-they-are-all-clouds/",
+  "kind": "rejected",
+  "target": "k_swe",
+  "old": null,
+  "new": 0.55,
+  "reason": "The quote measures Anthropic's total annualised revenue, not software-engineering token spend re-spent on tokens, and the same post's quarter-on-quarter figure (+45%, ~4.3x annualised) sits at the implied steady rate, so the deceleration signal is too ambiguous to move a loop gain."
+ },
+ {
+  "date": "2026-10-20",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-20).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-20",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +26%",
+  "new": "+40% vs +26%",
+  "reason": "Observed from source (2026-10-20).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-20",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.0%",
+  "new": "11.2%",
+  "reason": "Observed from source (2026-10-20).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-20",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "20.0",
+  "new": "18.4",
+  "reason": "Observed from source (2026-10-19).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-20",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "323bp",
+  "new": "331bp",
+  "reason": "Observed from source (2026-10-16).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-20",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-16).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-20",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.10%",
+  "new": "5.09%",
+  "reason": "Observed from source (2026-10-16).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-19",
   "source": "https://www.noahpinion.blog/p/can-a-million-ai-agents-create-superintelligence",
   "kind": "accepted",
@@ -3532,88 +3613,5 @@
   "old": "−20%",
   "new": "≈−50% vs summer peak ($0.97/M tokens)",
   "reason": "Quartz/CNBC reporting of 1 Sep 2026 is newer than the 3 Jul reading and directly states the Silicon Data SDLLMTK index fell to 97 cents per million tokens, less than half its summer peak. Verified against archive snapshot http://web.archive.org/web/20260905210741/https://qz.com/ai-token-prices-record-low-frontier-labs-090126."
- },
- {
-  "date": "2026-09-09",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "59%",
-  "new": "59%",
-  "reason": "Observed from source (2026-09-09).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-09",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 20% per qtr",
-  "new": "44% vs 20% per qtr",
-  "reason": "Observed from source (2026-09-09).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-09",
-  "kind": "collected",
-  "target": "H0",
-  "old": 4.65,
-  "new": 5.08,
-  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 1 quarter to 2026Q3 at the current doubling rate.",
-  "source": "https://metr.org/time-horizons/"
- },
- {
-  "date": "2026-09-09",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "11.1%",
-  "new": "11.3%",
-  "reason": "Observed from source (2026-09-09).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-09",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.3",
-  "new": "15.7",
-  "reason": "Observed from source (2026-09-08).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-09",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.63%",
-  "reason": "Observed from source (2026-09-07).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-09",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.77%",
-  "new": "4.78%",
-  "reason": "Observed from source (2026-09-04).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-08",
-  "source": "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://inferencex.semianalysis.com/",
-  "reason": "Adding a recurring third-party inference serving-economics benchmark as a watchlist feed is low-risk and fills a genuine gap in live price-per-token evidence, with the text adjusted to describe what the feed actually measures."
- },
- {
-  "date": "2026-09-08",
-  "kind": "accepted",
-  "target": "orgX",
-  "old": 1,
-  "new": 1.1,
-  "reason": "Epoch's 27 Aug 2026 run-rate update is newer than the current as-of and independently documents combined lab revenue growing 3.5× year-to-date ($30B→$105B), far above the modelled ~20%/quarter, so the capped +0.1 growth_calibration step on orgX is justified while the fast lane is open. Rule growth_calibration; “OpenAI tripled its revenue run rate (recent revenue extrapolated to an annual rate) in the past year, from $13 billion last August to over $” Capped: target 1.1, continues next run.",
-  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
-  "capped": true,
-  "target_value": 1.1
  }
 ]
