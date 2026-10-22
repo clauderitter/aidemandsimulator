@@ -206,6 +206,13 @@
    "kind": "html",
    "match": "/",
    "added": "2026-10-19"
+  },
+  {
+   "name": "Sacra — Anthropic page (quarterly revenue, margin, revenue p",
+   "url": "https://sacra.com/c/anthropic/",
+   "kind": "html",
+   "match": "/c/anthropic/",
+   "added": "2026-10-22"
   }
  ],
  "x_handles": [

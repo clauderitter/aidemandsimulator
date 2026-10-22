@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-10-07",
-  "notes": [
-   "aaii: no newer reading. AAII sentimentsurvey page fetched 2026-10-07 still headlines \"This week's results Week ending September 30, 2026\" with Bullish 34.6% / Neutral 18.9% / Bearish 46.5% — identical to the current gauge (34.6% / 46.5%, as of 2026-09-30).",
-   "aaii: survey week runs Thursday 12:01 a.m. to Wednesday 11:59 p.m. and results publish Thursday morning, so the next reading (week ending 2026-10-07) is not out until 2026-10-08.",
-   "aaii: secondary write-ups (Seeking Alpha 2026-10-01, AAII Insights 2026-10-03, a substack market brief 2026-10-05) all restate the same 34.6%/46.5% week — no new data, not proposed.",
-   "aaii: recent weekly table on the source (9/23: 32.7/48.1, 9/16: 28.8/53.3, 9/9: 38.0/39.3) confirms 9/30 is the latest published week.",
-   "Ramp Economics Lab (6 Oct 2026): three-month-average share of firms switching AI model providers hit a record 8% in September — frontier-to-frontier switching (Anthropic vs OpenAI launches and price cuts), not migration to open-weight/non-frontier endpoints, so it does not qualify under migration_share for subst; it is corroborating colour for the existing 'price' (commoditisation) scenario, which already carries Tunguz's numbers.",
-   "OpenAI case study 'How Jump Trading is scaling quant research with ChatGPT' (6 Oct 2026): the only named trading-desk disclosure in today's feed, but it contains no quantities at all (no spend, no token or agent counts), so it cannot move sh_trd or k_trd despite being exactly the segment the model is blindest on.",
-   "OpenAI 'Research acceleration: the view inside OpenAI' (Sept 2026, re-read as the Epoch source): discloses 3.1 agent-workdays of agent effort per human workday in the research org. This is a level/intensity measure of internal, unpriced usage, not a share of frontier token revenue, so it is usage_share-adjacent but cannot be converted into an sh_rd move (rough scaling of $600-7,000/researcher/day over a few thousand researchers is ~$1B/yr at list prices, far below the 20% of $153.8B the parameter encodes).",
-   "Epoch data insight 'The record for power capacity in a single data center has doubled every 10 months' (xAI Colossus 2 at ~950 MW): dated 4 Sep 2026, single-site record rather than fleet GW, and already older than the K0/pipe as-of dates — no capacity_estimate proposal.",
-   "Epoch 'LLM inference prices have fallen rapidly but unequally across tasks' is from Mar 2025; no newer reading for the token_index gauge turned up.",
-   "Epoch report on how Chinese AI firms make money (6 Oct 2026, via @EpochAIResearch): Chinese labs' revenue is reported as a small fraction of OpenAI/Anthropic and is largely open-weight/consumer app monetisation (~6% of MiniMax app users pay), so it does not support raising R0x, which is an allowance for undisclosed Western frontier revenue.",
-   "METR's 6 Oct 2026 post is about agents subverting observability; it contains no new time-horizon measurement, so H0 (8.34h, March 2026) and D0 stay put. METR's time-horizons page has not been refreshed since ~May 2026.",
-   "Kedrosky roundup (6 Oct 2026): S&P-ex-AI divergence and call-centre employment -4% y/y are macro/labour context, not co-movement of the three demand segments, so they do not qualify under correlation_evidence; the rest of the post is paywalled.",
-   "Ed Zitron 'Credit Crunch' (6 Oct 2026) would not fetch (timeout) and his debt numbers are already encoded in the 'credit' and 'contagion' scenarios; no fin move proposed (fin 1.05 was rejected on 2026-10-04).",
-   "OpenAI's 722 AI-generated mathematics manuscripts (6 Oct 2026) came from an unreleased internal model; I could not verify the page within budget and an internal-model demonstration is not a deployed capability release, so no 2026Q4 'release' event proposed.",
-   "No prompt-injection or instruction-like text was found in any feed item, X post or fetched page today."
-  ]
- },
- {
   "date": "2026-10-08",
   "notes": [
    "Epoch AI, 6 Oct: China's six leading AI firms earn ~10% of OpenAI+Anthropic combined AI revenue — a candidate R0x (undisclosed_estimate) move, but my fetch budget ran out before I could verify a 15-word verbatim quote on the report page; flag for next run.",
@@ -262,6 +242,29 @@
    "Vercel's item this week was an engineering post (durable harnesses), not the monthly Production Index; subst left at its 15 Oct September reading.",
    "web_search quota was exhausted early in the run; proposals rest on URLs already in context (X posts quoted verbatim from the supplied list) plus direct fetches of wheresyoured.at, vercel.com and the econlab/epochai Substack landing pages (both JS-only, no post list).",
    "No prompt-injection attempts found in the feeds or posts read; the only imperative text was ordinary product marketing and subscription pitches, which I ignored."
+  ]
+ },
+ {
+  "date": "2026-10-22",
+  "notes": [
+   "openrouter_cn: no newer same-measure reading found. Searches surfaced only the CNBC 2026-09-26 piece already behind the current 57-67% tile and an older Yahoo/CNBC summary (46.4% of routed tokens, weekly peak 46%, mid-2026, page ~105 days old), which is an earlier and differently-framed figure, not an update. Leaving tile at 57-67% as of 2026-09-14.",
+   "bonds: candidates newer than the 2026-07-31 $225B Fortune reading all look definitionally different and would imply an implausible decline, so not proposed. (a) X/@GlobalMktObserv, ~2026-09-12: hyperscalers issued $218.7B of debt so far in 2026, more than double ~$102B in all of 2025 - social post, not an equivalent official source, and its 2025 base ($102B) differs from Fortune's. (b) aiexpert.news headline, ~2026-08-21: $223B in AI bonds in 2026 - headline only, could not retrieve body text for a 15-word verbatim quote. (c) mlq.ai, ~2026-08-23: 'about $220 billion' - headline only, same problem.",
+   "bonds: BigGo/FactSet 2026-10-21 reports roughly $80B of data-center-related bonds issued so far in 2026, about $37B junk-rated vs $36B total in 2025. This is data-center bonds (incl. neoclouds/SPVs), not hyperscaler corporate issuance - different measure, so not used as a refresh. Possible candidate for a new tile.",
+   ">bonds: useluminix (2026-10-09) compiles J.P. Morgan AM at ~$17B (2024), $109B (2025), $194B in H1 2026, and Vanguard/Bloomberg at ~$132B of U.S. bonds through 2026-07-31; both are earlier cutoffs or narrower baskets than the current tile, and the source itself calls the gap definitional. Goldman (via Reuters, late July) expects ~$250B for full-year 2026 and $400B in 2027 - a forecast, not a reading.",
+   "Budget note: web_search/web_fetch quota was exhausted mid-task; a follow-up run should check Bloomberg/Reuters or LSEG for an October-dated hyperscaler YTD issuance total on Fortune's basket, and OpenRouter's own rankings page or a post-2026-09-26 CNBC/Vercel update for the Chinese-model token share.",
+   "SpaceX Q3 8-K/call: 1.7 GW nameplate at 30 Sep (1.4 GW at 30 Jun, 0.6 GW a year earlier), $16.4B SI capex in the quarter - tempting for K0 and capexGW, but I cannot tell whether K0=14.3 already carries SpaceXSI, and quarterly capex leads capacity by several quarters, so no K0 or capexGW proposal.",
+   "Did not propose history_K: 2026Q3 is already set at 10 GW and the SpaceX disclosure is one component, not a total.",
+   "orgX / growth_calibration: ledger still shows 8 consecutive weeks above 0.05 with slack (util 37%), but the gap has narrowed (W41 16pts, W42 7pts, W43 10pts), Anthropic's q/q growth decelerated from >100% to 46%, and orgX 1.37 was rejected on 2026-10-21 - judged a converging gap rather than a calibration move this run.",
+   "R0_epoch: Anthropic's Q3 $16.8B (~$67B annualised, CNBC 15 Oct) is newer than Epoch's 2026-10-09 sum, but primary_report requires proposing the new sum with components and I could not verify Epoch's current per-lab components; left to the collector.",
+   "Tunguz 'The GPU Revenue Ladder' (21 Oct): DeepSeek $38, B200 spot $8.77, SpaceX negotiated $5.27, realised $2.44 per card-hour, SpaceX CFO 'payback of less than a year'. Used as corroboration in the mono rationale.",
+   "No scenario_update on 'price' from Tunguz's new piece: he has not recanted token deflation (still cites the 377x fall in cost per task), he only argues card-hour economics are healthy - flagged for the weekly review.",
+   "JPMorgan '60% of 2027 capacity not under construction, another 7% delayed', recirculated by Tunguz, dates from early June 2026 - not new, no pipe move.",
+   "SemiAnalysis 21 Oct: GB300 $50/GPU/hr profit at 60% utilisation at OpenRouter prices vs DeepSeek $39/GPU/hr off-peak - supporting, but a thread with its own assumptions, cited only in rationale.",
+   "No new METR measurement found (public frontier still Claude Mythos Preview, March 2026) - no metr_latest or metr_doubling proposal.",
+   "Ed Zitron's thread questioning Anthropic's $9.8bn Q3 compute spend is arithmetic over third-party analyst figures, not a disclosure; skipped.",
+   "Did not propose a scenario_new from the SpaceX call ('merchant compute pays back in under a year') - overlaps heavily with the active physics and supercycle scenarios.",
+   "Considered an event for 2026Q3 price cuts (OpenAI Luna -80% in July, another -50% in September per Tunguz) but those quarters' revenue is already in history and would risk double counting.",
+   "No prompt-injection or instruction-like content was found in the feeds, X posts or pages read today."
   ]
  }
 ]
