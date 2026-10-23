@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-10-23",
+  "source": "https://dealroom.co/news/165147-blackstone-backs-18b-debt-deal-for-anthropics-ai-chips/",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.4,
+  "reason": "A single $18B Anthropic chip-debt package, which the source itself describes as secured against long-term contracts and structured to manage risk, shows the scale of private credit in the buildout but not that build pace has become more sensitive to credit conditions than the 1.2 reading assumes."
+ },
+ {
+  "date": "2026-10-23",
+  "source": "https://stockanalysis.com/stocks/nvda/statistics/",
+  "kind": "accepted",
+  "target": "gauge:nvda_short",
+  "old": "1.27% of float",
+  "new": "1.34% of float",
+  "reason": "Same measure as the current tile — short interest as a share of float — from a fresher settlement (311.4M shares short, up from 294.2M, 1.34% of float, 2.75 days to cover), with the headline relabelled to match the existing unit."
+ },
+ {
+  "date": "2026-10-23",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-23).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-23",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-10-23).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-23",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.3%",
+  "new": "8.9%",
+  "reason": "Observed from source (2026-10-23).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-23",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.7",
+  "new": "19.0",
+  "reason": "Observed from source (2026-10-22).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-23",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "333bp",
+  "new": "327bp",
+  "reason": "Observed from source (2026-10-21).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-23",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-21).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-23",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.12%",
+  "new": "5.13%",
+  "reason": "Observed from source (2026-10-21).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-22",
   "source": "https://sacra.com/c/anthropic/",
   "kind": "accepted",
@@ -3532,86 +3613,5 @@
   "new": 26,
   "reason": "SemiAnalysis's 11 Sep datacentre model is newer than the current as-of and quantifies a larger near-term pipeline (~6.5 GW Nvidia-backstopped and mostly unbuilt, ~15 GW of gigascaler third-party leases in 2026 rising above 35 GW by 2028), which supports a small capped rise in the committed 18-month pipeline to 26 GW. Rule capacity_estimate; “By our count, Nvidia today backstops ~6.5 GW of capacity, most of which is not yet built. Our datacenter model has Microsoft, Meta, AWS and ”",
   "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i"
- },
- {
-  "date": "2026-09-12",
-  "source": "https://aiweekly.co/alerts/chinese-ai-models-hit-record-58-of-us-openrouter-traffic (reporting Bloomberg, 2026-07-22)",
-  "kind": "rejected",
-  "target": "gauge:openrouter_cn",
-  "old": null,
-  "new": 58,
-  "reason": "Gate: source unreachable and no archive snapshot: Error: 404 https://aiweekly.co/alerts/chinese-ai-models-hit-record-58-of-us-open."
- },
- {
-  "date": "2026-09-12",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-12).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-12",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 20% per qtr",
-  "new": "44% vs 22% per qtr",
-  "reason": "Observed from source (2026-09-12).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-12",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "14.5%",
-  "new": "10.5%",
-  "reason": "Observed from source (2026-09-12).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-12",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "17.8",
-  "new": "15.8",
-  "reason": "Observed from source (2026-09-11).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-12",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.63%",
-  "reason": "Observed from source (2026-09-10).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-12",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.83%",
-  "new": "4.95%",
-  "reason": "Observed from source (2026-09-10).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-11",
-  "source": "https://tomtunguz.com/three-waves-of-ai-consumption/",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.2,
-  "reason": "The Tunguz post predates the current as-of date, rests on an August a16z compilation of OpenRouter data whose own caveats (open-weight-skewed mix, mostly cached prompts billed at lower rates) make it weaker evidence than the Epoch run-rate figures that already justified the 8 September move to 1.1."
- },
- {
-  "date": "2026-09-11",
-  "kind": "accepted",
-  "target": "sh_swe",
-  "old": 15,
-  "new": 20,
-  "reason": "OpenAI's own enterprise usage data (Codex = 64% of enterprise output tokens, June 2026) is a primary reported source upgrading a stale estimate that already conceded coding was larger, so the capped move to 20 is warranted while noting the measure is token share, not revenue share. Verified against archive snapshot http://web.archive.org/web/20260903053545/https://openai.com/signals/enterprise-data/. Rule usage_share; “As of June 2026, agentic AI use (defined as Codex tokens) accounted for 64% of combined Codex and ChatGPT output tokens among enterprise cus”",
-  "source": "https://openai.com/signals/enterprise-data/"
  }
 ]

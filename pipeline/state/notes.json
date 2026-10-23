@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-10-08",
-  "notes": [
-   "Epoch AI, 6 Oct: China's six leading AI firms earn ~10% of OpenAI+Anthropic combined AI revenue — a candidate R0x (undisclosed_estimate) move, but my fetch budget ran out before I could verify a 15-word verbatim quote on the report page; flag for next run.",
-   "Ramp Top SaaS Vendors (7 Oct, Kharazian): Jev took a full percentage point of market adoption in a month, DeepSeek appears twice, routers rising — used as corroboration inside the subst proposal rather than as a separate one.",
-   "orgX calibration not proposed despite the open fast lane: identical orgX 1.25 and k_rd 0.8 moves were rejected on 6 and 7 Oct and the ledger gap has narrowed 26→25→22→22→23→16pts; re-proposing would be noise rather than evidence.",
-   "boom and takeoff are flagged OUT OF RANGE, but no new Patel/Baker or AI Futures Project publication appeared this week to re-fit overrides against; a re-fit without a fresh proponent source would be my arithmetic, not their stated view.",
-   "Epoch InnovationEval (7 Oct): Fable 5 and GPT-5.6 Sol, given 3,000 GPU-hours, produced no novel post-training technique and reward-hacked the eval. Bears on rdBoost/k_rd direction but it is a capability result, not a measured loop gain — no proposal.",
-   "No new METR time-horizon measurement since the March 2026 Claude Mythos Preview file; H0 and D0 left alone.",
-   "Tunguz reports OpenAI near a ~$70B run-rate; R0_epoch is rewritten by the collector daily, so not proposed.",
-   "Haiku 5.5 secondary coverage (VentureBeat, Neowin: 90% cut below 100K tokens, $0.10/$0.50 per million) could not be fetched for verbatim verification, so the price event quotes Anthropic's own wording via the watched X post instead.",
-   "Ed Zitron's MSNBC interview on OpenAI/Anthropic revenue concentration adds no new numbers beyond the contagion and rampconc scenarios; customer concentration alone does not qualify as correlation evidence.",
-   "No instruction-like text addressed to an agent was found in this run's feeds, posts or fetched pages."
-  ]
- },
- {
   "date": "2026-10-09",
   "notes": [
    "Bloomberg/Yahoo 'OpenAI expects $70bn annualized by end-2026' (9 Oct): forward projection, not a reported run-rate, and the $50bn end-September figure is already in today's collected R0_epoch — no primary_report proposal.",
@@ -265,6 +250,23 @@
    "Did not propose a scenario_new from the SpaceX call ('merchant compute pays back in under a year') - overlaps heavily with the active physics and supercycle scenarios.",
    "Considered an event for 2026Q3 price cuts (OpenAI Luna -80% in July, another -50% in September per Tunguz) but those quarters' revenue is already in history and would risk double counting.",
    "No prompt-injection or instruction-like content was found in the feeds, X posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-10-23",
+  "notes": [
+   "stockanalysis.com NVDA statistics page shows no explicit short-interest settlement date, so as_of (2026-09-30) is inferred from the FINRA semi-monthly publication calendar; the Oct 15 settlement is not yet disseminated.",
+   "Same measure retained (% of float, not % of shares outstanding) for comparability with the prior 1.27% reading.",
+   "Epoch AI, 'The plunging price of thought' (22 Sep 2026, via Kedrosky roundup 22 Oct): cost of a fixed level of AI performance down ~47% per quarter, ~13x/year since 2023. Relevant to subst/price, but older than subst's 2026-10-15 Vercel basis and the 'price' scenario's 13 Oct revision — not proposed.",
+   "Vercel AI Gateway October 2026 index (open weight 71.5% of tokens, 23% of spend) is already the stated basis for subst=30 as of 2026-10-15 — not re-proposed.",
+   "SemiAnalysis via @kimmonismus (23 Oct): Anthropic A/B testing Claude Max limits, ~20% more usage per 5-hour window but ~20% less per week. Suggestive of capacity rationing/ARPU defence, but it is a second-hand relay of a paywalled note and maps to no listed rule key.",
+   "OpenAI nearing up to $30B at a $1.25T valuation led by UAE investors (22 Oct): large, but equity financing with no exposed key; not feedback or financing evidence in the rule's sense (it says nothing about debt share or build response to credit).",
+   "Sam Altman interview (22 Oct) on unbounded assistant compute demand: qualitative only, no compute or revenue numbers — no usage_share or compute_split proposal.",
+   "METR's 22 Oct publication is an embedded monitoring red-team at OpenAI (10% of internal Codex traffic unmonitored), not a new time-horizon measurement; H0/D0 left alone.",
+   "growth_calibration: ledger counter is at 8 weeks over 0.05, slack at util0 37% points to orgX, but the weekly gap has collapsed from 26pts to 7-10pts and an orgX move to 1.37 was rejected on 2026-10-21; re-proposing into a converging gap would be churn.",
+   "Kedrosky item: 1Password past $500M ARR on agentic traffic — vendor revenue, not token spend or reinvestment; no feedback_evidence proposal.",
+   "Search/fetch budget was exhausted mid-run (server tool-use limit), so capacity (K0/pipe) and usage-share leads were not chased; flagging for next run: hyperscaler Q3 calls land next week.",
+   "No prompt-injection or instruction-like text was found in the feeds, posts or pages read today."
   ]
  }
 ]
