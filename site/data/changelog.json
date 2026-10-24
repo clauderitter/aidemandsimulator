@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-10-24",
+  "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/circularity-in-ai-shows-up-in-token-spending-too",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+  "reason": "Adds a frequently updated, freely fetchable institutional macro feed covering AI capex, concentration and credit conditions to the watchlist; individual items will still have to clear the evidence bar on their own."
+ },
+ {
+  "date": "2026-10-24",
+  "source": "https://tomtunguz.com/how-large-is-the-ai-circle/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.4,
+  "reason": "The quote reports aggregate US venture investment, not observed token-spend growth in the model's segments, and the proposal's own ledger shows the observed-versus-modelled gap down to 7-10 points, so it does not justify another step up in the organic growth multiplier."
+ },
+ {
+  "date": "2026-10-24",
+  "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/circularity-in-ai-shows-up-in-token-spending-too",
+  "kind": "rejected",
+  "target": "rho",
+  "old": null,
+  "new": 0.7,
+  "reason": "The Apollo chart post measures the funding composition of top token spenders, not the co-movement between segments that rho represents, and the same Ramp finding was already rejected for rho on 21 October and is carried by the active rampconc and contagion scenarios."
+ },
+ {
+  "date": "2026-10-24",
+  "source": "https://www.aaii.com/latest/article/556561-aaii-sentiment-survey-pessimism-pushes-on",
+  "kind": "accepted",
+  "target": "gauge:aaii",
+  "old": "38.7% / 41.6%",
+  "new": "36.9% / 45.8%",
+  "reason": "AAII's own weekly survey gives a one-week-fresher reading of the identical measure (week ending 21 Oct: bulls 36.9%, bears 45.8%, spread -8.9pp), so the gauge refreshes from its primary source."
+ },
+ {
+  "date": "2026-10-24",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-24).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-24",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-10-24).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-24",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.9%",
+  "new": "9.7%",
+  "reason": "Observed from source (2026-10-24).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-24",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "19.0",
+  "new": "19.4",
+  "reason": "Observed from source (2026-10-23).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-24",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "327bp",
+  "new": "340bp",
+  "reason": "Observed from source (2026-10-22).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-24",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-22).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-24",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.13%",
+  "new": "4.96%",
+  "reason": "Observed from source (2026-10-22).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-23",
   "source": "https://dealroom.co/news/165147-blackstone-backs-18b-debt-deal-for-anthropics-ai-chips/",
   "kind": "rejected",
@@ -3514,104 +3613,5 @@
   "new": "3.63%",
   "reason": "Observed from source (2026-09-11).",
   "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-15",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.95%",
-  "new": "4.96%",
-  "reason": "Observed from source (2026-09-11).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-14",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-14).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-14",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 22% per qtr",
-  "new": "44% vs 22% per qtr",
-  "reason": "Observed from source (2026-09-14).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-14",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.5%",
-  "new": "12.9%",
-  "reason": "Observed from source (2026-09-14).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-13",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-13).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-13",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 22% per qtr",
-  "new": "44% vs 22% per qtr",
-  "reason": "Observed from source (2026-09-13).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-13",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.5%",
-  "new": "10.5%",
-  "reason": "Observed from source (2026-09-13).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-12",
-  "source": "https://paulkedrosky.com/circular-ai-revenues-customer-concentration-and-mega-account-executives/",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.2,
-  "reason": "The Kedrosky post is a commentary on customer concentration and circularity whose quoted line is a generic observation about revenue scaling, and a second-hand 'could soon reach $10B' figure for one account does not evidence a higher economy-wide organic growth multiplier."
- },
- {
-  "date": "2026-09-12",
-  "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
-  "kind": "rejected",
-  "target": "scenario:backstop",
-  "old": null,
-  "new": null,
-  "reason": "Gate: same mechanism as scenario “supercycle” (same shock types and overrides); propose a scenario_update instead."
- },
- {
-  "date": "2026-09-12",
-  "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.15,
-  "reason": "The quoted line is a qualitative remark that lenders have 'some shielding', and the same note stresses that Nvidia's ability to honour the guarantees is correlated with a downturn, so it does not establish that marginal builds have become less sensitive to credit and market conditions — and a ballooning guarantee stack reads as much as evidence of financing dependence as of insulation from it."
- },
- {
-  "date": "2026-09-12",
-  "kind": "accepted",
-  "target": "pipe",
-  "old": 24,
-  "new": 26,
-  "reason": "SemiAnalysis's 11 Sep datacentre model is newer than the current as-of and quantifies a larger near-term pipeline (~6.5 GW Nvidia-backstopped and mostly unbuilt, ~15 GW of gigascaler third-party leases in 2026 rising above 35 GW by 2028), which supports a small capped rise in the committed 18-month pipeline to 26 GW. Rule capacity_estimate; “By our count, Nvidia today backstops ~6.5 GW of capacity, most of which is not yet built. Our datacenter model has Microsoft, Meta, AWS and ”",
-  "source": "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i"
  }
 ]

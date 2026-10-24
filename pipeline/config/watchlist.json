@@ -213,6 +213,13 @@
    "kind": "html",
    "match": "/c/anthropic/",
    "added": "2026-10-22"
+  },
+  {
+   "name": "Apollo Daily Spark (Torsten Slok)",
+   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
+   "kind": "html",
+   "match": "/wealth/insights-news/insights/daily-spark",
+   "added": "2026-10-24"
   }
  ],
  "x_handles": [

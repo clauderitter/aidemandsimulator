@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-10-09",
-  "notes": [
-   "Bloomberg/Yahoo 'OpenAI expects $70bn annualized by end-2026' (9 Oct): forward projection, not a reported run-rate, and the $50bn end-September figure is already in today's collected R0_epoch — no primary_report proposal.",
-   "Epoch 'An update on AI's most important number' (OpenAI >$40B, combined $105B by August): pre-dates the current collected sum, already reflected in the middle scenario's basis.",
-   "State of AI Report 2026 (Benaich, 8 Oct): $105B combined run-rate, benchmark cost ~13x cheaper a year — real reach but the view overlaps the active 'price'/'elastic'/'middle' scenarios; no distinct quantitative path, so no scenario_new.",
-   "Ed Zitron thread (9 Oct) on Anthropic gross revenue and Reuters' 47%-through-Amazon/Google figure: same accounting fact as the Axios piece, which is the primary and fetchable source; cited there instead.",
-   "The Information's '$517B of Anthropic compute deals in 11 months' (linked by Axios): paywalled, no GW figure available, so no pipe/fin proposal.",
-   "Epoch AI data-centers explorer: '93 AI data centers ... combined 13.8 GW of IT power capacity' — undated on-page and covers all AI datacentres (Google/Meta/xAI included), not frontier-lab compute; not comparable to K0.",
-   "LegalOn cuts Codex costs 65% by routing tasks to Sol/Luna, Sophos 96% faster investigations (OpenAI case studies): single-customer anecdotes, within-vendor downshifting; too thin for subst, which was already moved and re-rejected this week.",
-   "Gavin Baker (9 Oct) on open-weight tokens consuming the same compute as frontier tokens: no numbers, so no migration_share move.",
-   "Epoch Automation Reports (8 Oct): a new internal eval of Fable 5.1 / GPT-6 Astra, not a METR 80% time-horizon measurement; H0 and D0 left at their April readings.",
-   "Axios-sourced claim (via @kimmonismus) that lab executives expect a major AI incident within 6-12 months: anonymous, one number, no quantitative path — noted as a possible future 'reg' scenario, not proposed.",
-   "Anthropic's $150M three-year Genesis Mission commitment: immaterial against a $134B run-rate.",
-   "No prompt-injection attempts spotted in the feeds or posts read today."
-  ]
- },
- {
   "date": "2026-10-10",
   "notes": [
    "token_index: no newer reading — Ramp's latest monthly AI Index post is still the Sept 9, 2026 'Cracks in the AI Thesis Part 2' with effective price $0.68/M tokens; ramp.com/data research list shows nothing newer on the price index (Oct 6 switching post and Oct 7 SaaS vendors post contain no token-price figure).",
@@ -267,6 +250,27 @@
    "Kedrosky item: 1Password past $500M ARR on agentic traffic — vendor revenue, not token spend or reinvestment; no feedback_evidence proposal.",
    "Search/fetch budget was exhausted mid-run (server tool-use limit), so capacity (K0/pipe) and usage-share leads were not chased; flagging for next run: hyperscaler Q3 calls land next week.",
    "No prompt-injection or instruction-like text was found in the feeds, posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-10-24",
+  "notes": [
+   "Bearish leg of quote comes from same AAII article: bearish sentiment increased 4.2 percentage points to 45.8%, above its 31.5% historical average for the 37th consecutive week.",
+   "Prior reading (38.7% / 41.6%, week ended 2026-10-14) is superseded; no later survey than the 2026-10-22 release exists as of today.",
+   "Neutral sentiment (17.3%) and bull-bear spread (-8.9%) available but not the gauge's measure, so left out of new_text.",
+   "mono: Tunguz 'The GPU Revenue Ladder' (21 Oct) gives SpaceX Q3 8-K AI revenue $7,560m annualised over 1.7 GW installed ($4.4B per total GW realised) and a $5.27/card-hour contract rate (~$38B per total GW at contract). The two bracket mono=50 per inference GW once divided by the inference share and are realised-vs-ceiling measures; also mono->55 was rejected on 22 Oct, so no proposal.",
+   "capexGW: same post assumes 'a $46 per watt build costs $55,200' per card, i.e. $46B/GW, below the current 54. Provenance of the $46/W is a footnote assumption in a payback calculation and may be a B200-era IT-load figure; it conflicts with Nvidia's $40B/GW of silicon alone for Vera Rubin, so I did not propose a cut.",
+   "pipe/lead: JPMorgan (via WSJ, June 2026, cited by Tunguz) says >60% of 2027 data centre capacity is not yet under construction and 7% is delayed; Goldman puts on-time delivery at 50-60% vs a 72% base rate. June vintage, second-hand, so not proposed - but it argues the pipeline is optimistic if it recurs in a primary source.",
+   "subst: Qualcomm CEO Amon (8 Oct, via Tunguz) says frontier labs want 100B-parameter models on handsets by 2028, and Kimi K3.1 Pro launched 23 Oct at $2/$10 per million tokens (~50% below Opus) claiming parity on 6 of 14 benchmarks. Forward-looking/price-only, no volume response yet; the Oct Vercel index already sets subst=30 (as of 15 Oct), so no move.",
+   "Vercel AI Gateway October index (open weight >70% of tokens, ~25% of spend) is the same reading already applied to subst on 15 Oct; the new Vercel feed item was an engineering blog post, not the index.",
+   "Ara Kharazian (23 Oct) posts that the most advanced adopters are now spending less on AI and that Notion may have engineered an outright decline in total AI spend, but explicitly notes the chart scales are unreadable - no numbers, so no k_oth/orgX proposal. The Oct Ramp index itself is already in the rampconc scenario.",
+   "H0/D0: no new METR measurement found. Wikipedia's METR table (last updated 9 May 2026) tops out at Claude Mythos Preview 80% = 3h06m and GPT-5.6 (Sol) 50% = 11h18m; it is a different series from the benchmark file H0=8.34 is read from, so proposing off it would mix measures. Search budget was exhausted before metr.org could be checked directly.",
+   "Event candidate not proposed: Tunguz reports OpenAI cut Luna pricing 80% in July and another 50% in September 2026 - a realised price shock, but it applies to one cheap model rather than frontier endpoints, so recording it as a 2026Q3 'price' event would overstate it.",
+   "Kedrosky's 23 Oct piece headlines a $3.7T annual revenue requirement, but the arithmetic sits behind a premium interactive tool and the inputs are Columbia/Bain figures already represented by the 'gap' scenario.",
+   "Zitron on Blackstone ($200bn of data centre assets) and on OpenAI/Anthropic's $1.3tn of obligations is financing_evidence in direction only; a fin increase to 1.4 was rejected on 23 Oct, so not re-proposed.",
+   "vc_h1 gauge not proposed: Tunguz's $516b is US-only PitchBook-NVCA for nine months, not the same measure as the gauge's $679B YTD figure.",
+   "Scenario slots: all four rotating slots are occupied (rampconc, swarm, overhang, swarmfade) and nothing read today is a distinct, attributable, two-number view not already covered; boom and takeoff are flagged out of range but a boom update was rejected on 22 Oct and no proponent has published revised numbers this week.",
+   "No prompt-injection attempts were found in the feeds, posts or pages read today."
   ]
  }
 ]
