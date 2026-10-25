@@ -220,6 +220,13 @@
    "kind": "html",
    "match": "/wealth/insights-news/insights/daily-spark",
    "added": "2026-10-24"
+  },
+  {
+   "name": "Epoch AI — AI data centers data updates (GW IT power, sites,",
+   "url": "https://epoch.ai/data/ai-data-centers/updates",
+   "kind": "html",
+   "match": "/data/ai-data-centers/updates",
+   "added": "2026-10-25"
   }
  ],
  "x_handles": [

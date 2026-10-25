@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-24T11:24:17.303Z",
+ "generated_at": "2026-10-25T11:53:38.759Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -798,7 +798,7 @@
     "checks": [
      "OUT: 2027Q4 $510B vs $600–1500B"
     ],
-    "date": "2026-10-24"
+    "date": "2026-10-25"
    }
   },
   {
@@ -843,7 +843,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×3.5 vs ×4–8"
     ],
-    "date": "2026-10-24"
+    "date": "2026-10-25"
    }
   },
   {
@@ -1163,7 +1163,7 @@
      "ok: 2027Q4 $232B vs $225–340B",
      "ok: 2028Q4 $457B vs $395–675B"
     ],
-    "date": "2026-10-24"
+    "date": "2026-10-25"
    }
   },
   {
@@ -1196,19 +1196,18 @@
    "id": "grid",
    "camp": "structural",
    "name": "Grid bottleneck",
-   "who": "SemiAnalysis (Maya Barkin, Reyk Knuhtsen, Jeremie Eliahou Ontiveros, Dylan Patel) grid, behind-the-meter and moratorium analyses; TIME and Platformer on local opposition",
-   "when": "Jun–Jul 2026; revised 15 Sep 2026",
-   "thesis": "Firm power, turbines and transformers still set the pace — but permitting politics do not. SemiAnalysis's parcel-level audit of 300+ moratoriums finds only ~2.3 GW genuinely delayed (1,525 MW of ~20 GW exposed locally, ~0.8 GW in New York), capacity already under construction or permitted is out of reach of these instruments, and the model still shows +38 GW of US datacentre IT capacity delivered in 2027 (22 GW in vertical construction), more than double 2026, with more than half of new capacity going behind the meter from 2028 and 75 GW of firm BtM equipment orders booked. Build pace is constrained but faster than the earlier 0.12, and BtM shortens delivery. The camp’s premise that capacity is fully used today is held as the inputs move.",
-   "src": "https://newsletter.semianalysis.com/p/everyone-says-datacenter-moratoriums",
+   "who": "SemiAnalysis (Maya Barkin, Reyk Knuhtsen, Jeremie Eliahou Ontiveros, Dylan Patel) grid, behind-the-meter, moratorium and Texas permitting analyses",
+   "when": "Jun-Jul 2026; revised 15 Sep 2026; revised 24 Oct 2026 (Texas TCEQ freeze audit)",
+   "thesis": "Firm power, turbines and transformers set the pace — and permitting politics now bite as well. September's parcel-level audit of 300+ moratoriums found only ~2.3 GW genuinely delayed because behind-the-meter generation was the workaround; Governor Abbott's 21 Sep directive closes it, telling TCEQ to stop issuing any datacenter-linked permit until ERCOT finishes its review. SemiAnalysis's site-by-site audit finds six Texas campuses, 8.7 GW in all, needing air permits during the pause; three already have a first tranche of generation permitted, one has filed and two have not. Base case: TCEQ resumes in December after ERCOT's 10 Dec report, the phases needing permits soon slip about a quarter and the rest of the forecast holds. Build pace stays capped near 0.18 a quarter with a six-quarter lead, and revenue per GW stays tied to realised utilisation.",
+   "src": "https://x.com/SemiAnalysis_/status/2114130061028643066",
    "p": {
     "buildMax": 0.18,
-    "lead": 6,
-    "mono": "=util0:1.0"
+    "lead": 6
    },
    "e": [],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-18",
+   "updated": "2026-10-25",
    "core": true
   },
   {
@@ -1420,9 +1419,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-24",
+   "as_of": "2026-10-25",
    "auto": true,
-   "updated": "2026-10-24"
+   "updated": "2026-10-25"
   },
   {
    "id": "fms_tailrisk",
@@ -1449,12 +1448,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "9.7%",
-   "sub": "24 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "9.0%",
+   "sub": "25 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-24",
+   "as_of": "2026-10-25",
    "auto": true,
-   "updated": "2026-10-24"
+   "updated": "2026-10-25"
   },
   {
    "id": "aaii",
@@ -1525,14 +1524,13 @@
   {
    "id": "token_index",
    "label": "Effective price per million tokens",
-   "value": "$0.68",
-   "sub": "Ramp’s effective price index, 9 Sep 2026: −41% from the March peak of $1.15. Silicon Data’s index read $0.97 on 31 Aug.",
-   "src": "https://ramp.com/data/ai-index-sept-2026",
-   "as_of": "2026-09-09",
+   "value": "$0.64/M tok",
+   "sub": "Ramp AI Index blended price per million tokens (OpenAI & Anthropic), week ending Oct 11, 2026; down 25.4% from $0.86 a month earlier and below the $0.68 Sept 9 reading. Sample is Ramp Token Spend Mana",
+   "src": "https://ramp.com/data/ai-index",
+   "as_of": "2026-10-11",
    "auto": false,
-   "updated": "2026-09-17",
-   "cadence_days": 21,
-   "next_check": "2026-10-25"
+   "updated": "2026-10-25",
+   "cadence_days": 21
   },
   {
    "id": "capex_ocf",
@@ -1605,9 +1603,9 @@
    "value": "+40% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-24",
+   "as_of": "2026-10-25",
    "auto": true,
-   "updated": "2026-10-24"
+   "updated": "2026-10-25"
   }
  ],
  "frozen": [],

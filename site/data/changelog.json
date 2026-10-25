@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-10-25",
+  "source": "https://epoch.ai/data/ai-data-centers",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/data/ai-data-centers/updates",
+  "reason": "Epoch's AI data centers hub is a regularly revised, methodologically documented public capacity series with a dedicated updates feed, making it a reasonable watchlist source for capacity inputs; no model value changes here, and the proposal correctly notes the headline 14.2 GW is not the same measure as K0."
+ },
+ {
+  "date": "2026-10-25",
+  "source": "https://x.com/SemiAnalysis_/status/2114130061028643066",
+  "kind": "accepted",
+  "target": "scenario:grid",
+  "old": "updated",
+  "new": "updated",
+  "reason": "The scenario's own proponent has published fresh, larger permitting exposure (six Texas campuses, 8.7 GW) for exactly the mechanism this scenario encodes, so the basis and date are refreshed with overrides unchanged, but per-site permit counts and the December-restart base case not present in the quoted evidence are trimmed or hedged."
+ },
+ {
+  "date": "2026-10-25",
+  "source": "https://ramp.com/data/ai-index",
+  "kind": "accepted",
+  "target": "gauge:token_index",
+  "old": "$0.68",
+  "new": "$0.64/M tok",
+  "reason": "Ramp's own live AI Index gives a fresher reading of the same blended OpenAI/Anthropic price per million tokens ($0.64 for the week ending 11 Oct 2026, −25.4% month over month), though note the weekly series prints higher than the September letter's $0.68 index value, so the level is comparable only within Ramp's Token Spend Management sample."
+ },
+ {
+  "date": "2026-10-25",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-25).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-25",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-10-25).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-25",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.7%",
+  "new": "9.0%",
+  "reason": "Observed from source (2026-10-25).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-10-24",
   "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/circularity-in-ai-shows-up-in-token-spending-too",
   "kind": "accepted",
@@ -3559,59 +3613,5 @@
   "old": null,
   "new": 55,
   "reason": "SemiAnalysis's Rubin figures measure throughput and profit per gigawatt for a new chip generation, not monetisable revenue per inference GW at current prices, and the proposed +10% is not derivable from the quoted 2x claim."
- },
- {
-  "date": "2026-09-15",
-  "source": "https://forkast.news/anthropics-517b-compute-ceiling-reached-in-11-months-even-as-its-ceo-called-to-slow-down/",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.2,
-  "reason": "The Forkast piece is a secondary write-up whose quoted line is about funding commitments rather than growth, and its revenue path (end-2025 $9B to $30B in April 2026) is older and weaker than the Epoch run-rate evidence already used to lift orgX to 1.1, so a further increment would double-count the same observed growth."
- },
- {
-  "date": "2026-09-15",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-15).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-15",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 22% per qtr",
-  "new": "44% vs 22% per qtr",
-  "reason": "Observed from source (2026-09-15).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-15",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "12.9%",
-  "new": "11.6%",
-  "reason": "Observed from source (2026-09-15).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-15",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.8",
-  "new": "17.1",
-  "reason": "Observed from source (2026-09-14).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-15",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.63%",
-  "reason": "Observed from source (2026-09-11).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
  }
 ]
