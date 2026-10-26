@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-10-26",
+  "source": "https://michaelparekh.substack.com/p/ai-anthropics-750-billion-compute",
+  "kind": "rejected",
+  "target": "https://michaelparekh.substack.com",
+  "old": null,
+  "new": "Michael Parekh — AI-RTZ (daily AI newsletter)",
+  "reason": "The newsletter is a secondary aggregator that restates paywalled WSJ/Bloomberg scoops rather than a primary report, so the primary_report rule does not fit, and convenience of fetching is not an evidence-quality argument for a standing source."
+ },
+ {
+  "date": "2026-10-26",
+  "source": "https://michaelparekh.substack.com/p/ai-anthropics-750-billion-compute",
+  "kind": "rejected",
+  "target": "scenario:s1cross",
+  "old": null,
+  "new": null,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://michaelparekh.substack.com/p/ai-anthropics-750-billion-comput."
+ },
+ {
+  "date": "2026-10-26",
+  "source": "https://michaelparekh.substack.com/p/ai-anthropics-750-billion-compute",
+  "kind": "rejected",
+  "target": "k_rd",
+  "old": null,
+  "new": 0.8,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://michaelparekh.substack.com/p/ai-anthropics-750-billion-comput."
+ },
+ {
+  "date": "2026-10-26",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-26).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-26",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-10-26).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-26",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.0%",
+  "new": "9.5%",
+  "reason": "Observed from source (2026-10-26).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-10-25",
   "source": "https://epoch.ai/data/ai-data-centers",
   "kind": "accepted",
@@ -3559,59 +3613,5 @@
   "new": "15.3%",
   "reason": "Observed from source (2026-09-16).",
   "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-16",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "17.1",
-  "new": "17.2",
-  "reason": "Observed from source (2026-09-15).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-16",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.63%",
-  "reason": "Observed from source (2026-09-14).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-16",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.96%",
-  "new": "4.97%",
-  "reason": "Observed from source (2026-09-14).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-15",
-  "source": "https://inferencex.semianalysis.com/chips/h100",
-  "kind": "accepted",
-  "target": "gauge:h100_rental",
-  "old": "$2.35/hr",
-  "new": "$2.00/hr retail; $1.17/hr at hyperscaler volume (SemiAnalysis AI Cloud TCO model, not a one-year-term print)",
-  "reason": "Refreshes a 167-day-stale gauge with live rate tiers from the same publisher, with the text adjusted to flag that these are TCO-model retail and hyperscaler tiers rather than a like-for-like one-year-term price."
- },
- {
-  "date": "2026-09-15",
-  "source": "https://247wallst.com/investing/2026/09/13/anthropic-locks-down-517-billion-in-compute-ahead-of-ipo-and-its-still-not-enough/",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.5,
-  "reason": "The quote is a bull-case bullet in a secondary aggregator repeating the same Nvidia-plus-private-credit capital-raising consortium already rejected on 3 Sep, and mobilising third-party capital does not by itself show marginal builds became more sensitive to credit conditions."
- },
- {
-  "date": "2026-09-15",
-  "source": "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
-  "kind": "rejected",
-  "target": "mono",
-  "old": null,
-  "new": 55,
-  "reason": "SemiAnalysis's Rubin figures measure throughput and profit per gigawatt for a new chip generation, not monetisable revenue per inference GW at current prices, and the proposed +10% is not derivable from the quoted 2x claim."
  }
 ]

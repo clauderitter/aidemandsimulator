@@ -1,245 +1,5 @@
 [
  {
-  "handle": "EpochAIResearch",
-  "id": "2110693857742717372",
-  "at": "2026-10-15T11:26:45.000Z",
-  "text": "Gemini 4 Argon scores 165 on the Epoch Capabilities Index (ECI), on par with Fable 5.1 (165) but behind Opus 5.5 (167) and GPT-6 Astra (166).\n\nWhile behind the ECI frontier, Argon is the closest Google’s come since Gemini 3.1 Pro in Feb, and a big jump from Gemini 3.8 Flash (157) https://t.co/PvZvD4KyvI",
-  "likes": 38,
-  "url": "https://x.com/EpochAIResearch/status/2110693857742717372"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2110460489360961896",
-  "at": "2026-10-14T19:59:25.000Z",
-  "text": "For more details and results, check out the full article.\n\nhttps://t.co/BL74Q0wkga",
-  "likes": 13,
-  "url": "https://x.com/EpochAIResearch/status/2110460489360961896"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2110460477763735911",
-  "at": "2026-10-14T19:59:23.000Z",
-  "text": "The visual interface could be limiting performance, but frontier models don’t seem severely hampered by it, given they win 90%+ of the time on the easiest difficulty. We think measuring how they play in human-like conditions is worth it regardless.",
-  "likes": 9,
-  "url": "https://x.com/EpochAIResearch/status/2110460477763735911"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2110460466162241630",
-  "at": "2026-10-14T19:59:20.000Z",
-  "text": "Now, the best models carefully gather strategic information and execute smart plays smoothly. We’re planning to soon upload over a thousand videos that show the model gameplay we recorded to produce this data.",
-  "likes": 12,
-  "url": "https://x.com/EpochAIResearch/status/2110460466162241630"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2110460454342672667",
-  "at": "2026-10-14T19:59:17.000Z",
-  "text": "In SpireClimb, models play the game just like humans, through a graphical interface. Just a few months ago, we observed models in a similar setup fail to read relevant on-screen text, struggle to click cards accurately, and forget to check important parts of the interface.",
-  "likes": 10,
-  "url": "https://x.com/EpochAIResearch/status/2110460454342672667"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2110460441109668179",
-  "at": "2026-10-14T19:59:14.000Z",
-  "text": "For the sequel, which is broadly considered easier, frontier model win rates are somewhat higher than in the first game. But the leading model, GPT-6 Astra, still does significantly worse than top human players. https://t.co/11NZaQfgh4",
-  "likes": 18,
-  "url": "https://x.com/EpochAIResearch/status/2110460441109668179"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2110460426140192853",
-  "at": "2026-10-14T19:59:10.000Z",
-  "text": "While frontier models are getting better quickly, their win rates on the hardest difficulty in both games are still far below those of top human players, with GPT-6.1 Sol leading in the original game. https://t.co/07m0ZZQvAk",
-  "likes": 21,
-  "url": "https://x.com/EpochAIResearch/status/2110460426140192853"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2110460410646413359",
-  "at": "2026-10-14T19:59:07.000Z",
-  "text": "Six months ago, frontier AI models could barely beat Slay the Spire. Now, according to our new SpireClimb benchmark, they win 90%+ of runs at the easiest difficulty, and up to 20% of runs at the hardest. https://t.co/KvV5gD2RBh",
-  "likes": 299,
-  "url": "https://x.com/EpochAIResearch/status/2110460410646413359"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519553994404060",
-  "at": "2026-10-14T23:54:07.000Z",
-  "text": "In a companion piece, we explain our approach to working with AI developers in exercises like these. Our goal is to get the public accurate, timely, and independent evidence so that they can make their own informed decisions.\nhttps://t.co/NjUmjcopY3",
-  "likes": 60,
-  "url": "https://x.com/METR_Evals/status/2110519553994404060"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519552320954547",
-  "at": "2026-10-14T23:54:07.000Z",
-  "text": "Our proposed exercises would provide evidence, not confident safety assurance or formal oversight.\n\nWe also encourage developers to work with other external groups to complement these efforts, and to unilaterally share evidence with the public.",
-  "likes": 46,
-  "url": "https://x.com/METR_Evals/status/2110519552320954547"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519551033266424",
-  "at": "2026-10-14T23:54:07.000Z",
-  "text": "This proposal is our recommendation for how we could give the public visibility into risks occurring within AI development.\n\nWe stand ready to conduct all three of our proposed exercises with frontier AI developers.",
-  "likes": 44,
-  "url": "https://x.com/METR_Evals/status/2110519551033266424"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519549028389128",
-  "at": "2026-10-14T23:54:06.000Z",
-  "text": "(3) AI R&amp;D acceleration\nIf AI automates AI R&amp;D, capability growth could outpace what alignment and control methods can handle.\n\nOur proposal is to analyze how much AI automation is accelerating capability growth internally.\nhttps://t.co/U3pJ2awZhc https://t.co/2s1aqLbEsD",
-  "likes": 65,
-  "url": "https://x.com/METR_Evals/status/2110519549028389128"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519546843172931",
-  "at": "2026-10-14T23:54:06.000Z",
-  "text": "(2) Control\nAgents that attempt harmful or unwanted actions are not always noticed.\n\nOur proposal is to analyze whether a developer’s internal agents could get away with serious harm without being caught.\nhttps://t.co/xradffbCIl https://t.co/TxXUHrHz4G",
-  "likes": 55,
-  "url": "https://x.com/METR_Evals/status/2110519546843172931"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519544875983177",
-  "at": "2026-10-14T23:54:05.000Z",
-  "text": "(1) Alignment\nThe public should know if agents would attempt actions like those seen in incidents like the hack of Hugging Face.\n\nOur proposal is to analyze a developer’s internal incidents and whether training may suppress evidence of worse misalignment.\nhttps://t.co/odjZGPPHbl https://t.co/ciIq7cZ9Bm",
-  "likes": 65,
-  "url": "https://x.com/METR_Evals/status/2110519544875983177"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519543366111452",
-  "at": "2026-10-14T23:54:05.000Z",
-  "text": "We describe three critical areas where AI developers should provide better open evidence: (1) alignment, (2) control, and (3) AI capability acceleration.\n\nIn each area, we detail the specific questions an independent assessor could seek to answer and how.\nhttps://t.co/AbeB5kbww8",
-  "likes": 66,
-  "url": "https://x.com/METR_Evals/status/2110519543366111452"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2110519541348684078",
-  "at": "2026-10-14T23:54:04.000Z",
-  "text": "If an AI developer was on track to lose control of its internal agents, would anyone outside the company know?\n\nToday, we are sharing METR’s vision for how we would work with AI developers to openly assess and share evidence about this. https://t.co/rtJsbIjSGN",
-  "likes": 486,
-  "url": "https://x.com/METR_Evals/status/2110519541348684078"
- },
- {
-  "handle": "edzitron",
-  "id": "2110615141360484583",
-  "at": "2026-10-15T06:13:57.000Z",
-  "text": "Fyi Reuters has updated its story to reflect this but lol why are these sell side oafs still clinging to this utterly imaginary elf number? https://t.co/x1TfPiumtf https://t.co/LmbB96xSXG",
-  "likes": 103,
-  "url": "https://x.com/edzitron/status/2110615141360484583"
- },
- {
-  "handle": "edzitron",
-  "id": "2110614433903091895",
-  "at": "2026-10-15T06:11:09.000Z",
-  "text": "I think they may have thought this would be taken better than it has been https://t.co/XptpxfaAce",
-  "likes": 135,
-  "url": "https://x.com/edzitron/status/2110614433903091895"
- },
- {
-  "handle": "edzitron",
-  "id": "2110598976538108403",
-  "at": "2026-10-15T05:09:43.000Z",
-  "text": "https://t.co/1xzXL6FYGV https://t.co/0Vx5qvA91n",
-  "likes": 375,
-  "url": "https://x.com/edzitron/status/2110598976538108403"
- },
- {
-  "handle": "edzitron",
-  "id": "2110596741510885539",
-  "at": "2026-10-15T05:00:50.000Z",
-  "text": "Oh god they’re talking about Anthropic like Justin Herbert https://t.co/7cOiYGhCE0 https://t.co/atyuaoQKru",
-  "likes": 91,
-  "url": "https://x.com/edzitron/status/2110596741510885539"
- },
- {
-  "handle": "edzitron",
-  "id": "2110592509617516667",
-  "at": "2026-10-15T04:44:01.000Z",
-  "text": "That’s what investors love to hear https://t.co/atyuaoQKru",
-  "likes": 300,
-  "url": "https://x.com/edzitron/status/2110592509617516667"
- },
- {
-  "handle": "edzitron",
-  "id": "2110559469952446630",
-  "at": "2026-10-15T02:32:44.000Z",
-  "text": "Dario Amodei when asked how he’ll pay $413 billion in non-cancellable commitments  https://t.co/NxpVzdAGuW",
-  "likes": 172,
-  "url": "https://x.com/edzitron/status/2110559469952446630"
- },
- {
-  "handle": "edzitron",
-  "id": "2110549197628067851",
-  "at": "2026-10-15T01:51:55.000Z",
-  "text": "Picked up an old Diet Coke instead of a fresh one https://t.co/4IY0AHKpUp",
-  "likes": 401,
-  "url": "https://x.com/edzitron/status/2110549197628067851"
- },
- {
-  "handle": "edzitron",
-  "id": "2110536095285096523",
-  "at": "2026-10-15T00:59:51.000Z",
-  "text": "This is what opening my mentions is like https://t.co/MoltPttnwY",
-  "likes": 453,
-  "url": "https://x.com/edzitron/status/2110536095285096523"
- },
- {
-  "handle": "edzitron",
-  "id": "2110503661965373768",
-  "at": "2026-10-14T22:50:58.000Z",
-  "text": "The absolute best thing about this story is that boosters are furious Anthropic didn’t give a new magical made up run rate number",
-  "likes": 793,
-  "url": "https://x.com/edzitron/status/2110503661965373768"
- },
- {
-  "handle": "edzitron",
-  "id": "2110503294502306275",
-  "at": "2026-10-14T22:49:31.000Z",
-  "text": "Lying sack of crap lmao he won’t even stop shipping chips to sanctioned countries https://t.co/t42pqI73Id",
-  "likes": 1299,
-  "url": "https://x.com/edzitron/status/2110503294502306275"
- },
- {
-  "handle": "edzitron",
-  "id": "2110452263726764499",
-  "at": "2026-10-14T19:26:44.000Z",
-  "text": "This is such a good bit, lol https://t.co/seGmW89Liq",
-  "likes": 442,
-  "url": "https://x.com/edzitron/status/2110452263726764499"
- },
- {
-  "handle": "edzitron",
-  "id": "2110449030920851702",
-  "at": "2026-10-14T19:13:53.000Z",
-  "text": "Cramer has “gone woke” https://t.co/Ino7zhaS8S",
-  "likes": 593,
-  "url": "https://x.com/edzitron/status/2110449030920851702"
- },
- {
-  "handle": "edzitron",
-  "id": "2110448918379348028",
-  "at": "2026-10-14T19:13:27.000Z",
-  "text": "Total nonsense! Why is a cfo using run rates on tv? Ugly stuff https://t.co/QHHCMgaqP0",
-  "likes": 302,
-  "url": "https://x.com/edzitron/status/2110448918379348028"
- },
- {
-  "handle": "edzitron",
-  "id": "2110446239418609820",
-  "at": "2026-10-14T19:02:48.000Z",
-  "text": "It's good to see @JG_Nuke get vindication - he was on the CoreWeave hater train in *2023* and had analysts attacking him for suggesting anything was wrong with this company. https://t.co/HhIoQKv6cD",
-  "likes": 485,
-  "url": "https://x.com/edzitron/status/2110446239418609820"
- },
- {
   "handle": "edzitron",
   "id": "2110445895141801989",
   "at": "2026-10-14T19:01:26.000Z",
@@ -4798,5 +4558,245 @@
   "text": "Interpret this how you will, but more than a third of AI spend by the top 1% of firms is already going to compute https://t.co/BBi7MoMX0w",
   "likes": 141,
   "url": "https://x.com/arakharazian/status/2114001967223898338"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2114496296455184834",
+  "at": "2026-10-25T23:16:17.000Z",
+  "text": "PROFIT ALERT🚨: AMD @vllm_project can generate up to $3/hr/chip in pure profit serving the open-source Kimi K3 model, even after accounting for the rapid increase in chip rental prices post-Claude Code.\n\nKimi K3 2.8T is a great model for AMD, as it has over 2.8 trillion https://t.co/Y26LxXUn28",
+  "likes": 351,
+  "url": "https://x.com/SemiAnalysis_/status/2114496296455184834"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114529830989435342",
+  "at": "2026-10-26T01:29:32.000Z",
+  "text": "https://t.co/pPOOhejIC1 https://t.co/6Ah5Dclvif",
+  "likes": 572,
+  "url": "https://x.com/edzitron/status/2114529830989435342"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114527553557762048",
+  "at": "2026-10-26T01:20:29.000Z",
+  "text": "Yeah it’s ideal that your financiers are immediately saying “yeah yeah nothing is signed yet” over your $40 billion deal https://t.co/mhEyQ74FXk",
+  "likes": 938,
+  "url": "https://x.com/edzitron/status/2114527553557762048"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114524984437870759",
+  "at": "2026-10-26T01:10:16.000Z",
+  "text": "Nope! But thanks for asking. https://t.co/1dyES9RxAT",
+  "likes": 222,
+  "url": "https://x.com/edzitron/status/2114524984437870759"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114518458792841717",
+  "at": "2026-10-26T00:44:21.000Z",
+  "text": "The Great Dunce Reveal https://t.co/Zh4TYqOjb6",
+  "likes": 1447,
+  "url": "https://x.com/edzitron/status/2114518458792841717"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114494167783194918",
+  "at": "2026-10-25T23:07:49.000Z",
+  "text": "It’s just that easy folks! #justdoit #simpleas https://t.co/JIEOhTwqMT",
+  "likes": 218,
+  "url": "https://x.com/edzitron/status/2114494167783194918"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114493785413763468",
+  "at": "2026-10-25T23:06:18.000Z",
+  "text": "Maybe musk tries to buy coreweave? Awful ideas all round",
+  "likes": 56,
+  "url": "https://x.com/edzitron/status/2114493785413763468"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114492095054410108",
+  "at": "2026-10-25T22:59:35.000Z",
+  "text": "Okay that’s two guys who have said it now, if this is really the case coreweave is toast outside of whatever plan Blackstone can concoct https://t.co/wp6CW681pr",
+  "likes": 555,
+  "url": "https://x.com/edzitron/status/2114492095054410108"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114462346408079701",
+  "at": "2026-10-25T21:01:22.000Z",
+  "text": "Damn they’re just saying it now https://t.co/xsxNPpcIyE",
+  "likes": 4609,
+  "url": "https://x.com/edzitron/status/2114462346408079701"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2114373635070718029",
+  "at": "2026-10-25T15:08:52.000Z",
+  "text": "https://t.co/q1vvc8RPtC https://t.co/C00c4ecal9",
+  "likes": 735,
+  "url": "https://x.com/edzitron/status/2114373635070718029"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2114662399089488271",
+  "at": "2026-10-26T10:16:19.000Z",
+  "text": "These are very meaningful jumps. And transformative technology is not supposed to lift everyone equally. The phonograph did not make all singers stars. But it made singing much more productive as a whole. https://t.co/yvcXJvu8OY",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2114662399089488271"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2114404386243821879",
+  "at": "2026-10-25T17:11:04.000Z",
+  "text": "Worrying about high-impact, low-probability events is rational in an interconnected world. The actual impact is only known in retrospect, and it pays to be wrong more often than not. https://t.co/03q6utzdLG",
+  "likes": 0,
+  "url": "https://x.com/drorpoleg/status/2114404386243821879"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2114365795346022650",
+  "at": "2026-10-25T14:37:43.000Z",
+  "text": "Big Tech's revenue per worker is soaring while everyone else's stays flat. https://t.co/d88Rk7UYO0",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2114365795346022650"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114692131881127979",
+  "at": "2026-10-26T12:14:27.000Z",
+  "text": "OpenAI should prepare a release for their competing model as well. Hope its a new Astra",
+  "likes": 18,
+  "url": "https://x.com/kimmonismus/status/2114692131881127979"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114690571180609654",
+  "at": "2026-10-26T12:08:15.000Z",
+  "text": "https://t.co/URfvjRhumy",
+  "likes": 8,
+  "url": "https://x.com/kimmonismus/status/2114690571180609654"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114690542642831773",
+  "at": "2026-10-26T12:08:09.000Z",
+  "text": "Anthropic is planning to file publicly for an initial public offering Monday at around 9 a.m. in New York.\n\nGet ready for their IPO and Fable 5.5. \n\nVia Bloomberg https://t.co/aHfMfx2n7p https://t.co/3ULnz69UR2",
+  "likes": 707,
+  "url": "https://x.com/kimmonismus/status/2114690542642831773"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114688449290584471",
+  "at": "2026-10-26T11:59:49.000Z",
+  "text": "And to add on this: There is, at the very least, significant fear in the market that a bubble could burst, potentially impacting the entire market, as Bloomberg reports today. \n\nOnce again: I do not see this risk. While \"neocloud\" companies may indeed suffer, the technology https://t.co/UGWId4xvqN https://t.co/RTKFsvAz17",
+  "likes": 66,
+  "url": "https://x.com/kimmonismus/status/2114688449290584471"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114669540671881527",
+  "at": "2026-10-26T10:44:41.000Z",
+  "text": "It seems the first market correction in AI is underway. Musk believes many neoclouds will run out of money.\n\nBut there's also an advantage to this, because the acquired compute won't disappear; instead, it will go to companies that already have strong revenue streams. Therefore, https://t.co/2wMMCWBOK8",
+  "likes": 258,
+  "url": "https://x.com/kimmonismus/status/2114669540671881527"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114641994395910419",
+  "at": "2026-10-26T08:55:14.000Z",
+  "text": "By my count: 8 out of 21 days so far were resets, around 38%\n\nI’ll take the resets, but I think Tibo has saved the truly significant releases for this week—the final week.\n\nI suspect they know that Fable 5.5 is just around the corner, and that alongside 6.1 Terra, they’ll be https://t.co/5i88GFhF3A",
+  "likes": 458,
+  "url": "https://x.com/kimmonismus/status/2114641994395910419"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114628010465005834",
+  "at": "2026-10-26T07:59:40.000Z",
+  "text": "https://t.co/BpJ82Ww4CC",
+  "likes": 13,
+  "url": "https://x.com/kimmonismus/status/2114628010465005834"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114627987001721141",
+  "at": "2026-10-26T07:59:34.000Z",
+  "text": "Finally: \"Anthropic could make public the paperwork for its initial public offering as early as Monday.\"\n\nWhich also means Fable 5.5 is super close for release. https://t.co/5scs3y9iGo",
+  "likes": 451,
+  "url": "https://x.com/kimmonismus/status/2114627987001721141"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114477104406708444",
+  "at": "2026-10-25T22:00:01.000Z",
+  "text": "Chris is reliable. Fable 5.5 has been rolled out to enterprise. \n\nThis means imho that consumer release is imminent. I expect coming week. \n\nSuper excited. And aligns with my recent post about their ipo. https://t.co/8mmT1ZNUT6",
+  "likes": 1744,
+  "url": "https://x.com/kimmonismus/status/2114477104406708444"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114461632512274812",
+  "at": "2026-10-25T20:58:32.000Z",
+  "text": "Apologizing for poor rates, but failing to apologize for the fact that influencer briefings were sent out requesting undisclosed paid promotions, is a brazen move.\n\nNot cool Kimi! https://t.co/K6CRHo3WL8",
+  "likes": 818,
+  "url": "https://x.com/kimmonismus/status/2114461632512274812"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114451697716347237",
+  "at": "2026-10-25T20:19:04.000Z",
+  "text": "https://t.co/UDbb5ytQVJ",
+  "likes": 12,
+  "url": "https://x.com/kimmonismus/status/2114451697716347237"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114451669811372151",
+  "at": "2026-10-25T20:18:57.000Z",
+  "text": "Quick reminder: Anthropic is planning its IPO for around November 9th. This means it's very likely they'll release Fable 5.5 next week to maximize the IPO valuation that follows shortly after.\n\nOpenAI, of course, won't be far behind and will counter this, although currently only https://t.co/VP7zqD7s0C",
+  "likes": 1004,
+  "url": "https://x.com/kimmonismus/status/2114451669811372151"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114424160675885422",
+  "at": "2026-10-25T18:29:38.000Z",
+  "text": "Opus 5.5 is one of anthropics biggest success. on OpenRouter token volume went up 3.6x since launch. \n\nAnd I havent heard anyone saying Opus 5.5 is a bad model. Its the oppostite. Everyone loves it. If they stick to this approach, Fable 5.5 will be the biggest success ever. No https://t.co/F7UHdhu9Zv https://t.co/AVdlAzy2Oa",
+  "likes": 842,
+  "url": "https://x.com/kimmonismus/status/2114424160675885422"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114386002726760565",
+  "at": "2026-10-25T15:58:01.000Z",
+  "text": "https://t.co/i5pvSPlSGD",
+  "likes": 20,
+  "url": "https://x.com/kimmonismus/status/2114386002726760565"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114385976675987946",
+  "at": "2026-10-25T15:57:54.000Z",
+  "text": "Luckily we see so many great examples how people use Claude to get rid of all this bloatware on TVs. Another proof why local AI is a necessity. https://t.co/i7QIQMmBuM",
+  "likes": 580,
+  "url": "https://x.com/kimmonismus/status/2114385976675987946"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114368186208453089",
+  "at": "2026-10-25T14:47:13.000Z",
+  "text": "Huh? Nanbeige just released Nanbeige4.3-33B, delivering surprisingly strong coding and agent performance for its size, beating similarly sized Qwen 3.8 27b and Gemma models on most benchmarks. \n\nThe weights are openly available under Apache 2.0, with support for a 512K-token https://t.co/W1QfRkTufw https://t.co/96BGjW8pm1",
+  "likes": 662,
+  "url": "https://x.com/kimmonismus/status/2114368186208453089"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2114338380376949167",
+  "at": "2026-10-25T12:48:47.000Z",
+  "text": "This is so much more impressive than seeing a robot doing another MMA stunt. \nETH Zurich taught G1 to climb ladders, climb and much more. \nIt feels like they start to advance at the same pace as LLMs. https://t.co/Rz1nDamOYI",
+  "likes": 1263,
+  "url": "https://x.com/kimmonismus/status/2114338380376949167"
  }
 ]

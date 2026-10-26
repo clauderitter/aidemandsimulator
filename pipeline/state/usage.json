@@ -596,5 +596,21 @@
    "researcher": 1.531,
    "judge": 0.113
   }
+ },
+ {
+  "date": "2026-10-26",
+  "est_usd": 3.579,
+  "input": 56,
+  "output": 38918,
+  "cache_read": 2783588,
+  "cache_write": 184591,
+  "searches": 6,
+  "fetches": 10,
+  "calls": 3,
+  "by": {
+   "researcher": 3.155,
+   "judge": 0.042,
+   "memo": 0.382
+  }
  }
 ]

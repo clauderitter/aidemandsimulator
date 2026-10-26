@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-25T11:53:38.759Z",
+ "generated_at": "2026-10-26T13:32:22.683Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -798,7 +798,7 @@
     "checks": [
      "OUT: 2027Q4 $510B vs $600–1500B"
     ],
-    "date": "2026-10-25"
+    "date": "2026-10-26"
    }
   },
   {
@@ -843,7 +843,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×3.5 vs ×4–8"
     ],
-    "date": "2026-10-25"
+    "date": "2026-10-26"
    }
   },
   {
@@ -1163,7 +1163,7 @@
      "ok: 2027Q4 $232B vs $225–340B",
      "ok: 2028Q4 $457B vs $395–675B"
     ],
-    "date": "2026-10-25"
+    "date": "2026-10-26"
    }
   },
   {
@@ -1419,9 +1419,9 @@
    "value": "37%",
    "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-10-25",
+   "as_of": "2026-10-26",
    "auto": true,
-   "updated": "2026-10-25"
+   "updated": "2026-10-26"
   },
   {
    "id": "fms_tailrisk",
@@ -1448,12 +1448,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "9.0%",
-   "sub": "25 Oct 2026 · “AI bubble burst in 2026?”",
+   "value": "9.5%",
+   "sub": "26 Oct 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-10-25",
+   "as_of": "2026-10-26",
    "auto": true,
-   "updated": "2026-10-25"
+   "updated": "2026-10-26"
   },
   {
    "id": "aaii",
@@ -1603,9 +1603,9 @@
    "value": "+40% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-10-25",
+   "as_of": "2026-10-26",
    "auto": true,
-   "updated": "2026-10-25"
+   "updated": "2026-10-26"
   }
  ],
  "frozen": [],
@@ -1684,9 +1684,16 @@
     "gObs": 0.3359,
     "gMod": 0.2333,
     "gap": 0.1026
+   },
+   {
+    "week": "2026-W44",
+    "date": "2026-10-26",
+    "gObs": 0.3359,
+    "gMod": 0.2149,
+    "gap": 0.121
    }
   ],
-  "weeks_at_gap": 8,
+  "weeks_at_gap": 9,
   "fast_lane": false,
   "util0": 0.374
  }
