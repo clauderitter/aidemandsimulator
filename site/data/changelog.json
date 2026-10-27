@@ -1,5 +1,122 @@
 [
  {
+  "date": "2026-10-27",
+  "source": "https://capefearadvisors.substack.com/p/anthropic-first-read-the-revenue",
+  "kind": "rejected",
+  "target": "https://capefearadvisors.substack.com",
+  "old": null,
+  "new": "Cape Fear Advisors (filings-level reads of AI capex, leases and S-1s)",
+  "reason": "The quoted line is a definition lifted from the S-1 the model already reads directly, and the fetched excerpt was empty, so the newsletter's value as an independent primary source is unverified."
+ },
+ {
+  "date": "2026-10-27",
+  "source": "https://x.com/GavinSBaker/status/2114744804147912852",
+  "kind": "rejected",
+  "target": "scenario:boom",
+  "old": null,
+  "new": "Baker, 26 Oct 2026: Anthropic ARR 'gone vertical' in October after price cuts, $100B+ year-end; GPU rental prices surged while token prices fell; S-1 shows Q3 revenue ~$16.9B (86x Q4 2024) and $637B of compute commitments.",
+  "reason": "Baker's post supports the price mechanism (GPU rents up while token prices fall) and the $100B year-end figure, but it is no evidence for raising all three loop gains and adding an organic-growth multiplier, and the re-fit would silently drop the scenario's mono linkage while chasing the out-of-range 2027Q4 anchor."
+ },
+ {
+  "date": "2026-10-27",
+  "source": "https://x.com/sama/status/2114818620782248024",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 1,
+  "reason": "The cited rule is METR's horizon series but the evidence is a launch announcement with no horizon measurement, and the shock size of 1 is asserted rather than supported by anything in the post."
+ },
+ {
+  "date": "2026-10-27",
+  "source": "https://tomtunguz.com/anthropics-s1-grew-eleven-fold/",
+  "kind": "accepted",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": "price 25",
+  "reason": "The S-1 directly reports a ~25% cut in the cost of typical workloads with the September 2026 Fable 5.1 release (up to 45% on agentic coding), dating a realised price step to 2026Q3; logged as cost-per-workload rather than headline $/token."
+ },
+ {
+  "date": "2026-10-27",
+  "source": "https://tomtunguz.com/anthropics-s1-grew-eleven-fold/",
+  "kind": "rejected",
+  "target": "k_swe",
+  "old": null,
+  "new": 0.7,
+  "reason": "Net revenue retention of ~900% measures expansion across Anthropic's whole customer book, not software-engineering token spend recycled into tokens, so like the four prior attempts on this key it speaks to the level and growth of lab revenue rather than the software loop's feedback."
+ },
+ {
+  "date": "2026-10-27",
+  "source": "https://capefearadvisors.substack.com/p/anthropic-first-read-the-revenue",
+  "kind": "rejected",
+  "target": "train",
+  "old": null,
+  "new": 60,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://capefearadvisors.substack.com/p/anthropic-first-read-the-reve."
+ },
+ {
+  "date": "2026-10-27",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "37%",
+  "new": "37%",
+  "reason": "Observed from source (2026-10-27).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-27",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-10-27).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-27",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.5%",
+  "new": "9.3%",
+  "reason": "Observed from source (2026-10-27).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-27",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "19.4",
+  "new": "18.4",
+  "reason": "Observed from source (2026-10-26).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-27",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "340bp",
+  "new": "338bp",
+  "reason": "Observed from source (2026-10-23).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-27",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-23).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-27",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.96%",
+  "new": "5.00%",
+  "reason": "Observed from source (2026-10-23).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-26",
   "source": "https://michaelparekh.substack.com/p/ai-anthropics-750-billion-compute",
   "kind": "rejected",
@@ -3496,122 +3613,5 @@
   "old": null,
   "new": "rate 0.25",
   "reason": "Primary FOMC statement of 16 Sep 2026 explicitly records a 12–0 vote to raise the target range by 1/4 point to 3-3/4–4 percent, so a realised +0.25pp rate event in 2026Q3 is directly evidenced."
- },
- {
-  "date": "2026-09-17",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-17).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-17",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 22% per qtr",
-  "new": "44% vs 22% per qtr",
-  "reason": "Observed from source (2026-09-17).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-17",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "15.3%",
-  "new": "13.3%",
-  "reason": "Observed from source (2026-09-17).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-17",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "17.2",
-  "new": "17.7",
-  "reason": "Observed from source (2026-09-16).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-17",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.63%",
-  "reason": "Observed from source (2026-09-15).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-17",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.97%",
-  "new": "5.00%",
-  "reason": "Observed from source (2026-09-15).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-16",
-  "source": "https://thenewstack.io/openrouter-us-region-routing/",
-  "kind": "rejected",
-  "target": "gauge:openrouter_cn",
-  "old": null,
-  "new": 60,
-  "reason": "The 60% figure is the open-weight share of OpenRouter's US token consumption, not the Chinese-model share of OpenRouter tokens that this gauge tracks, so posting it would silently swap the metric and overstate the Chinese share."
- },
- {
-  "date": "2026-09-16",
-  "source": "https://newsletter.semianalysis.com/p/everyone-says-datacenter-moratoriums",
-  "kind": "accepted",
-  "target": "scenario:grid",
-  "old": "updated",
-  "new": "updated",
-  "reason": "The scenario's own proponent has revised the local-opposition leg it rested on — a parcel-level audit of 300+ moratoriums finds only ~2.3 GW genuinely delayed while the model still shows +38 GW of US IT capacity in 2027 with 22 GW in vertical construction — so loosening the build cap and lead while retaining the turbine, transformer and firm-power constraints is a faithful update rather than a new view."
- },
- {
-  "date": "2026-09-16",
-  "kind": "accepted",
-  "target": "fin",
-  "old": 1.3,
-  "new": 1.4,
-  "reason": "Kedrosky's 15 Sep note adds genuinely new information beyond the 70% leverage share already in the basis — the 10-year through 5%, new datacentre debt clearing ~150bp wider, $46–63B of annual interest on $700B and a 2029–31 refi schedule — which supports a single capped step up in how strongly builds track credit conditions. Rule financing_evidence; “Using a simple scenario of $1 trillion of AI/data-center investment, 70% externally financed, outside financing would total $700 billion.”",
-  "source": "https://paulkedrosky.com/treasuries-debt-and-the-data-center-refi-cliff-life-at-5/"
- },
- {
-  "date": "2026-09-16",
-  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.2,
-  "reason": "This is the same 27 Aug 2026 Epoch run-rate write-up that already lifted orgX from 1.0 to 1.1 on 8 Sep and was rejected on identical grounds on 9 Sep, so a second increment would double-count one piece of evidence that is also older than the current as-of date."
- },
- {
-  "date": "2026-09-16",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-16).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-16",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 22% per qtr",
-  "new": "44% vs 22% per qtr",
-  "reason": "Observed from source (2026-09-16).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-16",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "11.6%",
-  "new": "15.3%",
-  "reason": "Observed from source (2026-09-16).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
  }
 ]

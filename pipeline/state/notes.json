@@ -1,19 +1,5 @@
 [
  {
-  "date": "2026-10-12",
-  "notes": [
-   "Weekly re-baseline (constrained): server search/fetch budget was exhausted mid-run, so the re-derivation leans on sources already cited in the parameter bases plus the two pages I verified today. R0_epoch: collector-set 118.8 as of 2026-10-09 and matching 2026Q3 history; no newer primary run-rate found, no proposal. H0 8.34 / D0 4.2: searched METR; newest items are Time Horizon 2.0 (~95 days old) and an AI-2027 tracker page reading ~4-month doubling, i.e. within D0's ±1 limit; no newer 80% horizon measurement for a frontier model, so both stay. K0 14.3, train 50, capexGW 54, sh_rd 20 / sh_swe 20 / sh_trd 15: no new primary numbers surfaced today; my re-derivation reproduces the current values inside their per-run limits, so no rebaseline proposals. pipe is proposed above on fresh capacity evidence rather than as a rebaseline.",
-   " Anthropic IPO prospectus ($4.6bn 2025 revenue, >$8bn operating loss, $42bn net loss, $20.28bn cash, $125bn raised, possible >$2tn valuation): historical FY2025 figures, below the run-rate the Epoch collector already captures; used only for fin. No GW figure in the coverage I could reach, so no cost_per_gw or compute_split proposal.",
-   "Anthropic S-1: 'two customers supplied nearly a quarter of last year's sales' is customer concentration, which the correlation_evidence rule explicitly excludes; not proposed (and rampconc already carries the concentration view).",
-   "Microsoft's claimed '40% more tokens per megawatt' versus leading GPU systems is a vendor projection about throughput, not revenue per GW; mono left alone.",
-   "Growth calibration: ledger shows 7 consecutive weeks above 0.05 but the gap has collapsed (23 -> 16 -> 7 pts) and utilisation 37% points the handle at orgX, which was just moved 1.2 -> 1.3 on 10-09 with 1.4 rejected on 10-11; a further move would overshoot a gap that is already closing, and no fetchable external source exists for a ledger-only move. Not proposed.",
-   "BIS working paper 1381 'Transformative AI and demand bottlenecks': abstract is qualitative (investment share vs shrinking consumer market); no usable numbers for an exposed key and the paper itself is a PDF. Watchlisted mentally, not proposed.",
-   "Paul Kedrosky's 'Five Things from Goldman's New China AI Report' (11 Oct) could bear on subst/openrouter_cn migration; could not fetch before the tool budget ran out. Worth a look next run.",
-   "Ed Zitron vs Gavin Baker exchange on X cites $413bn of Anthropic non-cancellable commitments, $161bn Broadcom, $35bn Broadcom/Apollo and $18bn of Oracle bonds; these are secondhand numbers in an argument and partly overlap the $518bn filing figure, so I used the filing coverage instead.",
-   "No prompt-injection or instruction-like content was found in the feeds, X posts or pages read today."
-  ]
- },
- {
   "date": "2026-10-13",
   "notes": [
    "Tool budget: web_search was exhausted after ~6 queries and web_fetch began returning 'Server tool use limit exceeded' partway through, so several leads below could not be verified to quote standard; they are flagged for the next run.",
@@ -271,6 +257,21 @@
    "SemiAnalysis InferenceX 'Token Revenue Calculator' (profit-estimator-per-gigawatt) is a live per-GW inference revenue tool and the obvious mono source, but it rendered as an interactive page with no readable numbers before my fetch budget ran out.",
    "The SEC-hosted S-1 (sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm) is fetchable HTML but truncates after the cover page and defined terms, so none of its financial language is quotable end-to-end; quotes were taken from secondary sources that reproduce the same figures.",
    "No prompt-injection or instruction-like text was encountered in any feed item, X post or fetched page this run."
+  ]
+ },
+ {
+  "date": "2026-10-27",
+  "notes": [
+   "R0_epoch: Anthropic S-1 implies Q3 2026 revenue ~$16.9B (86x the $197M Q4 2024; FT reported $16.8B) = ~$67B annualised, and the S-1's 31 Oct Run-Rate Revenue value is left blank pending amendment. Did not propose a new Epoch sum: could not verify the other components (OpenAI etc.) and the collector rewrites this key daily.",
+   "lead: S-1 says compute is bought '12 to 18 months in advance of availability' - consistent with the current 5 quarters, no move.",
+   "fin: Anthropic has no drawn debt ($15B revolver undrawn, $6.2B non-interest Amazon converts) but $265.6B of fixed/minimum guarantees at 30 Jun 2026 plus $245B executed since; direction is ambiguous (locked non-cancelable commitments cut market sensitivity, off-balance-sheet leases raise fragility), so no proposal.",
+   "BIS Bulletin 140 'Building AI on credit' (27 Oct 2026): page body would not render on fetch (nav only; bisbull140.htm empty), so no quotable numbers for fin.",
+   "rampconc scenario: the S-1 undercuts its premise - no customer above 10% of revenue for the nine months to 30 Sep 2026, top five ~25%, $100k+ customers from ~400 (Mar 2025) to 11,900 (Sep 2026). Not proposed as a retire because Kharazian has not recanted; flagging for the weekly review.",
+   "price scenario (Tunguz): his own S-1 read shows cost-per-task cuts accelerating revenue growth (48% -> 132% QoQ after Opus 4.5), cutting against the 'volume does not compensate' mechanism, but he has not revised the scenario's numbers, so no update proposed.",
+   "orgX: ledger shows 9 consecutive weeks above 0.05 with slack-side utilisation (37%), but an orgX move to 1.4 was rejected on 2026-10-24; not re-proposed this run.",
+   "mono / revenue per GW: the S-1 gives compute spend ($5.56B in Q2 2026) but no GW figure, so no defensible revenue-per-GW derivation.",
+   "Stratechery's Anthropic S-1 piece is paywalled; openai.com/index pages and ant-s1.surge.sh returned empty bodies to the fetcher; web tool budget ran out before I could verify the Gostev/SaaStr compute-expense pages directly (hence the compute-split quote comes from Cape Fear plus Tunguz).",
+   "No prompt-injection attempts seen in the feeds or posts read today."
   ]
  }
 ]
