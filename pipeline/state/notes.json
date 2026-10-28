@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-10-13",
-  "notes": [
-   "Tool budget: web_search was exhausted after ~6 queries and web_fetch began returning 'Server tool use limit exceeded' partway through, so several leads below could not be verified to quote standard; they are flagged for the next run.",
-   "Anthropic leaked IPO prospectus (Reuters via Fortune, 29 Sep 2026, verified fetch): 2025 revenue $4.6B, +1,088%, operating loss $8.06B vs $2.98B, $7.33B spent on computing and infrastructure (3x 2024), $20.28B cash, $518B of future cloud/compute/infrastructure obligations. No current run-rate and no GW figure, so nothing to propose on R0_epoch or K0; the $7.33B compute line is consistent with the Epoch split already behind train=50.",
-   "Anthropic's $413.7B of non-cancellable commitments (~80% of the $518B; Google $111.1B, Amazon $110.0B, Microsoft $31.4B, Broadcom leases $161.2B per nexairi's breakdown of the Reuters-reviewed filing) cuts both ways on fin: it locks near-term build spend against market conditions (argues lower) while amplifying distress risk (the credit scenario's case for higher). Direction ambiguous and fin\\u21921.0 and fin\\u21921.4 were both rejected in the last four days, so no proposal; worth a fetch of the nexairi/pymnts write-ups next run.",
-   "growth_calibration (orgX): trigger is technically met (7 consecutive weeks above 0.05, util0 37% = slack, fast lane closed), but the ledger gap has collapsed 26\\u219225\\u219222\\u219222\\u219223\\u219216\\u21927 pts and orgX at its +0.1 bound would only just close a quarter of the remaining 0.07 log/quarter; orgX\\u21921.4 was rejected on 11 Oct at a 16pt gap. Judged self-closing \\u2014 no move proposed this run.",
-   "Two customers were nearly a quarter of Anthropic's 2025 revenue (prospectus): customer concentration alone is explicitly excluded from correlation_evidence, and rampconc already encodes the Ramp 80%/1% figure.",
-   "Anthropic says new safeguards cut rival-lab distillation out of Claude by 10-100x (Zhipu, Moonshot named; one network ran 20,000+ fake accounts). Potentially a revenue-mix story (how much API revenue was distillation traffic) but no quantified share \\u2014 nothing proposable yet.",
-   "Gavin Baker (13 Oct) on gross-to-net confusion in Anthropic and OpenAI revenue prints and a mistranslation of Hock Tan: relevant to how R0_epoch is read, but no numbers in the posts.",
-   "Meta Muse consumer retention (73.3% D1, 22.5% D14 vs ChatGPT 26.8%, Sensor Tower via Deedy) and Muse Wonder benchmark scores: capability/adoption, not a METR horizon measurement, so no metr_latest move.",
-   "Subquadratic SubQ Snap at $0.05/M input with free output and 384K context: cheap bounded-work model, but no volume data, so not a migration_share move on subst.",
-   "Feeds checked directly: epochai.substack.com and dcahn.substack.com returned url_not_accessible; econlab.substack.com returned only a cached landing page with no post list; reuters.com is url_not_allowed and pivot-to-ai.com returned an empty error. Epoch's Gradient Updates remains the most valuable dead feed \\u2014 a non-substack mirror on epoch.ai would be worth watchlisting once a fetchable URL is confirmed.",
-   "No prompt-injection attempts noticed in the feed items, X posts or fetched pages this run."
-  ]
- },
- {
   "date": "2026-10-14",
   "notes": [
    "aaii: no newer reading. The latest AAII Sentiment Survey (published 2026-10-08, week ending 2026-10-07) is bullish 40.3% / bearish 39.0% - identical to the current gauge value. Next weekly release due 2026-10-15.",
@@ -272,6 +256,25 @@
    "mono / revenue per GW: the S-1 gives compute spend ($5.56B in Q2 2026) but no GW figure, so no defensible revenue-per-GW derivation.",
    "Stratechery's Anthropic S-1 piece is paywalled; openai.com/index pages and ant-s1.surge.sh returned empty bodies to the fetcher; web tool budget ran out before I could verify the Gostev/SaaStr compute-expense pages directly (hence the compute-split quote comes from Cape Fear plus Tunguz).",
    "No prompt-injection attempts seen in the feeds or posts read today."
+  ]
+ },
+ {
+  "date": "2026-10-28",
+  "notes": [
+   "aaii: no newer reading. Latest AAII Sentiment Survey is the week ending 2026-10-22 ('Pessimism Pushes On'): Bullish 36.9% / Neutral 17.3% / Bearish 45.8% - identical to the current gauge value. Next weekly release due Thu 2026-10-29.",
+   "aaii: date note - that reading is AAII's week ending 2026-10-22, while the gauge is dated 2026-10-21; values unchanged so no proposal filed.",
+   "fed_fsr: no newer reading. The May 2026 (Spring) Financial Stability Report market-participants survey - 50% citing AI as a salient risk, up from 30% in fall 2025 - is still the most recent; the fall 2026 FSR has not been published as of 2026-10-28.",
+   "fed_fsr: secondary coverage of the same Spring 2026 survey also cites private credit rising 22% -> 50%; different measure, not substituted.",
+   "Anthropic S-1 (26 Oct): $602B of compute commitments ($110B Amazon, $45B Microsoft, plus Google and SpaceX) — dollars, not GW, so no clean pipe/capacity proposal.",
+   "SemiAnalysis's $60M+/MW fleet figure also implies Anthropic's total fleet is only ~1.2 GW at a ~$70B run-rate, against the 3.7–5 GW in K0's basis; K0 spans all labs incl. Google/Meta, so flagged for weekly review rather than proposed as a -20% K0 cut on one podcast quote.",
+   "R0_epoch: S-1 Q3 revenue $16.8–16.9B annualises to ~$67B against the $65B July run-rate already in Epoch's sum; the collector rewrites this key daily, so no primary_report proposal.",
+   "train (compute_split) and k_swe/k_rd loop gains: S-1 evidence (NRR ~900%, revenue per compute dollar $2.08, >80% of revenue from models six months old or less) points the same way as proposals the judge rejected on 26–27 Oct; not re-proposed.",
+   "Vercel AI Gateway 'October index' is the September data already reflected in subst (as of 2026-10-15); the 27 Oct item is an ElevenLabs customer post with no new share numbers.",
+   "Tunguz, 'The Third Product-Market Fit in AI' (26 Oct): $175B security market growing 13%/yr, survey of 75 practitioners, Brockman on security spend — no token-share or loop-gain number, and the four rotating scenario slots are full, so no scenario_new.",
+   "2026Q4 event candidates (Opus 5.5 / GPT-6 Astra releases, ChatGPT Pro rate limits halved, Anthropic price cuts): a 2026Q4 event and a boom update on the same facts were rejected on 27 Oct; not re-proposed.",
+   "Epoch AI chip-import map (72% of world AI compute in the US, China 18% of chips but 10% of compute) is geography, not frontier-lab GW online.",
+   "Azeem Azhar's 'Anthropic's S-1 in charts' is paywalled past the first section; used only the free text, no proposal rests on it.",
+   "No prompt-injection or instruction-like text encountered in the fetched pages or posts today."
   ]
  }
 ]
