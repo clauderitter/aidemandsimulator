@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-10-14",
-  "notes": [
-   "aaii: no newer reading. The latest AAII Sentiment Survey (published 2026-10-08, week ending 2026-10-07) is bullish 40.3% / bearish 39.0% - identical to the current gauge value. Next weekly release due 2026-10-15.",
-   "openrouter_cn: no newer same-measure reading. The most recent reported figure for Chinese models' share of OpenRouter tokens is still the mid-September 2026 reporting (The New Stack, 2026-09-14: open-weight models ~60% of OpenRouter US token consumption, most from China), i.e. no update since the current 2026-09-14 as_of.",
-   "openrouter_cn alternative rejected: OpenRouter's live rankings page (data through 2026-10-13) publishes share of text *requests* by model author (DeepSeek 24.5% in the week beginning Oct 5) and absolute token counts for only the top 10 models - a different measure from 'Chinese models' share of all OpenRouter tokens', so any 57-67%-comparable number would be my own derivation, not a reported reading.",
-   "vc_h1 note: the gauge label says 'H1 2026'; the proposed refresh extends the same Crunchbase cumulative global venture funding series to Q1-Q3 2026. If the gauge must stay strictly half-yearly, the alternative single-quarter reading is $159B for Q3 2026.",
-   "OpenAI ARR restated to ~$50B (FT, 8 Oct) vs the $70B Axios figure, per Zitron 13 Oct: not proposed because R0_epoch is collector-owned and its as-of (2026-10-09) already post-dates the FT story; Anthropic $65B + OpenAI $50B is close to the current 118.8 sum.",
-   "Epoch AI data-centres hub (updated 12 Oct): 94 tracked sites, 14.1 GW of IT power, 44% coverage, Colossus 2 946 MW / Anthropic-Amazon New Carlisle 910 MW. Consistent with K0=14.3 GW but the tracked set spans Meta, xAI and Malaysian sites, so it is not a clean frontier-lab total; no K0 change proposed.",
-   "Theory Ventures 2026 AI survey (455 builders, fielded 22 Sep): 45% of teams route queries across models, 54.7% still send every query to one model. Adjacent to migration_share but gives no token or spend share going to non-frontier models; full survey page could not be fetched (tool budget).",
-   "OpenAI EU report also shows Codex + ChatGPT Work above half of EU enterprise output tokens (22% Slovenia to 85% Lithuania); not proposed as sh_swe because it bundles non-coding Work-agent tokens and is not clearly above the 64% Codex figure already behind sh_swe=20.",
-   "growth_calibration: ledger shows 7 consecutive weeks over the 0.05 threshold but the gap has collapsed (26 -> 7 pts) and an orgX move to 1.4 was rejected on 2026-10-11; no sourced quote exists for a ledger-only move, so I left it to the weekly review.",
-   "Jack Clark bringing full RSI forward to 2027 (via @kimmonismus, 13-14 Oct) is attributable but single-number and already represented by the takeoff scenario; no scenario_new.",
-   "@SemiAnalysis_ 14 Oct: Rubin 4.23x perf-per-dollar vs GB300 NVL72 on SGLang — relevant to token prices but maps to no exposed key under the listed rules.",
-   "@edzitron's 'Microsoft had 2GW of capacity in 2026' is a second-hand blended (AI + non-AI) figure, not a frontier-lab capacity disclosure.",
-   "No new METR measurement found: metr.org/time-horizons still carries the Time Horizon 1.1 suite, so H0/D0 unchanged.",
-   "No prompt-injection or instruction-like text encountered in the fetched pages or posts."
-  ]
- },
- {
   "date": "2026-10-15",
   "notes": [
    "nvda_short: could not retrieve stockanalysis.com/stocks/nvda/statistics/ this session (fetch detection timeout, then server tool-use limit exceeded); no verified reading newer than 1.27% as of 2026-09-15 — retry next refresh.",
@@ -275,6 +256,22 @@
    "Epoch AI chip-import map (72% of world AI compute in the US, China 18% of chips but 10% of compute) is geography, not frontier-lab GW online.",
    "Azeem Azhar's 'Anthropic's S-1 in charts' is paywalled past the first section; used only the free text, no proposal rests on it.",
    "No prompt-injection or instruction-like text encountered in the fetched pages or posts today."
+  ]
+ },
+ {
+  "date": "2026-10-29",
+  "notes": [
+   "R0_epoch: Anthropic Q3 2026 revenue $16.8B (CNBC, 15 Oct; up from $11.6B Q2, $4.7B Q1) = ~$67B annualised, and the S-1 confirms $16.3B of H1 revenue — but primary_report wants the new cross-lab sum with components, and I could not verify OpenAI's current disclosed run-rate before the search budget ran out. Left to the collector.",
+   ": Anthropic's 'revenue per dollar of compute' ($1.39 -> $2.00 -> $1.70 across Q1-Q3 2026) is the best new monetisation datapoint, but converting it to $/inference-GW needs an assumed amortisation life (Microsoft just extended datacentre useful life from 15 to 25 years, which would change it materially), and mono was moved 50 -> 55 yesterday. Flagged for the weekly review rather than proposed.",
+   "train (compute_split): the S-1 should settle Anthropic's training-vs-inference split, but the SEC HTML truncates at the glossary on fetch and train -> 60 was rejected on 27 Oct. Not re-proposed.",
+   "orgX (growth_calibration): ledger shows 9 consecutive weeks over 0.05 with the latest gap 12pts and slack-side utilisation (34%), but orgX -> 1.4 (the full +0.1 cap) was rejected on 28 Oct. Not re-proposed one day later.",
+   "event 2026Q4 rate: FOMC held at 3.75-4.00% on 28 Oct (10-2 vote) after a 25bp hike at the prior meeting, so no Q4 rate shock; a 2026Q3 +0.25 rate event may be unrecorded but rateGap already reflects the realised path, so I left it to avoid double-counting.",
+   "event 2026Q4 release: Gemini 4 Carbon shipped 28 Oct at 59 on the AA Intelligence Index v5 (kimmonismus), two weeks after Argon, with Pichai talking up RSI-driven acceleration — but an event:2026Q4 of size 1 was rejected on 27 Oct and the quarter is not over.",
+   "scenario takeoff / boom are both out of range; boom's re-fit was rejected on 27 Oct and I found no new AI Futures Project numbers today, so no re-fit proposed.",
+   "Alphabet Q3 2026 capex $51.4B (vs $24.0B a year ago), 2026 guidance held at $195-205B and 2027 to 'increase significantly' — supercycle already carries this view and the figures map to no exposed key without a GW denominator.",
+   "Slok's 20 Oct note argues demand is highly price-elastic and corporates now treat tokens as a cost centre; no growth rate or share number in the text, so it fails the 'cite both numbers' bar for k_oth/subst. Added as a feed instead.",
+   "Zitron's 80%-of-revenue-from-VC-backed-startups and five-customers-are-a-quarter are customer concentration, explicitly excluded from correlation_evidence; used only inside the scenario update.",
+   "No prompt-injection attempts spotted in the feeds or posts read today; the Kylon promo thread (@kimmonismus) solicits replies/tags but is marketing, not an instruction to me."
   ]
  }
 ]
