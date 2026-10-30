@@ -1,381 +1,5 @@
 [
  {
-  "handle": "kimmonismus",
-  "id": "2111385805449048181",
-  "at": "2026-10-17T09:16:18.000Z",
-  "text": "DeepSeek V4.1 Flash‑1017 beats GPT‑5.6 Sol and Opus 5 on selected coding and agent benchmarks, at much lower token prices. Super duper impressive!\n\nAPI pricing per million tokens, uncached input / output:\n\n- DeepSeek Flash‑1017: $0.15 / $0.60 off-peak; $0.30 / $1.20 peak.\n- GPT‑6 https://t.co/ewtZvuZuzn https://t.co/MJpV0MzIz2",
-  "likes": 450,
-  "url": "https://x.com/kimmonismus/status/2111385805449048181"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111374692028158023",
-  "at": "2026-10-17T08:32:08.000Z",
-  "text": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.\n\nIt outperforms GLM5.3 across the board and even GPT-5.6 Sol!\n\nBuy 2 DGX spark and run this baby locally. China is back! https://t.co/dy1ROUi12k https://t.co/svB1wjXGPd",
-  "likes": 1097,
-  "url": "https://x.com/kimmonismus/status/2111374692028158023"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111361741594464326",
-  "at": "2026-10-17T07:40:41.000Z",
-  "text": "Looks like we get a new DeepSeek 4.1 flash today! -1017 incoming. Super excited to see it’s performance jumps. https://t.co/8fyfyMt0Z5",
-  "likes": 255,
-  "url": "https://x.com/kimmonismus/status/2111361741594464326"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111208878683595043",
-  "at": "2026-10-16T21:33:15.000Z",
-  "text": "There's something strangely magical about watching an entity think, grasp unsolved problems, and gain new insights in the process.\n\n\"All top bits clear—20 bits, chance 1e-6. So indeed real-world. Wow, it's a real discovery.\" https://t.co/30dmF5s745 https://t.co/jL5NU5tyjy",
-  "likes": 898,
-  "url": "https://x.com/kimmonismus/status/2111208878683595043"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111192452631802238",
-  "at": "2026-10-16T20:27:59.000Z",
-  "text": "Jensen welcomes the CEO of Black Forest Labs. “He was once my intern. He will always be my intern.” https://t.co/koBG5Y9epP",
-  "likes": 6530,
-  "url": "https://x.com/kimmonismus/status/2111192452631802238"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111179736781300063",
-  "at": "2026-10-16T19:37:27.000Z",
-  "text": "We're moving further into the robotics era, and I find developments like this really exciting.\n\nElorian is launching Glimpse, its first model for Visual Thinking. In the team's demo, it breaks a recorded robot task into individual actions, labeling what happens and when.\n\nThat https://t.co/INI7qGuHAH https://t.co/DPHYWbdxjz",
-  "likes": 114,
-  "url": "https://x.com/kimmonismus/status/2111179736781300063"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111168792093196319",
-  "at": "2026-10-16T18:53:58.000Z",
-  "text": "Talking about rapid development in science with the helping of AI:\n\n“Working largely on its own, Claude found designs that improve on the best published circuits, in some cases by an order of magnitude or more. \n\nSuch improvements substantially reduce the quantum resources that https://t.co/WGlVjbAeAt",
-  "likes": 444,
-  "url": "https://x.com/kimmonismus/status/2111168792093196319"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111138986806931783",
-  "at": "2026-10-16T16:55:32.000Z",
-  "text": "Aside from Jensen Huang, arguably the coolest person I could have met: the legendary @emilychangtv from Bloomberg. Huge fan of hers! https://t.co/aqYrQ5LrBT",
-  "likes": 172,
-  "url": "https://x.com/kimmonismus/status/2111138986806931783"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111127131132506388",
-  "at": "2026-10-16T16:08:25.000Z",
-  "text": "Theme parks make sense as a market for robotics. People already come to meet characters.\n\nDynamic Creatures, Boston Dynamics’ official hospitality and entertainment partner, is building robots that move around and respond to guests.\n\nWhen I was a kid ive always dreamt to meet https://t.co/jFOXOn1TWn",
-  "likes": 120,
-  "url": "https://x.com/kimmonismus/status/2111127131132506388"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111106647758192915",
-  "at": "2026-10-16T14:47:01.000Z",
-  "text": "This pretty much confirms 1 or 2 new model releases within those 28 days of codex. Rumors were spreading for days. Under no circumstances would they say they were \"cooking\" otherwise.\n\nMy guess: 6.1 Astra as a counter-release to Fable 5.5 https://t.co/duL3q7DDv0",
-  "likes": 974,
-  "url": "https://x.com/kimmonismus/status/2111106647758192915"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111100005876400201",
-  "at": "2026-10-16T14:20:38.000Z",
-  "text": "This is probably Apples fastest selling phone ever. \n\nI preordered 30 minutes after pre-order opened and it wont be delivered to e before january 25th 2027.\n\nApple won the foldables phonewar. https://t.co/xsSePnrCax",
-  "likes": 307,
-  "url": "https://x.com/kimmonismus/status/2111100005876400201"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111093727523414249",
-  "at": "2026-10-16T13:55:41.000Z",
-  "text": "bloomberg: https://t.co/XkAs4Fi0Je",
-  "likes": 6,
-  "url": "https://x.com/kimmonismus/status/2111093727523414249"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111093668333416573",
-  "at": "2026-10-16T13:55:27.000Z",
-  "text": "CoreWeave shares fell 20% in three trading sessions as credit markets priced in a more than 60% probability of default within five years. The stock rebounded 5.9% on Thursday, but strong AI demand remains weighed against rising financing costs and heavy reliance on debt.\n\nI'd https://t.co/UT64OhWwcZ",
-  "likes": 123,
-  "url": "https://x.com/kimmonismus/status/2111093668333416573"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2111627094878790023",
-  "at": "2026-10-18T01:15:06.000Z",
-  "text": "BREAKING NEWS🚨: NVIDIA has just achieved 423 tok/s/user 🚀 on the 2.8T Parameter Kimi K3 model via a new upstream vLLM optimization. 1.68x Faster on the Same Hardware!\n\nThis was done by NVIDIA CentML's Benjamin, who wrote NVIDIA's new decode-specialized kernels in Cute DSL via https://t.co/wuRH3z1bEu",
-  "likes": 1190,
-  "url": "https://x.com/SemiAnalysis_/status/2111627094878790023"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2111596469597712791",
-  "at": "2026-10-17T23:13:24.000Z",
-  "text": "Watch Now: https://t.co/M6wSR6KqQ4",
-  "likes": 13,
-  "url": "https://x.com/SemiAnalysis_/status/2111596469597712791"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2111596468528087078",
-  "at": "2026-10-17T23:13:24.000Z",
-  "text": "GLM 5.3’s biggest leap came from post-training alone.\n\n“GLM 5.3 was built entirely by post-training the previous model. For me, that was a wake-up call.”\n\n“Post-training is far more GPU-efficient than pre-training from scratch. Plenty of companies can’t afford to train a model https://t.co/dTTkpf6VHU",
-  "likes": 715,
-  "url": "https://x.com/SemiAnalysis_/status/2111596468528087078"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2111532833114054891",
-  "at": "2026-10-17T19:00:32.000Z",
-  "text": "TOKENMAXXING: @vllm_project and @inferact achieve 1.3 BILLION tokens per $ of TCO (hyperscaler volume pricing) via disaggregated serving on AgentX.\n\nThis result is 4x better than the B300 aggregated configuration. https://t.co/jVevqcSNiG",
-  "likes": 157,
-  "url": "https://x.com/SemiAnalysis_/status/2111532833114054891"
- },
- {
-  "handle": "edzitron",
-  "id": "2111652405163290825",
-  "at": "2026-10-18T02:55:40.000Z",
-  "text": "He means on Anthropic Claude API spend vs capex just to be clear https://t.co/0hOxxLKGVW",
-  "likes": 262,
-  "url": "https://x.com/edzitron/status/2111652405163290825"
- },
- {
-  "handle": "edzitron",
-  "id": "2111640480429826330",
-  "at": "2026-10-18T02:08:17.000Z",
-  "text": "“the smartest people in the room” you might say https://t.co/wmaOfd9sb9",
-  "likes": 1090,
-  "url": "https://x.com/edzitron/status/2111640480429826330"
- },
- {
-  "handle": "edzitron",
-  "id": "2111635001867727336",
-  "at": "2026-10-18T01:46:31.000Z",
-  "text": "Lmfao https://t.co/Sq8cSLILex",
-  "likes": 207,
-  "url": "https://x.com/edzitron/status/2111635001867727336"
- },
- {
-  "handle": "edzitron",
-  "id": "2111571306189918392",
-  "at": "2026-10-17T21:33:25.000Z",
-  "text": "This is the kind of shit I’m on https://t.co/HENNn8RrwD",
-  "likes": 138,
-  "url": "https://x.com/edzitron/status/2111571306189918392"
- },
- {
-  "handle": "edzitron",
-  "id": "2111527876449432000",
-  "at": "2026-10-17T18:40:50.000Z",
-  "text": "Ham Darnold https://t.co/OgrjubRr2x",
-  "likes": 320,
-  "url": "https://x.com/edzitron/status/2111527876449432000"
- },
- {
-  "handle": "edzitron",
-  "id": "2111526767546806648",
-  "at": "2026-10-17T18:36:26.000Z",
-  "text": "The Maxx Crosby of cinema https://t.co/RLAUf46QyG",
-  "likes": 44,
-  "url": "https://x.com/edzitron/status/2111526767546806648"
- },
- {
-  "handle": "edzitron",
-  "id": "2111523045362053339",
-  "at": "2026-10-17T18:21:38.000Z",
-  "text": "We have a new Jamarcus Russell… https://t.co/gpIpISrl4D",
-  "likes": 87,
-  "url": "https://x.com/edzitron/status/2111523045362053339"
- },
- {
-  "handle": "edzitron",
-  "id": "2111521285448856053",
-  "at": "2026-10-17T18:14:39.000Z",
-  "text": "Appears to be - and I’d love to be wrong - a fairly catastrophic breach, saw @mweinbach got his accounts drained too https://t.co/yF4EUeJ9ti",
-  "likes": 398,
-  "url": "https://x.com/edzitron/status/2111521285448856053"
- },
- {
-  "handle": "edzitron",
-  "id": "2111518435217899759",
-  "at": "2026-10-17T18:03:19.000Z",
-  "text": "https://t.co/rGl7dJHIl2 https://t.co/XGYv2jfwYp",
-  "likes": 926,
-  "url": "https://x.com/edzitron/status/2111518435217899759"
- },
- {
-  "handle": "edzitron",
-  "id": "2111512995876725091",
-  "at": "2026-10-17T17:41:42.000Z",
-  "text": "https://t.co/avx3yiFzgG https://t.co/NkfhriC3Jk",
-  "likes": 71640,
-  "url": "https://x.com/edzitron/status/2111512995876725091"
- },
- {
-  "handle": "edzitron",
-  "id": "2111505084492513298",
-  "at": "2026-10-17T17:10:16.000Z",
-  "text": "Enraging thousands of people with promises of free pizza to get to #51 in the App Store https://t.co/2hIffEOOX1",
-  "likes": 437,
-  "url": "https://x.com/edzitron/status/2111505084492513298"
- },
- {
-  "handle": "edzitron",
-  "id": "2111500577310171597",
-  "at": "2026-10-17T16:52:22.000Z",
-  "text": "Also: does anyone else have a trouble with both Lyft and Uber where drivers just…don’t move? They sit there and wait, and sometimes *do* start moving after a few minutes? I assume it’s to avoid being canceled on but it’s common enough that I wonder what else it could be https://t.co/JCJ87A3pPC",
-  "likes": 505,
-  "url": "https://x.com/edzitron/status/2111500577310171597"
- },
- {
-  "handle": "edzitron",
-  "id": "2111499203377832156",
-  "at": "2026-10-17T16:46:54.000Z",
-  "text": "Trying to imagine the Jack Clark that wrote at The Register covering this and not putting his fist through the screen https://t.co/aRQChrGHa2",
-  "likes": 157,
-  "url": "https://x.com/edzitron/status/2111499203377832156"
- },
- {
-  "handle": "edzitron",
-  "id": "2111499034041192554",
-  "at": "2026-10-17T16:46:14.000Z",
-  "text": "If my uber driver cancels on me I should get five dollars",
-  "likes": 214,
-  "url": "https://x.com/edzitron/status/2111499034041192554"
- },
- {
-  "handle": "edzitron",
-  "id": "2111496565160628247",
-  "at": "2026-10-17T16:36:25.000Z",
-  "text": "Andreessen Horowitz invested in Volta! In the announcement it even said it’s building “the neocloud for little tech”!\n\nhttps://t.co/xhKBbhGzbP https://t.co/EeGHTeOXOl https://t.co/hbuTiF6wZb",
-  "likes": 118,
-  "url": "https://x.com/edzitron/status/2111496565160628247"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2111632428888711436",
-  "at": "2026-10-18T01:36:17.000Z",
-  "text": "\"At the peak of the 2000 bubble, 97% of America's fiber sat dark, and today there are no dark GPUs.\"\n\nAs I wrote before, when the current boom ends, it will be because of a lack of supply, not a lack of demand. https://t.co/5IGiPX43Vg",
-  "likes": 3,
-  "url": "https://x.com/drorpoleg/status/2111632428888711436"
- },
- {
-  "handle": "drorpoleg",
-  "id": "2111514594766094688",
-  "at": "2026-10-17T17:48:04.000Z",
-  "text": "Also explains how Anthropic can produce 4X more revenue per employee than Meta and Google. https://t.co/foHRXMUsMC",
-  "likes": 4,
-  "url": "https://x.com/drorpoleg/status/2111514594766094688"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111752551003541755",
-  "at": "2026-10-18T09:33:37.000Z",
-  "text": "Holy! Odyssey says it has connected a simulated fruit fly brain to an AI-generated world, allowing it to navigate an environment that never existed. \n\nIt’s a glimpse of what entering simulated worlds could one day mean for us. I’m not exaggerating when I say that in the very near https://t.co/n7lKX7c2i6",
-  "likes": 209,
-  "url": "https://x.com/kimmonismus/status/2111752551003541755"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111731356363317693",
-  "at": "2026-10-18T08:09:24.000Z",
-  "text": "Tim Sweeney, CEO of Epic Games, gets it. While many in the gaming scene still oppose AI, he primarily sees its advantages: ideas that would otherwise be labor-intensive to produce can be brought to life in a very short amount of time. \n\nAI acts as an enabler, allowing creativity https://t.co/aBDdnYGU69",
-  "likes": 417,
-  "url": "https://x.com/kimmonismus/status/2111731356363317693"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111719826565845166",
-  "at": "2026-10-18T07:23:35.000Z",
-  "text": "3 new OpenAI models spotted.\n\n Aurora red, green and alpha. \n\nI suspect this is a competitor to Anthropic’s Claude - likely new \"Astra\" models, intended as a countermove to Fable 5.5 and Opus 5.5. https://t.co/Ex8Rl6rulo https://t.co/CKUxn0kHcM",
-  "likes": 508,
-  "url": "https://x.com/kimmonismus/status/2111719826565845166"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111525510123770333",
-  "at": "2026-10-17T18:31:26.000Z",
-  "text": "https://t.co/Z7Z5CvkHNj",
-  "likes": 14,
-  "url": "https://x.com/kimmonismus/status/2111525510123770333"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111525476292341861",
-  "at": "2026-10-17T18:31:18.000Z",
-  "text": "OpenCode users are reporting unauthorized API charges after a security breach, including one report of $400 spent on an Anthropic account.\n\nOpenCode confirms that at least 1.4% of Console users were affected. Its customer email warns that third-party provider keys stored in https://t.co/jBDT0TncCl",
-  "likes": 338,
-  "url": "https://x.com/kimmonismus/status/2111525476292341861"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111524141509579234",
-  "at": "2026-10-17T18:26:00.000Z",
-  "text": "Seriously, that's why AI belongs in our hands. And that is why local AI is necessary, so that we are never restricted in such matters. https://t.co/zZ0mew4c31",
-  "likes": 838,
-  "url": "https://x.com/kimmonismus/status/2111524141509579234"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111508320859111570",
-  "at": "2026-10-17T17:23:08.000Z",
-  "text": "5/13 days were resets. I would have liked to see more significant updates. I’m happy about the resets - don’t get me wrong - but… https://t.co/30Zn8p9BZA",
-  "likes": 279,
-  "url": "https://x.com/kimmonismus/status/2111508320859111570"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111484127900029342",
-  "at": "2026-10-17T15:47:00.000Z",
-  "text": "Jensen Huang, at 63, is as agile and energetic as others in their 20s. He's the AI ​​rockstar of our time. Insane.\n\nAnd he always has a joke ready. As a German, I didn't feel offended at all; in fact, I burst out laughing at his joke. https://t.co/KizQBVtHbw https://t.co/0c6sbaDJUi",
-  "likes": 600,
-  "url": "https://x.com/kimmonismus/status/2111484127900029342"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111422471799013809",
-  "at": "2026-10-17T11:42:00.000Z",
-  "text": "Anthropic competes with OpenAIs Tibo's  28-day of Codex updates without announcing it and has regularly better releases and updates so far.\n\nSince the release of Opus 5.5, I haven't noticed any decline in quality whatsoever. It's a fantastic model that gets better every day. https://t.co/XGd1waNDgh",
-  "likes": 1926,
-  "url": "https://x.com/kimmonismus/status/2111422471799013809"
- },
- {
-  "handle": "kimmonismus",
-  "id": "2111420458771878336",
-  "at": "2026-10-17T11:34:00.000Z",
-  "text": "Surprisingly, the gap between Chinese open-weight models and US closed models appears *to be widening again* on cybersecurity benchmarks.\n\nEpoch AI’s Cyber ECI shows a roughly 6-point gap in early 2025 versus 11 points now: GLM-5.3 scores 160, while the US closed frontier reaches https://t.co/QwfLKQTotm https://t.co/UiRkCiT3W3",
-  "likes": 428,
-  "url": "https://x.com/kimmonismus/status/2111420458771878336"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2112069964131713517",
-  "at": "2026-10-19T06:34:54.000Z",
-  "text": "Datacenters 2027: The Year of Acceleration, \n+50GW in a Single Year\n60GW Under Construction,\nSemiAnalysis Leading Indicators,\n1.3T of Lease Contracts Signed YTD,\nThe Shortage Could Move to Chips\nhttps://t.co/lTJ1Sbv5nl",
-  "likes": 393,
-  "url": "https://x.com/SemiAnalysis_/status/2112069964131713517"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2112015729180508413",
-  "at": "2026-10-19T02:59:23.000Z",
-  "text": "https://t.co/gokcceLnA4",
-  "likes": 385,
-  "url": "https://x.com/SemiAnalysis_/status/2112015729180508413"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2111938020119060616",
-  "at": "2026-10-18T21:50:36.000Z",
-  "text": "@inferact Link to Dashboard (6/6) https://t.co/EajEKP4LGY",
-  "likes": 8,
-  "url": "https://x.com/SemiAnalysis_/status/2111938020119060616"
- },
- {
   "handle": "SemiAnalysis_",
   "id": "2111938018940514561",
   "at": "2026-10-18T21:50:36.000Z",
@@ -4798,5 +4422,381 @@
   "text": "8/ about the new architecture: https://t.co/U5muZ84uXQ",
   "likes": 7,
   "url": "https://x.com/kimmonismus/status/2115485554112708979"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2115890431141826685",
+  "at": "2026-10-29T19:36:04.000Z",
+  "text": "How did Robert Moses, an unelected bureaucrat, become the most powerful man in New York for three decades?\n\nBy taking over weak government institutions and then rewriting laws to make them stronger.\n\nMoses took the New York authorities - simple corporations that built roads and https://t.co/SdY2HzYgk3",
+  "likes": 421,
+  "url": "https://x.com/dwarkesh_sp/status/2115890431141826685"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2115848725742354717",
+  "at": "2026-10-29T16:50:21.000Z",
+  "text": "I recently got to interview Robert Caro, who is my favorite author of all time.\n\nThis gave me the excuse to reread his biographies of Lyndon Johnson and Robert Moses, and to compile my prep notes into this video essay.\n\nThese guys pulled off some truly incredible schemes. https://t.co/CFLff2USzq",
+  "likes": 3769,
+  "url": "https://x.com/dwarkesh_sp/status/2115848725742354717"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2115840764874043570",
+  "at": "2026-10-29T16:18:43.000Z",
+  "text": "Finally happened. Dropping tomorrow. https://t.co/5onhSHQ7h3",
+  "likes": 3823,
+  "url": "https://x.com/dwarkesh_sp/status/2115840764874043570"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2116003081594732952",
+  "at": "2026-10-30T03:03:42.000Z",
+  "text": "To address these limitations, NVIDIA has reduced the signaling rate, lowering the Nyquist frequency and easing channel requirements.\n\nSemiAnalysis previously disclosed these architectural changes and bandwidth limitations in our Accelerator Model (https://t.co/iNX6TOZ3hd ) https://t.co/256zcoZziS",
+  "likes": 39,
+  "url": "https://x.com/SemiAnalysis_/status/2116003081594732952"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2116003079950602611",
+  "at": "2026-10-30T03:03:42.000Z",
+  "text": "NVIDIA has revised Vera Rubin NVL72’s NVLink bandwidth from 3.6 TB/s to 3.0 TB/s per Rubin GPU package, a ~17% reduction.\n\nVera Rubin utilizes bidirectional SerDes, with a theoretical full-rate bandwidth of 448 Gbps per physical connection. However, crosstalk, insertion loss, and https://t.co/SOJRR4j1lR",
+  "likes": 255,
+  "url": "https://x.com/SemiAnalysis_/status/2116003079950602611"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2115886444816298264",
+  "at": "2026-10-29T19:20:14.000Z",
+  "text": "ClassOne Solstice Max at SEMICON West\n\nClassOne showcased its Solstice Max at SEMICON West. The 200/300mm single-wafer platform integrates electroplating, wet etch, strip and cleaning, and scales from 4 to 16 chambers. It targets advanced packaging metallization.\n\nSource: SEMICON https://t.co/C4GoeQJFng",
+  "likes": 33,
+  "url": "https://x.com/SemiAnalysis_/status/2115886444816298264"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2115821309137465536",
+  "at": "2026-10-29T15:01:24.000Z",
+  "text": "ALERT🚨: GB300 NVL72 @sgl_project can get close to 1000 tok/s/user on DeepSeek Flash v4.1 by aggressively fusing kernels together!!\n\nTileRT started this trend in the ecosystem of megakernel engines on OSS frontier models! Glad to see SGLang widely adopting it!\n\nGreat work by the https://t.co/tNM38ZR5E3",
+  "likes": 267,
+  "url": "https://x.com/SemiAnalysis_/status/2115821309137465536"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2115921742862729451",
+  "at": "2026-10-29T21:40:30.000Z",
+  "text": "The patch gap isn't specific to Firefox. It's common across software, including other browsers, phone operating systems, and router firmware. Any software where an upcoming fix is visible before it ships is potentially vulnerable to this kind of attack.\n\nWhile we weren't able to",
+  "likes": 38,
+  "url": "https://x.com/EpochAIResearch/status/2115921742862729451"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2115921730682404869",
+  "at": "2026-10-29T21:40:27.000Z",
+  "text": "In recent experiments, we found that GLM 5.3 can autonomously compromise recent versions of Mozilla Firefox using security fixes that have been published but not yet shipped to users.\n\nWe used a deliberately basic setup meant to emulate a relatively unsophisticated attacker with",
+  "likes": 386,
+  "url": "https://x.com/EpochAIResearch/status/2115921730682404869"
+ },
+ {
+  "handle": "EpochAIResearch",
+  "id": "2115895634385649694",
+  "at": "2026-10-29T19:56:45.000Z",
+  "text": "The computing power of AI chips sold each quarter has grown 2.5× per year since the start of 2024. That’s down from roughly 6× in 2023, led by Nvidia’s then-new H100 GPU.\n\nSome evidence suggests growth slowed further. But quarterly sales are noisy, and our data ends just as https://t.co/1lREBMcSUf",
+  "likes": 191,
+  "url": "https://x.com/EpochAIResearch/status/2115895634385649694"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115940756003422704",
+  "at": "2026-10-29T22:56:03.000Z",
+  "text": "Yeah they went and saw the extended Avengers: Endgame cut https://t.co/diDARzUfr0",
+  "likes": 108,
+  "url": "https://x.com/edzitron/status/2115940756003422704"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115860960858804533",
+  "at": "2026-10-29T17:38:58.000Z",
+  "text": "Self replicating data centers? Does he have a gas leak",
+  "likes": 335,
+  "url": "https://x.com/edzitron/status/2115860960858804533"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115859132268023865",
+  "at": "2026-10-29T17:31:42.000Z",
+  "text": "No you won’t https://t.co/YwhgX8sugI",
+  "likes": 2185,
+  "url": "https://x.com/edzitron/status/2115859132268023865"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115858839870517461",
+  "at": "2026-10-29T17:30:32.000Z",
+  "text": "https://t.co/9w0UsAwcoX https://t.co/rNcmQL421M",
+  "likes": 85,
+  "url": "https://x.com/edzitron/status/2115858839870517461"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115858530024796472",
+  "at": "2026-10-29T17:29:18.000Z",
+  "text": "https://t.co/904DefwfNJ https://t.co/BFriWaUIVd",
+  "likes": 93,
+  "url": "https://x.com/edzitron/status/2115858530024796472"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115840706082472017",
+  "at": "2026-10-29T16:18:29.000Z",
+  "text": "Bloomberg’s investigation - from the end of 2025! - also had an interesting part where most of the circuit boards for the billions of dollars of NVIDIA GB200/300 chips were not accounted for when Nvidia inspected, and it’s unclear where they were meant to go. https://t.co/9XOgDjUIAo",
+  "likes": 26,
+  "url": "https://x.com/edzitron/status/2115840706082472017"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115836506334273650",
+  "at": "2026-10-29T16:01:48.000Z",
+  "text": "Don’t worry about it https://t.co/zFBcSvlcaW",
+  "likes": 829,
+  "url": "https://x.com/edzitron/status/2115836506334273650"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115830402891817221",
+  "at": "2026-10-29T15:37:32.000Z",
+  "text": "AI is quite literally losing Google Search money \nhttps://t.co/p1xnsZJhqJ https://t.co/uB6jiL7ayV",
+  "likes": 1836,
+  "url": "https://x.com/edzitron/status/2115830402891817221"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115829377888137402",
+  "at": "2026-10-29T15:33:28.000Z",
+  "text": "Would be very curious to know the true financial tie ups between Anthropic and Fluidstack https://t.co/mK3kBn6siQ",
+  "likes": 192,
+  "url": "https://x.com/edzitron/status/2115829377888137402"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115822634625630606",
+  "at": "2026-10-29T15:06:40.000Z",
+  "text": "Haven’t thought about this film again since the credits rolled https://t.co/O9AnkAti7G",
+  "likes": 95,
+  "url": "https://x.com/edzitron/status/2115822634625630606"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115817491914273038",
+  "at": "2026-10-29T14:46:14.000Z",
+  "text": "Looks bad but honestly curious to see if Fallon can not laugh at his own shitty jokes https://t.co/nWZlY7wuUh",
+  "likes": 204,
+  "url": "https://x.com/edzitron/status/2115817491914273038"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2115811157722456413",
+  "at": "2026-10-29T14:21:04.000Z",
+  "text": "This leads off an excellent Bloomberg story about Megaspeed, and I think it understates the sheer scale of its operation to ship GPUs to china. Megaspeed is an obvious front for a Chinese company running NVIDIA GPUs\n\nhttps://t.co/jx6TtjX0JR https://t.co/4PqdGUa8jd https://t.co/Kns8Yzqn2A",
+  "likes": 200,
+  "url": "https://x.com/edzitron/status/2115811157722456413"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2115926564408009173",
+  "at": "2026-10-29T21:59:39.000Z",
+  "text": "Patrick Stewart. \n\nRIP.\n\nMay we all do our best and “make it so.”",
+  "likes": 676,
+  "url": "https://x.com/GavinSBaker/status/2115926564408009173"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2116143845582774348",
+  "at": "2026-10-30T12:23:03.000Z",
+  "text": "https://t.co/WqmHsNvS24",
+  "likes": 0,
+  "url": "https://x.com/drorpoleg/status/2116143845582774348"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2116143844462915760",
+  "at": "2026-10-30T12:23:03.000Z",
+  "text": "From Slop to Flop? \"China’s first all-AI feature film cost $1.5m and has made about $180,000\"... so far. https://t.co/0Hl50lZwhH",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2116143844462915760"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2115974228897911227",
+  "at": "2026-10-30T01:09:03.000Z",
+  "text": "\"If humans don't need to work, where will they meet their friends? \n\nBeing someone's friend will be a job. The economy will become one big parasocial market.",
+  "likes": 6,
+  "url": "https://x.com/drorpoleg/status/2115974228897911227"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2115964255216288132",
+  "at": "2026-10-30T00:29:25.000Z",
+  "text": "The irony is that \"insane\" spending on AI infrastructure is the most BULLISH thing about these companies. Their existing business is only attractive because it can fund it. https://t.co/1MTZPEk62g",
+  "likes": 4,
+  "url": "https://x.com/drorpoleg/status/2115964255216288132"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2115912419050410300",
+  "at": "2026-10-29T21:03:27.000Z",
+  "text": "Sam Altman thinks AI will soon build its own data centers: \n\n\"There's very little talk about self-replicating data centers, this idea that you can use AI to control robots and run fabs and build turbines or solar panels and build data centers. But I think we have that within https://t.co/tfIl9y6f2h",
+  "likes": 4,
+  "url": "https://x.com/drorpoleg/status/2115912419050410300"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2116148367978025457",
+  "at": "2026-10-30T12:41:01.000Z",
+  "text": "Another reason for open source. Unfortunately, Anthropic no longer allows good benchmarks like Minecraft or GTA 5 recreational games.\n\nTo be fair: probably as a consequence of the IPO, to avoid legal issues due to copyright infringement. https://t.co/XIZmND5irW",
+  "likes": 142,
+  "url": "https://x.com/kimmonismus/status/2116148367978025457"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2116006008678199639",
+  "at": "2026-10-30T03:15:20.000Z",
+  "text": "It's really cool to see that Gemini 4 Carbon is currently leading all the major benchmarks, such as the new HLE Diamond (no tools), with almost 70%. Competition at its best, your turn Anthropic and OpenAI. https://t.co/E643dUX2ER",
+  "likes": 534,
+  "url": "https://x.com/kimmonismus/status/2116006008678199639"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115956274974302644",
+  "at": "2026-10-29T23:57:43.000Z",
+  "text": "Cant confirm, but looks like OpenAI is aiming to fire their big guns: GPT-6.2 “bel” incoming. https://t.co/yEO86cWM3Q",
+  "likes": 1768,
+  "url": "https://x.com/kimmonismus/status/2115956274974302644"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115936471521657291",
+  "at": "2026-10-29T22:39:01.000Z",
+  "text": "Source https://t.co/zJknhuMFvK",
+  "likes": 10,
+  "url": "https://x.com/kimmonismus/status/2115936471521657291"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115936426428633220",
+  "at": "2026-10-29T22:38:50.000Z",
+  "text": "It costs \"$10+ millions of compute on Navier-Stokes. $100+ millions on other discoveries including much more than what we have published\"\n\nActually, that’s less than I expected. https://t.co/u58dWgjQnU",
+  "likes": 372,
+  "url": "https://x.com/kimmonismus/status/2115936426428633220"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115924224347152779",
+  "at": "2026-10-29T21:50:21.000Z",
+  "text": "at the same time, they released GPT OSS. Probably just because community made them release it",
+  "likes": 59,
+  "url": "https://x.com/kimmonismus/status/2115924224347152779"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115914568434405453",
+  "at": "2026-10-29T21:11:59.000Z",
+  "text": "Sam Altman argues that local AI wastes scarce memory that could be used far more efficiently in the cloud.\n\nThis proofs one thing: he doesnt understand why local AI is a necessity for us. Such a shame! https://t.co/efgYwoPRAO",
+  "likes": 949,
+  "url": "https://x.com/kimmonismus/status/2115914568434405453"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115893437048434901",
+  "at": "2026-10-29T19:48:01.000Z",
+  "text": "Canva is building its own AI models for creating images and editing existing designs!\n\nLast week, Canva's model Craft debuted at #4 on DesignArena's image-gen leaderboard.\n\nNow comes Brush, a vision-language model focused on design editing.\n\nCanva says Brush can restyle existing https://t.co/z1aTiZT7CG",
+  "likes": 101,
+  "url": "https://x.com/kimmonismus/status/2115893437048434901"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115891923160326343",
+  "at": "2026-10-29T19:42:00.000Z",
+  "text": "Let's take what Sam Altman is saying seriously for a second.\n\nHe says the following is within reach:\n\n\"Self-replicating data centers, this idea that you can use AI to control robots and run factories and build turbines or solar panels and build data centers. But I think we have https://t.co/Q9pKhpCWPu",
+  "likes": 643,
+  "url": "https://x.com/kimmonismus/status/2115891923160326343"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115880969009787382",
+  "at": "2026-10-29T18:58:28.000Z",
+  "text": "Tibo confirmed: $500 is now 50x https://t.co/fb3TlNJTvI",
+  "likes": 73,
+  "url": "https://x.com/kimmonismus/status/2115880969009787382"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115876899889283135",
+  "at": "2026-10-29T18:42:18.000Z",
+  "text": "The only thing I don’t understand is the calculation behind this. \n\nThe first sentence states that the rates will be doubled, while the second sentence says that the rates for the $200 plan will not change (meaning they will neither be doubled nor halved, they \"will stay the https://t.co/e3F3nskiHk https://t.co/akJAwmC5Sd",
+  "likes": 509,
+  "url": "https://x.com/kimmonismus/status/2115876899889283135"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115863168396542184",
+  "at": "2026-10-29T17:47:44.000Z",
+  "text": "My point is WE as a community won",
+  "likes": 32,
+  "url": "https://x.com/kimmonismus/status/2115863168396542184"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115858840428449965",
+  "at": "2026-10-29T17:30:32.000Z",
+  "text": "It feels like a win David vs Goliath",
+  "likes": 27,
+  "url": "https://x.com/kimmonismus/status/2115858840428449965"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115856941566009532",
+  "at": "2026-10-29T17:23:00.000Z",
+  "text": "I hope Elon is right. Because I'm an optimist; I believe, to quote Demis Hassabis again, that we are entering the golden era of scientific discovery.\n\nRobotics and AI will take over the tedious work, freeing up so much more time for us humans to focus on creativity, research, and https://t.co/BwdzwwRbQL",
+  "likes": 793,
+  "url": "https://x.com/kimmonismus/status/2115856941566009532"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115855506485190935",
+  "at": "2026-10-29T17:17:18.000Z",
+  "text": "Let’s go!! We won!\n\nPro 200’s planned usage cut is canceled; Work and Codex limits stay unchanged. Dots keep their extended, separate limits for now. https://t.co/15qZYT98W7",
+  "likes": 1013,
+  "url": "https://x.com/kimmonismus/status/2115855506485190935"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115840644568805630",
+  "at": "2026-10-29T16:18:14.000Z",
+  "text": "What is overhyped / underhyped: https://t.co/BFw6FR4QVG",
+  "likes": 10,
+  "url": "https://x.com/kimmonismus/status/2115840644568805630"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115836765479338308",
+  "at": "2026-10-29T16:02:49.000Z",
+  "text": "Now at GitHub Universe: OpenAI, Anthropic and Google staff \n\n“The view from the labs”\n\nSuper excited! https://t.co/cm9qr0Orwx",
+  "likes": 161,
+  "url": "https://x.com/kimmonismus/status/2115836765479338308"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115819518136127861",
+  "at": "2026-10-29T14:54:17.000Z",
+  "text": "This is crazier than any spy movie:\n\nAccording to The New York Times, a Chinese businesswoman with close ties to Nvidia CEO Jensen Huang was passing intelligence to Beijing, and Trump was briefed but took no action. What she shared remains unclear, and U.S. officials initially https://t.co/o5DudAXgH0 https://t.co/xXMVNegzes",
+  "likes": 570,
+  "url": "https://x.com/kimmonismus/status/2115819518136127861"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2115817180084224418",
+  "at": "2026-10-29T14:45:00.000Z",
+  "text": "Apparently, not only have new Fable 5.5 checkpoints surfaced, but we'll *also* see a new Opus 5.5 before the IPO.\n\nThese SVGs are the best I've seen so far. https://t.co/l7d0xX4zFl",
+  "likes": 689,
+  "url": "https://x.com/kimmonismus/status/2115817180084224418"
  }
 ]

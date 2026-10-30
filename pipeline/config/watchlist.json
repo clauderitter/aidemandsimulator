@@ -227,6 +227,13 @@
    "kind": "html",
    "match": "/data/ai-data-centers/updates",
    "added": "2026-10-25"
+  },
+  {
+   "name": "9fin Insights (AI credit & capital structure)",
+   "url": "https://www.9fin.com/insights",
+   "kind": "html",
+   "match": "/insights",
+   "added": "2026-10-30"
   }
  ],
  "x_handles": [

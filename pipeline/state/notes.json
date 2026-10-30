@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-10-15",
-  "notes": [
-   "nvda_short: could not retrieve stockanalysis.com/stocks/nvda/statistics/ this session (fetch detection timeout, then server tool-use limit exceeded); no verified reading newer than 1.27% as of 2026-09-15 — retry next refresh.",
-   "token_index: Ramp published the October 2026 AI Index (ramp.com/data/ai-index-oct-2026, 2026-10-14), but the text gives no numeric effective price per million tokens — it only says frontier price declines are 'driving the blended price per million tokens down', with the figure shown only inside an embedded Datawrapper chart (DUO9V) I could not read. Last stated number remains $0.68 (Sept 2026). No newer same-measure reading proposed.",
-   "token_index alternatives seen and rejected: BenchLM Token Price Index ($5.81/1M median blended flagship, Oct 2026) and benchlm 'frontier token price index' — different measure (vendor list prices, not Ramp's spend-observed effective rate).",
-   "h100_rental: page carries no explicit as-of date; used the fetch date 2026-10-14. Value unchanged at $2.00/hr, so this is a date refresh only.",
-   "Bloomberg (via @kimmonismus, 15 Oct) reports Anthropic Q3 revenue $16.8B, adjusted profitability and a ~$110B exit-2026 run-rate vs ~$9B end-2025; I could not verify the primary article (search/fetch budget exhausted, x.com not fetchable) nor decompose Epoch's current $118.8B sum, so no R0_epoch proposal - the collector should be checked against this report.",
-   "Gartner (via @edzitron, 14 Oct): 80% of neoclouds gone by 2030, $8.5T of revenue needed for 12% ROIC, $4T+ of writedown risk by 2032. Quantitative and institutional, but only a tweet summary was available, it overlaps the live 'gap' and 'credit' scenarios, and all four rotating slots are occupied - noted, not proposed.",
-   "growth_calibration (orgX): ledger shows 7 consecutive weeks over 0.05 with slack (util 37%), but the gap has collapsed 23 -> 16 -> 7 pts and orgX was moved to 1.3 on 2026-10-08; a further move risks overshoot, so none proposed this run.",
-   "Ramp: a record 8% of firms switched AI provider in September - frontier-to-frontier switching, not migration off frontier endpoints, so it does not move subst (set 2026-09-17 on Vercel production data).",
-   "boom remains out of range (2027Q4 $478B vs $600-1500B) but the only fresh Patel/Baker material was a Gavin Baker X thread that could not be fetched; no re-fit proposed without readable proponent numbers.",
-   "METR's three 14 Oct posts are assessment-methodology proposals with no new time-horizon or doubling-time measurement, so H0 (2026-04-07) and D0 stay stale.",
-   "Epoch's SpireClimb benchmark, Anthropic's source-control post (merges per day up >10x) and OpenAI's customer stories (Third Moment Research, 10,000 agents for 36+ hours) are capability/usage colour without a loop-gain, share or capacity number.",
-   "Coatue 'Chart of the Day' 14 Oct is a single chart with no numbers in text - excluded.",
-   "An event:2026Q4 price shock was rejected on 2026-10-13; the Ramp/Tunguz deflation evidence is encoded in the price scenario instead of re-proposing an event.",
-   "No prompt-injection or instruction-like text was encountered in any fetched page or feed item this run.",
-   "Tool budget note: web_search returned no results and both search and fetch budgets were exhausted mid-run; Noahpinion 'AI vs. the railroads' and the October Vercel production index went unread."
-  ]
- },
- {
   "date": "2026-10-16",
   "notes": [
    "capex_ocf: Epoch AI's source page (https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow) is still dated Jun. 16, 2026 and still states aggregate cash capex across Microsoft, Amazon, Alphabet, Meta and Oracle is on track to overtake operating cash flow around Q3 2026 — no newer reading, gauge stays 'crossed Q3 2026' as of 2026-06-16.",
@@ -272,6 +252,24 @@
    "Slok's 20 Oct note argues demand is highly price-elastic and corporates now treat tokens as a cost centre; no growth rate or share number in the text, so it fails the 'cite both numbers' bar for k_oth/subst. Added as a feed instead.",
    "Zitron's 80%-of-revenue-from-VC-backed-startups and five-customers-are-a-quarter are customer concentration, explicitly excluded from correlation_evidence; used only inside the scenario update.",
    "No prompt-injection attempts spotted in the feeds or posts read today; the Kylon promo thread (@kimmonismus) solicits replies/tags but is marketing, not an instruction to me."
+  ]
+ },
+ {
+  "date": "2026-10-30",
+  "notes": [
+   "openrouter_cn: source page (digitalapplied, modified 2026-10-03) still shows the same CNBC figure, 57-67% for the week of Sept 14 across US/Europe/'Global South' company groups; no newer reading on the same basis.",
+   "openrouter_cn: newer OpenRouter numbers exist but use different denominators - 49.8% of all routed tokens globally in the week of Oct 19-25 (OpenRouter via Caixin), and ~44-61% among the top 10 models - so they are not the same measure as the regional-group 57-67% and were not proposed.",
+   "capex_ocf: Epoch AI's 'Hyperscaler capex vs cash flow' data insight is unchanged, still dated Jun. 16, 2026, with the same 'on track to overtake operating cash flow around Q3 2026' framing; no newer reading, and Epoch has not yet posted a Q3 2026 actuals update.",
+   "nvda_short: stockanalysis.com does not publish the short-interest settlement date on the statistics page; the 2026-09-30 reading (1.34% / 311.39M) now appears as 'Short Previous Month', which is what anchors the assumed mid-October as_of.",
+   "R0_epoch: Epoch's revenue_reports CSV (updated 27 Oct) still carries Anthropic at $65B dated 31 Jul 2026 and OpenAI at $50B dated 30 Sep; the S-1/CNBC Q3 figure of $16.8bn implies ~$67B annualised, so the disclosed sum would move only 118.8 -> ~121 (+2%). Too small and too dependent on guessing Epoch's full component list; left to the collector.",
+   "Gavin Baker (Atreides, boom-scenario proponent) is reported saying Anthropic could reach $100B ARR by year-end — would be the natural scenario_update for 'boom' (currently OUT OF RANGE: 2027Q4 $510B vs $600-1500B), but my search budget ran out before I could fetch the page and verify a verbatim quote. Flagging for next run.",
+   "Epoch AI data insight, 29 Oct 2026, 'New global AI computing capacity is doubling every 9 months': quarterly capacity additions growing ~2.5x/yr since 2024, down from ~6x in 2023, with hints of further deceleration. Global H100e chip sales do not map cleanly onto frontier-lab GW online over six quarters, so I did not translate it into a pipe/buildMax move; worth a capacity_estimate if Epoch publishes a frontier-lab GW figure.",
+   "subst: Anthropic's S-1 reports cost-per-task cuts of ~25% (Fable 5.1) and ~40% (Opus 5.5) and an earlier cut that took growth from 48% to 132% q/q — frontier price cuts with a strong volume response, arguing for less migration. It conflicts with the Vercel gateway data behind the current 30, and is indirect, so no move proposed.",
+   "fin: S-1 shows Anthropic with no drawn debt, a $15B undrawn revolver, $6.2B non-interest-bearing convertibles and $3.9bn of operating cash flow, but $637B of compute commitments and off-balance-sheet GPU bonds. Ambiguous for financing sensitivity (leverage sits with suppliers), so fin left at 1.2.",
+   "mono sanity check (no proposal): $8.9bn H1 compute spend against ~4 GW and $1.82 revenue per compute dollar implies roughly $16-18B of revenue per inference GW-year, which is consistent with mono=55 at the observed 34% utilisation. mono was moved on 28 Oct anyway.",
+   "orgX: calibration ledger shows 9 straight weeks above the 0.05 threshold but the gap has fallen from 26pts to 12pts and an orgX move to 1.4 was rejected on 28 Oct; not re-proposed this week.",
+   "Customer concentration in the S-1 (no customer >10%, top five ~25% for the nine months to September) cuts against the rampconc scenario's framing, but concentration alone does not qualify under correlation_evidence, so no scenario change proposed.",
+   "No prompt-injection attempts noticed in the feeds, X posts or fetched pages read today; the X items were mostly non-quantitative commentary."
   ]
  }
 ]

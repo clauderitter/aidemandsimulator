@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-10-30",
+  "source": "https://www.9fin.com/insights/anthropic-s-1-revenue-gains-looming-infrastructure-bill",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.9fin.com/insights",
+  "reason": "Adds a fetchable credit-research feed whose S-1 read separates Anthropic's own capex from its rented compute bill and forward obligations, covering debt-financing evidence the existing equity-commentary sources miss."
+ },
+ {
+  "date": "2026-10-30",
+  "source": "https://www.9fin.com/insights/anthropic-s-1-revenue-gains-looming-infrastructure-bill",
+  "kind": "rejected",
+  "target": "k_rd",
+  "old": null,
+  "new": 0.65,
+  "reason": "The ~4× growth in Anthropic's compute spend is the same S-1 figure already applied to k_rd on 21 October (when it moved 0.75 → 0.70), so re-applying it would double-count one filing."
+ },
+ {
+  "date": "2026-10-30",
+  "source": "https://paulkedrosky.com/nine-charts-on-the-ai-boom-debt-records-china-bust-anthropic-indifference-oracle-magic-etc/",
+  "kind": "rejected",
+  "target": "rho",
+  "old": null,
+  "new": 0.68,
+  "reason": "The venture-backing share of top AI spenders describes funding composition, not the co-movement between loops that rho encodes, and the same statistic was rejected for rho on 21 and 24 October."
+ },
+ {
+  "date": "2026-10-30",
+  "source": "https://tomtunguz.com/anthropics-s1-grew-eleven-fold/",
+  "kind": "rejected",
+  "target": "k_swe",
+  "old": null,
+  "new": 0.7,
+  "reason": "Net revenue retention of ~900% is expansion across Anthropic's whole customer book, not software-engineering token spend returned and re-spent on tokens, and this exact quote was already rejected for this key on 27 October."
+ },
+ {
+  "date": "2026-10-30",
+  "source": "https://stockanalysis.com/stocks/nvda/statistics/",
+  "kind": "accepted",
+  "target": "gauge:nvda_short",
+  "old": "1.34% of float",
+  "new": "1.30% of float",
+  "reason": "Same measure as the current tile — short interest as a share of float — from a fresher settlement (301.6M shares, 1.30% of float, down from 311.4M), with the headline kept in the tile's existing unit."
+ },
+ {
+  "date": "2026-10-30",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "34%",
+  "new": "34%",
+  "reason": "Observed from source (2026-10-30).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-30",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-10-30).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-30",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.3%",
+  "new": "9.2%",
+  "reason": "Observed from source (2026-10-30).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-30",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.9",
+  "new": "17.2",
+  "reason": "Observed from source (2026-10-29).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-30",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "318bp",
+  "new": "314bp",
+  "reason": "Observed from source (2026-10-28).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-30",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-28).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-30",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.99%",
+  "new": "5.05%",
+  "reason": "Observed from source (2026-10-28).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-29",
   "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/slowing-token-spend-shows-compute-demand-is-not-unlimited",
   "kind": "accepted",
@@ -3500,113 +3608,5 @@
   "new": "8.5%",
   "reason": "Observed from source (2026-09-19).",
   "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.4",
-  "new": "14.8",
-  "reason": "Observed from source (2026-09-18).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "270bp",
-  "new": "270bp",
-  "reason": "Observed from source (2026-09-17).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "rateGap",
-  "old": -0.05,
-  "new": 0.2,
-  "reason": "Rule: policy vs neutral = Fed funds effective 3.88% + 0.4 − neutral 4.1%.",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.63%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-09-17).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.01%",
-  "new": "4.94%",
-  "reason": "Observed from source (2026-09-17).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-18",
-  "source": "https://darioamodei.com/post/we-must-pace-the-frontier",
-  "kind": "rejected",
-  "target": "scenario:pacing",
-  "old": null,
-  "new": null,
-  "reason": "Gate: shock reg size out of range."
- },
- {
-  "date": "2026-09-18",
-  "source": "https://openai.com/index/gpt-6-astra/",
-  "kind": "rejected",
-  "target": "event:2026Q3",
-  "old": null,
-  "new": 1,
-  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://openai.com/index/gpt-6-astra/."
- },
- {
-  "date": "2026-09-18",
-  "source": "https://www.aaii.com/sentimentsurvey",
-  "kind": "accepted",
-  "target": "gauge:aaii",
-  "old": "33% / 44%",
-  "new": "28.8% / 53.3%",
-  "reason": "AAII's own weekly survey page reports bulls 28.8% and bears 53.3% for the week ending 16 September, a primary and more recent reading of the same measure."
- },
- {
-  "date": "2026-09-18",
-  "source": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
-  "kind": "accepted",
-  "target": "gauge:fms_crowded",
-  "old": "53%",
-  "new": "53%",
-  "reason": "September BofA FMS confirms long global semiconductors remains the most crowded trade at 53%, refreshing the as-of date on an unchanged reading."
- },
- {
-  "date": "2026-09-18",
-  "source": "https://cryptobriefing.com/bofa-survey-ai-slowdown-bond-yield-fears/",
-  "kind": "accepted",
-  "target": "gauge:fms_tailrisk",
-  "old": "32%",
-  "new": "28%",
-  "reason": "September BofA Global FMS directly reports 28% naming an AI bubble the top tail risk, down from 32% in August, a fresh reading of the same measure."
- },
- {
-  "date": "2026-09-18",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "44% vs 22% per qtr",
-  "new": "+56% vs +25%",
-  "reason": "Observed from source (2026-09-18).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-18",
-  "kind": "collected",
-  "target": "rate0",
-  "old": 4,
-  "new": 4.1,
-  "reason": "Rule: neutral rate = trailing-year mean of Fed funds 3.72% + 0.4 term premium.",
-  "source": "https://fred.stlouisfed.org/series/DFF"
  }
 ]
