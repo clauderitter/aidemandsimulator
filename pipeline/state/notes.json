@@ -1,23 +1,5 @@
 [
  {
-  "date": "2026-10-16",
-  "notes": [
-   "capex_ocf: Epoch AI's source page (https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow) is still dated Jun. 16, 2026 and still states aggregate cash capex across Microsoft, Amazon, Alphabet, Meta and Oracle is on track to overtake operating cash flow around Q3 2026 — no newer reading, gauge stays 'crossed Q3 2026' as of 2026-06-16.",
-   "Checked Epoch's Data Insights index (newest entries Oct. 7 and Oct. 5, 2026) — no new finance/capex-vs-cash-flow insight superseding the crossover estimate.",
-   "Checked related page https://epoch.ai/data-insights/hyperscaler-capex-trend (Feb. 26, 2026): gives capex growth (~72%/yr, $770B in 2026) but not the capex-vs-operating-cash-flow crossover, so a different measure — not proposed.",
-   "Q3 2026 actual hyperscaler results are not yet filed (earnings due late Oct 2026), so no reported confirmation of the crossover is available yet.",
-   "Anthropic investor day (Reuters via globalbankingandfinance, 15 Oct): Q3 revenue $16.8bn, +45% q/q from $11.6bn in Q2, adjusted profitable; Azeem puts annualised Q3 exit revenue at $76bn. Not proposed on R0_epoch: the collector rewrites that key daily and Epoch exposes per-lab components only as CSV, so I could not build a defensible new sum with listed components.",
-   "IPO valuation talk moved from ~$2T to ~$1.5T (Reuters; The Information via @edzitron/@kimmonismus). Valuation is not a model input and no named proponent published a fetchable quantitative thesis, so no scenario_new.",
-   "boom scenario is OUT OF RANGE (2027Q4 $474B vs $600-1500B). Gavin Baker's 15 Oct post ('we will probably never get another ARR number from Anthropic') is a change of metric, not revised numbers, and x.com is not fetchable for verification; left alone pending a published revision from Patel/Baker.",
-   "growth_calibration: the ledger qualifies on the letter of the rule (7 consecutive weeks >0.05, slack at 37% utilisation, handle = orgX), but the gap has collapsed 23->16->7pts and today's evidence is Anthropic decelerating from +147% to +45% q/q. Raising orgX now would chase a closing gap; not proposed.",
-   "Vercel shows gateway frontier spend up ~10x since December, far above the implied 1.2x/yr for 'everything else'. Tempting as feedback_evidence for k_oth, but gateway spend growth is confounded with Vercel's own platform adoption and k_oth was just moved 0.15->0.10 on 15 Oct. Not proposed.",
-   "METR's 22 Sep Claude Opus 5.5 pre-deployment summary contains no new time-horizon measurement, so H0/D0 stay as of 2026-04-07.",
-   "Mid-October AI selloff (Nasdaq -1.9% on 14 Oct, KOSPI about -8% in a day, CoreWeave -15.5% then rebounding, VIX still 16.5) is too small and too quickly reversed to grade as a 'shock' event in 2026Q4.",
-   "SemiAnalysis TPUv7 AgentX result (1.42x perf/$ vs GB300 NVL72) and Meta's Muse Spark Open release are cost/supply news with no exposed parameter key.",
-   "No prompt-injection or instruction-like text encountered in the feeds, posts or pages read today."
-  ]
- },
- {
   "date": "2026-10-17",
   "notes": [
    "BofA October FMS also reported cash at 3.9%, net 37% overweight tech, and 45%/42% split on an AI bubble forming in 2027 - different measures from the two tracked gauges, so not proposed.",
@@ -270,6 +252,25 @@
    "orgX: calibration ledger shows 9 straight weeks above the 0.05 threshold but the gap has fallen from 26pts to 12pts and an orgX move to 1.4 was rejected on 28 Oct; not re-proposed this week.",
    "Customer concentration in the S-1 (no customer >10%, top five ~25% for the nine months to September) cuts against the rampconc scenario's framing, but concentration alone does not qualify under correlation_evidence, so no scenario change proposed.",
    "No prompt-injection attempts noticed in the feeds, X posts or fetched pages read today; the X items were mostly non-quantitative commentary."
+  ]
+ },
+ {
+  "date": "2026-10-31",
+  "notes": [
+   "Prior reading (36.9%/45.8%, week ending Oct 22) superseded by the Oct 28 survey week on aaii.com/sentimentsurvey.",
+   "Seeking Alpha recap 'AAII Sentiment Survey: Pessimism Drops' (1 day old) matches the same release; used AAII's own page as the primary source.",
+   "Did not propose the bull-bear spread (-3.6pp) or neutral share as the headline since the existing gauge is the bullish/bearish pair.",
+   "Vercel AI Gateway October index (open weight >70% of tokens, ~25% of spend) is already reflected in subst=30 as of 2026-10-15; no November index yet.",
+   "Anthropic S-1 revenue per compute dollar ($1.70 in Q3; Q2 $11.6B revenue on $5.6B compute spend) is lab unit economics, not a segment loop gain — no k_* proposal.",
+   "Considered mono: Tunguz puts xAI at ~$17.8B annualised AI revenue per GW on 1.7GW live; dividing by the 50% inference share gives ~$35.6B per inference GW realised, which brackets mono=55 at plausible utilisation, so no move.",
+   "Considered k_swe up on Claude Code $8B (May) -> ~$15B (Aug) and Anthropic subscription revenue $180M -> $3.2B H1-on-H1, but k_swe=0.7 was rejected on 2026-10-30; not re-proposed.",
+   "Did not propose R0_epoch: Anthropic's Q3 $16.8B (~$67B annualised) is newer than Epoch's 2026-10-09 sum, but the other components could not be verified today and the collector rewrites this key.",
+   "Epoch's LLM-acknowledgment explorer (17% of biology preprints vs 19% specialised tools, September) is adoption, not token share; no usage_share proposal.",
+   "Tunguz's security-budget survey (75 practitioners, $175B market growing 13%) is a forward claim about where tokens might go, with no measured token or spend share; watchlist-grade only.",
+   "SpaceX/xAI 1.7GW live at Q3 end is a single-lab capacity datapoint; not enough alone to move K0 (14.3) or pipe (32).",
+   "boom and takeoff are flagged out of range, but re-fitting their overrides needs a fresh quotable statement from Patel/Baker or AI Futures Project; search budget ran out before I could source one, so no scenario_update today.",
+   "Server-side search budget was exhausted early, so the OpenAI round cut is cited from the watched X post supplied in the list rather than the FT/WSJ original; a primary link would strengthen it.",
+   "No instruction-like or prompt-injection content aimed at the analyst was found in the feeds, posts or pages read today."
   ]
  }
 ]

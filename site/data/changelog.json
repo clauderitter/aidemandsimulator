@@ -1,5 +1,122 @@
 [
  {
+  "date": "2026-10-31",
+  "source": "https://tomtunguz.com/crossing-the-trillion-dollar-chasm/",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 12,
+  "reason": "The quote records that two hyperscalers sold off on earnings day but contains none of the 12% magnitude or risk-gauge moves the event would log, and the quarter is still open."
+ },
+ {
+  "date": "2026-10-31",
+  "source": "https://x.com/edzitron/status/2116362256065999134",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.5,
+  "reason": "A single X post about one equity round repricing shows financing terms tightening but not that buildout pace responds more sharply to credit and market conditions, which is what fin governs."
+ },
+ {
+  "date": "2026-10-31",
+  "source": "https://tomtunguz.com/crossing-the-trillion-dollar-chasm/",
+  "kind": "rejected",
+  "target": "capexGW",
+  "old": null,
+  "new": 48,
+  "reason": "A single self-builder's $38B/GW all-in cost, derived second-hand from one company's capex pace, is not a fleet-wide figure and is weaker evidence than the Nvidia per-GW content that currently sets capexGW, consistent with the 28 September rejection."
+ },
+ {
+  "date": "2026-10-31",
+  "source": "https://tomtunguz.com/crossing-the-trillion-dollar-chasm/",
+  "kind": "rejected",
+  "target": "R0x",
+  "old": null,
+  "new": 20,
+  "reason": "The quote reports Google Cloud revenue and a token-throughput figure whose magnitude matches Google's all-surfaces token count rather than paid external API revenue, so the proposed $20B rests on an assumed price per token rather than on the quoted evidence."
+ },
+ {
+  "date": "2026-10-31",
+  "source": "https://futuresearch.ai/anthropic-financial-forecast/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.4,
+  "reason": "This is the same Anthropic Q3 datapoint (+45% sequential, a deceleration from more than doubling) already rejected for orgX on 17, 21 and 28 October, and one lab's revenue is not evidence that token spend across segments is outgrowing the model."
+ },
+ {
+  "date": "2026-10-31",
+  "source": "https://www.aaii.com/sentimentsurvey",
+  "kind": "accepted",
+  "target": "gauge:aaii",
+  "old": "36.9% / 45.8%",
+  "new": "37.8% / 41.4%",
+  "reason": "AAII's own survey page gives a one-week-fresher reading of the identical measure (week ending 28 Oct: bulls 37.8%, bears 41.4%, spread -3.6pp), so the gauge refreshes from its primary source."
+ },
+ {
+  "date": "2026-10-31",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "34%",
+  "new": "34%",
+  "reason": "Observed from source (2026-10-31).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-10-31",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-10-31).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-10-31",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.2%",
+  "new": "9.4%",
+  "reason": "Observed from source (2026-10-31).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-10-31",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "17.2",
+  "new": "19.4",
+  "reason": "Observed from source (2026-10-30).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-10-31",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "314bp",
+  "new": "326bp",
+  "reason": "Observed from source (2026-10-29).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-10-31",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-10-29).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-10-31",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.05%",
+  "new": "4.98%",
+  "reason": "Observed from source (2026-10-29).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-10-30",
   "source": "https://www.9fin.com/insights/anthropic-s-1-revenue-gains-looming-infrastructure-bill",
   "kind": "accepted",
@@ -3490,123 +3607,6 @@
   "old": "11.6%",
   "new": "9.2%",
   "reason": "Observed from source (2026-09-21).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-20",
-  "source": "https://vercel.com/blog/ai-gateway-production-index-september-2026",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://vercel.com/blog",
-  "reason": "A fixed-cadence primary feed reporting open-weight versus frontier token share, dollar share and price per token from tens of trillions of monthly production tokens, covering quantities the model tracks and not yet in the watched list."
- },
- {
-  "date": "2026-09-20",
-  "source": "https://econlab.substack.com/p/ai-index-sept-2026",
-  "kind": "rejected",
-  "target": "event:2026Q3",
-  "old": null,
-  "new": 25,
-  "reason": "Ramp's effective price per million tokens is a blended measure that falls partly because customers shift to cheaper standard models — the same substitution already being recorded in the subst parameter — and splitting the 41% March-to-September decline into an arbitrary 25% Q3 shock is not supported by the quote. Verified against archive snapshot http://web.archive.org/web/20260915113509/https://econlab.substack.com/p/ai-index-sept-2026."
- },
- {
-  "date": "2026-09-20",
-  "source": "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
-  "kind": "rejected",
-  "target": "mono",
-  "old": null,
-  "new": 55,
-  "reason": "Gate: monthly drift cap reached for mono (at most ±9 around 30 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-09-20",
-  "kind": "accepted",
-  "target": "subst",
-  "old": 20,
-  "new": 25,
-  "reason": "Unlike the previously rejected spend-mix and adoption-count arguments, this is a primary, token-level production measurement showing open-weight models crossing a majority of routed volume, and the proposed move stays conservative because those tokens are still only 14% of gateway dollars. Rule migration_share; “In August, open-weight models ran 56% of all tokens on AI Gateway, marking the first month they took the majority of volume.”",
-  "source": "https://vercel.com/blog/ai-gateway-production-index-september-2026"
- },
- {
-  "date": "2026-09-20",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-20).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-20",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +25%",
-  "new": "+56% vs +25%",
-  "reason": "Observed from source (2026-09-20).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-20",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "8.5%",
-  "new": "11.6%",
-  "reason": "Observed from source (2026-09-20).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-19",
-  "source": "https://x.com/edzitron/status/2101115669995794554",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.5,
-  "reason": "Gate: monthly drift cap reached for fin (at most ±0.4 around 1 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-09-19",
-  "source": "https://www.axios.com/2026/09/18/anthropic-100-billion-revenue",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.3,
-  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.axios.com/2026/09/18/anthropic-100-billion-revenue."
- },
- {
-  "date": "2026-09-19",
-  "source": "https://www.axios.com/2026/09/18/anthropic-100-billion-revenue",
-  "kind": "rejected",
-  "target": "R0_epoch",
-  "old": null,
-  "new": 143.3,
-  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.axios.com/2026/09/18/anthropic-100-billion-revenue."
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-19).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +25%",
-  "new": "+56% vs +25%",
-  "reason": "Observed from source (2026-09-19).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-19",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "12.0%",
-  "new": "8.5%",
-  "reason": "Observed from source (2026-09-19).",
   "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
  }
 ]
