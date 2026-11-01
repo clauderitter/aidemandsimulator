@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-10-17",
-  "notes": [
-   "BofA October FMS also reported cash at 3.9%, net 37% overweight tech, and 45%/42% split on an AI bubble forming in 2027 - different measures from the two tracked gauges, so not proposed.",
-   "A secondary report of the same October FMS gave the yields tail risk as 31% and listed 185 managers/$512bn; I used the cryptobriefing write-up (same outlet as the current gauge source) for the AI-bubble 23% and semis 45% figures.",
-   "AAII neutral (19.7%) and the 1-year bearish high (53.3%, week ending 9/16/2026) are available but are not the tracked measure.",
-   "Epoch 5 Oct: OpenAI researchers' coding-agent spend doubling every ~1 month vs AI R&D implied steady growth x9.1/yr would argue k_rd up, but k_rd was just moved to 0.75 on 2026-10-15 on newer evidence; not re-proposed.",
-   "Anthropic Q3 $16.8B left to the collector: R0_epoch is rewritten daily from Epoch's disclosed sum, and the Daily Upside report is secondary to an IPO-pitch leak.",
-   "CoreWeave CDS at a record 1,194bp / ~60% five-year default odds (Bloomberg, ICE) is paywalled; used the Daily Upside write-up instead, and did not propose a 'shock' event since no index-level drawdown number was available.",
-   "SemiAnalysis moratorium update (~2.3 GW of ~21 GW likely delayed, cited in The Economist) restates figures already in the grid scenario's 15 Sep revision; no change.",
-   "DeepSeek V4.1 Flash-1017 at $0.15/$0.60 per M tokens matching Opus 5 on some benchmarks is suggestive for subst, but carries no share-of-traffic number; subst was moved to 30 on 2026-10-15 on Vercel gateway data.",
-   "Tunguz on Google's $2 task vs $7 on Fable is already inside the 13 Oct revision of the 'price' scenario.",
-   "Nomura's reported caution on data-centre investment reached me only as a screenshot in an X post, with no fetchable primary text or numbers; skipped.",
-   "Kedrosky's Ezra Klein appearance post carries no numbers; Zitron's premium post and the Stratechery weekly are subscriber-walled.",
-   "Gartner's own press release renders only metadata to a plain fetch, so the $8.5T/$3.6T numbers are cited via The Daily Upside's quotation of the 14 Oct report.",
-   "Epoch ECI items (Gemini 4 Argon 165, GLM-5.3 cyber gap 6-7 months) are capability readings with no exposed parameter rule; no METR update found this week, so H0/D0 unchanged.",
-   "No prompt-injection attempts noticed in the feeds or pages read today."
-  ]
- },
- {
   "date": "2026-10-18",
   "notes": [
    "METR time-horizons page fetched: states it is no longer actively updated (last updated 8 Sep 2026); benchmark_results_1_1.yaml still tops out at claude_mythos_preview (release 7 Apr 2026, p80 185.9 min) and gives from_2023_on doubling of 128.744 days = 4.2 months — identical to current H0/D0 as-of dates, so no metr_latest or metr_doubling proposal.",
@@ -271,6 +252,22 @@
    "boom and takeoff are flagged out of range, but re-fitting their overrides needs a fresh quotable statement from Patel/Baker or AI Futures Project; search budget ran out before I could source one, so no scenario_update today.",
    "Server-side search budget was exhausted early, so the OpenAI round cut is cited from the watched X post supplied in the list rather than the FT/WSJ original; a primary link would strengthen it.",
    "No instruction-like or prompt-injection content aimed at the analyst was found in the feeds, posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-11-01",
+  "notes": [
+   "Ramp Sept 2026 index blog cites $0.68 effective price per million tokens — older than the current $0.64 reading, not used.",
+   "Per-provider blended prices (OpenAI $0.46, Anthropic $0.61) and token share figures are different measures; not proposed.",
+   "Monthly adoption/spend-per-employee metrics on the same page are through Sep 2026 but are not this gauge's measure.",
+   "R0_epoch not proposed: S-1 leaves the Q3 dollar figure blank; Luminix reports the Business section implies ~$16.9bn for Q3 2026 (~$67bn run-rate, close to Bloomberg's $16.8bn), but I have no matching newer OpenAI/other components to restate the sum, as primary_report requires.",
+   "orgX not proposed despite the 9-week ledger (gap 12pts, slack at 34% utilisation): orgX→1.4 was rejected on 2026-10-31; re-proposing the same handle a day later seemed pointless.",
+   "fin, capexGW and R0x all rejected on 2026-10-31; the S-1 adds colour ($482m of H1 capex, compute rented not built, $35bn Apollo GPU bond) but nothing that changes those values decisively.",
+   "rampconc scenario looks weakened: the S-1 shows no customer above 10% of revenue and the top five at ~25%, and Azeem Azhar (investmentbrief.ai, 27 Oct) calls the 80%-from-a-handful claim incorrect, with nearly half of revenue via Amazon/Google/Microsoft as distributors. Not proposed as a retire because the proponent has not recanted, and customer concentration alone does not qualify under correlation_evidence.",
+   "Anthropic revenue per dollar of total compute $1.82 in 1H'26 vs $0.50 a year earlier (9fin) and $0.40→$2.08 over five quarters (Exponential View) noted but used only as supporting colour, not as a separate parameter move.",
+   "No new METR horizon or doubling-time measurement found, so H0/D0 untouched.",
+   "9fin feed items this week (Weil Gotshal, ransomware, GP-led secondaries, league tables) carry nothing on AI credit; SemiAnalysis, edzitron, kimmonismus and dwarkesh X posts were qualitative or unrelated (GPT-6.2 rumours, Qwen 4, memes).",
+   "No prompt-injection or instruction-like text encountered in any fetched page or post."
   ]
  }
 ]

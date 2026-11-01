@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-11-01",
+  "source": "https://www.mbi-deepdives.com/ant-s1/",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.mbi-deepdives.com/",
+  "reason": "The cited post shows the source publishes dated, numeric training-versus-inference compute allocations built off primary filings, which is the evidence class the compute_split rule needs, so it is added to the watchlist (no model value changes)."
+ },
+ {
+  "date": "2026-11-01",
+  "source": "https://www.mbi-deepdives.com/ant-s1/",
+  "kind": "accepted",
+  "target": "scenario:trainheavy",
+  "old": null,
+  "new": "added",
+  "reason": "MBI Deep Dives' S-1 model states a quantified structural view not represented in the active set — that three-quarters of the fleet serves research and training rather than paying customers, so compute demand is a training race with inference as a thin high-margin sliver — with the caveat that its k_rd=0.8 override rests on the scenario's own reading rather than direct feedback evidence. MBI Deep Dives (Anthropic S-1 model, 'Race, Choice or Flywheel?'), 2026-10-28."
+ },
+ {
+  "date": "2026-11-01",
+  "source": "",
+  "kind": "expired",
+  "target": "scenario:overhang",
+  "old": "active",
+  "new": "retired",
+  "reason": "Retired to make room for “Training is the demand”: the least distinct structural scenario (closest path to its neighbours, 26%)."
+ },
+ {
+  "date": "2026-11-01",
+  "source": "https://www.9fin.com/insights/anthropic-s-1-revenue-gains-looming-infrastructure-bill",
+  "kind": "rejected",
+  "target": "k_rd",
+  "old": null,
+  "new": 0.65,
+  "reason": "The ~4× annual growth in Anthropic's compute spend is the same S-1 figure already applied to k_rd on 21 October and rejected again on 30 October; restating it via 9fin as '300% growth in compute costs' would double-count one filing."
+ },
+ {
+  "date": "2026-11-01",
+  "source": "https://www.mbi-deepdives.com/ant-s1/",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 25,
+  "reason": "Anthropic itself describes the ~25% drop in cost per typical workload as a combination of lower price and model efficiency, so it does not establish a 25% price event, and the proposal admits the cited rule does not fit."
+ },
+ {
+  "date": "2026-11-01",
+  "source": "https://www.mbi-deepdives.com/ant-s1/",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 60.5,
+  "reason": "Revenue per inference GW was already moved to 55 on 28 October on the same Anthropic S-1 (read via SemiAnalysis), so a second commentator's reading of the same filing one day later would double-count, and the proposed 60.5 is simply the speed-limit cap."
+ },
+ {
+  "date": "2026-11-01",
+  "kind": "accepted",
+  "target": "train",
+  "old": 50,
+  "new": 60,
+  "reason": "Anthropic's S-1 Note 8 recasts compute by function and puts customer-serving at only 27% of the 1H'26 bill (44% in 1H'25, 35% in 2H'25) — an audited split that outranks the Epoch/Patel estimates behind the current 50, and the capped move to 60 is appropriately conservative given the free tier sits in the non-serving bucket. Rule compute_split; “In 1H’25, the serving share peaked at 44%, then fell to 35% in 2H’25, and to 27% 1H’26.”",
+  "source": "https://www.mbi-deepdives.com/ant-s1/"
+ },
+ {
+  "date": "2026-11-01",
+  "source": "https://ramp.com/data/ai-index",
+  "kind": "accepted",
+  "target": "gauge:token_index",
+  "old": "$0.64/M tok",
+  "new": "$0.56/M tok",
+  "reason": "Same Ramp blended OpenAI/Anthropic price per million tokens as the current tile, refreshed to the week ending 23 Oct 2026 ($0.56, −26.8% month over month)."
+ },
+ {
+  "date": "2026-11-01",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "34%",
+  "new": "34%",
+  "reason": "Observed from source (2026-11-01).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-01",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-11-01).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-01",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.4%",
+  "new": "9.7%",
+  "reason": "Observed from source (2026-11-01).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-10-31",
   "source": "https://tomtunguz.com/crossing-the-trillion-dollar-chasm/",
   "kind": "rejected",
@@ -3509,104 +3608,5 @@
   "new": "+56% vs +24%",
   "reason": "Observed from source (2026-09-22).",
   "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-22",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "9.2%",
-  "new": "10.8%",
-  "reason": "Observed from source (2026-09-22).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-22",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "14.8",
-  "new": "14.9",
-  "reason": "Observed from source (2026-09-21).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-22",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "270bp",
-  "new": "268bp",
-  "reason": "Observed from source (2026-09-18).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-09-22",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-09-18).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-22",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.94%",
-  "new": "5.01%",
-  "reason": "Observed from source (2026-09-18).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-21",
-  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
-  "kind": "rejected",
-  "target": "k_swe",
-  "old": null,
-  "new": 0.7,
-  "reason": "The quote reports combined OpenAI/Anthropic total revenue growth, not software-engineering token spend or any revenue returned to token purchases, so it speaks to the level and growth of the market rather than to the SWE loop gain."
- },
- {
-  "date": "2026-09-21",
-  "kind": "collected",
-  "target": "R0",
-  "old": 118.3,
-  "new": 123.3,
-  "reason": "Derived: Epoch disclosed sum 108.3 + undisclosed allowance 15.",
-  "source": ""
- },
- {
-  "date": "2026-09-21",
-  "kind": "accepted",
-  "target": "R0x",
-  "old": 10,
-  "new": 15,
-  "reason": "Epoch's 27 August figures put the whole generative-AI market near $200B/year against ~$100B for the two disclosed labs, a fresher and directly relevant bound on the undisclosed residual, and $15B remains a small, conservative fraction of it. Rule undisclosed_estimate; “Anthropic and OpenAI together are now earning revenue at a rate of $100 billion per year. Exponential View estimates that the whole generati”",
-  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number"
- },
- {
-  "date": "2026-09-21",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-09-21).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-21",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +25%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-21).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-21",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "11.6%",
-  "new": "9.2%",
-  "reason": "Observed from source (2026-09-21).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
  }
 ]
