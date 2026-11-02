@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-10-18",
-  "notes": [
-   "METR time-horizons page fetched: states it is no longer actively updated (last updated 8 Sep 2026); benchmark_results_1_1.yaml still tops out at claude_mythos_preview (release 7 Apr 2026, p80 185.9 min) and gives from_2023_on doubling of 128.744 days = 4.2 months — identical to current H0/D0 as-of dates, so no metr_latest or metr_doubling proposal.",
-   "METR predeployment evaluation of Claude Opus 5.5 (22 Sep 2026) contains no time-horizon figure; its '~1.5X overall acceleration in capabilities due to AI, with perhaps 30% chance of 2X' maps to rdBoost, a modelling constant that is off limits.",
-   "orgX / growth_calibration: ledger shows 7 consecutive weeks over 0.05 but the gap has narrowed 16pts -> 7pts and an orgX move to 1.35 was rejected on 17 Oct; did not re-propose a just-rejected handle on a shrinking gap.",
-   "Epoch data-centre ranking gives site-level operational MW but no frontier-fleet total, so no K0 or pipe move was derivable; proposed as a watchlist source instead.",
-   "DCD/CNBC (23 Sep 2026) on OpenAI and Anthropic seeking 20-30 MW inference sites while gigawatt projects lag: suggestive for lead/delivery_timeline but predates the current lead evidence and the page body truncated before any signing-to-delivery figure.",
-   "SemiAnalysis AgentX posts (1.3B tokens per $ of TCO on DeepSeek-V4.1-Flash; TPUv7 FP8 1.67x perf/$ vs GB300 NVL72) are hardware-efficiency results, not revenue per GW, cost per GW or migration share — no clean mapping to mono, capexGW or subst.",
-   "drorpoleg's 'no dark GPUs' post recycles Gavin Baker's Oct 2025 dark-fibre analogy; stale and already inside the boom camp's thesis.",
-   "boom (2027Q4 $470B vs stated $600-1500B) and takeoff (x4.0 vs stated x4-8) are out of their proponents' ranges and need re-fitted overrides, but the server tool budget ran out before I could fetch a proponent page for a verbatim quote; flagged for the next run.",
-   "Epoch's Oct 2026 insights on cyber ECI gaps, math-preprint AI acknowledgements and Ipsos AI-use polling carry numbers but touch no exposed parameter key.",
-   "No instruction-like text addressed to the analyst appeared in any fetched page or in the supplied post list this run."
-  ]
- },
- {
   "date": "2026-10-19",
   "notes": [
    "SemiAnalysis lease TCV of $30-50B per GW is 15-20 year lease value, not build capex, so it does not move capexGW; 54 stays consistent with Nvidia's $40B/GW Vera Rubin silicon plus shell and power.",
@@ -268,6 +253,23 @@
    "No new METR horizon or doubling-time measurement found, so H0/D0 untouched.",
    "9fin feed items this week (Weil Gotshal, ransomware, GP-led secondaries, league tables) carry nothing on AI credit; SemiAnalysis, edzitron, kimmonismus and dwarkesh X posts were qualitative or unrelated (GPT-6.2 rumours, Qwen 4, memes).",
    "No prompt-injection or instruction-like text encountered in any fetched page or post."
+  ]
+ },
+ {
+  "date": "2026-11-02",
+  "notes": [
+   "JPMorgan Private Bank (Oct 23 note, via secondary report): $266B AI-linked bond issuance YTD 2026 vs $139B in all of 2025, of which $182B from hyperscalers - broader 'AI-linked' scope and a different hyperscaler universe, so not the same measure; not proposed.",
+   "Goldman Sachs Research: $194B hyperscaler debt issuance YTD, ~$500B AI-related - dated late July/August, not newer than the current $225B reading.",
+   "No updated S&P Global count (hyperscalers plus related entities like Nvidia) found beyond the $225B as-of 2026-07-31 figure in the Fortune source; search quota exhausted before this could be confirmed.",
+   "orgX growth_calibration: the ledger is 10 weeks over 0.05 with slack (util0 43%), so the handle is open, but today's Ramp/S-1 read (Q4-to-date business spend +15-25% QoQ vs +46.7% in Q3) says observed growth is converging down toward the modelled x2.4 a year; raising orgX now would chase a gap that is closing on its own, and 1.4 was already rejected on 31 Oct. Revisit next week.",
+   " boom and takeoff are both flagged OUT OF RANGE, but I found no fresh fetchable source from Dwarkesh Patel / Gavin Baker or the AI Futures Project today to re-fit overrides against; re-fitting without a quotable restatement would be my numbers, not theirs. Flagged for the next run.",
+   "Anthropic's revised S-1 (2 Nov, CNBC) reports ~$17B Q3 revenue, $33.24B for nine months and $895.4B of purchase commitments against the $800B+ cited in the contagion/credit scenario text; web_fetch budget was exhausted before I could verify a body quote containing those figures, so no contagion/credit scenario_update this week.",
+   "SemiAnalysis 'Datacenters 2027: The Year of Acceleration' (19 Oct): +50 GW global in 2027, 60 GW under construction, >24 GW in advanced construction, $1.3T of lease contracts YTD - all-datacentre rather than frontier-lab GW, and pipe was already calibrated on 19 Oct, so no pipe or K0 move.",
+   "SemiAnalysis GDPx (2 Nov): new agentic benchmark, 206 tasks across 11 high-value domains, best model scores 12%. Capability evidence but not a METR 80%-success time horizon, so it cannot move H0 or D0 under metr_latest/metr_doubling. H0 remains a stale March 2026 reading and is the weakest input in the model right now.",
+   "Weekly re-baseline: R0_epoch proposed at 137 (Anthropic ~$67B annualised + OpenAI ~$70B); R0x 15, H0 8.34, D0 4.2, K0 14.3, pipe 32, train 60, capexGW 54, sh_rd 20, sh_swe 20, sh_trd 15 all re-derive to within their per-run limits of current values on today's evidence - no new usage-share, cost-per-GW, compute-split or frontier-capacity figures surfaced.",
+   "Amazon 3Q'26 guidance (AWS to grow over 40% in each of 2027 and 2028, capex ~$220B rising) would support a supercycle scenario_update, but that scenario's overrides are relative ('=x:1.6', '=util0:1.0') and the proposal schema accepts only numeric override values, so an update would silently convert them to absolutes. Left alone.",
+   "Ed Zitron, Gavin Baker, Tunguz 'Four Questions of AI' and the 9fin wraps read today: commentary without a new quantified parameter claim. No proposal.",
+   "No prompt-injection attempts noticed in any feed, X post or page read today."
   ]
  }
 ]

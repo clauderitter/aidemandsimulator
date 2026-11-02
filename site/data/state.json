@@ -1,20 +1,20 @@
 {
  "version": 1,
- "generated_at": "2026-11-01T13:46:39.564Z",
+ "generated_at": "2026-11-02T16:34:43.585Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
  "scenario_cap": 20,
  "params": {
   "R0": {
-   "value": 133.8,
+   "value": 152,
    "label": "Frontier token revenue",
    "hidden": false,
    "basis": "Anthropic run-rate $65B at end-July 2026 (Bloomberg, 17 Aug 2026; the path ran $14B Feb → $30B Apr → $47B May → $65B Jul) with investors expecting $100–120B by year-end; OpenAI $40B (Bloomberg, 13 Aug 2026); Epoch puts the two at $105B combined, up 3.5× since January. Google does not break out Gemini API revenue; Z.ai, MiniMax, DeepSeek, xAI and Mistral add a few billion. Rounded sum entering Q3 2026.",
-   "as_of": "2026-10-09",
+   "as_of": "2026-11-02",
    "type": "derived",
    "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "updated": "2026-10-09",
+   "updated": "2026-11-02",
    "rule": "R0 = R0_epoch + R0x, derived in one place",
    "short": "Total frontier revenue run-rate = Epoch’s disclosed sum + the undisclosed allowance. Derived; edit the two parts."
   },
@@ -501,14 +501,14 @@
    "short": "Labs can add up to a quarter of their fleet per quarter (~2.4× a year), between analyst pace and Patel’s tripling."
   },
   "fin": {
-   "value": 1.2,
+   "value": 1.35,
    "label": "Financing sensitivity to markets",
    "hidden": false,
    "basis": "Datacentres are financed like real estate at 70%+ debt, with ~$4T of AI infrastructure issuance estimated over five years (Tunguz, Sep 2026); builds scale with credit and market conditions. (estimate, 2026-09-04). New quantitative sizing of the debt dependence of the buildout: $4T of issuance over five years, equal to 143% of the entire global private credit market and 286% of US commercial paper, with data centres financed as real-estate projects at 70%+ debt. That is a materially larger debt share than the FactSet 9%->32% figure the current value rests on, so builds should scale more, not less, with credit and market conditions. Modest move within the per-run limit (1 -> 1.3) rather than to the credit-scenario level of 2.",
-   "as_of": "2026-09-29",
-   "type": "estimate",
-   "source": "https://thenextweb.com/news/anthropic-ipo-prospectus-42bn-loss-518bn-compute",
-   "updated": "2026-09-29",
+   "as_of": "2026-10-30",
+   "type": "reported",
+   "source": "https://www.mbi-deepdives.com/amzn3q26/",
+   "updated": "2026-11-02",
    "rule": "",
    "short": "Datacentres are financed like real estate at 70%+ debt, with ~$4T of AI infrastructure issuance estimated over five years (Tunguz, Sep 2026); builds scale with credit and market conditions."
   },
@@ -573,15 +573,15 @@
    "rule": ""
   },
   "R0_epoch": {
-   "value": 118.8,
+   "value": 137,
    "label": "Disclosed frontier revenue (Epoch)",
    "hidden": false,
    "basis": "Sum of the latest full-company annualised run-rates in Epoch’s revenue dataset for the frontier labs it tracks.",
    "short": "Epoch’s disclosed sum; the collector rewrites it daily. Total revenue = this + the undisclosed allowance.",
-   "as_of": "2026-10-09",
-   "type": "reported",
-   "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "updated": "2026-10-09",
+   "as_of": "2026-10-15",
+   "type": "estimate",
+   "source": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html",
+   "updated": "2026-11-02",
    "rule": "epoch_sum"
   },
   "orgX": {
@@ -804,9 +804,9 @@
    "fidelity": {
     "ok": false,
     "checks": [
-     "OUT: 2027Q4 $510B vs $600–1500B"
+     "OUT: 2027Q4 $511B vs $600–1500B"
     ],
-    "date": "2026-11-01"
+    "date": "2026-11-02"
    }
   },
   {
@@ -851,7 +851,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×3.5 vs ×4–8"
     ],
-    "date": "2026-11-01"
+    "date": "2026-11-02"
    }
   },
   {
@@ -1170,9 +1170,9 @@
     "ok": true,
     "checks": [
      "ok: 2027Q4 $232B vs $225–340B",
-     "ok: 2028Q4 $457B vs $395–675B"
+     "ok: 2028Q4 $456B vs $395–675B"
     ],
-    "date": "2026-11-01"
+    "date": "2026-11-02"
    }
   },
   {
@@ -1205,18 +1205,24 @@
    "id": "grid",
    "camp": "structural",
    "name": "Grid bottleneck",
-   "who": "SemiAnalysis (Maya Barkin, Reyk Knuhtsen, Jeremie Eliahou Ontiveros, Dylan Patel) grid, behind-the-meter, moratorium and Texas permitting analyses",
-   "when": "Jun-Jul 2026; revised 15 Sep 2026; revised 24 Oct 2026 (Texas TCEQ freeze audit)",
-   "thesis": "Firm power, turbines and transformers set the pace — and permitting politics now bite as well. September's parcel-level audit of 300+ moratoriums found only ~2.3 GW genuinely delayed because behind-the-meter generation was the workaround; Governor Abbott's 21 Sep directive closes it, telling TCEQ to stop issuing any datacenter-linked permit until ERCOT finishes its review. SemiAnalysis's site-by-site audit finds six Texas campuses, 8.7 GW in all, needing air permits during the pause; three already have a first tranche of generation permitted, one has filed and two have not. Base case: TCEQ resumes in December after ERCOT's 10 Dec report, the phases needing permits soon slip about a quarter and the rest of the forecast holds. Build pace stays capped near 0.18 a quarter with a six-quarter lead, and revenue per GW stays tied to realised utilisation.",
-   "src": "https://x.com/SemiAnalysis_/status/2114130061028643066",
+   "who": "SemiAnalysis (Maya Barkin, Wayne Ma, Reyk Knuhtsen, Jeremie Eliahou Ontiveros, Dylan Patel)",
+   "when": "1 Nov 2026 (prior revisions 24 Oct, 15 Sep, Jun-Jul 2026)",
+   "thesis": "Firm power, turbines, transformers and now permitting politics set the pace. 2027 is largely locked in: roughly three-quarters of the 33.8 GW due across the top 20 states is already under construction and the global +50 GW year holds. 2028 is not: 62.2 GW of US net additions are mostly unstarted, 43.5 GW of that sits in 13 states electing governors on 3 Nov, and a prolonged Texas permit freeze is the biggest single risk to the US buildout.",
+   "src": "https://newsletter.semianalysis.com/p/the-datacenter-backlash-goes-bipartisan",
    "p": {
     "buildMax": 0.18,
     "lead": 6
    },
-   "e": [],
+   "e": [
+    {
+     "type": "capex_cut",
+     "q": "2028Q1",
+     "v": 25
+    }
+   ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-10-25",
+   "updated": "2026-11-02",
    "core": true
   },
   {
@@ -1272,14 +1278,14 @@
    "camp": "bear",
    "name": "Concentrated customer base",
    "who": "Ara Kharazian, Ramp Economics Lab",
-   "when": "27 Oct 2026 (Ramp AI Index update; prior reads 2 Sep and 14 Oct 2026)",
-   "thesis": "80% of OpenAI and Anthropic enterprise revenue comes from 1% of customers, and that top 1% is itself tech and AI firms. The cohort stalled in September — Ramp card spend on Anthropic peaked in July — and the Opus 5.5 launch only partly reversed it: spend is still 1.6% below the July peak and 63% of Anthropic spend now runs on the newest frontier model. Demand in the concentrated cohort therefore tracks release cadence, leaving it correlated and procyclical: a drawdown or a missed release cuts R&D and software token budgets together.",
-   "src": "https://x.com/arakharazian/status/2115123970160640324",
+   "when": "2 Nov 2026 (prior reads 27 Oct, 14 Oct, 2 Sep 2026)",
+   "thesis": "80% of OpenAI and Anthropic enterprise revenue comes from 1% of customers, itself tech and AI firms. That cohort is now visibly decelerating: Anthropic's amended S-1 shows Q3 revenue growth of 46.7% QoQ against Ramp's 53.3% card-spend estimate, and Q4-to-date business spend is trending only 15-25% QoQ. Growth in the narrow base halves within a quarter, and a drawdown in that same cohort cuts token budgets together.",
+   "src": "https://x.com/arakharazian/status/2117285829756485932",
    "p": {
     "rho": 0.78,
     "betaX": 1.35,
     "k_oth": 0.08,
-    "orgX": 1.15
+    "orgX": 1.05
    },
    "e": [
     {
@@ -1299,7 +1305,7 @@
     }
    ],
    "status": "active",
-   "updated": "2026-10-28",
+   "updated": "2026-11-02",
    "added": "2026-09-03",
    "core": false
   },
@@ -1450,12 +1456,12 @@
   {
    "id": "util0",
    "label": "Quarter-zero utilisation",
-   "value": "34%",
-   "sub": "frontier revenue 133.8 ÷ (14.3 GW × 50% inference × $55B/GW); above 100% means rationed",
+   "value": "43%",
+   "sub": "frontier revenue 133.8 ÷ (14.3 GW × 40% inference × $55B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-01",
+   "as_of": "2026-11-02",
    "auto": true,
-   "updated": "2026-11-01"
+   "updated": "2026-11-02"
   },
   {
    "id": "fms_tailrisk",
@@ -1482,12 +1488,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "9.7%",
-   "sub": "1 Nov 2026 · “AI bubble burst in 2026?”",
+   "value": "6.3%",
+   "sub": "2 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-01",
+   "as_of": "2026-11-02",
    "auto": true,
-   "updated": "2026-11-01"
+   "updated": "2026-11-02"
   },
   {
    "id": "aaii",
@@ -1589,7 +1595,7 @@
    "auto": false,
    "updated": "2026-09-03",
    "cadence_days": 45,
-   "next_check": "2026-11-02"
+   "next_check": "2026-11-03"
   },
   {
    "id": "dgs10",
@@ -1604,12 +1610,12 @@
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "326bp",
-   "sub": "29 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 89bp",
+   "value": "344bp",
+   "sub": "30 Oct 2026 · ICE BofA US high-yield spread (FRED); investment grade 94bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-10-29",
+   "as_of": "2026-10-30",
    "auto": true,
-   "updated": "2026-10-31"
+   "updated": "2026-11-02"
   },
   {
    "id": "vc_h1",
@@ -1638,9 +1644,9 @@
    "value": "+40% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-01",
+   "as_of": "2026-11-02",
    "auto": true,
-   "updated": "2026-11-01"
+   "updated": "2026-11-02"
   }
  ],
  "frozen": [],
@@ -1726,10 +1732,17 @@
     "gObs": 0.3359,
     "gMod": 0.2149,
     "gap": 0.121
+   },
+   {
+    "week": "2026-W45",
+    "date": "2026-11-02",
+    "gObs": 0.3359,
+    "gMod": 0.2149,
+    "gap": 0.121
    }
   ],
-  "weeks_at_gap": 9,
+  "weeks_at_gap": 10,
   "fast_lane": false,
-  "util0": 0.34
+  "util0": 0.425
  }
 }

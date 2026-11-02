@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-11-02",
+  "kind": "accepted",
+  "target": "fin",
+  "old": 1.2,
+  "new": 1.35,
+  "reason": "Unlike the single-issuer and single-deal evidence rejected earlier, Amazon's 3Q'26 disclosures show the largest self-funded builder's long-term debt rising from $65.6bn to $173.1bn in ten months with a new ~$80bn facility earmarked for servers, so a larger share of the marginal build now depends on credit conditions. Rule financing_evidence; “and long-term debt has gone from $65.6 Billion to $173.1 Billion since the end of last year.”",
+  "source": "https://www.mbi-deepdives.com/amzn3q26/"
+ },
+ {
+  "date": "2026-11-02",
+  "source": "https://newsletter.semianalysis.com/p/the-datacenter-backlash-goes-bipartisan",
+  "kind": "accepted",
+  "target": "scenario:grid",
+  "old": "updated",
+  "new": "updated",
+  "reason": "SemiAnalysis has re-cut the same scenario with dated figures — ~three-quarters of 2027's 33.8 GW already under construction versus 62.2 GW of mostly unstarted 2028 additions, 43.5 GW of it in states voting on 3 November — so moving the binding risk to 2028 and representing the Texas permit freeze as a dated build cut is faithful to the stated view."
+ },
+ {
+  "date": "2026-11-02",
+  "source": "https://x.com/arakharazian/status/2117285829756485932",
+  "kind": "accepted",
+  "target": "scenario:rampconc",
+  "old": "updated",
+  "new": "updated",
+  "reason": "Ramp's own economist posts fresh quantified reads from the amended S-1 — Q3 growth of 46.7% QoQ falling to 15-25% quarter-to-date — which is the deceleration this existing scenario predicted, so lowering its organic-growth override from 1.15 to 1.05 follows from the proponent's new numbers."
+ },
+ {
+  "date": "2026-11-02",
+  "kind": "collected",
+  "target": "R0",
+  "old": 133.8,
+  "new": 152,
+  "reason": "Derived: Epoch disclosed sum 137 + undisclosed allowance 15.",
+  "source": ""
+ },
+ {
+  "date": "2026-11-02",
+  "kind": "accepted",
+  "target": "R0_epoch",
+  "old": 118.8,
+  "new": 137,
+  "reason": "Anthropic's reported Q3 revenue of $16.8bn annualises to ~$67bn, which with OpenAI's ~$70bn ARR rebaselines the disclosed-lab sum to ~$137bn; the annualised-quarter method is conservative against the $110bn year-end expectation cited in the same report. Verified against archive snapshot http://web.archive.org/web/20261024110853/https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html. Rule primary_report; “Revenue rose from $11.6 billion in the second quarter, with first-quarter revenue at $4.7 billion, the people said, adding that Anthropic sa”",
+  "source": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html"
+ },
+ {
+  "date": "2026-11-02",
+  "source": "https://www.tokenpost.com/news/investing/45277",
+  "kind": "rejected",
+  "target": "gauge:bonds",
+  "old": null,
+  "new": 218.1,
+  "reason": "The $218.1B figure covers only five hyperscalers' investment-grade issuance while the current $225B reading uses a broader AI-issuer universe, so swapping it in would show a fall that is a change of scope rather than of borrowing — a different measure on the same tile."
+ },
+ {
+  "date": "2026-11-02",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "34%",
+  "new": "43%",
+  "reason": "Observed from source (2026-11-02).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-02",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-11-02).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-02",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.7%",
+  "new": "6.3%",
+  "reason": "Observed from source (2026-11-02).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-02",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "326bp",
+  "new": "344bp",
+  "reason": "Observed from source (2026-10-30).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
   "date": "2026-11-01",
   "source": "https://www.mbi-deepdives.com/ant-s1/",
   "kind": "accepted",
@@ -3518,95 +3608,5 @@
   "new": "49%",
   "reason": "Observed from source (2026-09-23).",
   "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-23",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-23).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-23",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.8%",
-  "new": "10.3%",
-  "reason": "Observed from source (2026-09-23).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-23",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "14.9",
-  "new": "14.2",
-  "reason": "Observed from source (2026-09-22).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-23",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "268bp",
-  "new": "266bp",
-  "reason": "Observed from source (2026-09-21).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-09-23",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-09-21).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-23",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.01%",
-  "new": "4.96%",
-  "reason": "Observed from source (2026-09-21).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-22",
-  "source": "https://www.exponentialview.co/p/monday-data-ai-investment-brief",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://www.investmentbrief.ai/",
-  "reason": "Adds a dated, recurring quantitative feed on enterprise AI claims from an already-watched author, with no parameter change implied by the earnings-call-mention evidence."
- },
- {
-  "date": "2026-09-22",
-  "source": "https://tomtunguz.com/ai-comes-for-the-if-statement/",
-  "kind": "rejected",
-  "target": "subst",
-  "old": null,
-  "new": 27,
-  "reason": "Gate: monthly drift cap reached for subst (at most ±10 around 15 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-09-22",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "49%",
-  "reason": "Observed from source (2026-09-22).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-22",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-22).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
  }
 ]
