@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-10-19",
-  "notes": [
-   "SemiAnalysis lease TCV of $30-50B per GW is 15-20 year lease value, not build capex, so it does not move capexGW; 54 stays consistent with Nvidia's $40B/GW Vera Rubin silicon plus shell and power.",
-   "fin: ~$1T of binding non-cancellable leases signed YTD 2026 (SemiAnalysis) would support a higher financing sensitivity, but fin 1.2 -> 1.5 was rejected on 2026-10-17; not re-proposed.",
-   "orgX: calibration ledger gap has narrowed (W41 16pts, W42 7pts, W43 10pts) and orgX 1.3 -> 1.35 was rejected on 2026-10-17; no calibration move proposed this run.",
-   "k_rd: Naam's 124x-tokens-for-1.6x-experiments figure is a productivity ratio, not revenue per dollar of inference; k_rd moved to 0.75 on 10-16 and 0.82 was rejected on 10-18, so this evidence is encoded as a scenario rather than a parameter move.",
-   "Rebaseline unchanged - D0: METR TH1.1 post-2023 doubling is 130.8 days (4.3 months); current 4.2 is inside the +/-1 month limit.",
-   "Rebaseline unchanged - R0_epoch 118.8 (collector-owned) and R0x 15: no new primary print today; State of AI 2026 (8 Oct) still quotes the $105B OpenAI+Anthropic pair.",
-   "Rebaseline unchanged - K0 14.3 GW: the SemiAnalysis figures are global datacenter IT capacity, not frontier-lab GW online, so they bear on pipe, not K0.",
-   "Rebaseline unchanged - train 50 (a move to 60 was rejected 10-16) and sh_rd 20 / sh_swe 20 / sh_trd 15: no new usage-share publication this week (no new Anthropic Economic Index or OpenRouter category release found).",
-   "arxiv 2610.14145 'Is the business of frontier AI companies selling tokens?' (Oct 2026) applies OpenAI's revenue-to-capacity ratio to Epoch capacity plans and may bear on mono; the HTML fetch was rate-limited, so no proposal - flagged for next run.",
-   "METR time-horizons page states it is no longer actively updated as of 8 Sep 2026, so metr_latest has no fresh SOTA measurement to offer; a third-party tracker cites a METR domains page with data through 10 Oct 2026 but only at the 50% horizon.",
-   "Checked and skipped: Anthropic Public Benefit Fund (5% of equity) - governance, not demand or supply; Exponential View tariffs piece; BIS working papers; Stratechery on Apple; the @edzitron and @kimmonismus post streams carried no new quantitative claims.",
-   "No prompt-injection or instruction-like text encountered in the fetched sources this run."
-  ]
- },
- {
   "date": "2026-10-20",
   "notes": [
    "token_index: no update. The October 2026 Ramp AI Index (ramp.com/data/ai-index-oct-2026, published 2026-10-14, Cracks in the AI Thesis Part 3) discusses the blended price per million tokens only qualitatively — 'the main driver is price declines at the frontier, in addition to efficiency and quality improvements for models across intelligence levels, that are driving the blended price per million tokens down' — and puts the level only in an embedded Datawrapper chart (dwcdn.net/DUO9V), with no printed figure. The $0.68 as of 2026-09-09 from the September index remains the newest published number for this measure.",
@@ -270,6 +253,26 @@
    "Amazon 3Q'26 guidance (AWS to grow over 40% in each of 2027 and 2028, capex ~$220B rising) would support a supercycle scenario_update, but that scenario's overrides are relative ('=x:1.6', '=util0:1.0') and the proposal schema accepts only numeric override values, so an update would silently convert them to absolutes. Left alone.",
    "Ed Zitron, Gavin Baker, Tunguz 'Four Questions of AI' and the 9fin wraps read today: commentary without a new quantified parameter claim. No proposal.",
    "No prompt-injection attempts noticed in any feed, X post or page read today."
+  ]
+ },
+ {
+  "date": "2026-11-03",
+  "notes": [
+   "Goldman Sachs Exchanges (~Aug 2026) puts hyperscaler 2026 issuance at $194B and total AI-related debt near $500B — different estimate basis and older than the October reading, so not proposed.",
+   "Cryptobriefing/Cointelegraph $159B record figure is from ~June 2026, older than the current gauge.",
+   "Original Fortune source not re-fetched for an update; web tool budget exhausted before I could confirm whether a November year-to-date total exists covering the early-November Meta, Oracle and Alphabet bond sales — that total, when published, should supersede this reading.",
+   "AI-linked CDS spreads/volumes in the same article are a different measure and were not used.",
+   "Tool budget: web_fetch and web_search were exhausted part-way through the run (repeated 'Server tool use limit exceeded'); several leads below could not be verified to a quotable primary page, so they are notes rather than proposals.",
+   "Ramp 'Google's models lag in agentic AI usage' (2 Nov 2026, ramp.com/data/googles-models-lag-in-agentic-ai-usage): only a qualitative 'less than half' on cached-token share; no usable share number for sh_* keys.",
+   "Ramp AI Index also shows Anthropic at 60.5% and OpenAI 35.1% of business token spend (week ending 23 Oct) with Google 1.9% and DeepSeek 0.2% of volume - a surface that contradicts the Vercel-gateway basis for subst=30, but Ramp cannot see open-weight models served via Bedrock/Vertex/self-hosting, so I did not propose a subst move.",
+   "token_index gauge ($0.56/M tok, as of 2026-10-23) is exactly the Ramp blended price I found; no newer reading, so not proposed.",
+   "Considered an event:2026Q4 'price' shock (~21-27% effective price decline in a month on Ramp's blended $0.76 -> $0.56) but much of it is mix shift toward Anthropic, and a similar event proposal for 2026Q3 was rejected on 1 Nov; left for the maintainer.",
+   "growth_calibration / orgX: ledger is 10 consecutive weeks above 0.05 and utilisation is 43% (slack, handle = orgX), but the gap is now 12pts = ~0.12 log/quarter and orgX at its +0.1 cap (1.3 -> 1.4) lifts modelled quarter-zero growth by only ~0.017-0.04 log/quarter, i.e. under a quarter of the gap; the rule says not to propose in that case. The gap has also halved since W36 and today's collector revised R0_epoch down 137 -> 118.8.",
+   "SemiAnalysis memory thread (3 Nov: Micron 80.7%, SK hynix 79.7% operating margins; shortage through 2030) argues capexGW is drifting up, but gives no all-in $/GW figure, which cost_per_gw requires.",
+   "SemiAnalysis Crusoe switchgear thread (2 Nov: 12-18 month switchgear/transformer lead times, ~8 weeks engineering, Crusoe cutting its own lead times 40% and LV gear from 100 to 22 weeks) points both ways on 'lead'; net direction unclear, not proposed.",
+   "rampconc scenario: Ramp's Q4 Anthropic estimate (15-25% QoQ vs 47%) is newer than the 2 Nov update, but it reaches me only via Ed Zitron's relay, not a Kharazian publication I could fetch; used as supporting evidence for k_swe instead of a scenario_update.",
+   "MBI Deep Dives Anthropic S-1 piece is already encoded as the 'trainheavy' scenario (added 1 Nov); Alphabet/Meta/Spotify 3Q26 posts carry no frontier GW or run-rate numbers I could verify.",
+   "No prompt-injection attempts spotted in the fetched pages or feed items this run; Ramp and Kedrosky pages contained only ordinary marketing boilerplate."
   ]
  }
 ]
