@@ -1,5 +1,131 @@
 [
  {
+  "date": "2026-11-04",
+  "source": "https://tomtunguz.com/the-financial-engineering-essential-for-ai-in-2027/",
+  "kind": "rejected",
+  "target": "scenario:boom",
+  "old": null,
+  "new": "Re-fit after the path fell below the proponents' stated range; the compute reprice the thesis requires is now visible in Anthropic's S-1/A (blended GPU-hour cost +82% in two quarters).",
+  "reason": "The quote supports rising GPU rental costs but not the proposed changes: a 1.45 orgX multiplier added purely to push the path back inside the stated anchor band is an unevidenced fudge, and the t=0 reprice rests on the same single-firm blended-cost estimate rejected elsewhere."
+ },
+ {
+  "date": "2026-11-04",
+  "source": "https://x.com/edzitron/status/2117673962033369110",
+  "kind": "rejected",
+  "target": "scenario:contagion",
+  "old": null,
+  "new": "Zitron, 3 Nov 2026: OpenAI raised $11bn at $1.25tn after targeting $30bn at $1.4tn; Anthropic Q3 +47% QoQ trending to 15-25% in Q4 against $895bn of obligations and a likely junk rating; US datacentre starts -63% August to September.",
+  "reason": "The fetched evidence is a single post covering Anthropic's growth and obligations only; it does not support the proposed one-quarter pull-forward of the shock cluster, the new financing-sensitivity override, or the OpenAI raise and datacentre-starts figures added to the thesis."
+ },
+ {
+  "date": "2026-11-04",
+  "source": "https://stratechery.com/2026/ai-on-the-ballot/",
+  "kind": "rejected",
+  "target": "scenario:veto",
+  "old": null,
+  "new": null,
+  "reason": "Gate: shock reg size out of range."
+ },
+ {
+  "date": "2026-11-04",
+  "source": "https://stratechery.com/2026/ai-on-the-ballot/",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 25,
+  "reason": "A governor-elect's campaign pledge is not a realised capacity loss in quarter zero, and the 25 figure is Texas's share of planned US capacity to 2030 rather than any measured effect on near-term delivery."
+ },
+ {
+  "date": "2026-11-04",
+  "source": "https://tomtunguz.com/the-financial-engineering-essential-for-ai-in-2027/",
+  "kind": "rejected",
+  "target": "event:2026Q3",
+  "old": null,
+  "new": 40,
+  "reason": "The 82% rise is one lab's blended cost per GPU-equivalent hour, derived with a wide $3.45-$8.29 confidence band and driven partly by its own mix shift into burst rentals, which is not the same as a market-wide 40% compute reprice in a specific quarter the proposal itself cannot place confidently."
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "accepted",
+  "target": "pipe",
+  "old": 32,
+  "new": 35,
+  "reason": "SemiAnalysis's 3 Nov buildout note is newer than the current as-of and documents a genuine upward revision of 2027 deliverable capacity at one builder (10GW to ~13GW, 3.6GW already under construction, >9GW of sites identified), which is incremental to the anchor pipe=32 sits on and justifies a single-step move. Rule capacity_estimate; “Now, just two months later, we’re already seeing 3.6GW under construction across multiple sites, both existing and new. SpaceX has even revi”",
+  "source": "https://newsletter.semianalysis.com/p/elon-is-doing-it-again-spacex-will"
+ },
+ {
+  "date": "2026-11-04",
+  "source": "https://huggingnews.com/us-markets/hyperscalers-raise-271b-in-global-debt-this-year-to-fund-ai-spending-f34c1d98",
+  "kind": "rejected",
+  "target": "gauge:bonds",
+  "old": null,
+  "new": 271,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://huggingnews.com/us-markets/hyperscalers-raise-271b-in-global-."
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "43%",
+  "new": "43%",
+  "reason": "Observed from source (2026-11-04).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-11-04).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "9.3%",
+  "new": "8.5%",
+  "reason": "Observed from source (2026-11-04).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "21.1",
+  "new": "20.8",
+  "reason": "Observed from source (2026-11-03).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "344bp",
+  "new": "343bp",
+  "reason": "Observed from source (2026-11-02).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-02).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-04",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.94%",
+  "new": "4.91%",
+  "reason": "Observed from source (2026-11-02).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-03",
   "source": "https://ramp.com/data/ai-index",
   "kind": "rejected",
@@ -3482,131 +3608,5 @@
   "new": "5.18%",
   "reason": "Observed from source (2026-09-24).",
   "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-25",
-  "source": "https://ramp.com/data/ai-index-sept-2026",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://ramp.com/data",
-  "reason": "Ramp's own data hub serves the same monthly AI Index (token price, frontier/standard split, per-employee spend) as fetchable primary HTML, so it is a sound replacement for the dead Substack feed; no model value changes."
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "49%",
-  "new": "50%",
-  "reason": "Observed from source (2026-09-25).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-25).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "R0",
-  "old": 123.3,
-  "new": 123.8,
-  "reason": "Derived: Epoch disclosed sum 108.8 + undisclosed allowance 15.",
-  "source": ""
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "R0_epoch",
-  "old": 108.3,
-  "new": 108.8,
-  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: Anthropic $65B (2026-07-31), OpenAI $40B (2026-08-13), Z.ai (Zhipu) $2B (2026-08-31), DeepSeek $1B (2026-09-24), MiniMax $1B (2026-08-26), xAI $0B (2025-09-30).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.3%",
-  "new": "10.4%",
-  "reason": "Observed from source (2026-09-25).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "268bp",
-  "new": "273bp",
-  "reason": "Observed from source (2026-09-23).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-09-23).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-25",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "4.96%",
-  "new": "5.11%",
-  "reason": "Observed from source (2026-09-23).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-24",
-  "source": "https://tomtunguz.com/the-most-important-market-in-ai-is-the-middle/",
-  "kind": "accepted",
-  "target": "scenario:price",
-  "old": "updated",
-  "new": "updated",
-  "reason": "A dated, named essay from an existing proponent reports fresh migration evidence — open models at a majority of gateway token volume at an 86% discount and frontier price lines breaking — which supports nudging substitution from 45 to 52, though the summary line was trimmed to the figures actually stated in the source."
- },
- {
-  "date": "2026-09-24",
-  "source": "https://tomtunguz.com/the-most-important-market-in-ai-is-the-middle/",
-  "kind": "rejected",
-  "target": "subst",
-  "old": null,
-  "new": 30,
-  "reason": "Gate: monthly drift cap reached for subst (at most ±10 around 15 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-09-24",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "49%",
-  "new": "49%",
-  "reason": "Observed from source (2026-09-24).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-24",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-24).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-24",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.3%",
-  "new": "10.3%",
-  "reason": "Observed from source (2026-09-24).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
  }
 ]

@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-10-20",
-  "notes": [
-   "token_index: no update. The October 2026 Ramp AI Index (ramp.com/data/ai-index-oct-2026, published 2026-10-14, Cracks in the AI Thesis Part 3) discusses the blended price per million tokens only qualitatively — 'the main driver is price declines at the frontier, in addition to efficiency and quality improvements for models across intelligence levels, that are driving the blended price per million tokens down' — and puts the level only in an embedded Datawrapper chart (dwcdn.net/DUO9V), with no printed figure. The $0.68 as of 2026-09-09 from the September index remains the newest published number for this measure.",
-   "Checked econlab.substack.com/p/ai-index-oct-2026 (same text as the Ramp post) and the Ramp Economics Lab hub page ramp.com/data: hub shows adoption rate 55.9% (+0.6pp MoM) but no token price figure.",
-   "Datawrapper chart URLs for the October token-price chart were not fetchable (url_not_in_prior_context), so no value could be read off the chart; did not estimate a level from the chart description.",
-   "BenchLM 'LLM API Pricing Trends' (as of 2026-10-08) gives a frontier token price index of 16 and a median flagship model at $6.00 per million blended tokens — a list-price frontier measure, not Ramp's spend-weighted effective price, so not a valid substitute for this gauge.",
-   "Ara Kharazian's X post on the October index covers per-employee AI spend ($9,568/employee/month for the top 1%, down 3.1% from July) — different measure, not proposed.",
-   "Business Insider via digg.com/ai/j0nfqin4 (20 Oct): Amazon staging GB300 racks in warehouses for lack of power, ~$5B of racks delivered in August then ~$3B a month, a 'Secured Power at Risk' dashboard, 44 GW planned (Cleanview). Real, but no rule fits: it is not signing-to-first-delivery (lead), not a frontier-lab GW figure (K0/pipe), and buildMax only moves on growth_calibration. Thematically already covered by overhang and grid.",
-   "Nscale-Anthropic $45B compute talks (Bloomberg, 19 Oct, via cryptobriefing): still in talks, no GW figure, and pipe was moved to 32 yesterday - not proposed.",
-   "Gartner's 19 Oct restatement (Lovelock: current capacity exceeds demand, some processing offered free) adds no number beyond the 14 Oct $8.5T/$3.6T report already applied to scenario:gap.",
-   "SemiAnalysis X posts (19-20 Oct): Vera Rubin NVL72 up to 7.3x perf per dollar vs GB300 on 1M-context agentic workloads; GB300 FP4 still 1.64x worse per dollar than TPUv7. Cost-side evidence; perf-per-dollar is not perf-per-watt, so it cannot be converted into a mono (revenue per inference GW) move.",
-   "DeepSeek open-sourcing DeepInfer (runs on Huawei chips) and Meta's open model running locally with Apple (Stratechery, paywalled): migration-relevant but no share numbers; subst was already moved on 15 Oct on Vercel gateway data.",
-   "growth_calibration: ledger shows 8 consecutive weeks over 0.05 but the gap is narrowing (23, 16, 7, 10 pts), an orgX raise to 1.35 was rejected on 17 Oct, and the newest primary evidence (Tunguz's exit pace) points the other way - no calibration move proposed.",
-   "Search budget was exhausted after four queries (server tool-use limit), so METR, Epoch data-insights and OpenRouter/Vercel checks were not completed; no H0/D0 or usage_share proposal this run.",
-   "Stratechery and Business Insider articles are paywalled; no quote was taken from either.",
-   "No prompt-injection attempts seen in the feeds, X posts or fetched pages this run."
-  ]
- },
- {
   "date": "2026-10-21",
   "notes": [
    "aaii (AAII bullish/bearish): no newer reading. AAII's own page (fetched 2026-10-21) still shows the most recent weekly result as week ending 10/14/2026 at 38.7% bullish / 19.7% neutral / 41.6% bearish, identical to the current gauge value; prior weeks listed are 10/7 (40.3/20.8/39.0), 9/30 (34.6/18.9/46.5), 9/23 (32.7/19.2/48.1). The survey window runs Thursday to Wednesday, so the week-ending 10/21/2026 result is not published yet (expected Thursday 10/22-10/23). No proposal submitted.",
@@ -273,6 +254,26 @@
    "rampconc scenario: Ramp's Q4 Anthropic estimate (15-25% QoQ vs 47%) is newer than the 2 Nov update, but it reaches me only via Ed Zitron's relay, not a Kharazian publication I could fetch; used as supporting evidence for k_swe instead of a scenario_update.",
    "MBI Deep Dives Anthropic S-1 piece is already encoded as the 'trainheavy' scenario (added 1 Nov); Alphabet/Meta/Spotify 3Q26 posts carry no frontier GW or run-rate numbers I could verify.",
    "No prompt-injection attempts spotted in the fetched pages or feed items this run; Ramp and Kedrosky pages contained only ordinary marketing boilerplate."
+  ]
+ },
+ {
+  "date": "2026-11-04",
+  "notes": [
+   "aaii: AAII's own sentiment page still shows week ending 10/28/2026 (bullish 37.8% / bearish 41.4%), identical to the current gauge - the survey week runs Thu-Wed, so the next reading posts after today. No newer reading.",
+   "bonds: skipped Goldman Sachs' ~$500B 'AI-related debt issuance' and its $194B hyperscaler figure - older and/or a broader measure.",
+   "bonds: skipped CPR AM's ~$223B (23 Sep) and Crypto Briefing's $244B - both older than the 3 Nov $271B total.",
+   "bonds: skipped @junkbondinvest's '2026 YTD: $182 billion' - US-only issuance, not the global measure the gauge tracks.",
+   "orgX growth_calibration: ledger is 10 weeks over 0.05 (gap now 12pts, down from 26) and util0 43% says the handle is orgX, but at its +-0.1 cap orgX plausibly closes well under a quarter of a ~0.113 log/quarter gap, and the freshest primary read (Anthropic Q3 +47% QoQ, Ramp pointing to 15-25% in Q4) says observed growth is decelerating toward the model. Left for the weekly review as a structural gap.",
+   "lead 5 -> 6 (delivery_timeline): Tunguz footnote cites Goldman at 50-60% on-time datacentre delivery and JPMorgan at >60% of 2027 capacity not yet under construction, but neither is a signing-to-first-delivery time, and it would contradict the pipe move in the same run.",
+   "capexGW: Zitron/Westside Construction reports US datacentre starts -63% August to September ($25.8bn to $9.6bn) with costs +31%, but that is project cost, not all-in capex per GW. Folded into the contagion update instead.",
+   "fin: the OpenAI round ($11bn raised against a $30bn target, valuation cut from $1.4tn to $1.25tn in five weeks) is good financing_evidence, but fin was moved 1.2 -> 1.35 on 2 Nov; carried as a scenario override rather than a second param move.",
+   "h100_rental gauge: Tunguz cites the Ornn B300 Compute Price Index at $12.29/GPU-hour (30 Oct) — a different chip from the H100 gauge, so not a newer reading of the same measure.",
+   "R0_epoch: Anthropic S-1/A shows $16.96b of Q3 revenue (+$5.40b QoQ, ~$68b annualised), but the collector rewrites this key daily and a manual raise to 137 was reverted on 3 Nov; left to the collector.",
+   "grid scenario: SemiAnalysis's permitting read was updated on 2 Nov and predates the election, so the new political evidence is proposed as a separate Thompson scenario rather than put in SemiAnalysis's mouth.",
+   "takeoff is also OUT OF RANGE (x3.5 vs x4-8) but no new AI Futures Project material appeared this week, so no re-fit proposed.",
+   "No new METR measurement found in search; H0 and D0 stay at their April 2026 readings. SemiAnalysis's new GDPx capability index is not a METR horizon measure.",
+   "Checked and skipped: OpenAI Cisco/CAD posts, Anthropic-Accenture, MBI Microsoft FY1Q27, 9fin items — no frontier token-demand or GW numbers.",
+   "No prompt-injection or instruction-like text was encountered in the feeds, X posts or pages read today."
   ]
  }
 ]
