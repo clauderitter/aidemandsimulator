@@ -1,5 +1,104 @@
 [
  {
+  "date": "2026-11-05",
+  "source": "https://tomtunguz.com/the-financial-engineering-essential-for-ai-in-2027/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.4,
+  "reason": "This is the same Anthropic Q3 sequential revenue figure already rejected for orgX on 17, 21, 28 and 31 October: one lab's revenue is not evidence that token spend across the model's segments is outgrowing the fit."
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "accepted",
+  "target": "lead",
+  "old": 5,
+  "new": 6,
+  "reason": "Goldman's 50–60% on-time delivery rate and JPMorgan's finding that over 60% of 2027-planned capacity is not yet under construction are general, named institutional estimates far newer than the April 2026 fit, and support one quarter of added delivery lead. Rule delivery_timeline; “Goldman Sachs Commodities Research puts on-time data center delivery over the next one to two years at 50% to 60% (40% to 50% delayed), & JP”",
+  "source": "https://tomtunguz.com/the-financial-engineering-essential-for-ai-in-2027/"
+ },
+ {
+  "date": "2026-11-05",
+  "source": "https://tomtunguz.com/watts-in-store-for-2027-inference/",
+  "kind": "rejected",
+  "target": "pipe",
+  "old": null,
+  "new": 30,
+  "reason": "Gerstner's podcast remark that he \"could see\" 10–15 GW slip is a speculative caution relayed second-hand, and it cannot outweigh the documented under-construction capacity from SemiAnalysis accepted for this input the day before; the same article's headline figure is 43 GW arriving in 2027."
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "accepted",
+  "target": "mono",
+  "old": 55,
+  "new": 50,
+  "reason": "Tunguz's 4 Nov note gives explicit per-inference-GW monetisation figures ($31b/GW for frontier labs, $9.4b/GW broader market, and ~$9.2b/GW realised on today's 38 GW fleet) that sit below the current 55, so the capped step down to 50 is supported by evidence newer than the standing reading. Rule revenue_per_gw; “New 2027 racks (GB300, Vera Rubin, TPU v7, & Trainium 3) deliver 3-5x higher token throughput per watt than the installed 2026 base ; after ”",
+  "source": "https://tomtunguz.com/watts-in-store-for-2027-inference/"
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "43%",
+  "new": "43%",
+  "reason": "Observed from source (2026-11-05).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-11-05).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.5%",
+  "new": "8.2%",
+  "reason": "Observed from source (2026-11-05).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "20.8",
+  "new": "16.6",
+  "reason": "Observed from source (2026-11-04).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "343bp",
+  "new": "340bp",
+  "reason": "Observed from source (2026-11-03).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-03).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-05",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.91%",
+  "new": "4.95%",
+  "reason": "Observed from source (2026-11-03).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-04",
   "source": "https://tomtunguz.com/the-financial-engineering-essential-for-ai-in-2027/",
   "kind": "rejected",
@@ -3509,104 +3608,5 @@
   "new": "+56% vs +24%",
   "reason": "Observed from source (2026-09-27).",
   "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-27",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.4%",
-  "new": "10.3%",
-  "reason": "Observed from source (2026-09-27).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-26",
-  "source": "https://x.com/edzitron/status/2103494585716473915",
-  "kind": "rejected",
-  "target": "capexGW",
-  "old": null,
-  "new": 56,
-  "reason": "A single commentary post about copper content is one component, not an all-in per-GW figure, and is weaker-grade evidence than the Nvidia management numbers that currently set capexGW."
- },
- {
-  "date": "2026-09-26",
-  "source": "https://x.com/arakharazian/status/2103522020377956670",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.3,
-  "reason": "The cited Ramp post shows one week's rebound with token spend still below its July peak, which does not evidence organic growth running persistently ahead of the model and cannot carry orgX to the top of its monthly drift window."
- },
- {
-  "date": "2026-09-26",
-  "source": "https://www.aaii.com/sentimentsurvey",
-  "kind": "accepted",
-  "target": "gauge:aaii",
-  "old": "28.8% / 53.3%",
-  "new": "32.7% / 48.1%",
-  "reason": "AAII's own survey page gives a fresher reading of the identical measure (week ending 23 Sep: bulls 32.7%, bears 48.1%, spread -15.4pp), so the gauge refreshes from its primary source."
- },
- {
-  "date": "2026-09-26",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "50%",
-  "new": "50%",
-  "reason": "Observed from source (2026-09-26).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-26",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-26).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-26",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.4%",
-  "new": "10.4%",
-  "reason": "Observed from source (2026-09-26).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-26",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "14.2",
-  "new": "14.9",
-  "reason": "Observed from source (2026-09-25).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-09-26",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "273bp",
-  "new": "280bp",
-  "reason": "Observed from source (2026-09-24).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-09-26",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-09-24).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-09-26",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.11%",
-  "new": "5.18%",
-  "reason": "Observed from source (2026-09-24).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
  }
 ]

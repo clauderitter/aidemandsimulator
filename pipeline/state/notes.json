@@ -1,23 +1,5 @@
 [
  {
-  "date": "2026-10-21",
-  "notes": [
-   "aaii (AAII bullish/bearish): no newer reading. AAII's own page (fetched 2026-10-21) still shows the most recent weekly result as week ending 10/14/2026 at 38.7% bullish / 19.7% neutral / 41.6% bearish, identical to the current gauge value; prior weeks listed are 10/7 (40.3/20.8/39.0), 9/30 (34.6/18.9/46.5), 9/23 (32.7/19.2/48.1). The survey window runs Thursday to Wednesday, so the week-ending 10/21/2026 result is not published yet (expected Thursday 10/22-10/23). No proposal submitted.",
-   "Anthropic draft S-1 (WSJ, via @kimmonismus): >$600B of future compute commitments - financing-relevant but no debt share disclosed, so no fin move.",
-   "@kimmonismus on SpaceX Q3 call: Musk targeting 440,000 Vera Rubin units and 'up to 20GW in 2027' - not proposed on pipe, which was just raised 26->32 on 2026-10-19 off SemiAnalysis's 50GW/2027 global delivery (which should already contain xAI); a target is not a commitment.",
-   "@SemiAnalysis_ 50GW-in-a-year defence thread - same evidence already applied to pipe on 2026-10-19 and the physics scenario update was rejected; not re-proposed.",
-   "Ed Zitron 'AI Had Better Work Out' (20 Oct): 46.5% of NASDAQ 100 in nine AI names, ~$4.65T retail exposure, 20% drawdown comparison - market-structure, not a measured budget response, so it fails procyclicality_evidence; no contagion scenario_update since his demand numbers are unrevised.",
-   "@arakharazian: 'corporate token spending is slowing down' via Ramp and Apollo's Slok - no number in the post and ramp.com/ai-index was not fetchable today; flagged for next run.",
-   "@edzitron on TD Cowen: Nvidia backstopping/subleasing Oracle capacity, Oracle in vendor-financing talks - no magnitudes, so no financing_evidence move.",
-   "OpenAI case studies (Terminal X 88.6% agreement with senior investor judgment; Schlotzsky's franchisee 95% time cut) - single-customer evals, not share or loop-gain data.",
-   "METR's 20 Oct post reviews Anthropic's risk report and contains no new 80% time-horizon measurement, so H0/D0 untouched (an H0 change was rejected on 19 Oct anyway).",
-   "NVIDIA GTC Berlin 'DSX POD scales capacity in days' (@kimmonismus) - vendor marketing about rack deployment, not signing-to-first-delivery, so lead unchanged.",
-   "Vercel's item this week was an engineering post (durable harnesses), not the monthly Production Index; subst left at its 15 Oct September reading.",
-   "web_search quota was exhausted early in the run; proposals rest on URLs already in context (X posts quoted verbatim from the supplied list) plus direct fetches of wheresyoured.at, vercel.com and the econlab/epochai Substack landing pages (both JS-only, no post list).",
-   "No prompt-injection attempts found in the feeds or posts read; the only imperative text was ordinary product marketing and subscription pitches, which I ignored."
-  ]
- },
- {
   "date": "2026-10-22",
   "notes": [
    "openrouter_cn: no newer same-measure reading found. Searches surfaced only the CNBC 2026-09-26 piece already behind the current 57-67% tile and an older Yahoo/CNBC summary (46.4% of routed tokens, weekly peak 46%, mid-2026, page ~105 days old), which is an earlier and differently-framed figure, not an update. Leaving tile at 57-67% as of 2026-09-14.",
@@ -274,6 +256,28 @@
    "No new METR measurement found in search; H0 and D0 stay at their April 2026 readings. SemiAnalysis's new GDPx capability index is not a METR horizon measure.",
    "Checked and skipped: OpenAI Cisco/CAD posts, Anthropic-Accenture, MBI Microsoft FY1Q27, 9fin items — no frontier token-demand or GW numbers.",
    "No prompt-injection or instruction-like text was encountered in the feeds, X posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-11-05",
+  "notes": [
+   "bonds gauge: no newer reading of the same measure found. Current $225B comes from S&P Global Ratings' count of bonds issued in 2026 to date by hyperscalers AND 'related entities' like Nvidia (Fortune, 2026-07-31, citing S&P credit trends report); no updated S&P hyperscaler-plus-related-entities YTD tally has been published since.",
+   "Considered TokenPost (2026-10-30): 'Five hyperscalers issued $218.1 billion in investment-grade bonds through early October 2026, more than in all of 2025' — not proposed, different measure (five named hyperscalers, US investment-grade only, excludes Nvidia/related entities), and the lower figure vs $225B would read as a decline that did not occur.",
+   "Considered Barron's/Yahoo 'Big Tech Issued About $220 Billion of Bonds' (~mid-Sep 2026) — different issuer universe (Big Tech incl. Alphabet/Meta) and rounded; not the S&P hyperscalers+related-entities series.",
+   "Considered S&P Global Ratings' late-Oct 2026 outlook (global bond issuance growth slowing to 2.7% in 2027 from 12.2% in 2026) — covers global issuance, contains no updated hyperscaler YTD dollar total.",
+   "Server-side search quota was exhausted before an S&P Ratings credit-trends update could be checked directly; worth re-running this gauge once S&P publishes its Q4/full-year 2026 financing conditions piece (prior pace implied ~$400B full-year 2026).",
+   "Tunguz 4 Nov confirms 40% inference / 60% training of GPU hours (SemiAnalysis workload mix 6 Oct + Anthropic S-1), exactly the current train=60, so no proposal; it is evidence against the trainheavy scenario's 73.",
+   "Skipped a midterm 'voter veto' scenario_new and a 2026Q4 reg event: the changelog shows scenario:veto and event:2026Q4 were both rejected on 4 Nov.",
+   "Skipped a boom scenario re-fit: the Anthropic S-1/A GPU-cost reprice re-fit was already proposed and rejected on 4 Nov.",
+   "SemiAnalysis X post (4 Nov) on the Texas TCEQ permit freeze and 30.3 GW is a livestream teaser with no re-stated numbers; too thin for a grid scenario_update, which was last revised 1 Nov.",
+   "METR: Toby Ord (21 Oct) says METR stopped reporting 80% horizons in April 2026 at ~3h under Time Horizon 1.1; no new frontier measurement, so H0 and D0 left alone.",
+   "Ramp 'Top SaaS Vendors' (4 Nov, Kharazian) is qualitative this month (Grok at 2.2% of AI spend); the quantitative October AI Index read is already in the rampconc scenario.",
+   "GPU rental: Tunguz cites short-term burst at $7-13/hr and the Ornn B300 index at $12.29/GPU-hour (30 Oct) - a different instrument from the h100_rental gauge, so not proposed as a gauge update.",
+   "Epoch's ECI Bayesian update (4 Nov) moves a capability index, not METR horizons or revenue; no exposed key.",
+   "Cognition SWE-2 Flash (one-fifth the price) and Ripple-65B (80.5% on Terminal-Bench 2.1, open weights) are capability/price points, not production-share data, so no subst move.",
+   "Considered a Gerstner scenario_new (43 GW consensus, 25-35% at risk) but the view is already covered by grid and physics; used the numbers as a capacity_estimate instead.",
+   "Considered a price scenario_update on Tunguz's own revision (GPU input costs doubling vs continued token-price deflation) but his stated price-decline numbers have not changed, so no update proposed.",
+   "No prompt-injection style instructions found in any fetched page or post this run."
   ]
  }
 ]
