@@ -1,5 +1,122 @@
 [
  {
+  "date": "2026-11-06",
+  "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+  "kind": "rejected",
+  "target": "scenario:rdaccel",
+  "old": null,
+  "new": null,
+  "reason": "The accelerating-AI-R&D-feedback view is already carried by the takeoff scenario, the quoted METR findings concern capability progress rather than the token-spend feedback that k_rd governs, and the attribution adds a public concurrence not present in the source."
+ },
+ {
+  "date": "2026-11-06",
+  "source": "https://www.9fin.com/insights/big-tech-borrows-ai-spending-capex-cash-flow-q3-earnings",
+  "kind": "accepted",
+  "target": "gauge:capex_ocf",
+  "old": "crossed Q3 2026",
+  "new": "Q3 106-182%",
+  "reason": "Reported Q3 actuals (capex at 182% of operating cash flow at Amazon, 121% at Alphabet, 106% at Meta) replace a June forecast of the same capex-versus-cash-flow measure."
+ },
+ {
+  "date": "2026-11-06",
+  "source": "https://www.9fin.com/insights/big-tech-borrows-ai-spending-capex-cash-flow-q3-earnings",
+  "kind": "accepted",
+  "target": "gauge:bonds",
+  "old": "$225B",
+  "new": "$284B",
+  "reason": "Unlike the narrower investment-grade tallies rejected earlier this month, 9fin's $284bn is a later, broader and larger reading of the same 2026-to-date big-tech bond issuance measure, consistent with the ~$400B full-year path already noted."
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "accepted",
+  "target": "fin",
+  "old": 1.35,
+  "new": 1.5,
+  "reason": "9fin's Q3 review adds aggregate evidence beyond the Amazon-only move accepted on 2 November — ~$284bn of 2026 bond sales, negative free cash flow at four of six big-tech builders and hyperscaler spreads widening from 96bp to 156bp — showing builds now ride on credit that is visibly repricing. Rule financing_evidence; “Debt is filling the gap: the group has sold about $284bn of bonds this year, more than the previous six years combined.”",
+  "source": "https://www.9fin.com/insights/big-tech-borrows-ai-spending-capex-cash-flow-q3-earnings"
+ },
+ {
+  "date": "2026-11-06",
+  "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+  "kind": "rejected",
+  "target": "D0",
+  "old": null,
+  "new": 3.2,
+  "reason": "METR's 1.9x figure is the growth rate of Anthropic's internal capability index (AECI), not the 80%-task-horizon doubling time that D0 encodes, so halving the horizon trend from it is an inference the source does not make."
+ },
+ {
+  "date": "2026-11-06",
+  "source": "https://fourweekmba.com/ai-anthropic-run-rate-tops-80b-as-ipo-raise-may-shrink-to-80b/",
+  "kind": "rejected",
+  "target": "R0_epoch",
+  "old": null,
+  "new": 130,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://fourweekmba.com/ai-anthropic-run-rate-tops-80b-as-ipo-raise-m."
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "43%",
+  "new": "47%",
+  "reason": "Observed from source (2026-11-06).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+40% vs +24%",
+  "new": "+40% vs +24%",
+  "reason": "Observed from source (2026-11-06).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.2%",
+  "new": "7.6%",
+  "reason": "Observed from source (2026-11-06).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "16.6",
+  "new": "28.2",
+  "reason": "Observed from source (2026-11-05).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "340bp",
+  "new": "332bp",
+  "reason": "Observed from source (2026-11-04).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-04).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-06",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.95%",
+  "new": "4.90%",
+  "reason": "Observed from source (2026-11-04).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-05",
   "source": "https://tomtunguz.com/the-financial-engineering-essential-for-ai-in-2027/",
   "kind": "rejected",
@@ -3491,122 +3608,5 @@
   "new": "5.17%",
   "reason": "Observed from source (2026-09-25).",
   "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-09-28",
-  "source": "https://epoch.ai/latest/scaling-ai-data-centers-research",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://epoch.ai/data/ai-data-centers",
-  "reason": "The quoted description confirms a regularly refreshed, per-site dataset of IT power, capital cost, chip type and construction status covering ~44% of global AI compute, which is directly relevant to the model's supply-side inputs and updates separately from the Epoch publications page already watched."
- },
- {
-  "date": "2026-09-28",
-  "source": "https://epoch.ai/data/ai-data-centers",
-  "kind": "rejected",
-  "target": "history:2026Q3",
-  "old": null,
-  "new": 10,
-  "reason": "Gate: quarter not in history."
- },
- {
-  "date": "2026-09-28",
-  "source": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
-  "kind": "rejected",
-  "target": "capexGW",
-  "old": null,
-  "new": 44,
-  "reason": "A single Blackwell-era site that the proposer himself calls \"the cheap end\" (self-built gas turbines, no Rubin content) is an estimate for one facility, not a fleet-wide all-in cost per GW, and is not materially better evidence than the management-reported per-GW build-up accepted on 3 Sep, so capexGW stays at 54."
- },
- {
-  "date": "2026-09-28",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "50%",
-  "new": "50%",
-  "reason": "Observed from source (2026-09-28).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-28",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-28).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-28",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "10.3%",
-  "new": "8.9%",
-  "reason": "Observed from source (2026-09-28).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-09-28",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "280bp",
-  "new": "293bp",
-  "reason": "Observed from source (2026-09-25).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-09-27",
-  "source": "https://epoch.ai/publications/the-plunging-price-of-thought",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://epoch.ai/publications",
-  "reason": "Epoch AI is a primary source behind several inputs and is still publishing quantitative cost-and-capacity work on its own site, so the HTML publications index replaces the dead substack feed."
- },
- {
-  "date": "2026-09-27",
-  "source": "https://qz.com/oracle-force-majeure-new-mexico-ai-data-center-092426",
-  "kind": "rejected",
-  "target": "lead",
-  "old": null,
-  "new": 6,
-  "reason": "A force majeure notice on one New Mexico campus — which Oracle says remains on schedule — gives no signing-to-delivery figure and cannot carry the general first-delivery lead from 5 to 6 quarters. Verified against archive snapshot http://web.archive.org/web/20260925043650/https://qz.com/oracle-force-majeure-new-mexico-ai-data-center-092426."
- },
- {
-  "date": "2026-09-27",
-  "source": "https://www.noahpinion.blog/p/wheres-the-intelligence-explosion",
-  "kind": "accepted",
-  "target": "scenario:rsiweak",
-  "old": null,
-  "new": "added",
-  "reason": "Ramez Naam's dated Noahpinion piece states a quantified position on the self-improvement feedback itself (5–10× too weak to sustain), a mechanism distinct from the capability-wall and takeoff scenarios already active, so it is added as a new structural scenario. Ramez Naam (guest post on Noah Smith's Noahpinion), 27 Sep 2026."
- },
- {
-  "date": "2026-09-27",
-  "source": "",
-  "kind": "expired",
-  "target": "scenario:nvfactory",
-  "old": "active",
-  "new": "retired",
-  "reason": "Retired to make room for “Self-improvement loop too weak”: the least distinct structural scenario (closest path to its neighbours, 15%)."
- },
- {
-  "date": "2026-09-27",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "50%",
-  "new": "50%",
-  "reason": "Observed from source (2026-09-27).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-27",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+56% vs +24%",
-  "reason": "Observed from source (2026-09-27).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
  }
 ]
