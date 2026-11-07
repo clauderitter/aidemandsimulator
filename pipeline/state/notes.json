@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-10-23",
-  "notes": [
-   "stockanalysis.com NVDA statistics page shows no explicit short-interest settlement date, so as_of (2026-09-30) is inferred from the FINRA semi-monthly publication calendar; the Oct 15 settlement is not yet disseminated.",
-   "Same measure retained (% of float, not % of shares outstanding) for comparability with the prior 1.27% reading.",
-   "Epoch AI, 'The plunging price of thought' (22 Sep 2026, via Kedrosky roundup 22 Oct): cost of a fixed level of AI performance down ~47% per quarter, ~13x/year since 2023. Relevant to subst/price, but older than subst's 2026-10-15 Vercel basis and the 'price' scenario's 13 Oct revision — not proposed.",
-   "Vercel AI Gateway October 2026 index (open weight 71.5% of tokens, 23% of spend) is already the stated basis for subst=30 as of 2026-10-15 — not re-proposed.",
-   "SemiAnalysis via @kimmonismus (23 Oct): Anthropic A/B testing Claude Max limits, ~20% more usage per 5-hour window but ~20% less per week. Suggestive of capacity rationing/ARPU defence, but it is a second-hand relay of a paywalled note and maps to no listed rule key.",
-   "OpenAI nearing up to $30B at a $1.25T valuation led by UAE investors (22 Oct): large, but equity financing with no exposed key; not feedback or financing evidence in the rule's sense (it says nothing about debt share or build response to credit).",
-   "Sam Altman interview (22 Oct) on unbounded assistant compute demand: qualitative only, no compute or revenue numbers — no usage_share or compute_split proposal.",
-   "METR's 22 Oct publication is an embedded monitoring red-team at OpenAI (10% of internal Codex traffic unmonitored), not a new time-horizon measurement; H0/D0 left alone.",
-   "growth_calibration: ledger counter is at 8 weeks over 0.05, slack at util0 37% points to orgX, but the weekly gap has collapsed from 26pts to 7-10pts and an orgX move to 1.37 was rejected on 2026-10-21; re-proposing into a converging gap would be churn.",
-   "Kedrosky item: 1Password past $500M ARR on agentic traffic — vendor revenue, not token spend or reinvestment; no feedback_evidence proposal.",
-   "Search/fetch budget was exhausted mid-run (server tool-use limit), so capacity (K0/pipe) and usage-share leads were not chased; flagging for next run: hyperscaler Q3 calls land next week.",
-   "No prompt-injection or instruction-like text was found in the feeds, posts or pages read today."
-  ]
- },
- {
   "date": "2026-10-24",
   "notes": [
    "Bearish leg of quote comes from same AAII article: bearish sentiment increased 4.2 percentage points to 45.8%, above its 31.5% historical average for the 37th consecutive week.",
@@ -269,6 +252,26 @@
    "Anthropic IPO valuation scepticism (WSJ: investors doubt $1.5T, one sees ~$1T) is a valuation story with no parameter rule attached; not proposed.",
    "SemiAnalysis TPU piece, Exponential View and Stratechery items read but carried no new GW, $/GW or share numbers I could verify within the fetch budget.",
    "No prompt-injection attempts noticed in the feeds or posts read today; X posts were used only as pointers to primary coverage."
+  ]
+ },
+ {
+  "date": "2026-11-07",
+  "notes": [
+   "openrouter_cn: no newer reading of the same measure. The current 57-67% is CNBC's Sept 26 report of OpenRouter token share across US/Europe/'Global South' company groups for the week of Sept 14; no later CNBC/OpenRouter regional-group share has been published as of 2026-11-07.",
+   "openrouter_cn alternative found but not proposed: Caixin-cited OpenRouter data for the week of Oct 19-25 2026 gives Chinese models 93.54T tokens vs 22.47T for US models (reported via dealroom.co) - an absolute volume ratio, not the regional-group percentage share, so not the same measure.",
+   "openrouter_cn: other 2026 figures circulating (46%, 59.6%, ~61%) are top-10-model or whole-platform shares from earlier periods (Feb-Jul 2026) and are both older and a different population than the current gauge.",
+   "K0: Patel's pair-level figures (OpenAI+Anthropic ~4 GW end-2025, ~10 GW end-2026) sit above Epoch's pair estimate but below the model's 14.3 GW frontier total, so the mapping is ambiguous and no capacity move is proposed; flagged for the weekly review.",
+   "pipe: Patel implies frontier labs take 12-20 GW of the ~50 GW due online in 2027, which argues pipe below 35, but a pipe cut to 30 was rejected on 2026-11-05; not re-proposed (the lower pace is carried in the physics scenario instead).",
+   "orgX / growth_calibration: ledger is at 10 weeks over threshold with a 12pt gap and quarter zero has slack, but orgX 1.3 -> 1.4 was rejected on 2026-11-05; not re-proposed this run.",
+   "R0_epoch: Anthropic reported at ~$80B run-rate against a $100B year-end target (Latent Space, 6 Nov); the collector already rewrote R0_epoch to 134.8 today and a 130 proposal was rejected yesterday, so nothing proposed.",
+   "Vercel AI Gateway: only the October index (September data: 71.5% of tokens, 23% of spend) is published, already reflected in subst as of 2026-10-15; the November index is not out yet.",
+   "subst: GLM-5.3 matching frontier exploit rates at one-sixtieth of April's cost is suggestive of migration but is a task-cost comparison, not a spend-share measure; left to the Vercel/OpenRouter series.",
+   "METR's 5 Nov publication reviews Anthropic's August 2026 Risk Report on AI R&D acceleration thresholds; it is not a new 80%-success time-horizon measurement, so no H0/D0 move (and D0 -> 3.2 was rejected on 2026-11-06).",
+   "mono / capexGW: Patel's per-MW economics ($9M/MW/yr all-in for a B300 cluster, ~$14M/MW/yr to rent) mix capex with five years of opex, so neither a clean cost_per_gw nor a clean revenue_per_gw read.",
+   "SemiAnalysis InferenceX per-gigawatt profit estimator renders client-side; no numbers extractable from the HTML.",
+   "Nvidia underwriting ~6.5 GW of clusters (Patel, Runtime 2026) noted as financing context but not proposed; it is a backstop volume, not a sensitivity.",
+   "Web search quota ran out mid-run; later checks (Epoch Gradient Updates, Ramp Econ Lab, AI-2027 tracker) were only possible by direct fetch of URLs already in context, and Ramp's next update is promised for 11 Nov.",
+   "No prompt-injection attempts found in the feeds or posts read; the Tunguz page carries a meta 'ai-summary' field, which is descriptive rather than instructional."
   ]
  }
 ]

@@ -1,20 +1,20 @@
 {
  "version": 1,
- "generated_at": "2026-11-06T14:32:29.450Z",
+ "generated_at": "2026-11-07T13:32:23.869Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
  "scenario_cap": 20,
  "params": {
   "R0": {
-   "value": 133.8,
+   "value": 149.8,
    "label": "Frontier token revenue",
    "hidden": false,
    "basis": "Anthropic run-rate $65B at end-July 2026 (Bloomberg, 17 Aug 2026; the path ran $14B Feb → $30B Apr → $47B May → $65B Jul) with investors expecting $100–120B by year-end; OpenAI $40B (Bloomberg, 13 Aug 2026); Epoch puts the two at $105B combined, up 3.5× since January. Google does not break out Gemini API revenue; Z.ai, MiniMax, DeepSeek, xAI and Mistral add a few billion. Rounded sum entering Q3 2026.",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-07",
    "type": "derived",
    "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "updated": "2026-11-03",
+   "updated": "2026-11-07",
    "rule": "R0 = R0_epoch + R0x, derived in one place",
    "short": "Total frontier revenue run-rate = Epoch’s disclosed sum + the undisclosed allowance. Derived; edit the two parts."
   },
@@ -573,15 +573,15 @@
    "rule": ""
   },
   "R0_epoch": {
-   "value": 118.8,
+   "value": 134.8,
    "label": "Disclosed frontier revenue (Epoch)",
    "hidden": false,
    "basis": "Sum of the latest full-company annualised run-rates in Epoch’s revenue dataset for the frontier labs it tracks.",
    "short": "Epoch’s disclosed sum; the collector rewrites it daily. Total revenue = this + the undisclosed allowance.",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-07",
    "type": "reported",
    "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "updated": "2026-11-03",
+   "updated": "2026-11-07",
    "rule": "epoch_sum"
   },
   "orgX": {
@@ -804,9 +804,9 @@
    "fidelity": {
     "ok": false,
     "checks": [
-     "OUT: 2027Q4 $497B vs $600–1500B"
+     "OUT: 2027Q4 $557B vs $600–1500B"
     ],
-    "date": "2026-11-06"
+    "date": "2026-11-07"
    }
   },
   {
@@ -851,7 +851,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×3.5 vs ×4–8"
     ],
-    "date": "2026-11-06"
+    "date": "2026-11-07"
    }
   },
   {
@@ -1169,10 +1169,10 @@
    "fidelity": {
     "ok": true,
     "checks": [
-     "ok: 2027Q4 $232B vs $225–340B",
-     "ok: 2028Q4 $457B vs $395–675B"
+     "ok: 2027Q4 $260B vs $225–340B",
+     "ok: 2028Q4 $512B vs $395–675B"
     ],
-    "date": "2026-11-06"
+    "date": "2026-11-07"
    }
   },
   {
@@ -1180,25 +1180,25 @@
    "camp": "structural",
    "name": "Physics sets the pace",
    "who": "Dylan Patel / SemiAnalysis",
-   "when": "13 Mar, 6 Jul and 25 Aug 2026",
-   "thesis": "Neither cash nor demand binds; N3 wafers, HBM, EUV tools, turbines and transformers do. The two big labs still roughly triple capacity a year (over 5 GW each in 2026, ~18 GW each by end-2027) and take 70–80% of incremental compute by 2028; ecosystem capex runs ~$11T over 2024–29, $6T cash and $5T debt; one-year H100 rentals are up 40% and on-demand capacity is sold out. Modelled as a bigger pipeline, builds capped near tripling, six-quarter lead times, and revenue per GW stepping up 40% in 2027 as labs outpay for compute. The camp’s premise that capacity is fully used today is held as the inputs move.",
-   "src": "https://www.dwarkesh.com/p/dylan-patel-3",
+   "when": "3 Nov 2026 (Runtime 2026 talk; prior 13 Mar, 6 Jul, 25 Aug 2026)",
+   "thesis": "Neither cash nor demand binds; wafers, HBM, power and transformers do. Global capacity went from 60 GW at end-2024 to over 100 GW at end-2026, while OpenAI plus Anthropic go from ~4 GW (end-2025) to ~10 GW (end-2026) to over 20 GW (end-2027), absorbing 25-40% of all new additions. That is a doubling, not the tripling assumed earlier, so capacity grows more slowly while prices rise: one-year H100 contracts are up ~21% since March 2026 and Patel expects H100 above $3/hr and B300 above $7/hr. Most of the fleet still serves training, not paying users.",
+   "src": "https://www.techflowpost.com/en-US/article/35176",
    "p": {
-    "mono": "=util0:1.0",
-    "pipe": "=x:1.4",
-    "buildMax": 0.32,
-    "lead": 6
+    "pipe": 40,
+    "buildMax": 0.2,
+    "lead": 6,
+    "train": 70
    },
    "e": [
     {
      "type": "reprice",
-     "v": 40,
-     "q": "2027Q1"
+     "q": "2027Q1",
+     "v": 40
     }
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-18",
+   "updated": "2026-11-07",
    "core": true
   },
   {
@@ -1456,12 +1456,12 @@
   {
    "id": "util0",
    "label": "Quarter-zero utilisation",
-   "value": "47%",
-   "sub": "frontier revenue 133.8 ÷ (14.3 GW × 40% inference × $50B/GW); above 100% means rationed",
+   "value": "52%",
+   "sub": "frontier revenue 149.8 ÷ (14.3 GW × 40% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-06",
+   "as_of": "2026-11-07",
    "auto": true,
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   },
   {
    "id": "fms_tailrisk",
@@ -1489,33 +1489,32 @@
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
    "value": "7.6%",
-   "sub": "6 Nov 2026 · “AI bubble burst in 2026?”",
+   "sub": "7 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-06",
+   "as_of": "2026-11-07",
    "auto": true,
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   },
   {
    "id": "aaii",
    "label": "AAII retail investors: bullish / bearish",
-   "value": "37.8% / 41.4%",
-   "sub": "AAII weekly survey, week ending Oct 28: bulls up from 36.9%, bears down from 45.8%; bull-bear spread -3.6pp, bearish still above its 31.5% average.",
-   "src": "https://www.aaii.com/sentimentsurvey",
-   "as_of": "2026-10-28",
+   "value": "34.1% / 48.4%",
+   "sub": "AAII retail bullish/bearish, week ending Nov 4 2026: bulls down to 34.1% and bears up to 48.4% (bull-bear spread -14.3%), vs 37.8%/41.4% on Oct 28.",
+   "src": "https://seekingalpha.com/article/4963520-aaii-sentiment-survey-pessimism-revives (AAII weekly survey, also at https://www.aaii.com/sentimentsurvey)",
+   "as_of": "2026-11-04",
    "auto": false,
-   "updated": "2026-10-31",
-   "cadence_days": 7,
-   "next_check": "2026-11-07"
+   "updated": "2026-11-07",
+   "cadence_days": 7
   },
   {
    "id": "vix",
    "label": "VIX",
-   "value": "28.2",
-   "sub": "5 Nov 2026 close (CBOE)",
+   "value": "25.6",
+   "sub": "6 Nov 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-11-05",
+   "as_of": "2026-11-06",
    "auto": true,
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   },
   {
    "id": "fed_fsr",
@@ -1543,12 +1542,12 @@
   {
    "id": "h100_rental",
    "label": "H100 rental price",
-   "value": "$2.00/hr",
-   "sub": "Retail H100 SXM rental tier from SemiAnalysis AI Cloud TCO model, unchanged from the 2026-09-15 reading; hyperscaler-volume owning cost is $1.17/hr.",
-   "src": "https://inferencex.semianalysis.com/chips/h100",
-   "as_of": "2026-10-14",
+   "value": "$2.40-3.20/hr",
+   "sub": "Newer reading of the same measure from SemiAnalysis, the gauge's own house: spot/short-term H100 transaction prices are now $2.40-$3.20/hr against the gauge's $2.00/hr of 14 Oct, with SemiAnalysis's o",
+   "src": "https://www.techflowpost.com/en-US/article/35176",
+   "as_of": "2026-11-03",
    "auto": false,
-   "updated": "2026-10-15",
+   "updated": "2026-11-07",
    "cadence_days": 30
   },
   {
@@ -1561,7 +1560,7 @@
    "auto": false,
    "updated": "2026-10-06",
    "cadence_days": 30,
-   "next_check": "2026-11-07"
+   "next_check": "2026-11-15"
   },
   {
    "id": "token_index",
@@ -1599,22 +1598,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "4.90%",
-   "sub": "4 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "4.84%",
+   "sub": "5 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-11-04",
+   "as_of": "2026-11-05",
    "auto": true,
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "332bp",
-   "sub": "4 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 91bp",
+   "value": "348bp",
+   "sub": "5 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 93bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-11-04",
+   "as_of": "2026-11-05",
    "auto": true,
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   },
   {
    "id": "vc_h1",
@@ -1631,21 +1630,21 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "4 Nov 2026 (FRED DFF)",
+   "sub": "5 Nov 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-11-04",
+   "as_of": "2026-11-05",
    "auto": true,
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   },
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "+40% vs +24%",
-   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×3.8 a year) vs the model’s quarter-zero growth (×2.4 a year)",
+   "value": "+44% vs +24%",
+   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-06",
+   "as_of": "2026-11-07",
    "auto": true,
-   "updated": "2026-11-06"
+   "updated": "2026-11-07"
   }
  ],
  "frozen": [],
@@ -1742,6 +1741,6 @@
   ],
   "weeks_at_gap": 10,
   "fast_lane": false,
-  "util0": 0.468
+  "util0": 0.524
  }
 }
