@@ -1,26 +1,5 @@
 [
  {
-  "date": "2026-10-24",
-  "notes": [
-   "Bearish leg of quote comes from same AAII article: bearish sentiment increased 4.2 percentage points to 45.8%, above its 31.5% historical average for the 37th consecutive week.",
-   "Prior reading (38.7% / 41.6%, week ended 2026-10-14) is superseded; no later survey than the 2026-10-22 release exists as of today.",
-   "Neutral sentiment (17.3%) and bull-bear spread (-8.9%) available but not the gauge's measure, so left out of new_text.",
-   "mono: Tunguz 'The GPU Revenue Ladder' (21 Oct) gives SpaceX Q3 8-K AI revenue $7,560m annualised over 1.7 GW installed ($4.4B per total GW realised) and a $5.27/card-hour contract rate (~$38B per total GW at contract). The two bracket mono=50 per inference GW once divided by the inference share and are realised-vs-ceiling measures; also mono->55 was rejected on 22 Oct, so no proposal.",
-   "capexGW: same post assumes 'a $46 per watt build costs $55,200' per card, i.e. $46B/GW, below the current 54. Provenance of the $46/W is a footnote assumption in a payback calculation and may be a B200-era IT-load figure; it conflicts with Nvidia's $40B/GW of silicon alone for Vera Rubin, so I did not propose a cut.",
-   "pipe/lead: JPMorgan (via WSJ, June 2026, cited by Tunguz) says >60% of 2027 data centre capacity is not yet under construction and 7% is delayed; Goldman puts on-time delivery at 50-60% vs a 72% base rate. June vintage, second-hand, so not proposed - but it argues the pipeline is optimistic if it recurs in a primary source.",
-   "subst: Qualcomm CEO Amon (8 Oct, via Tunguz) says frontier labs want 100B-parameter models on handsets by 2028, and Kimi K3.1 Pro launched 23 Oct at $2/$10 per million tokens (~50% below Opus) claiming parity on 6 of 14 benchmarks. Forward-looking/price-only, no volume response yet; the Oct Vercel index already sets subst=30 (as of 15 Oct), so no move.",
-   "Vercel AI Gateway October index (open weight >70% of tokens, ~25% of spend) is the same reading already applied to subst on 15 Oct; the new Vercel feed item was an engineering blog post, not the index.",
-   "Ara Kharazian (23 Oct) posts that the most advanced adopters are now spending less on AI and that Notion may have engineered an outright decline in total AI spend, but explicitly notes the chart scales are unreadable - no numbers, so no k_oth/orgX proposal. The Oct Ramp index itself is already in the rampconc scenario.",
-   "H0/D0: no new METR measurement found. Wikipedia's METR table (last updated 9 May 2026) tops out at Claude Mythos Preview 80% = 3h06m and GPT-5.6 (Sol) 50% = 11h18m; it is a different series from the benchmark file H0=8.34 is read from, so proposing off it would mix measures. Search budget was exhausted before metr.org could be checked directly.",
-   "Event candidate not proposed: Tunguz reports OpenAI cut Luna pricing 80% in July and another 50% in September 2026 - a realised price shock, but it applies to one cheap model rather than frontier endpoints, so recording it as a 2026Q3 'price' event would overstate it.",
-   "Kedrosky's 23 Oct piece headlines a $3.7T annual revenue requirement, but the arithmetic sits behind a premium interactive tool and the inputs are Columbia/Bain figures already represented by the 'gap' scenario.",
-   "Zitron on Blackstone ($200bn of data centre assets) and on OpenAI/Anthropic's $1.3tn of obligations is financing_evidence in direction only; a fin increase to 1.4 was rejected on 23 Oct, so not re-proposed.",
-   "vc_h1 gauge not proposed: Tunguz's $516b is US-only PitchBook-NVCA for nine months, not the same measure as the gauge's $679B YTD figure.",
-   "Scenario slots: all four rotating slots are occupied (rampconc, swarm, overhang, swarmfade) and nothing read today is a distinct, attributable, two-number view not already covered; boom and takeoff are flagged out of range but a boom update was rejected on 22 Oct and no proponent has published revised numbers this week.",
-   "No prompt-injection attempts were found in the feeds, posts or pages read today."
-  ]
- },
- {
   "date": "2026-10-25",
   "notes": [
    "October 2026 Ramp AI Index letter (ramp.com/data/ai-index-oct-2026, published Oct 14) discusses the blended price per million tokens falling but prints no figure in text; the figure comes from the Ramp AI Index data page table (same source family, data through week ending Oct 11, 2026).",
@@ -272,6 +251,23 @@
    "Nvidia underwriting ~6.5 GW of clusters (Patel, Runtime 2026) noted as financing context but not proposed; it is a backstop volume, not a sensitivity.",
    "Web search quota ran out mid-run; later checks (Epoch Gradient Updates, Ramp Econ Lab, AI-2027 tracker) were only possible by direct fetch of URLs already in context, and Ramp's next update is promised for 11 Nov.",
    "No prompt-injection attempts found in the feeds or posts read; the Tunguz page carries a meta 'ai-summary' field, which is descriptive rather than instructional."
+  ]
+ },
+ {
+  "date": "2026-11-08",
+  "notes": [
+   "Nov 5 rout (Nasdaq -5.52%, S&P -4.36%, SOX -12.3%): not proposed as an event — two 2026Q4 event proposals (values 12 and 10) covering the same episode were rejected on 2026-11-07.",
+   "METR's 5 Nov 2026 Anthropic assessment (AECI progress rate 1.9x earlier pace, range 1.3-3x, ~80% of the acceleration attributed to AI use; METR says even ~2x falls short of catastrophic automation): not proposed — D0 -> 3.2 was rejected 2026-11-06 and scenario 'rdaccel' was rejected 2026-11-06, so this view has already been put to the judge this week.",
+   "Anthropic Q3 from the amended S-1 ($17B revenue vs $11.6B in Q2, $567M operating loss, ~$895.4B commitments): 46.7% QoQ growth is already encoded in the rampconc scenario, R0_epoch is collector-owned, and a train (compute split) move was rejected 2026-11-07.",
+   "Epoch 4 Nov: Broadcom TPU compute shipments doubled QoQ to ~2M H100-equivalents (~800k chips, +65%), covering Google and Anthropic — genuine capacity news, but H100-equivalents are a compute, not a power, unit, so any GW figure for K0/pipe would be my own conversion.",
+   "Epoch's AI data-centre hub now shows 96 sites, 15.8M H100-equivalents, 15.1 GW IT power at 45% coverage — mixes frontier and non-frontier operators and appears only as a dashboard tile with no quotable sentence carrying the number; no K0 proposal.",
+   "Apple cutting some engineers' daily AI budget from $300 to $200 (weighing $100) plus Deloitte's 81%-use / 25%-transformed split: suggestive of token budgets being rationed, but it is ROI discipline, not a response to a drawdown, so it fails procyclicality_evidence for betaX.",
+   "Menlo Ventures: enterprise AI spend up fivefold to $177B, Anthropic 55% share — no open-weight / non-frontier split in hand, so it supports neither subst (migration_share) nor R0x; the search budget ran out before the primary report could be read.",
+   "growth_calibration: ledger gap 12pts for a 10th straight week with slack (util0 52%), so the handle would be orgX, but orgX at its ±0.1 bound (1.3 -> 1.4) moves modelled quarter-zero growth by well under a quarter of the gap — a structural gap for the weekly review, not a calibration move.",
+   "boom and takeoff are flagged out of range; a re-fitted scenario_update needs a verbatim quote of the proponents' own stated ranges and the fetch budget was exhausted before the Patel/Baker essay and the AI Futures Project timelines pages could be read. Flagged for the next run.",
+   "Microsoft spending ~$5B less capex than planned in its September quarter on IREN delays, and winding down the 2023 Oracle capacity rental: delivery slippage, not a signing-to-delivery figure, so no move on lead or pipe.",
+   "Claude wrote >90% of Anthropic's code contributions in September (S-1): internal authorship, not a share of frontier tokens by task, so not usage_share evidence for sh_rd/sh_swe.",
+   "No prompt-injection attempts found in the feeds, posts or pages read today; the only instruction-like text was generic Substack boilerplate ('turn on JavaScript', Terms of Use links) in the feed items."
   ]
  }
 ]

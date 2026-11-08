@@ -1,5 +1,50 @@
 [
  {
+  "date": "2026-11-08",
+  "source": "https://epoch.ai/latest",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/latest",
+  "reason": "Adds a live primary feed for compute-capacity data to replace the dead Epoch substack, with a dated Nov 2026 insight confirming the page carries the series the model uses."
+ },
+ {
+  "date": "2026-11-08",
+  "source": "https://enoumen.substack.com/p/voters-wall-street-and-cfos-send",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 12,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://enoumen.substack.com/p/voters-wall-street-and-cfos-send."
+ },
+ {
+  "date": "2026-11-08",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "52%",
+  "new": "52%",
+  "reason": "Observed from source (2026-11-08).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-08",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-08).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-08",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.6%",
+  "new": "8.2%",
+  "reason": "Observed from source (2026-11-08).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
   "date": "2026-11-07",
   "source": "https://tomtunguz.com/a-90-dollar-key-into-your-companys-secrets/",
   "kind": "rejected",
@@ -3561,50 +3606,5 @@
   "old": null,
   "new": "Re-fit on Azeem Azhar's 29 Sep read of the leaked Anthropic S-1: $518bn of compute commitments over 7-10 years, ~$410bn non-cancelable, implying ~$1T of sales over the period against >$100bn annualised revenue already at end-2026 - roughly $100-140bn a year on average, i.e. a high level with much slower compounding than the current middle path.",
   "reason": "The quoted S-1 arithmetic is about Anthropic's contracted commitments and revenue level, not about revenue returned per dollar of token spend or a stated comparison of observed versus implied growth, so it cannot carry cuts to k_rd/k_swe/k_trd — the change reads as fitting the scenario to its anchor band."
- },
- {
-  "date": "2026-09-30",
-  "source": "https://www.exponentialview.co/p/the-first-existential-ipo",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.1,
-  "reason": "The same Anthropic S-1 take-or-pay evidence ($518bn of commitments, ~80% non-cancellable) was already accepted for fin on 29 Sep and is reflected in the current value, so moving again on it would double-count."
- },
- {
-  "date": "2026-09-30",
-  "source": "https://openai.com/index/introducing-gpt-6-1-sol",
-  "kind": "rejected",
-  "target": "event:2026Q3",
-  "old": null,
-  "new": 40,
-  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://openai.com/index/introducing-gpt-6-1-sol."
- },
- {
-  "date": "2026-09-30",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "50%",
-  "new": "60%",
-  "reason": "Observed from source (2026-09-30).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-09-30",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+56% vs +24%",
-  "new": "+65% vs +24%",
-  "reason": "Observed from source (2026-09-30).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-09-30",
-  "kind": "collected",
-  "target": "R0",
-  "old": 123.8,
-  "new": 151,
-  "reason": "Derived: Epoch disclosed sum 136 + undisclosed allowance 15.",
-  "source": ""
  }
 ]
