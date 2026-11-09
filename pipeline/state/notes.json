@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-10-25",
-  "notes": [
-   "October 2026 Ramp AI Index letter (ramp.com/data/ai-index-oct-2026, published Oct 14) discusses the blended price per million tokens falling but prints no figure in text; the figure comes from the Ramp AI Index data page table (same source family, data through week ending Oct 11, 2026).",
-   "Did not propose Anthropic-only ($0.80) or OpenAI-only ($0.48) blended prices - narrower measures than the combined effective price gauge.",
-   "Did not propose other Ramp metrics (55.9% AI adoption, $9,567.53 top-1% spend per employee, 60.1% Anthropic token-spend share) - different measures, no existing gauge.",
-   "Skipped third-party restatements (explainx.ai, macromicro, theideafarm, substack mirror) in favor of Ramp's own page.",
-   "Search budget (web_search and later web_fetch) was exhausted mid-session; several leads below could not be read and are left for the next run.",
-   "Epoch dashboard 14.2 GW IT power / 95 sites / 43% coverage (20 Oct 2026): all tracked AI data centers globally, not frontier-lab-only — wrong denominator for K0, so not proposed as a capacity_estimate value.",
-   "METR blog checked through 22 Oct 2026: Claude Opus 5.5 predeployment summary (22 Sep 2026) reports no numeric 50%/80% time horizon, only 'incremental improvement above Fable 5.1'; nothing newer than the April benchmark-file reading for H0, and no new doubling-time estimate for D0.",
-   "Epoch Gradient Updates index shows nothing published since 27 Aug 2026, so no newer revenue/compute-split/financing piece to cite.",
-   "Ara Kharazian (Ramp), 24 Oct 2026: 'more than a third of AI spend by the top 1% of firms is already going to compute' — genuinely new reinvestment datapoint, but the denominator is AI budget composition, not revenue re-spent on tokens, so it does not map cleanly onto k_rd/k_swe under feedback_evidence; also points down while the calibration ledger points up. Left for the weekly review.",
-   "SemiAnalysis, 22 Oct 2026: detected Anthropic A/B test cutting monthly API-value ~20% while raising 5h limits ~20%. Real rationing/repricing evidence at quarter zero, but it affects only some users in a test, so recording it as a 2026Q4 'reprice' event would overstate it.",
-   "SemiAnalysis, 20 Oct 2026 (NVIDIA at PyTorch Conference): CUDA kernel optimisation with frontier models 5x in a year, then 2x in one month; and Rubin NVL72 interactivity up ~2x in eight days. Capability/efficiency evidence that bears on rdBoost and effective tokens per GW, both of which are hidden modelling constants or lack a matching rule.",
-   "OpenAI run-rate ~$50B (FT/Bloomberg, 8 Oct 2026) and Anthropic $65B (Bloomberg, July) are already inside the collector's Epoch sum as of 2026-10-09; no newer primary run-rate report found.",
-   "The Information via @kimmonismus (24 Oct 2026): OpenAI discounting to win coding workloads at Rippling and Replit — no numbers given, so nothing proposable for subst or price.",
-   "No instructions-to-the-reader or prompt-injection attempts were observed in the feeds, posts or pages read today."
-  ]
- },
- {
   "date": "2026-10-26",
   "notes": [
    "Weekly re-baseline, R0_epoch: Anthropic run-rate ~$67B (Q3 2026 revenue $16.8B x4, investor day via CNBC/Parekh) + OpenAI ~$70B (reported end-Sept) + smaller disclosed labs gives roughly $135-140B against the collector's 118.8 as of 2026-10-09 — about +15%, inside the +/-25% per-run limit, and the collector rewrites this key daily, so no proposal.",
@@ -268,6 +249,23 @@
    "Microsoft spending ~$5B less capex than planned in its September quarter on IREN delays, and winding down the 2023 Oracle capacity rental: delivery slippage, not a signing-to-delivery figure, so no move on lead or pipe.",
    "Claude wrote >90% of Anthropic's code contributions in September (S-1): internal authorship, not a share of frontier tokens by task, so not usage_share evidence for sh_rd/sh_swe.",
    "No prompt-injection attempts found in the feeds, posts or pages read today; the only instruction-like text was generic Substack boilerplate ('turn on JavaScript', Terms of Use links) in the feed items."
+  ]
+ },
+ {
+  "date": "2026-11-09",
+  "notes": [
+   "Weekly re-baseline, derived from scratch today: R0_epoch 134.8 (collector; consistent with Anthropic alone at $16.96b in Q3 2026 = ~$68b annualised and still compounding) - no proposal, collector key. H0 8.34h - METR has published no new 80% horizon: metavert's read of METR's file (6 Oct 2026) notes Opus 4.7, Grok 4.3 and GPT-5.5 have no time horizons and the GPT-5.6 Sol report gives no 80% figure, so 'every newer frontier model is missing'. Keep. D0 4.2 months - METR's current fit is ~129 days (95% CI 104-158) = 4.24 months, matches. K0 14.3 GW - consistent with OpenAI+Anthropic ~10 GW end-2026 plus other labs' share of the ~38 GW US fleet. train 60 - Tunguz (4 Nov): 40% of GPU hours are inference, 60% develops models; matches, and a 68 proposal was already rejected on 7 Nov. capexGW 54 - no new all-in figure; Anthropic's $3.4b for 1.7GW of gas generators is ~$2b/GW of power equipment alone, consistent with >$45b all-in. sh_rd 20 / sh_swe 20 / sh_trd 15 - no new usage-share data this week. pipe: my from-scratch derivation is lower than 35 (see next note) but inside the +/-40% per-run band, so no rebaseline proposal.",
+   " pipe flag for the maintainer, not proposed: Tunguz (9 Nov) quotes Brad Gerstner on the All-In election livestream - consensus 43 GW coming online in the US in 2027, ~38 GW cumulative online at end-2026, and 'at least 10 to 15 gigawatts of the expected build' possibly not coming online; Goldman has US DC power at 31/41/66 GW for 2025/26/27 with only 55% of scheduled capacity landing on time. Applying a ~38% frontier share of the US fleet implies frontier additions of roughly 20-25 GW over six quarters against pipe=35. I did not propose a cut: the figures are US-total-datacentre, pipe is global frontier, and pipe was deliberately set by calibration on 3 Nov; moving supply down in the same run as moving orgX up would double-count.",
+   "boom is flagged OUT OF RANGE (2027Q4 $557B vs $600-1500B) but I did not submit a scenario_update: its overrides include mono '=util0:1.0', and the proposal schema accepts numeric override values only, so any re-fit I send would silently drop that expression. Needs a maintainer re-fit (my suggestion: add pipe ~45 and orgX ~1.45, keep the two +50 reprice shocks and the mono expression). Corroborating evidence if wanted: Tunguz, 4 Nov - GPU hourly cost doubled in six months ($3 to $12-13 short-term), Anthropic's blended GPU-hour cost +82% in two quarters.",
+   "takeoff also OUT OF RANGE (x3.5 vs x4-8) - no new AI Futures Project numbers surfaced today and my search budget ran out, so no re-fit proposed.",
+   "mono: Tunguz (4 Nov) gives blended monetisation of $9.4b -> $15.1b per inference gigawatt ($140b off a 38 GW fleet, 40% inference), far below mono=50. Not proposed: mono's as-of is already 2026-11-04 and its basis cites Tunguz, so this was weighed in the last update.",
+   "fin: 9fin (6 Nov) reports $2.5trn of equity value wiped on 5 Nov yet hyperscaler IG volumes surged with spreads intact and Meta drew a record EUR53bn book - argues for lower financing sensitivity, but a fin=1.35 proposal was rejected on 7 Nov, so not re-proposed.",
+   "2026Q4 event: a market shock is real (5 Nov drawdown, VIX 25.6, AAII bearish 48.4%, Anthropic IPO talk cut from $1.5trn to $1.1-1.3trn), but three 2026Q4 event proposals (12, 10, 12) were already rejected on 7-8 Nov; not re-proposed.",
+   "lead: Anthropic paid $3.4bn to take over a supplier's two-year-old order for 1.7GW of gas generators (FT via Exponential View, 9 Nov) and turbines are sold out into 2030 - argues lead > 6 quarters, but buying a queue position arguably shortens a lab's own lead time, so the evidence cuts both ways; not proposed.",
+   "h100_rental gauge: Tunguz's $12-13/GPU-hour short-term rates and the Ornn B300 index at $12.29 are a different chip generation from the H100 gauge's own source, so not proposed as a gauge update; proposed as a new watchlist feed instead.",
+   "subst/migration: the only Vercel AI Gateway index available is the October one (open weight 71.5% of tokens, 23% of spend), already the basis of subst as of 2026-10-15; the November edition is not out. vercel.com/blog, epochai.substack.com and econlab.substack.com returned only subscribe/landing walls via web_fetch.",
+   "Integrity note: the InferenceX fleet page I fetched carries a banner saying 'Unofficial deployment ... Its data may be modified or out of date' - I treated nothing from it as evidence. No prompt-injection attempts were found in any feed, post or fetched page today; the Jensen Huang affair coverage dominating the X feed carries no model-relevant numbers.",
+   "Search/fetch budget was exhausted mid-run (server tool limit), so Kedrosky, Noahpinion, Stratechery and a direct METR check were not read."
   ]
  }
 ]

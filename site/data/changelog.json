@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-11-09",
+  "source": "https://tomtunguz.com/when-does-the-us-become-a-net-importer-of-tokens/",
+  "kind": "rejected",
+  "target": "https://data.ornn.com/",
+  "old": null,
+  "new": "Ornn B300 Compute Price Index (settled GPU-hour price)",
+  "reason": "The quote is a general remark that compute prices spike when supply chokes and says nothing about the Ornn index, and the proposed feed itself returned no content, so there is no evidence it is a usable primary series."
+ },
+ {
+  "date": "2026-11-09",
+  "source": "https://tomtunguz.com/the-financial-engineering-essential-for-ai-in-2027/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.4,
+  "reason": "This is the same Anthropic Q3 2026 sequential revenue figure rejected for orgX on 17, 21, 28 and 31 October and 5 November — one lab's revenue line (here quoted mainly to document its compute bill and operating loss) is not evidence that token spend across the model's segments is outgrowing the modelled path."
+ },
+ {
+  "date": "2026-11-09",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "52%",
+  "new": "52%",
+  "reason": "Observed from source (2026-11-09).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-09",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-09).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-09",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.2%",
+  "new": "7.8%",
+  "reason": "Observed from source (2026-11-09).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-09",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "348bp",
+  "new": "342bp",
+  "reason": "Observed from source (2026-11-06).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
   "date": "2026-11-08",
   "source": "https://epoch.ai/latest",
   "kind": "accepted",
@@ -3550,61 +3604,5 @@
   "new": "3.88%",
   "reason": "Observed from source (2026-09-29).",
   "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.24%",
-  "new": "5.26%",
-  "reason": "Observed from source (2026-09-29).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-01",
-  "kind": "rolled",
-  "target": "quarter0",
-  "old": "2026Q3",
-  "new": "2026Q4",
-  "reason": "New quarter: the closed quarter moved into history.",
-  "source": ""
- },
- {
-  "date": "2026-10-01",
-  "kind": "expired",
-  "target": "scenario:elastic",
-  "old": "2026Q3",
-  "new": null,
-  "reason": "Calendar-pinned shock price at 2026Q3 is now in the past; the judge grades whether it happened.",
-  "source": ""
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "K0",
-  "old": 10,
-  "new": 13,
-  "reason": "Roll-over: 4.3 GW of the committed pipeline (pipe ÷ (lead + 1)) came online during 2026Q3. Capped: target 14.3, continues next run.",
-  "source": "https://www.dwarkesh.com/p/dylan-patel-3",
-  "capped": true,
-  "target_value": 14.3
- },
- {
-  "date": "2026-09-30",
-  "source": "https://www.wheresyoured.at/dead-money/",
-  "kind": "rejected",
-  "target": "scenario:contagion",
-  "old": null,
-  "new": "Zitron's 29 Sep 'Dead Money' revises the numbers: ~$22bn of global non-Anthropic/OpenAI compute demand (was 'under $30bn'), the two labs at 70-80% of all AI revenue and compute demand, $183bn of hyperscaler AI revenue of which at least 64% ($118.2bn) is the two labs, and Morgan Stanley finding more than half of GPU servers sold 2026-2028 may have nowhere to be plugged in.",
-  "reason": "Zitron's refreshed figure (64% of $183bn of hyperscaler AI revenue from the two labs) is if anything slightly less concentrated than the 70–75% already in the basis, and the quoted evidence says nothing about capex cancellation, so it does not support deepening capex_cut from 30% to 40%."
- },
- {
-  "date": "2026-09-30",
-  "source": "https://www.exponentialview.co/p/the-first-existential-ipo",
-  "kind": "rejected",
-  "target": "scenario:middle",
-  "old": null,
-  "new": "Re-fit on Azeem Azhar's 29 Sep read of the leaked Anthropic S-1: $518bn of compute commitments over 7-10 years, ~$410bn non-cancelable, implying ~$1T of sales over the period against >$100bn annualised revenue already at end-2026 - roughly $100-140bn a year on average, i.e. a high level with much slower compounding than the current middle path.",
-  "reason": "The quoted S-1 arithmetic is about Anthropic's contracted commitments and revenue level, not about revenue returned per dollar of token spend or a stated comparison of observed versus implied growth, so it cannot carry cuts to k_rd/k_swe/k_trd — the change reads as fitting the scenario to its anchor band."
  }
 ]
