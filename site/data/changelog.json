@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-11-10",
+  "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+  "kind": "accepted",
+  "target": "scenario:takeoff",
+  "old": "updated",
+  "new": "updated",
+  "reason": "The takeoff scenario was flagged out of range against its own stated x4–8 revenue anchor, and METR's in-lab assessment — ~2x faster capability progress on well-specified tasks, mostly AI-attributable, with no visible 12-month bottleneck — is a fresh primary source for the acceleration this scenario assumes, so the re-fit is a faithful repair with attribution intact."
+ },
+ {
+  "date": "2026-11-10",
+  "source": "https://x.com/EpochAIResearch/status/2119903415363113088",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 1,
+  "reason": "A single Epoch post noting a new ECI high of 174 versus 169 documents an incremental record, not a release shock of the same magnitude as the model's breakthrough events, and the cited METR rule does not fit an Epoch index datapoint."
+ },
+ {
+  "date": "2026-11-10",
+  "source": "https://vercel.com/blog/ai-gateway-production-index-november-2026",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 33,
+  "reason": "The quoted sentence measures how gateway dollars split between OpenAI and Anthropic, not the share of bounded token work migrating off frontier endpoints, so it does not support a higher substitution share."
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "accepted",
+  "target": "k_rd",
+  "old": 0.7,
+  "new": 0.65,
+  "reason": "New 3Q'26 filing data on both halves of the R&D loop — revenue per R&D dollar flat-to-down (1.91 → 1.78) and R&D spend growing ~5x a year against the ~6.3x implied by k_rd=0.7 — is a direct growth-versus-implied comparison and is not the compute-cost figure applied in October, so the gain steps down. Rule feedback_evidence; “On that measure, it climbed from $0.74 in 4Q’25 to $1.91 in 2Q’26, even as R&D was ramping, then slipped to $1.78 in 3Q’26 as R&D rose faste”",
+  "source": "https://www.mbi-deepdives.com/ant-vs-meta/"
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "accepted",
+  "target": "train",
+  "old": 60,
+  "new": 65,
+  "reason": "The amended Anthropic filing adds a newer quarter to the compute-by-function series (only ~25% of 3Q'26 compute served paying customers, versus 27% in 1H'26), so the training/research share rises, capped at 65 to respect the 30-day drift window and because free-tier inference is bundled into the non-serving residual. Rule compute_split; “The share of its compute serving paying customers fell from 44% in the first half of 2025 to ~25% in 3Q’26 (the rest goes to research, train”",
+  "source": "https://www.mbi-deepdives.com/ant-vs-meta/"
+ },
+ {
+  "date": "2026-11-10",
+  "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+  "kind": "rejected",
+  "target": "D0",
+  "old": null,
+  "new": 3.2,
+  "reason": "This is the same AECI acceleration quote rejected on 6 November: a benchmark-index growth rate at one lab is not the 80%-task-horizon doubling time D0 encodes, so converting it into a 3.2-month horizon remains an inference the source does not make."
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "52%",
+  "new": "52%",
+  "reason": "Observed from source (2026-11-10).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-10).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.8%",
+  "new": "6.0%",
+  "reason": "Observed from source (2026-11-10).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "25.6",
+  "new": "19.9",
+  "reason": "Observed from source (2026-11-09).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-06).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-10",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.84%",
+  "new": "4.86%",
+  "reason": "Observed from source (2026-11-06).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-09",
   "source": "https://tomtunguz.com/when-does-the-us-become-a-net-importer-of-tokens/",
   "kind": "rejected",
@@ -3494,115 +3602,5 @@
   "old": null,
   "new": 1.4,
   "reason": "A single tweet counting which banks appeared in 2025 datacentre deals shows lender concentration, not how strongly build pace responds to credit conditions, and is too weak a grade to move fin to the edge of its monthly window."
- },
- {
-  "date": "2026-10-01",
-  "source": "https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
-  "kind": "rejected",
-  "target": "sh_rd",
-  "old": null,
-  "new": 23,
-  "reason": "Claude 'leading' 26% of Anthropic's internal AI R&D work and OpenAI's 3.1 agent-workdays per human workday measure how much of a lab's own research is automated, not the share of frontier inference demand coming from the AI R&D segment, so they are a different quantity from sh_rd."
- },
- {
-  "date": "2026-10-01",
-  "source": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.3,
-  "reason": "This is the same 27 August Epoch run-rate write-up that already lifted orgX once and has been rejected twice since on double-counting grounds; a calibration gap needs corroboration newer than the move it is meant to justify."
- },
- {
-  "date": "2026-10-01",
-  "kind": "accepted",
-  "target": "rho",
-  "old": 0.5,
-  "new": 0.6,
-  "reason": "BIS Bulletin 137 (1 Oct 2026) puts institution-grade reported numbers on exactly the shared-capital channel rho stands for — 55.2% of investment into AI firms comes from other AI firms — upgrading the input from the older IMF-based estimate, and the step stays inside the per-run and monthly limits. Rule correlation_evidence; “Between 2021 and 2025, 28.7% of artificial intelligence (AI) firms’ investment deals (by deal value) involved a target company that was also”",
-  "source": "https://www.bis.org/publications/bulletin-137-circular-relationships-among-ai-firms"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "60%",
-  "new": "47%",
-  "reason": "Observed from source (2026-10-01).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+65% vs +24%",
-  "new": "+45% vs +24%",
-  "reason": "Observed from source (2026-10-01).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "R0",
-  "old": 151,
-  "new": 153.8,
-  "reason": "Derived: Epoch disclosed sum 138.8 + undisclosed allowance 15.",
-  "source": ""
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "R0_epoch",
-  "old": 136,
-  "new": 138.8,
-  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: OpenAI $70B (2026-09-29), Anthropic $65B (2026-07-31), Z.ai (Zhipu) $2B (2026-08-31), DeepSeek $1B (2026-09-24), MiniMax $1B (2026-08-26), xAI $0B (2025-09-30).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "H0",
-  "old": 5.08,
-  "new": 7.62,
-  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate. Capped: target 8.34, continues next run.",
-  "source": "https://metr.org/time-horizons/",
-  "capped": true,
-  "target_value": 8.34
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "8.6%",
-  "new": "8.6%",
-  "reason": "Observed from source (2026-10-01).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "16.0",
-  "new": "16.3",
-  "reason": "Observed from source (2026-09-30).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "302bp",
-  "new": "308bp",
-  "reason": "Observed from source (2026-09-29).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-01",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-09-29).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
  }
 ]

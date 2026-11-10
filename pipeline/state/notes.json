@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-10-26",
-  "notes": [
-   "Weekly re-baseline, R0_epoch: Anthropic run-rate ~$67B (Q3 2026 revenue $16.8B x4, investor day via CNBC/Parekh) + OpenAI ~$70B (reported end-Sept) + smaller disclosed labs gives roughly $135-140B against the collector's 118.8 as of 2026-10-09 — about +15%, inside the +/-25% per-run limit, and the collector rewrites this key daily, so no proposal.",
-   "Re-baseline R0x 15: no new evidence on Gemini API or hyperscaler-native inference this week; unchanged.",
-   "Re-baseline H0 8.34 / D0 4.2: no new METR measurement surfaced; unchanged.",
-   "Re-baseline K0 14.3 GW and pipe 32: Anthropic's S-1 discloses dollars, not gigawatts ($450B cloud contracts, $160B+ Broadcom TPU leases, up to $750B total). Converting rental contracts to GW is not a capacity disclosure, so no K0/pipe parameter move; the view is encoded inside the new scenario instead.",
-   "Re-baseline capexGW 54: Parekh restates ~$50B+ of investment per GW (chips, buildings, power, networking) — consistent with 54, inside the +/-20% limit, no proposal.",
-   "Re-baseline train 50: the S-1 coverage gives total compute and infrastructure spend ($7.3B in 2025, ~$9B in H1 2026) but no training/inference split; unchanged.",
-   "Re-baseline sh_rd 20 / sh_swe 20 / sh_trd 15: no new usage-share disclosure (the S-1 coverage I could reach gives no product or task mix); unchanged.",
-   "orgX: the ledger is at 9 consecutive weeks over 0.05 with the fast lane closed, but an orgX move to 1.4 was rejected on 2026-10-24 — not re-proposed this run.",
-   "fin: noncancelable $450B of cloud contracts plus the Blackstone-led October debt facility and Musk's claim that AI credit has shut for neoclouds all bear on financing, but a fin move to 1.4 was rejected on 2026-10-23; left alone, and the direction is encoded as an override (fin 0.8, builds locked in) inside the new scenario.",
-   "rho: the S-1's ~20% of revenue from two customers is customer concentration, which the correlation_evidence rule explicitly excludes; not proposed.",
-   "mono lead for next week: Anthropic's ~$67B run-rate against Epoch's 3.7-5 GW estimate implies only ~$13-17M per MW of total compute (~$30B per inference GW at a 50% inference share), well below mono 50 and below the $50M/MW basis currently cited. I could not pin a fetchable GW source this run; worth a revenue_per_gw proposal when one is in hand.",
-   "SemiAnalysis InferenceX 'Token Revenue Calculator' (profit-estimator-per-gigawatt) is a live per-GW inference revenue tool and the obvious mono source, but it rendered as an interactive page with no readable numbers before my fetch budget ran out.",
-   "The SEC-hosted S-1 (sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm) is fetchable HTML but truncates after the cover page and defined terms, so none of its financial language is quotable end-to-end; quotes were taken from secondary sources that reproduce the same figures.",
-   "No prompt-injection or instruction-like text was encountered in any feed item, X post or fetched page this run."
-  ]
- },
- {
   "date": "2026-10-27",
   "notes": [
    "R0_epoch: Anthropic S-1 implies Q3 2026 revenue ~$16.9B (86x the $197M Q4 2024; FT reported $16.8B) = ~$67B annualised, and the S-1's 31 Oct Run-Rate Revenue value is left blank pending amendment. Did not propose a new Epoch sum: could not verify the other components (OpenAI etc.) and the collector rewrites this key daily.",
@@ -266,6 +247,19 @@
    "subst/migration: the only Vercel AI Gateway index available is the October one (open weight 71.5% of tokens, 23% of spend), already the basis of subst as of 2026-10-15; the November edition is not out. vercel.com/blog, epochai.substack.com and econlab.substack.com returned only subscribe/landing walls via web_fetch.",
    "Integrity note: the InferenceX fleet page I fetched carries a banner saying 'Unofficial deployment ... Its data may be modified or out of date' - I treated nothing from it as evidence. No prompt-injection attempts were found in any feed, post or fetched page today; the Jensen Huang affair coverage dominating the X feed carries no model-relevant numbers.",
    "Search/fetch budget was exhausted mid-run (server tool limit), so Kedrosky, Noahpinion, Stratechery and a direct METR check were not read."
+  ]
+ },
+ {
+  "date": "2026-11-10",
+  "notes": [
+   "orgX calibration move (ledger: 11 consecutive weeks over 0.05, gap 15pts, util 52% = slack, handle = orgX) not proposed: an identical capped move to 1.4 was rejected on 2026-11-09 and nothing in today's feed changes the demand-side read; flagging it for the weekly review instead.",
+   "boom scenario is OUT OF RANGE ($557B vs $600–1500B at 2027Q4) but I found no fetchable Patel/Baker page from the last few days with revised numbers to anchor a re-fit; left for a day with a primary source.",
+   "Anthropic IPO roadshow (825m shares at $70–78, ~$1.24–1.38T fully diluted, below the ~$1.5T expectation): a valuation/equity-financing datapoint with no listed rule; fin was already rejected at 1.35 on 7 Nov, so not proposed.",
+   "Epoch's new Inference Performance Index (GB300 inference advantage over H100 understated 10x by FLOP/s) is about tokens per chip, not revenue per GW, so it does not fit revenue_per_gw; worth watching if they publish $/GW implications.",
+   "SemiAnalysis Texas TCEQ permit freeze / midterm backlash (30.3 GW of 2028 capacity at risk) is already encoded in the grid scenario's 1 Nov revision; post-midterm outcome not yet quantified, so no update.",
+   "R0_epoch left alone: the collector rewrites it daily and Anthropic's amended S-1 numbers flow through it.",
+   "No new METR 80%-horizon reading exists (METR stopped publishing horizon updates after April 2026), so H0 stays at 8.34.",
+   "No prompt-injection or instruction-like content noticed in the fetched pages; MBI, METR, Vercel and Anthropic pages were plain editorial/filing text."
   ]
  }
 ]

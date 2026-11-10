@@ -833,5 +833,20 @@
    "judge": 0.057,
    "memo": 0.452
   }
+ },
+ {
+  "date": "2026-11-10",
+  "est_usd": 1.555,
+  "input": 42,
+  "output": 23044,
+  "cache_read": 884170,
+  "cache_write": 79418,
+  "searches": 4,
+  "fetches": 6,
+  "calls": 2,
+  "by": {
+   "researcher": 1.365,
+   "judge": 0.189
+  }
  }
 ]

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-09T16:49:45.493Z",
+ "generated_at": "2026-11-10T15:12:37.974Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -213,14 +213,14 @@
    "short": "Modelling constant; see “How it works”."
   },
   "k_rd": {
-   "value": 0.7,
+   "value": 0.65,
    "label": "AI R&D loop gain",
    "hidden": false,
    "basis": "Not directly measurable. Direction is documented: AI took 70–80% of 2026 venture funding and Nvidia estimates ~70% of AI venture dollars go to compute (PitchBook, Aug 2026); coding startups spend 40–70¢ of each revenue dollar on inference (Cursor estimates); OpenAI plans ~$19B of 2026 R&D compute and Anthropic over $1B on RL environments (The Information via Epoch).",
-   "as_of": "2026-10-20",
+   "as_of": "2026-11-09",
    "type": "reported",
-   "source": "https://x.com/kimmonismus/status/2112630840312349124",
-   "updated": "2026-10-21",
+   "source": "https://www.mbi-deepdives.com/ant-vs-meta/",
+   "updated": "2026-11-10",
    "rule": "",
    "short": "Assumption. Direction documented: ~70% of AI venture dollars go to compute; coding startups spend 40–70¢ per revenue dollar on inference; labs plan tens of billions of R&D compute."
   },
@@ -465,14 +465,14 @@
    "short": "Revenue potential per GW of inference capacity at current prices. Evidence-driven: Patel and Tunguz put Anthropic near $50M per MW of total compute (higher per inference GW); SemiAnalysis sees ~$100B/GW potential; the industry average is far lower."
   },
   "train": {
-   "value": 60,
+   "value": 65,
    "label": "Compute used for training",
    "hidden": false,
    "basis": "Anthropic 2025: $4.1B training vs ~$2.7B inference (Epoch, Feb 2026), matching the 60/40 rumour the article cites. Amodei’s stylised split is 50/50; older forecasts have training falling toward 20% by end-2027.",
-   "as_of": "2026-10-28",
+   "as_of": "2026-11-09",
    "type": "estimate",
-   "source": "https://www.mbi-deepdives.com/ant-s1/",
-   "updated": "2026-11-01",
+   "source": "https://www.mbi-deepdives.com/ant-vs-meta/",
+   "updated": "2026-11-10",
    "rule": "",
    "short": "Anthropic 2025 spent $4.1B on training vs ~$2.7B on inference (Epoch); Patel’s 60/40 split."
   },
@@ -806,35 +806,37 @@
     "checks": [
      "OUT: 2027Q4 $557B vs $600–1500B"
     ],
-    "date": "2026-11-09"
+    "date": "2026-11-10"
    }
   },
   {
    "id": "takeoff",
    "camp": "bull",
    "name": "Takeoff",
-   "who": "AI Futures Project (“AI 2027”)",
-   "when": "timelines updates 2 Apr and 16 Aug 2026",
-   "thesis": "METR’s doubling time revised from 5.5 to 4–4.5 months, an “automated coder” arriving between late 2027 and early 2030 with ~$500B of lab revenue at that point, and lab revenue growing 5–7× a year in the meantime; growth turns superexponential only near the finish. Modelled as a 4-month doubling, a strong R&D feedback on progress, a breakthrough at end-2027, and labs building ahead of demand.",
-   "src": "https://blog.aifutures.org/p/q1-2026-timelines-update",
+   "who": "AI Futures Project (“AI 2027”), timelines updates 2 Apr and 16 Aug 2026; re-fitted on METR's 5 Nov 2026 in-lab AI R&D acceleration assessment",
+   "when": "2026-11-05",
+   "thesis": "METR now measures Anthropic's capability progress at ~1.9x (CI 1.5–2.8x) the pre-October-2025 rate, not explained by training-compute scaling and mostly attributable to AI doing AI R&D, with no bottleneck visible for 12 months — the acceleration AI 2027 assumed. An automated coder arrives between late 2027 and early 2030 with ~$500B of lab revenue at that point, and lab revenue grows 5–7x a year in the meantime (x4–8 from 2026Q4 to 2027Q4).",
+   "src": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
    "p": {
-    "D0": 4,
-    "rdBoost": 0.5,
-    "epsX": 1.3,
-    "buildMax": 0.3,
+    "D0": 3,
+    "rdBoost": 0.55,
+    "epsX": 1.4,
+    "orgX": 1.45,
+    "buildMax": 0.32,
     "targetUtil": 0.7,
+    "pipe": 45,
     "H_cap": 50000
    },
    "e": [
     {
      "type": "release",
-     "v": 1,
-     "q": "2027Q4"
+     "q": "2027Q4",
+     "v": 1
     }
    ],
    "status": "active",
    "added": "2026-09-02",
-   "updated": "2026-09-03",
+   "updated": "2026-11-10",
    "core": true,
    "anchors": [
     {
@@ -851,7 +853,7 @@
     "checks": [
      "OUT: growth 2026Q4→2027Q4 ×3.5 vs ×4–8"
     ],
-    "date": "2026-11-09"
+    "date": "2026-11-10"
    }
   },
   {
@@ -1172,7 +1174,7 @@
      "ok: 2027Q4 $260B vs $225–340B",
      "ok: 2028Q4 $512B vs $395–675B"
     ],
-    "date": "2026-11-09"
+    "date": "2026-11-10"
    }
   },
   {
@@ -1459,9 +1461,9 @@
    "value": "52%",
    "sub": "frontier revenue 149.8 ÷ (14.3 GW × 40% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-09",
+   "as_of": "2026-11-10",
    "auto": true,
-   "updated": "2026-11-09"
+   "updated": "2026-11-10"
   },
   {
    "id": "fms_tailrisk",
@@ -1488,12 +1490,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "7.8%",
-   "sub": "9 Nov 2026 · “AI bubble burst in 2026?”",
+   "value": "6.0%",
+   "sub": "10 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-09",
+   "as_of": "2026-11-10",
    "auto": true,
-   "updated": "2026-11-09"
+   "updated": "2026-11-10"
   },
   {
    "id": "aaii",
@@ -1509,12 +1511,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "25.6",
-   "sub": "6 Nov 2026 close (CBOE)",
+   "value": "19.9",
+   "sub": "9 Nov 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-11-06",
+   "as_of": "2026-11-09",
    "auto": true,
-   "updated": "2026-11-07"
+   "updated": "2026-11-10"
   },
   {
    "id": "fed_fsr",
@@ -1598,12 +1600,12 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "4.84%",
-   "sub": "5 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "4.86%",
+   "sub": "6 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-11-05",
+   "as_of": "2026-11-06",
    "auto": true,
-   "updated": "2026-11-07"
+   "updated": "2026-11-10"
   },
   {
    "id": "hy_oas",
@@ -1630,11 +1632,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "5 Nov 2026 (FRED DFF)",
+   "sub": "6 Nov 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-11-05",
+   "as_of": "2026-11-06",
    "auto": true,
-   "updated": "2026-11-07"
+   "updated": "2026-11-10"
   },
   {
    "id": "growth_check",
@@ -1642,9 +1644,9 @@
    "value": "+44% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.4 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-09",
+   "as_of": "2026-11-10",
    "auto": true,
-   "updated": "2026-11-09"
+   "updated": "2026-11-10"
   }
  ],
  "frozen": [],
