@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-11-11",
+  "source": "https://dataconomy.com/2026/11/11/openai-revenue-hits-10-billion-as-operating-losses-widen/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.37,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://dataconomy.com/2026/11/11/openai-revenue-hits-10-billion-as-o."
+ },
+ {
+  "date": "2026-11-11",
+  "source": "https://blog.aifutures.org/p/q35-timelines-update-looks-like-the",
+  "kind": "accepted",
+  "target": "scenario:takeoff",
+  "old": "updated",
+  "new": "updated",
+  "reason": "The 10 Nov Q3.5 update is the scenario's own proponent (AI Futures Project) publishing a more recent, primary revision of the numbers the scenario rests on — the quote directly supports a 1.7x AI-attributable acceleration and an AIFM SAR median of Feb 2027, which justifies the faster horizon doubling, higher R&D boost and the release shock moving one quarter earlier."
+ },
+ {
+  "date": "2026-11-11",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "52%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-11).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-11",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +22%",
+  "reason": "Observed from source (2026-11-11).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-11",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.0%",
+  "new": "6.9%",
+  "reason": "Observed from source (2026-11-11).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-11",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "19.9",
+  "new": "19.5",
+  "reason": "Observed from source (2026-11-10).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-11",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "342bp",
+  "new": "334bp",
+  "reason": "Observed from source (2026-11-09).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-11",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-09).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-11",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.86%",
+  "new": "4.88%",
+  "reason": "Observed from source (2026-11-09).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-10",
   "source": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
   "kind": "accepted",
@@ -3521,86 +3602,5 @@
   "new": 14.3,
   "reason": "Carry-over toward the target 14.3 set on 2026-10-01 (Roll-over: 4.3 GW of the committed pipeline (pipe ÷ (lead + 1)) came online during 2026Q3.).",
   "source": "https://www.dwarkesh.com/p/dylan-patel-3"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "47%",
-  "reason": "Observed from source (2026-10-02).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+45% vs +24%",
-  "new": "+45% vs +24%",
-  "reason": "Observed from source (2026-10-02).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "H0",
-  "old": 7.62,
-  "new": 8.34,
-  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate.",
-  "source": "https://metr.org/time-horizons/"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "8.6%",
-  "new": "7.8%",
-  "reason": "Observed from source (2026-10-02).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "16.3",
-  "new": "16.4",
-  "reason": "Observed from source (2026-10-01).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "308bp",
-  "new": "312bp",
-  "reason": "Observed from source (2026-09-30).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-09-30).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.26%",
-  "new": "5.29%",
-  "reason": "Observed from source (2026-09-30).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-01",
-  "source": "https://x.com/edzitron/status/2105454953888387486",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.4,
-  "reason": "A single tweet counting which banks appeared in 2025 datacentre deals shows lender concentration, not how strongly build pace responds to credit conditions, and is too weak a grade to move fin to the edge of its monthly window."
  }
 ]

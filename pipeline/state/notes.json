@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-10-27",
-  "notes": [
-   "R0_epoch: Anthropic S-1 implies Q3 2026 revenue ~$16.9B (86x the $197M Q4 2024; FT reported $16.8B) = ~$67B annualised, and the S-1's 31 Oct Run-Rate Revenue value is left blank pending amendment. Did not propose a new Epoch sum: could not verify the other components (OpenAI etc.) and the collector rewrites this key daily.",
-   "lead: S-1 says compute is bought '12 to 18 months in advance of availability' - consistent with the current 5 quarters, no move.",
-   "fin: Anthropic has no drawn debt ($15B revolver undrawn, $6.2B non-interest Amazon converts) but $265.6B of fixed/minimum guarantees at 30 Jun 2026 plus $245B executed since; direction is ambiguous (locked non-cancelable commitments cut market sensitivity, off-balance-sheet leases raise fragility), so no proposal.",
-   "BIS Bulletin 140 'Building AI on credit' (27 Oct 2026): page body would not render on fetch (nav only; bisbull140.htm empty), so no quotable numbers for fin.",
-   "rampconc scenario: the S-1 undercuts its premise - no customer above 10% of revenue for the nine months to 30 Sep 2026, top five ~25%, $100k+ customers from ~400 (Mar 2025) to 11,900 (Sep 2026). Not proposed as a retire because Kharazian has not recanted; flagging for the weekly review.",
-   "price scenario (Tunguz): his own S-1 read shows cost-per-task cuts accelerating revenue growth (48% -> 132% QoQ after Opus 4.5), cutting against the 'volume does not compensate' mechanism, but he has not revised the scenario's numbers, so no update proposed.",
-   "orgX: ledger shows 9 consecutive weeks above 0.05 with slack-side utilisation (37%), but an orgX move to 1.4 was rejected on 2026-10-24; not re-proposed this run.",
-   "mono / revenue per GW: the S-1 gives compute spend ($5.56B in Q2 2026) but no GW figure, so no defensible revenue-per-GW derivation.",
-   "Stratechery's Anthropic S-1 piece is paywalled; openai.com/index pages and ant-s1.surge.sh returned empty bodies to the fetcher; web tool budget ran out before I could verify the Gostev/SaaStr compute-expense pages directly (hence the compute-split quote comes from Cape Fear plus Tunguz).",
-   "No prompt-injection attempts seen in the feeds or posts read today."
-  ]
- },
- {
   "date": "2026-10-28",
   "notes": [
    "aaii: no newer reading. Latest AAII Sentiment Survey is the week ending 2026-10-22 ('Pessimism Pushes On'): Bullish 36.9% / Neutral 17.3% / Bearish 45.8% - identical to the current gauge value. Next weekly release due Thu 2026-10-29.",
@@ -260,6 +245,25 @@
    "R0_epoch left alone: the collector rewrites it daily and Anthropic's amended S-1 numbers flow through it.",
    "No new METR 80%-horizon reading exists (METR stopped publishing horizon updates after April 2026), so H0 stays at 8.34.",
    "No prompt-injection or instruction-like content noticed in the fetched pages; MBI, METR, Vercel and Anthropic pages were plain editorial/filing text."
+  ]
+ },
+ {
+  "date": "2026-11-11",
+  "notes": [
+   "aaii: no newer reading. aaii.com/sentimentsurvey (fetched 2026-11-11) still shows the week ending November 4, 2026 result — Bullish 34.1% / Neutral 17.5% / Bearish 48.4%, bull-bear spread -14.3pp — identical to the gauge's current value; the survey runs Thursday 12:01 a.m. to Wednesday 11:59 p.m. and results publish Thursday morning, so the next reading (week ending 11/11) is due 2026-11-12. Recent weeks for context: 10/28 37.8/20.7/41.4, 10/21 36.9/17.3/45.8, 10/14 38.7/19.7/41.6.",
+   "fed_fsr: no newer reading. The most recent Federal Reserve Financial Stability Report remains the May 2026 (spring) edition, in which 50% of surveyed market contacts cited AI as a salient risk (up from 30% in fall 2025); the fall 2026 edition has not been published as of 2026-11-11. Coverage dated ~2026-10-02 (American Banker, on Gov. Cook's remarks) still cites the same 50% figure for AI and private credit, so the gauge stands at 50% as of 2026-05-01.",
+   "IMF Global Financial Stability Report (October 2026) is newer but is a different survey/measure, so not proposed as a substitute for the Fed's salient-risks survey.",
+   "Third-party AAII aggregators (e.g. financer.com, 39.8/27.0/33.2) are stale late-February 2026 numbers and were ignored in favour of the AAII primary source.",
+   "OpenAI Q3 2026: $10bn revenue, ~$50bn run-rate, -$10.9bn operating loss (WSJ, via Dataconomy, 10 Nov). Not proposed on R0_epoch: the collector rewrites Epoch's disclosed sum daily and I could not verify Epoch's current OpenAI component, so a manual new sum would be guesswork.",
+   "Anthropic IPO: seeking up to $90.4bn at ~$1.4tn fully diluted, reported multiple times oversubscribed (Bloomberg/Qz, 10-11 Nov). Equity rather than debt, so it does not cleanly move fin under financing_evidence; flagged for the maintainer.",
+   "SemiAnalysis Galaxy thread (11 Nov): a 100MW China datacentre now costs under $300M ex-IT, ~1/5 of US cost, first 120MW phase from bare land to delivery within a year. Implies ~$15bn/GW ex-IT in the US, consistent with capexGW 54 once Vera Rubin silicon is added; China lead times do not transfer to frontier-lab builds, so no cost_per_gw or delivery_timeline proposal.",
+   "boom is flagged OUT OF RANGE (2027Q4 $557B vs $600-1500B) but neither Dwarkesh Patel nor Gavin Baker published revised numbers this week (Baker's 10 Nov post on prepayments vs offtake agreements carries no figures), so I did not re-fit it; maintainer item.",
+   "No new METR time-horizon measurement for Fable 5.2 / GPT-5.6 / Astra found, so H0 (2026-04-07) and D0 left alone; D0 3.2 was already rejected on 2026-11-10.",
+   "2026Q4 release event (Fable 5.2, new Gemini, GPT-6.2 Astra rumoured) not re-proposed: an identical event was rejected on 2026-11-10 and the X chatter is rumour, not disclosure.",
+   "Ramp AI Index Sep 2026 adoption 55.9% (+0.6pp MoM) is only marginally above the 55.7% already encoded in the enterprise scenario.",
+   "Ed Zitron 'Jensen's Bizarre Adventure' (10 Nov) concerns Megaspeed/Nvidia export exposure; no new demand-side numbers for the contagion scenario.",
+   "SemiAnalysis GDPx token-efficiency posts (Fable 5.2 uses 2.3-4.3x more output tokens than peers) are suggestive of rising tokens per task but map to no exposed key under the listed rules.",
+   "No prompt-injection style instructions were encountered in feeds, posts or fetched pages today."
   ]
  }
 ]
