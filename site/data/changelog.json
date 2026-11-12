@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-11-12",
+  "source": "https://tomtunguz.com/who-captures-the-most-margin-in-ai/",
+  "kind": "rejected",
+  "target": "scenario:boom",
+  "old": null,
+  "new": "Re-fit after the fidelity check flagged 2027Q4 at $557B against the proponents' stated $600-1500B; CoreWeave's Q3 call shows the compute repricing the thesis needs already starting (new 4-5 year contracts at $20-25m/MW vs a $9.15m/MW blended fleet, some capacity sold above $40m/MW).",
+  "reason": "CoreWeave's $20–25m/MW new-contract pricing does corroborate the repricing mechanism, but the re-fit also lifts organic demand, capability elasticity and pipe with no supporting evidence and re-encodes the existing mono expression as a bare 60, so the bundle cannot be accepted as submitted."
+ },
+ {
+  "date": "2026-11-12",
+  "source": "https://econlab.substack.com/p/ai-index-nov-2026",
+  "kind": "rejected",
+  "target": "scenario:rampconc",
+  "old": null,
+  "new": "Ramp November AI Index: October AI spend +1.65% m/m, OpenAI token spend +2.1% and Anthropic +0.5%, prices per million tokens -21% in a month, SpaceXAI adoption 6.3% (+2.2pp) turning the duopoly into a three-way price war.",
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://econlab.substack.com/p/ai-index-nov-2026."
+ },
+ {
+  "date": "2026-11-12",
+  "source": "https://econlab.substack.com/p/ai-index-nov-2026",
+  "kind": "rejected",
+  "target": "k_oth",
+  "old": null,
+  "new": 0.15,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://econlab.substack.com/p/ai-index-nov-2026."
+ },
+ {
+  "date": "2026-11-12",
+  "source": "https://econlab.substack.com/p/ai-index-nov-2026",
+  "kind": "rejected",
+  "target": "sh_swe",
+  "old": null,
+  "new": 23,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://econlab.substack.com/p/ai-index-nov-2026."
+ },
+ {
+  "date": "2026-11-12",
+  "source": "https://www.9fin.com/insights/socgen-stargate-data-center-debt",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.8,
+  "reason": "A single bank shopping ~$300m of Stargate loans at 95 cents shows financing terms tightening on one deal, not that buildout pace flexes more sharply with credit, which is what fin governs — the same ground on which single-deal evidence was rejected on 31 October."
+ },
+ {
+  "date": "2026-11-12",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-12).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-12",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +22%",
+  "new": "+44% vs +22%",
+  "reason": "Observed from source (2026-11-12).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-12",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.9%",
+  "new": "6.3%",
+  "reason": "Observed from source (2026-11-12).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-12",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "19.5",
+  "new": "17.5",
+  "reason": "Observed from source (2026-11-11).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-12",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "334bp",
+  "new": "330bp",
+  "reason": "Observed from source (2026-11-11).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
   "date": "2026-11-11",
   "source": "https://dataconomy.com/2026/11/11/openai-revenue-hits-10-billion-as-operating-losses-widen/",
   "kind": "rejected",
@@ -3512,95 +3602,5 @@
   "new": "43%",
   "reason": "Observed from source (2026-10-03).",
   "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-03",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+45% vs +24%",
-  "new": "+45% vs +24%",
-  "reason": "Observed from source (2026-10-03).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-03",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "7.8%",
-  "new": "7.8%",
-  "reason": "Observed from source (2026-10-03).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-03",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "16.4",
-  "new": "15.3",
-  "reason": "Observed from source (2026-10-02).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-03",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "312bp",
-  "new": "324bp",
-  "reason": "Observed from source (2026-10-01).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-03",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-01).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-03",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.29%",
-  "new": "5.24%",
-  "reason": "Observed from source (2026-10-01).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-02",
-  "source": "https://x.com/arakharazian/status/2105740752886309163",
-  "kind": "rejected",
-  "target": "subst",
-  "old": null,
-  "new": 18,
-  "reason": "A single social post summarising Ramp's dollar-weighted spend panel measures where enterprise dollars go, not what share of bounded token volume has migrated off frontier endpoints, and is weaker evidence than the primary Vercel gateway token-level reading now in place — consistent with the 23 Sep rejection of the same argument."
- },
- {
-  "date": "2026-10-02",
-  "source": "https://ramp.com/data/ai-index-sept-2026",
-  "kind": "accepted",
-  "target": "event:2026Q3",
-  "old": null,
-  "new": "price 40",
-  "reason": "Ramp's effective price-per-million-token index falling 41% to $0.68 from the March peak is a reported, primary measure of the price shock, and recording 2026Q3 at 40% matches the independently cited 40% decline since end-June."
- },
- {
-  "date": "2026-10-02",
-  "source": "https://finance.yahoo.com/quote/NVDA/key-statistics/",
-  "kind": "rejected",
-  "target": "gauge:nvda_short",
-  "old": null,
-  "new": 1.27,
-  "reason": "Gate: source unreachable and no archive snapshot: Error: 404 https://finance.yahoo.com/quote/NVDA/key-statistics/."
- },
- {
-  "date": "2026-10-02",
-  "kind": "collected",
-  "target": "K0",
-  "old": 13,
-  "new": 14.3,
-  "reason": "Carry-over toward the target 14.3 set on 2026-10-01 (Roll-over: 4.3 GW of the committed pipeline (pipe ÷ (lead + 1)) came online during 2026Q3.).",
-  "source": "https://www.dwarkesh.com/p/dylan-patel-3"
  }
 ]

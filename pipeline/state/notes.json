@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-10-28",
-  "notes": [
-   "aaii: no newer reading. Latest AAII Sentiment Survey is the week ending 2026-10-22 ('Pessimism Pushes On'): Bullish 36.9% / Neutral 17.3% / Bearish 45.8% - identical to the current gauge value. Next weekly release due Thu 2026-10-29.",
-   "aaii: date note - that reading is AAII's week ending 2026-10-22, while the gauge is dated 2026-10-21; values unchanged so no proposal filed.",
-   "fed_fsr: no newer reading. The May 2026 (Spring) Financial Stability Report market-participants survey - 50% citing AI as a salient risk, up from 30% in fall 2025 - is still the most recent; the fall 2026 FSR has not been published as of 2026-10-28.",
-   "fed_fsr: secondary coverage of the same Spring 2026 survey also cites private credit rising 22% -> 50%; different measure, not substituted.",
-   "Anthropic S-1 (26 Oct): $602B of compute commitments ($110B Amazon, $45B Microsoft, plus Google and SpaceX) — dollars, not GW, so no clean pipe/capacity proposal.",
-   "SemiAnalysis's $60M+/MW fleet figure also implies Anthropic's total fleet is only ~1.2 GW at a ~$70B run-rate, against the 3.7–5 GW in K0's basis; K0 spans all labs incl. Google/Meta, so flagged for weekly review rather than proposed as a -20% K0 cut on one podcast quote.",
-   "R0_epoch: S-1 Q3 revenue $16.8–16.9B annualises to ~$67B against the $65B July run-rate already in Epoch's sum; the collector rewrites this key daily, so no primary_report proposal.",
-   "train (compute_split) and k_swe/k_rd loop gains: S-1 evidence (NRR ~900%, revenue per compute dollar $2.08, >80% of revenue from models six months old or less) points the same way as proposals the judge rejected on 26–27 Oct; not re-proposed.",
-   "Vercel AI Gateway 'October index' is the September data already reflected in subst (as of 2026-10-15); the 27 Oct item is an ElevenLabs customer post with no new share numbers.",
-   "Tunguz, 'The Third Product-Market Fit in AI' (26 Oct): $175B security market growing 13%/yr, survey of 75 practitioners, Brockman on security spend — no token-share or loop-gain number, and the four rotating scenario slots are full, so no scenario_new.",
-   "2026Q4 event candidates (Opus 5.5 / GPT-6 Astra releases, ChatGPT Pro rate limits halved, Anthropic price cuts): a 2026Q4 event and a boom update on the same facts were rejected on 27 Oct; not re-proposed.",
-   "Epoch AI chip-import map (72% of world AI compute in the US, China 18% of chips but 10% of compute) is geography, not frontier-lab GW online.",
-   "Azeem Azhar's 'Anthropic's S-1 in charts' is paywalled past the first section; used only the free text, no proposal rests on it.",
-   "No prompt-injection or instruction-like text encountered in the fetched pages or posts today."
-  ]
- },
- {
   "date": "2026-10-29",
   "notes": [
    "R0_epoch: Anthropic Q3 2026 revenue $16.8B (CNBC, 15 Oct; up from $11.6B Q2, $4.7B Q1) = ~$67B annualised, and the S-1 confirms $16.3B of H1 revenue — but primary_report wants the new cross-lab sum with components, and I could not verify OpenAI's current disclosed run-rate before the search budget ran out. Left to the collector.",
@@ -264,6 +245,28 @@
    "Ed Zitron 'Jensen's Bizarre Adventure' (10 Nov) concerns Megaspeed/Nvidia export exposure; no new demand-side numbers for the contagion scenario.",
    "SemiAnalysis GDPx token-efficiency posts (Fable 5.2 uses 2.3-4.3x more output tokens than peers) are suggestive of rising tokens per task but map to no exposed key under the listed rules.",
    "No prompt-injection style instructions were encountered in feeds, posts or fetched pages today."
+  ]
+ },
+ {
+  "date": "2026-11-12",
+  "notes": [
+   "fms_tailrisk: no newer reading. Latest BofA Global FMS is the October 2026 survey, which already backs the current 23% value — TradingView/Seeking Alpha recap (~2026-10-13): \"The October survey places the concern at 31%, well ahead of an AI bubble at 23%, a second wave of inflation at 20%, and a hyperscaler credit event at 11%.\" November 2026 FMS not yet published as of 2026-11-12 (release typically mid-month Tuesday, i.e. ~Nov 17).",
+   " fms_crowded: no newer reading. October 2026 FMS coverage (~2026-10-13, 'Long semiconductors are still the most crowded trade as conviction cools') is consistent with the current 45%, down from 53% in September 2026 and 80%+ in June/July 2026; no November 2026 survey available yet.",
+   "Prior-month datapoints seen but not proposed (older than current gauge as_of): Sep 2026 FMS — AI bubble 28% tail risk (bond yields 33% top), long semis 53% most crowded; Aug 2026 FMS — AI bubble 32%, semis 53%.",
+   "Yahoo Finance Oct-2026 chart-of-the-day cites 32% for disorderly bond yields vs 31% elsewhere; immaterial to these two gauges but a reminder that secondary recaps round/differ slightly — prefer BofA/macenews releases next refresh.",
+   "Fortune/Nov-2025 article (45% AI bubble, 54% long Magnificent 7) is a year old and uses a different crowded-trade category (Mag7, not semis); excluded.",
+   "R0_epoch: checked Epoch's own revenue-reports CSV - it already carries Anthropic at $81B (2026-10-31, from the S-1/A) plus OpenAI $50B, Z.ai 1.6, DeepSeek 1.0, Mistral 1.0, Moonshot 1.0, MiniMax 0.8, sum $136.4B, so the 10 Nov Anthropic roadshow disclosure ($81B run rate, +$10B from 30 Sep) is already reflected in R0_epoch=134.8. No primary_report proposal.",
+   "mono: deliberately not moved. Same Tunguz piece cuts both ways - the modelled inference vendor bills only $15/w/yr on open weights, while CoreWeave sells capacity above $40m/MW; cross-checking Anthropic's $81B run rate against Epoch's 3.7-5 GW and a ~35% inference share lands near $50M per inference MW, i.e. consistent with mono=50.",
+   "capexGW: Tunguz footnote puts upfront GPU capex at $35-50 per watt over six years; adding shell and power that straddles the current 54, so no move.",
+   "train / compute split: 9M-2026 Anthropic numbers ($33.24B revenue, $4.81B cost of revenue) imply roughly a quarter of the compute bill serves paying customers, consistent with the 60->65 move already applied on 2026-11-10; not re-proposed.",
+   "orgX / growth_calibration: ledger shows 11 consecutive weeks above 0.05 and slack (util0 60%), but the quarter-zero gap (+44% vs +22%) is far larger than a +0.1 orgX move could close a quarter of, and 1.37 was rejected on 2026-11-11 - treating it as a structural gap for the weekly review.",
+   "subst: left alone. Ramp shows frontier models' share of spend up to 69.5% from 67.7% in October, cutting against the 33 proposal rejected on 2026-11-10, even as customer-service workloads look like cheap-model work.",
+   "token_index gauge: Ramp reports average price per million tokens -21% month-over-month but publishes no level, so no gauge reading proposed.",
+   "CoreWeave Q3 capacity (1.7 GW active, >4.6 GW contracted, $132.5B backlog) noted as capacity_disclosure but one neocloud is not enough to move pipe=35, recalibrated 2026-11-03.",
+   "Nvidia: Jensen Huang's resignation (12 Nov) and the WSJ/Bloomberg board reports are governance news with an 8% after-hours move in one stock; no broad valuation shock (VIX 17.5, HY OAS 330bp), so no event proposal.",
+   "Midterm ballot measures limiting data centre development (cited in the 9fin piece) are a candidate 'reg' event for 2026Q4 but I could not establish the shock's units or size; flagging for the maintainer rather than guessing.",
+   "SpaceXAI/xAI frontier revenue sits outside Epoch's disclosed set and could justify a larger R0x, but public figures are analyst estimates in a wide $0.5-3.8B range and mix in X platform revenue; not solid enough today.",
+   "No prompt-injection attempts seen in the feeds or posts read today."
   ]
  }
 ]
