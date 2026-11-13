@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-10-29",
-  "notes": [
-   "R0_epoch: Anthropic Q3 2026 revenue $16.8B (CNBC, 15 Oct; up from $11.6B Q2, $4.7B Q1) = ~$67B annualised, and the S-1 confirms $16.3B of H1 revenue — but primary_report wants the new cross-lab sum with components, and I could not verify OpenAI's current disclosed run-rate before the search budget ran out. Left to the collector.",
-   ": Anthropic's 'revenue per dollar of compute' ($1.39 -> $2.00 -> $1.70 across Q1-Q3 2026) is the best new monetisation datapoint, but converting it to $/inference-GW needs an assumed amortisation life (Microsoft just extended datacentre useful life from 15 to 25 years, which would change it materially), and mono was moved 50 -> 55 yesterday. Flagged for the weekly review rather than proposed.",
-   "train (compute_split): the S-1 should settle Anthropic's training-vs-inference split, but the SEC HTML truncates at the glossary on fetch and train -> 60 was rejected on 27 Oct. Not re-proposed.",
-   "orgX (growth_calibration): ledger shows 9 consecutive weeks over 0.05 with the latest gap 12pts and slack-side utilisation (34%), but orgX -> 1.4 (the full +0.1 cap) was rejected on 28 Oct. Not re-proposed one day later.",
-   "event 2026Q4 rate: FOMC held at 3.75-4.00% on 28 Oct (10-2 vote) after a 25bp hike at the prior meeting, so no Q4 rate shock; a 2026Q3 +0.25 rate event may be unrecorded but rateGap already reflects the realised path, so I left it to avoid double-counting.",
-   "event 2026Q4 release: Gemini 4 Carbon shipped 28 Oct at 59 on the AA Intelligence Index v5 (kimmonismus), two weeks after Argon, with Pichai talking up RSI-driven acceleration — but an event:2026Q4 of size 1 was rejected on 27 Oct and the quarter is not over.",
-   "scenario takeoff / boom are both out of range; boom's re-fit was rejected on 27 Oct and I found no new AI Futures Project numbers today, so no re-fit proposed.",
-   "Alphabet Q3 2026 capex $51.4B (vs $24.0B a year ago), 2026 guidance held at $195-205B and 2027 to 'increase significantly' — supercycle already carries this view and the figures map to no exposed key without a GW denominator.",
-   "Slok's 20 Oct note argues demand is highly price-elastic and corporates now treat tokens as a cost centre; no growth rate or share number in the text, so it fails the 'cite both numbers' bar for k_oth/subst. Added as a feed instead.",
-   "Zitron's 80%-of-revenue-from-VC-backed-startups and five-customers-are-a-quarter are customer concentration, explicitly excluded from correlation_evidence; used only inside the scenario update.",
-   "No prompt-injection attempts spotted in the feeds or posts read today; the Kylon promo thread (@kimmonismus) solicits replies/tags but is marketing, not an instruction to me."
-  ]
- },
- {
   "date": "2026-10-30",
   "notes": [
    "openrouter_cn: source page (digitalapplied, modified 2026-10-03) still shows the same CNBC figure, 57-67% for the week of Sept 14 across US/Europe/'Global South' company groups; no newer reading on the same basis.",
@@ -267,6 +251,24 @@
    "Midterm ballot measures limiting data centre development (cited in the 9fin piece) are a candidate 'reg' event for 2026Q4 but I could not establish the shock's units or size; flagging for the maintainer rather than guessing.",
    "SpaceXAI/xAI frontier revenue sits outside Epoch's disclosed set and could justify a larger R0x, but public figures are analyst estimates in a wide $0.5-3.8B range and mix in X platform revenue; not solid enough today.",
    "No prompt-injection attempts seen in the feeds or posts read today."
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "notes": [
+   "Ramp Tokenomics also shows per-provider blended prices (OpenAI $0.50, Anthropic $0.55) — not proposed; gauge tracks the combined OpenAI & Anthropic blend.",
+   "Ramp AI adoption (56.8% Oct 2026) and token spend shares are different measures; not used for this gauge.",
+   "Ramp data is weekly for tokenomics; Nov 1 2026 week is the latest complete week published (page says data through Oct 2026).",
+   "sh_swe: Ramp AI Index Nov 2026 (Ara Kharazian, 12 Nov) reports 72% of classified business AI spend from engineering teams - strong usage-share evidence, but sh_swe -> 23 was rejected yesterday (2026-11-12) on what is almost certainly this same release, so not re-proposed.",
+   "orgX: calibration ledger is at 11 consecutive weeks over 0.05 (this week 15pts) with slack (util0 60%), but orgX -> 1.37 was rejected on 2026-11-11 and nothing in the data has changed since; left to the weekly review.",
+   "fin: Tunguz 'When the Central Bank of AI Changes Chairs' (12 Nov) cites $61B of Nvidia equity in 229 startups, $164.5B of lease guarantees and 112% of operating cash flow deployed into equity/M&A; fin -> 1.8 was rejected yesterday and I could not fetch the post to verify a verbatim quote (datacenter block), so no proposal.",
+   "k_swe: Ramp shows October AI spend +2% m/m and OpenAI/Anthropic token spend growth in low single digits against the implied software steady growth of x4.6/yr - a genuine feedback_evidence case for cutting k_swe, but Ramp is SMB card spend while the aggregate growth_check still runs +44% vs +22%, and econlab.substack.com would not fetch for a verbatim quote.",
+   "H0/D0: no new METR measurement found; Wikipedia's METR page mixes Time Horizon 1.0 and 1.1 numbers (Claude Mythos 80% = 3h06m on TH1.1) and is not a primary METR source, so H0 (8.34h, 2026-04-07) left alone.",
+   "Jensen Huang's resignation as Nvidia CEO (12 Nov) dominates the feeds and X accounts, plus reports that Chinese frontier labs obtained Blackwell parts; no verified quantitative market or capex number yet, so no event proposal (gauges show VIX 18.7, polymarket 6.9% - no crash).",
+   "CoreWeave Q3 revenue $3.66B, +168% y/y, $132.5B backlog: revenue is the collector's job via Epoch, not proposed.",
+   "SemiAnalysis '45% of AI spend now agents' circulated only as a chart write-up on a secondary blog; not proposed as usage_share.",
+   "Scenario slots: boom re-fit and rampconc update were both rejected on 2026-11-12; Tunguz's 'Central Bank of AI' view overlaps the live credit and contagion scenarios, so no scenario_new today.",
+   "Search and fetch budgets were exhausted mid-session (server tool use limit), which capped verification; no prompt-injection attempts were found in any feed item or post read today."
   ]
  }
 ]

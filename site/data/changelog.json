@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-11-13",
+  "source": "https://x.com/drorpoleg/status/2120921492196049345",
+  "kind": "rejected",
+  "target": "rho",
+  "old": null,
+  "new": 0.65,
+  "reason": "A single post about suppliers buying Anthropic shares evidences capital-channel circularity, not the cross-segment co-movement rho encodes, consistent with earlier rejections of similar funding-composition evidence."
+ },
+ {
+  "date": "2026-11-13",
+  "source": "https://vestedfinance.com/blog/us-stocks/coreweave-q3-earnings-2026/",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 55,
+  "reason": "CoreWeave's $20–40M per MW contract pricing is the rental cost of leased capacity, a different measure from revenue potential per inference GW, and the proposed 55 is reached only by layered inference-share reasoning rather than by the quote itself."
+ },
+ {
+  "date": "2026-11-13",
+  "source": "https://ramp.com/data/ai-index",
+  "kind": "accepted",
+  "target": "gauge:token_index",
+  "old": "$0.56/M tok",
+  "new": "$0.53/M tok",
+  "reason": "Same Ramp blended OpenAI+Anthropic price per million tokens as the current tile, refreshed to the week ending 1 Nov 2026 ($0.53, −14.8% month over month)."
+ },
+ {
+  "date": "2026-11-13",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-13).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-13",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +22%",
+  "new": "+44% vs +22%",
+  "reason": "Observed from source (2026-11-13).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-13",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "6.3%",
+  "new": "6.9%",
+  "reason": "Observed from source (2026-11-13).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-13",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "17.5",
+  "new": "18.7",
+  "reason": "Observed from source (2026-11-12).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-13",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-11).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-13",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.88%",
+  "new": "4.98%",
+  "reason": "Observed from source (2026-11-10).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-12",
   "source": "https://tomtunguz.com/who-captures-the-most-margin-in-ai/",
   "kind": "rejected",
@@ -3521,86 +3602,5 @@
   "new": "7.0%",
   "reason": "Observed from source (2026-10-04).",
   "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-03",
-  "source": "https://www.insurancejournal.com/news/west/2026/09/25/886812.htm",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.4,
-  "reason": "One project's debt trading below 90 cents is a single anecdote whose stress the article traces to a denied permit and local opposition rather than to credit conditions throttling the build, so it does not show how strongly build pace responds to financing."
- },
- {
-  "date": "2026-10-03",
-  "source": "https://www.insurancejournal.com/news/west/2026/09/25/886812.htm",
-  "kind": "rejected",
-  "target": "lead",
-  "old": null,
-  "new": 6,
-  "reason": "A force majeure notice on one New Mexico campus — which Oracle says does not change delivery expectations — states no signing-to-delivery figure, repeating the evidence already rejected on 27 September."
- },
- {
-  "date": "2026-10-03",
-  "source": "https://tomtunguz.com/how-gpu-prices-double-while-ai-gets-cheaper/",
-  "kind": "rejected",
-  "target": "event:2026Q3",
-  "old": null,
-  "new": 35,
-  "reason": "GPU rental prices per hour are a different quantity from the cost per GW of new capacity, and the +35% single-quarter figure is the proposer's own apportionment of a six-month doubling rather than anything the source states."
- },
- {
-  "date": "2026-10-03",
-  "source": "https://epoch.ai/publications/estimating-the-agent-population",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.3,
-  "reason": "The quoted fivefold growth is an illustrative conditional in a report whose actual argument is that demand may fall behind supply, so it is not an observation of realised growth running ahead of the model and cannot carry orgX to the top of its drift window."
- },
- {
-  "date": "2026-10-03",
-  "source": "https://epoch.ai/publications/estimating-the-agent-population",
-  "kind": "accepted",
-  "target": "scenario:overhang",
-  "old": null,
-  "new": "added",
-  "reason": "Epoch AI's 2 Oct agent-population report is a named, quantified institutional position whose mechanism — hardware capacity for $2.6–5.3T of API-equivalent work outrunning even fivefold annual revenue growth, so utilisation rather than revenue breaks — is not carried by 'gap' (ROI shortfall) or 'middle' (revenue outgrowing compute). Jason Li, Epoch AI, 2 Oct 2026."
- },
- {
-  "date": "2026-10-03",
-  "source": "",
-  "kind": "expired",
-  "target": "scenario:rsiweak",
-  "old": "active",
-  "new": "retired",
-  "reason": "Retired to make room for “Capacity overhang”: the least distinct structural scenario (closest path to its neighbours, 13%)."
- },
- {
-  "date": "2026-10-03",
-  "source": "https://stockanalysis.com/stocks/nvda/statistics/",
-  "kind": "accepted",
-  "target": "gauge:nvda_short",
-  "old": "1.2% of float",
-  "new": "1.27% of float",
-  "reason": "Same measure as the current tile — short interest as a share of float — from a fresher semi-monthly settlement (15 Sep: 294.2M shares, 1.27% of float, down from 298.3M)."
- },
- {
-  "date": "2026-10-03",
-  "source": "https://www.aaii.com/sentimentsurvey",
-  "kind": "accepted",
-  "target": "gauge:aaii",
-  "old": "32.7% / 48.1%",
-  "new": "34.6% / 46.5%",
-  "reason": "AAII's own survey page gives a fresher reading of the identical measure (week ending 30 Sep: bulls 34.6%, bears 46.5%, spread -11.9pp), so the gauge refreshes from its primary source."
- },
- {
-  "date": "2026-10-03",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "47%",
-  "new": "43%",
-  "reason": "Observed from source (2026-10-03).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
  }
 ]

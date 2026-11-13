@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-12T15:43:00.959Z",
+ "generated_at": "2026-11-13T14:51:58.877Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -806,7 +806,7 @@
     "checks": [
      "OUT: 2027Q4 $557B vs $600–1500B"
     ],
-    "date": "2026-11-12"
+    "date": "2026-11-13"
    }
   },
   {
@@ -853,7 +853,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×5.6 vs ×4–8"
     ],
-    "date": "2026-11-12"
+    "date": "2026-11-13"
    }
   },
   {
@@ -1174,7 +1174,7 @@
      "ok: 2027Q4 $260B vs $225–340B",
      "ok: 2028Q4 $512B vs $395–675B"
     ],
-    "date": "2026-11-12"
+    "date": "2026-11-13"
    }
   },
   {
@@ -1461,9 +1461,9 @@
    "value": "60%",
    "sub": "frontier revenue 149.8 ÷ (14.3 GW × 35% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-12",
+   "as_of": "2026-11-13",
    "auto": true,
-   "updated": "2026-11-12"
+   "updated": "2026-11-13"
   },
   {
    "id": "fms_tailrisk",
@@ -1492,12 +1492,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "6.3%",
-   "sub": "12 Nov 2026 · “AI bubble burst in 2026?”",
+   "value": "6.9%",
+   "sub": "13 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-12",
+   "as_of": "2026-11-13",
    "auto": true,
-   "updated": "2026-11-12"
+   "updated": "2026-11-13"
   },
   {
    "id": "aaii",
@@ -1514,12 +1514,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "17.5",
-   "sub": "11 Nov 2026 close (CBOE)",
+   "value": "18.7",
+   "sub": "12 Nov 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-11-11",
+   "as_of": "2026-11-12",
    "auto": true,
-   "updated": "2026-11-12"
+   "updated": "2026-11-13"
   },
   {
    "id": "fed_fsr",
@@ -1570,12 +1570,12 @@
   {
    "id": "token_index",
    "label": "Effective price per million tokens",
-   "value": "$0.56/M tok",
-   "sub": "Ramp blended OpenAI+Anthropic price per million tokens, week ending Oct 23 2026: $0.56, down from $0.76 a month earlier (-26.8%) and below the prior $0.64 reading; sample of Ramp Token Spend Managemen",
+   "value": "$0.53/M tok",
+   "sub": "Ramp blended OpenAI+Anthropic price per million tokens, week ending Nov 1 2026: $0.53, down 14.8% from $0.62 a month earlier (prior gauge $0.56).",
    "src": "https://ramp.com/data/ai-index",
-   "as_of": "2026-10-23",
+   "as_of": "2026-11-01",
    "auto": false,
-   "updated": "2026-11-01",
+   "updated": "2026-11-13",
    "cadence_days": 21
   },
   {
@@ -1603,12 +1603,12 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "4.88%",
-   "sub": "9 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "4.98%",
+   "sub": "10 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-11-09",
+   "as_of": "2026-11-10",
    "auto": true,
-   "updated": "2026-11-11"
+   "updated": "2026-11-13"
   },
   {
    "id": "hy_oas",
@@ -1635,11 +1635,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "9 Nov 2026 (FRED DFF)",
+   "sub": "11 Nov 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-11-09",
+   "as_of": "2026-11-11",
    "auto": true,
-   "updated": "2026-11-11"
+   "updated": "2026-11-13"
   },
   {
    "id": "growth_check",
@@ -1647,9 +1647,9 @@
    "value": "+44% vs +22%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.2 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-12",
+   "as_of": "2026-11-13",
    "auto": true,
-   "updated": "2026-11-12"
+   "updated": "2026-11-13"
   }
  ],
  "frozen": [],
