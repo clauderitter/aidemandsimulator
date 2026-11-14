@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-13T14:51:58.877Z",
+ "generated_at": "2026-11-14T13:52:24.199Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -806,7 +806,7 @@
     "checks": [
      "OUT: 2027Q4 $557B vs $600–1500B"
     ],
-    "date": "2026-11-13"
+    "date": "2026-11-14"
    }
   },
   {
@@ -853,7 +853,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×5.6 vs ×4–8"
     ],
-    "date": "2026-11-13"
+    "date": "2026-11-14"
    }
   },
   {
@@ -1174,7 +1174,7 @@
      "ok: 2027Q4 $260B vs $225–340B",
      "ok: 2028Q4 $512B vs $395–675B"
     ],
-    "date": "2026-11-13"
+    "date": "2026-11-14"
    }
   },
   {
@@ -1461,9 +1461,9 @@
    "value": "60%",
    "sub": "frontier revenue 149.8 ÷ (14.3 GW × 35% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-14",
    "auto": true,
-   "updated": "2026-11-13"
+   "updated": "2026-11-14"
   },
   {
    "id": "fms_tailrisk",
@@ -1493,33 +1493,32 @@
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
    "value": "6.9%",
-   "sub": "13 Nov 2026 · “AI bubble burst in 2026?”",
+   "sub": "14 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-14",
    "auto": true,
-   "updated": "2026-11-13"
+   "updated": "2026-11-14"
   },
   {
    "id": "aaii",
    "label": "AAII retail investors: bullish / bearish",
-   "value": "34.1% / 48.4%",
-   "sub": "AAII retail bullish/bearish, week ending Nov 4 2026: bulls down to 34.1% and bears up to 48.4% (bull-bear spread -14.3%), vs 37.8%/41.4% on Oct 28.",
-   "src": "https://seekingalpha.com/article/4963520-aaii-sentiment-survey-pessimism-revives (AAII weekly survey, also at https://www.aaii.com/sentimentsurvey)",
-   "as_of": "2026-11-04",
+   "value": "30.8% / 51.4%",
+   "sub": "AAII survey week ending 2026-11-11: bulls 30.8% (-3.3pp), bears 51.4% (+3.1pp, unusually high for a 40th straight week); bull-bear spread -20.7% vs -14.3% prior.",
+   "src": "https://www.aaii.com/latest/article/568394-aaii-sentiment-survey-optimism-falters",
+   "as_of": "2026-11-11",
    "auto": false,
-   "updated": "2026-11-07",
-   "cadence_days": 7,
-   "next_check": "2026-11-14"
+   "updated": "2026-11-14",
+   "cadence_days": 7
   },
   {
    "id": "vix",
    "label": "VIX",
-   "value": "18.7",
-   "sub": "12 Nov 2026 close (CBOE)",
+   "value": "19.3",
+   "sub": "13 Nov 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-11-12",
+   "as_of": "2026-11-13",
    "auto": true,
-   "updated": "2026-11-13"
+   "updated": "2026-11-14"
   },
   {
    "id": "fed_fsr",
@@ -1542,7 +1541,8 @@
    "as_of": "2026-10-15",
    "auto": false,
    "updated": "2026-10-30",
-   "cadence_days": 30
+   "cadence_days": 30,
+   "next_check": "2026-11-15"
   },
   {
    "id": "h100_rental",
@@ -1603,22 +1603,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "4.98%",
-   "sub": "10 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.10%",
+   "sub": "12 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-11-10",
+   "as_of": "2026-11-12",
    "auto": true,
-   "updated": "2026-11-13"
+   "updated": "2026-11-14"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "330bp",
-   "sub": "11 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 90bp",
+   "value": "320bp",
+   "sub": "12 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 89bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-11-11",
+   "as_of": "2026-11-12",
    "auto": true,
-   "updated": "2026-11-12"
+   "updated": "2026-11-14"
   },
   {
    "id": "vc_h1",
@@ -1635,11 +1635,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "11 Nov 2026 (FRED DFF)",
+   "sub": "12 Nov 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-11-11",
+   "as_of": "2026-11-12",
    "auto": true,
-   "updated": "2026-11-13"
+   "updated": "2026-11-14"
   },
   {
    "id": "growth_check",
@@ -1647,9 +1647,9 @@
    "value": "+44% vs +22%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.2 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-14",
    "auto": true,
-   "updated": "2026-11-13"
+   "updated": "2026-11-14"
   }
  ],
  "frozen": [],

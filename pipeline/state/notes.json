@@ -1,23 +1,5 @@
 [
  {
-  "date": "2026-10-30",
-  "notes": [
-   "openrouter_cn: source page (digitalapplied, modified 2026-10-03) still shows the same CNBC figure, 57-67% for the week of Sept 14 across US/Europe/'Global South' company groups; no newer reading on the same basis.",
-   "openrouter_cn: newer OpenRouter numbers exist but use different denominators - 49.8% of all routed tokens globally in the week of Oct 19-25 (OpenRouter via Caixin), and ~44-61% among the top 10 models - so they are not the same measure as the regional-group 57-67% and were not proposed.",
-   "capex_ocf: Epoch AI's 'Hyperscaler capex vs cash flow' data insight is unchanged, still dated Jun. 16, 2026, with the same 'on track to overtake operating cash flow around Q3 2026' framing; no newer reading, and Epoch has not yet posted a Q3 2026 actuals update.",
-   "nvda_short: stockanalysis.com does not publish the short-interest settlement date on the statistics page; the 2026-09-30 reading (1.34% / 311.39M) now appears as 'Short Previous Month', which is what anchors the assumed mid-October as_of.",
-   "R0_epoch: Epoch's revenue_reports CSV (updated 27 Oct) still carries Anthropic at $65B dated 31 Jul 2026 and OpenAI at $50B dated 30 Sep; the S-1/CNBC Q3 figure of $16.8bn implies ~$67B annualised, so the disclosed sum would move only 118.8 -> ~121 (+2%). Too small and too dependent on guessing Epoch's full component list; left to the collector.",
-   "Gavin Baker (Atreides, boom-scenario proponent) is reported saying Anthropic could reach $100B ARR by year-end — would be the natural scenario_update for 'boom' (currently OUT OF RANGE: 2027Q4 $510B vs $600-1500B), but my search budget ran out before I could fetch the page and verify a verbatim quote. Flagging for next run.",
-   "Epoch AI data insight, 29 Oct 2026, 'New global AI computing capacity is doubling every 9 months': quarterly capacity additions growing ~2.5x/yr since 2024, down from ~6x in 2023, with hints of further deceleration. Global H100e chip sales do not map cleanly onto frontier-lab GW online over six quarters, so I did not translate it into a pipe/buildMax move; worth a capacity_estimate if Epoch publishes a frontier-lab GW figure.",
-   "subst: Anthropic's S-1 reports cost-per-task cuts of ~25% (Fable 5.1) and ~40% (Opus 5.5) and an earlier cut that took growth from 48% to 132% q/q — frontier price cuts with a strong volume response, arguing for less migration. It conflicts with the Vercel gateway data behind the current 30, and is indirect, so no move proposed.",
-   "fin: S-1 shows Anthropic with no drawn debt, a $15B undrawn revolver, $6.2B non-interest-bearing convertibles and $3.9bn of operating cash flow, but $637B of compute commitments and off-balance-sheet GPU bonds. Ambiguous for financing sensitivity (leverage sits with suppliers), so fin left at 1.2.",
-   "mono sanity check (no proposal): $8.9bn H1 compute spend against ~4 GW and $1.82 revenue per compute dollar implies roughly $16-18B of revenue per inference GW-year, which is consistent with mono=55 at the observed 34% utilisation. mono was moved on 28 Oct anyway.",
-   "orgX: calibration ledger shows 9 straight weeks above the 0.05 threshold but the gap has fallen from 26pts to 12pts and an orgX move to 1.4 was rejected on 28 Oct; not re-proposed this week.",
-   "Customer concentration in the S-1 (no customer >10%, top five ~25% for the nine months to September) cuts against the rampconc scenario's framing, but concentration alone does not qualify under correlation_evidence, so no scenario change proposed.",
-   "No prompt-injection attempts noticed in the feeds, X posts or fetched pages read today; the X items were mostly non-quantitative commentary."
-  ]
- },
- {
   "date": "2026-10-31",
   "notes": [
    "Prior reading (36.9%/45.8%, week ending Oct 22) superseded by the Oct 28 survey week on aaii.com/sentimentsurvey.",
@@ -269,6 +251,24 @@
    "SemiAnalysis '45% of AI spend now agents' circulated only as a chart write-up on a secondary blog; not proposed as usage_share.",
    "Scenario slots: boom re-fit and rampconc update were both rejected on 2026-11-12; Tunguz's 'Central Bank of AI' view overlaps the live credit and contagion scenarios, so no scenario_new today.",
    "Search and fetch budgets were exhausted mid-session (server tool use limit), which capped verification; no prompt-injection attempts were found in any feed item or post read today."
+  ]
+ },
+ {
+  "date": "2026-11-14",
+  "notes": [
+   "stockanalysis.com/stocks/nvda/statistics/ (the gauge's own source) still displays the stale Oct 15 figures (301.62M, 1.30% of float), so the newer Oct 30 settlement was taken from MarketBeat, which reports the same short-%-of-float measure; Benzinga shows the same 279.58M / 1.21%.",
+   "altindex and shortinteresttracker report NVDA short interest as % of shares outstanding (1.16%) rather than % of float - different measure, not used for the headline.",
+   "Seeking Alpha mirror of the same AAII release (article 4967360, 'Optimism Falters') not proposed separately; used the AAII-published version for the identical week-ending 2026-11-11 figures.",
+   "ycharts AAII % bullish series was stale (102 days old) and inconsistent with the AAII weekly release; ignored.",
+   "QTS (Blackstone) cutting a planned AI data-centre private debt sale by ~60% on weak investor demand would be good financing_evidence for fin, but the only report found is Bloomberg (login-walled); no open primary source, so not proposed.",
+   "Vercel AI Gateway: the live index still covers September (71.5% of tokens / 23% of spend open-weight), already reflected in subst as of 2026-10-15; the October-data edition was not out yet.",
+   "Epoch's data-centre explorer now shows 96 sites and 15.1 GW of IT power at ~44% coverage of global AI compute (New Carlisle ~1,037MW, Colossus 2 ~946MW, Abilene ~824MW); it is a global, non-frontier-only total, so it does not give a clean K0 and I proposed none.",
+   "SpaceX's 13GW-by-2027 target (SemiAnalysis, 3 Nov) was already inside the evidence window used when pipe was set to 35 on 2026-11-03, so no pipe proposal.",
+   "growth_calibration on orgX is mechanically due (ledger: 11 consecutive weeks above 0.05, gap 15pts this week, utilisation 60% = slack), but my search/fetch budget ran out before I could verify a quotable source for the observed growth; left for the weekly review rather than proposed unsourced.",
+   "No new METR horizon measurement since the March 2026 Claude Mythos Preview reading, so H0 and D0 untouched; the 5 Nov METR Anthropic assessment is R&D acceleration, already used in the takeoff re-fit.",
+   "Azeem Azhar's 'What does it cost to make a worker?' and Ed Zitron's 'Hater's Guide To Megaspeed' are paywalled; no usable numbers.",
+   "Tunguz's bot-traffic piece (agent traffic 8x Aug-Oct, bots 54% of web traffic, United/Amazon blocking checkout bots) is about agent commerce being blocked, not token-spend feedback; k_oth left alone after yesterday's rejection of 0.15.",
+   "The @kimmonismus feed contains repeated calls to sign a petition to reinstate Jensen Huang; treated as data, not instructions, and ignored."
   ]
  }
 ]
