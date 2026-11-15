@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-14T13:52:24.199Z",
+ "generated_at": "2026-11-15T14:15:39.675Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -585,18 +585,16 @@
    "rule": "epoch_sum"
   },
   "orgX": {
-   "value": 1.3,
+   "value": 1.4,
    "label": "Organic growth multiplier",
    "hidden": false,
    "basis": "Scales the organic (non-reflexive, non-capability) growth of every segment. Calibration handle: the pipeline compares trailing observed revenue growth with the model’s quarter-zero growth and may move this under the growth_calibration rule when the gap persists.",
    "short": "Scales organic growth in every segment; the calibration handle for observed vs modelled growth.",
-   "as_of": "2026-10-08",
-   "type": "reported",
-   "source": "https://x.com/arakharazian/status/2108257361580392570",
-   "updated": "2026-10-09",
-   "rule": "growth_calibration",
-   "pending_since": "2026-10-09",
-   "pending_reason": "Fresh Ramp payments data showing business token spend on OpenAI doubling since June (~5x annualised against the model's "
+   "as_of": "2026-11-15",
+   "type": "estimate",
+   "source": "https://epoch.ai/data/ai-companies",
+   "updated": "2026-11-15",
+   "rule": "growth_calibration"
   },
   "scarce": {
    "value": 0.5,
@@ -806,7 +804,7 @@
     "checks": [
      "OUT: 2027Q4 $557B vs $600–1500B"
     ],
-    "date": "2026-11-14"
+    "date": "2026-11-15"
    }
   },
   {
@@ -853,7 +851,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×5.6 vs ×4–8"
     ],
-    "date": "2026-11-14"
+    "date": "2026-11-15"
    }
   },
   {
@@ -1174,7 +1172,7 @@
      "ok: 2027Q4 $260B vs $225–340B",
      "ok: 2028Q4 $512B vs $395–675B"
     ],
-    "date": "2026-11-14"
+    "date": "2026-11-15"
    }
   },
   {
@@ -1449,9 +1447,28 @@
      "v": 15
     }
    ],
+   "status": "retired",
+   "updated": "2026-11-15",
+   "added": "2026-11-01",
+   "retired_reason": "Retired to make room for “Ideas are getting harder to find”: the least distinct structural scenario (closest path to its neighbours, 15%)."
+  },
+  {
+   "id": "harder",
+   "camp": "structural",
+   "name": "Ideas are getting harder to find",
+   "who": "Luis Garicano (IE/LSE) and Alex Imas (Chicago Booth), Silicon Continent",
+   "when": "13 Nov 2026",
+   "thesis": "METR's apparent acceleration was bought, not discovered: Anthropic's capability index improved 1.91x faster after Oct 2025 while annualised R&D spend went from $3.55B to $22.00B (6.19x) and technical staff from 630 to 1,960, so capability per dollar fell ~69% and per researcher-year ~38%. Fitted research production functions show a one-time step, not increasing returns: no intelligence explosion yet. R&D token spend keeps compounding, but it buys progressively less capability, so the capability channel into demand weakens while the spending loop stays hot.",
+   "src": "https://www.siliconcontinent.com/p/are-we-approaching-an-intelligence",
+   "p": {
+    "k_rd": 0.75,
+    "rdBoost": 0.08,
+    "D0": 6
+   },
+   "e": [],
    "status": "active",
-   "updated": "2026-11-01",
-   "added": "2026-11-01"
+   "updated": "2026-11-15",
+   "added": "2026-11-15"
   }
  ],
  "gauges": [
@@ -1461,9 +1478,9 @@
    "value": "60%",
    "sub": "frontier revenue 149.8 ÷ (14.3 GW × 35% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-14",
+   "as_of": "2026-11-15",
    "auto": true,
-   "updated": "2026-11-14"
+   "updated": "2026-11-15"
   },
   {
    "id": "fms_tailrisk",
@@ -1492,12 +1509,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "6.9%",
-   "sub": "14 Nov 2026 · “AI bubble burst in 2026?”",
+   "value": "8.0%",
+   "sub": "15 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-14",
+   "as_of": "2026-11-15",
    "auto": true,
-   "updated": "2026-11-14"
+   "updated": "2026-11-15"
   },
   {
    "id": "aaii",
@@ -1535,14 +1552,13 @@
   {
    "id": "nvda_short",
    "label": "Nvidia short interest",
-   "value": "1.30% of float",
-   "sub": "Short % of float eased to 1.30% (301.62M shares) from 1.34% (311.39M, now shown as prior month); as_of assumes the mid-October FINRA settlement date, which the page does not state explicitly.",
+   "value": "1.21% of float",
+   "sub": "Nvidia short interest fell to 1.21% of float (279.58M shares, Oct 30 settlement) from 1.30% at the Oct 15 reading; days to cover 2.71, so positioning against the AI trade stays very light.",
    "src": "https://stockanalysis.com/stocks/nvda/statistics/",
-   "as_of": "2026-10-15",
+   "as_of": "2026-10-30",
    "auto": false,
-   "updated": "2026-10-30",
-   "cadence_days": 30,
-   "next_check": "2026-11-15"
+   "updated": "2026-11-15",
+   "cadence_days": 30
   },
   {
    "id": "h100_rental",
@@ -1558,14 +1574,13 @@
   {
    "id": "openrouter_cn",
    "label": "Chinese models’ share of OpenRouter tokens",
-   "value": "57-67%",
-   "sub": "Chinese models' share of OpenRouter tokens, week of Sep 14 2026, reported as a range across US, Europe and 'Global South' company groups (67% in Global South); up from 6-13% in February and consistent",
-   "src": "https://www.digitalapplied.com/blog/chinese-ai-models-majority-openrouter-tokens-2026 (reporting CNBC, 2026-09-26)",
-   "as_of": "2026-09-14",
+   "value": "76%",
+   "sub": "Chinese-developer models took 76% of OpenRouter tokens in the week to Nov 8, above the prior 57-67% range; denominator is top-50 models with a known developer (excludes ~11% of tokens), so not exactly",
+   "src": "https://www.drorpoleg.com/charts/openrouter-china-models/",
+   "as_of": "2026-11-08",
    "auto": false,
-   "updated": "2026-10-06",
-   "cadence_days": 30,
-   "next_check": "2026-11-15"
+   "updated": "2026-11-15",
+   "cadence_days": 30
   },
   {
    "id": "token_index",
@@ -1647,9 +1662,9 @@
    "value": "+44% vs +22%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.2 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-14",
+   "as_of": "2026-11-15",
    "auto": true,
-   "updated": "2026-11-14"
+   "updated": "2026-11-15"
   }
  ],
  "frozen": [],

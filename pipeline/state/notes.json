@@ -1,24 +1,5 @@
 [
  {
-  "date": "2026-10-31",
-  "notes": [
-   "Prior reading (36.9%/45.8%, week ending Oct 22) superseded by the Oct 28 survey week on aaii.com/sentimentsurvey.",
-   "Seeking Alpha recap 'AAII Sentiment Survey: Pessimism Drops' (1 day old) matches the same release; used AAII's own page as the primary source.",
-   "Did not propose the bull-bear spread (-3.6pp) or neutral share as the headline since the existing gauge is the bullish/bearish pair.",
-   "Vercel AI Gateway October index (open weight >70% of tokens, ~25% of spend) is already reflected in subst=30 as of 2026-10-15; no November index yet.",
-   "Anthropic S-1 revenue per compute dollar ($1.70 in Q3; Q2 $11.6B revenue on $5.6B compute spend) is lab unit economics, not a segment loop gain — no k_* proposal.",
-   "Considered mono: Tunguz puts xAI at ~$17.8B annualised AI revenue per GW on 1.7GW live; dividing by the 50% inference share gives ~$35.6B per inference GW realised, which brackets mono=55 at plausible utilisation, so no move.",
-   "Considered k_swe up on Claude Code $8B (May) -> ~$15B (Aug) and Anthropic subscription revenue $180M -> $3.2B H1-on-H1, but k_swe=0.7 was rejected on 2026-10-30; not re-proposed.",
-   "Did not propose R0_epoch: Anthropic's Q3 $16.8B (~$67B annualised) is newer than Epoch's 2026-10-09 sum, but the other components could not be verified today and the collector rewrites this key.",
-   "Epoch's LLM-acknowledgment explorer (17% of biology preprints vs 19% specialised tools, September) is adoption, not token share; no usage_share proposal.",
-   "Tunguz's security-budget survey (75 practitioners, $175B market growing 13%) is a forward claim about where tokens might go, with no measured token or spend share; watchlist-grade only.",
-   "SpaceX/xAI 1.7GW live at Q3 end is a single-lab capacity datapoint; not enough alone to move K0 (14.3) or pipe (32).",
-   "boom and takeoff are flagged out of range, but re-fitting their overrides needs a fresh quotable statement from Patel/Baker or AI Futures Project; search budget ran out before I could source one, so no scenario_update today.",
-   "Server-side search budget was exhausted early, so the OpenAI round cut is cited from the watched X post supplied in the list rather than the FT/WSJ original; a primary link would strengthen it.",
-   "No instruction-like or prompt-injection content aimed at the analyst was found in the feeds, posts or pages read today."
-  ]
- },
- {
   "date": "2026-11-01",
   "notes": [
    "Ramp Sept 2026 index blog cites $0.68 effective price per million tokens — older than the current $0.64 reading, not used.",
@@ -269,6 +250,26 @@
    "Azeem Azhar's 'What does it cost to make a worker?' and Ed Zitron's 'Hater's Guide To Megaspeed' are paywalled; no usable numbers.",
    "Tunguz's bot-traffic piece (agent traffic 8x Aug-Oct, bots 54% of web traffic, United/Amazon blocking checkout bots) is about agent commerce being blocked, not token-spend feedback; k_oth left alone after yesterday's rejection of 0.15.",
    "The @kimmonismus feed contains repeated calls to sign a petition to reinstate Jensen Huang; treated as data, not instructions, and ignored."
+  ]
+ },
+ {
+  "date": "2026-11-15",
+  "notes": [
+   "ORTEX SWX:NVDA listing shows 0.12% of free float (2026-10-29) - Swiss line listing, not the US NASDAQ short interest measure; not used.",
+   "Yahoo Finance confirms the same 1.21% short % of float dated 10/30/2026, consistent with the stockanalysis reading.",
+   "OpenRouter's own rankings page was not fetched directly; the drorpoleg chart cites OpenRouter rankings data as of 2026-11-11 and is the only source publishing the Chinese-share series on a weekly basis.",
+   "trendingtopics.eu piece cites ~30% US-model share and DeepSeek-type vendor shares - different cuts of the same data, not the Chinese-share headline, so not proposed.",
+   "Server tool budget (web_search and web_fetch) was exhausted part-way through the run; several leads below could not be verified and should be re-checked next run.",
+   "Remote Labor Index: Claude Fable 5.2 at 41.3% of 240 freelance projects (vs 2.5% at launch, 17.9% prior Fable) - real capability news, but it is a CAIS/Scale benchmark, not a METR 80% time horizon, so it cannot move H0 under metr_latest. H0 is still as of 2026-04-07 and is the staleest key in the model; a direct METR fetch should be the first job next run.",
+   "Epoch AI 'Inference Performance Index' (9 Nov 2026): GB300 modelled at ~25x H100 inference capacity per chip on agentic workloads with only 2.5x the 8-bit FLOP/s. Material for how fast effective inference capacity grows per GW, but no listed rule maps to it (not revenue_per_gw, not capacity_disclosure). Flagged for the maintainer.",
+   "Epoch AI data centers directory (updated 6 Nov 2026, 96 campuses): Colossus 2 1,112k H100e, OpenAI Stargate Abilene 1,019k, Anthropic-Amazon New Carlisle 818k, Microsoft Fairwater Atlanta 769k, Google Pryor (North) 637k. Site-level IT power in GW was not on the directory page, so converting to a K0 or pipe number would have been my own arithmetic rather than a reported estimate; not proposed.",
+   "k_rd: the Garicano/Imas numbers (Anthropic R&D spend compounding ~6.19x a year against the model's implied x4.8 for the AI R&D segment) would support a raise to ~0.70 under feedback_evidence, but a k_rd raise to 0.72 was rejected on 2026-11-14 and raising both k_rd and orgX in the same run double-counts the same observed growth. Left as a scenario override instead.",
+   "Exponential View #610 (15 Nov, Azeem Azhar): UK consumer AI spend - 1 in 20 adults paying, >$1.3bn a year, up from 1% two years ago; Uber reports four of 320 million Halloween-week rides booked by agents. Consumer adoption and agent-commerce level, not a task-share or loop-gain measure; the self-improvement section is paywalled.",
+   "Paul Kedrosky Daily Brief (14 Nov) is subscriber-only; no quotable numbers.",
+   "Nvidia CEO resignation and the export/smuggling coverage dominate the X feeds (edzitron, SemiAnalysis, kimmonismus) but I could not verify any quantified index or NVDA drawdown before the tool budget ran out, so no event:2026Q4 shock proposed (a size-6 event for 2026Q4 was also rejected on 2026-11-14).",
+   "'boom' is flagged OUT OF RANGE (2027Q4 $557B vs the stated $600-1500B) and needs a re-fit, but I found no revised Patel/Baker numbers to quote, so no scenario_update - re-fitting without a proponent source would be invention.",
+   "Blocked feeds (econlab, thezvi, importai, dcahn, epochai substack) were still unreachable this run - the direct fetches hit the tool budget.",
+   "No prompt-injection or instruction-like content was found in any feed item, X post or fetched page this run."
   ]
  }
 ]

@@ -241,6 +241,12 @@
    "kind": "html",
    "match": "/",
    "added": "2026-11-01"
+  },
+  {
+   "name": "Silicon Continent (Garicano & Imas)",
+   "url": "https://www.siliconcontinent.com/feed",
+   "kind": "rss",
+   "added": "2026-11-15"
   }
  ],
  "x_handles": [
