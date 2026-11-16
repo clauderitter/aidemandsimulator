@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-15T14:15:39.675Z",
+ "generated_at": "2026-11-16T16:14:24.036Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -802,9 +802,9 @@
    "fidelity": {
     "ok": false,
     "checks": [
-     "OUT: 2027Q4 $557B vs $600–1500B"
+     "OUT: 2027Q4 $567B vs $600–1500B"
     ],
-    "date": "2026-11-15"
+    "date": "2026-11-16"
    }
   },
   {
@@ -851,7 +851,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×5.6 vs ×4–8"
     ],
-    "date": "2026-11-15"
+    "date": "2026-11-16"
    }
   },
   {
@@ -1172,7 +1172,7 @@
      "ok: 2027Q4 $260B vs $225–340B",
      "ok: 2028Q4 $512B vs $395–675B"
     ],
-    "date": "2026-11-15"
+    "date": "2026-11-16"
    }
   },
   {
@@ -1478,9 +1478,9 @@
    "value": "60%",
    "sub": "frontier revenue 149.8 ÷ (14.3 GW × 35% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-15",
+   "as_of": "2026-11-16",
    "auto": true,
-   "updated": "2026-11-15"
+   "updated": "2026-11-16"
   },
   {
    "id": "fms_tailrisk",
@@ -1509,12 +1509,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "8.0%",
-   "sub": "15 Nov 2026 · “AI bubble burst in 2026?”",
+   "value": "7.5%",
+   "sub": "16 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-15",
+   "as_of": "2026-11-16",
    "auto": true,
-   "updated": "2026-11-15"
+   "updated": "2026-11-16"
   },
   {
    "id": "aaii",
@@ -1628,12 +1628,12 @@
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "320bp",
-   "sub": "12 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 89bp",
+   "value": "323bp",
+   "sub": "13 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 89bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-11-12",
+   "as_of": "2026-11-13",
    "auto": true,
-   "updated": "2026-11-14"
+   "updated": "2026-11-16"
   },
   {
    "id": "vc_h1",
@@ -1659,12 +1659,12 @@
   {
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
-   "value": "+44% vs +22%",
-   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.2 a year)",
+   "value": "+44% vs +23%",
+   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.3 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-15",
+   "as_of": "2026-11-16",
    "auto": true,
-   "updated": "2026-11-15"
+   "updated": "2026-11-16"
   }
  ],
  "frozen": [],
@@ -1764,10 +1764,17 @@
     "gObs": 0.3675,
     "gMod": 0.2149,
     "gap": 0.1526
+   },
+   {
+    "week": "2026-W47",
+    "date": "2026-11-16",
+    "gObs": 0.3675,
+    "gMod": 0.2078,
+    "gap": 0.1597
    }
   ],
-  "weeks_at_gap": 11,
-  "fast_lane": false,
+  "weeks_at_gap": 12,
+  "fast_lane": true,
   "util0": 0.599
  }
 }

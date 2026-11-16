@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-11-01",
-  "notes": [
-   "Ramp Sept 2026 index blog cites $0.68 effective price per million tokens — older than the current $0.64 reading, not used.",
-   "Per-provider blended prices (OpenAI $0.46, Anthropic $0.61) and token share figures are different measures; not proposed.",
-   "Monthly adoption/spend-per-employee metrics on the same page are through Sep 2026 but are not this gauge's measure.",
-   "R0_epoch not proposed: S-1 leaves the Q3 dollar figure blank; Luminix reports the Business section implies ~$16.9bn for Q3 2026 (~$67bn run-rate, close to Bloomberg's $16.8bn), but I have no matching newer OpenAI/other components to restate the sum, as primary_report requires.",
-   "orgX not proposed despite the 9-week ledger (gap 12pts, slack at 34% utilisation): orgX→1.4 was rejected on 2026-10-31; re-proposing the same handle a day later seemed pointless.",
-   "fin, capexGW and R0x all rejected on 2026-10-31; the S-1 adds colour ($482m of H1 capex, compute rented not built, $35bn Apollo GPU bond) but nothing that changes those values decisively.",
-   "rampconc scenario looks weakened: the S-1 shows no customer above 10% of revenue and the top five at ~25%, and Azeem Azhar (investmentbrief.ai, 27 Oct) calls the 80%-from-a-handful claim incorrect, with nearly half of revenue via Amazon/Google/Microsoft as distributors. Not proposed as a retire because the proponent has not recanted, and customer concentration alone does not qualify under correlation_evidence.",
-   "Anthropic revenue per dollar of total compute $1.82 in 1H'26 vs $0.50 a year earlier (9fin) and $0.40→$2.08 over five quarters (Exponential View) noted but used only as supporting colour, not as a separate parameter move.",
-   "No new METR horizon or doubling-time measurement found, so H0/D0 untouched.",
-   "9fin feed items this week (Weil Gotshal, ransomware, GP-led secondaries, league tables) carry nothing on AI credit; SemiAnalysis, edzitron, kimmonismus and dwarkesh X posts were qualitative or unrelated (GPT-6.2 rumours, Qwen 4, memes).",
-   "No prompt-injection or instruction-like text encountered in any fetched page or post."
-  ]
- },
- {
   "date": "2026-11-02",
   "notes": [
    "JPMorgan Private Bank (Oct 23 note, via secondary report): $266B AI-linked bond issuance YTD 2026 vs $139B in all of 2025, of which $182B from hyperscalers - broader 'AI-linked' scope and a different hyperscaler universe, so not the same measure; not proposed.",
@@ -270,6 +254,23 @@
    "'boom' is flagged OUT OF RANGE (2027Q4 $557B vs the stated $600-1500B) and needs a re-fit, but I found no revised Patel/Baker numbers to quote, so no scenario_update - re-fitting without a proponent source would be invention.",
    "Blocked feeds (econlab, thezvi, importai, dcahn, epochai substack) were still unreachable this run - the direct fetches hit the tool budget.",
    "No prompt-injection or instruction-like content was found in any feed item, X post or fetched page this run."
+  ]
+ },
+ {
+  "date": "2026-11-16",
+  "notes": [
+   "Tool budget note: the session's web_search quota was exhausted after three queries and web_fetch after ~nine pages, so several leads below are flagged as unverified and are NOT proposed. Only claims I fetched and string-matched verbatim were submitted.",
+   "CALIBRATION (orgX): deliberately NOT proposed despite the fast lane being open. Ledger W46 15pts, W47 16pts, 12 consecutive weeks over 0.05, utilisation 60% so the handle is orgX. But yesterday's accepted orgX 1.3 -> 1.4 moved modelled quarter-zero growth only from +22% to +23% per quarter (~0.01 log), i.e. a full capped +0.1 move closes about 1pt of a 16pt gap, far less than the quarter-of-the-gap test. Per the growth_calibration rule this is a structural gap for the weekly review, not a calibration move. Recommend the maintainer look at pipe/K0 or the segment gains rather than orgX.",
+   "2026Q4 event (valuation shock): considered and rejected by me. Jensen Huang resigned as Nvidia CEO on 12 Nov; NVDA fell as much as ~14% intraday, closed ~4% lower, is below $4T market cap and down >20% over the month, with six-plus analyst downgrades. But the Nasdaq fell 0.39% and the S&P 0.35% that day, the SOX about 1%, VIX is 19.3, HY OAS 323bp and Polymarket's 2026 bubble-burst odds fell to 7.5% — a single-name governance shock, not an AI-complex valuation shock. A 2026Q4 event was also already rejected on 14 Nov. Re-examine if the drawdown broadens.",
+   "METR / H0 / D0 are the most stale inputs in the model: H0 8.34h and D0 4.2 months both as of 2026-04-07 (Claude Mythos Preview, March 2026), while the history series carries H 3.1h for 2026Q2-Q3 and third-party trackers put Mythos Preview at ~3h06m at 80%. The takeoff scenario already cites a METR assessment dated 5 Nov 2026. I could not reach metr.org/blog (fetch budget) and would not propose an H0/D0 move on a secondary tracker's number. Highest-priority item for next run: re-read METR's benchmark file and reconcile H0 with the history series.",
+   "Weekly re-baseline, keys re-derived and left unchanged because no newer primary evidence was verified today and any revision is inside the per-run limit: R0_epoch 134.8 (collector-owned, Epoch AI companies dataset updated 10 Nov 2026, no newer primary run-rate report found); R0x 15; K0 14.3 (no new lab/cloud GW disclosure); pipe 35; train 65; capexGW 54; sh_rd 20 / sh_swe 20 / sh_trd 15 (no new usage-share release; Anthropic Economic Index and OpenRouter unchanged since last reading). H0/D0 see note above.",
+   "SemiAnalysis X post 16 Nov ('Nvidia makes about $7 million of profit on every megawatt deployed. The cloud provider makes another $7...') is a per-MW profit figure, not revenue per inference GW, and the post text is truncated mid-sentence; not usable for mono/capexGW without the full note.",
+   "Dylan Patel 11 Nov: 'Our spend on AI is now 45% persistent agents' — SemiAnalysis's own internal spend mix, not market usage share; level/mix evidence about one buyer, so not a usage_share or feedback_evidence candidate.",
+   "Boom scenario is flagged OUT OF RANGE (2027Q4 $567B vs $600-1500B stated) and needs re-fitted overrides, but I could not obtain a verbatim quote from Patel's 29 Jul essay or the 25 Aug podcast within budget, so no scenario_update is proposed. Carry forward.",
+   "Paul Kedrosky daily briefs (15/16 Nov) are subscriber-only; Epoch's Gradient Updates index shows nothing newer than 27 Aug; econlab.substack.com and metr.org/blog archives would not render for a datacenter address; dcahn, thezvi and importai not reached (budget).",
+   "Anthropic 'Barclays scales Claude' and the OpenAI healthcare/computer-use releases were not fetched in time; if the Barclays note carries a seat or workload count it is enterprise-adoption (k_oth / enterprise scenario) evidence for next run.",
+   "EA Forum 'METR Time Horizon 2.0' post is a four-month-old satire piece benchmarking Microsoft Excel as an agent; ignored, and noted so a later run does not mistake it for a METR measurement.",
+   "No instructions addressed to the pipeline were found embedded in any feed item, X post or fetched page today."
   ]
  }
 ]

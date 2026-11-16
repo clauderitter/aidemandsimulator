@@ -1,397 +1,5 @@
 [
  {
-  "handle": "SemiAnalysis_",
-  "id": "2118419869091713083",
-  "at": "2026-11-05T19:07:09.000Z",
-  "text": "The Iron(wood) Throne: \nGoogle's TPU Stakes Its Claim on Inference\nViable Alternative of CUDA Moat, \nNVIDIA Working Nights &amp; Weekends, \nJensen’s Counter Submission, Kimi K3, \nMeta Muse Spark Open, GLM5.3, \nTorchTPU, SGLang, vLLM, llm-d, Ray \nhttps://t.co/mh16HIWmpJ",
-  "likes": 187,
-  "url": "https://x.com/SemiAnalysis_/status/2118419869091713083"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2118412063064158229",
-  "at": "2026-11-05T18:36:08.000Z",
-  "text": "We discussed in our WFE Model and track the both of them. Subscribe to learn more! (5/5)  https://t.co/cP41yNHGqK",
-  "likes": 8,
-  "url": "https://x.com/SemiAnalysis_/status/2118412063064158229"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2118412062208446671",
-  "at": "2026-11-05T18:36:08.000Z",
-  "text": "We believe the 2027 upside comes from different places. For Advantest it is its own capacity expansion. For Teradyne it is HBM, where lower stack heights add performance-test demand, while compute depends on customer timing. (4/5)",
-  "likes": 8,
-  "url": "https://x.com/SemiAnalysis_/status/2118412062208446671"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2118412059880608057",
-  "at": "2026-11-05T18:36:07.000Z",
-  "text": "Teradyne grows around compute. Revenue rose 70% YoY to $1.31B with nearly 80% outside compute and record memory sales. New hyperscaler ASIC ramps are weighted to mid-to-late 2027. (3/5) https://t.co/kpxMjbhiQl",
-  "likes": 14,
-  "url": "https://x.com/SemiAnalysis_/status/2118412059880608057"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2118412058974732475",
-  "at": "2026-11-05T18:36:07.000Z",
-  "text": "Advantest leads compute. SoC tester share rose from 56% to 66%, FY26 SoC guidance went up 10.6% to ¥1,375B on shipments ahead of plan, and the 10,000-system capacity target is being pulled forward. (2/5)",
-  "likes": 16,
-  "url": "https://x.com/SemiAnalysis_/status/2118412058974732475"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2118412057204654176",
-  "at": "2026-11-05T18:36:07.000Z",
-  "text": "Advantest and Teradyne both reported 3Q26 this week. We believe the two calls say the same thing: the ATE TAM is growing on AI compute, and supply, not demand, is the constraint through 2027. (1/5)🧵 https://t.co/phQBfzLEAB",
-  "likes": 213,
-  "url": "https://x.com/SemiAnalysis_/status/2118412057204654176"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2118366475828273337",
-  "at": "2026-11-05T15:34:59.000Z",
-  "text": "View the results: (2/2) https://t.co/9Tzg6Yh6kB",
-  "likes": 8,
-  "url": "https://x.com/SemiAnalysis_/status/2118366475828273337"
- },
- {
-  "handle": "SemiAnalysis_",
-  "id": "2118366474112790630",
-  "at": "2026-11-05T15:34:59.000Z",
-  "text": "Congrats to the Nvidia team working on VR! As Muse spark open throughput runs faster on VR hardware, the software is also developing at breakneck speeds 🏃💨 enabling faster support for newer models. This is part of the CUDA moat 🟩, fast hardware and fast development! (1/2)🧵 https://t.co/EMTBeCqLCj",
-  "likes": 239,
-  "url": "https://x.com/SemiAnalysis_/status/2118366474112790630"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2118390055563927567",
-  "at": "2026-11-05T17:08:41.000Z",
-  "text": "These results come from the October 2026 Epoch AI/Ipsos survey of 2,015 US adults (1,291 employed). It’s the first of our new recurring monthly polls tracking AI usage and attitudes. Explore the results: https://t.co/njZaEh0qo3",
-  "likes": 12,
-  "url": "https://x.com/EpochAIResearch/status/2118390055563927567"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2118390043249434915",
-  "at": "2026-11-05T17:08:38.000Z",
-  "text": "About 1 in 4 US workers (26%) used a paid AI service for their job in the past week, according to our October poll. This includes AI paid for by their employer, by themselves, or by both.\n\nAnother 15% used only free versions, and 55% didn’t use AI for work at all in the past https://t.co/wHohobwhQG",
-  "likes": 178,
-  "url": "https://x.com/EpochAIResearch/status/2118390043249434915"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2118388139635225041",
-  "at": "2026-11-05T17:01:04.000Z",
-  "text": "Read the full Data Insight and methodology:\nhttps://t.co/STzXrUGIPA",
-  "likes": 8,
-  "url": "https://x.com/EpochAIResearch/status/2118388139635225041"
- },
- {
-  "handle": "EpochAIResearch",
-  "id": "2118388127337517276",
-  "at": "2026-11-05T17:01:01.000Z",
-  "text": "Broadcom TPU compute shipments doubled from fiscal Q2 to Q3 2026 (May to early August), reaching the equivalent of nearly 2 million Nvidia H100 GPUs, according to our estimates.\n\nThis is a sharp increase from the previous three quarters, when shipments grew 2–22% per quarter. https://t.co/sYIysfzhxh",
-  "likes": 160,
-  "url": "https://x.com/EpochAIResearch/status/2118388127337517276"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118417781825904708",
-  "at": "2026-11-05T18:58:52.000Z",
-  "text": "Read our full review of the “Risks from automated R&amp;D” section of Anthropic’s August 2026 Risk Report:\nhttps://t.co/B3en5DOfWF",
-  "likes": 26,
-  "url": "https://x.com/METR_Evals/status/2118417781825904708"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118417780290810011",
-  "at": "2026-11-05T18:58:51.000Z",
-  "text": "This was conducted alongside a broader AI R&amp;D acceleration assessment under the same terms: Anthropic could redact nonpublic information and we kept the right to disclose when it did. Anthropic made some redactions, which are marked in the review.\nhttps://t.co/FXMSasry9H",
-  "likes": 21,
-  "url": "https://x.com/METR_Evals/status/2118417780290810011"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118417778889859234",
-  "at": "2026-11-05T18:58:51.000Z",
-  "text": "We think even a ~2x acceleration would likely fall short of what Anthropic’s catastrophic scenarios require, so we agree risk of directly automating R&amp;D was low for models as of mid-July.",
-  "likes": 26,
-  "url": "https://x.com/METR_Evals/status/2118417778889859234"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118417775341568162",
-  "at": "2026-11-05T18:58:50.000Z",
-  "text": "Our review compares three specific claims between the public and nonpublic versions of the report. We also suggest alternative language for each of these claims, informed by our own analysis as explained in our review. https://t.co/rmnJbljYCX",
-  "likes": 46,
-  "url": "https://x.com/METR_Evals/status/2118417775341568162"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118417774045475323",
-  "at": "2026-11-05T18:58:50.000Z",
-  "text": "The key question is whether Anthropic, at the time, had crossed their acceleration threshold. Their report concluded no. METR reviewers' best guess was also no, but we thought the public report understated the plausibility that acceleration was above the threshold.",
-  "likes": 60,
-  "url": "https://x.com/METR_Evals/status/2118417774045475323"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118417772774580623",
-  "at": "2026-11-05T18:58:49.000Z",
-  "text": "We reviewed the “Risks from automated R&amp;D” section of Anthropic’s August 2026 Risk Report, with access to the nonpublic version.\n\nWe focus on the report’s claims about catastrophic risks from automated AI R&amp;D and about whether Anthropic had crossed relevant capability thresholds.",
-  "likes": 257,
-  "url": "https://x.com/METR_Evals/status/2118417772774580623"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412223693598831",
-  "at": "2026-11-05T18:36:46.000Z",
-  "text": "Read our public report here: https://t.co/VkiZlb515W",
-  "likes": 419,
-  "url": "https://x.com/METR_Evals/status/2118412223693598831"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412222376665496",
-  "at": "2026-11-05T18:36:46.000Z",
-  "text": "Our report aims to be transparent about our process. We discuss at a high level what access we had, what redactions Anthropic made, and how our work is limited. We also include an AEF-1 disclosure, information about conflicts of interest, and a summary of our contract terms.",
-  "likes": 240,
-  "url": "https://x.com/METR_Evals/status/2118412222376665496"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412220900249834",
-  "at": "2026-11-05T18:36:46.000Z",
-  "text": "We agreed to pilot a compute allocation assessment, but Anthropic canceled this portion of the pilot (before we came to any substantial conclusions). Anthropic stated this was to keep the focus on risk assessment for the time being, and that it would revisit this later on.",
-  "likes": 320,
-  "url": "https://x.com/METR_Evals/status/2118412220900249834"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412219256054091",
-  "at": "2026-11-05T18:36:45.000Z",
-  "text": "This AI R&amp;D acceleration assessment began in mid-August and was separate from the “employee-like access” assessment Anthropic announced. While our access was deep, we had to proactively request info, so we may have missed things we didn’t know existed.\nhttps://t.co/j1BsmguXWO",
-  "likes": 271,
-  "url": "https://x.com/METR_Evals/status/2118412219256054091"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412217905475702",
-  "at": "2026-11-05T18:36:45.000Z",
-  "text": "We may be overestimating acceleration if we underweighted (1) non-AI factors in Anthropic’s research progress; (2) AECI’s focus on verifiable tasks; (3) reasons Anthropic’s early growth rate (2024–2025) was unusually low.",
-  "likes": 238,
-  "url": "https://x.com/METR_Evals/status/2118412217905475702"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412216500445397",
-  "at": "2026-11-05T18:36:45.000Z",
-  "text": "We may be underestimating acceleration if we underweighted (1) evidence that some growth rates have recently increased; (2) early signs of fully autonomous contributions; (3) evidence that AECI has sometimes understated real-world impact.",
-  "likes": 256,
-  "url": "https://x.com/METR_Evals/status/2118412216500445397"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412215112061143",
-  "at": "2026-11-05T18:36:44.000Z",
-  "text": "Much of the evidence we viewed had multiple plausible interpretations, and both METR and the Anthropic researchers we spoke with have significant uncertainty about how to synthesize the evidence into a holistic picture:",
-  "likes": 256,
-  "url": "https://x.com/METR_Evals/status/2118412215112061143"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412213832863884",
-  "at": "2026-11-05T18:36:44.000Z",
-  "text": "4. We did not see convincing evidence of significant bottlenecks that would take effect within the next 12 months in algorithmic progress, training compute, experiment compute, or data. However, our view changed throughout the assessment, so we may be missing some bottlenecks.",
-  "likes": 346,
-  "url": "https://x.com/METR_Evals/status/2118412213832863884"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412212134158442",
-  "at": "2026-11-05T18:36:44.000Z",
-  "text": "3. Interviews and surveys with staff are consistent with AI usage driving current acceleration, though this evidence is very hard to interpret. Staff self-report dramatic productivity gains, but say the most important AI R&amp;D contributions aren’t yet fully automated. https://t.co/B2pxp0jpLZ",
-  "likes": 417,
-  "url": "https://x.com/METR_Evals/status/2118412212134158442"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412208153694480",
-  "at": "2026-11-05T18:36:43.000Z",
-  "text": "2. The full analysis estimated how much of the acceleration in capabilities was due to compute, data, and algorithmic progress. We are confident that the acceleration was not due to an increase in the growth rate of training compute.",
-  "likes": 363,
-  "url": "https://x.com/METR_Evals/status/2118412208153694480"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412205662314935",
-  "at": "2026-11-05T18:36:42.000Z",
-  "text": "1. Benchmarks provide one piece of evidence for acceleration. Since Oct 2025, AECI scores for Anthropic’s models have grown at 1.9x [95%: 1.5–2.8] the earlier rate. Analysis choices affect this estimate, and it remains unclear how benchmark scores map to real-world capabilities. https://t.co/xPmXuvxrDR",
-  "likes": 848,
-  "url": "https://x.com/METR_Evals/status/2118412205662314935"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412204299169799",
-  "at": "2026-11-05T18:36:42.000Z",
-  "text": "These conclusions are based on key empirical findings from the full report.\n\nSome of the key findings that most informed our conclusions about risk were redacted. We summarize the rest here:",
-  "likes": 379,
-  "url": "https://x.com/METR_Evals/status/2118412204299169799"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412202768281904",
-  "at": "2026-11-05T18:36:41.000Z",
-  "text": "3. We believe there is a chance that capabilities progress could lead to even faster acceleration in the next 12 months, since we did not observe clear bottlenecks or strong diminishing returns. However, given our limited vantage point, we may have missed bottlenecking factors.",
-  "likes": 638,
-  "url": "https://x.com/METR_Evals/status/2118412202768281904"
- },
- {
-  "handle": "METR_Evals",
-  "id": "2118412201015103709",
-  "at": "2026-11-05T18:36:41.000Z",
-  "text": "2. We believe that a majority of this acceleration in capability improvement is likely now driven by AI being used in AI R&amp;D. We aren’t sure of this, though, and did not find consensus about this among Anthropic’s staff. Non-AI factors likely played a large role in late 2025. https://t.co/IjIQgFLngM",
-  "likes": 655,
-  "url": "https://x.com/METR_Evals/status/2118412201015103709"
- },
- {
-  "handle": "edzitron",
-  "id": "2118707832367259738",
-  "at": "2026-11-06T14:11:25.000Z",
-  "text": "Maybe a day tbh",
-  "likes": 14,
-  "url": "https://x.com/edzitron/status/2118707832367259738"
- },
- {
-  "handle": "edzitron",
-  "id": "2118703338782962086",
-  "at": "2026-11-06T13:53:34.000Z",
-  "text": "So like a week’s costs? https://t.co/xbwIiUDc87",
-  "likes": 201,
-  "url": "https://x.com/edzitron/status/2118703338782962086"
- },
- {
-  "handle": "edzitron",
-  "id": "2118514221902426501",
-  "at": "2026-11-06T01:22:05.000Z",
-  "text": "LPs should burn them at the stake for this https://t.co/ws8NaZeuTi",
-  "likes": 172,
-  "url": "https://x.com/edzitron/status/2118514221902426501"
- },
- {
-  "handle": "edzitron",
-  "id": "2118498454372798972",
-  "at": "2026-11-06T00:19:25.000Z",
-  "text": "https://t.co/HfS9k8TG0g https://t.co/nU4Z1YO5Pk",
-  "likes": 1505,
-  "url": "https://x.com/edzitron/status/2118498454372798972"
- },
- {
-  "handle": "edzitron",
-  "id": "2118498158325940532",
-  "at": "2026-11-06T00:18:15.000Z",
-  "text": "Uh oh!!!! https://t.co/0wHXFVjGCZ",
-  "likes": 1323,
-  "url": "https://x.com/edzitron/status/2118498158325940532"
- },
- {
-  "handle": "edzitron",
-  "id": "2118497935654597023",
-  "at": "2026-11-06T00:17:22.000Z",
-  "text": "Sorry to hear this but really glad I know this guy’s name https://t.co/Vp30UiNku1",
-  "likes": 53,
-  "url": "https://x.com/edzitron/status/2118497935654597023"
- },
- {
-  "handle": "edzitron",
-  "id": "2118497744591487129",
-  "at": "2026-11-06T00:16:36.000Z",
-  "text": "https://t.co/Wdrk403xjx https://t.co/8KkswS7k6B",
-  "likes": 685,
-  "url": "https://x.com/edzitron/status/2118497744591487129"
- },
- {
-  "handle": "edzitron",
-  "id": "2118488984443814134",
-  "at": "2026-11-05T23:41:48.000Z",
-  "text": "https://t.co/XL0zeewARH https://t.co/kAD87C699c",
-  "likes": 452,
-  "url": "https://x.com/edzitron/status/2118488984443814134"
- },
- {
-  "handle": "edzitron",
-  "id": "2118481039307739597",
-  "at": "2026-11-05T23:10:13.000Z",
-  "text": "This piece of shit company lost $684m in this quarter on $137m of revenue lol https://t.co/kwvy1SteYA",
-  "likes": 1276,
-  "url": "https://x.com/edzitron/status/2118481039307739597"
- },
- {
-  "handle": "edzitron",
-  "id": "2118479031305912623",
-  "at": "2026-11-05T23:02:15.000Z",
-  "text": "? https://t.co/wvtvhnrTe5",
-  "likes": 536,
-  "url": "https://x.com/edzitron/status/2118479031305912623"
- },
- {
-  "handle": "edzitron",
-  "id": "2118463704132124829",
-  "at": "2026-11-05T22:01:20.000Z",
-  "text": "https://t.co/2E4I3jX7p0 https://t.co/kCijbzqJei",
-  "likes": 136,
-  "url": "https://x.com/edzitron/status/2118463704132124829"
- },
- {
-  "handle": "edzitron",
-  "id": "2118462957935833417",
-  "at": "2026-11-05T21:58:22.000Z",
-  "text": "these stories are so funny because openai's capex is mostly A) Oracle's clunky, over-expensive and ever-delayed buildout and B) SB Energy's dogshit, non-existent buildout https://t.co/8TUCW6EnCM",
-  "likes": 657,
-  "url": "https://x.com/edzitron/status/2118462957935833417"
- },
- {
-  "handle": "edzitron",
-  "id": "2118460675576279314",
-  "at": "2026-11-05T21:49:18.000Z",
-  "text": "Crocodile under rickety bridge insists structure secure https://t.co/qOujckqBjB",
-  "likes": 330,
-  "url": "https://x.com/edzitron/status/2118460675576279314"
- },
- {
-  "handle": "edzitron",
-  "id": "2118448932212572246",
-  "at": "2026-11-05T21:02:38.000Z",
-  "text": "Mr. Huang, we've been expecting you https://t.co/TlYfijs32r https://t.co/nfVEwv90tv",
-  "likes": 1253,
-  "url": "https://x.com/edzitron/status/2118448932212572246"
- },
- {
-  "handle": "edzitron",
-  "id": "2118433693291434333",
-  "at": "2026-11-05T20:02:05.000Z",
-  "text": "what jobs https://t.co/mFJS2awUlW",
-  "likes": 845,
-  "url": "https://x.com/edzitron/status/2118433693291434333"
- },
- {
-  "handle": "edzitron",
-  "id": "2118432113397518621",
-  "at": "2026-11-05T19:55:49.000Z",
-  "text": "so utterly stupid lol https://t.co/U8I7nxKq3G",
-  "likes": 317,
-  "url": "https://x.com/edzitron/status/2118432113397518621"
- },
- {
-  "handle": "edzitron",
-  "id": "2118427378372256215",
-  "at": "2026-11-05T19:37:00.000Z",
-  "text": "drunk friend says drunker friend \"good to drive\" https://t.co/x5My4KMbeZ",
-  "likes": 223,
-  "url": "https://x.com/edzitron/status/2118427378372256215"
- },
- {
   "handle": "edzitron",
   "id": "2118425430176973108",
   "at": "2026-11-05T19:29:15.000Z",
@@ -4798,5 +4406,397 @@
   "text": "This is the best AI video I’ve ever seen. Soon we will all become directors of our own Hollywood movies.  https://t.co/waogH626xe",
   "likes": 1564,
   "url": "https://x.com/kimmonismus/status/2121604816057348116"
+ },
+ {
+  "handle": "dwarkesh_sp",
+  "id": "2122064955545686119",
+  "at": "2026-11-15T20:31:26.000Z",
+  "text": "Episode dropping tomorrow with @paulfchristiano.\n\nHe thinks there’s a 1 in 3 chance of extreme superintelligence within a year (absent any slowing down).\n\nAnd he'll explain what labs and governments should do right now given that possibility. https://t.co/iRQVrhWfMs",
+  "likes": 1431,
+  "url": "https://x.com/dwarkesh_sp/status/2122064955545686119"
+ },
+ {
+  "handle": "dylan522p",
+  "id": "2122116251292201162",
+  "at": "2026-11-15T23:55:15.000Z",
+  "text": "I have been informed that Venus and Mercury retrograde have ended.\nIt's time for a return of the king https://t.co/Yzbzvyfwiw",
+  "likes": 2260,
+  "url": "https://x.com/dylan522p/status/2122116251292201162"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2122359223757537759",
+  "at": "2026-11-16T16:00:45.000Z",
+  "text": "idclip? noclip? IYKYK. The tear in teardown doesn’t always have to be destructive. Part of the Kirin 9050 Teardown. Reach out to learn more!\n\nsales@semianalysis.com | https://t.co/NVaBFeGVWv https://t.co/za6gDuuNX0",
+  "likes": 7,
+  "url": "https://x.com/SemiAnalysis_/status/2122359223757537759"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2122161912989552642",
+  "at": "2026-11-16T02:56:42.000Z",
+  "text": "Watch Now: https://t.co/vjDnriDmNo",
+  "likes": 19,
+  "url": "https://x.com/SemiAnalysis_/status/2122161912989552642"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2122161745901044112",
+  "at": "2026-11-16T02:56:02.000Z",
+  "text": "The devil’s advocate case for letting China rent American compute.\n\n“If China has access to compute outside of China, it’s paying humongous margin dollars to the US ecosystem. Nvidia makes about $7 million of profit on every megawatt deployed. The cloud provider makes another $7 https://t.co/lyk3hbLinA",
+  "likes": 873,
+  "url": "https://x.com/SemiAnalysis_/status/2122161745901044112"
+ },
+ {
+  "handle": "SemiAnalysis_",
+  "id": "2122043289872355822",
+  "at": "2026-11-15T19:05:20.000Z",
+  "text": "Layer by layer of the Kirin 9050, from topside to bumpside. What does LogicFolding actually look like? Reach out to learn more!\n\nsales@semianalysis.com | https://t.co/NVaBFeGVWv https://t.co/WAcQhBArEL",
+  "likes": 236,
+  "url": "https://x.com/SemiAnalysis_/status/2122043289872355822"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122338403408896185",
+  "at": "2026-11-16T14:38:01.000Z",
+  "text": "Brad Faith Argument https://t.co/lGURdAq0Xv",
+  "likes": 55,
+  "url": "https://x.com/edzitron/status/2122338403408896185"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122180406208323610",
+  "at": "2026-11-16T04:10:11.000Z",
+  "text": "Nscale and Firmus are now timebombs and I have to wonder how Lambda’s long term horizons look. Don’t see how any of them ever list or whether the debt markets even tolerate them much further without the guaranteed JensenBucks implicitly or explicitly if anything went wrong https://t.co/ff8zhTnSbk",
+  "likes": 330,
+  "url": "https://x.com/edzitron/status/2122180406208323610"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122179618278944968",
+  "at": "2026-11-16T04:07:03.000Z",
+  "text": "And if there’s one company we know has some expertise in “overseas business” it’s NVIDIA https://t.co/7S28C3CTRx",
+  "likes": 281,
+  "url": "https://x.com/edzitron/status/2122179618278944968"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122165374770913588",
+  "at": "2026-11-16T03:10:27.000Z",
+  "text": "Microsoft’s Amy Hood emailing Tim Teter to cancel some GPU orders https://t.co/D2QdIK6a17",
+  "likes": 67,
+  "url": "https://x.com/edzitron/status/2122165374770913588"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122160767202169271",
+  "at": "2026-11-16T02:52:09.000Z",
+  "text": "Jensen Huang feared back in August that he had overbought capacity at TSMC/memory firms. It seems that his resignation is the opening NVIDIA has to sneak out stories about demand slowing for its GPUs. This was the same month it guided 70% in FY2028! Isn’t that…very misleading? https://t.co/LlzimebrJV https://t.co/QTqH6AYK2t",
+  "likes": 726,
+  "url": "https://x.com/edzitron/status/2122160767202169271"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122156186166264183",
+  "at": "2026-11-16T02:33:57.000Z",
+  "text": "“Some founders and venture-capital backers of companies with little to no sales said that if Nvidia did pull back from future equity investments, they could struggle to find capital to keep their cash-hungry businesses going, let alone secure a lucrative exit.”\n\nIt’s joever https://t.co/00KLXlEyUU",
+  "likes": 869,
+  "url": "https://x.com/edzitron/status/2122156186166264183"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122139218390421828",
+  "at": "2026-11-16T01:26:31.000Z",
+  "text": "Yeah that’s the thing here: if you truly think the AI bubble is so robust, why obsess over the loss of Jensen Huang? Was it something specific he did that nobody else can do? https://t.co/XQ2d6HrRWp",
+  "likes": 2109,
+  "url": "https://x.com/edzitron/status/2122139218390421828"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122138395967365512",
+  "at": "2026-11-16T01:23:15.000Z",
+  "text": "https://t.co/M52E5DCVhz https://t.co/VN8FJxRchf",
+  "likes": 523,
+  "url": "https://x.com/edzitron/status/2122138395967365512"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122120511077368073",
+  "at": "2026-11-16T00:12:11.000Z",
+  "text": "Strong demand (Jensen demanding you take it early) https://t.co/HnvX6uf17w",
+  "likes": 173,
+  "url": "https://x.com/edzitron/status/2122120511077368073"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122111894584778842",
+  "at": "2026-11-15T23:37:57.000Z",
+  "text": "What they actually mean is “NVIDIA isn’t NVIDIA without Jensen using its balance sheet to grow at a pace requiring constant, quasi-legal to illegal dealmaking involving channel stuffing and chip smuggling,” which is not the same thing. https://t.co/9ZKStZtJJl",
+  "likes": 1880,
+  "url": "https://x.com/edzitron/status/2122111894584778842"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122095732479992098",
+  "at": "2026-11-15T22:33:43.000Z",
+  "text": "The lyrics from every song in Sonic Adventure 2 https://t.co/ahJ2QVT8k0",
+  "likes": 738,
+  "url": "https://x.com/edzitron/status/2122095732479992098"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122081651123531823",
+  "at": "2026-11-15T21:37:46.000Z",
+  "text": "https://t.co/stTtF4202v https://t.co/KWcvOvjAkp",
+  "likes": 731,
+  "url": "https://x.com/edzitron/status/2122081651123531823"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122052450668499193",
+  "at": "2026-11-15T19:41:44.000Z",
+  "text": "This story does not feature a single mention of Nvidia itself accepting or being interested in this, clearly a crisis comms move https://t.co/jS6jng1upq",
+  "likes": 441,
+  "url": "https://x.com/edzitron/status/2122052450668499193"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122046676705685740",
+  "at": "2026-11-15T19:18:48.000Z",
+  "text": "What does “considering” mean here? The board wanted to oust him and he resigned https://t.co/0OY4VC61I8",
+  "likes": 329,
+  "url": "https://x.com/edzitron/status/2122046676705685740"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122045700267515909",
+  "at": "2026-11-15T19:14:55.000Z",
+  "text": "This is all posturing to try and force the board’s hand. Jensen obviously helped a massive illegal smuggling operation with Megaspeed and no amount of war rooms changes that https://t.co/nHrjBfrKky https://t.co/QgI27N4QTO",
+  "likes": 1177,
+  "url": "https://x.com/edzitron/status/2122045700267515909"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122043229025804748",
+  "at": "2026-11-15T19:05:06.000Z",
+  "text": "Massive overpay. Didn’t even try and get Yamamoto or Shohei https://t.co/dFM5puyBsS",
+  "likes": 156,
+  "url": "https://x.com/edzitron/status/2122043229025804748"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122042775130734774",
+  "at": "2026-11-15T19:03:17.000Z",
+  "text": "Hey man how about the big illegal smuggling ring? https://t.co/4SF5nyR4Kr",
+  "likes": 952,
+  "url": "https://x.com/edzitron/status/2122042775130734774"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122025579939832125",
+  "at": "2026-11-15T17:54:58.000Z",
+  "text": "#simpleas #legend #properlad https://t.co/qgULDHUgt7",
+  "likes": 728,
+  "url": "https://x.com/edzitron/status/2122025579939832125"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122025126229336097",
+  "at": "2026-11-15T17:53:10.000Z",
+  "text": "[using murkiest data possible] you need to keep buying my servers months before you have power for, uh, America https://t.co/EgUoQDEElh",
+  "likes": 258,
+  "url": "https://x.com/edzitron/status/2122025126229336097"
+ },
+ {
+  "handle": "edzitron",
+  "id": "2122023641420357924",
+  "at": "2026-11-15T17:47:16.000Z",
+  "text": "Another moment of genius from Mr. Dogshit https://t.co/1iakpWyolh",
+  "likes": 2466,
+  "url": "https://x.com/edzitron/status/2122023641420357924"
+ },
+ {
+  "handle": "GavinSBaker",
+  "id": "2122024401038364876",
+  "at": "2026-11-15T17:50:17.000Z",
+  "text": "Important. Would be awesome to see BAAJA pass.\n\nWould streamline the permitting for solar, wind, grid infrastructure, energy, data centers, etc. https://t.co/AcagWrjecK",
+  "likes": 575,
+  "url": "https://x.com/GavinSBaker/status/2122024401038364876"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2122359273510625551",
+  "at": "2026-11-16T16:00:56.000Z",
+  "text": "China's single women are not interested in marriage. And China already has too few of them. https://t.co/WGZxAj8fk8",
+  "likes": 1,
+  "url": "https://x.com/drorpoleg/status/2122359273510625551"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2122343816157954421",
+  "at": "2026-11-16T14:59:31.000Z",
+  "text": "Alice in Wonderland https://t.co/WVIhKxdW0u",
+  "likes": 0,
+  "url": "https://x.com/drorpoleg/status/2122343816157954421"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2122319351306989682",
+  "at": "2026-11-16T13:22:18.000Z",
+  "text": "Cities are shaped by our choices. https://t.co/fPcKT6nf7i",
+  "likes": 2,
+  "url": "https://x.com/drorpoleg/status/2122319351306989682"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2122120040199930056",
+  "at": "2026-11-16T00:10:19.000Z",
+  "text": "There is a second-order effect to this: the automation of coffee-making made Starbucks necessary. Generic coffee “died” and coffee as a cultural and social experience was born. https://t.co/1wmljvYhKp",
+  "likes": 8,
+  "url": "https://x.com/drorpoleg/status/2122120040199930056"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2122060273829793924",
+  "at": "2026-11-15T20:12:49.000Z",
+  "text": "It's worth considering why the CCP's public position is to \"not allow\" H200S to be sold in China while its de facto position is to ensure they are available in China. This posture aims to promote the talking point that \"US policy errors are pushing China to build its own.\" https://t.co/RX7mZ7fboU",
+  "likes": 9,
+  "url": "https://x.com/drorpoleg/status/2122060273829793924"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2122029696212713638",
+  "at": "2026-11-15T18:11:19.000Z",
+  "text": "AI doesn't need a data center. https://t.co/SMt9DnKGqE",
+  "likes": 0,
+  "url": "https://x.com/drorpoleg/status/2122029696212713638"
+ },
+ {
+  "handle": "drorpoleg",
+  "id": "2122009186951192877",
+  "at": "2026-11-15T16:49:49.000Z",
+  "text": "Cities are shaped by each era's dominant technology. https://t.co/aAsQ4xL18T",
+  "likes": 6,
+  "url": "https://x.com/drorpoleg/status/2122009186951192877"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122353436150964682",
+  "at": "2026-11-16T15:37:45.000Z",
+  "text": "We are so close of getting Jensen back: Trump says he \"wouldn't mind\" seeing Jensen Huang back as Nvidia CEO, the FT reports. \n\n\"I think he learned a big lesson,\" he told reporters Monday before leaving for Asia. \n\nHe also said he doesn't know if Alice Huang is a Chinese spy, and https://t.co/VUL59dbZyK https://t.co/kKamA8JW9i",
+  "likes": 129,
+  "url": "https://x.com/kimmonismus/status/2122353436150964682"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122336197364330852",
+  "at": "2026-11-16T14:29:15.000Z",
+  "text": "https://t.co/HXHYxCKLoI",
+  "likes": 12,
+  "url": "https://x.com/kimmonismus/status/2122336197364330852"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122336149947752624",
+  "at": "2026-11-16T14:29:03.000Z",
+  "text": "6 months ago, this would have been big news. Now we're almost used to it: Claude helped uncover hundreds of theorems nobody knew Kurt Gödel had proved, The Guardian reports.\n\nGödel left 1,009 pages of notes from the 1940s in an old German shorthand. Logician Jan von Plato managed https://t.co/OxSf3mFJBU",
+  "likes": 533,
+  "url": "https://x.com/kimmonismus/status/2122336149947752624"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122325062531604670",
+  "at": "2026-11-16T13:45:00.000Z",
+  "text": "\"Silicon 2\" reportedly surfaced in Devin. @chetaslua suspects an Anthropic model. \n\nThe entry sits among Claude models and uses $10/$50 placeholder pricing matching Fable 5.1\n\nI’ve been wondering for a while now why Anthropic named their latest Fable model \"5.2\" instead of using",
+  "likes": 347,
+  "url": "https://x.com/kimmonismus/status/2122325062531604670"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122294330778132787",
+  "at": "2026-11-16T11:42:53.000Z",
+  "text": "Qwen 4 is not a good release. \n\nAlthough it appears on paper to be on par with Opus 5.5 in key benchmarks, the AA Index paints a completely different picture.\n\nThe fact that Qwen is being cut off from distillation seems to illustrate this failure. https://t.co/pg6HrinyoO https://t.co/RsuqCBoQs9",
+  "likes": 1055,
+  "url": "https://x.com/kimmonismus/status/2122294330778132787"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122164038293405743",
+  "at": "2026-11-16T03:05:09.000Z",
+  "text": "Source 2 https://t.co/5GBNVEOSpU",
+  "likes": 19,
+  "url": "https://x.com/kimmonismus/status/2122164038293405743"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122163982656328101",
+  "at": "2026-11-16T03:04:56.000Z",
+  "text": "Source 1 https://t.co/5Ck6n9c1fT",
+  "likes": 35,
+  "url": "https://x.com/kimmonismus/status/2122163982656328101"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122163929736794622",
+  "at": "2026-11-16T03:04:43.000Z",
+  "text": "Now we are talking: An Anthropic researcher says broadly superhuman AI could be just 1.3 years away. https://t.co/3E7W4xlzw0",
+  "likes": 1912,
+  "url": "https://x.com/kimmonismus/status/2122163929736794622"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122158282622324913",
+  "at": "2026-11-16T02:42:17.000Z",
+  "text": "Interesting release: Qwen has launched Qwen4-Max, their new AI model with native vision and a 1 million-token context window. \n\nOutperforms Opus 5.5 and GPT-6.1 Sol/Astra on relevant benchmarks bot lacks behind Fable 5.2. But as we know, numbers and real world use are two https://t.co/regOpZlkkn https://t.co/Ok2cdscReS",
+  "likes": 819,
+  "url": "https://x.com/kimmonismus/status/2122158282622324913"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122133752256049463",
+  "at": "2026-11-16T01:04:48.000Z",
+  "text": "Let’s freaking go: Ousted Nvidia CEO Jensen Huang is discussing a possible comeback to the company just days after the board of directors pushed him out, the Financial Times reported.\n\nWe are so back! https://t.co/mVhV8ZLjs6 https://t.co/B8cGllvCDp",
+  "likes": 714,
+  "url": "https://x.com/kimmonismus/status/2122133752256049463"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122086237813244199",
+  "at": "2026-11-15T21:56:00.000Z",
+  "text": "Another thought why no GPT-6.2 has been released yet: OpenAI is prioritizing scarce compute for research over serving new models, especially if rapid progress makes intermediate checkpoints less compelling to release. \n\nSafety, product readiness, and costs may also affect release",
+  "likes": 921,
+  "url": "https://x.com/kimmonismus/status/2122086237813244199"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122050272537231542",
+  "at": "2026-11-15T19:33:05.000Z",
+  "text": "Source unslop: https://t.co/PXqeUMvayB",
+  "likes": 21,
+  "url": "https://x.com/kimmonismus/status/2122050272537231542"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2122050260445118742",
+  "at": "2026-11-15T19:33:02.000Z",
+  "text": "AI is changing scientific research. We already know that. But those numbers are interesting: More than a third (38%) of new arXiv papers now read as AI-written, according to a scan of 13,500 papers from 2021 to 2026.\n\nBefore ChatGPT, the detector flagged just 0.4% (that's where https://t.co/s3xjGj4oPr",
+  "likes": 422,
+  "url": "https://x.com/kimmonismus/status/2122050260445118742"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2121972762663358967",
+  "at": "2026-11-15T14:25:05.000Z",
+  "text": "ScienceAlert: https://t.co/eCvWRFEuWf",
+  "likes": 28,
+  "url": "https://x.com/kimmonismus/status/2121972762663358967"
+ },
+ {
+  "handle": "kimmonismus",
+  "id": "2121972750550262164",
+  "at": "2026-11-15T14:25:02.000Z",
+  "text": "Interesting science find of the day: Researchers in China built an electric comb that regrew almost all the lost hair in mice within a month.\n\nThe \"Detangle\" comb sends electric pulses into the hair follicles and uses the same pulses to push gene therapies deep into the skin. https://t.co/bTgw3Ng734",
+  "likes": 1242,
+  "url": "https://x.com/kimmonismus/status/2121972750550262164"
  }
 ]

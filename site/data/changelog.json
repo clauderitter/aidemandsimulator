@@ -1,5 +1,50 @@
 [
  {
+  "date": "2026-11-16",
+  "source": "https://stratechery.com/2026/obituaries/",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.7,
+  "reason": "Thompson's three-stage funding narrative (cash flow, then debt, now equity) is qualitative and arguably cuts both ways — equity-funded builds carry no refinancing cliff — so it does not establish that the build pace now flexes more sharply with market conditions than the quantified 70%-debt basis already recorded."
+ },
+ {
+  "date": "2026-11-16",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-16).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-16",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +22%",
+  "new": "+44% vs +23%",
+  "reason": "Observed from source (2026-11-16).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-16",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.0%",
+  "new": "7.5%",
+  "reason": "Observed from source (2026-11-16).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-16",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "320bp",
+  "new": "323bp",
+  "reason": "Observed from source (2026-11-13).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
   "date": "2026-11-15",
   "source": "https://www.siliconcontinent.com/p/are-we-approaching-an-intelligence",
   "kind": "accepted",
@@ -3557,50 +3602,5 @@
   "new": "43%",
   "reason": "Observed from source (2026-10-07).",
   "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-07",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+45% vs +24%",
-  "new": "+45% vs +24%",
-  "reason": "Observed from source (2026-10-07).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-07",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.2%",
-  "new": "6.2%",
-  "reason": "Observed from source (2026-10-07).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-07",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.5",
-  "new": "15.0",
-  "reason": "Observed from source (2026-10-06).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-07",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "310bp",
-  "new": "312bp",
-  "reason": "Observed from source (2026-10-05).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-07",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-05).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
  }
 ]
