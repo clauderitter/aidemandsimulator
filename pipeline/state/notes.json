@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-11-02",
-  "notes": [
-   "JPMorgan Private Bank (Oct 23 note, via secondary report): $266B AI-linked bond issuance YTD 2026 vs $139B in all of 2025, of which $182B from hyperscalers - broader 'AI-linked' scope and a different hyperscaler universe, so not the same measure; not proposed.",
-   "Goldman Sachs Research: $194B hyperscaler debt issuance YTD, ~$500B AI-related - dated late July/August, not newer than the current $225B reading.",
-   "No updated S&P Global count (hyperscalers plus related entities like Nvidia) found beyond the $225B as-of 2026-07-31 figure in the Fortune source; search quota exhausted before this could be confirmed.",
-   "orgX growth_calibration: the ledger is 10 weeks over 0.05 with slack (util0 43%), so the handle is open, but today's Ramp/S-1 read (Q4-to-date business spend +15-25% QoQ vs +46.7% in Q3) says observed growth is converging down toward the modelled x2.4 a year; raising orgX now would chase a gap that is closing on its own, and 1.4 was already rejected on 31 Oct. Revisit next week.",
-   " boom and takeoff are both flagged OUT OF RANGE, but I found no fresh fetchable source from Dwarkesh Patel / Gavin Baker or the AI Futures Project today to re-fit overrides against; re-fitting without a quotable restatement would be my numbers, not theirs. Flagged for the next run.",
-   "Anthropic's revised S-1 (2 Nov, CNBC) reports ~$17B Q3 revenue, $33.24B for nine months and $895.4B of purchase commitments against the $800B+ cited in the contagion/credit scenario text; web_fetch budget was exhausted before I could verify a body quote containing those figures, so no contagion/credit scenario_update this week.",
-   "SemiAnalysis 'Datacenters 2027: The Year of Acceleration' (19 Oct): +50 GW global in 2027, 60 GW under construction, >24 GW in advanced construction, $1.3T of lease contracts YTD - all-datacentre rather than frontier-lab GW, and pipe was already calibrated on 19 Oct, so no pipe or K0 move.",
-   "SemiAnalysis GDPx (2 Nov): new agentic benchmark, 206 tasks across 11 high-value domains, best model scores 12%. Capability evidence but not a METR 80%-success time horizon, so it cannot move H0 or D0 under metr_latest/metr_doubling. H0 remains a stale March 2026 reading and is the weakest input in the model right now.",
-   "Weekly re-baseline: R0_epoch proposed at 137 (Anthropic ~$67B annualised + OpenAI ~$70B); R0x 15, H0 8.34, D0 4.2, K0 14.3, pipe 32, train 60, capexGW 54, sh_rd 20, sh_swe 20, sh_trd 15 all re-derive to within their per-run limits of current values on today's evidence - no new usage-share, cost-per-GW, compute-split or frontier-capacity figures surfaced.",
-   "Amazon 3Q'26 guidance (AWS to grow over 40% in each of 2027 and 2028, capex ~$220B rising) would support a supercycle scenario_update, but that scenario's overrides are relative ('=x:1.6', '=util0:1.0') and the proposal schema accepts only numeric override values, so an update would silently convert them to absolutes. Left alone.",
-   "Ed Zitron, Gavin Baker, Tunguz 'Four Questions of AI' and the 9fin wraps read today: commentary without a new quantified parameter claim. No proposal.",
-   "No prompt-injection attempts noticed in any feed, X post or page read today."
-  ]
- },
- {
   "date": "2026-11-03",
   "notes": [
    "Goldman Sachs Exchanges (~Aug 2026) puts hyperscaler 2026 issuance at $194B and total AI-related debt near $500B — different estimate basis and older than the October reading, so not proposed.",
@@ -271,6 +254,19 @@
    "Anthropic 'Barclays scales Claude' and the OpenAI healthcare/computer-use releases were not fetched in time; if the Barclays note carries a seat or workload count it is enterprise-adoption (k_oth / enterprise scenario) evidence for next run.",
    "EA Forum 'METR Time Horizon 2.0' post is a four-month-old satire piece benchmarking Microsoft Excel as an agent; ignored, and noted so a later run does not mistake it for a METR measurement.",
    "No instructions addressed to the pipeline were found embedded in any feed item, X post or fetched page today."
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "notes": [
+   "Jensen Huang's resignation over the Megaspeed smuggling affair (NVIDIA press release, Reuters/WSJ/CNBC via Zitron) is clearly a real 2026Q4 shock, but I could not verify a quantitative market drawdown or capex-cut size to attach to an event proposal (VIX 22.9, HY OAS 334bp are mild, and an earlier 2026Q4 event proposal was rejected on 14 Nov). Flagged for the weekly review instead.",
+   "SemiAnalysis (17 Nov): claim of more than 1.5 GW of chips in China 'that shouldn't be there' - capacity-adjacent, but it is non-frontier, non-US-lab capacity and does not move K0 or pipe.",
+   "Dwarkesh x Paul Christiano (16 Nov): 1-in-3 chance of government-overthrow-capable superintelligence within 12 months. Named, quantified and high-reach, but it is a takeover-risk forecast, not a token-demand or compute view, and the fast-capability case is already carried by 'takeoff'; rotating slots are better spent elsewhere.",
+   "METR note 'Measuring alignment eval tells' (16 Nov) and the METR-OpenAI alignment pilot contain no new 80%-horizon or doubling-time measurement, so no metr_latest/metr_doubling move.",
+   "Azeem Azhar 'What Anthropic is really listing' (16 Nov) and Paul Kedrosky's 17 Nov brief are paywalled past the first section; the readable part carried no usable numbers.",
+   "Anthropic's listing is two days out (19 Nov); its pricing and any updated run-rate disclosure would be a primary_report candidate next run, not today.",
+   "Epoch AI revenue pages could not be fetched (the data-centre directory item was the only reachable Epoch URL), and the search budget was exhausted, so R0_epoch/R0x were left to the collector.",
+   "No prompt-injection or instruction-like text was found in any fetched page or post this run."
   ]
  }
 ]

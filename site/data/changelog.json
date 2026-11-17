@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-11-17",
+  "source": "https://www.databricks.com/blog/introducing-databricks-ai-index-state-enterprise-ai-tokenomics",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://developers.databricks.com/ai-index",
+  "reason": "The Databricks AI Index is a weekly-updated production-traffic panel across 10,000+ enterprises covering external provider traffic, an independent second source alongside the Vercel gateway for migration and price inputs, and the primary data behind posts the model already tracks."
+ },
+ {
+  "date": "2026-11-17",
+  "source": "https://x.com/edzitron/status/2122725063648559135",
+  "kind": "rejected",
+  "target": "scenario:contagion",
+  "old": null,
+  "new": "Zitron, 17 Nov 2026: Huang's resignation over the Megaspeed affair removes the funding channel - NVIDIA equity stakes were 27% of 2026 global VC - so the circle breaks earlier; shock cluster pulled from 2027Q4 to 2027Q2.",
+  "reason": "The evidence is a single X post whose quote supports only the 27%-of-VC sizing assertion, not the resignation, withdrawal of vendor financing, or the two-quarter pull-forward of the shock cluster that the update turns on."
+ },
+ {
+  "date": "2026-11-17",
+  "source": "https://tomtunguz.com/two-pricing-strategies-in-enterprise-ai/",
+  "kind": "accepted",
+  "target": "scenario:price",
+  "old": "updated",
+  "new": "updated",
+  "reason": "The scenario's named proponent has published a revision whose numbers are all in the source — a 90% cumulative Luna cut, GPT-6 Luna at $0.10/M, 81% of low-end and 47% of mid-tier volume, open-weight share stalled at 31% — which strengthens the price leg while justifying the lower substitution override."
+ },
+ {
+  "date": "2026-11-17",
+  "source": "https://tomtunguz.com/two-pricing-strategies-in-enterprise-ai/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.5,
+  "reason": "The quoted sentence describes how Anthropic and OpenAI split token volume by price tier, not observed segment spend growth against the model's implied path, so it is share evidence rather than the growth calibration the rule requires."
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "accepted",
+  "target": "subst",
+  "old": 30,
+  "new": 27,
+  "reason": "A second production-traffic panel (Databricks Unity Gateway, 10,000+ enterprises, weekly through 2 Nov, published 16 Nov) shows open-weight token share stalling at 31% exactly as frontier cheap tiers cut prices, which is direct and fresher evidence on the migration mechanism, so the substitution share edges down to 27 within the drift window. Rule migration_share; “Open-weight token share climbed every week from 7% in July to 33% in September, then stalled at 31% in the same week GPT-6 Luna & Sol cut pr”",
+  "source": "https://tomtunguz.com/two-pricing-strategies-in-enterprise-ai/"
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-17).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +23%",
+  "new": "+44% vs +23%",
+  "reason": "Observed from source (2026-11-17).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.5%",
+  "new": "7.8%",
+  "reason": "Observed from source (2026-11-17).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "19.3",
+  "new": "22.9",
+  "reason": "Observed from source (2026-11-16).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "323bp",
+  "new": "334bp",
+  "reason": "Observed from source (2026-11-16).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-13).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-17",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.10%",
+  "new": "5.15%",
+  "reason": "Observed from source (2026-11-13).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-16",
   "source": "https://stratechery.com/2026/obituaries/",
   "kind": "rejected",
@@ -3494,113 +3602,5 @@
   "old": null,
   "new": 20,
   "reason": "A third-party X post about halving cache-read pricing on one Anthropic model is too narrow and too secondary to stand as a 20% realised price shock across the frontier basket for the quarter."
- },
- {
-  "date": "2026-10-08",
-  "source": "https://openai.com/index/gpt-6-for-everyone",
-  "kind": "rejected",
-  "target": "event:2026Q4",
-  "old": null,
-  "new": 1,
-  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://openai.com/index/gpt-6-for-everyone."
- },
- {
-  "date": "2026-10-08",
-  "source": "https://tomtunguz.com/what-if-the-models-are-commoditized/",
-  "kind": "rejected",
-  "target": "subst",
-  "old": null,
-  "new": 30,
-  "reason": "Tunguz's 7 Oct restatement of the same 53%-to-mid-40s frontier token-share figure is already reflected in the price scenario's 23 September text, so it is a repeat rather than new evidence and would push subst to its drift ceiling on a datapoint already counted."
- },
- {
-  "date": "2026-10-08",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "43%",
-  "new": "43%",
-  "reason": "Observed from source (2026-10-08).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-08",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+45% vs +24%",
-  "new": "+45% vs +24%",
-  "reason": "Observed from source (2026-10-08).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-08",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.2%",
-  "new": "6.2%",
-  "reason": "Observed from source (2026-10-08).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-08",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.0",
-  "new": "15.1",
-  "reason": "Observed from source (2026-10-07).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-08",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "312bp",
-  "new": "303bp",
-  "reason": "Observed from source (2026-10-06).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-08",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-06).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-08",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.31%",
-  "new": "5.27%",
-  "reason": "Observed from source (2026-10-06).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-07",
-  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.25,
-  "reason": "The fresh Epoch insight measures coding-agent spend by OpenAI's own researchers — one lab's internal usage — which is not evidence that organic demand growth across every segment is running ahead of the model, and with the observed-vs-modelled gap narrowing for three straight weeks the default is to leave orgX at 1.2."
- },
- {
-  "date": "2026-10-07",
-  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
-  "kind": "rejected",
-  "target": "k_rd",
-  "old": null,
-  "new": 0.8,
-  "reason": "Gate: monthly drift cap reached for k_rd (at most ±0.1 around 0.6 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-10-07",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "43%",
-  "new": "43%",
-  "reason": "Observed from source (2026-10-07).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
  }
 ]

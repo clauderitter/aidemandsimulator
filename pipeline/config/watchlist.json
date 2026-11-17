@@ -247,6 +247,13 @@
    "url": "https://www.siliconcontinent.com/feed",
    "kind": "rss",
    "added": "2026-11-15"
+  },
+  {
+   "name": "Databricks AI Index (Unity Gateway enterprise token/spend sh",
+   "url": "https://developers.databricks.com/ai-index",
+   "kind": "html",
+   "match": "/ai-index",
+   "added": "2026-11-17"
   }
  ],
  "x_handles": [
