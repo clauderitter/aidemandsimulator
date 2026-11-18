@@ -254,6 +254,13 @@
    "kind": "html",
    "match": "/ai-index",
    "added": "2026-11-17"
+  },
+  {
+   "name": "METR blog — time-horizon updates",
+   "url": "https://metr.org/blog",
+   "kind": "html",
+   "match": "/blog",
+   "added": "2026-11-18"
   }
  ],
  "x_handles": [

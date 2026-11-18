@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-11-03",
-  "notes": [
-   "Goldman Sachs Exchanges (~Aug 2026) puts hyperscaler 2026 issuance at $194B and total AI-related debt near $500B — different estimate basis and older than the October reading, so not proposed.",
-   "Cryptobriefing/Cointelegraph $159B record figure is from ~June 2026, older than the current gauge.",
-   "Original Fortune source not re-fetched for an update; web tool budget exhausted before I could confirm whether a November year-to-date total exists covering the early-November Meta, Oracle and Alphabet bond sales — that total, when published, should supersede this reading.",
-   "AI-linked CDS spreads/volumes in the same article are a different measure and were not used.",
-   "Tool budget: web_fetch and web_search were exhausted part-way through the run (repeated 'Server tool use limit exceeded'); several leads below could not be verified to a quotable primary page, so they are notes rather than proposals.",
-   "Ramp 'Google's models lag in agentic AI usage' (2 Nov 2026, ramp.com/data/googles-models-lag-in-agentic-ai-usage): only a qualitative 'less than half' on cached-token share; no usable share number for sh_* keys.",
-   "Ramp AI Index also shows Anthropic at 60.5% and OpenAI 35.1% of business token spend (week ending 23 Oct) with Google 1.9% and DeepSeek 0.2% of volume - a surface that contradicts the Vercel-gateway basis for subst=30, but Ramp cannot see open-weight models served via Bedrock/Vertex/self-hosting, so I did not propose a subst move.",
-   "token_index gauge ($0.56/M tok, as of 2026-10-23) is exactly the Ramp blended price I found; no newer reading, so not proposed.",
-   "Considered an event:2026Q4 'price' shock (~21-27% effective price decline in a month on Ramp's blended $0.76 -> $0.56) but much of it is mix shift toward Anthropic, and a similar event proposal for 2026Q3 was rejected on 1 Nov; left for the maintainer.",
-   "growth_calibration / orgX: ledger is 10 consecutive weeks above 0.05 and utilisation is 43% (slack, handle = orgX), but the gap is now 12pts = ~0.12 log/quarter and orgX at its +0.1 cap (1.3 -> 1.4) lifts modelled quarter-zero growth by only ~0.017-0.04 log/quarter, i.e. under a quarter of the gap; the rule says not to propose in that case. The gap has also halved since W36 and today's collector revised R0_epoch down 137 -> 118.8.",
-   "SemiAnalysis memory thread (3 Nov: Micron 80.7%, SK hynix 79.7% operating margins; shortage through 2030) argues capexGW is drifting up, but gives no all-in $/GW figure, which cost_per_gw requires.",
-   "SemiAnalysis Crusoe switchgear thread (2 Nov: 12-18 month switchgear/transformer lead times, ~8 weeks engineering, Crusoe cutting its own lead times 40% and LV gear from 100 to 22 weeks) points both ways on 'lead'; net direction unclear, not proposed.",
-   "rampconc scenario: Ramp's Q4 Anthropic estimate (15-25% QoQ vs 47%) is newer than the 2 Nov update, but it reaches me only via Ed Zitron's relay, not a Kharazian publication I could fetch; used as supporting evidence for k_swe instead of a scenario_update.",
-   "MBI Deep Dives Anthropic S-1 piece is already encoded as the 'trainheavy' scenario (added 1 Nov); Alphabet/Meta/Spotify 3Q26 posts carry no frontier GW or run-rate numbers I could verify.",
-   "No prompt-injection attempts spotted in the fetched pages or feed items this run; Ramp and Kedrosky pages contained only ordinary marketing boilerplate."
-  ]
- },
- {
   "date": "2026-11-04",
   "notes": [
    "aaii: AAII's own sentiment page still shows week ending 10/28/2026 (bullish 37.8% / bearish 41.4%), identical to the current gauge - the survey week runs Thu-Wed, so the next reading posts after today. No newer reading.",
@@ -267,6 +247,23 @@
    "Anthropic's listing is two days out (19 Nov); its pricing and any updated run-rate disclosure would be a primary_report candidate next run, not today.",
    "Epoch AI revenue pages could not be fetched (the data-centre directory item was the only reachable Epoch URL), and the search budget was exhausted, so R0_epoch/R0x were left to the collector.",
    "No prompt-injection or instruction-like text was found in any fetched page or post this run."
+  ]
+ },
+ {
+  "date": "2026-11-18",
+  "notes": [
+   "aaii — no newer reading: AAII's Sentiment Survey Latest Archive (fetched 2026-11-18) still has 'AAII Sentiment Survey: Optimism Falters', November 12 2026, as the most recent entry, i.e. the same survey week (ended 2026-11-11) already on the tile at 30.8% bullish / 51.4% bearish; next weekly release expected Thu 2026-11-19.",
+   "aaii — cross-check: a 2026-11-12 syndicated republication of the same AAII release repeats bullish 30.8%, bearish 51.4% (40th straight week unusually high), neutral 17.8%; confirms no update, so no gauge proposal filed.",
+   "Search budget was exhausted mid-run (web_search returned 'limit exceeded'); several leads below could not be verified and are flagged for the next run.",
+   "orgX calibration move (fast lane open, 12 weeks, gap 16pts, util 60% = slack): identical 1.4->1.5 proposal was rejected on 2026-11-17 and I have no new evidence to justify re-proposing it one day later; left for the weekly review.",
+   "Nvidia Q3 FY2027 press release (SEC 8-K, 17 Nov 2026): revenue $115.8B (+103% y/y), Data Center $107.6B (+110%), Q4 guide $130B with no China Data Center compute revenue assumed. Big, primary, but no GW, no capex-per-GW and no frontier-lab split, so it does not fit capacity_estimate, cost_per_gw or revenue_per_gw without my own arithmetic.",
+   "Nvidia halting licensed Hopper/H200 shipments to China ($2.4B sold there last quarter) is a real 2026Q4 regulatory/trade event, but I could not size it in the 'reg' shock's own units from a primary source.",
+   "SemiAnalysis (17 Nov) on Microsoft capex slipping into 1H2027 and Nebius missing its YE2026 ARR guide: directionally a delivery slip, but no GW or months quoted, so no defensible move on pipe or lead.",
+   "Stratechery's Nvidia earnings piece and the 9fin 'Anthropic IG or junk?' rating piece are paywalled; 9fin would be the right source for a fin (financing_evidence) move once the Anthropic IPO prices.",
+   "Databricks AI Index also shows Anthropic at ~68.8% of proprietary tokens and Opus 5.5 at 37.9% of proprietary tokens within six weeks, plus cost-per-completed-task benchmarks (GLM 5.3 Flash $0.178 vs Opus 5.5 $1.616 at the same 89.1 score). Interesting for the price scenario but it is model-mix, not task-mix, so no usage_share (sh_*) move.",
+   "boom scenario is OUT OF RANGE (2027Q4 $569B vs $600-1500B) and needs re-fitted overrides, but I found no revised numbers from Patel/Baker and could not fetch their source pages within budget — flagged for re-fit.",
+   "No new METR 80%-horizon reading found for Opus 5.5 / Fable 5.2 / GPT-6.2 before the search budget ran out; H0 and D0 left untouched (hence the METR watchlist add).",
+   "No prompt-injection or instruction-like text was found in any feed item, X post or page read today."
   ]
  }
 ]

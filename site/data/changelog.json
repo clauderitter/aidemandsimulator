@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-11-18",
+  "source": "https://metr.org/blog/2026-01-29-time-horizon-1-1/",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://metr.org/blog",
+  "reason": "METR is the only admissible source for the horizon and doubling-time parameters, and the linked post confirms the blog is where that series is published, so watching it replaces second-hand pickup with the primary feed."
+ },
+ {
+  "date": "2026-11-18",
+  "source": "https://fourweekmba.com/ai-open-weight-ai-hits-31-of-enterprise-tokens-deepseek-rises/",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 25,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://fourweekmba.com/ai-open-weight-ai-hits-31-of-enterprise-token."
+ },
+ {
+  "date": "2026-11-18",
+  "source": "https://x.com/EpochAIResearch/status/2122762380463735010",
+  "kind": "accepted",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": "release 1",
+  "reason": "Epoch's own pre-launch testing puts GPT-6.2 Astra at ECI 174, level with Fable 5.2 and above the pre-Astra reasoning trend, which supports recording a frontier capability release of size 1 in the current quarter."
+ },
+ {
+  "date": "2026-11-18",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-18).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-18",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +23%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-18).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-18",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.8%",
+  "new": "8.0%",
+  "reason": "Observed from source (2026-11-18).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-18",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "22.9",
+  "new": "25.5",
+  "reason": "Observed from source (2026-11-17).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-18",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "334bp",
+  "new": "343bp",
+  "reason": "Observed from source (2026-11-17).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-18",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-16).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-18",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.15%",
+  "new": "5.12%",
+  "reason": "Observed from source (2026-11-16).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-17",
   "source": "https://www.databricks.com/blog/introducing-databricks-ai-index-state-enterprise-ai-tokenomics",
   "kind": "accepted",
@@ -3512,95 +3602,5 @@
   "new": "37%",
   "reason": "Observed from source (2026-10-09).",
   "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+45% vs +24%",
-  "new": "+40% vs +24%",
-  "reason": "Observed from source (2026-10-09).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "R0",
-  "old": 153.8,
-  "new": 133.8,
-  "reason": "Derived: Epoch disclosed sum 118.8 + undisclosed allowance 15.",
-  "source": ""
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "R0_epoch",
-  "old": 138.8,
-  "new": 118.8,
-  "reason": "Rule: sum of latest full-company run-rates in Epoch’s dataset: Anthropic $65B (2026-07-31), OpenAI $50B (2026-09-30), Z.ai (Zhipu) $2B (2026-08-31), DeepSeek $1B (2026-09-24), MiniMax $1B (2026-08-26), xAI $0B (2025-09-30).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.2%",
-  "new": "6.2%",
-  "reason": "Observed from source (2026-10-09).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.1",
-  "new": "15.4",
-  "reason": "Observed from source (2026-10-08).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "303bp",
-  "new": "315bp",
-  "reason": "Observed from source (2026-10-08).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-07).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.27%",
-  "new": "5.28%",
-  "reason": "Observed from source (2026-10-07).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-08",
-  "source": "https://tomtunguz.com/what-if-the-models-are-commoditized/",
-  "kind": "rejected",
-  "target": "scenario:price",
-  "old": null,
-  "new": "Tunguz 7 Oct revision: effective prices -41% to $0.68/M while usage +50% since July, frontier token share 53%→mid-40s, OpenAI back near a ~$70B run-rate on price cuts and reselling",
-  "reason": "The refresh of the Tunguz scenario repeats the frontier-share figure already in the current text and adds claims the source does not contain (a ~$70B OpenAI run-rate, Haiku 5.5 list prices), while the quoted evidence — usage up 50% against prices down 41% — does not support hardening the substitution override from 52 to 55."
- },
- {
-  "date": "2026-10-08",
-  "source": "https://x.com/kimmonismus/status/2107895800252579841",
-  "kind": "rejected",
-  "target": "event:2026Q4",
-  "old": null,
-  "new": 20,
-  "reason": "A third-party X post about halving cache-read pricing on one Anthropic model is too narrow and too secondary to stand as a 20% realised price shock across the frontier basket for the quarter."
  }
 ]
