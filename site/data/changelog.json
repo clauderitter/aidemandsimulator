@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-11-19",
+  "source": "https://x.com/arakharazian/status/2123402698766655877",
+  "kind": "accepted",
+  "target": "scenario:rampconc",
+  "old": "updated",
+  "new": "updated",
+  "reason": "Same proponent with a fresher read of his own panel justifies refreshing the thesis and trimming orgX to neutral, but the wording is corrected because the -6.3% spend figure is the whole Ramp panel, not the concentrated 1% cohort, and the loop-gain and contagion settings are left untouched."
+ },
+ {
+  "date": "2026-11-19",
+  "source": "https://x.com/arakharazian/status/2123402698766655877",
+  "kind": "accepted",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": "price 21",
+  "reason": "Ramp's mid-November index is a reported, quarter-zero measurement of realised token prices falling 21.2% in six weeks with volumes up only 1.5%, which supports a 21% price event in 2026Q4 rather than a forecast."
+ },
+ {
+  "date": "2026-11-19",
+  "source": "https://x.com/EpochAIResearch/status/2123159931037860107",
+  "kind": "rejected",
+  "target": "train",
+  "old": null,
+  "new": 74,
+  "reason": "Gate: monthly drift cap reached for train (at most ±15 around 50 in any 30 days); the evidence is noted but the input holds."
+ },
+ {
+  "date": "2026-11-19",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-19).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-19",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-19).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-19",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "8.0%",
+  "new": "7.8%",
+  "reason": "Observed from source (2026-11-19).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-19",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "25.5",
+  "new": "24.6",
+  "reason": "Observed from source (2026-11-18).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-19",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "343bp",
+  "new": "347bp",
+  "reason": "Observed from source (2026-11-18).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-19",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-17).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-19",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.12%",
+  "new": "5.10%",
+  "reason": "Observed from source (2026-11-17).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-18",
   "source": "https://metr.org/blog/2026-01-29-time-horizon-1-1/",
   "kind": "accepted",
@@ -3510,97 +3600,5 @@
   "old": null,
   "new": 20,
   "reason": "A single Ramp post about where enterprise AI dollars go measures spend share, not the share of bounded token volume that has migrated off frontier endpoints, and the same class of evidence was rejected for this input on 23 Sep and 2 Oct."
- },
- {
-  "date": "2026-10-10",
-  "source": "https://www.aaii.com/sentimentsurvey",
-  "kind": "accepted",
-  "target": "gauge:aaii",
-  "old": "34.6% / 46.5%",
-  "new": "40.3% / 39.0%",
-  "reason": "AAII's own survey page reports the identical measure one week fresher (week ending 7 Oct: bulls 40.3%, bears 39.0%, spread +1.3pp), so the gauge refreshes from its primary source."
- },
- {
-  "date": "2026-10-10",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-10).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-10",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +24%",
-  "new": "+40% vs +25%",
-  "reason": "Observed from source (2026-10-10).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-10",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.2%",
-  "new": "6.0%",
-  "reason": "Observed from source (2026-10-10).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-10",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.4",
-  "new": "14.8",
-  "reason": "Observed from source (2026-10-09).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-10",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-08).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-10",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.28%",
-  "new": "5.22%",
-  "reason": "Observed from source (2026-10-08).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-09",
-  "kind": "accepted",
-  "target": "orgX",
-  "old": 1.2,
-  "new": 1.3,
-  "reason": "Fresh Ramp payments data showing business token spend on OpenAI doubling since June (~5x annualised against the model's implied 2.4x) is independent, demand-side evidence of realised growth outrunning the model, distinct from the stale Epoch run-rate figures rejected earlier, so the capped +0.1 calibration move stands. Rule growth_calibration; “OpenAI has grown its business tremendously over the last quarter (token spend by businesses has doubled since June). But the latest news on ” Capped: target 1.3, continues next run.",
-  "source": "https://x.com/arakharazian/status/2108257361580392570",
-  "capped": true,
-  "target_value": 1.3
- },
- {
-  "date": "2026-10-09",
-  "source": "https://www.axios.com/2026/10/08/openai-50-billion-arr-anthropic-revenue-accounting",
-  "kind": "rejected",
-  "target": "R0x",
-  "old": null,
-  "new": 22.5,
-  "reason": "Gate: monthly drift cap reached for R0x (at most ±5 around 10 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-10-09",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "43%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-09).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
  }
 ]

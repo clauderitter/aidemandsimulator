@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-11-04",
-  "notes": [
-   "aaii: AAII's own sentiment page still shows week ending 10/28/2026 (bullish 37.8% / bearish 41.4%), identical to the current gauge - the survey week runs Thu-Wed, so the next reading posts after today. No newer reading.",
-   "bonds: skipped Goldman Sachs' ~$500B 'AI-related debt issuance' and its $194B hyperscaler figure - older and/or a broader measure.",
-   "bonds: skipped CPR AM's ~$223B (23 Sep) and Crypto Briefing's $244B - both older than the 3 Nov $271B total.",
-   "bonds: skipped @junkbondinvest's '2026 YTD: $182 billion' - US-only issuance, not the global measure the gauge tracks.",
-   "orgX growth_calibration: ledger is 10 weeks over 0.05 (gap now 12pts, down from 26) and util0 43% says the handle is orgX, but at its +-0.1 cap orgX plausibly closes well under a quarter of a ~0.113 log/quarter gap, and the freshest primary read (Anthropic Q3 +47% QoQ, Ramp pointing to 15-25% in Q4) says observed growth is decelerating toward the model. Left for the weekly review as a structural gap.",
-   "lead 5 -> 6 (delivery_timeline): Tunguz footnote cites Goldman at 50-60% on-time datacentre delivery and JPMorgan at >60% of 2027 capacity not yet under construction, but neither is a signing-to-first-delivery time, and it would contradict the pipe move in the same run.",
-   "capexGW: Zitron/Westside Construction reports US datacentre starts -63% August to September ($25.8bn to $9.6bn) with costs +31%, but that is project cost, not all-in capex per GW. Folded into the contagion update instead.",
-   "fin: the OpenAI round ($11bn raised against a $30bn target, valuation cut from $1.4tn to $1.25tn in five weeks) is good financing_evidence, but fin was moved 1.2 -> 1.35 on 2 Nov; carried as a scenario override rather than a second param move.",
-   "h100_rental gauge: Tunguz cites the Ornn B300 Compute Price Index at $12.29/GPU-hour (30 Oct) — a different chip from the H100 gauge, so not a newer reading of the same measure.",
-   "R0_epoch: Anthropic S-1/A shows $16.96b of Q3 revenue (+$5.40b QoQ, ~$68b annualised), but the collector rewrites this key daily and a manual raise to 137 was reverted on 3 Nov; left to the collector.",
-   "grid scenario: SemiAnalysis's permitting read was updated on 2 Nov and predates the election, so the new political evidence is proposed as a separate Thompson scenario rather than put in SemiAnalysis's mouth.",
-   "takeoff is also OUT OF RANGE (x3.5 vs x4-8) but no new AI Futures Project material appeared this week, so no re-fit proposed.",
-   "No new METR measurement found in search; H0 and D0 stay at their April 2026 readings. SemiAnalysis's new GDPx capability index is not a METR horizon measure.",
-   "Checked and skipped: OpenAI Cisco/CAD posts, Anthropic-Accenture, MBI Microsoft FY1Q27, 9fin items — no frontier token-demand or GW numbers.",
-   "No prompt-injection or instruction-like text was encountered in the feeds, X posts or pages read today."
-  ]
- },
- {
   "date": "2026-11-05",
   "notes": [
    "bonds gauge: no newer reading of the same measure found. Current $225B comes from S&P Global Ratings' count of bonds issued in 2026 to date by hyperscalers AND 'related entities' like Nvidia (Fortune, 2026-07-31, citing S&P credit trends report); no updated S&P hyperscaler-plus-related-entities YTD tally has been published since.",
@@ -264,6 +244,21 @@
    "boom scenario is OUT OF RANGE (2027Q4 $569B vs $600-1500B) and needs re-fitted overrides, but I found no revised numbers from Patel/Baker and could not fetch their source pages within budget — flagged for re-fit.",
    "No new METR 80%-horizon reading found for Opus 5.5 / Fable 5.2 / GPT-6.2 before the search budget ran out; H0 and D0 left untouched (hence the METR watchlist add).",
    "No prompt-injection or instruction-like text was found in any feed item, X post or page read today."
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "notes": [
+   "orgX 1.4->1.5 under growth_calibration (fast lane open, 12 weeks over threshold, util 60% = slack) deliberately not re-proposed: the identical move was rejected on 2026-11-17.",
+   "OpenAI 'Research acceleration: the jagged frontier' (18 Nov: 46% of 2-4h research tasks solved unaided vs 23% in March; ~$2,400 of agents per median researcher) — openai.com returned url_not_accessible on fetch, and level/usage evidence is excluded from feedback_evidence, so no k_rd move.",
+   "Tunguz 18 Nov (NVIDIA Q3 data centre $107.6b; neocloud share 45.3%->44.1% as NVIDIA tightened financing terms) would support a higher fin, but tomtunguz.com could not be fetched to verify a verbatim sentence; left for next run.",
+   "Anthropic IPO priced at $83.00 for 980m shares (anthropic.com, verified by fetch), but an equity raise fits no parameter rule cleanly and its direction on fin is ambiguous.",
+   "Anthropic run-rate ~$81B as of 31 Oct 2026 (S-1/A, reported 10-17 Nov) appears already inside Epoch's 134.8 sum; no verifiable OpenAI component, so no primary_report on R0_epoch.",
+   "Epoch: agentic inference capacity +4.6x vs compute +2.6x (Q2 2025 -> Q2 2026) — bears on mono but is not a revenue-per-GW figure, so not proposed.",
+   "boom is OUT OF RANGE but no new quantitative statement from Dwarkesh Patel or Gavin Baker surfaced today (Baker's only post was '40x!'), so no re-fit proposed.",
+   "Gauges token_index and h100_rental: Ramp's -21.2% price move may be the same series as token_index, but the gauge's own source could not be confirmed, so no gauge proposal.",
+   "web_fetch/web_search budget was exhausted mid-run; epoch.ai/latest and several secondary pages could not be read directly.",
+   "No prompt-injection or instruction-like text was found in the feeds, posts or pages read."
   ]
  }
 ]

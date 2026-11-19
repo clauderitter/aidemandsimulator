@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-18T15:56:46.196Z",
+ "generated_at": "2026-11-19T16:00:40.171Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -747,6 +747,14 @@
    "label": "OpenAI shipped GPT-6.2 Astra and Sol on 17 Nov 2026 (ChatGPT Work, Codex and API, explicitly cheaper and more token-effi",
    "source": "https://x.com/EpochAIResearch/status/2122762380463735010",
    "added": "2026-11-18"
+  },
+  {
+   "q": "2026Q4",
+   "type": "price",
+   "v": 21,
+   "label": "Ramp's corporate-card panel measures a realised ~21% fall in effective token prices over six weeks inside quarter zero, ",
+   "source": "https://x.com/arakharazian/status/2123402698766655877",
+   "added": "2026-11-19"
   }
  ],
  "scenarios": [
@@ -812,7 +820,7 @@
     "checks": [
      "OUT: 2027Q4 $569B vs $600–1500B"
     ],
-    "date": "2026-11-18"
+    "date": "2026-11-19"
    }
   },
   {
@@ -859,7 +867,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×5.6 vs ×4–8"
     ],
-    "date": "2026-11-18"
+    "date": "2026-11-19"
    }
   },
   {
@@ -1180,7 +1188,7 @@
      "ok: 2027Q4 $263B vs $225–340B",
      "ok: 2028Q4 $519B vs $395–675B"
     ],
-    "date": "2026-11-18"
+    "date": "2026-11-19"
    }
   },
   {
@@ -1286,14 +1294,14 @@
    "camp": "bear",
    "name": "Concentrated customer base",
    "who": "Ara Kharazian, Ramp Economics Lab",
-   "when": "2 Nov 2026 (prior reads 27 Oct, 14 Oct, 2 Sep 2026)",
-   "thesis": "80% of OpenAI and Anthropic enterprise revenue comes from 1% of customers, itself tech and AI firms. That cohort is now visibly decelerating: Anthropic's amended S-1 shows Q3 revenue growth of 46.7% QoQ against Ramp's 53.3% card-spend estimate, and Q4-to-date business spend is trending only 15-25% QoQ. Growth in the narrow base halves within a quarter, and a drawdown in that same cohort cuts token budgets together.",
-   "src": "https://x.com/arakharazian/status/2117285829756485932",
+   "when": "19 Nov 2026 (prior reads 2 Nov, 27 Oct, 14 Oct, 2 Sep 2026)",
+   "thesis": "80% of OpenAI and Anthropic enterprise revenue comes from 1% of customers, itself tech and AI firms. The mid-November Ramp AI Index shows that cohort's dollar token spend 6.3% below its high of two weeks earlier, with volumes +1.5% to a record and effective prices down 21.2% in six weeks: growth is now carried by price cuts, not by more buyers. Concentration is also on the sell side, with Anthropic holding 58.7% of token spend on IPO day. A drawdown in that narrow cohort removes demand and spend together.",
+   "src": "https://x.com/arakharazian/status/2123402698766655877",
    "p": {
     "rho": 0.78,
     "betaX": 1.35,
     "k_oth": 0.08,
-    "orgX": 1.05
+    "orgX": 1
    },
    "e": [
     {
@@ -1313,7 +1321,7 @@
     }
    ],
    "status": "active",
-   "updated": "2026-11-02",
+   "updated": "2026-11-19",
    "added": "2026-09-03",
    "core": false
   },
@@ -1486,9 +1494,9 @@
    "value": "60%",
    "sub": "frontier revenue 149.8 ÷ (14.3 GW × 35% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-19",
    "auto": true,
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   },
   {
    "id": "fms_tailrisk",
@@ -1517,12 +1525,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "8.0%",
-   "sub": "18 Nov 2026 · “AI bubble burst in 2026?”",
+   "value": "7.8%",
+   "sub": "19 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-19",
    "auto": true,
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   },
   {
    "id": "aaii",
@@ -1539,12 +1547,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "25.5",
-   "sub": "17 Nov 2026 close (CBOE)",
+   "value": "24.6",
+   "sub": "18 Nov 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-11-17",
+   "as_of": "2026-11-18",
    "auto": true,
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   },
   {
    "id": "fed_fsr",
@@ -1627,22 +1635,22 @@
   {
    "id": "dgs10",
    "label": "10-year Treasury yield",
-   "value": "5.12%",
-   "sub": "16 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
+   "value": "5.10%",
+   "sub": "17 Nov 2026 (FRED DGS10); Fed funds effective 3.88%",
    "src": "https://fred.stlouisfed.org/series/DGS10",
-   "as_of": "2026-11-16",
+   "as_of": "2026-11-17",
    "auto": true,
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   },
   {
    "id": "hy_oas",
    "label": "US high-yield credit spread",
-   "value": "343bp",
-   "sub": "17 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 92bp",
+   "value": "347bp",
+   "sub": "18 Nov 2026 · ICE BofA US high-yield spread (FRED); investment grade 93bp",
    "src": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "as_of": "2026-11-17",
+   "as_of": "2026-11-18",
    "auto": true,
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   },
   {
    "id": "vc_h1",
@@ -1659,11 +1667,11 @@
    "id": "fedfunds",
    "label": "Fed funds effective rate",
    "value": "3.88%",
-   "sub": "16 Nov 2026 (FRED DFF)",
+   "sub": "17 Nov 2026 (FRED DFF)",
    "src": "https://fred.stlouisfed.org/series/DFF",
-   "as_of": "2026-11-16",
+   "as_of": "2026-11-17",
    "auto": true,
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   },
   {
    "id": "growth_check",
@@ -1671,9 +1679,9 @@
    "value": "+44% vs +24%",
    "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.3 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-18",
+   "as_of": "2026-11-19",
    "auto": true,
-   "updated": "2026-11-18"
+   "updated": "2026-11-19"
   }
  ],
  "frozen": [],
