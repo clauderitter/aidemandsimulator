@@ -1,5 +1,131 @@
 [
  {
+  "date": "2026-11-20",
+  "source": "https://x.com/SemiAnalysis_/status/2123602891713708464",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 20,
+  "reason": "The same Texas permit freeze is already carried in the grid scenario's 2028 capex cut accepted in this round, and the proposer concedes both the quarter and the scale are guesses, so adding a 2026Q4 regulatory shock would double-count it."
+ },
+ {
+  "date": "2026-11-20",
+  "source": "https://x.com/SemiAnalysis_/status/2123602895513755882",
+  "kind": "accepted",
+  "target": "scenario:grid",
+  "old": "updated",
+  "new": "updated",
+  "reason": "The authors of this scenario have updated it because the single risk they named — a prolonged Texas permit freeze — resolved against the build, so the deeper 2028 capex cut and slower build pace follow from their own stated position, with the thesis trimmed to what the thread supports."
+ },
+ {
+  "date": "2026-11-20",
+  "source": "https://officechai.com/ai/74-of-anthropics-compute-has-gone-towards-training-in-2026-only-26-to-inference-brad-gerstner/",
+  "kind": "rejected",
+  "target": "scenario:gerstner",
+  "old": null,
+  "new": null,
+  "reason": "Gate: override mono=200 out of bounds."
+ },
+ {
+  "date": "2026-11-20",
+  "source": "https://officechai.com/ai/74-of-anthropics-compute-has-gone-towards-training-in-2026-only-26-to-inference-brad-gerstner/",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 55,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://officechai.com/ai/74-of-anthropics-compute-has-gone-towards-t."
+ },
+ {
+  "date": "2026-11-20",
+  "source": "https://www.business-standard.com/amp/world-news/anthropic-ipo-stock-market-debut-valuation-investors-what-to-watch-next-126112000351_1.html",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.5,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.business-standard.com/amp/world-news/anthropic-ipo-stock-."
+ },
+ {
+  "date": "2026-11-20",
+  "source": "https://www.gurufocus.com/news/9207043/bank-of-america-has-a-message-for-chip-stock-investors",
+  "kind": "rejected",
+  "target": "gauge:fms_crowded",
+  "old": null,
+  "new": 39,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://www.gurufocus.com/news/9207043/bank-of-america-has-a-message-."
+ },
+ {
+  "date": "2026-11-20",
+  "source": "https://www.tradingview.com/news/seekingalpha:060a0d77f094b:0-ai-bubble-emerges-as-top-market-tail-risk-in-bofa-survey/",
+  "kind": "accepted",
+  "target": "gauge:fms_tailrisk",
+  "old": "23%",
+  "new": "34%",
+  "reason": "November BofA Global Fund Manager Survey is the same tail-risk question one month fresher, with the \"AI bubble\" share rising from 23% to 34% and an AI hyperscaler credit event second at 31%."
+ },
+ {
+  "date": "2026-11-20",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-20).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-20",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-20).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-20",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "7.8%",
+  "new": "17.8%",
+  "reason": "Observed from source (2026-11-20).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-20",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "24.6",
+  "new": "28.4",
+  "reason": "Observed from source (2026-11-19).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-20",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "347bp",
+  "new": "352bp",
+  "reason": "Observed from source (2026-11-19).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-20",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-18).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-20",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.10%",
+  "new": "5.07%",
+  "reason": "Observed from source (2026-11-18).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-19",
   "source": "https://x.com/arakharazian/status/2123402698766655877",
   "kind": "accepted",
@@ -3472,133 +3598,5 @@
   "new": "+40% vs +31%",
   "reason": "Observed from source (2026-10-12).",
   "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-12",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.0%",
-  "new": "6.2%",
-  "reason": "Observed from source (2026-10-12).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-11",
-  "source": "https://x.com/GavinSBaker/status/2109240032196174309",
-  "kind": "rejected",
-  "target": "scenario:boom",
-  "old": null,
-  "new": "Re-fitted after the path fell below the proponents' $600-1500B 2027Q4 range; proponent still live and compute prices are rising (B300 +38% since 31 May).",
-  "reason": "Baker's GPU-price tweet confirms the proponent is still live but supports none of the proposed demand-side re-parameterisation — orgX 1.7 and across-the-board rises in the loop gains and rho rest on the fidelity miss alone — and the rewrite would also drop the scenario's existing util0 override."
- },
- {
-  "date": "2026-10-11",
-  "source": "https://x.com/GavinSBaker/status/2109240032196174309",
-  "kind": "rejected",
-  "target": "event:2026Q3",
-  "old": null,
-  "new": 38,
-  "reason": "A single tweet citing third-party GPU price indices over a 31 May–11 Oct window does not establish a +38% revenue-per-GW reprice inside 2026Q3: the measure (B300 unit prices) differs from the scenarios' reprice units and the whole move is attributed to one quarter it only partly covers."
- },
- {
-  "date": "2026-10-11",
-  "source": "https://epoch.ai/publications/how-do-chinese-ai-companies-make-money",
-  "kind": "rejected",
-  "target": "R0x",
-  "old": null,
-  "new": 19,
-  "reason": "Gate: monthly drift cap reached for R0x (at most ±5 around 10 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-10-11",
-  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.4,
-  "reason": "This is the same Epoch insight on one lab's internal researcher spend that was rejected for orgX on 7 October — it is not evidence of organic growth across every segment — and orgX was already lifted to 1.3 two days ago on the Ramp data, so moving it again here would double-count the same acceleration already credited to k_rd this run."
- },
- {
-  "date": "2026-10-11",
-  "kind": "accepted",
-  "target": "k_rd",
-  "old": 0.7,
-  "new": 0.8,
-  "reason": "Epoch's fit of OpenAI's own published series is a direct observation of AI R&D token spend growing 1.8–2.2× a month against the ~6.3×/year implied by k_rd=0.7, which is the kind of segment-growth comparison that may move a loop gain; the earlier rejections were drift-cap gates only, and the window now permits the single capped step to 0.8, with the internal-usage-at-list-prices caveat limiting it to one step. Rule feedback_evidence; “In recent months, median and 90th percentile researchers have seen similar growth rates of 1.8× and 2.2× per month, or doubling times of 34 ” Capped: target 0.8, continues next run.",
-  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
-  "capped": true,
-  "target_value": 0.8
- },
- {
-  "date": "2026-10-11",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-11).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-11",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +25%",
-  "new": "+40% vs +25%",
-  "reason": "Observed from source (2026-10-11).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-11",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.0%",
-  "new": "6.0%",
-  "reason": "Observed from source (2026-10-11).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-10",
-  "source": "https://x.com/SemiAnalysis_/status/2108724444138983719",
-  "kind": "accepted",
-  "target": "scenario:credit",
-  "old": "updated",
-  "new": "updated",
-  "reason": "SemiAnalysis, already a named proponent of this scenario, adds a primary 10-Q datapoint ($530B of gross off-balance-sheet guarantees, up from $184B a quarter earlier) that sharpens the existing borrowed-marginal-dollar mechanism while leaving overrides and shock timing unchanged."
- },
- {
-  "date": "2026-10-10",
-  "source": "https://x.com/ttunguz/status/2108588512698044672",
-  "kind": "rejected",
-  "target": "k_swe",
-  "old": null,
-  "new": 0.55,
-  "reason": "The quote forecasts the size of the inference market and software gross margins economy-wide; it neither measures software-engineering revenue re-spent on tokens nor states a comparison with that segment's implied growth, so it cannot calibrate the SWE loop gain."
- },
- {
-  "date": "2026-10-10",
-  "source": "https://x.com/SemiAnalysis_/status/2108653845291106641",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.4,
-  "reason": "The ~$7T of AI debt by 2029 is already recorded in the credit scenario and predates the current fin reading, so this tweet restates known evidence rather than showing a changed sensitivity of build pace to credit conditions."
- },
- {
-  "date": "2026-10-10",
-  "source": "https://x.com/SemiAnalysis_/status/2108604229988319724",
-  "kind": "rejected",
-  "target": "mono",
-  "old": null,
-  "new": 55,
-  "reason": "SemiAnalysis's Rubin profit calculator is a forward profit-per-GW model for a new chip generation, not monetisable revenue per inference GW at current prices, and the proposed +10% is the speed-limit cap rather than a figure derived from the quote — the same reasoning that rejected this evidence on 15 Sep."
- },
- {
-  "date": "2026-10-10",
-  "source": "https://x.com/arakharazian/status/2108560737215869226",
-  "kind": "rejected",
-  "target": "subst",
-  "old": null,
-  "new": 20,
-  "reason": "A single Ramp post about where enterprise AI dollars go measures spend share, not the share of bounded token volume that has migrated off frontier endpoints, and the same class of evidence was rejected for this input on 23 Sep and 2 Oct."
  }
 ]

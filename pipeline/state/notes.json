@@ -1,27 +1,5 @@
 [
  {
-  "date": "2026-11-05",
-  "notes": [
-   "bonds gauge: no newer reading of the same measure found. Current $225B comes from S&P Global Ratings' count of bonds issued in 2026 to date by hyperscalers AND 'related entities' like Nvidia (Fortune, 2026-07-31, citing S&P credit trends report); no updated S&P hyperscaler-plus-related-entities YTD tally has been published since.",
-   "Considered TokenPost (2026-10-30): 'Five hyperscalers issued $218.1 billion in investment-grade bonds through early October 2026, more than in all of 2025' — not proposed, different measure (five named hyperscalers, US investment-grade only, excludes Nvidia/related entities), and the lower figure vs $225B would read as a decline that did not occur.",
-   "Considered Barron's/Yahoo 'Big Tech Issued About $220 Billion of Bonds' (~mid-Sep 2026) — different issuer universe (Big Tech incl. Alphabet/Meta) and rounded; not the S&P hyperscalers+related-entities series.",
-   "Considered S&P Global Ratings' late-Oct 2026 outlook (global bond issuance growth slowing to 2.7% in 2027 from 12.2% in 2026) — covers global issuance, contains no updated hyperscaler YTD dollar total.",
-   "Server-side search quota was exhausted before an S&P Ratings credit-trends update could be checked directly; worth re-running this gauge once S&P publishes its Q4/full-year 2026 financing conditions piece (prior pace implied ~$400B full-year 2026).",
-   "Tunguz 4 Nov confirms 40% inference / 60% training of GPU hours (SemiAnalysis workload mix 6 Oct + Anthropic S-1), exactly the current train=60, so no proposal; it is evidence against the trainheavy scenario's 73.",
-   "Skipped a midterm 'voter veto' scenario_new and a 2026Q4 reg event: the changelog shows scenario:veto and event:2026Q4 were both rejected on 4 Nov.",
-   "Skipped a boom scenario re-fit: the Anthropic S-1/A GPU-cost reprice re-fit was already proposed and rejected on 4 Nov.",
-   "SemiAnalysis X post (4 Nov) on the Texas TCEQ permit freeze and 30.3 GW is a livestream teaser with no re-stated numbers; too thin for a grid scenario_update, which was last revised 1 Nov.",
-   "METR: Toby Ord (21 Oct) says METR stopped reporting 80% horizons in April 2026 at ~3h under Time Horizon 1.1; no new frontier measurement, so H0 and D0 left alone.",
-   "Ramp 'Top SaaS Vendors' (4 Nov, Kharazian) is qualitative this month (Grok at 2.2% of AI spend); the quantitative October AI Index read is already in the rampconc scenario.",
-   "GPU rental: Tunguz cites short-term burst at $7-13/hr and the Ornn B300 index at $12.29/GPU-hour (30 Oct) - a different instrument from the h100_rental gauge, so not proposed as a gauge update.",
-   "Epoch's ECI Bayesian update (4 Nov) moves a capability index, not METR horizons or revenue; no exposed key.",
-   "Cognition SWE-2 Flash (one-fifth the price) and Ripple-65B (80.5% on Terminal-Bench 2.1, open weights) are capability/price points, not production-share data, so no subst move.",
-   "Considered a Gerstner scenario_new (43 GW consensus, 25-35% at risk) but the view is already covered by grid and physics; used the numbers as a capacity_estimate instead.",
-   "Considered a price scenario_update on Tunguz's own revision (GPU input costs doubling vs continued token-price deflation) but his stated price-decline numbers have not changed, so no update proposed.",
-   "No prompt-injection style instructions found in any fetched page or post this run."
-  ]
- },
- {
   "date": "2026-11-06",
   "notes": [
    "Vercel AI Gateway: November index (October data) not yet published; subst already reflects the 15 Oct release (71.5% of tokens / 23% of spend, September data).",
@@ -259,6 +237,24 @@
    "Gauges token_index and h100_rental: Ramp's -21.2% price move may be the same series as token_index, but the gauge's own source could not be confirmed, so no gauge proposal.",
    "web_fetch/web_search budget was exhausted mid-run; epoch.ai/latest and several secondary pages could not be read directly.",
    "No prompt-injection or instruction-like text was found in the feeds, posts or pages read."
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "notes": [
+   "Survey fielded Nov 6-12, 2026 (193 panelists, $526bn AUM); published Tue Nov 18 - used publication date as as_of.",
+   "Did not propose the related 'hyperscaler credit event' tail risk (31%) or '52% expect hyperscaler capex cut' - different measures, not current gauges.",
+   "Original cryptobriefing.com source not re-fetched; November figures corroborated by TradingView/Seeking Alpha, GuruFocus, MLQ.ai and Atranica summaries of the same BofA release.",
+   "train 65->74 (Anthropic S-1/A 74/26 compute split) deliberately not re-proposed: an identical proposal was rejected on 2026-11-19.",
+   "R0_epoch not proposed: Anthropic's S-1 $81B run-rate (31 Oct) is almost certainly already inside the collector's 134.8 sum as of 2026-11-07, and epoch.ai data pages returned empty on fetch so I could not verify components.",
+   "K0 left alone: Gerstner says Anthropic had 'two gigawatts of compute this year', below the Epoch 3.7-5 GW in the current K0 basis, but it reads as a 2026 average rather than GW online now - flagged for the weekly review.",
+   "METR: no new time-horizon measurement on metr.org/blog (latest posts are risk-report reviews, 5 Nov 2026), so H0 and D0 untouched.",
+   "sh_swe / sh_rd: Anthropic IPO coverage names Claude Code as the main growth driver but publishes no product revenue split; no usage_share move available.",
+   "subst: no new Vercel/OpenRouter production-mix reading since 16 Nov; a 25 proposal was already rejected on 18 Nov.",
+   "Datasection (3905.T) cutting FY guidance 89% on cancelled Tencent-linked offtake: notable neocloud credit datapoint, but not a frontier-demand or frontier-capacity parameter.",
+   "Riemann Hypothesis claim circulating on X (@kimmonismus relaying @__alpoge__) is unverified and carries no demand or capacity numbers; ignored.",
+   "Paul Kedrosky's Anthropic 1.0 vs 2.0 piece is about tenure and workforce composition, no usable quantities.",
+   "No prompt-injection attempts seen in the feeds, posts or pages read today."
   ]
  }
 ]

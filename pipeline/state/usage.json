@@ -1,21 +1,5 @@
 [
  {
-  "date": "2026-09-21",
-  "est_usd": 1.837,
-  "input": 42,
-  "output": 30958,
-  "cache_read": 814178,
-  "cache_write": 95245,
-  "searches": 6,
-  "fetches": 10,
-  "calls": 3,
-  "by": {
-   "researcher": 1.278,
-   "judge": 0.088,
-   "memo": 0.471
-  }
- },
- {
   "date": "2026-09-22",
   "est_usd": 1.253,
   "input": 40,
@@ -942,6 +926,22 @@
   "by": {
    "researcher": 1.263,
    "judge": 0.137
+  }
+ },
+ {
+  "date": "2026-11-20",
+  "est_usd": 1.924,
+  "input": 62,
+  "output": 28585,
+  "cache_read": 1172210,
+  "cache_write": 88543,
+  "searches": 7,
+  "fetches": 10,
+  "calls": 3,
+  "by": {
+   "housekeeping": 0.131,
+   "researcher": 1.696,
+   "judge": 0.098
   }
  }
 ]
