@@ -1,19 +1,5 @@
 [
  {
-  "date": "2026-11-06",
-  "notes": [
-   "Vercel AI Gateway: November index (October data) not yet published; subst already reflects the 15 Oct release (71.5% of tokens / 23% of spend, September data).",
-   "METR time horizon: no new 80%-horizon measurement for a frontier model since the March 2026 benchmark file, so no metr_latest proposal (H0 stays stale at 8.34).",
-   "9fin: 'each extra dollar of capex is bringing in only 52-92 cents of extra revenue' would imply a high revenue-per-total-GW read against capexGW 54, but it mixes non-AI cloud revenue and mono was just cut to 50 on 4 Nov; left alone.",
-   "Growth calibration: ledger gap 12pts, 10 consecutive weeks over threshold, fast lane closed, utilisation 47% (slack, handle = orgX); orgX 1.3 to 1.4 was rejected on 5 Nov, so not re-proposed.",
-   "Texas/US datacenter ballot results (Kedrosky: ~$66.2B of 2026 Texas datacentre spend, $9.9-16.6B of Nvidia sales at risk if half were disrupted; Gavin Baker: governor-elect Hinojosa lets all permitted sites finish, covering 2027 into 2028) - real but the near-term GW effect is ambiguous and an event:2026Q4 of size 25 was already rejected on 4 Nov; flagged for weekly review.",
-   "Scenario fidelity: boom and takeoff are outside their proponents' stated ranges, but no revised numbers from Patel/Baker or the AI Futures Project appeared this week and a boom re-fit was rejected on 4 Nov; no scenario_update proposed.",
-   "Anthropic IPO valuation scepticism (WSJ: investors doubt $1.5T, one sees ~$1T) is a valuation story with no parameter rule attached; not proposed.",
-   "SemiAnalysis TPU piece, Exponential View and Stratechery items read but carried no new GW, $/GW or share numbers I could verify within the fetch budget.",
-   "No prompt-injection attempts noticed in the feeds or posts read today; X posts were used only as pointers to primary coverage."
-  ]
- },
- {
   "date": "2026-11-07",
   "notes": [
    "openrouter_cn: no newer reading of the same measure. The current 57-67% is CNBC's Sept 26 report of OpenRouter token share across US/Europe/'Global South' company groups for the week of Sept 14; no later CNBC/OpenRouter regional-group share has been published as of 2026-11-07.",
@@ -255,6 +241,23 @@
    "Riemann Hypothesis claim circulating on X (@kimmonismus relaying @__alpoge__) is unverified and carries no demand or capacity numbers; ignored.",
    "Paul Kedrosky's Anthropic 1.0 vs 2.0 piece is about tenure and workforce composition, no usable quantities.",
    "No prompt-injection attempts seen in the feeds, posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-11-21",
+  "notes": [
+   "BofA FMS fieldwork was Nov 6-12 among 169 managers ($461bn AUM); dated the gauge to the Nov 18 release.",
+   "AAII headline kept to the same bullish/bearish pair as the current tile; neutral (24.4%) left out of new_text for length.",
+   "Did not propose the separate 'active manager exposure' (NAAIM-type) reading seen in the same market wrap - different measure, no existing gauge.",
+   "orgX calibration move (fast lane open, gap 16pts, 12 consecutive weeks): the identical 1.4 -> 1.5 proposal was rejected on 2026-11-20 on the same ledger, so not re-proposed this run.",
+   "Tunguz 'The 10x Wall' (20 Nov 2026): Anthropic and SpaceX both at 9.5x 2027 revenue ($137b and $181b street estimates), hyperscalers pinned in a 20-26x P/E band. Quantitative and attributable, but an equity-multiple thesis rather than a token-demand or compute view, and Tunguz already holds the 'price' slot; no scenario_new.",
+   "H0 not proposed: METR's new suite reports 50% horizons on TH1.1+TH2 (200h reachable July 2027 on naive extrapolation), not the 80% horizon H0 is defined on; the post notes TH1.1 (tasks up to 30h) is saturated but gives no comparable 80% figure.",
+   "METR's swarm robustness check (swarms help on verifiable fast-feedback tasks, unclear or negative effects elsewhere) bears on the swarm vs swarmfade pair, but neither proponent revised their numbers, so no scenario_update.",
+   "R0_epoch left alone: Anthropic $81B run-rate (31 Oct, amended prospectus) plus OpenAI ~$50B (Bloomberg, 11 Nov) are already inside the 134.8 disclosed sum as of 2026-11-07.",
+   "subst left alone: the latest Vercel AI Gateway index I could confirm is still the October edition covering September (71.5% of tokens, 23% of spend), already the basis of the 2026-11-16 value; search budget ran out before confirming a November edition.",
+   "Anthropic is now a public filer (IPO 19 Nov 2026); its 10-Q/8-K disclosures will be a primary source for revenue, compute obligations and capex, but I could not verify a fetchable IR or EDGAR feed URL this run, so no watchlist_add.",
+   "Anthropic trailing gross margin of 22% (Koyfin via Tunguz) is suggestive for inference economics but maps to no listed rule key; not proposed.",
+   "No prompt-injection or instruction-like text was found in the feeds, X posts or fetched pages read this run."
   ]
  }
 ]

@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-11-21",
+  "source": "https://thebusinessjournal.com/sp-500-stock-market-selloff-nasdaq-ai-stocks/",
+  "kind": "accepted",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": "shock 10",
+  "reason": "The realised Q4 2026 AI selloff is well documented, but only the S&P's >10% drawdown from its 6 October high is actually in the source, so the event is recorded at 10 rather than the proposed 15."
+ },
+ {
+  "date": "2026-11-21",
+  "kind": "accepted",
+  "target": "D0",
+  "old": 4.2,
+  "new": 3.6,
+  "reason": "Unlike the earlier AECI-based attempts, this is METR's own newly published time-horizon doubling estimate (3.6 months on the combined TH1.1+TH2 suite), a direct and much fresher reading of the quantity D0 encodes. Rule metr_doubling; “On the combined suite of TH1.1 and TH2, time horizons are doubling roughly every 3.6 months”",
+  "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/"
+ },
+ {
+  "date": "2026-11-21",
+  "source": "https://seekingalpha.com/article/4970388-aaii-sentiment-survey-pessimism-backtracks",
+  "kind": "rejected",
+  "target": "gauge:aaii",
+  "old": null,
+  "new": 33.3,
+  "reason": "Gate: quote not found in source (match 0%)."
+ },
+ {
+  "date": "2026-11-21",
+  "source": "https://www.tradingview.com/news/seekingalpha:4cb1dbfe0094b:0-long-semiconductors-remains-the-most-crowded-trade-bofa-says/",
+  "kind": "accepted",
+  "target": "gauge:fms_crowded",
+  "old": "45%",
+  "new": "39%",
+  "reason": "Same BofA FMS most-crowded-trade question one month fresher and from a reachable source: long global semiconductors still first but down to 39% from 45%."
+ },
+ {
+  "date": "2026-11-21",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-21).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-21",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-21).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-21",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "17.8%",
+  "new": "68.8%",
+  "reason": "Observed from source (2026-11-21).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-21",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "28.4",
+  "new": "35.9",
+  "reason": "Observed from source (2026-11-20).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-21",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-19).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-21",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.07%",
+  "new": "5.04%",
+  "reason": "Observed from source (2026-11-19).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-20",
   "source": "https://x.com/SemiAnalysis_/status/2123602891713708464",
   "kind": "rejected",
@@ -3508,95 +3598,5 @@
   "new": "3.88%",
   "reason": "Observed from source (2026-10-12).",
   "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-14",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.22%",
-  "new": "5.24%",
-  "reason": "Observed from source (2026-10-09).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-13",
-  "source": "https://x.com/kimmonismus/status/2109700228873908403",
-  "kind": "rejected",
-  "target": "event:2026Q4",
-  "old": null,
-  "new": 60,
-  "reason": "The quote supports only one vendor's list price for a single frontier tier, not a usage-weighted market price move, and it comes from a single social post rather than a pricing index or primary announcement — too thin to record a 60-point price event in quarter zero where the price and elasticity scenarios already carry falling token prices."
- },
- {
-  "date": "2026-10-13",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-13).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-13",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +31%",
-  "new": "+40% vs +31%",
-  "reason": "Observed from source (2026-10-13).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-13",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.2%",
-  "new": "6.2%",
-  "reason": "Observed from source (2026-10-13).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-13",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "14.8",
-  "new": "15.2",
-  "reason": "Observed from source (2026-10-12).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-12",
-  "source": "https://convergedigest.com/microsoft-maia-300-multi-gigawatt-ai-infrastructure/",
-  "kind": "rejected",
-  "target": "pipe",
-  "old": null,
-  "new": 28,
-  "reason": "A new in-house accelerator announced for \"multi-gigawatt\" deployment from 2027 says which silicon fills Microsoft's planned megawatts, not that additional frontier-serving power capacity is arriving within six quarters, and the proposed 2 GW increment is not quantified by the source."
- },
- {
-  "date": "2026-10-12",
-  "source": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-prospectus-shows-what-2-trillion-dollar-ai-company-costs-run/",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1,
-  "reason": "The Anthropic S-1 take-or-pay figures ($518bn of commitments, ~80% non-cancellable) were already applied to fin on 29 Sep and rejected twice since as double-counting, and this secondary summary of the same filing carries no later or better-grade evidence."
- },
- {
-  "date": "2026-10-12",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-12).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-12",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +25%",
-  "new": "+40% vs +31%",
-  "reason": "Observed from source (2026-10-12).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
  }
 ]
