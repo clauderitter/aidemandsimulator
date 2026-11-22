@@ -261,6 +261,13 @@
    "kind": "html",
    "match": "/blog",
    "added": "2026-11-18"
+  },
+  {
+   "name": "Anthropic PBC SEC filings (EDGAR CIK 0002130357)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002130357&type=10-Q&dateb=&owner=include&count=40",
+   "kind": "html",
+   "match": "/cgi-bin/browse-edgar",
+   "added": "2026-11-22"
   }
  ],
  "x_handles": [

@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-11-07",
-  "notes": [
-   "openrouter_cn: no newer reading of the same measure. The current 57-67% is CNBC's Sept 26 report of OpenRouter token share across US/Europe/'Global South' company groups for the week of Sept 14; no later CNBC/OpenRouter regional-group share has been published as of 2026-11-07.",
-   "openrouter_cn alternative found but not proposed: Caixin-cited OpenRouter data for the week of Oct 19-25 2026 gives Chinese models 93.54T tokens vs 22.47T for US models (reported via dealroom.co) - an absolute volume ratio, not the regional-group percentage share, so not the same measure.",
-   "openrouter_cn: other 2026 figures circulating (46%, 59.6%, ~61%) are top-10-model or whole-platform shares from earlier periods (Feb-Jul 2026) and are both older and a different population than the current gauge.",
-   "K0: Patel's pair-level figures (OpenAI+Anthropic ~4 GW end-2025, ~10 GW end-2026) sit above Epoch's pair estimate but below the model's 14.3 GW frontier total, so the mapping is ambiguous and no capacity move is proposed; flagged for the weekly review.",
-   "pipe: Patel implies frontier labs take 12-20 GW of the ~50 GW due online in 2027, which argues pipe below 35, but a pipe cut to 30 was rejected on 2026-11-05; not re-proposed (the lower pace is carried in the physics scenario instead).",
-   "orgX / growth_calibration: ledger is at 10 weeks over threshold with a 12pt gap and quarter zero has slack, but orgX 1.3 -> 1.4 was rejected on 2026-11-05; not re-proposed this run.",
-   "R0_epoch: Anthropic reported at ~$80B run-rate against a $100B year-end target (Latent Space, 6 Nov); the collector already rewrote R0_epoch to 134.8 today and a 130 proposal was rejected yesterday, so nothing proposed.",
-   "Vercel AI Gateway: only the October index (September data: 71.5% of tokens, 23% of spend) is published, already reflected in subst as of 2026-10-15; the November index is not out yet.",
-   "subst: GLM-5.3 matching frontier exploit rates at one-sixtieth of April's cost is suggestive of migration but is a task-cost comparison, not a spend-share measure; left to the Vercel/OpenRouter series.",
-   "METR's 5 Nov publication reviews Anthropic's August 2026 Risk Report on AI R&D acceleration thresholds; it is not a new 80%-success time-horizon measurement, so no H0/D0 move (and D0 -> 3.2 was rejected on 2026-11-06).",
-   "mono / capexGW: Patel's per-MW economics ($9M/MW/yr all-in for a B300 cluster, ~$14M/MW/yr to rent) mix capex with five years of opex, so neither a clean cost_per_gw nor a clean revenue_per_gw read.",
-   "SemiAnalysis InferenceX per-gigawatt profit estimator renders client-side; no numbers extractable from the HTML.",
-   "Nvidia underwriting ~6.5 GW of clusters (Patel, Runtime 2026) noted as financing context but not proposed; it is a backstop volume, not a sensitivity.",
-   "Web search quota ran out mid-run; later checks (Epoch Gradient Updates, Ramp Econ Lab, AI-2027 tracker) were only possible by direct fetch of URLs already in context, and Ramp's next update is promised for 11 Nov.",
-   "No prompt-injection attempts found in the feeds or posts read; the Tunguz page carries a meta 'ai-summary' field, which is descriptive rather than instructional."
-  ]
- },
- {
   "date": "2026-11-08",
   "notes": [
    "Nov 5 rout (Nasdaq -5.52%, S&P -4.36%, SOX -12.3%): not proposed as an event — two 2026Q4 event proposals (values 12 and 10) covering the same episode were rejected on 2026-11-07.",
@@ -258,6 +238,25 @@
    "Anthropic is now a public filer (IPO 19 Nov 2026); its 10-Q/8-K disclosures will be a primary source for revenue, compute obligations and capex, but I could not verify a fetchable IR or EDGAR feed URL this run, so no watchlist_add.",
    "Anthropic trailing gross margin of 22% (Koyfin via Tunguz) is suggestive for inference economics but maps to no listed rule key; not proposed.",
    "No prompt-injection or instruction-like text was found in the feeds, X posts or fetched pages read this run."
+  ]
+ },
+ {
+  "date": "2026-11-22",
+  "notes": [
+   "AAII: prior 2026-11-11 reading (30.8%/51.4%) superseded by the 2026-11-19 survey published on aaii.com; same bullish/bearish measure, so refreshed.",
+   "Ramp Sept 2026 letter ($0.68 effective price, ai-index-sept-2026) is stale relative to the main AI Index page; not proposed.",
+   "Axios (~$0.59/M, Oct 28) and FourWeekMBA ($0.53 for week ending Nov 1) are secondary restatements of older Ramp weeks; used Ramp's own page instead.",
+   "Did not propose other Ramp metrics (AI share of business spend 5.43%, provider spend shares, AI spend per employee) - different measures from the token-price gauge.",
+   "MacroMicro AAII mirror (2026-11-19 33.33%/42.22%) matches the AAII primary source; primary used.",
+   "D0 3.6 (METR 20 Nov, combined TH1.1+TH2 suite): not re-proposed — the changelog shows D0 4.2 -> 3.6 was already accepted 2026-11-21 and the collector reset it to 4.2 from METR's since-2023 benchmark file on 2026-11-22; flagged for the maintainer as a collector-vs-blog definition clash rather than new evidence.",
+   "R0_epoch: Anthropic disclosed an ~$81B run-rate as of 31 Oct 2026 in S-1/A-2 (SEC-accepted 10 Nov) and Bloomberg put OpenAI at ~$50B on 11 Nov, both after Epoch's 2026-11-07 as-of. Not proposed: I could not verify Epoch's current per-lab components, so any new sum would be a guess, and the two best-sourced pages (Yahoo/Bloomberg, 247wallst) were not fetchable from this box. Worth a collector re-run.",
+   "Ramp 'Businesses are changing AI model providers more often' (record 8% monthly switching, Sept): dated 6 Oct 2026 and measures switching between frontier providers, not migration to non-frontier/open-weight — does not fit migration_share, and subst's as-of (16 Nov, Vercel) is newer.",
+   "FutureSearch (Dan Schwarz, updated 20 Nov): Anthropic ARR p50 $128B by May 2027 (p10 $92B, p90 $188B), Claude Code $26.5B, revenue per compute dollar $1.70 in Q3, SpaceXAI GPUs ~$3.1B/month vs $5.6B Q2 compute spend. Quantitative and dated, but a single-company forecast from a small forecasting shop; used only as corroboration for the calibration move, not proposed as a scenario.",
+   "SemiAnalysis Riemann thread (21 Nov): ~$44k of output tokens, ~$125k all-in for the claimed proof. Level/anecdote about AI R&D token spend, with no revenue or funding return attached — not a loop gain under feedback_evidence.",
+   "METR's swarm robustness check (swarms help only on verifiable, fast-feedback tasks) cuts against the swarm scenario's rdBoost 0.45 / k_rd 0.85, but Noam Brown has not revised his numbers, so no scenario_update; it is reflected in the new METR scenario's rdBoost 0.12 instead.",
+   "Anthropic IPO drop ($1.5T pricing valuation to $1.175T the next day, per Noahpinion 22 Nov), VIX 35.9, Jensen Huang's resignation: no new 2026Q4 event proposed — a shock 10 for 2026Q4 was accepted 21 Nov and a 20 rejected 20 Nov.",
+   "Paul Kedrosky's 22 Nov daily brief is subscriber-only; Exponential View #611 and the Epoch Substack index returned no usable body text before the tool budget ran out.",
+   "No prompt-injection attempts spotted in the feeds, X posts or fetched pages read today."
   ]
  }
 ]
