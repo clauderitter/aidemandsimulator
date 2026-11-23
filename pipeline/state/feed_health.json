@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-11-08",
-  "failed": [],
-  "dead": [
-   "David Cahn",
-   "Don't Worry About the Vase (Zvi)",
-   "Import AI (Jack Clark)",
-   "Econ Lab (Ara Kharazian, Ramp Economics Lab)",
-   "Epoch AI — Gradient Updates (newsletter feed): weekly run-ra"
-  ]
- },
- {
   "date": "2026-11-09",
   "failed": [
    "David Cahn",
@@ -164,5 +153,12 @@
    "Econ Lab (Ara Kharazian, Ramp Economics Lab)",
    "Epoch AI — Gradient Updates (newsletter feed): weekly run-ra"
   ]
+ },
+ {
+  "date": "2026-11-23",
+  "failed": [
+   "Anthropic PBC SEC filings (EDGAR CIK 0002130357)"
+  ],
+  "dead": []
  }
 ]

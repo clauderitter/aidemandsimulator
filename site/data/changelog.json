@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-11-23",
+  "kind": "accepted",
+  "target": "D0",
+  "old": 4.2,
+  "new": 3.6,
+  "reason": "METR's own 20 Nov 2026 capability update states the doubling time directly (3.6 months on the combined TH1.1+TH2 suite), a fresher primary reading than the 2026-04-07 value of 4.2, and the live state had reverted to 4.2 so this is a restoration rather than a double-count. Rule metr_doubling; “On the combined suite of TH1.1 and TH2, time horizons are doubling roughly every 3.6 months”",
+  "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/"
+ },
+ {
+  "date": "2026-11-23",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-23).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-23",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +23%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-23).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-23",
+  "kind": "collected",
+  "target": "H0",
+  "old": 9.84,
+  "new": 8.34,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate.",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-11-23",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "54.6%",
+  "new": "10.0%",
+  "reason": "Observed from source (2026-11-23).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-23",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "352bp",
+  "new": "376bp",
+  "reason": "Observed from source (2026-11-20).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
   "date": "2026-11-22",
   "source": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
   "kind": "accepted",
@@ -3544,59 +3598,5 @@
   "new": "37%",
   "reason": "Observed from source (2026-10-15).",
   "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-15",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +31%",
-  "new": "+40% vs +31%",
-  "reason": "Observed from source (2026-10-15).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-15",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.3%",
-  "new": "6.3%",
-  "reason": "Observed from source (2026-10-15).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-15",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "15.3",
-  "new": "16.9",
-  "reason": "Observed from source (2026-10-14).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-15",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "311bp",
-  "new": "316bp",
-  "reason": "Observed from source (2026-10-13).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-15",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-13).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-15",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.24%",
-  "new": "5.21%",
-  "reason": "Observed from source (2026-10-13).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
  }
 ]

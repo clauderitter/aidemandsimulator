@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-11-08",
-  "notes": [
-   "Nov 5 rout (Nasdaq -5.52%, S&P -4.36%, SOX -12.3%): not proposed as an event — two 2026Q4 event proposals (values 12 and 10) covering the same episode were rejected on 2026-11-07.",
-   "METR's 5 Nov 2026 Anthropic assessment (AECI progress rate 1.9x earlier pace, range 1.3-3x, ~80% of the acceleration attributed to AI use; METR says even ~2x falls short of catastrophic automation): not proposed — D0 -> 3.2 was rejected 2026-11-06 and scenario 'rdaccel' was rejected 2026-11-06, so this view has already been put to the judge this week.",
-   "Anthropic Q3 from the amended S-1 ($17B revenue vs $11.6B in Q2, $567M operating loss, ~$895.4B commitments): 46.7% QoQ growth is already encoded in the rampconc scenario, R0_epoch is collector-owned, and a train (compute split) move was rejected 2026-11-07.",
-   "Epoch 4 Nov: Broadcom TPU compute shipments doubled QoQ to ~2M H100-equivalents (~800k chips, +65%), covering Google and Anthropic — genuine capacity news, but H100-equivalents are a compute, not a power, unit, so any GW figure for K0/pipe would be my own conversion.",
-   "Epoch's AI data-centre hub now shows 96 sites, 15.8M H100-equivalents, 15.1 GW IT power at 45% coverage — mixes frontier and non-frontier operators and appears only as a dashboard tile with no quotable sentence carrying the number; no K0 proposal.",
-   "Apple cutting some engineers' daily AI budget from $300 to $200 (weighing $100) plus Deloitte's 81%-use / 25%-transformed split: suggestive of token budgets being rationed, but it is ROI discipline, not a response to a drawdown, so it fails procyclicality_evidence for betaX.",
-   "Menlo Ventures: enterprise AI spend up fivefold to $177B, Anthropic 55% share — no open-weight / non-frontier split in hand, so it supports neither subst (migration_share) nor R0x; the search budget ran out before the primary report could be read.",
-   "growth_calibration: ledger gap 12pts for a 10th straight week with slack (util0 52%), so the handle would be orgX, but orgX at its ±0.1 bound (1.3 -> 1.4) moves modelled quarter-zero growth by well under a quarter of the gap — a structural gap for the weekly review, not a calibration move.",
-   "boom and takeoff are flagged out of range; a re-fitted scenario_update needs a verbatim quote of the proponents' own stated ranges and the fetch budget was exhausted before the Patel/Baker essay and the AI Futures Project timelines pages could be read. Flagged for the next run.",
-   "Microsoft spending ~$5B less capex than planned in its September quarter on IREN delays, and winding down the 2023 Oracle capacity rental: delivery slippage, not a signing-to-delivery figure, so no move on lead or pipe.",
-   "Claude wrote >90% of Anthropic's code contributions in September (S-1): internal authorship, not a share of frontier tokens by task, so not usage_share evidence for sh_rd/sh_swe.",
-   "No prompt-injection attempts found in the feeds, posts or pages read today; the only instruction-like text was generic Substack boilerplate ('turn on JavaScript', Terms of Use links) in the feed items."
-  ]
- },
- {
   "date": "2026-11-09",
   "notes": [
    "Weekly re-baseline, derived from scratch today: R0_epoch 134.8 (collector; consistent with Anthropic alone at $16.96b in Q3 2026 = ~$68b annualised and still compounding) - no proposal, collector key. H0 8.34h - METR has published no new 80% horizon: metavert's read of METR's file (6 Oct 2026) notes Opus 4.7, Grok 4.3 and GPT-5.5 have no time horizons and the GPT-5.6 Sol report gives no 80% figure, so 'every newer frontier model is missing'. Keep. D0 4.2 months - METR's current fit is ~129 days (95% CI 104-158) = 4.24 months, matches. K0 14.3 GW - consistent with OpenAI+Anthropic ~10 GW end-2026 plus other labs' share of the ~38 GW US fleet. train 60 - Tunguz (4 Nov): 40% of GPU hours are inference, 60% develops models; matches, and a 68 proposal was already rejected on 7 Nov. capexGW 54 - no new all-in figure; Anthropic's $3.4b for 1.7GW of gas generators is ~$2b/GW of power equipment alone, consistent with >$45b all-in. sh_rd 20 / sh_swe 20 / sh_trd 15 - no new usage-share data this week. pipe: my from-scratch derivation is lower than 35 (see next note) but inside the +/-40% per-run band, so no rebaseline proposal.",
@@ -257,6 +240,24 @@
    "Anthropic IPO drop ($1.5T pricing valuation to $1.175T the next day, per Noahpinion 22 Nov), VIX 35.9, Jensen Huang's resignation: no new 2026Q4 event proposed — a shock 10 for 2026Q4 was accepted 21 Nov and a 20 rejected 20 Nov.",
    "Paul Kedrosky's 22 Nov daily brief is subscriber-only; Exponential View #611 and the Epoch Substack index returned no usable body text before the tool budget ran out.",
    "No prompt-injection attempts spotted in the feeds, X posts or fetched pages read today."
+  ]
+ },
+ {
+  "date": "2026-11-23",
+  "notes": [
+   "RE-BASELINE H0: METR Q4 2026 (20 Nov) puts 50% horizons at ~40h (GPT-6 Astra) and ~39h (Claude Opus 5.5), ~29-32h under alternative human-time estimates; at METR's usual ~1:5 80%/50% ratio that implies an 80% horizon of roughly 6-8h, consistent with the current H0 = 8.34. No change proposed.",
+   "RE-BASELINE D0: 3.6 months (METR combined suite) / ~110 days (verifiable subset) vs current 4.2 - gap 0.6 months, inside the per-run limit, so submitted under metr_doubling rather than rebaseline.",
+   "RE-BASELINE R0_epoch, K0, pipe, train, capexGW, sh_rd, sh_swe, sh_trd: could not be re-derived from scratch this run. The sandbox web_search budget was exhausted after two queries and web_fetch after four, and Epoch / SemiAnalysis / earnings pages were not in prior context so web_fetch refused them (url_not_in_prior_context). No sourced figure differing by more than the per-run limit was obtained, and I will not propose unsourced numbers. Recommend re-running the weekly re-baseline with a fresh tool budget.",
+   "Anthropic EDGAR feed (CIK 0002130357) is unfetchable here too: www.sec.gov returns url_not_allowed. A 10-Q would be the best single source for R0_epoch, train and capexGW; suggest adding a non-SEC mirror (company IR page) to the watchlist.",
+   "Calibration: fast lane open (13 consecutive weeks over 0.05; 15-16pt gap for three weeks) with quarter-zero slack (util 60%), so the handle is orgX. A 1.4 -> 1.5 move was rejected 2026-11-22; a half-cap step to 1.45 would be defensible, but each proposal needs a fetchable source plus verbatim quote and the Epoch revenue tracker was unreachable this run, so I did not submit it.",
+   "Nvidia: Jensen Huang reinstated as President and CEO 23 Nov 2026, NVDA reported up ~30% on the day (@kimmonismus 2124868044266594416, 2124879319583383736); Polymarket AI-bubble odds collapsed 68.8% -> 10.0%. This largely reverses the mid-November drawdown already booked as event 2026Q4 shock 10. No event proposed: the shock vocabulary has no positive-valuation type and a negative-valued 'shock' would be an unverified convention. Suggest the maintainer re-grade the existing 2026Q4 shock instead.",
+   "Citi reportedly saying the AI bubble has burst (@edzitron 2124690647634620779): no verifiable numbers in the post, not proposable under procyclicality_evidence.",
+   "SemiAnalysis (23 Nov): SGLang on Rubin NVL72 claimed 6.5x better performance per dollar than GB300 NVL72 on Kimi K3.1 Pro. Quantitative but it is hardware perf/$ , not GW online, capex per GW or revenue per GW; no listed rule fits and it cuts both ways (more tokens per GW, lower price per token).",
+   "OpenAI 'Perplexity and Intelligence' (Pachocki, 22 Nov 2026) attributes the steep 2026 loss improvement mostly to long-term research and compute investments and only in smaller part to automation - bears on rdBoost (no rules, not proposable) and supports the 'harder' / 'metrq4' readings, but has no second number so it fails the scenario_new bar.",
+   "Alexandr Wang's 'Superintelligence is arriving' essay (22 Nov 2026) has reach but only one number ('1000x smarter'), no demand or compute figures, and the view is already covered by the takeoff scenario.",
+   "Ramp Top SaaS Vendors (7 Oct 2026) notes cheaper lite models, DeepSeek and routing platforms pressuring OpenAI/Anthropic enterprise revenue, but it is older than the Vercel September data behind subst (as-of 2026-11-16) and largely qualitative; no migration_share proposal.",
+   "Stratechery's Amazon earnings piece and the 9fin wraps are paywalled; the Vercel feed item was a ZDR product announcement, not a new Production Index reading, so no fresh gateway share data for subst this week.",
+   "Prompt-injection check: nothing in the feeds, fetched pages or X posts attempted to instruct me; closest were vendor marketing claims (Cerebras tok/s, SGLang perf/$), treated as data."
   ]
  }
 ]
