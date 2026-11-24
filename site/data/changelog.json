@@ -1,5 +1,122 @@
 [
  {
+  "date": "2026-11-24",
+  "source": "https://epoch.ai/data/ai-data-centers",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://epoch.ai/data/ai-data-centers",
+  "reason": "Adds a continuously updated, methodologically documented per-site capacity feed that is well matched to the model's hardest-to-source capacity and delivery-timeline inputs, with no parameter change implied."
+ },
+ {
+  "date": "2026-11-24",
+  "source": "https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.5,
+  "reason": "The same observed-versus-modelled divergence already moved orgX from 1.3 to 1.4 on 15 November and was rejected again on 22 November, and the new citation is lab compute outlays rather than segment demand growth — with the proposer's own Ramp figure pointing the other way."
+ },
+ {
+  "date": "2026-11-24",
+  "source": "https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth",
+  "kind": "rejected",
+  "target": "k_rd",
+  "old": null,
+  "new": 0.6,
+  "reason": "Epoch's 18 Nov note is a secondary restatement of the same Anthropic S-1/A quarterly compute figures already applied to k_rd on 10 November (and twice rejected as double-counting before that), and its ~4x compute-spend growth sits awkwardly against the ~5x R&D-spend growth used in that earlier move."
+ },
+ {
+  "date": "2026-11-24",
+  "source": "https://econlab.substack.com/p/ai-index-nov-2026",
+  "kind": "rejected",
+  "target": "sh_swe",
+  "old": null,
+  "new": 25,
+  "reason": "Gate: source unreachable and no archive snapshot: Error: 403 https://econlab.substack.com/p/ai-index-nov-2026."
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-24).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +23%",
+  "reason": "Observed from source (2026-11-24).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "D0",
+  "old": 3.6,
+  "new": 4.2,
+  "reason": "Rule: METR since-2023 doubling time 129 days ÷ 30.4 (latest frontier measurement 2026-04-07).",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "H0",
+  "old": 8.34,
+  "new": 9.84,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate.",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "10.0%",
+  "new": "22.1%",
+  "reason": "Observed from source (2026-11-24).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "35.9",
+  "new": "26.6",
+  "reason": "Observed from source (2026-11-23).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "376bp",
+  "new": "363bp",
+  "reason": "Observed from source (2026-11-23).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-20).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-24",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "5.04%",
+  "new": "4.92%",
+  "reason": "Observed from source (2026-11-20).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-23",
   "kind": "accepted",
   "target": "D0",
@@ -3481,122 +3598,5 @@
   "new": 0.75,
   "reason": "Anthropic's own investor-day figures give both halves of the R&D loop — $1.70 of revenue per $1 of compute and 44% of revenue poured back into R&D compute — which is direct evidence about the feedback itself and nudges k_rd down from an assumption to a measured 0.75. Rule feedback_evidence; “The economics are improving with scale. Anthropic makes $1.70 for every $1 it spends on compute.”",
   "source": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy"
- },
- {
-  "date": "2026-10-16",
-  "kind": "accepted",
-  "target": "subst",
-  "old": 25,
-  "new": 30,
-  "reason": "The October Vercel index is the same production-traffic series that set the current value and is fresher, so the migration share rises, but it is capped at 30 to respect the 30-day drift window around the 20 of a month ago. Rule migration_share; “Open-weight models now process more than seven in ten gateway tokens and account for nearly one in four dollars.”",
-  "source": "https://vercel.com/blog/ai-gateway-production-index-october-2026"
- },
- {
-  "date": "2026-10-16",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-16).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-16",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +31%",
-  "new": "+40% vs +31%",
-  "reason": "Observed from source (2026-10-16).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-16",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.3%",
-  "new": "6.8%",
-  "reason": "Observed from source (2026-10-16).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-16",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "16.9",
-  "new": "16.5",
-  "reason": "Observed from source (2026-10-15).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-16",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "316bp",
-  "new": "325bp",
-  "reason": "Observed from source (2026-10-14).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-16",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-14).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-16",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.21%",
-  "new": "5.19%",
-  "reason": "Observed from source (2026-10-14).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-15",
-  "source": "https://tomtunguz.com/intelligence-per-dollar-2026/",
-  "kind": "accepted",
-  "target": "scenario:price",
-  "old": "updated",
-  "new": "updated",
-  "reason": "The scenario's named proponent restates and extends the price-collapse case with new custom-silicon evidence (Maia 300, Jalapeño) and an explicit expectation of continued deflation at 40-70% margins, which justifies a second leg of cuts within the existing scenario rather than a new one."
- },
- {
-  "date": "2026-10-15",
-  "source": "https://ramp.com/data/ai-index-oct-2026",
-  "kind": "accepted",
-  "target": "scenario:rampconc",
-  "old": "updated",
-  "new": "updated",
-  "reason": "Same proponent (Ara Kharazian) publishing fresher numbers for the same thesis: the concentrated top 1% is still 3.1% below its July high and token spend has been flat for two months, which the update encodes as a demand stall while keeping the existing concentration and shock settings."
- },
- {
-  "date": "2026-10-15",
-  "kind": "accepted",
-  "target": "k_oth",
-  "old": 0.15,
-  "new": 0.1,
-  "reason": "Ramp's October panel reports two straight months of virtually no growth in token spend with volumes still rising, below the ~1.2x a year implied by k_oth=0.15, so the bounded-demand loop gain steps down to 0.10 at the speed limit. Rule feedback_evidence; “It’s token spend that led to these declines. And this slowdown has been unusually stubborn. Because of August and September, we’ve recorded ”",
-  "source": "https://ramp.com/data/ai-index-oct-2026"
- },
- {
-  "date": "2026-10-15",
-  "source": "https://inferencex.semianalysis.com/chips/h100",
-  "kind": "accepted",
-  "target": "gauge:h100_rental",
-  "old": "$2.00/hr",
-  "new": "$2.00/hr",
-  "reason": "Same publisher, same measure (SemiAnalysis TCO retail $/chip/hr) confirms the $2.00 reading a month on, so the gauge is refreshed rather than changed."
- },
- {
-  "date": "2026-10-15",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-15).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
  }
 ]
