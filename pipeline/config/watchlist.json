@@ -258,6 +258,13 @@
    "kind": "html",
    "match": "/cgi-bin/browse-edgar",
    "added": "2026-11-22"
+  },
+  {
+   "name": "Ramp AI Index (dashboard page, fetchable mirror of the block",
+   "url": "https://ramp.com/data/ai-index",
+   "kind": "html",
+   "match": "/data/ai-index",
+   "added": "2026-11-25"
   }
  ],
  "x_handles": [

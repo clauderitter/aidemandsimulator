@@ -1,18 +1,5 @@
 [
  {
-  "date": "2026-11-10",
-  "notes": [
-   "orgX calibration move (ledger: 11 consecutive weeks over 0.05, gap 15pts, util 52% = slack, handle = orgX) not proposed: an identical capped move to 1.4 was rejected on 2026-11-09 and nothing in today's feed changes the demand-side read; flagging it for the weekly review instead.",
-   "boom scenario is OUT OF RANGE ($557B vs $600–1500B at 2027Q4) but I found no fetchable Patel/Baker page from the last few days with revised numbers to anchor a re-fit; left for a day with a primary source.",
-   "Anthropic IPO roadshow (825m shares at $70–78, ~$1.24–1.38T fully diluted, below the ~$1.5T expectation): a valuation/equity-financing datapoint with no listed rule; fin was already rejected at 1.35 on 7 Nov, so not proposed.",
-   "Epoch's new Inference Performance Index (GB300 inference advantage over H100 understated 10x by FLOP/s) is about tokens per chip, not revenue per GW, so it does not fit revenue_per_gw; worth watching if they publish $/GW implications.",
-   "SemiAnalysis Texas TCEQ permit freeze / midterm backlash (30.3 GW of 2028 capacity at risk) is already encoded in the grid scenario's 1 Nov revision; post-midterm outcome not yet quantified, so no update.",
-   "R0_epoch left alone: the collector rewrites it daily and Anthropic's amended S-1 numbers flow through it.",
-   "No new METR 80%-horizon reading exists (METR stopped publishing horizon updates after April 2026), so H0 stays at 8.34.",
-   "No prompt-injection or instruction-like content noticed in the fetched pages; MBI, METR, Vercel and Anthropic pages were plain editorial/filing text."
-  ]
- },
- {
   "date": "2026-11-11",
   "notes": [
    "aaii: no newer reading. aaii.com/sentimentsurvey (fetched 2026-11-11) still shows the week ending November 4, 2026 result — Bullish 34.1% / Neutral 17.5% / Bearish 48.4%, bull-bear spread -14.3pp — identical to the gauge's current value; the survey runs Thursday 12:01 a.m. to Wednesday 11:59 p.m. and results publish Thursday morning, so the next reading (week ending 11/11) is due 2026-11-12. Recent weeks for context: 10/28 37.8/20.7/41.4, 10/21 36.9/17.3/45.8, 10/14 38.7/19.7/41.6.",
@@ -256,6 +243,22 @@
    "edzitron's Jefferies $44bn Nvidia revenue figure and the SemiAnalysis China memory-import post are supply/price signals without a per-GW cost figure; no cost_per_gw move.",
    "web_search and web_fetch budgets ran out mid-session; Vercel's November AI Gateway index (covering October) could not be verified and should be the first check next run, as should the November Fed Financial Stability Report for the fed_fsr gauge.",
    "No prompt-injection attempts seen in the feeds, posts or pages read today."
+  ]
+ },
+ {
+  "date": "2026-11-25",
+  "notes": [
+   "Primary Fed pages (Nov 2026 FSR PDF and accessibility tables) were not fetchable from this environment; reading corroborated by CNBC, Axios and multiple other reports all citing 87% vs 50% prior, same survey measure.",
+   "Did not propose the related 'risk asset correction 52%' or '85% anticipate autonomous AI transactions' figures - different measures, not the tracked gauge.",
+   "orgX calibration: fast lane open (gap 16pts, 13 consecutive weeks) but an identical orgX->1.5 move was rejected on 2026-11-24, and this week's demand-side evidence (Ramp: token spend +1-2% m/m in October; Nasdaq 100 -20%) points the other way; left for the weekly review rather than re-proposed.",
+   "Epoch AI data centers dashboard (updated 23 Nov 2026): 96 sites, 15.1 GW IT power, 15.8M H100e, 43% coverage - global and multi-owner, cannot be mapped cleanly onto frontier-lab K0, so no capacity_estimate proposal.",
+   "METR's pretraining-loss note carries no new 80% time-horizon or doubling-time measurement, so no metr_latest / metr_doubling move; used only for the metrq4 scenario update.",
+   "Kedrosky's 25 Nov brief ('AI spending stops growing') is paywalled - no verifiable quote available.",
+   "Ed Zitron 24 Nov 'Defective Accelerationism' is commentary on the Huang reinstatement with no new demand or capex numbers; contagion left as revised 28 Oct.",
+   "SemiAnalysis memory-price and MI355X TCO posts are suggestive for capexGW (cost_per_gw) but give no all-in $/GW figure; server tool budget ran out before a primary memory-cost source could be verified.",
+   "Dwarkesh 24 Nov RSI-objections episode is qualitative (no new revenue or compute numbers), so the out-of-range 'boom' scenario still lacks a sourced re-fit - flagging it for next run.",
+   "Ramp AI Index week-to-15-Nov figures already sit behind the token_index gauge ($0.45/M) and the 19 Nov rampconc read, so not re-proposed as a gauge; Ara Kharazian's 24 Nov X post is truncated in the feed, so only the complete clause was quoted.",
+   "No prompt-injection attempts spotted in the feeds, posts or fetched pages read today; the only embedded instructions were ordinary subscribe/paywall calls to action."
   ]
  }
 ]

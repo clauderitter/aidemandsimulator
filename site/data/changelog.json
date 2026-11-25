@@ -1,5 +1,122 @@
 [
  {
+  "date": "2026-11-25",
+  "source": "https://ramp.com/data/ai-index",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://ramp.com/data/ai-index",
+  "reason": "Adds a directly fetchable Ramp-hosted page carrying the same weekly tokenomics series that currently reaches the model only through blocked or secondary routes."
+ },
+ {
+  "date": "2026-11-25",
+  "source": "https://metr.org/blog/2026-11-24-interpreting-a-recent-acceleration-in-pretraining-loss/",
+  "kind": "accepted",
+  "target": "scenario:metrq4",
+  "old": "updated",
+  "new": "updated",
+  "reason": "A primary, four-days-newer note from METR itself documents pretraining loss falling ~7x faster since early 2026, and the update keeps the measured horizon while faithfully recording METR's hedged upside branch (no internal consensus, no matching ECI move)."
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "accepted",
+  "target": "subst",
+  "old": 27,
+  "new": 25,
+  "reason": "Ramp's lead economist, speaking for the 85,000-firm card panel, states directly that the November spend slowdown is not driven by switching to cheaper models and that the priciest provider gained share, which argues for a modest step down in the migration share. Rule migration_share; “To paraphrase carville, it's the competition, stupid. it's not about demand for AI (volumes increased over the same period it's not about sw”",
+  "source": "https://x.com/arakharazian/status/2125311788287713472"
+ },
+ {
+  "date": "2026-11-25",
+  "source": "https://www.koreatimes.co.kr/world/20261126/nasdaq-sinks-about-4-as-ai-rout-fresh-trump-tariffs-spook-wall-st",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 20,
+  "reason": "The quote supports only an intraday touch of -20% on the Nasdaq 100 (the Composite was ~-16% from its peak), which is too thin a basis for booking a realised 20% valuation shock into the base timeline."
+ },
+ {
+  "date": "2026-11-25",
+  "source": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+  "kind": "accepted",
+  "target": "gauge:fed_fsr",
+  "old": "50%",
+  "new": "87%",
+  "reason": "Fall 2026 Fed Financial Stability Report market-contact survey is the same measure as the current reading and is newer, taking AI-as-salient-risk from 50% to 87%. Verified against archive snapshot http://web.archive.org/web/20261117012355/https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html."
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-25).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +23%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-25).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "H0",
+  "old": 9.84,
+  "new": 8.34,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate.",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "22.1%",
+  "new": "29.1%",
+  "reason": "Observed from source (2026-11-25).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "26.6",
+  "new": "26.4",
+  "reason": "Observed from source (2026-11-24).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "363bp",
+  "new": "372bp",
+  "reason": "Observed from source (2026-11-24).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-23).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-25",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.92%",
+  "new": "4.92%",
+  "reason": "Observed from source (2026-11-23).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-24",
   "source": "https://epoch.ai/data/ai-data-centers",
   "kind": "accepted",
@@ -3481,122 +3598,5 @@
   "old": "updated",
   "new": "updated",
   "reason": "Gartner's 14 Oct report gives the revenue-gap scenario a freshly dated, quantified version of its own core claim ($8.5T of cost against $3.6T of AI revenue through 2030, >80% of neoclouds ceasing independent operation) from a proponent already named in the scenario."
- },
- {
-  "date": "2026-10-17",
-  "source": "https://www.thedailyupside.com/technology/artificial-intelligence/is-coreweaves-tapestry-of-debt-unraveling/",
-  "kind": "rejected",
-  "target": "fin",
-  "old": null,
-  "new": 1.5,
-  "reason": "CoreWeave's bond yields and CDS are one issuer's credit stress, and the same article says analysts still expect ~$50B a year of capex from 2027, so the evidence does not show build pace responding more sharply to financing conditions."
- },
- {
-  "date": "2026-10-17",
-  "source": "https://www.aaii.com/sentimentsurvey",
-  "kind": "accepted",
-  "target": "gauge:aaii",
-  "old": "40.3% / 39.0%",
-  "new": "38.7% / 41.6%",
-  "reason": "AAII's own survey page reports the identical weekly measure for the week ending 14 Oct (bulls 38.7%, bears 41.6%, spread -2.9pp), a primary and fresher reading."
- },
- {
-  "date": "2026-10-17",
-  "source": "https://cryptobriefing.com/bofa-survey-fund-managers-overweight-tech/",
-  "kind": "accepted",
-  "target": "gauge:fms_crowded",
-  "old": "53%",
-  "new": "45%",
-  "reason": "Same BofA FMS most-crowded-trade question one month fresher: long global semiconductors still first but at 45%, down from 53%."
- },
- {
-  "date": "2026-10-17",
-  "source": "https://cryptobriefing.com/bofa-survey-fund-managers-overweight-tech/",
-  "kind": "accepted",
-  "target": "gauge:fms_tailrisk",
-  "old": "28%",
-  "new": "23%",
-  "reason": "October BofA Global FMS (161 managers, polled 2-8 Oct) gives a fresher reading of the same tail-risk question, with the AI-bubble share falling from 28% to 23%."
- },
- {
-  "date": "2026-10-17",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-17).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-17",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +31%",
-  "new": "+40% vs +26%",
-  "reason": "Observed from source (2026-10-17).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-17",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "6.8%",
-  "new": "7.0%",
-  "reason": "Observed from source (2026-10-17).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-17",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "16.5",
-  "new": "20.0",
-  "reason": "Observed from source (2026-10-16).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-17",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "325bp",
-  "new": "323bp",
-  "reason": "Observed from source (2026-10-15).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-17",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-15).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-17",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.19%",
-  "new": "5.10%",
-  "reason": "Observed from source (2026-10-15).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-16",
-  "source": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy",
-  "kind": "rejected",
-  "target": "train",
-  "old": null,
-  "new": 60,
-  "reason": "The 75:25 split is inferred from one lab's 'adjusted' gross margin rather than reported as a training/inference split, and does not outrank Epoch's cross-lab chip-users measurement behind the current 50."
- },
- {
-  "date": "2026-10-16",
-  "kind": "accepted",
-  "target": "k_rd",
-  "old": 0.8,
-  "new": 0.75,
-  "reason": "Anthropic's own investor-day figures give both halves of the R&D loop — $1.70 of revenue per $1 of compute and 44% of revenue poured back into R&D compute — which is direct evidence about the feedback itself and nudges k_rd down from an assumption to a measured 0.75. Rule feedback_evidence; “The economics are improving with scale. Anthropic makes $1.70 for every $1 it spends on compute.”",
-  "source": "https://www.exponentialview.co/p/anthropic-the-agony-and-the-ecstasy"
  }
 ]
