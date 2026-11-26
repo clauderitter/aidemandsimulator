@@ -265,6 +265,13 @@
    "kind": "html",
    "match": "/data/ai-index",
    "added": "2026-11-25"
+  },
+  {
+   "name": "Silicon Data blog (GPU rental indices, LLM token price index",
+   "url": "https://www.silicondata.com/blog",
+   "kind": "html",
+   "match": "/blog",
+   "added": "2026-11-26"
   }
  ],
  "x_handles": [

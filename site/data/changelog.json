@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-11-26",
+  "source": "https://www.silicondata.com/blog/hopper-ampere-gpu-rents-coreweave-repricing",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://www.silicondata.com/blog",
+  "reason": "Silicon Data is the primary publisher of the dated GPU-rent and token-price indices behind two existing gauges and audits lab and neocloud pricing claims, so it belongs on the watchlist."
+ },
+ {
+  "date": "2026-11-26",
+  "source": "https://www.silicondata.com/blog/hopper-ampere-gpu-rents-coreweave-repricing",
+  "kind": "accepted",
+  "target": "gauge:h100_rental",
+  "old": "$2.40-3.20/hr",
+  "new": "$3.06/hr H100",
+  "reason": "Silicon Data's daily H100 rental index is the primary market measure behind the current range and prints $3.06/GPU-hr on 10 November, a fresher and more precise reading of the same quantity, inside the $2.40-3.20 range it replaces."
+ },
+ {
+  "date": "2026-11-26",
+  "source": "https://tomtunguz.com/jevons-works-on-tokens-not-on-dollars/",
+  "kind": "accepted",
+  "target": "scenario:price",
+  "old": "updated",
+  "new": "updated",
+  "reason": "The scenario's named proponent published revised numbers eight days on (blended token prices -43%, volume 11.1x against 4.7x spend, GPU rents +48%), and the re-fit shocks and softer substitution share follow faithfully from his own hedged framing."
+ },
+ {
+  "date": "2026-11-26",
+  "source": "https://tomtunguz.com/jevons-works-on-tokens-not-on-dollars/",
+  "kind": "rejected",
+  "target": "orgX",
+  "old": null,
+  "new": 1.5,
+  "reason": "Lab-level revenue growth and net revenue retention from an S-1 is not evidence of segment token spend running ahead of the model's implied path, and the identical 1.4 to 1.5 move was already rejected on 22 and 24 November."
+ },
+ {
+  "date": "2026-11-26",
+  "kind": "accepted",
+  "target": "D0",
+  "old": 4.2,
+  "new": 3.6,
+  "reason": "METR's own Q4 2026 update states the horizon doubling time directly at roughly 3.6 months on the combined TH1.1+TH2 suite, a primary and far fresher reading of exactly the quantity D0 encodes, consistent with the 21 and 23 November accepts. Rule metr_doubling; “On the combined suite of TH1.1 and TH2, time horizons are doubling roughly every 3.6 months”",
+  "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/"
+ },
+ {
+  "date": "2026-11-26",
+  "source": "https://www.aaii.com/sentimentsurvey",
+  "kind": "accepted",
+  "target": "gauge:aaii",
+  "old": "33.3% / 42.2%",
+  "new": "37.1% / 45.4%",
+  "reason": "AAII's own weekly survey gives the identical measure one week fresher (week ending 25 Nov: bulls 37.1%, bears 45.4%, spread -8.3pp), so the gauge refreshes as usual."
+ },
+ {
+  "date": "2026-11-26",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-26).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-26",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-26).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-26",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "29.1%",
+  "new": "16.1%",
+  "reason": "Observed from source (2026-11-26).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-26",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "26.4",
+  "new": "28.3",
+  "reason": "Observed from source (2026-11-25).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-26",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-24).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-26",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.92%",
+  "new": "4.91%",
+  "reason": "Observed from source (2026-11-24).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-25",
   "source": "https://ramp.com/data/ai-index",
   "kind": "accepted",
@@ -3490,113 +3598,5 @@
   "new": 32,
   "reason": "SemiAnalysis's 19 Oct 2026 buildout model is newer than the current as-of and verifies >24GW already in advanced construction for 2027 delivery at just 40 campuses against a +50GW forecast, so lifting the six-quarter pipeline from 26 to 32 GW stays conservatively inside the Epoch-to-Patel bracket while reflecting tracked construction rather than announcements. Rule capacity_estimate; “one picture, >24GW of datacenters in advanced stage of construction, all to be delivered in 2027. Most of them are more than halfway done, w”",
   "source": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration"
- },
- {
-  "date": "2026-10-19",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-19).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-19",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +26%",
-  "new": "+40% vs +26%",
-  "reason": "Observed from source (2026-10-19).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-19",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "7.4%",
-  "new": "9.0%",
-  "reason": "Observed from source (2026-10-19).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-18",
-  "source": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
-  "reason": "Adds a regularly updated, fetchable Epoch tracker of per-site operational and projected data-centre power as a watched source for future capacity estimates, without moving any input today."
- },
- {
-  "date": "2026-10-18",
-  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
-  "kind": "rejected",
-  "target": "k_rd",
-  "old": null,
-  "new": 0.82,
-  "reason": "This is the same 5 Oct Epoch fit of OpenAI's coding-agent spending that was already applied to k_rd on 11 October, so raising the gain again on it would double-count, and the evidence predates the current as-of date."
- },
- {
-  "date": "2026-10-18",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-18).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-18",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +26%",
-  "new": "+40% vs +26%",
-  "reason": "Observed from source (2026-10-18).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-18",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "7.0%",
-  "new": "7.4%",
-  "reason": "Observed from source (2026-10-18).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-17",
-  "source": "https://epoch.ai/data-insights/openai-coding-agent-spending",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://epoch.ai/data-insights",
-  "reason": "Epoch's Data Insights index is a fetchable primary feed carrying the quantitative one-pagers (e.g. the 5 Oct OpenAI coding-agent spend figures) that the dead substack feed used to supply, so it is added as a watched source."
- },
- {
-  "date": "2026-10-17",
-  "source": "https://epoch.ai/publications/how-do-chinese-ai-companies-make-money",
-  "kind": "rejected",
-  "target": "R0x",
-  "old": null,
-  "new": 17,
-  "reason": "Gate: monthly drift cap reached for R0x (at most ±5 around 10 in any 30 days); the evidence is noted but the input holds."
- },
- {
-  "date": "2026-10-17",
-  "source": "https://www.thedailyupside.com/technology/artificial-intelligence/is-coreweaves-tapestry-of-debt-unraveling/",
-  "kind": "rejected",
-  "target": "orgX",
-  "old": null,
-  "new": 1.35,
-  "reason": "The quoted evidence describes Anthropic's growth decelerating from +140% to +45% quarter on quarter and the proposal's own ledger shows the observed-versus-modelled gap collapsing to ~7 points, which does not support raising the organic-growth multiplier again."
- },
- {
-  "date": "2026-10-17",
-  "source": "https://www.thedailyupside.com/technology/artificial-intelligence/is-coreweaves-tapestry-of-debt-unraveling/",
-  "kind": "accepted",
-  "target": "scenario:gap",
-  "old": "updated",
-  "new": "updated",
-  "reason": "Gartner's 14 Oct report gives the revenue-gap scenario a freshly dated, quantified version of its own core claim ($8.5T of cost against $3.6T of AI revenue through 2030, >80% of neoclouds ceasing independent operation) from a proponent already named in the scenario."
  }
 ]
