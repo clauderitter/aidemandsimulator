@@ -1,5 +1,86 @@
 [
  {
+  "date": "2026-11-27",
+  "source": "https://www.silicondata.com/blog/hopper-ampere-gpu-rents-coreweave-repricing",
+  "kind": "rejected",
+  "target": "event:2026Q4",
+  "old": null,
+  "new": 12,
+  "reason": "An 11.3% partial-quarter move in one older-GPU rental index is not evidence of a broad compute repricing, and the quarter is unfinished, so booking a 12% Q4 shock is premature."
+ },
+ {
+  "date": "2026-11-27",
+  "source": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026",
+  "kind": "rejected",
+  "target": "gauge:bonds",
+  "old": null,
+  "new": 305,
+  "reason": "The Bank of England's $305bn is a full-year 2026 expectation, not a year-to-date tally like the current $284bn reading, so swapping it in would change the measure rather than refresh it."
+ },
+ {
+  "date": "2026-11-27",
+  "source": "https://www.silicondata.com/blog/gpu-rental-curves-credit-squeeze-b200-h100",
+  "kind": "rejected",
+  "target": "fin",
+  "old": null,
+  "new": 1.7,
+  "reason": "The quoted sentence states an argument Silicon Data is testing rather than a finding, and the same note says the curves cannot settle it and flags B300 supply as a competing explanation, so it does not establish that buildout flexes more sharply with credit terms."
+ },
+ {
+  "date": "2026-11-27",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-27).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-27",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-27).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-27",
+  "kind": "collected",
+  "target": "D0",
+  "old": 3.6,
+  "new": 4.2,
+  "reason": "Rule: METR since-2023 doubling time 129 days ÷ 30.4 (latest frontier measurement 2026-04-07).",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-11-27",
+  "kind": "collected",
+  "target": "H0",
+  "old": 8.34,
+  "new": 9.84,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate.",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-11-27",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "16.1%",
+  "new": "19.8%",
+  "reason": "Observed from source (2026-11-27).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-27",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "28.3",
+  "new": "26.8",
+  "reason": "Observed from source (2026-11-26).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
   "date": "2026-11-26",
   "source": "https://www.silicondata.com/blog/hopper-ampere-gpu-rents-coreweave-repricing",
   "kind": "accepted",
@@ -3517,86 +3598,5 @@
   "new": "18.4",
   "reason": "Observed from source (2026-10-19).",
   "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-20",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "323bp",
-  "new": "331bp",
-  "reason": "Observed from source (2026-10-16).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-20",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-16).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-20",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.10%",
-  "new": "5.09%",
-  "reason": "Observed from source (2026-10-16).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-19",
-  "source": "https://www.noahpinion.blog/p/can-a-million-ai-agents-create-superintelligence",
-  "kind": "accepted",
-  "target": "watchlist",
-  "old": null,
-  "new": "https://www.rameznaam.com/",
-  "reason": "Adds a low-cost source that publishes explicit, repeatedly updated numeric calibration of the R&D feedback loop, which is the scarce evidence type the loop-gain keys require."
- },
- {
-  "date": "2026-10-19",
-  "source": "https://en.wikipedia.org/wiki/METR",
-  "kind": "rejected",
-  "target": "H0",
-  "old": null,
-  "new": 4.17,
-  "reason": "A Wikipedia summary dated before the current reading's own basis is a weaker source than METR's benchmark file that H0 is derived from, the proposer concedes the underlying yaml may carry a later measurement, and the proposed 4.17 h is neither the current nor the quoted figure but a speed-limited compromise."
- },
- {
-  "date": "2026-10-19",
-  "source": "https://www.noahpinion.blog/p/can-a-million-ai-agents-create-superintelligence",
-  "kind": "accepted",
-  "target": "scenario:swarmfade",
-  "old": null,
-  "new": "added",
-  "reason": "A dated, numeric calibration of the AI R&D feedback loop itself (124x tokens per researcher for 1.6x experiments; loop five to ten times below self-sustaining) is the right grade of evidence for k_rd and rdBoost, and the mechanism — agents buy speed, not intelligence, while capability keeps improving — is distinct from the capability-stall premise of the existing scaling-wall scenario. Ramez Naam (futurist), cross-posted on Noahpinion by Noah Smith, 19 Oct 2026."
- },
- {
-  "date": "2026-10-19",
-  "source": "",
-  "kind": "expired",
-  "target": "scenario:elastic",
-  "old": "active",
-  "new": "retired",
-  "reason": "Retired to make room for “Swarms buy speed, not intelligence”: the least distinct structural scenario (closest path to its neighbours, 19%)."
- },
- {
-  "date": "2026-10-19",
-  "source": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
-  "kind": "rejected",
-  "target": "scenario:physics",
-  "old": null,
-  "new": "SemiAnalysis 19 Oct 2026 update: +50GW global delivery in 2027, 60GW under construction, ~$1T of binding leases signed YTD, shortage migrating to memory/logic, rates forced up by capital demand.",
-  "reason": "Gate: override mono=1 out of bounds."
- },
- {
-  "date": "2026-10-19",
-  "kind": "accepted",
-  "target": "pipe",
-  "old": 26,
-  "new": 32,
-  "reason": "SemiAnalysis's 19 Oct 2026 buildout model is newer than the current as-of and verifies >24GW already in advanced construction for 2027 delivery at just 40 campuses against a +50GW forecast, so lifting the six-quarter pipeline from 26 to 32 GW stays conservatively inside the Epoch-to-Patel bracket while reflecting tracked construction rather than announcements. Rule capacity_estimate; “one picture, >24GW of datacenters in advanced stage of construction, all to be delivered in 2027. Most of them are more than halfway done, w”",
-  "source": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration"
  }
 ]

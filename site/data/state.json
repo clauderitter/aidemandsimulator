@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-26T17:16:53.377Z",
+ "generated_at": "2026-11-27T16:55:58.203Z",
  "quarter0": "2026Q4",
  "horizon_quarters": 18,
  "history_quarters": 8,
@@ -55,28 +55,28 @@
    "short": "Cattani’s attribution. No public figure supports a trading share; quant demand is real but unquantified."
   },
   "H0": {
-   "value": 8.34,
+   "value": 9.84,
    "label": "80% task horizon today",
    "hidden": false,
    "basis": "METR Time Horizon 1.1: Claude Mythos Preview 3h06m at 80% success (measured Mar 2026), o3 30 min. Fable 5 / Mythos 5 have no METR measurement yet. Horizons are human-expert task length; METR flags measurements above 16 h (50%) as unreliable.",
    "as_of": "2026-04-07",
    "type": "derived",
    "source": "https://metr.org/time-horizons/",
-   "updated": "2026-11-25",
+   "updated": "2026-11-27",
    "rule": "latest state-of-the-art 80%-success time horizon in METR’s benchmark file, in hours",
    "short": "Latest state-of-the-art 80%-success horizon in METR’s benchmark file (Claude Mythos Preview, measured March 2026).",
    "meas_value": 3.1,
    "meas_q": "2026Q2"
   },
   "D0": {
-   "value": 3.6,
+   "value": 4.2,
    "label": "Horizon doubling time",
    "hidden": false,
    "basis": "METR TH1.1: 129 days for the 50% horizon since 2023; o3 → Mythos Preview implies ~4.4 months on the 80% horizon; the original 2025 paper found 7 months over 2019–2025. AI Futures revised its median to 4–4.5 months in April 2026.",
-   "as_of": "2026-11-20",
-   "type": "estimate",
-   "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
-   "updated": "2026-11-26",
+   "as_of": "2026-04-07",
+   "type": "reported",
+   "source": "https://metr.org/time-horizons/",
+   "updated": "2026-11-27",
    "rule": "METR’s since-2023 doubling time in days ÷ 30.4",
    "short": "METR’s since-2023 doubling time for the task horizon, converted from days to months."
   },
@@ -828,7 +828,7 @@
     "checks": [
      "OUT: 2027Q4 $571B vs $600–1500B"
     ],
-    "date": "2026-11-26"
+    "date": "2026-11-27"
    }
   },
   {
@@ -875,7 +875,7 @@
     "checks": [
      "ok: growth 2026Q4→2027Q4 ×5.6 vs ×4–8"
     ],
-    "date": "2026-11-26"
+    "date": "2026-11-27"
    }
   },
   {
@@ -1193,10 +1193,10 @@
    "fidelity": {
     "ok": true,
     "checks": [
-     "ok: 2027Q4 $266B vs $225–340B",
-     "ok: 2028Q4 $525B vs $395–675B"
+     "ok: 2027Q4 $265B vs $225–340B",
+     "ok: 2028Q4 $522B vs $395–675B"
     ],
-    "date": "2026-11-26"
+    "date": "2026-11-27"
    }
   },
   {
@@ -1522,9 +1522,9 @@
    "value": "60%",
    "sub": "frontier revenue 149.8 ÷ (14.3 GW × 35% inference × $50B/GW); above 100% means rationed",
    "src": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md",
-   "as_of": "2026-11-26",
+   "as_of": "2026-11-27",
    "auto": true,
-   "updated": "2026-11-26"
+   "updated": "2026-11-27"
   },
   {
    "id": "fms_tailrisk",
@@ -1551,12 +1551,12 @@
   {
    "id": "polymarket",
    "label": "Polymarket: AI bubble bursts in 2026",
-   "value": "16.1%",
-   "sub": "26 Nov 2026 · “AI bubble burst in 2026?”",
+   "value": "19.8%",
+   "sub": "27 Nov 2026 · “AI bubble burst in 2026?”",
    "src": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857",
-   "as_of": "2026-11-26",
+   "as_of": "2026-11-27",
    "auto": true,
-   "updated": "2026-11-26"
+   "updated": "2026-11-27"
   },
   {
    "id": "aaii",
@@ -1572,12 +1572,12 @@
   {
    "id": "vix",
    "label": "VIX",
-   "value": "28.3",
-   "sub": "25 Nov 2026 close (CBOE)",
+   "value": "26.8",
+   "sub": "26 Nov 2026 close (CBOE)",
    "src": "https://www.cboe.com/tradable_products/vix/",
-   "as_of": "2026-11-25",
+   "as_of": "2026-11-26",
    "auto": true,
-   "updated": "2026-11-26"
+   "updated": "2026-11-27"
   },
   {
    "id": "fed_fsr",
@@ -1701,11 +1701,11 @@
    "id": "growth_check",
    "label": "Observed vs modelled revenue growth",
    "value": "+44% vs +24%",
-   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.4 a year)",
+   "sub": "per quarter: observed (Epoch sum, 2025Q4 → now, ×4.3 a year) vs the model’s quarter-zero growth (×2.3 a year)",
    "src": "https://epoch.ai/data/ai_companies_revenue_reports.csv",
-   "as_of": "2026-11-26",
+   "as_of": "2026-11-27",
    "auto": true,
-   "updated": "2026-11-26"
+   "updated": "2026-11-27"
   }
  ],
  "frozen": [],

@@ -257,7 +257,9 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002130357&type=10-Q&dateb=&owner=include&count=40",
    "kind": "html",
    "match": "/cgi-bin/browse-edgar",
-   "added": "2026-11-22"
+   "added": "2026-11-22",
+   "dead": true,
+   "dead_since": "2026-11-27"
   },
   {
    "name": "Ramp AI Index (dashboard page, fetchable mirror of the block",
