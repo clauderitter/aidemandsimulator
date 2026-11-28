@@ -1,23 +1,5 @@
 [
  {
-  "date": "2026-11-13",
-  "notes": [
-   "Ramp Tokenomics also shows per-provider blended prices (OpenAI $0.50, Anthropic $0.55) — not proposed; gauge tracks the combined OpenAI & Anthropic blend.",
-   "Ramp AI adoption (56.8% Oct 2026) and token spend shares are different measures; not used for this gauge.",
-   "Ramp data is weekly for tokenomics; Nov 1 2026 week is the latest complete week published (page says data through Oct 2026).",
-   "sh_swe: Ramp AI Index Nov 2026 (Ara Kharazian, 12 Nov) reports 72% of classified business AI spend from engineering teams - strong usage-share evidence, but sh_swe -> 23 was rejected yesterday (2026-11-12) on what is almost certainly this same release, so not re-proposed.",
-   "orgX: calibration ledger is at 11 consecutive weeks over 0.05 (this week 15pts) with slack (util0 60%), but orgX -> 1.37 was rejected on 2026-11-11 and nothing in the data has changed since; left to the weekly review.",
-   "fin: Tunguz 'When the Central Bank of AI Changes Chairs' (12 Nov) cites $61B of Nvidia equity in 229 startups, $164.5B of lease guarantees and 112% of operating cash flow deployed into equity/M&A; fin -> 1.8 was rejected yesterday and I could not fetch the post to verify a verbatim quote (datacenter block), so no proposal.",
-   "k_swe: Ramp shows October AI spend +2% m/m and OpenAI/Anthropic token spend growth in low single digits against the implied software steady growth of x4.6/yr - a genuine feedback_evidence case for cutting k_swe, but Ramp is SMB card spend while the aggregate growth_check still runs +44% vs +22%, and econlab.substack.com would not fetch for a verbatim quote.",
-   "H0/D0: no new METR measurement found; Wikipedia's METR page mixes Time Horizon 1.0 and 1.1 numbers (Claude Mythos 80% = 3h06m on TH1.1) and is not a primary METR source, so H0 (8.34h, 2026-04-07) left alone.",
-   "Jensen Huang's resignation as Nvidia CEO (12 Nov) dominates the feeds and X accounts, plus reports that Chinese frontier labs obtained Blackwell parts; no verified quantitative market or capex number yet, so no event proposal (gauges show VIX 18.7, polymarket 6.9% - no crash).",
-   "CoreWeave Q3 revenue $3.66B, +168% y/y, $132.5B backlog: revenue is the collector's job via Epoch, not proposed.",
-   "SemiAnalysis '45% of AI spend now agents' circulated only as a chart write-up on a secondary blog; not proposed as usage_share.",
-   "Scenario slots: boom re-fit and rampconc update were both rejected on 2026-11-12; Tunguz's 'Central Bank of AI' view overlaps the live credit and contagion scenarios, so no scenario_new today.",
-   "Search and fetch budgets were exhausted mid-session (server tool use limit), which capped verification; no prompt-injection attempts were found in any feed item or post read today."
-  ]
- },
- {
   "date": "2026-11-14",
   "notes": [
    "stockanalysis.com/stocks/nvda/statistics/ (the gauge's own source) still displays the stale Oct 15 figures (301.62M, 1.30% of float), so the newer Oct 30 settlement was taken from MarketBeat, which reports the same short-%-of-float measure; Benzinga shows the same 279.58M / 1.21%.",
@@ -250,6 +232,20 @@
    "CoreWeave: 130k+ GPUs come off contract in 2027 and ~170k in 2028 - noted for future capacity work, but not a GW figure, so no K0/pipe move.",
    "No prompt-injection attempts in feeds or posts; Silicon Data pages embed a 'Summarize with AI' prompt template addressed to chat assistants, ignored as page furniture.",
    "web_search budget was exhausted early in this run; all proposals rest on pages fetched and verified verbatim (BoE FSR summary, three Silicon Data notes)."
+  ]
+ },
+ {
+  "date": "2026-11-28",
+  "notes": [
+   "orgX calibration move NOT proposed despite the open fast lane (13 weeks over threshold, gap 16pts, util 60% => orgX handle): a 1.4->1.5 move was rejected on 2026-11-26, and this week's primary data cuts the other way — OpenRouter spend flat since early October with elasticity down to 1.2, plus Kedrosky's 27 Nov 'token spend flatlines' note — so the observed-vs-modelled gap looks likely to close from the observed side.",
+   "boom is flagged OUT OF RANGE (2027Q4 $571B vs $600-1500B) but no re-fit proposed: its mono override is the expression '=util0:1.0', which the numeric-only overrides schema cannot carry without silently mangling it, and Gavin Baker's 28 Nov post reaffirming the thesis ('market structure at the frontier might be the single most important variable for tech investing over the next 2-3 years') contains no revised numbers. Flagged for the maintainer.",
+   "Anthropic 424B4/S-1A: compute and infrastructure 58% of Q3 2026 revenue, $900.9bn aggregate committed spend (Google $121.3bn, SpaceXAI up to $120.5bn, Amazon $110.0bn, Microsoft >=$47.2bn), customers above $100k = 74% of TTM revenue, 44% of 9M revenue via cloud marketplaces. No training/inference compute split disclosed, so no compute_split proposal; customer concentration alone does not qualify under correlation_evidence.",
+   "NBER consumer-AI paper surfaced via @edzitron (annual retention 20-45%, ~2.9% of US consumers paying as of April 2026): real, but gives neither revenue per dollar of inference nor an observed segment growth rate, so it fails feedback_evidence for k_oth (already 0.1).",
+   "Epoch's AI data centers hub (updated 27 Nov 2026) now shows 99 sites, 15.5 GW IT power, 44% coverage — all-operator global tracking, not frontier-lab-allocated, so not comparable with K0 (14.3 GW); no newer per-lab GW figure found in the AI Chip Users explorer.",
+   "Aschenbrenner's Q3 drawdown (-65% after fees; 13F positions $20.24bn -> $1.58bn) is a realised July AI selloff; no event proposed, since a 2026Q4 event of size 12 was rejected on 2026-11-27 and the July move belongs to 2026Q3.",
+   "h100_rental gauge left alone: the $4-6/hr hyperscaler on-demand quote in the Aschenbrenner coverage is a different basis from the Silicon Data neocloud index ($3.06/hr, 2026-11-10).",
+   "Silicon Data feed items were all Jul-Sep 2026 reposts; SemiAnalysis's InferenceX perf-per-$ post (TPU/Trainium 1.5-2.5x) has no revenue-per-GW or capacity number attached.",
+   "No prompt-injection attempts found in fetched pages. Several watched X posts (@kimmonismus) assert unsourced rumours of secret superintelligence and an imminent cryptanalysis breakthrough; treated as data, not instructions, and not used as evidence."
   ]
  }
 ]

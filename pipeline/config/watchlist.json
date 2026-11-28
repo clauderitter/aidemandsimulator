@@ -62,7 +62,9 @@
   {
    "name": "David Cahn",
    "url": "https://dcahn.substack.com/feed",
-   "kind": "rss"
+   "kind": "rss",
+   "dead": true,
+   "dead_since": "2026-11-28"
   },
   {
    "name": "Coatue Takes",
@@ -103,12 +105,16 @@
   {
    "name": "Don't Worry About the Vase (Zvi)",
    "url": "https://thezvi.substack.com/feed",
-   "kind": "rss"
+   "kind": "rss",
+   "dead": true,
+   "dead_since": "2026-11-28"
   },
   {
    "name": "Import AI (Jack Clark)",
    "url": "https://importai.substack.com/feed",
-   "kind": "rss"
+   "kind": "rss",
+   "dead": true,
+   "dead_since": "2026-11-28"
   },
   {
    "name": "BIS FSI publications",
@@ -119,13 +125,17 @@
    "name": "Econ Lab (Ara Kharazian, Ramp Economics Lab)",
    "url": "https://econlab.substack.com/feed",
    "kind": "rss",
-   "added": "2026-09-03"
+   "added": "2026-09-03",
+   "dead": true,
+   "dead_since": "2026-11-28"
   },
   {
    "name": "Epoch AI — Gradient Updates (newsletter feed): weekly run-ra",
    "url": "https://epochai.substack.com/feed",
    "kind": "rss",
-   "added": "2026-09-03"
+   "added": "2026-09-03",
+   "dead": true,
+   "dead_since": "2026-11-28"
   },
   {
    "name": "SemiAnalysis InferenceX — ongoing third-party benchmarking o",
@@ -274,6 +284,13 @@
    "kind": "html",
    "match": "/blog",
    "added": "2026-11-26"
+  },
+  {
+   "name": "OpenRouter Insights",
+   "url": "https://openrouter.ai/blog/insights/",
+   "kind": "html",
+   "match": "/blog/insights/",
+   "added": "2026-11-28"
   }
  ],
  "x_handles": [

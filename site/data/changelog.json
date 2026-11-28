@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-11-28",
+  "source": "https://openrouter.ai/blog/insights/is-jevons-paradox-holding/",
+  "kind": "accepted",
+  "target": "watchlist",
+  "old": null,
+  "new": "https://openrouter.ai/blog/insights/",
+  "reason": "Adds a primary, quantitative gateway-traffic series (tokens, spend, price per token, elasticity) that the pipeline currently reaches only through a single gauge."
+ },
+ {
+  "date": "2026-11-28",
+  "source": "https://sec-api.io/insights/anthropic-ant-ipo-83-00-a-share-81-3bn-offering-and-first-trading-days-sec-filing-analysis",
+  "kind": "rejected",
+  "target": "mono",
+  "old": null,
+  "new": 55,
+  "reason": "This re-reads the same Anthropic S-1 run-rate disclosure that already moved revenue per inference GW to 55 on 28 October, is older than the 4 November Tunguz per-GW figures that brought it to 50, and reaches 55 only by dividing filed revenue by a third-party GW estimate the source does not state."
+ },
+ {
+  "date": "2026-11-28",
+  "source": "https://openrouter.ai/blog/insights/is-jevons-paradox-holding/",
+  "kind": "rejected",
+  "target": "subst",
+  "old": null,
+  "new": 28,
+  "reason": "OpenRouter's falling token-price elasticity shows buyers taking price cuts as extra tokens rather than extra budget, which is a statement about spend elasticity (and partly about cuts within frontier families), not about bounded work moving onto non-frontier endpoints — and it sits against the 25 Nov Ramp finding that the spend slowdown is not driven by switching to cheaper models."
+ },
+ {
+  "date": "2026-11-28",
+  "source": "https://en.oninvest.com/article/hedge-fund-of-ai-nostradamus-aschenbrenner-lost-65-in-3q26-what-is-he-betting-on",
+  "kind": "rejected",
+  "target": "scenario:sitaware",
+  "old": null,
+  "new": null,
+  "reason": "Gate: override D0=1.4 out of bounds."
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "gauge:util0",
+  "old": "60%",
+  "new": "60%",
+  "reason": "Observed from source (2026-11-28).",
+  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "gauge:growth_check",
+  "old": "+44% vs +24%",
+  "new": "+44% vs +24%",
+  "reason": "Observed from source (2026-11-28).",
+  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "H0",
+  "old": 9.84,
+  "new": 8.34,
+  "reason": "Rule: latest SOTA 80% horizon in METR’s file (claude_mythos_preview_early_inspect, released 2026-04-07, 3.10 h), rolled forward 2 quarters to 2026Q4 at the current doubling rate.",
+  "source": "https://metr.org/time-horizons/"
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "gauge:polymarket",
+  "old": "19.8%",
+  "new": "17.8%",
+  "reason": "Observed from source (2026-11-28).",
+  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "gauge:vix",
+  "old": "26.8",
+  "new": "23.8",
+  "reason": "Observed from source (2026-11-27).",
+  "source": "https://www.cboe.com/tradable_products/vix/"
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "gauge:hy_oas",
+  "old": "372bp",
+  "new": "377bp",
+  "reason": "Observed from source (2026-11-26).",
+  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "gauge:fedfunds",
+  "old": "3.88%",
+  "new": "3.88%",
+  "reason": "Observed from source (2026-11-26).",
+  "source": "https://fred.stlouisfed.org/series/DFF"
+ },
+ {
+  "date": "2026-11-28",
+  "kind": "collected",
+  "target": "gauge:dgs10",
+  "old": "4.91%",
+  "new": "4.85%",
+  "reason": "Observed from source (2026-11-25).",
+  "source": "https://fred.stlouisfed.org/series/DGS10"
+ },
+ {
   "date": "2026-11-27",
   "source": "https://www.silicondata.com/blog/hopper-ampere-gpu-rents-coreweave-repricing",
   "kind": "rejected",
@@ -3490,113 +3598,5 @@
   "new": "37%",
   "reason": "Observed from source (2026-10-21).",
   "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-21",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +26%",
-  "new": "+40% vs +26%",
-  "reason": "Observed from source (2026-10-21).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-21",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "11.2%",
-  "new": "10.2%",
-  "reason": "Observed from source (2026-10-21).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-21",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "18.4",
-  "new": "17.3",
-  "reason": "Observed from source (2026-10-20).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
- },
- {
-  "date": "2026-10-21",
-  "kind": "collected",
-  "target": "gauge:hy_oas",
-  "old": "331bp",
-  "new": "329bp",
-  "reason": "Observed from source (2026-10-19).",
-  "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
- },
- {
-  "date": "2026-10-21",
-  "kind": "collected",
-  "target": "gauge:fedfunds",
-  "old": "3.88%",
-  "new": "3.88%",
-  "reason": "Observed from source (2026-10-19).",
-  "source": "https://fred.stlouisfed.org/series/DFF"
- },
- {
-  "date": "2026-10-21",
-  "kind": "collected",
-  "target": "gauge:dgs10",
-  "old": "5.09%",
-  "new": "5.15%",
-  "reason": "Observed from source (2026-10-19).",
-  "source": "https://fred.stlouisfed.org/series/DGS10"
- },
- {
-  "date": "2026-10-20",
-  "source": "https://tomtunguz.com/what-if-they-are-all-clouds/",
-  "kind": "rejected",
-  "target": "scenario:clouds",
-  "old": null,
-  "new": null,
-  "reason": "Tunguz's post argues how to value Anthropic rather than stating a view on the token-demand path, so the proposed thesis of decaying growth meeting contracted capacity (and the k_swe/k_rd cuts it encodes) is the proposer's inference, and its slack-with-commitment mechanism largely duplicates the existing capacity-overhang scenario."
- },
- {
-  "date": "2026-10-20",
-  "source": "https://tomtunguz.com/what-if-they-are-all-clouds/",
-  "kind": "rejected",
-  "target": "k_swe",
-  "old": null,
-  "new": 0.55,
-  "reason": "The quote measures Anthropic's total annualised revenue, not software-engineering token spend re-spent on tokens, and the same post's quarter-on-quarter figure (+45%, ~4.3x annualised) sits at the implied steady rate, so the deceleration signal is too ambiguous to move a loop gain."
- },
- {
-  "date": "2026-10-20",
-  "kind": "collected",
-  "target": "gauge:util0",
-  "old": "37%",
-  "new": "37%",
-  "reason": "Observed from source (2026-10-20).",
-  "source": "https://github.com/clauderitter/aidemandsimulator/blob/main/pipeline/config/rules.md"
- },
- {
-  "date": "2026-10-20",
-  "kind": "collected",
-  "target": "gauge:growth_check",
-  "old": "+40% vs +26%",
-  "new": "+40% vs +26%",
-  "reason": "Observed from source (2026-10-20).",
-  "source": "https://epoch.ai/data/ai_companies_revenue_reports.csv"
- },
- {
-  "date": "2026-10-20",
-  "kind": "collected",
-  "target": "gauge:polymarket",
-  "old": "9.0%",
-  "new": "11.2%",
-  "reason": "Observed from source (2026-10-20).",
-  "source": "https://polymarket.com/market/ai-industry-downturn-by-december-31-2026-857"
- },
- {
-  "date": "2026-10-20",
-  "kind": "collected",
-  "target": "gauge:vix",
-  "old": "20.0",
-  "new": "18.4",
-  "reason": "Observed from source (2026-10-19).",
-  "source": "https://www.cboe.com/tradable_products/vix/"
  }
 ]
